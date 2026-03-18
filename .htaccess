@@ -5,6 +5,14 @@ Options -Indexes
 # Custom 404 Error Page 
 ErrorDocument 404 /404.php
 
+# 0a. Forcer HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# 0b. Forcer www (https://garageraymond.fr → https://www.garageraymond.fr)
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # 1. Éviter d'avoir .php dans l'URL si tapé directement (Redirection SEO 301)
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{REQUEST_FILENAME} -f
