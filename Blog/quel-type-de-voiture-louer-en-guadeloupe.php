@@ -18,7 +18,7 @@ $article = [
     'author' => 'Arnaud',
     'author_role' => 'Rédacteur & Essayeur passionné',
     'author_img' => '/Image/arnaud.png',
-    'author_bio' => 'Tombé dans le cambouis quand il était petit grâce Ã  son père David, Arnaud a transformé sa passion en expertise. Il teste sans concession les derniers modèles et décortique le marché.',
+    'author_bio' => 'Tombé dans le cambouis quand il était petit grâce à son père David, Arnaud a transformé sa passion en expertise. Il teste sans concession les derniers modèles et décortique le marché.',
     'reading_time' => '7 min',
 ];
 
@@ -30,6 +30,46 @@ $categories = [
     'moto' => ['name' => 'Moto & 2 Roues', 'color' => '#ea580c', 'slug' => 'moto'],
     'permis' => ['name' => 'Permis', 'color' => '#0891b2', 'slug' => 'permis'],
 ];
+
+// ─── Scan dynamique du Blog/ pour le linking interne ───
+$current_slug = pathinfo(__FILE__, PATHINFO_FILENAME);
+$same_cat_articles = [];
+$all_other_articles = [];
+$blog_dir = __DIR__;
+
+if (is_dir($blog_dir)) {
+    $files = glob($blog_dir . '/*.php');
+    foreach ($files as $file) {
+        $file_slug = pathinfo($file, PATHINFO_FILENAME);
+        if ($file_slug === $current_slug)
+            continue; // ne pas s'inclure soi-même
+
+        $other_article = null;
+        $content = file_get_contents($file);
+
+        if (preg_match('/\$article\s*=\s*\[(.+?)\];/s', $content, $matches)) {
+            try {
+                eval ('$other_article = [' . $matches[1] . '];');
+            } catch (Throwable $e) {
+                continue;
+            }
+        }
+
+        if ($other_article && isset($other_article['title'])) {
+            $other_article['slug'] = $file_slug;
+            $other_article['url'] = '/Blog/' . $file_slug;
+            $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
+
+            // Articles de la même catégorie
+            if (($other_article['category'] ?? '') === $article['category']) {
+                $same_cat_articles[] = $other_article;
+            }
+
+            // Tous les autres articles (pour "À la Une")
+            $all_other_articles[] = $other_article;
+        }
+    }
+}
 
 include __DIR__ . '/../header.php';
 ?>
@@ -43,9 +83,9 @@ include __DIR__ . '/../header.php';
         <div class="art-hero-container">
             <div class="art-hero-content">
                 <nav class="art-breadcrumb">
-                    <a href="./">Accueil</a>
+                    <a href="/">Accueil</a>
                     <span class="art-bc-sep">/</span>
-                    <a href="<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a>
+                    <a href="/<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a>
                     <span class="art-bc-sep">/</span>
                     <span>Article</span>
                 </nav>
@@ -81,7 +121,7 @@ include __DIR__ . '/../header.php';
     <nav class="art-cat-nav">
         <div class="art-cat-nav-inner">
             <?php foreach ($categories as $slug_cat => $cat): ?>
-                <a href="<?php echo $slug_cat; ?>"
+                <a href="/<?php echo $slug_cat; ?>"
                     class="art-cat-link <?php echo $slug_cat === $article['category'] ? 'active' : ''; ?>"
                     style="--link-color: <?php echo $cat['color']; ?>">
                     <span class="art-cat-dot" style="background-color: <?php echo $cat['color']; ?>"></span>
@@ -99,7 +139,7 @@ include __DIR__ . '/../header.php';
 
             <!-- TL;DR Dashboard Box -->
             <div class="art-tldr">
-                <div class="art-tldr-title">L'essentiel Ã  retenir (TL;DR)</div>
+                <div class="art-tldr-title">L'essentiel à retenir (TL;DR)</div>
                 <ul>
                     <li><strong>Citadine :</strong> Idéale pour la majorité des voyageurs (plages de Grande-Terre,
                         budget maîtrisé).</li>
@@ -149,12 +189,12 @@ include __DIR__ . '/../header.php';
                             <tr>
                                 <td>Couple en séjour plage (Sainte-Anne, St-François)</td>
                                 <td><strong>Citadine</strong></td>
-                                <td>Plus facile Ã  garer, plus économique, suffisante pour des routes classiques.</td>
+                                <td>Plus facile à garer, plus économique, suffisante pour des routes classiques.</td>
                             </tr>
                             <tr>
                                 <td>Exploration de la Basse-Terre (Soufrière, cascades)</td>
                                 <td><strong>SUV / Crossover</strong></td>
-                                <td>Plus Ã  l'aise dans les côtes, plus confortable, meilleure garde au sol.</td>
+                                <td>Plus à l'aise dans les côtes, plus confortable, meilleure garde au sol.</td>
                             </tr>
                             <tr>
                                 <td>Famille avec enfants et grosses valises</td>
@@ -162,9 +202,9 @@ include __DIR__ . '/../header.php';
                                 <td>Plus d'espace dans le coffre et plus de confort sur plusieurs jours.</td>
                             </tr>
                             <tr>
-                                <td>Voyageur tenté par un 4x4 "au cas oÃ¹"</td>
+                                <td>Voyageur tenté par un 4x4 "au cas où"</td>
                                 <td><strong>Souvent inutile</strong></td>
-                                <td>Les routes principales de l'île sont généralement adaptées Ã  des véhicules
+                                <td>Les routes principales de l'île sont généralement adaptées à des véhicules
                                     classiques.</td>
                             </tr>
                         </tbody>
@@ -175,7 +215,7 @@ include __DIR__ . '/../header.php';
                 <p>Pour la Grande-Terre et les zones les plus touristiques, une petite voiture reste souvent le meilleur
                     compromis entre prix, maniabilité et stationnement.</p>
                 <p>À l'inverse, pour la Basse-Terre, les routes plus sinueuses et les pentes plus marquées rendent un
-                    SUV ou un crossover nettement plus confortable Ã  l'usage.</p>
+                    SUV ou un crossover nettement plus confortable à l'usage.</p>
 
                 <div class="art-table-wrap">
                     <table class="art-table">
@@ -215,7 +255,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>Climatisation :</strong> La chaleur tropicale la rend quasi indispensable au quotidien.
                         Évitez absolument les modèles sans clim.</li>
                     <li><strong>Boîte automatique :</strong> Elle améliore nettement le confort dans les bouchons et
-                        dans les zones en pente. Très bon choix autour de Pointe-Ã -Pitre ou Jarry.</li>
+                        dans les zones en pente. Très bon choix autour de Pointe-à-Pitre ou Jarry.</li>
                     <li><strong>Taille du coffre :</strong> À plusieurs, les valises saturent vite une petite voiture.
                         Vérifiez le volume réel du coffre !</li>
                     <li><strong>Garde au sol :</strong> Un crossover peut être très pertinent pour gérer certains accès
@@ -224,14 +264,14 @@ include __DIR__ . '/../header.php';
                 </ul>
 
                 <h2 id="assurance">Assurance, franchise, caution : ce qu'il faut vérifier</h2>
-                <p>Le sujet assurance mérite d'être particulièrement surveillé, car c'est souvent lÃ  que la location la
+                <p>Le sujet assurance mérite d'être particulièrement surveillé, car c'est souvent là que la location la
                     moins chère sur le papier devient la plus coûteuse au final.</p>
 
                 <div class="art-table-wrap">
                     <table class="art-table">
                         <thead>
                             <tr>
-                                <th>Point Ã  contrôler</th>
+                                <th>Point à contrôler</th>
                                 <th>Ce qu'il faut regarder</th>
                             </tr>
                         </thead>
@@ -243,7 +283,7 @@ include __DIR__ . '/../header.php';
                             </tr>
                             <tr>
                                 <td><strong>Franchise</strong></td>
-                                <td>Lisez le montant exact restant Ã  votre charge en cas d'accident. C'est le principal
+                                <td>Lisez le montant exact restant à votre charge en cas d'accident. C'est le principal
                                     risque financier.</td>
                             </tr>
                             <tr>
@@ -253,21 +293,21 @@ include __DIR__ . '/../header.php';
                             </tr>
                             <tr>
                                 <td><strong>Carte premium</strong></td>
-                                <td>Pensez Ã  utiliser votre Visa Premier ou Gold Mastercard qui peut rembourser la
+                                <td>Pensez à utiliser votre Visa Premier ou Gold Mastercard qui peut rembourser la
                                     franchise sous conditions.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p>N'oubliez jamais de prendre des photos et vidéos détaillées de la voiture Ã  la remise des clés et
+                <p>N'oubliez jamais de prendre des photos et vidéos détaillées de la voiture à la remise des clés et
                     lors de la restitution du véhicule. C'est votre meilleure preuve en cas de litige.</p>
 
                 <h2 id="conclusion">Ce qu'il faut retenir</h2>
-                <p>En Guadeloupe, la meilleure voiture Ã  louer est une citadine pour un séjour plage et budget serré,
-                    un SUV / crossover pour un voyage plus complet incluant la Basse-Terre, et un monospace seulement si
+                <p>En Guadeloupe, la meilleure voiture à louer est une citadine pour un séjour plage et budget serré, un
+                    SUV / crossover pour un voyage plus complet incluant la Basse-Terre, et un monospace seulement si
                     les passagers ou les bagages l'exigent vraiment.</p>
                 <p>Le prix affiché ne suffit pas : la transmission manuelle ou automatique, la clim et surtout le
-                    montant de la franchise changent le vrai coût total. Le bon véhicule est celui qui correspond Ã 
+                    montant de la franchise changent le vrai coût total. Le bon véhicule est celui qui correspond à
                     votre programme, pas celui qui paraît le plus imposant.</p>
 
             </div><!-- .art-content -->
@@ -277,75 +317,119 @@ include __DIR__ . '/../header.php';
                 <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>"
                     class="art-author-avatar">
                 <div class="art-author-info">
-                    <span class="art-author-label">La Parole Ã  L'expert</span>
+                    <span class="art-author-label">La Parole à L'expert</span>
                     <h3><?php echo $article['author']; ?></h3>
                     <span class="art-author-role"><?php echo $article['author_role']; ?></span>
                     <p><?php echo $article['author_bio']; ?></p>
-                    <a href="equipe" class="art-author-link">Découvrir toute la rédaction</a>
+                    <a href="/equipe" class="art-author-link">Découvrir toute la rédaction</a>
                 </div>
             </div>
 
             <!-- Heavy Conclusion Box -->
             <div class="art-conclusion">
                 <h2>Le mot de la fin</h2>
-                <p>Prenez votre temps pour comparer et n'hésitez pas Ã  demander toutes les précisions Ã  l'agence de
+                <p>Prenez votre temps pour comparer et n'hésitez pas à demander toutes les précisions à l'agence de
                     location avant de confier l'empreinte de votre carte bancaire !</p>
             </div>
 
-            <!-- Similar Articles Grid -->
+            <!-- Similar Articles Grid (dynamique) -->
             <section class="art-related">
                 <h2 class="art-related-title">Poursuivre la lecture dans <a
-                        href="<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a></h2>
+                        href="/<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a></h2>
                 <div class="art-related-grid">
-                    <a href="#" class="art-related-card">
-                        <div class="art-related-img">
-                            <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=800&auto=format&fit=crop"
-                                alt="Inspection occasion">
-                        </div>
-                        <div class="art-related-body">
-                            <h3>Les 10 points de contrôle obligatoires avant achat</h3>
-                            <p>Notre check-list complète de pro pour déjouer les arnaques.</p>
-                            <span class="art-related-meta">David &bull; 11 Mars 2026</span>
-                        </div>
-                    </a>
+                    <?php if (!empty($same_cat_articles)): ?>
+                        <?php foreach ($same_cat_articles as $rel): ?>
+                            <a href="<?php echo $rel['url']; ?>" class="art-related-card">
+                                <div class="art-related-img">
+                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>"
+                                        alt="<?php echo htmlspecialchars($rel['title']); ?>">
+                                </div>
+                                <div class="art-related-body">
+                                    <h3><?php echo htmlspecialchars($rel['title']); ?></h3>
+                                    <p><?php echo htmlspecialchars($rel['subtitle'] ?? ''); ?></p>
+                                    <span
+                                        class="art-related-meta"><?php echo htmlspecialchars($rel['author'] ?? 'Rédaction'); ?>
+                                        &bull; <?php echo htmlspecialchars($rel['date'] ?? ''); ?></span>
+                                </div>
+                            </a>
+                        <?php endforeach; ?>
+                    <?php elseif (!empty($all_other_articles)): ?>
+                        <?php foreach (array_slice($all_other_articles, 0, 3) as $rel): ?>
+                            <a href="<?php echo $rel['url']; ?>" class="art-related-card">
+                                <div class="art-related-img">
+                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>"
+                                        alt="<?php echo htmlspecialchars($rel['title']); ?>">
+                                </div>
+                                <div class="art-related-body">
+                                    <h3><?php echo htmlspecialchars($rel['title']); ?></h3>
+                                    <p><?php echo htmlspecialchars($rel['subtitle'] ?? ''); ?></p>
+                                    <span
+                                        class="art-related-meta"><?php echo htmlspecialchars($rel['author'] ?? 'Rédaction'); ?>
+                                        &bull; <?php echo htmlspecialchars($rel['date'] ?? ''); ?></span>
+                                </div>
+                            </a>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p style="color: #666; padding: 20px 0;">D'autres articles arrivent bientôt dans cette catégorie !
+                        </p>
+                    <?php endif; ?>
                 </div>
             </section>
 
         </div><!-- .art-main-col -->
 
-        <!-- ASYMMETRIC RIGHT SIDEBAR -->
+        <!-- ASYMMETRIC RIGHT SIDEBAR (dynamique) -->
         <aside class="art-sidebar-right">
             <div class="art-sidebar-sticky">
 
-                <!-- Block: Same Silo IL -->
-                <div class="art-sidebar-block">
-                    <div class="art-sidebar-block-title">
-                        Dans ce dossier
-                    </div>
-                    <a href="#" class="art-side-card">
-                        <div class="art-side-img">
-                            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=400&auto=format&fit=crop"
-                                alt="Mandataire auto">
-                            <span class="art-side-cat-pill"
-                                style="background: <?php echo $article['category_color']; ?>">Achat & Occasion</span>
+                <!-- Block: Same Category Articles -->
+                <?php if (!empty($same_cat_articles)): ?>
+                    <div class="art-sidebar-block">
+                        <div class="art-sidebar-block-title">
+                            Dans ce dossier
                         </div>
-                        <h4>Mandataire auto : une bonne affaire ou un piège ?</h4>
-                    </a>
-                </div>
+                        <?php foreach (array_slice($same_cat_articles, 0, 3) as $sa): ?>
+                            <a href="<?php echo $sa['url']; ?>" class="art-side-card">
+                                <div class="art-side-img">
+                                    <img src="<?php echo htmlspecialchars($sa['image']); ?>"
+                                        alt="<?php echo htmlspecialchars($sa['title']); ?>">
+                                    <span class="art-side-cat-pill"
+                                        style="background: <?php echo $article['category_color']; ?>"><?php echo $article['category_name']; ?></span>
+                                </div>
+                                <h4><?php echo htmlspecialchars($sa['title']); ?></h4>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
 
-                <!-- Block: Recent Cross-Silo IL -->
-                <div class="art-sidebar-block">
-                    <div class="art-sidebar-block-title">
-                        À la Une
-                    </div>
-                    <a href="#" class="art-side-card">
-                        <div class="art-side-img">
-                            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=400&auto=format&fit=crop"
-                                alt="Borne de recharge">
+                <!-- Block: Recent Articles (cross-category) -->
+                <?php if (!empty($all_other_articles)): ?>
+                    <div class="art-sidebar-block">
+                        <div class="art-sidebar-block-title">
+                            À la Une
                         </div>
-                        <h4>Quelle borne de recharge installer Ã  domicile ?</h4>
-                    </a>
-                </div>
+                        <?php foreach (array_slice($all_other_articles, 0, 3) as $ra): ?>
+                            <a href="<?php echo $ra['url']; ?>" class="art-side-card">
+                                <div class="art-side-img">
+                                    <img src="<?php echo htmlspecialchars($ra['image']); ?>"
+                                        alt="<?php echo htmlspecialchars($ra['title']); ?>">
+                                </div>
+                                <h4><?php echo htmlspecialchars($ra['title']); ?></h4>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+
+                <?php if (empty($same_cat_articles) && empty($all_other_articles)): ?>
+                    <!-- Fallback : lien vers catégorie -->
+                    <div class="art-sidebar-block">
+                        <div class="art-sidebar-block-title">Explorer</div>
+                        <a href="/<?php echo $article['category']; ?>" class="btn-primary"
+                            style="display:block; text-align:center; background-color: <?php echo $article['category_color']; ?>; border-color: <?php echo $article['category_color']; ?>; margin-top: 15px;">
+                            Voir tous les articles <?php echo $article['category_name']; ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
 
             </div>
         </aside>
@@ -353,45 +437,38 @@ include __DIR__ . '/../header.php';
     </div><!-- .art-layout-wrapper -->
 </article>
 
-<!-- Schema JSON-LD avec AggregateRating pour booster le CTR -->
+<!-- Schema JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://autoexpert.fr/quel-type-de-voiture-louer-en-guadeloupe"
+    "@id": "https://garageraymond.fr/Blog/quel-type-de-voiture-louer-en-guadeloupe"
   },
   "headline": "Quel type de voiture louer en Guadeloupe ? Guide complet 2026",
   "description": "Citadine, SUV, monospace ou 4x4 : découvrez quelle voiture louer en Guadeloupe selon votre itinéraire, votre budget, vos bagages et les assurances.",
   "image": [
-    "https://autoexpert.fr/Image/Quel%20type%20de%20voiture%20louer%20en%20Guadeloupe.webp"
+    "https://garageraymond.fr/Image/Quel%20type%20de%20voiture%20louer%20en%20Guadeloupe.webp"
   ],
   "datePublished": "2026-03-18T08:00:00+01:00",
   "dateModified": "2026-03-18T10:30:00+01:00",
   "author": {
     "@type": "Person",
     "name": "Arnaud",
-    "url": "https://autoexpert.fr/equipe",
+    "url": "https://garageraymond.fr/equipe",
     "jobTitle": "Rédacteur et Essayeur Automobile"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Le garage expert Auto",
-    "url": "https://autoexpert.fr",
+    "url": "https://garageraymond.fr",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://autoexpert.fr/image/logo.png",
+      "url": "https://garageraymond.fr/Image/logo%20-Le%20garage%20expert%20Auto.png",
       "width": "600",
       "height": "60"
     }
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "ratingCount": "87",
-    "bestRating": "5",
-    "worstRating": "1"
   }
 }
 </script>
