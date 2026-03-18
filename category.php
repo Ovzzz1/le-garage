@@ -63,6 +63,8 @@ $blog_dir = __DIR__ . '/Blog';
 if (is_dir($blog_dir)) {
     $files = glob($blog_dir . '/*.php');
     foreach ($files as $file) {
+        if (str_starts_with(basename($file), '_'))
+            continue;
         $article = null;
         $content = file_get_contents($file);
 

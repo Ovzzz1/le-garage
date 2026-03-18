@@ -25,6 +25,9 @@ $blog_dir = __DIR__ . '/Blog';
 if (is_dir($blog_dir)) {
     $files = glob($blog_dir . '/*.php');
     foreach ($files as $file) {
+        // Skip template files (commençant par _)
+        if (str_starts_with(basename($file), '_'))
+            continue;
         // On réinitialise $article pour chaque fichier
         $article = null;
 
@@ -270,7 +273,8 @@ include 'header.php';
             <section class="section" style="margin-top: 60px;">
                 <div class="section-header">
                     <h2 class="section-title" style="color: <?php echo $cat_info['color']; ?>;">Derniers articles
-                        <span><?php echo $cat_info['name']; ?></span></h2>
+                        <span><?php echo $cat_info['name']; ?></span>
+                    </h2>
                     <a href="/<?php echo $cat_slug; ?>" class="view-all"
                         style="color: <?php echo $cat_info['color']; ?>; border-color: <?php echo $cat_info['color']; ?>;">Voir tout
                         <?php echo $cat_info['name']; ?> <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
