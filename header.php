@@ -1,0 +1,57 @@
+<?php
+/**
+ * header.php
+ * En-tête du site Automobile
+ */
+
+// Si non défini, on configure un tire par défaut
+if (!isset($page_title)) {
+    $page_title = "Le garage expert Auto - Le Blog Automobile Indépendant";
+}
+if (!isset($page_description)) {
+    $page_description = "Le garage expert Auto, le média automobile indépendant. Essais, guides d'achat, comparatifs d'assurances, tutos mécanique et conseils 100% objectifs.";
+}
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo htmlspecialchars($page_title); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/Image/logo%20-Le%20garage%20expert%20Auto.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="/" class="logo-container" style="display:flex; align-items:center;">
+                <img src="/Image/logo%20-Le%20garage%20expert%20Auto.png" alt="Logo Le garage expert Auto" style="max-height: 65px; width: auto;" class="site-logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">Accueil</a></li>
+                    <li><a href="/assurance">Assurance & Financement</a></li>
+                    <li><a href="/entretien">Entretien</a></li>
+                    <li><a href="/electrique">Électrique</a></li>
+                    <li><a href="/occasion">Achat & Occasion</a></li>
+                    <li><a href="/moto">Moto</a></li>
+                    <li><a href="/permis">Permis</a></li>
+                </ul>
+            </nav>
+            
+            <a href="/contact" class="header-cta">Contact</a>
+        </div>
+    </header>
+

@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Options -Indexes
+
+# Custom 404 Error Page 
+ErrorDocument 404 /404.php
+
+# 1. Éviter d'avoir .php dans l'URL si tapé directement (Redirection SEO 301)
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)\\.php$ $1 [R=301,L]
+
+# 2. Gestion automatique des catégories existantes
+RewriteRule ^(assurance|entretien|electrique|occasion|moto|permis)/?$ category.php?cat=$1 [L,QSA]
+
+# 3. Gestion des articles dans Blog/ (URLs propres)
+RewriteRule ^Blog/([a-z0-9\-]+)/?$ Blog/$1.php [L,QSA]
+
+# 4. Rediriger l'URL propre vers le fichier PHP s'il existe sur le serveur
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+</IfModule>
