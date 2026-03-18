@@ -1,0 +1,521 @@
+================================================================================
+     GUIDE COMPLET — CRÉER UN ARTICLE POUR LE GARAGE EXPERT AUTO
+     Site : garageraymond.fr | CMS : PHP custom | Hébergement : Hostinger
+================================================================================
+
+Ce fichier est destiné à tout rédacteur ou agent IA devant créer un nouvel
+article pour le site. Suivre ce guide garantit un article fonctionnel,
+correctement indexé, et intégré automatiquement dans le site.
+
+
+================================================================================
+  1. STRUCTURE DU PROJET
+================================================================================
+
+/le-garage-main/
+├── Blog/                           ← Tous les articles ici
+│   ├── _TEMPLATE-ARTICLE.php       ← Template à copier (ne s'affiche pas)
+│   ├── quel-type-de-voiture-louer-en-guadeloupe.php  ← Exemple réel
+│   └── [slug-du-nouvel-article].php
+├── Image/                          ← Images (logo, photos articles, auteurs)
+├── index.php                       ← Homepage (scan dynamique de Blog/)
+├── category.php                    ← Pages catégories (scan dynamique)
+├── article.php                     ← Template article legacy (non utilisé pour nouveaux)
+├── header.php / footer.php         ← Inclus automatiquement
+├── style.css                       ← Styles globaux
+└── .htaccess                       ← Réécriture d'URL
+
+
+================================================================================
+  2. COMMENT CRÉER UN ARTICLE — ÉTAPES
+================================================================================
+
+ÉTAPE 1 : Nommer le fichier
+─────────────────────────────
+- Copier Blog/_TEMPLATE-ARTICLE.php
+- Renommer avec le SLUG SEO de l'article
+- Format : tout en minuscule, mots séparés par des tirets, pas d'accents
+- Le slug DOIT contenir le mot-clé principal
+
+  ✅ BON :  comment-choisir-son-assurance-auto.php
+  ✅ BON :  prix-vidange-2026-guide-complet.php
+  ✅ BON :  meilleure-voiture-electrique-moins-30000-euros.php
+  ❌ MAUVAIS : article1.php
+  ❌ MAUVAIS : Comment Choisir Son Assurance.php
+  ❌ MAUVAIS : assurance_auto_jeune.php (pas de underscores)
+
+  L'URL finale sera : https://garageraymond.fr/Blog/[slug-du-fichier]
+
+
+ÉTAPE 2 : Remplir les métadonnées ($article array)
+───────────────────────────────────────────────────
+En haut du fichier, le tableau $article contient TOUTES les métadonnées.
+Chaque champ est OBLIGATOIRE.
+
+$article = [
+    'title'          => '...',    // Voir section 3 (SEO Title)
+    'subtitle'       => '...',    // Voir section 4 (Meta Description)
+    'category'       => '...',    // Voir section 5 (Catégories)
+    'category_name'  => '...',    // Nom display de la catégorie
+    'category_color'  => '...',   // Couleur HEX de la catégorie
+    'tags'           => [...],    // 2-4 tags pertinents
+    'image'          => '...',    // Voir section 6 (Image)
+    'date'           => '...',    // Format : "18 Mars 2026"
+    'author'         => '...',    // "Arnaud" ou "David"
+    'author_role'    => '...',    // Rôle de l'auteur
+    'author_img'     => '...',    // Chemin vers la photo
+    'author_bio'     => '...',    // Bio courte
+    'reading_time'   => '...',    // Temps de lecture estimé
+];
+
+
+ÉTAPE 3 : Rédiger le contenu
+─────────────────────────────
+- Écrire le contenu HTML entre <div class="art-content"> et </div>
+- Voir section 7 pour le format du contenu
+
+
+ÉTAPE 4 : Ajouter le Schema JSON-LD
+─────────────────────────────────────
+- Voir section 8
+
+
+ÉTAPE 5 : Upload l'image
+──────────────────────────
+- Voir section 6
+
+
+ÉTAPE 6 : Push sur GitHub
+──────────────────────────
+git add -A
+git commit -m "feat: nouvel article [slug]"
+git push origin main
+
+Le site se met à jour automatiquement via Hostinger Git.
+
+
+================================================================================
+  3. OPTIMISATION DU TITLE (balise <title> et H1)
+================================================================================
+
+Le title est défini par $page_title ET $article['title'].
+
+RÈGLES :
+─────────
+1. Le MOT-CLÉ PRINCIPAL doit être dans le title, idéalement au début
+2. Longueur : 50-60 caractères maximum (title tag = title + " - Le garage expert Auto")
+3. Le H1 (article['title']) peut être légèrement différent du title tag
+4. Inclure l'année si pertinent (ex: "2026") → boost CTR
+5. Utiliser des power words pour le CTR
+
+$page_title = "Mot-clé Principal : sous-titre accrocheur - Le garage expert Auto";
+
+FORMULES QUI MARCHENT :
+─────────────────────────
+"[Mot-clé] : [bénéfice/promesse] en [année]"
+"[Mot-clé] : le guide complet [année]"
+"[Mot-clé] : [chiffre] astuces pour [bénéfice]"
+"[Question avec mot-clé] ? [Réponse courte]"
+
+EXEMPLES :
+───────────
+✅ "Assurance jeune conducteur : comment payer moins cher en 2026 ?"
+✅ "Vidange voiture : prix, fréquence et 5 erreurs à éviter"
+✅ "Quel SUV électrique acheter en 2026 ? Comparatif complet"
+✅ "Courroie de distribution : quand la changer ? Le guide définitif"
+
+❌ "Article sur l'assurance" (trop vague, pas de mot-clé)
+❌ "Tout sur les voitures électriques en France et dans le monde entier" (trop long)
+
+
+================================================================================
+  4. META DESCRIPTION (subtitle)
+================================================================================
+
+La meta description correspond à $page_description ET $article['subtitle'].
+Elle s'affiche dans les résultats Google sous le titre.
+
+RÈGLES :
+─────────
+1. Longueur : 145-155 caractères
+2. Contenir le MOT-CLÉ PRINCIPAL naturellement
+3. Donner envie de cliquer (CTR putaclick raisonné)
+4. Promettre une valeur concrète (guide, comparatif, chiffres, etc.)
+5. Utiliser des chiffres si possible
+6. Terminer par un call-to-action implicite ou une question
+
+FORMULES :
+───────────
+"[Contexte problème]. [Ce qu'on propose]. [Bénéfice concret]."
+"[Mot-clé] : [chiffre] [élément]. On décortique [quoi] pour [bénéfice]."
+"[Question]. Comparatif, prix réels et [valeur ajoutée] dans notre guide."
+
+EXEMPLES :
+───────────
+✅ "Le permis en poche, la facture est salée. On décortique les vraies
+    astuces pour baisser sa prime auto dès la première année."
+
+✅ "Citadine, SUV, monospace ou 4×4 : le guide ultime pour bien choisir
+    son véhicule de location en Guadeloupe."
+
+✅ "Vidange tous les 15 000 km ? Pas si simple. Prix réels, fréquences
+    par modèle et les 5 erreurs qui coûtent cher."
+
+❌ "Article sur les voitures." (trop court, pas de valeur)
+❌ "Bienvenue sur notre article." (inutile)
+
+
+================================================================================
+  5. CATÉGORIES DISPONIBLES
+================================================================================
+
+Il y a exactement 6 catégories. Chaque article DOIT appartenir à UNE seule.
+
+┌─────────────┬─────────────────────────────┬───────────┐
+│ SLUG        │ NOM DISPLAY                 │ COULEUR   │
+├─────────────┼─────────────────────────────┼───────────┤
+│ assurance   │ Assurance & Financement     │ #2563eb   │
+│ entretien   │ Entretien & Réparation      │ #dc2626   │
+│ electrique  │ Électrique & Hybride        │ #059669   │
+│ occasion    │ Achat & Occasion            │ #7c3aed   │
+│ moto        │ Moto & 2 Roues             │ #ea580c   │
+│ permis      │ Permis                      │ #0891b2   │
+└─────────────┴─────────────────────────────┴───────────┘
+
+EXEMPLE pour un article catégorie "entretien" :
+    'category'       => 'entretien',
+    'category_name'  => 'Entretien & Réparation',
+    'category_color' => '#dc2626',
+
+
+================================================================================
+  6. IMAGE MISE EN AVANT (HERO)
+================================================================================
+
+RÈGLES :
+─────────
+1. Format : .webp (OBLIGATOIRE pour la performance)
+2. Dimensions recommandées : 1200x630px minimum (format OG/social)
+3. Taille fichier : < 200 Ko idéalement
+4. Nom du fichier : descriptif, en minuscule, tirets
+   Ex : "quel-type-voiture-louer-guadeloupe.webp"
+5. Uploader dans le dossier /Image/
+6. Chemin dans l'article : '/Image/nom-du-fichier.webp'
+   TOUJOURS commencer par / (chemin absolu depuis la racine du site)
+
+DANS LE CODE :
+───────────────
+    'image' => '/Image/nom-du-fichier.webp',
+
+⚠️ ATTENTION :
+- Le dossier s'appelle "Image" avec un I majuscule
+- Les espaces dans les noms de fichiers fonctionnent mais sont déconseillés
+- Utiliser des tirets plutôt que des espaces
+
+
+================================================================================
+  7. FORMAT DU CONTENU HTML
+================================================================================
+
+Le contenu se place entre <div class="art-content"> et </div>.
+Utiliser les balises HTML suivantes :
+
+STRUCTURE H2/H3 :
+──────────────────
+<h2 id="id-unique">Titre de section principal</h2>
+<h3>Sous-section</h3>
+
+⚠️ Chaque H2 doit avoir un id="" unique pour le sommaire (table of contents)
+⚠️ Le H1 est déjà géré automatiquement par le template (= article title)
+⚠️ NE JAMAIS utiliser de H1 dans le contenu
+
+
+PARAGRAPHES :
+──────────────
+<p>Texte du paragraphe avec du <strong>gras</strong> et de l'<em>italique</em>.</p>
+
+
+LISTES :
+─────────
+<ul>
+    <li><strong>Élément :</strong> description de l'élément.</li>
+    <li><strong>Élément 2 :</strong> description.</li>
+</ul>
+
+
+TABLEAUX (style magazine) :
+─────────────────────────────
+<div class="art-table-wrap">
+    <table class="art-table">
+        <thead>
+            <tr>
+                <th>Colonne 1</th>
+                <th>Colonne 2</th>
+                <th>Colonne 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Ligne 1</strong></td>
+                <td>Valeur</td>
+                <td>Valeur</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+IMAGES DANS LE CONTENU :
+──────────────────────────
+<figure>
+    <img src="/Image/nom-image.webp" alt="Description détaillée de l'image">
+    <figcaption>Légende visible sous l'image</figcaption>
+</figure>
+
+⚠️ L'attribut alt est OBLIGATOIRE pour le SEO
+⚠️ Toujours utiliser /Image/ avec chemin absolu
+
+
+FAQ (pour le SEO et les People Also Ask) :
+──────────────────────────────────────────
+<div class="art-faq">
+    <div class="art-faq-item">
+        <h3>Question fréquente ?</h3>
+        <p>Réponse directe et concise.</p>
+    </div>
+</div>
+
+
+CHECKLIST :
+────────────
+<ul class="art-checklist">
+    <li>Point à vérifier numéro 1.</li>
+    <li>Point à vérifier numéro 2.</li>
+</ul>
+
+
+================================================================================
+  8. BLOC TL;DR (L'ESSENTIEL À RETENIR)
+================================================================================
+
+Ce bloc apparaît en haut de l'article. Il résume les 3-5 points clés.
+C'est aussi ce que Google peut utiliser comme featured snippet.
+
+<div class="art-tldr">
+    <div class="art-tldr-title">L'essentiel à retenir (TL;DR)</div>
+    <ul>
+        <li><strong>Point clé 1 :</strong> Résumé en une phrase.</li>
+        <li><strong>Point clé 2 :</strong> Résumé en une phrase.</li>
+        <li><strong>Point clé 3 :</strong> Résumé en une phrase.</li>
+    </ul>
+</div>
+
+RÈGLES :
+- 3 à 5 puces maximum
+- Chaque puce commence par un mot-clé en gras
+- Réponses directes et factuelles
+
+
+================================================================================
+  9. TABLE DES MATIÈRES (SOMMAIRE)
+================================================================================
+
+Le sommaire liste les H2 de l'article avec des ancres.
+
+<div class="art-toc">
+    <div class="art-toc-title">Dans ce dossier</div>
+    <ol>
+        <li><a href="#id-section-1">Titre section 1</a></li>
+        <li><a href="#id-section-2">Titre section 2</a></li>
+        <li><a href="#conclusion">Ce qu'il faut retenir</a></li>
+    </ol>
+</div>
+
+⚠️ Les href="#..." doivent correspondre EXACTEMENT aux id="" des H2
+
+
+================================================================================
+  10. SCHEMA JSON-LD (DONNÉES STRUCTURÉES)
+================================================================================
+
+Ajouter ce bloc AVANT le <?php include footer ?> en bas du fichier.
+Remplacer les valeurs entre [CROCHETS].
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://garageraymond.fr/Blog/[SLUG-DU-FICHIER]"
+  },
+  "headline": "[TITLE EXACT DE L'ARTICLE — max 110 caractères]",
+  "description": "[META DESCRIPTION]",
+  "image": [
+    "https://garageraymond.fr/Image/[NOM-IMAGE].webp"
+  ],
+  "datePublished": "[AAAA-MM-JJ]T08:00:00+01:00",
+  "dateModified": "[AAAA-MM-JJ]T08:00:00+01:00",
+  "author": {
+    "@type": "Person",
+    "name": "[Arnaud ou David]",
+    "url": "https://garageraymond.fr/equipe",
+    "jobTitle": "[Rédacteur et Essayeur Automobile]"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Le garage expert Auto",
+    "url": "https://garageraymond.fr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://garageraymond.fr/Image/logo%20-Le%20garage%20expert%20Auto.png",
+      "width": "600",
+      "height": "60"
+    }
+  }
+}
+</script>
+
+⚠️ ATTENTION :
+- Toutes les URL doivent utiliser garageraymond.fr (PAS autoexpert.fr)
+- datePublished et dateModified au format ISO 8601
+- headline doit correspondre au title de l'article
+- L'image doit être l'URL complète avec le domaine
+
+
+================================================================================
+  11. SCHEMA FAQ (OPTIONNEL — BOOST SEO)
+================================================================================
+
+Si l'article contient une section FAQ, ajouter un second schema :
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Question 1 ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Réponse à la question 1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Question 2 ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Réponse à la question 2."
+      }
+    }
+  ]
+}
+</script>
+
+
+================================================================================
+  12. AUTEURS DISPONIBLES
+================================================================================
+
+Deux auteurs sont configurés sur le site :
+
+ARNAUD (le fils — rédacteur principal) :
+    'author'      => 'Arnaud',
+    'author_role' => 'Rédacteur & Essayeur passionné',
+    'author_img'  => '/Image/arnaud.png',
+    'author_bio'  => 'Tombé dans le cambouis quand il était petit grâce à son père David, Arnaud a transformé sa passion en expertise. Il teste sans concession les derniers modèles et décortique le marché.',
+
+DAVID (le père — expert mécanique) :
+    'author'      => 'David',
+    'author_role' => 'Expert Mécanique & Co-fondateur',
+    'author_img'  => '/Image/david.png',
+    'author_bio'  => 'Ancien mécanicien de profession avec plus de 30 ans passés les mains dans les moteurs, David est la caution technique absolue du site. Aucune affirmation technique n\'est publiée sans son approbation.',
+
+→ Arnaud pour : essais, assurance, financement, achat, permis, actualité
+→ David pour : tutoriels mécanique, entretien, diagnostic, fiabilité
+
+
+================================================================================
+  13. TAGS
+================================================================================
+
+Les tags apparaissent en haut de l'article dans le hero.
+Utiliser 2 à 4 tags maximum par article.
+
+Exemples par catégorie :
+- assurance  : 'Assurance Auto', 'Jeune Conducteur', 'Économie', 'Comparatif'
+- entretien  : 'Tutoriel Mécanique', 'Vidange', 'Frein', 'Diagnostic'
+- electrique : 'Voiture Électrique', 'Borne Recharge', 'Autonomie', 'Hybride'
+- occasion   : 'Achat Occasion', 'Guide Pratique', 'Fiabilité', 'Arnaque'
+- moto       : 'Essai Moto', 'Équipement', 'Scooter', 'Permis A2'
+- permis     : 'Code Route', 'Réglementation', 'Amende', 'Points Permis'
+
+
+================================================================================
+  14. DATE
+================================================================================
+
+Format OBLIGATOIRE : "JJ Mois AAAA"
+
+Les mois acceptés (avec majuscule) :
+Janvier, Février, Mars, Avril, Mai, Juin,
+Juillet, Août, Septembre, Octobre, Novembre, Décembre
+
+Exemples :
+    'date' => '18 Mars 2026',
+    'date' => '5 Janvier 2027',
+    'date' => '22 Décembre 2026',
+
+
+================================================================================
+  15. CE QUI SE FAIT AUTOMATIQUEMENT (NE PAS TOUCHER)
+================================================================================
+
+Le template gère TOUT automatiquement :
+
+✅ Header (navigation, logo)           → include __DIR__ . '/../header.php'
+✅ Footer                               → include __DIR__ . '/../footer.php'
+✅ Breadcrumb (Accueil > Catégorie > Article)
+✅ Barre de navigation par catégorie
+✅ Box auteur (E-E-A-T)
+✅ Sidebar "Dans ce dossier"            → scan Blog/ même catégorie
+✅ Sidebar "À la Une"                   → scan Blog/ tous articles
+✅ "Poursuivre la lecture"              → scan Blog/ articles similaires
+✅ Apparition sur homepage               → scan Blog/ par index.php
+✅ Apparition sur page catégorie         → scan Blog/ par category.php
+
+NE PAS modifier le code PHP en dehors de la section "art-content".
+NE PAS ajouter de include manuels pour header/footer.
+NE PAS hardcoder de liens vers d'autres articles (le système est dynamique).
+
+
+================================================================================
+  16. CHECKLIST AVANT PUBLICATION
+================================================================================
+
+□ Fichier nommé avec slug SEO contenant le mot-clé principal
+□ $page_title contient le mot-clé principal (50-60 chars + suffixe site)
+□ $page_description est accrocheuse et contient le mot-clé (145-155 chars)
+□ $article['category'] correspond à un des 6 slugs autorisés
+□ $article['category_name'] et ['category_color'] correspondent au slug
+□ $article['image'] pointe vers /Image/fichier.webp (chemin absolu)
+□ L'image existe bien dans le dossier Image/ (format .webp, < 200 Ko)
+□ $article['date'] au format "JJ Mois AAAA"
+□ $article['reading_time'] est réaliste (compter ~250 mots/min)
+□ Tous les H2 ont un id="" unique
+□ Le sommaire (art-toc) correspond aux H2 du contenu
+□ Le TL;DR résume bien les 3-5 points clés
+□ Les tableaux utilisent les classes art-table-wrap et art-table
+□ Les images dans le contenu ont un alt="" descriptif
+□ Schema JSON-LD est présent avec les bonnes URLs (garageraymond.fr)
+□ Aucun lien hardcodé vers des articles fake
+□ Pas de H1 dans le contenu (le H1 est auto-généré depuis article['title'])
+□ Encodage UTF-8 (accents français corrects)
+□ Fichier testé localement ou vérifié visuellement après push
+
+
+================================================================================
+  FIN DU GUIDE
+================================================================================
