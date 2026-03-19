@@ -1,65 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://autoexpert.fr/</loc>
+      <loc>https://www.autoexpert.fr/</loc>
       <lastmod>2026-03-18</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://autoexpert.fr/assurance</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/entretien</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/electrique</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/occasion</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/moto</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/permis</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/quel-type-de-voiture-louer-en-guadeloupe</loc>
+      <loc>https://www.autoexpert.fr/quel-type-de-voiture-louer-en-guadeloupe/</loc>
       <lastmod>2026-03-18</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/a-propos</loc>
-      <changefreq>yearly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/contact</loc>
-      <changefreq>yearly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/mentions-legales</loc>
-      <changefreq>yearly</changefreq>
-      <priority>0.3</priority>
-   </url>
-   <url>
-      <loc>https://autoexpert.fr/politique-confidentialite</loc>
-      <changefreq>yearly</changefreq>
-      <priority>0.3</priority>
    </url>
 </urlset>
