@@ -5,7 +5,7 @@
  */
 header("HTTP/1.0 404 Not Found");
 
-$page_title = "Oulah, Sortie de route l'ami ! ! Erreur 404";
+$page_title = "Oulah, Sortie de route l'amigo ! ! Erreur 404";
 $page_description = "La page que vous cherchez n'existe plus ou a été déplacée.";
 
 include 'header.php';
