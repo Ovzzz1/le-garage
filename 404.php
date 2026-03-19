@@ -5,7 +5,7 @@
  */
 header("HTTP/1.0 404 Not Found");
 
-$page_title = "Sortie de route - Erreur 404 | Le garage expert Auto";
+$page_title = "Oulah, Sortie de route ! Erreur 404";
 $page_description = "La page que vous cherchez n'existe plus ou a été déplacée.";
 
 include 'header.php';
