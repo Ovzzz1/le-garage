@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://autoexpert.fr/sitemap.xml
+Sitemap: https://www.garageraymond.fr/sitemap.xml
