@@ -11,6 +11,10 @@ if (!isset($page_title)) {
 if (!isset($page_description)) {
     $page_description = "Le garage expert Auto, le média automobile indépendant. Essais, guides d'achat, comparatifs d'assurances, tutos mécanique et conseils 100% objectifs.";
 }
+
+// ─── Génération de l'URL Canonical forte (Force WWW) ───
+$request_uri = strtok($_SERVER['REQUEST_URI'], '?'); // Enlève les paramètres GET variables (utm_source etc)
+$canonical_url = "https://www.garageraymond.fr" . $request_uri;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,6 +24,9 @@ if (!isset($page_description)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($page_title); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
+    
+    <!-- Balise Canonical Absolue -->
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
 
     <!-- Favicon -->
     <link rel="icon" href="/Image/favicon.png" type="image/png">
