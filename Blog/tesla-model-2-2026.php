@@ -9,12 +9,12 @@ $page_description = "Tout savoir sur la future Tesla Model 2 (Model Q) attendue 
 $article = [
     'title' => 'Tesla Model 2 : Prix, Date de Sortie, Autonomie... Tout sur la Tesla à 25 000 € en 2026',
     'subtitle' => 'Tesla prépare une véritable révolution avec un nouveau modèle compact abordable. Rumeurs, annonces, design et technologies... Voici ce qui vous attend avec la "Baby Tesla".',
-    'category' => 'electrique',          // 👈 CHOISIR PARMI : assurance, entretien, electrique, occasion, moto, permis
-    'category_name' => 'Électrique & Hybride', // 👈 NOM DISPLAY de la catégorie
-    'category_color' => '#059669',     // 👈 COULEUR : assurance=#2563eb, entretien=#dc2626, electrique=#059669, occasion=#7c3aed, moto=#ea580c, permis=#0891b2
+    'category' => 'electrique',
+    'category_name' => 'Électrique & Hybride',
+    'category_color' => '#059669',
     'tags' => ['Tesla', 'Nouveauté 2026', 'Voiture Électrique'],
-    'image' => '/Image/tesla-model-2-hero.webp',  // 👈 Image hero (à uploader dans /Image/)
-    'date' => '23 Mars 2026',          // 👈 FORMAT : JJ Mois AAAA
+    'image' => '/Image/tesla-model-2-hero.webp',
+    'date' => '23 Mars 2026',
     'author' => 'Arnaud',
     'author_role' => 'Rédacteur & Essayeur passionné',
     'author_img' => '/Image/arnaud.png',
@@ -49,7 +49,7 @@ if (is_dir($blog_dir)) {
 
         if (preg_match('/\$article\s*=\s*\[(.+?)\];/s', $content, $matches)) {
             try {
-                eval ('$other_article = [' . $matches[1] . '];');
+                eval('$other_article = [' . $matches[1] . '];');
             } catch (Throwable $e) {
                 continue;
             }
@@ -82,48 +82,32 @@ include __DIR__ . '/../header.php';
                 <nav class="art-breadcrumb">
                     <a href="/">Accueil</a>
                     <span class="art-bc-sep">/</span>
-                    <a href="/<?php echo $article['category']; ?>">
-                        <?php echo $article['category_name']; ?>
-                    </a>
+                    <a href="/<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a>
                     <span class="art-bc-sep">/</span>
                     <span>Article</span>
                 </nav>
 
                 <div class="art-hero-tags">
                     <?php foreach ($article['tags'] as $tag): ?>
-                        <span class="art-tag">
-                            <?php echo $tag; ?>
-                        </span>
+                        <span class="art-tag"><?php echo $tag; ?></span>
                     <?php endforeach; ?>
                 </div>
 
-                <h1>
-                    <?php echo $article['title']; ?>
-                </h1>
-                <p class="art-hero-sub">
-                    <?php echo $article['subtitle']; ?>
-                </p>
+                <h1><?php echo $article['title']; ?></h1>
+                <p class="art-hero-sub"><?php echo $article['subtitle']; ?></p>
 
                 <div class="art-hero-meta">
                     <div class="art-author-pill">
                         <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>">
                         <div>
-                            <strong>Par
-                                <?php echo $article['author']; ?>
-                            </strong>
-                            <span>
-                                <?php echo $article['author_role']; ?>
-                            </span>
+                            <strong>Par <?php echo $article['author']; ?></strong>
+                            <span><?php echo $article['author_role']; ?></span>
                         </div>
                     </div>
                     <div class="art-meta-infos">
-                        <span>
-                            <?php echo $article['date']; ?>
-                        </span>
+                        <span><?php echo $article['date']; ?></span>
                         <span>&bull;</span>
-                        <span>Lecture
-                            <?php echo $article['reading_time']; ?>
-                        </span>
+                        <span>Lecture <?php echo $article['reading_time']; ?></span>
                     </div>
                 </div>
             </div>
@@ -175,15 +159,13 @@ include __DIR__ . '/../header.php';
                 </ol>
             </div>
 
-            <!-- ═══════════════════════════════════════════ -->
-            <!-- 👇 CONTENU DE L'ARTICLE ICI 👇             -->
-            <!-- ═══════════════════════════════════════════ -->
+            <!-- Article Content -->
             <div class="art-content">
 
                 <h2 id="nom">1. Model 2, Model Q, Robotaxi... Quel est le vrai projet de Tesla ?</h2>
                 <p>Depuis son annonce en 2020, tout le monde cherche à deviner le nom de cette future petite voiture électrique abordable. Si la presse et les passionnés l'appellent souvent <strong>« Model 2 »</strong> ou <strong>« Model Q »</strong>, le célèbre patron de la marque, Elon Musk, n'a jamais confirmé ces noms. Récemment, une rumeur laissait même entendre que le projet de voiture "à petit prix" était totalement annulé.</p>
                 <p>Rassurez-vous, la réalité est bien plus rassurante : le projet n'est pas mort ! Il a simplement évolué pour fusionner avec un autre projet phare de Tesla : le fameux <strong>Robotaxi</strong> (ou Cybercab, un taxi totalement autonome sans conducteur). Pour faire simple, la Model 2 (voiture classique avec un volant pour le grand public) et le Robotaxi (véhicule futuriste sans volant) partageront le même "squelette" (ce que Tesla appelle la plateforme <em>Next-Gen</em>). Diviser les coûts de recherche en deux, c'est l'astuce de Tesla pour enfin proposer une voiture abordable.</p>
-                
+
                 <img src="/Image/tesla-model-2-nom-2026.webp" alt="Rendu 3D spéculatif montrant la parenté entre la Tesla Model 2 et le Robotaxi" style="width:100%; border-radius:10px; margin: 20px 0;">
 
                 <h2 id="date-sortie">2. Calendrier : Quand la verra-t-on sur nos routes ?</h2>
@@ -198,7 +180,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>Des plastiques et tissus simples :</strong> Le traditionnel similicuir (le faux cuir) si cher pourrait être remplacé par des tissus recyclés, tout aussi esthétiques mais bien moins coûteux à produire.</li>
                     <li><strong>Produite en Europe :</strong> Comme la voiture sera (à terme) assemblée en Allemagne, elle aura droit au fameux <strong>Bonus Écologique</strong> de l'État français. Une fois les aides de l'État déduites, le prix payé par le client final se rapprochera fortement du rêve des 25 000 euros !</li>
                 </ul>
-                
+
                 <img src="/Image/tesla-usine-unboxed-process.webp" alt="Illustration du principe l'Unboxed Process en usine de montage" style="width:100%; border-radius:10px; margin: 20px 0;">
 
                 <h2 id="design">4. Habitacle et Design : À quoi ressemblera la "Baby Tesla" ?</h2>
@@ -213,40 +195,31 @@ include __DIR__ . '/../header.php';
                 <p>Pas de gigantesque batterie lourde et ultra-coûteuse comme on peut le voir sur ses grandes soeurs ou d'autres marques premium. Pour cette voiture premier prix, on fait dans l'efficace : Tesla utilisera la technologie de batterie <strong>LFP (Lithium-Fer-Phosphate)</strong>. Pour vulgariser, c'est une technique de batterie légèrement moins dense en énergie, mais qui coûte moins cher à fabriquer et ne requiert pas de métaux précieux très chers. Surtout, elle est connue, à l'usage, pour être très solide dans le temps et elle supporte très bien d'être rechargée à 100% tous les jours.</p>
                 <p>Avec son poids plume calculé au gramme près, cette petite batterie (d'environ 50 kWh) promet de rouler autour de <strong>400 kilomètres sur une seule charge</strong>. Cette estimation est basée sur le cycle européen d'homologation, qu'on appelle la norme officielle <strong>WLTP</strong>. À l'usage, c'est amplement suffisant au quotidien et pour se rendre au travail.</p>
                 <p>Pour les grands départs en vacances, rassurez-vous : la Model 2 aura accès à l'impressionnant réseau mondial de bornes de recharge ultra-rapides de Tesla (les fameux <a href="https://www.tesla.com/fr_fr/supercharger" target="_blank" rel="nofollow external">Superchargeurs</a>). Sur les nouvelles bornes électriques dites "Superchargeurs V4", la voiture pourra ré-absorber d'énormes quantités d'électricité très rapidement, récupérant près de <strong>200 kilomètres de route en à peine 15 minutes de pause café</strong> !</p>
-                
+
                 <h2 id="faq">6. FAQ : Réponses à vos questions sur la Model 2</h2>
-                
+
                 <h3>L'ordinateur de bord (Autopilot) sera-t-il inclus ?</h3>
                 <p>Oui, les outils de sécurité (comme le fait de rester au centre de la route tout seul ou de freiner selon l'allure de la voiture devant vous) seront intégrés (sans surcoût). Mais si vous voulez que la voiture conduise totalement "toute seule" en ville ou gère les ronds-points (ce qu'on appelle "l'Autopilot Amélioré" ou capacité entièrement autonome "FSD"), cela restera une grosse option payante.</p>
-                
+
                 <h3>Va t-elle faire de l'ombre en Europe aux autres marques ?</h3>
                 <p>C'est LA peur de la concurrence ! Cette Model 2 vient affronter sans aucun complexe des stars déjà très connues sur nos routes européennes : la compacte <a href="https://www.volkswagen.fr/fr/modeles/id3.html" target="_blank" rel="nofollow external">Volkswagen ID.3</a>, la berline douce <a href="https://www.renault.fr/vehicules-electriques/megane-e-tech-electrique.html" target="_blank" rel="nofollow external">Renault Megane E-Tech</a>, ou encore la petite merveille au look rétro qu'est la <a href="https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique.html" target="_blank" rel="nofollow external">Renault 5 E-Tech électrique</a>.</p>
-                
+
                 <h3>Faut-il attendre de l'acheter neuve, ou prendre une Tesla Model 3 d'occasion ?</h3>
                 <p>C'est un véritable casse-tête pour les acheteurs. Si vous êtes patient et souhaitez avoir la dernière technologie ultra-compacte pour vous garer en ville en 2027 : attendez. Cependant, le marché déborde en ce moment de grandes berlines familiales "Tesla Model 3 Standard" d'occasion à des prix super intéressants, aux alentours de 25 000 euros. Vous aurez une voiture de gamme supérieure, déjà livrée, roulante et avec un immense coffre. Techniquement, choisir l'occasion reste un des choix les plus malins du moment !</p>
 
                 <h2 id="conclusion">Ce qu'il faut retenir</h2>
                 <p>En couplant l'intelligence informatique de son projet de taxis autonomes à une mécanique de voiture étudiée pour la masse, Elon Musk est en train de redéfinir comment réduire le prix du véhicule électrique de demain. L'attente risque d'être plus longue que prévue pour les impatients européens. Mais la promesse initiale reste éblouissante : une vraie Tesla, ultra technologique, super facile à garer, et qui fait le plein sur autoroute en un clin d'œil face aux marques historiques qui l'attendent au tournant !</p>
 
-            </div><!-- .art-content -->uise par ses engins autonomes de Robotaxi, Elon Musk fait un fantastique saut dans le vide qui rebat de bout en bout l'intégralité du calendrier prévu. Plus technologique, plus ambitieuse mais un peu moins accessible financièrement (au prix brut sortie d'usine), l'électrique du peuple tant attendue pour le cru 2024 cède sa place à une impressionnante arme de conquête prête à débouler en 2026-2027, ne laissant aucun répit à l'empire automobile mondial.</p>
-
             </div><!-- .art-content -->
 
-            <!-- Premium Author Box (NE PAS TOUCHER) -->
+            <!-- Premium Author Box -->
             <div class="art-author-box">
-                <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>"
-                    class="art-author-avatar">
+                <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>" class="art-author-avatar">
                 <div class="art-author-info">
                     <span class="art-author-label">La Parole à L'expert</span>
-                    <h3>
-                        <?php echo $article['author']; ?>
-                    </h3>
-                    <span class="art-author-role">
-                        <?php echo $article['author_role']; ?>
-                    </span>
-                    <p>
-                        <?php echo $article['author_bio']; ?>
-                    </p>
+                    <h3><?php echo $article['author']; ?></h3>
+                    <span class="art-author-role"><?php echo $article['author_role']; ?></span>
+                    <p><?php echo $article['author_bio']; ?></p>
                     <a href="/equipe" class="art-author-link">Découvrir toute la rédaction</a>
                 </div>
             </div>
@@ -259,28 +232,18 @@ include __DIR__ . '/../header.php';
 
             <!-- Similar Articles (DYNAMIQUE — NE PAS TOUCHER) -->
             <section class="art-related">
-                <h2 class="art-related-title">Poursuivre la lecture dans <a href="/<?php echo $article['category']; ?>">
-                        <?php echo $article['category_name']; ?>
-                    </a></h2>
+                <h2 class="art-related-title">Poursuivre la lecture dans <a href="/<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a></h2>
                 <div class="art-related-grid">
                     <?php if (!empty($same_cat_articles)): ?>
                         <?php foreach (array_slice($same_cat_articles, 0, 3) as $rel): ?>
                             <a href="<?php echo $rel['url']; ?>" class="art-related-card">
                                 <div class="art-related-img">
-                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>"
-                                        alt="<?php echo htmlspecialchars($rel['title']); ?>">
+                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>" alt="<?php echo htmlspecialchars($rel['title']); ?>">
                                 </div>
                                 <div class="art-related-body">
-                                    <h3>
-                                        <?php echo htmlspecialchars($rel['title']); ?>
-                                    </h3>
-                                    <p>
-                                        <?php echo htmlspecialchars($rel['subtitle'] ?? ''); ?>
-                                    </p>
-                                    <span class="art-related-meta">
-                                        <?php echo htmlspecialchars($rel['author'] ?? 'Rédaction'); ?> &bull;
-                                        <?php echo htmlspecialchars($rel['date'] ?? ''); ?>
-                                    </span>
+                                    <h3><?php echo htmlspecialchars($rel['title']); ?></h3>
+                                    <p><?php echo htmlspecialchars($rel['subtitle'] ?? ''); ?></p>
+                                    <span class="art-related-meta"><?php echo htmlspecialchars($rel['author'] ?? 'Rédaction'); ?> &bull; <?php echo htmlspecialchars($rel['date'] ?? ''); ?></span>
                                 </div>
                             </a>
                         <?php endforeach; ?>
@@ -288,26 +251,17 @@ include __DIR__ . '/../header.php';
                         <?php foreach (array_slice($all_other_articles, 0, 3) as $rel): ?>
                             <a href="<?php echo $rel['url']; ?>" class="art-related-card">
                                 <div class="art-related-img">
-                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>"
-                                        alt="<?php echo htmlspecialchars($rel['title']); ?>">
+                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>" alt="<?php echo htmlspecialchars($rel['title']); ?>">
                                 </div>
                                 <div class="art-related-body">
-                                    <h3>
-                                        <?php echo htmlspecialchars($rel['title']); ?>
-                                    </h3>
-                                    <p>
-                                        <?php echo htmlspecialchars($rel['subtitle'] ?? ''); ?>
-                                    </p>
-                                    <span class="art-related-meta">
-                                        <?php echo htmlspecialchars($rel['author'] ?? 'Rédaction'); ?> &bull;
-                                        <?php echo htmlspecialchars($rel['date'] ?? ''); ?>
-                                    </span>
+                                    <h3><?php echo htmlspecialchars($rel['title']); ?></h3>
+                                    <p><?php echo htmlspecialchars($rel['subtitle'] ?? ''); ?></p>
+                                    <span class="art-related-meta"><?php echo htmlspecialchars($rel['author'] ?? 'Rédaction'); ?> &bull; <?php echo htmlspecialchars($rel['date'] ?? ''); ?></span>
                                 </div>
                             </a>
                         <?php endforeach; ?>
                     <?php else: ?>
-                        <p style="color: #666; padding: 20px 0;">D'autres articles arrivent bientôt dans cette catégorie !
-                        </p>
+                        <p style="color: #666; padding: 20px 0;">D'autres articles arrivent bientôt dans cette catégorie !</p>
                     <?php endif; ?>
                 </div>
             </section>
@@ -317,22 +271,17 @@ include __DIR__ . '/../header.php';
         <!-- SIDEBAR (DYNAMIQUE — NE PAS TOUCHER) -->
         <aside class="art-sidebar-right">
             <div class="art-sidebar-sticky">
+
                 <?php if (!empty($same_cat_articles)): ?>
                     <div class="art-sidebar-block">
                         <div class="art-sidebar-block-title">Dans ce dossier</div>
                         <?php foreach (array_slice($same_cat_articles, 0, 3) as $sa): ?>
                             <a href="<?php echo $sa['url']; ?>" class="art-side-card">
                                 <div class="art-side-img">
-                                    <img src="<?php echo htmlspecialchars($sa['image']); ?>"
-                                        alt="<?php echo htmlspecialchars($sa['title']); ?>">
-                                    <span class="art-side-cat-pill"
-                                        style="background: <?php echo $article['category_color']; ?>">
-                                        <?php echo $article['category_name']; ?>
-                                    </span>
+                                    <img src="<?php echo htmlspecialchars($sa['image']); ?>" alt="<?php echo htmlspecialchars($sa['title']); ?>">
+                                    <span class="art-side-cat-pill" style="background: <?php echo $article['category_color']; ?>"><?php echo $article['category_name']; ?></span>
                                 </div>
-                                <h4>
-                                    <?php echo htmlspecialchars($sa['title']); ?>
-                                </h4>
+                                <h4><?php echo htmlspecialchars($sa['title']); ?></h4>
                             </a>
                         <?php endforeach; ?>
                     </div>
@@ -344,12 +293,9 @@ include __DIR__ . '/../header.php';
                         <?php foreach (array_slice($all_other_articles, 0, 3) as $ra): ?>
                             <a href="<?php echo $ra['url']; ?>" class="art-side-card">
                                 <div class="art-side-img">
-                                    <img src="<?php echo htmlspecialchars($ra['image']); ?>"
-                                        alt="<?php echo htmlspecialchars($ra['title']); ?>">
+                                    <img src="<?php echo htmlspecialchars($ra['image']); ?>" alt="<?php echo htmlspecialchars($ra['title']); ?>">
                                 </div>
-                                <h4>
-                                    <?php echo htmlspecialchars($ra['title']); ?>
-                                </h4>
+                                <h4><?php echo htmlspecialchars($ra['title']); ?></h4>
                             </a>
                         <?php endforeach; ?>
                     </div>
@@ -360,11 +306,11 @@ include __DIR__ . '/../header.php';
                         <div class="art-sidebar-block-title">Explorer</div>
                         <a href="/<?php echo $article['category']; ?>" class="btn-primary"
                             style="display:block; text-align:center; background-color: <?php echo $article['category_color']; ?>; border-color: <?php echo $article['category_color']; ?>; margin-top: 15px;">
-                            Voir
-                            <?php echo $article['category_name']; ?>
+                            Voir tous les articles <?php echo $article['category_name']; ?>
                         </a>
                     </div>
                 <?php endif; ?>
+
             </div>
         </aside>
 
