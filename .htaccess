@@ -30,3 +30,13 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [L]
 
 </IfModule>
+
+# 5. Forcer le self-canonical dans les Headers HTTP (SEO)
+<IfModule mod_headers.c>
+    # On stocke l'URI demandée dans l'environnement
+    SetEnvIf Request_URI "^(.*)$" REQ_URI=$1
+    # On évite d'ajouter le header sur les fichiers statiques pour économiser de la bande passante
+    SetEnvIf Request_URI "\.(css|js|jpg|jpeg|png|gif|webp|svg|woff|woff2|ico|pdf|txt)$" IS_ASSET
+    # On injecte le header "Link" avec l'attribut rel="canonical"
+    Header set Link "<https://www.garageraymond.fr%{REQ_URI}e>; rel=\"canonical\"" env=!IS_ASSET
+</IfModule>
