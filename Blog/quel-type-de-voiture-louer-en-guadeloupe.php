@@ -3,7 +3,7 @@
  * quel-type-de-voiture-louer-en-guadeloupe.php
  */
 
-$page_title = "Quel type de voiture louer en Guadeloupe ? Guide complet 2025";
+$page_title = "Quel type de voiture louer en Guadeloupe ? Guide complet 2026";
 $page_description = "Citadine, SUV, monospace ou 4x4 : découvrez quelle voiture louer en Guadeloupe selon votre itinéraire, votre budget, vos bagages et les assurances.";
 
 $article = [
