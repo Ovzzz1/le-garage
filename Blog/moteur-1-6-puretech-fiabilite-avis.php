@@ -394,4 +394,29 @@ include __DIR__ . '/../header.php';
           "name": "Quel moteur puretech est fiable ? Existe-t-il une liste des moteurs Stellantis 1.6 Puretech fiables ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oui, le 1.6 PureTech de 180 et 225 chevaux est un moteur à 4 cylindres très recommandé en occasion, contrairement à 
+            "text": "Oui, le 1.6 PureTech de 180 et 225 chevaux est un moteur à 4 cylindres très recommandé en occasion, contrairement à l'ancienne génération du petit 1.2 PureTech tristement célèbre et soumis à des litiges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le moteur 1.6 PureTech est-il équipé d'une courroie ou chaîne ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le moteur 1.6 PureTech est équipé d'une chaîne de distribution métallique sans entretien, lui octroyant une excellente robustesse face au vieillissement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La boîte EAT8 avec le PureTech 180 est-elle source de problèmes ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, la transmission convertisseur de couple EAT8 (Aisin) est réputée quasi indestructible si elle est vidangée occasionnellement."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<?php include __DIR__ . '/../footer.php'; ?>
