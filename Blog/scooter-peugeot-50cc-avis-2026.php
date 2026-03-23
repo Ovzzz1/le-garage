@@ -371,4 +371,55 @@ include __DIR__ . '/../header.php';
       "headline": "<?php echo addslashes($article['title']); ?>",
       "description": "<?php echo addslashes($article['subtitle']); ?>",
       "image": [
-        "https:
+        "https://garageraymond.fr<?php echo $article['image']; ?>"
+      ],
+      "datePublished": "2026-03-23T08:00:00+01:00",
+      "dateModified": "2026-03-23T08:00:00+01:00",
+      "author": {
+        "@type": "Person",
+        "name": "<?php echo $article['author']; ?>",
+        "url": "https://garageraymond.fr/equipe",
+        "jobTitle": "<?php echo $article['author_role']; ?>"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Le garage expert Auto",
+        "url": "https://garageraymond.fr",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://garageraymond.fr/Image/favicon.png",
+          "width": "512",
+          "height": "512"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Combien consomme véritablement un Peugeot 50cc ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Grâce aux moteurs 4 temps, la consommation moyenne est extrêmement faible : environ 2,1 litres aux 100 kilomètres."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Est-ce possible de demander au concessionnaire de débrider son moteur ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non, c'est totalement illégal et dangereux au regard des assurances. Le débridage annule votre couverture contractuelle de responsabilité civile."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Faut-il prévoir du SP95 ou du SP98 ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Sans-Plomb 98 est vivement recommandé pour l'injection électronique car il contient nettement moins d'Éthanol que le SP95-E10 conventionnel."
+        }
+      }]
+    }
+  ]
+}
+</script>
+
+<?php include __DIR__ . '/../footer.php'; ?>
