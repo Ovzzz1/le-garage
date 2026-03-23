@@ -22,7 +22,7 @@ if (!isset($page_description)) {
     <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
 
     <!-- Favicon -->
-    <link rel="icon" href="/Image/logo%20-Le%20garage%20expert%20Auto.png" type="image/png">
+    <link rel="icon" href="/Image/favicon.png" type="image/png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
