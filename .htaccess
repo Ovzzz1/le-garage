@@ -24,6 +24,15 @@ RewriteRule ^(assurance|entretien|electrique|occasion|moto|permis)/?$ category.p
 # 3. Gestion des articles dans Blog/ (URLs propres)
 RewriteRule ^Blog/([a-z0-9\-]+)/?$ Blog/$1.php [L,QSA]
 
+# 3b. Annuaire des marques : /marques/ → marques.php (priorité sur le dossier physique)
+RewriteRule ^marques/?$ marques.php [L]
+
+# 3c. Index par lettre : /marques/a/ → marques/a.php (idem, dossier réel ignoré)
+RewriteRule ^marques/([a-z])/?$ marques/$1.php [L]
+
+# 3d. Pages marques individuelles : /marques/audi → marques/audi.php
+RewriteRule ^marques/([a-z0-9\-]+)/?$ marques/$1.php [L,QSA]
+
 # 4. Rediriger l'URL propre vers le fichier PHP s'il existe sur le serveur
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
