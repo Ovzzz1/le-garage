@@ -62,6 +62,7 @@ $canonical_url = "https://www.garageraymond.fr" . $request_uri;
                     <li><a href="/occasion">Achat & Occasion</a></li>
                     <li><a href="/moto">Moto</a></li>
                     <li><a href="/permis">Permis</a></li>
+                    <li><a href="/marques">Marques</a></li>
                 </ul>
             </nav>
 
