@@ -36,7 +36,7 @@ include __DIR__ . '/../header.php';
 
 <article>
     <section class="art-hero">
-        <img src="<?php echo $article['image']; ?>" alt="Audi RS e-tron GT grise sur autoroute allemande au coucher du soleil" class="art-hero-bg">
+        <img src="<?php echo $article['image']; ?>" alt="Audi RS e-tron GT grise sur autoroute allemande au coucher du soleil" class="art-hero-bg" onerror="this.setAttribute('data-error','true')" onerror="this.setAttribute('data-error','true')">
         <div class="art-hero-overlay"></div>
         <div class="art-hero-container">
             <div class="art-hero-content">
@@ -224,11 +224,11 @@ include __DIR__ . '/../header.php';
 
                 <p><em>Pages modèles à consulter (bientôt disponibles) :</em></p>
                 <ul>
-                    <li><a href="/marques/audi/a3">Audi A3 : Fiche complète et guide d'achat</a></li>
-                    <li><a href="/marques/audi/a4">Audi A4 / A5 B10 : Le renouveau</a></li>
-                    <li><a href="/marques/audi/q3">Audi Q3 : Le SUV compact premium</a></li>
-                    <li><a href="/marques/audi/rs6">Audi RS6 Avant : Le break le plus rapide du monde</a></li>
-                    <li><a href="/marques/audi/e-tron-gt">Audi e-tron GT : La sportive électrique</a></li>
+                    <li>Audi A3 : Fiche complète et guide d'achat <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Audi A4 / A5 B10 : Le renouveau <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Audi Q3 : Le SUV compact premium <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Audi RS6 Avant : Le break le plus rapide du monde <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Audi e-tron GT : La sportive électrique <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
                 </ul>
 
                 <h2 id="motorisations">5. Motorisations TFSI, TDI & e-tron : Le guide technique complet</h2>

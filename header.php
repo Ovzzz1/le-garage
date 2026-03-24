@@ -39,6 +39,11 @@ $canonical_url = "https://www.garageraymond.fr" . $request_uri;
         rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="/style.css">
+    <style>
+        /* Fallback si hero image 404 : gradient visible */
+        .art-hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+        .art-hero-bg[data-error="true"] { display: none !important; }
+    </style>
 </head>
 
 <body>
@@ -59,13 +64,4 @@ $canonical_url = "https://www.garageraymond.fr" . $request_uri;
                     <li><a href="/assurance">Assurance & Financement</a></li>
                     <li><a href="/entretien">Entretien</a></li>
                     <li><a href="/electrique">Électrique</a></li>
-                    <li><a href="/occasion">Achat & Occasion</a></li>
-                    <li><a href="/moto">Moto</a></li>
-                    <li><a href="/permis">Permis</a></li>
-                    <li><a href="/marques">Marques</a></li>
-                </ul>
-            </nav>
-
-            <a href="/contact" class="header-cta">Contact</a>
-        </div>
-    </header>
+                    <li><a href="/occasion">Achat & Occasion<

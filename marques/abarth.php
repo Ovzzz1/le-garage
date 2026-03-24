@@ -48,7 +48,7 @@ include __DIR__ . '/../header.php';
 
 <article>
     <section class="art-hero">
-        <img src="<?php echo $article['image']; ?>" alt="Abarth 595 rouge vif sur circuit" class="art-hero-bg">
+        <img src="<?php echo $article['image']; ?>" alt="Abarth 595 rouge vif sur circuit" class="art-hero-bg" onerror="this.setAttribute('data-error','true')" onerror="this.setAttribute('data-error','true')">
         <div class="art-hero-overlay"></div>
         <div class="art-hero-container">
             <div class="art-hero-content">
@@ -186,9 +186,9 @@ include __DIR__ . '/../header.php';
 
                 <p><em>Pages modèles à consulter (bientôt disponibles) :</em></p>
                 <ul>
-                    <li><a href="/marques/abarth/595">Abarth 595 Competizione : Fiche & Avis complet</a></li>
-                    <li><a href="/marques/abarth/695">Abarth 695 Biposto : Le sommet du scorpion</a></li>
-                    <li><a href="/marques/abarth/500e">Abarth 500e : L'électrique qui gronde</a></li>
+                    <li>Abarth 595 Competizione : Fiche & Avis complet <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Abarth 695 Biposto : Le sommet du scorpion <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Abarth 500e : L'électrique qui gronde <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
                 </ul>
 
                 <h2 id="fiabilite">4. Fiabilité et entretien du moteur 1.4 T-Jet</h2>

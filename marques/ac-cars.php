@@ -22,7 +22,7 @@ include __DIR__ . '/../header.php';
 ?>
 <article>
     <section class="art-hero">
-        <img src="<?php echo $article['image']; ?>" alt="AC Cobra 427 bleue" class="art-hero-bg">
+        <img src="<?php echo $article['image']; ?>" alt="AC Cobra 427 bleue" class="art-hero-bg" onerror="this.setAttribute('data-error','true')" onerror="this.setAttribute('data-error','true')">
         <div class="art-hero-overlay"></div>
         <div class="art-hero-container"><div class="art-hero-content">
             <nav class="art-breadcrumb"><a href="/">Accueil</a><span class="art-bc-sep">/</span><a href="/marques">Annuaire des Marques</a><span class="art-bc-sep">/</span><a href="/marques/a">Marques en A</a><span class="art-bc-sep">/</span><span>AC Cars</span></nav>

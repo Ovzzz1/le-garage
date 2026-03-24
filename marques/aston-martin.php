@@ -36,7 +36,7 @@ include __DIR__ . '/../header.php';
 
 <article>
     <section class="art-hero">
-        <img src="<?php echo $article['image']; ?>" alt="Aston Martin DB11 grise sur route de campagne anglaise" class="art-hero-bg">
+        <img src="<?php echo $article['image']; ?>" alt="Aston Martin DB11 grise sur route de campagne anglaise" class="art-hero-bg" onerror="this.setAttribute('data-error','true')" onerror="this.setAttribute('data-error','true')">
         <div class="art-hero-overlay"></div>
         <div class="art-hero-container">
             <div class="art-hero-content">
@@ -178,9 +178,9 @@ include __DIR__ . '/../header.php';
 
                 <p><em>Pages modèles à consulter (bientôt disponibles) :</em></p>
                 <ul>
-                    <li><a href="/marques/aston-martin/vantage">Aston Martin Vantage : Fiche et guide d'achat</a></li>
-                    <li><a href="/marques/aston-martin/db12">Aston Martin DB12 : Le Super Tourer</a></li>
-                    <li><a href="/marques/aston-martin/dbx707">Aston Martin DBX707 : Le SUV de 707 CV</a></li>
+                    <li>Aston Martin Vantage : Fiche et guide d'achat <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Aston Martin DB12 : Le Super Tourer <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Aston Martin DBX707 : Le SUV de 707 CV <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
                 </ul>
 
                 <h2 id="fiabilite">4. Fiabilité : Le prix de l'exclusivité britannique</h2>

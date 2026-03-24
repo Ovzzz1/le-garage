@@ -36,7 +36,7 @@ include __DIR__ . '/../header.php';
 
 <article>
     <section class="art-hero">
-        <img src="<?php echo $article['image']; ?>" alt="Alpine A110 bleue sur route de montagne" class="art-hero-bg">
+        <img src="<?php echo $article['image']; ?>" alt="Alpine A110 bleue sur route de montagne" class="art-hero-bg" onerror="this.setAttribute('data-error','true')" onerror="this.setAttribute('data-error','true')">
         <div class="art-hero-overlay"></div>
         <div class="art-hero-container">
             <div class="art-hero-content">
@@ -211,9 +211,9 @@ include __DIR__ . '/../header.php';
 
                 <p><em>Pages modèles à consulter (bientôt disponibles) :</em></p>
                 <ul>
-                    <li><a href="/marques/alpine/a110">Alpine A110 : Fiche, avis et guide d'achat</a></li>
-                    <li><a href="/marques/alpine/a290">Alpine A290 : La citadine électrique sportive</a></li>
-                    <li><a href="/marques/alpine/a390">Alpine A390 : Le fastback de 600 CV</a></li>
+                    <li>Alpine A110 : Fiche, avis et guide d'achat <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Alpine A290 : La citadine électrique sportive <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Alpine A390 : Le fastback de 600 CV <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
                 </ul>
 
                 <h2 id="f1">5. Alpine en Formule 1 : L'écurie tricolore</h2>

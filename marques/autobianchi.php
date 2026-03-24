@@ -6,7 +6,7 @@ $categories = ['assurance'=>['name'=>'Assurance & Financement','color'=>'#2563eb
 include __DIR__ . '/../header.php';
 ?>
 <article>
-    <section class="art-hero"><img src="<?php echo $article['image']; ?>" alt="Autobianchi A112 Abarth rouge" class="art-hero-bg"><div class="art-hero-overlay"></div><div class="art-hero-container"><div class="art-hero-content">
+    <section class="art-hero"><img src="<?php echo $article['image']; ?>" alt="Autobianchi A112 Abarth rouge" class="art-hero-bg" onerror="this.setAttribute('data-error','true')" onerror="this.setAttribute('data-error','true')"><div class="art-hero-overlay"></div><div class="art-hero-container"><div class="art-hero-content">
         <nav class="art-breadcrumb"><a href="/">Accueil</a><span class="art-bc-sep">/</span><a href="/marques">Annuaire des Marques</a><span class="art-bc-sep">/</span><a href="/marques/a">Marques en A</a><span class="art-bc-sep">/</span><span>Autobianchi</span></nav>
         <div class="art-hero-tags"><?php foreach ($article['tags'] as $tag): ?><span class="art-tag"><?php echo $tag; ?></span><?php endforeach; ?></div>
         <h1><?php echo $article['title']; ?></h1><p class="art-hero-sub"><?php echo $article['subtitle']; ?></p>

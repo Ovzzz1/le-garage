@@ -48,7 +48,7 @@ include __DIR__ . '/../header.php';
 
 <article>
     <section class="art-hero">
-        <img src="<?php echo $article['image']; ?>" alt="Alfa Romeo Giulia Quadrifoglio rouge sur route italienne" class="art-hero-bg">
+        <img src="<?php echo $article['image']; ?>" alt="Alfa Romeo Giulia Quadrifoglio rouge sur route italienne" class="art-hero-bg" onerror="this.setAttribute('data-error','true')" onerror="this.setAttribute('data-error','true')">
         <div class="art-hero-overlay"></div>
         <div class="art-hero-container">
             <div class="art-hero-content">
@@ -184,10 +184,10 @@ include __DIR__ . '/../header.php';
                 
                 <p><em>Pages modèles à consulter (bientôt disponibles) :</em></p>
                 <ul>
-                    <li><a href="/marques/alfa-romeo/giulia">Alfa Romeo Giulia : Fiche, avis et fiabilité</a></li>
-                    <li><a href="/marques/alfa-romeo/stelvio">Alfa Romeo Stelvio : Le SUV sportif italien</a></li>
-                    <li><a href="/marques/alfa-romeo/tonale">Alfa Romeo Tonale : L'hybride rechargeable</a></li>
-                    <li><a href="/marques/alfa-romeo/junior">Alfa Romeo Junior : L'entrée de gamme électrique</a></li>
+                    <li>Alfa Romeo Giulia : Fiche, avis et fiabilité <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Alfa Romeo Stelvio : Le SUV sportif italien <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Alfa Romeo Tonale : L'hybride rechargeable <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
+                    <li>Alfa Romeo Junior : L'entrée de gamme électrique <span style="color:#999;font-size:0.85em;">(bientôt)</span></li>
                 </ul>
 
                 <h2 id="fiabilite">5. Fiabilité Alfa Romeo : Mythe ou réalité ?</h2>
