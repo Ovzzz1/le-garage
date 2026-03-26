@@ -495,8 +495,8 @@ include __DIR__ . '/../header.php';
         "@type": "WebPage",
         "@id": "https://garageraymond.fr/Blog/pifauto-com-liste-voiture"
       },
-      "headline": "<?php echo addslashes($article['title']); ?>",
-      "description": "<?php echo addslashes($article['subtitle']); ?>",
+      "headline": <?php echo json_encode($article['title']); ?>,
+      "description": <?php echo json_encode($article['subtitle']); ?>,
       "image": [
         "https://garageraymond.fr<?php echo $article['image']; ?>"
       ],
@@ -504,9 +504,9 @@ include __DIR__ . '/../header.php';
       "dateModified": "2026-03-24T08:00:00+01:00",
       "author": {
         "@type": "Person",
-        "name": "<?php echo $article['author']; ?>",
+        "name": <?php echo json_encode($article['author']); ?>,
         "url": "https://garageraymond.fr/equipe",
-        "jobTitle": "<?php echo $article['author_role']; ?>"
+        "jobTitle": <?php echo json_encode($article['author_role']); ?>
       },
       "publisher": {
         "@type": "Organization",
