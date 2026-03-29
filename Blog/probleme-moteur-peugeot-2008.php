@@ -7,46 +7,46 @@ $page_title = "Problème Moteur Peugeot 2008 : Défauts, Voyants et Moteurs à �
 $page_description = "Voyant défaut moteur sur votre Peugeot 2008 ? Surconsommation d'huile ? Découvrez notre guide complet sur les pannes fréquentes du 1.2 PureTech essence et les versions à fuir.";
 
 $article = [
-    'title' => 'Problème Moteur Peugeot 2008 (Essence & Diesel) : Le Guide Noir des Pannes',
-    'subtitle' => 'Le Peugeot 2008 est un best-seller absolu. Pourtant, l’allumage terrifiant du voyant "Défaut Moteur" hante des milliers de propriétaires. Courroie effritée, crépine bouchée, diesel capricieux... Voici tout ce qu\'il faut savoir.',
-    'category' => 'entretien',
-    'category_name' => 'Entretien & Réparation',
+    'title'          => 'Problème Moteur Peugeot 2008 (Essence & Diesel) : Le Guide Noir des Pannes',
+    'subtitle'       => "Le Peugeot 2008 est un best-seller absolu. Pourtant, l'allumage terrifiant du voyant \"Défaut Moteur\" hante des milliers de propriétaires. Courroie effritée, crépine bouchée, diesel capricieux... Voici tout ce qu'il faut savoir.",
+    'category'       => 'entretien',
+    'category_name'  => 'Entretien & Réparation',
     'category_color' => '#dc2626',
-    'tags' => ['Peugeot 2008', 'Voyant Moteur', 'PureTech', 'Guide Occasion', 'Fiabilité'],
-    'image' => '/Image/peugeot-2008-probleme-moteur.webp', // Placeholder
-    'date' => '24 Mars 2026',
-    'author' => 'Arnaud',
-    'author_role' => 'Expert Mécanique',
-    'author_img' => '/Image/arnaud.png',
-    'author_bio' => 'Avec des centaines de diagnostics OBD à son actif, Arnaud décrypte les maladies chroniques des moteurs Stellantis pour vous éviter les factures astronomiques.',
-    'reading_time' => '10 min',
+    'tags'           => ['Peugeot 2008', 'Voyant Moteur', 'PureTech', 'Guide Occasion', 'Fiabilité'],
+    'image'          => '/Image/peugeot-2008-probleme-moteur.webp',
+    'date'           => '24 Mars 2026',
+    'author'         => 'Arnaud',
+    'author_role'    => 'Expert Mécanique',
+    'author_img'     => '/Image/arnaud.png',
+    'author_bio'     => "Avec des centaines de diagnostics OBD à son actif, Arnaud décrypte les maladies chroniques des moteurs Stellantis pour vous éviter les factures astronomiques.",
+    'reading_time'   => '10 min',
 ];
 
 $categories = [
-    'assurance' => ['name' => 'Assurance & Financement', 'color' => '#2563eb', 'slug' => 'assurance'],
-    'entretien' => ['name' => 'Entretien & Réparation', 'color' => '#dc2626', 'slug' => 'entretien'],
-    'electrique' => ['name' => 'Électrique & Hybride', 'color' => '#059669', 'slug' => 'electrique'],
-    'occasion' => ['name' => 'Achat & Occasion', 'color' => '#7c3aed', 'slug' => 'occasion'],
-    'moto' => ['name' => 'Moto & 2 Roues', 'color' => '#ea580c', 'slug' => 'moto'],
-    'permis' => ['name' => 'Permis', 'color' => '#0891b2', 'slug' => 'permis'],
+    'assurance' => ['name' => 'Assurance & Financement',  'color' => '#2563eb', 'slug' => 'assurance'],
+    'entretien' => ['name' => 'Entretien & Réparation',   'color' => '#dc2626', 'slug' => 'entretien'],
+    'electrique' => ['name' => 'Électrique & Hybride',    'color' => '#059669', 'slug' => 'electrique'],
+    'occasion'  => ['name' => 'Achat & Occasion',         'color' => '#7c3aed', 'slug' => 'occasion'],
+    'moto'      => ['name' => 'Moto & 2 Roues',           'color' => '#ea580c', 'slug' => 'moto'],
+    'permis'    => ['name' => 'Permis',                   'color' => '#0891b2', 'slug' => 'permis'],
 ];
 
 // ─── Scan dynamique du Blog/ pour le linking interne ───
-$current_slug = pathinfo(__FILE__, PATHINFO_FILENAME);
-$same_cat_articles = [];
-$all_other_articles = [];
-$blog_dir = __DIR__;
+$current_slug        = pathinfo(__FILE__, PATHINFO_FILENAME);
+$same_cat_articles   = [];
+$all_other_articles  = [];
+$blog_dir            = __DIR__;
 
 if (is_dir($blog_dir)) {
     $files = glob($blog_dir . '/*.php');
     foreach ($files as $file) {
         $file_slug = pathinfo($file, PATHINFO_FILENAME);
-        if ($file_slug === $current_slug) continue; 
+        if ($file_slug === $current_slug) continue;
 
         $other_article = null;
-        $content = file_get_contents($file);
+        $content       = file_get_contents($file);
 
-        if (preg_match('/\$article\s*=\s*\[(.+?)\];/s', $content, $matches)) {
+        if (preg_match('/\\$article\\s*=\\s*\\[(.+?)\\];/s', $content, $matches)) {
             try {
                 eval('$other_article = [' . $matches[1] . '];');
             } catch (Throwable $e) {
@@ -55,8 +55,8 @@ if (is_dir($blog_dir)) {
         }
 
         if ($other_article && isset($other_article['title'])) {
-            $other_article['slug'] = $file_slug;
-            $other_article['url'] = '/Blog/' . $file_slug;
+            $other_article['slug']  = $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -137,7 +137,7 @@ include __DIR__ . '/../header.php';
             <div class="art-tldr">
                 <div class="art-tldr-title">Le Diagnostic Rapide (TL;DR)</div>
                 <ul>
-                    <li><strong>La Panne N°1 :</strong> Le <strong>problème moteur peugeot 2008 essence</strong> (1.2 PureTech 110 et 130 ch) provient d'une courroie de distribution humide qui se désagrège dans l’huile, bouchant la crépine.</li>
+                    <li><strong>La Panne N°1 :</strong> Le <strong>problème moteur peugeot 2008 essence</strong> (1.2 PureTech 110 et 130 ch) provient d'une courroie de distribution humide qui se désagrège dans l'huile, bouchant la crépine.</li>
                     <li><strong>Le Symptôme :</strong> Une forte surconsommation d'huile suivie du <strong>voyant défaut moteur peugeot 2008 essence</strong> avec le message "Défaut pression d'huile : arrêtez le véhicule".</li>
                     <li><strong>Moteurs à éviter :</strong> Fuyez les modèles essence de 2013 à 2018 non mis à jour, ainsi que les vieux diesels 1.6 HDi 92.</li>
                     <li><strong>Prise en charge :</strong> Face à l'UFC-Que Choisir, Stellantis a étendu la garantie du bloc 1.2 PureTech à <strong>10 ans ou 175 000 km</strong>.</li>
@@ -164,11 +164,11 @@ include __DIR__ . '/../header.php';
 
                 <h2 id="puretech-essence">1. Le fléau du 1.2 PureTech : Le problème moteur Peugeot 2008 essence N°1</h2>
                 <p>Si vous tapez "<strong>peugeot 2008 probleme moteur</strong>" sur Internet, vous tomberez inévitablement sur un seul et même coupable : le fameux 3 cylindres essence 1.2 PureTech (généralement en 110 ou 130 chevaux). Couronné "moteur de l'année" à ses débuts pour sa souplesse, il cache un défaut de conception majeur : sa <strong>courroie de distribution baigne dans l'huile moteur</strong>.</p>
-                
+
                 <h3>La mécanique du désastre (La crépine bouchée)</h3>
                 <p>Avec le temps et les cycles urbains à froid, l'essence non brûlée contamine l'huile du carter. Cette huile, devenue très abrasive, attaque chimiquement la matière de la courroie de distribution (les fameuses générations de 2013 à 2018 principalement). <strong>La courroie s'effrite et perd ses dents</strong>. Les résidus de caoutchouc tombent au fond du carter et viennent littéralement <strong>boucher la crépine de la pompe à huile</strong> (le filtre qui aspire l'huile pour lubrifier le moteur).</p>
                 <p>Résultat : le haut de votre moteur n'est plus lubrifié, la pompe à vide des freins peut dysfonctionner (la pédale devient dure, ce qui est très dangereux aux intersections), et c'est la casse moteur imminente. Le symptôme le plus franc ? Une <strong>surconsommation d'huile féroce</strong> (dépassant les 0.25L aux 1000 km, montant parfois jusqu'à 1L/1000km).</p>
-                
+
                 <div class="art-table-wrap">
                     <table class="art-table">
                         <thead>
@@ -198,7 +198,6 @@ include __DIR__ . '/../header.php';
                     </table>
                 </div>
 
-                <!-- PLACEHOLDER IMAGE : Moteur 1.2 PureTech crépine ou casse courroie -->
                 <img src="/Image/courroie-puretech-effritee-2008.webp" alt="Courroie de distribution désagrégée sur un moteur 1.2 PureTech de Peugeot 2008" style="width:100%; border-radius:10px; margin: 20px 0;">
 
                 <h2 id="voyant-reparez">2. L'angoisse du "voyant défaut moteur peugeot 2008 essence"</h2>
@@ -241,7 +240,6 @@ include __DIR__ . '/../header.php';
                     </table>
                 </div>
 
-                <!-- PLACEHOLDER IMAGE : Peugeot 2008 en panne sur le bas coté -->
                 <img src="/Image/peugeot-2008-en-panne-voyant-allume.webp" alt="Peugeot 2008 de couleur orange en panne sur une route avec le capot ouvert" style="width:100%; border-radius:10px; margin: 20px 0;">
 
                 <h2 id="moteurs-fiables">5. Les moteurs 2008 "Sans Soucis" (Ce qu'on vous recommande)</h2>
@@ -256,8 +254,7 @@ include __DIR__ . '/../header.php';
 
             <!-- Premium Author Box -->
             <div class="art-author-box">
-                <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>"
-                     class="art-author-avatar">
+                <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>" class="art-author-avatar">
                 <div class="art-author-info">
                     <span class="art-author-label">L'Analyse Juridique & Mécanique</span>
                     <h3><?php echo $article['author']; ?></h3>
@@ -270,28 +267,26 @@ include __DIR__ . '/../header.php';
             <!-- Conclusion Box -->
             <div class="art-conclusion">
                 <h2 id="faq">FAQ : Garanties, huiles et recours légaux (PureTech)</h2>
-                
+
                 <h3>Peugeot 2008 1.2 puretech problème : Quelle est la garantie Stellantis ou la prise en charge (Vice Caché) ?</h3>
                 <p>Sous la pression massive juridique (notamment détaillée sur le prolifique <a href="https://forum.quechoisir.org/probleme-moteur-peugeot-2008-defaut-de-fabrication-et-recours-possible-au-titre-de-la-garantie-des-vices-caches-t359554.html" target="_blank" rel="nofollow external">forum de l'UFC-Que Choisir : recours garantie des vices cachés</a>), Stellantis a officiellement <strong>étendu la garantie de son moteur PureTech à 10 ans ou 175 000 km</strong> spécifiquement pour la courroie qui se désagrège. Attention, l'application de cette prise en charge est stricte : vous devez pouvoir justifier auprès de l'agent de la marque d'un plan d'entretien respecté scrupuleusement avec factures de garagistes, à l'année près ou tous les 20 000 km max.</p>
 
                 <h3>Quelle huile moteur mettre dans un Peugeot 2008 1.2 Essence pour éviter la panne ?</h3>
                 <p>L'huile est votre première ligne de défense ! Stellantis a modifié ses préconisations drastiquement en 2024. Il est désormais impératif d'utiliser la nouvelle norme d'huile <strong>5W30 (norme FPW9.55535/03)</strong> spécialement formulée pour ne pas attaquer chimiquement le caoutchouc de la courroie. Ne faites plus les vidanges avec l'ancienne 0W30 chez un garagiste non informé.</p>
-                
+
                 <h3>Le défaut de surconsommation d'huile indique-t-il que mon moteur 2008 est mort ?</h3>
                 <p>Oui et non. Une légère surconsommation peut être inhérente au moteur turbocompressé. En revanche, si vous dépassez les 1 litre d'huile ajoutés tous les 1 000 km, les segments de vos pistons sont probablement gommés. Le réseau Peugeot procède alors généralement au remplacement standard (moteur complet) via leur extension de garantie.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
             <section class="art-related">
-                <h2 class="art-related-title">Poursuivre la lecture dans <a
-                        href="/<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a></h2>
+                <h2 class="art-related-title">Poursuivre la lecture dans <a href="/<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a></h2>
                 <div class="art-related-grid">
                     <?php if (!empty($same_cat_articles)): ?>
                         <?php foreach (array_slice($same_cat_articles, 0, 3) as $rel): ?>
                             <a href="<?php echo $rel['url']; ?>" class="art-related-card">
                                 <div class="art-related-img">
-                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>"
-                                        alt="<?php echo htmlspecialchars($rel['title']); ?>">
+                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>" alt="<?php echo htmlspecialchars($rel['title']); ?>">
                                 </div>
                                 <div class="art-related-body">
                                     <h3><?php echo htmlspecialchars($rel['title']); ?></h3>
@@ -304,8 +299,7 @@ include __DIR__ . '/../header.php';
                         <?php foreach (array_slice($all_other_articles, 0, 3) as $rel): ?>
                             <a href="<?php echo $rel['url']; ?>" class="art-related-card">
                                 <div class="art-related-img">
-                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>"
-                                        alt="<?php echo htmlspecialchars($rel['title']); ?>">
+                                    <img src="<?php echo htmlspecialchars($rel['image']); ?>" alt="<?php echo htmlspecialchars($rel['title']); ?>">
                                 </div>
                                 <div class="art-related-body">
                                     <h3><?php echo htmlspecialchars($rel['title']); ?></h3>
@@ -331,10 +325,8 @@ include __DIR__ . '/../header.php';
                         <?php foreach (array_slice($same_cat_articles, 0, 3) as $sa): ?>
                             <a href="<?php echo $sa['url']; ?>" class="art-side-card">
                                 <div class="art-side-img">
-                                    <img src="<?php echo htmlspecialchars($sa['image']); ?>"
-                                        alt="<?php echo htmlspecialchars($sa['title']); ?>">
-                                    <span class="art-side-cat-pill"
-                                        style="background: <?php echo $article['category_color']; ?>"><?php echo $article['category_name']; ?></span>
+                                    <img src="<?php echo htmlspecialchars($sa['image']); ?>" alt="<?php echo htmlspecialchars($sa['title']); ?>">
+                                    <span class="art-side-cat-pill" style="background: <?php echo $article['category_color']; ?>"><?php echo $article['category_name']; ?></span>
                                 </div>
                                 <h4><?php echo htmlspecialchars($sa['title']); ?></h4>
                             </a>
@@ -348,8 +340,7 @@ include __DIR__ . '/../header.php';
                         <?php foreach (array_slice($all_other_articles, 0, 3) as $ra): ?>
                             <a href="<?php echo $ra['url']; ?>" class="art-side-card">
                                 <div class="art-side-img">
-                                    <img src="<?php echo htmlspecialchars($ra['image']); ?>"
-                                        alt="<?php echo htmlspecialchars($ra['title']); ?>">
+                                    <img src="<?php echo htmlspecialchars($ra['image']); ?>" alt="<?php echo htmlspecialchars($ra['title']); ?>">
                                 </div>
                                 <h4><?php echo htmlspecialchars($ra['title']); ?></h4>
                             </a>
@@ -371,71 +362,72 @@ include __DIR__ . '/../header.php';
 
 <!-- Schema JSON-LD (Article + FAQ) -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://garageraymond.fr/Blog/probleme-moteur-peugeot-2008"
-      },
-      "headline": "<?php echo addslashes($article['title']); ?>",
-      "description": "<?php echo addslashes($article['subtitle']); ?>",
-      "image": [
-        "https://garageraymond.fr<?php echo $article['image']; ?>"
-      ],
-      "datePublished": "2026-03-24T08:00:00+01:00",
-      "dateModified": "2026-03-24T08:00:00+01:00",
-      "author": {
-        "@type": "Person",
-        "name": "<?php echo $article['author']; ?>",
-        "url": "https://garageraymond.fr/equipe",
-        "jobTitle": "<?php echo $article['author_role']; ?>"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Le garage expert Auto",
-        "url": "https://garageraymond.fr",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://garageraymond.fr/Image/favicon.png",
-          "width": "512",
-          "height": "512"
-        }
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Peugeot 2008 1.2 puretech problème : Quelle est la garantie ou la prise en charge (Vice Caché) ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Face aux alertes, Stellantis a étendu la garantie du moteur 1.2 PureTech (voyant défaut pression d'huile / courroie) à 10 ans ou 175 000 km, sous réserve d'un suivi d'entretien rigoureux dans le réseau."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quelle huile moteur mettre dans un Peugeot 2008 1.2 Essence ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depuis février 2024, Stellantis recommande d'utiliser impérativement la nouvelle homologation d'huile 5W30 norme FPW9.55535/03 pour protéger la courroie de distribution humide."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Moteur Peugeot 2008 à éviter : Quelle année ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Il est particulièrement conseillé d'éviter les modèles 1.2 PureTech des années 2013 à 2018 (surtout 2015), qui sont les plus durement touchés par la courroie qui s'effrite."
-          }
-        }
-      ]
-    }
-  ]
-}
+<?php
+$schema = [
+    "@context" => "https://schema.org",
+    "@graph"   => [
+        [
+            "@type"            => "Article",
+            "mainEntityOfPage" => [
+                "@type" => "WebPage",
+                "@id"   => "https://garageraymond.fr/Blog/probleme-moteur-peugeot-2008"
+            ],
+            "headline"         => $article['title'],
+            "description"      => $article['subtitle'],
+            "image"            => [ "https://garageraymond.fr" . $article['image'] ],
+            "datePublished"    => "2026-03-24T08:00:00+01:00",
+            "dateModified"     => "2026-03-24T08:00:00+01:00",
+            "author"           => [
+                "@type"    => "Person",
+                "name"     => $article['author'],
+                "url"      => "https://garageraymond.fr/equipe",
+                "jobTitle" => $article['author_role']
+            ],
+            "publisher"        => [
+                "@type" => "Organization",
+                "name"  => "Le garage expert Auto",
+                "url"   => "https://garageraymond.fr",
+                "logo"  => [
+                    "@type"  => "ImageObject",
+                    "url"    => "https://garageraymond.fr/Image/favicon.png",
+                    "width"  => "512",
+                    "height" => "512"
+                ]
+            ]
+        ],
+        [
+            "@type"      => "FAQPage",
+            "mainEntity" => [
+                [
+                    "@type"          => "Question",
+                    "name"           => "Peugeot 2008 1.2 puretech problème : Quelle est la garantie ou la prise en charge (Vice Caché) ?",
+                    "acceptedAnswer" => [
+                        "@type" => "Answer",
+                        "text"  => "Face aux alertes, Stellantis a étendu la garantie du moteur 1.2 PureTech (voyant défaut pression d'huile / courroie) à 10 ans ou 175 000 km, sous réserve d'un suivi d'entretien rigoureux dans le réseau."
+                    ]
+                ],
+                [
+                    "@type"          => "Question",
+                    "name"           => "Quelle huile moteur mettre dans un Peugeot 2008 1.2 Essence ?",
+                    "acceptedAnswer" => [
+                        "@type" => "Answer",
+                        "text"  => "Depuis février 2024, Stellantis recommande d'utiliser impérativement la nouvelle homologation d'huile 5W30 norme FPW9.55535/03 pour protéger la courroie de distribution humide."
+                    ]
+                ],
+                [
+                    "@type"          => "Question",
+                    "name"           => "Moteur Peugeot 2008 à éviter : Quelle année ?",
+                    "acceptedAnswer" => [
+                        "@type" => "Answer",
+                        "text"  => "Il est particulièrement conseillé d'éviter les modèles 1.2 PureTech des années 2013 à 2018 (surtout 2015), qui sont les plus durement touchés par la courroie qui s'effrite."
+                    ]
+                ]
+            ]
+        ]
+    ]
+];
+echo json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+?>
 </script>
 
 <?php include __DIR__ . '/../footer.php'; ?>
