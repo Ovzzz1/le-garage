@@ -203,7 +203,7 @@ include __DIR__ . '/../header.php';
   "@type": "CollectionPage",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.garageraymond.fr/marques/a" },
   "name": "Marques Automobiles en A",
-  "description": "<?php echo addslashes($page_description); ?>",
+  "description": <?php echo json_encode($page_description ?? '', JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?>,
   "numberOfItems": 24,
   "publisher": { "@type": "Organization", "name": "Le garage expert Auto", "url": "https://www.garageraymond.fr" }
 }
