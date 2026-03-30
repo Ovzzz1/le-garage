@@ -9,9 +9,9 @@ $page_description = "Comment transformer votre voiture en couchage confortable ?
 $article = [
     'title'          => "Aménager sa voiture pour dormir : le guide complet pour un couchage confortable",
     'subtitle'       => "Du choix du matelas à l'organisation des rangements, en passant par l'isolation thermique et la ventilation : voici comment transformer n'importe quelle voiture en bivouac discret et confortable.",
-    'category'       => 'conseils',
-    'category_name'  => 'Conseils & Lifestyle',
-    'category_color' => '#ea580c',
+    'category'       => 'entretien',
+    'category_name'  => 'Entretien & Réparation',
+    'category_color' => '#dc2626',
     'tags'           => ['Van Life', 'Road Trip', 'Camping', 'Bivouac'],
     'image'          => '/Image/amenager-voiture-pour-dormir1.webp',
     'date'           => '30 Mars 2026',
@@ -28,7 +28,7 @@ $categories = [
     'electrique' => ['name' => 'Électrique & Hybride',    'color' => '#059669', 'slug' => 'electrique'],
     'occasion'   => ['name' => 'Achat & Occasion',        'color' => '#7c3aed', 'slug' => 'occasion'],
     'moto'       => ['name' => 'Moto & 2 Roues',          'color' => '#f59e0b', 'slug' => 'moto'],
-    'conseils'   => ['name' => 'Conseils & Lifestyle',    'color' => '#ea580c', 'slug' => 'conseils'],
+    'permis'     => ['name' => 'Permis',                  'color' => '#0891b2', 'slug' => 'permis'],
 ];
 
 // ─── Scan dynamique du Blog/ pour le linking interne ───
@@ -315,12 +315,12 @@ include __DIR__ . '/../header.php';
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="background: #fff7ed;">
+                            <tr style="background: #fef2f2;">
                                 <td><strong>Mousse HD sur mesure</strong></td>
                                 <td>⭐⭐⭐⭐⭐</td>
                                 <td>⭐⭐⭐ (se range debout)</td>
                                 <td>60 – 120 €</td>
-                                <td>Voyageurs réguliers <span style="background:#ea580c;color:#fff;font-size:0.7rem;padding:2px 6px;border-radius:3px;margin-left:4px;">Notre choix</span></td>
+                                <td>Voyageurs réguliers <span style="background:#dc2626;color:#fff;font-size:0.7rem;padding:2px 6px;border-radius:3px;margin-left:4px;">Notre choix</span></td>
                             </tr>
                             <tr>
                                 <td><strong>Matelas gonflable spécial</strong></td>
@@ -425,7 +425,7 @@ include __DIR__ . '/../header.php';
 
             </div><!-- .art-content -->
 
-            <!-- Premium Author Box — format exact Arnaud -->
+            <!-- Premium Author Box -->
             <div class="art-author-box">
                 <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>" class="art-author-avatar" width="80" height="80">
                 <div class="art-author-info">
@@ -547,20 +547,20 @@ include __DIR__ . '/../header.php';
 <!-- ░░░ CHECKLIST CSS + JS ░░░ -->
 <style>
 .bivouac-checklist { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; margin: 2rem 0; font-family: inherit; }
-.checklist-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; background: #fff7ed; border-bottom: 1px solid #fed7aa; }
-.checklist-title { font-weight: 700; font-size: 0.9375rem; color: #9a3412; }
-.checklist-progress { font-size: 0.875rem; font-weight: 700; color: #ea580c; font-variant-numeric: tabular-nums; }
+.checklist-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; background: #fef2f2; border-bottom: 1px solid #fecaca; }
+.checklist-title { font-weight: 700; font-size: 0.9375rem; color: #991b1b; }
+.checklist-progress { font-size: 0.875rem; font-weight: 700; color: #dc2626; font-variant-numeric: tabular-nums; }
 .checklist-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
 @media (max-width: 640px) { .checklist-cols { grid-template-columns: 1fr; } }
 .checklist-group { padding: 1rem 1.25rem; border-right: 1px solid #e2e8f0; }
 .checklist-group:last-child { border-right: none; }
 .checklist-group-title { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9ca3af; margin-bottom: 0.625rem; }
 .checklist-item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.375rem 0; cursor: pointer; font-size: 0.875rem; color: #374151; }
-.checklist-item input[type="checkbox"] { width: 16px; height: 16px; flex-shrink: 0; margin-top: 1px; accent-color: #ea580c; cursor: pointer; }
+.checklist-item input[type="checkbox"] { width: 16px; height: 16px; flex-shrink: 0; margin-top: 1px; accent-color: #dc2626; cursor: pointer; }
 .checklist-item.checked span { text-decoration: line-through; color: #9ca3af; }
 .checklist-bar-wrap { height: 4px; background: #e5e7eb; }
-.checklist-bar { height: 100%; background: #ea580c; transition: width 300ms ease; border-radius: 0 2px 2px 0; }
-.art-blockquote { border-left: 4px solid #ea580c; padding: 0.875rem 1.25rem; background: #fff7ed; margin: 1.5rem 0; font-style: italic; border-radius: 0 6px 6px 0; color: #374151; }
+.checklist-bar { height: 100%; background: #dc2626; transition: width 300ms ease; border-radius: 0 2px 2px 0; }
+.art-blockquote { border-left: 4px solid #dc2626; padding: 0.875rem 1.25rem; background: #fef2f2; margin: 1.5rem 0; font-style: italic; border-radius: 0 6px 6px 0; color: #374151; }
 </style>
 
 <script>
