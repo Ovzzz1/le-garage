@@ -426,7 +426,7 @@ include __DIR__ . '/../header.php';
 
                 <!-- IMAGE DANS LE CONTENU #3 -->
                 <figure style="margin: 2rem 0;">
-                    <img src="/Image/traitement céramique prix3.webp"
+                    <img src="/Image/traitement-ceramique-prix3.webp"
                          alt="Résultat d'un traitement céramique professionnel : effet hydrophobe sur carrosserie noire"
                          width="800" height="450"
                          loading="lazy" decoding="async"
