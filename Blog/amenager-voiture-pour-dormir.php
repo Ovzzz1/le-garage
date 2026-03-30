@@ -44,9 +44,9 @@ if (is_dir($blog_dir)) {
         if ($file_slug === $current_slug) continue;
 
         $other_article = null;
-        $content_f     = file_get_contents($file);
+        $content       = file_get_contents($file);
 
-        if (preg_match('/\$article\s*=\s*\[(.+?)\];/s', $content_f, $matches)) {
+        if (preg_match('/\$article\s*=\s*\[(.+?)\];/s', $content, $matches)) {
             try {
                 eval('$other_article = [' . $matches[1] . '];');
             } catch (Throwable $e) {
@@ -74,7 +74,7 @@ include __DIR__ . '/../header.php';
 <article>
     <section class="art-hero">
         <img src="<?php echo $article['image']; ?>"
-             alt="Coffre de voiture aménagé avec un matelas et des rangements pour dormir en itinérance"
+             alt="Peugeot 3008 gris foncé dans un garage, coffre grand ouvert révélant l'intérieur vide avec les sièges arrière rabattus"
              class="art-hero-bg"
              width="1200" height="675" decoding="async">
         <div class="art-hero-overlay"></div>
@@ -143,7 +143,7 @@ include __DIR__ . '/../header.php';
                 <div class="art-tldr-title">L'essentiel à retenir (TL;DR)</div>
                 <ul>
                     <li><strong>La longueur d'abord :</strong> Mesurez l'espace disponible banquette rabattue avant tout achat. Il vous faut au minimum <strong>185 cm</strong> pour dormir allongé sans contorsion.</li>
-                    <li><strong>Le matelas, c'est 80 % du confort :</strong> Un matelas en mousse à mémoire de forme découpé sur mesure change radicalement la qualité du sommeil. Oubliez le gonflable.</li>
+                    <li><strong>Le matelas, c'est 80 % du confort :</strong> Un matelas en mousse haute densité découpé sur mesure change radicalement la qualité du sommeil. Oubliez le gonflable.</li>
                     <li><strong>La chaleur tue le sommeil :</strong> Sans ventilation ni isolation, une voiture devient un four en été et un congélateur en hiver. Prévoyez les deux avant de partir.</li>
                     <li><strong>La discrétion, ça se prépare :</strong> Des rideaux occultants ou une chaussette de vitre évitent les coups de lampe de poche et la condensation — deux problèmes à régler en même temps.</li>
                 </ul>
@@ -154,12 +154,13 @@ include __DIR__ . '/../header.php';
                 <div class="art-toc-title">Au sommaire de ce guide</div>
                 <ol>
                     <li><a href="#mesurer-espace">Étape 1 — Mesurer et valider l'espace disponible</a></li>
-                    <li><a href="#choisir-matelas">Étape 2 — Choisir le bon matelas pour voiture</a></li>
-                    <li><a href="#isolation-thermique">Étape 3 — Isolation thermique et occultation</a></li>
-                    <li><a href="#ventilation">Étape 4 — Gérer la ventilation et la condensation</a></li>
-                    <li><a href="#rangements">Étape 5 — Organiser les rangements</a></li>
+                    <li><a href="#choisir-matelas">Étape 2 — Choisir et installer le bon matelas</a></li>
+                    <li><a href="#logistique">Étape 3 — Organiser l'eau et la cuisine</a></li>
+                    <li><a href="#lit-finalise">Étape 4 — Finaliser le couchage et l'isolation</a></li>
+                    <li><a href="#ventilation">Étape 5 — Ventilation, moustiquaires et discrétion</a></li>
                     <li><a href="#tableau-comparatif">Tableau comparatif des solutions</a></li>
-                    <li><a href="#kit-bivouac">Le kit bivouac essentiel à emporter</a></li>
+                    <li><a href="#ninja">Bivouac discret : le mode "ninja"</a></li>
+                    <li><a href="#kit-bivouac">Le kit bivouac essentiel</a></li>
                     <li><a href="#faq">FAQ : dormir en voiture</a></li>
                 </ol>
             </div>
@@ -167,47 +168,59 @@ include __DIR__ . '/../header.php';
             <!-- Article Content -->
             <div class="art-content">
 
-                <p>Dormir dans sa voiture n'est plus réservé aux étudiants fauchés ou aux festivals de musique. C'est devenu une vraie pratique de voyage — économique, flexible, et souvent bien plus agréable qu'un camping bondé quand c'est bien préparé. La nuance, c'est ce "bien préparé". Sans les bons réglages, vous passerez une nuit désastreuse. Avec, vous vous réveillerez face à un paysage que vous avez choisi, café à la main depuis le hayon. Voici comment y arriver méthodiquement.</p>
+                <p>Dormir dans sa voiture n'est plus réservé aux étudiants fauchés ou aux festivals de musique. C'est devenu une vraie pratique de voyage — économique, flexible, et souvent bien plus agréable qu'un camping bondé quand c'est bien préparé. La nuance, c'est ce "bien préparé". Sans les bons réglages, vous passerez une nuit désastreuse. Avec, vous vous réveillerez face à un paysage que vous avez choisi, café à la main depuis le hayon. Voici comment y arriver, étape par étape.</p>
+
+                <!-- IMAGE #1 — La voiture vide prête à être aménagée -->
+                <figure style="margin: 2rem 0;">
+                    <img src="/Image/amenager-voiture-pour-dormir1.webp"
+                         alt="Peugeot 3008 gris foncé dans un garage lumineux, coffre grand ouvert avec les sièges arrière complètement rabattus — la toile vierge de l'aménagement"
+                         width="800" height="450"
+                         loading="lazy" decoding="async"
+                         style="width:100%; border-radius: 8px; display:block;">
+                    <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
+                        Le point de départ : un coffre vide, des sièges rabattus et des possibilités infinies. Ici, un Peugeot 3008 — l'un des meilleurs gabarits pour dormir en SUV.
+                    </figcaption>
+                </figure>
 
                 <!-- ═══════════════════════════════════════ -->
                 <h2 id="mesurer-espace">Étape 1 — Mesurer et valider l'espace disponible</h2>
                 <p>Tout commence par une mesure honnête. Rabattez les sièges arrière complètement, posez un mètre ruban sur le sol du coffre et mesurez jusqu'à la banquette avant. Si vous obtenez moins de 175 cm, vous allez devoir dormir en diagonale ou décaler légèrement les sièges avant. En dessous de 165 cm, reconsidérez sérieusement votre approche — certaines voitures ne sont simplement pas compatibles avec un couchage confortable sans travaux.</p>
 
-                <h3>Les gabarits qui fonctionnent bien sans aménagement lourd</h3>
-                <p>Les breaks, les SUV et les monospaces sont vos meilleurs alliés. Un Citroën C5 Aircross, un Skoda Octavia Combi ou un Dacia Jogger offrent souvent 180 à 195 cm une fois les sièges rabattus. Les berlines compactes (Golf, 308) sont limites mais faisables pour les gabarits inférieurs à 180 cm. Les citadines pures (Twingo, 108) sont généralement incompatibles sauf pour les enfants.</p>
-
-                <!-- IMAGE #2 -->
+                <!-- IMAGE #2 — Le test du mètre ruban -->
                 <figure style="margin: 2rem 0;">
                     <img src="/Image/amenager-voiture-pour-dormir2.webp"
-                         alt="Mesure de l'espace coffre d'un SUV avec mètre ruban, banquette rabattue"
+                         alt="Vue intérieure du coffre d'un Peugeot 3008 avec les sièges complètement rabattus et un mètre ruban jaune étiré sur le plancher sombre — test de longueur disponible"
                          width="800" height="450"
                          loading="lazy" decoding="async"
                          style="width:100%; border-radius: 8px; display:block;">
                     <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
-                        La règle de base : au moins 185 cm de longueur utile pour dormir sans se contorsionner.
+                        Le test incontournable avant tout achat : mètre ruban étiré du fond du coffre jusqu'aux sièges avant, sièges arrière à plat.
                     </figcaption>
                 </figure>
+
+                <h3>Les gabarits qui fonctionnent bien sans aménagement lourd</h3>
+                <p>Les breaks, les SUV et les monospaces sont vos meilleurs alliés. Un Citroën C5 Aircross, un Skoda Octavia Combi ou un Dacia Jogger offrent souvent 180 à 195 cm une fois les sièges rabattus. Les berlines compactes (Golf, 308) sont limites mais faisables pour les gabarits inférieurs à 180 cm. Les citadines pures (Twingo, 108) sont généralement incompatibles sauf pour les enfants.</p>
 
                 <h3>Le problème de la marche entre le coffre et la banquette</h3>
                 <p>Presque toutes les voitures ont une "marche" — une différence de niveau entre le plancher du coffre et le fond de la banquette rabattue. Elle va de 2 cm (quasi imperceptible) à 12 cm (douloureux sur les reins en quelques heures). C'est elle que vous devez combler en premier. Une planche en contreplaqué découpée à la forme de l'espace, posée sur la zone basse, suffit souvent à créer un plancher plat parfaitement utilisable.</p>
 
                 <!-- ═══════════════════════════════════════ -->
-                <h2 id="choisir-matelas">Étape 2 — Choisir le bon matelas pour voiture</h2>
-                <p>C'est LE choix qui détermine 80 % de la qualité de votre sommeil. Il existe trois familles de solutions, avec des différences importantes en termes de confort, de prix et d'encombrement.</p>
+                <h2 id="choisir-matelas">Étape 2 — Choisir et installer le bon matelas</h2>
+                <p>C'est LE choix qui détermine 80 % de la qualité de votre sommeil. Il existe trois familles de solutions, avec des différences importantes en termes de confort, de prix et d'encombrement. Mais avant même de commander quoi que ce soit, découpez un gabarit en carton épais à la forme exacte de votre espace — c'est la seule façon de ne pas se tromper de dimensions.</p>
 
-                <!-- IMAGE #3 -->
+                <!-- IMAGE #3 — Installation du matelas -->
                 <figure style="margin: 2rem 0;">
                     <img src="/Image/amenager-voiture-pour-dormir3.webp"
-                         alt="Matelas en mousse à mémoire de forme installé dans le coffre d'un break pour dormir en voiture"
+                         alt="Deux personnes dans la trentaine en train d'installer un matelas en mousse plié dans le coffre d'un Peugeot 3008, lumière chaleureuse de fin d'après-midi dans un garage"
                          width="800" height="450"
                          loading="lazy" decoding="async"
                          style="width:100%; border-radius: 8px; display:block;">
                     <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
-                        Un matelas en mousse découpé sur mesure : la solution la plus confortable et la plus discrète à ranger.
+                        La mise en place du matelas : à deux, c'est bien plus simple. Comptez 20 minutes pour la première installation, 5 minutes ensuite.
                     </figcaption>
                 </figure>
 
-                <h3>Mousse à mémoire de forme découpée sur mesure</h3>
+                <h3>Mousse haute densité découpée sur mesure — notre choix</h3>
                 <p>C'est la solution plébiscitée par tous ceux qui font du couchage en voiture régulièrement. Vous commandez une plaque de mousse haute densité (40 kg/m³ minimum) de 8 à 10 cm d'épaisseur, et vous la découpez exactement à la forme de votre espace avec un cutter à lame longue ou un couteau électrique. Le résultat : aucune bosse, aucun point de pression, un matelas qui ne bouge pas et se range facilement dressé contre le bord du coffre le matin.</p>
 
                 <blockquote class="art-blockquote">
@@ -215,76 +228,76 @@ include __DIR__ . '/../header.php';
                 </blockquote>
 
                 <h3>Matelas gonflables spécial coffre de voiture</h3>
-                <p>Des modèles comme le Hikenture ou le Therm-a-Rest Mondoking sont spécialement conçus pour s'adapter à la forme d'un coffre de SUV ou de break. Ils se rangent dans un sac compressible et se gonflent en quelques minutes via une valve intégrée. C'est une bonne option pour un usage occasionnel (2 à 3 nuits par mois), mais ils se dégonflent légèrement sur la nuit et nécessitent une regonfle matinale rapide. Le confort reste inférieur à la mousse ferme sur les longues nuits.</p>
+                <p>Des modèles comme le Hikenture ou le Therm-a-Rest Mondoking sont spécialement conçus pour s'adapter à la forme d'un coffre de SUV ou de break. Ils se rangent dans un sac compressible et se gonflent en quelques minutes via une valve intégrée. C'est une bonne option pour un usage occasionnel (2 à 3 nuits par mois), mais ils se dégonflent légèrement sur la nuit et nécessitent une regonfle matinale rapide.</p>
 
-                <h3>Le surmatelas de voiture (solution intermédiaire)</h3>
-                <p>Si vous souhaitez conserver l'usage quotidien de votre voiture sans modifier quoi que ce soit en permanence, un surmatelas pliant de 5 cm en mousse alvéolaire (type Karimat épais) posé directement sur la banquette rabattue est la solution la plus flexible. Il se roule, se range dans le coffre en 30 secondes et coûte moins de 80 €. Le compromis confort/praticité idéal pour les voyageurs du week-end.</p>
+                <h3>Le surmatelas pliant (solution intermédiaire)</h3>
+                <p>Si vous souhaitez conserver l'usage quotidien de votre voiture sans modifier quoi que ce soit en permanence, un surmatelas pliant de 5 cm en mousse alvéolaire (type Karimat épais) posé directement sur la banquette rabattue est la solution la plus flexible. Il se roule, se range dans le coffre en 30 secondes et coûte moins de 80 €.</p>
 
                 <!-- ═══════════════════════════════════════ -->
-                <h2 id="isolation-thermique">Étape 3 — Isolation thermique et occultation</h2>
-                <p>Une voiture non isolée est un four en été et un congélateur en hiver. Les vitres représentent la première source de déperdition thermique — elles laissent entrer la chaleur du soleil et s'échapper la chaleur corporelle. L'objectif est double : réguler la température ET bloquer la lumière pour protéger votre vie privée et dormir sans être réveillé à 6h du matin.</p>
+                <h2 id="logistique">Étape 3 — Organiser l'eau et la cuisine</h2>
+                <p>L'autonomie alimentaire est ce qui distingue un bivouac agréable d'une expérience frustrante. L'objectif : avoir accès à de l'eau propre, pouvoir préparer un café ou un repas chaud, et gérer les déchets proprement — le tout dans l'espace d'une boîte à chaussures géante.</p>
 
-                <!-- IMAGE #4 -->
+                <!-- IMAGE #4 — Organisation eau et cuisine -->
                 <figure style="margin: 2rem 0;">
                     <img src="/Image/amenager-voiture-pour-dormir4.webp"
-                         alt="Installation de rideaux occultants et isolation réfléchissante sur les vitres d'une voiture"
+                         alt="Gros plan dans un coffre de voiture : deux caisses en plastique transparent remplies de nourriture de road trip, un bidon d'eau de 10 litres avec robinet, et un petit réchaud à gaz portable — organisation soignée"
                          width="800" height="450"
                          loading="lazy" decoding="async"
                          style="width:100%; border-radius: 8px; display:block;">
                     <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
-                        L'isolation des vitres règle en même temps le problème de chaleur, de condensation et de discrétion.
-                    </figcaption>
-                </figure>
-
-                <h3>Les chaussettes de vitre : la solution la plus propre</h3>
-                <p>Cousues dans un tissu occultant ou en polaire, les chaussettes de vitre s'enfilent de l'extérieur sur chaque vitre latérale et le hayon. Elles sont custom-fit pour votre modèle de voiture (disponibles sur Etsy ou chez des artisans van life) et offrent une isolation thermique correcte tout en étant absolument discrètes de l'extérieur. Elles absorbent aussi la condensation intérieure mieux qu'un film plastique.</p>
-
-                <h3>Le pare-soleil réfléchissant découpé</h3>
-                <p>Pour l'isolation des vitres avant (pare-brise, lunette arrière), les pare-soleil en matériau réfléchissant type Reflectix sont imbattables en termes de rapport qualité/prix. Achetez un rouleau de 60 cm de large, découpez à la forme exacte de chaque vitre en utilisant du papier kraft comme gabarit, et fixez avec des velcros autocollants pour pouvoir les poser et retirer en moins d'une minute. Le gain thermique est immédiat et visible — jusqu'à 8°C d'écart relevé en conditions estivales.</p>
-
-                <!-- ═══════════════════════════════════════ -->
-                <h2 id="ventilation">Étape 4 — Gérer la ventilation et la condensation</h2>
-                <p>Vous respirez environ 250 ml d'eau par heure pendant le sommeil. Dans un espace fermé comme un coffre de voiture, cette humidité se dépose sur les vitres froides et génère de la condensation. Au-delà du désagrément, l'humidité répétée finit par créer des moisissures sur les joints et les revêtements. La solution est simple mais indispensable : assurer un flux d'air minimal constant.</p>
-
-                <h3>La technique de l'entrebâillement sécurisé</h3>
-                <p>Ouvrez légèrement deux vitres opposées (avant-gauche et arrière-droite, par exemple) de 1 à 2 cm. Bloquez-les avec un petit morceau de bois ou un anti-vol de vitre pour empêcher qu'elles ne se referment ou ne s'ouvrent davantage. Ce flux d'air traversant suffit à évacuer l'humidité la nuit. En hiver, un seul entrebâillement côté sous le vent est suffisant.</p>
-
-                <!-- IMAGE #5 -->
-                <figure style="margin: 2rem 0;">
-                    <img src="/Image/amenager-voiture-pour-dormir5.webp"
-                         alt="Système de ventilation discrète avec filet anti-insectes sur vitre entrouverte de voiture"
-                         width="800" height="450"
-                         loading="lazy" decoding="async"
-                         style="width:100%; border-radius: 8px; display:block;">
-                    <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
-                        Un filet anti-moustiques sur une vitre entrouverte : la combinaison idéale pour les nuits de printemps et d'été.
-                    </figcaption>
-                </figure>
-
-                <h3>Le ventilateur USB 12V : le game changer estival</h3>
-                <p>Un petit ventilateur alimenté sur la prise 12V ou USB de la voiture change radicalement le confort des nuits chaudes. Les modèles Opolar ou Honeywell HT-900 à moins de 30 € font parfaitement l'affaire. Orientez-le vers une vitre entrouverte pour créer un flux d'extraction plutôt que vers vous — vous éviterez la gorge sèche au réveil et augmentez l'efficacité de la ventilation globale.</p>
-
-                <!-- ═══════════════════════════════════════ -->
-                <h2 id="rangements">Étape 5 — Organiser les rangements</h2>
-                <p>Dans un espace aussi restreint qu'un coffre de voiture, l'organisation des affaires fait la différence entre un camping confortable et un bazar invivable. La règle d'or : tout ce qui ne sert pas pendant la nuit doit être accessible depuis l'extérieur (le coffre avant si vous en avez un, ou les rangements latéraux) et ne jamais se trouver sous votre matelas.</p>
-
-                <!-- IMAGE #6 -->
-                <figure style="margin: 2rem 0;">
-                    <img src="/Image/amenager-voiture-pour-dormir6.webp"
-                         alt="Organisation des rangements dans un coffre de voiture aménagé : caisses, sacs et cuisine de bivouac"
-                         width="800" height="450"
-                         loading="lazy" decoding="async"
-                         style="width:100%; border-radius: 8px; display:block;">
-                    <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
-                        Deux caisses empilables sous le matelas et un organisateur de siège : tout est accessible en moins de 30 secondes.
+                        Le coin cuisine complet : deux caisses alimentaires transparentes + bidon 10L + réchaud à gaz. Tout tient dans 40 × 30 cm.
                     </figcaption>
                 </figure>
 
                 <h3>Le système de caisses transparentes empilables</h3>
-                <p>Des caisses Ikea Samla ou Sunware en plastique transparent permettent de voir immédiatement ce qu'elles contiennent sans tout sortir. Organisez-les par usage : une pour la cuisine (réchaud, couverts, épices), une pour les vêtements du lendemain, une pour l'électronique et les câbles. Elles s'empilent sous ou à côté du matelas selon la configuration de votre véhicule et résistent à l'humidité — contrairement aux sacs tissu.</p>
+                <p>Des caisses Ikea Samla ou Sunware en plastique transparent permettent de voir immédiatement ce qu'elles contiennent sans tout sortir. Organisez-les par usage : une pour la cuisine (réchaud, couverts, épices), une pour les aliments secs du lendemain, une pour l'électronique et les câbles. Elles s'empilent sous ou à côté du matelas selon la configuration de votre véhicule et résistent à l'humidité — contrairement aux sacs tissu.</p>
 
-                <h3>L'organisateur de coffre : pratique mais à bien choisir</h3>
-                <p>Les organisateurs de coffre à compartiments (Lescars, Trunk Organizer) permettent de ranger les accessoires du quotidien (lampe frontale, couteau suisse, câbles, trousse de secours) de façon accessible depuis le hayon. Choisissez un modèle avec fond rigide et sangles de fixation — les modèles souples ont tendance à se renverser dans les virages et à créer le désordre que vous cherchez précisément à éviter.</p>
+                <h3>L'eau : le point critique souvent négligé</h3>
+                <p>Prévoyez au minimum 5 litres d'eau par personne et par nuit, dans un bidon rigide avec robinet intégré (type Campingaz ou Reliance). Évitez les bouteilles en plastique souple : elles prennent de la place, se renversent et s'écrasent. Un bidon de 10 litres posé dans le coin du coffre, accessible depuis le hayon, vous permettra de vous laver les mains, de rincer la vaisselle et de préparer vos boissons sans avoir à aller chercher de l'eau à 23h.</p>
+
+                <!-- ═══════════════════════════════════════ -->
+                <h2 id="lit-finalise">Étape 4 — Finaliser le couchage et l'isolation</h2>
+                <p>Un bon matelas ne suffit pas. La qualité du sommeil dépend aussi du sous-matelas (isolation du froid qui remonte du sol) et de la literie choisie. En voiture, on cible le même confort qu'à la maison — pas un camping spartiate.</p>
+
+                <!-- IMAGE #5 — Le lit finalisé -->
+                <figure style="margin: 2rem 0;">
+                    <img src="/Image/amenager-voiture-pour-dormir5.webp"
+                         alt="Setup de couchage douillet dans le coffre d'un SUV : matelas en mousse recouvert d'une épaisse couette blanche et deux oreillers à mémoire de forme — vue depuis le hayon ouvert, atmosphère chaleureuse"
+                         width="800" height="450"
+                         loading="lazy" decoding="async"
+                         style="width:100%; border-radius: 8px; display:block;">
+                    <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
+                        Le résultat final : un vrai lit avec couette épaisse et oreillers. On est loin de l'image du "dodo en voiture" façon étudiant.
+                    </figcaption>
+                </figure>
+
+                <h3>Le sous-matelas : l'isolation du sol souvent oubliée</h3>
+                <p>Le plancher métallique d'un coffre est un excellent conducteur thermique. En hiver, il vous prélèvera de la chaleur toute la nuit si vous ne mettez rien en dessous du matelas. Une feuille de Thinsulate (isolation réfléchissante fine) ou simplement une couverture de survie repliée entre le plancher et le matelas fait une différence mesurable — jusqu'à 4°C relevés dans nos tests.</p>
+
+                <h3>Couette ou sac de couchage ?</h3>
+                <p>Pour les températures supérieures à 5°C, une couette légère (200g/m²) compressée dans un sac fourre-tout offre bien plus de confort qu'un sac de couchage — vous pouvez vous retourner librement, aérer facilement et la laver en machine. En dessous de 5°C, passez au sac de couchage avec indice de confort adapté (−5°C pour les nuits hivernales françaises), et ajoutez une couverture polaire par-dessus si besoin.</p>
+
+                <!-- ═══════════════════════════════════════ -->
+                <h2 id="ventilation">Étape 5 — Ventilation, moustiquaires et discrétion</h2>
+                <p>Vous respirez environ 250 ml d'eau par heure pendant le sommeil. Dans un espace fermé comme un coffre de voiture, cette humidité se dépose sur les vitres froides et génère de la condensation. Au-delà du désagrément, l'humidité répétée finit par créer des moisissures sur les joints et les revêtements. La solution est simple mais indispensable : assurer un flux d'air minimal constant — et se protéger des insectes en été.</p>
+
+                <!-- IMAGE #6 — La moustiquaire -->
+                <figure style="margin: 2rem 0;">
+                    <img src="/Image/amenager-voiture-pour-dormir6.webp"
+                         alt="Gros plan extérieur sur la vitre arrière d'une voiture recouverte d'une chaussette en maille noire anti-moustiques, la vitre légèrement abaissée de 3 centimètres en dessous — astuce bivouac voiture"
+                         width="800" height="450"
+                         loading="lazy" decoding="async"
+                         style="width:100%; border-radius: 8px; display:block;">
+                    <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
+                        La chaussette moustiquaire sur vitre entrouverte : ventilation + protection insectes + discrétion, en un seul accessoire.
+                    </figcaption>
+                </figure>
+
+                <h3>La chaussette moustiquaire : l'astuce qui change tout</h3>
+                <p>Cousues dans une maille fine noire, les chaussettes moustiquaires s'enfilent de l'extérieur sur une vitre entrouverte de 2 à 3 cm. Elles laissent passer l'air, bloquent les insectes, absorbent une partie de la condensation et sont pratiquement invisibles de l'extérieur. Disponibles sur Etsy ou chez des artisans van life pour 15 à 30 € la paire, elles sont custom-fit pour votre modèle de voiture.</p>
+
+                <h3>Le pare-soleil réfléchissant : isolation + occultation</h3>
+                <p>Pour les vitres avant (pare-brise, lunette arrière), les pare-soleil en matériau réfléchissant type Reflectix sont imbattables en termes de rapport qualité/prix. Achetez un rouleau de 60 cm de large, découpez à la forme exacte de chaque vitre en utilisant du papier kraft comme gabarit, et fixez avec des velcros autocollants. Gain thermique immédiat — jusqu'à 8°C d'écart en conditions estivales — et occultation totale pour dormir sans être réveillé à 6h du matin par le soleil.</p>
 
                 <!-- ═══════════════════════════════════════ -->
                 <h2 id="tableau-comparatif">Tableau comparatif des solutions de couchage</h2>
@@ -342,20 +355,27 @@ include __DIR__ . '/../header.php';
                 </div>
 
                 <!-- ═══════════════════════════════════════ -->
-                <h2 id="kit-bivouac">Le kit bivouac essentiel à emporter</h2>
-                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Voici la liste non exhaustive des éléments que Thomas ne quitte plus depuis trois ans de van life :</p>
+                <h2 id="ninja">Bivouac discret : le mode "ninja"</h2>
+                <p>Choisir où se garer est autant une question de bon sens que de légalité. En ville, optez pour des parkings relais calmes ou des zones résidentielles larges. En nature, un chemin forestier discret ou une aire de repos isolée font l'affaire. La règle d'or : ne jamais être le seul véhicule présent, et ne laisser aucune trace de votre passage le matin.</p>
 
-                <!-- IMAGE #7 -->
+                <!-- IMAGE #7 — Le côté ninja en nature -->
                 <figure style="margin: 2rem 0;">
                     <img src="/Image/amenager-voiture-pour-dormir7.webp"
-                         alt="Kit complet pour dormir en voiture : réchaud, lampe, sac de couchage et bouteille d'eau"
+                         alt="Peugeot 3008 garé sur un chemin de terre entouré d'arbres en Ardèche au crépuscule — la voiture semble banale de l'extérieur mais une faible lueur orangée chaleureuse est visible à travers les vitres teintées arrière"
                          width="800" height="450"
                          loading="lazy" decoding="async"
                          style="width:100%; border-radius: 8px; display:block;">
                     <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
-                        Le kit complet tient dans deux caisses Samla 22L : de quoi bivouaquer confortablement pour 3 à 5 nuits.
+                        Mode ninja activé en Ardèche : rien ne distingue cette voiture d'un randonneur qui s'est garé. Sauf cette petite lueur orange à l'intérieur.
                     </figcaption>
                 </figure>
+
+                <h3>Les erreurs qui vous font repérer</h3>
+                <p>Trois comportements trahissent immanquablement un dormeur en voiture : la lumière visible de l'extérieur (utilisez une lampe frontale rouge plutôt que blanche), les vitres entièrement embuées le matin (d'où l'importance de la ventilation), et les mouvements à l'intérieur avant l'aube. Pour la lumière, une LED rouge ou une lampe de camping avec diffuseur chaud consomme moins et reste invisible à 20 mètres.</p>
+
+                <!-- ═══════════════════════════════════════ -->
+                <h2 id="kit-bivouac">Le kit bivouac essentiel à emporter</h2>
+                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Voici la liste non exhaustive des éléments que Thomas ne quitte plus depuis trois ans de van life :</p>
 
                 <!-- CHECKLIST INTERACTIVE -->
                 <div class="bivouac-checklist" id="bivouac-checklist" role="region" aria-label="Kit bivouac essentiel">
@@ -366,24 +386,24 @@ include __DIR__ . '/../header.php';
                     <div class="checklist-cols">
                         <div class="checklist-group">
                             <div class="checklist-group-title">Couchage</div>
-                            <label class="checklist-item"><input type="checkbox" data-group="couchage"> <span>Matelas / surmatelas</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="couchage"> <span>Sac de couchage adapté à la saison</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="couchage"> <span>Oreiller gonflable ou compressible</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="couchage"> <span>Rideaux occultants / chaussettes de vitre</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Matelas / surmatelas</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Sac de couchage adapté à la saison</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Oreiller gonflable ou compressible</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Rideaux occultants / chaussettes de vitre</span></label>
                         </div>
                         <div class="checklist-group">
                             <div class="checklist-group-title">Cuisine & eau</div>
-                            <label class="checklist-item"><input type="checkbox" data-group="cuisine"> <span>Réchaud à gaz + cartouche</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="cuisine"> <span>Bidon d'eau 5–10 L</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="cuisine"> <span>Popote + couverts</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="cuisine"> <span>Sac poubelle réutilisable</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Réchaud à gaz + cartouche</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Bidon d'eau 5–10 L</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Popote + couverts</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Sac poubelle réutilisable</span></label>
                         </div>
                         <div class="checklist-group">
                             <div class="checklist-group-title">Confort & sécurité</div>
-                            <label class="checklist-item"><input type="checkbox" data-group="securite"> <span>Lampe frontale + pile de rechange</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="securite"> <span>Batterie externe 20 000 mAh</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="securite"> <span>Câble 12V / USB pour ventilateur</span></label>
-                            <label class="checklist-item"><input type="checkbox" data-group="securite"> <span>Trousse de secours</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Lampe frontale rouge</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Batterie externe 20 000 mAh</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Câble 12V / USB pour ventilateur</span></label>
+                            <label class="checklist-item"><input type="checkbox"> <span>Trousse de secours</span></label>
                         </div>
                     </div>
                     <div class="checklist-bar-wrap">
@@ -391,21 +411,21 @@ include __DIR__ . '/../header.php';
                     </div>
                 </div>
 
-                <!-- IMAGE #8 -->
+                <!-- IMAGE #8 — Le réveil face au paysage -->
                 <figure style="margin: 2rem 0;">
                     <img src="/Image/amenager-voiture-pour-dormir8.webp"
-                         alt="Réveil en voiture aménagée face à un paysage de montagne, hayon ouvert avec vue panoramique"
+                         alt="Vue subjective au réveil depuis l'intérieur d'un coffre de voiture : hayon grand ouvert sur une rivière et des falaises rocheuses dans la brume matinale, au premier plan une cafetière italienne sur un réchaud de camping posé sur le pare-chocs"
                          width="800" height="450"
                          loading="lazy" decoding="async"
                          style="width:100%; border-radius: 8px; display:block;">
                     <figcaption style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-style: italic;">
-                        Le vrai luxe du bivouac en voiture : choisir sa fenêtre chaque matin.
+                        La récompense. Un café, une rivière, des falaises. C'est ça, dormir en voiture bien préparé.
                     </figcaption>
                 </figure>
 
             </div><!-- .art-content -->
 
-            <!-- Premium Author Box -->
+            <!-- Premium Author Box — format exact Arnaud -->
             <div class="art-author-box">
                 <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>" class="art-author-avatar" width="80" height="80">
                 <div class="art-author-info">
@@ -425,16 +445,16 @@ include __DIR__ . '/../header.php';
                 <p>Dormir dans sa voiture est <strong>légal en France</strong> sur la voie publique, dans les parkings ouverts au public et sur les aires d'autoroute. En revanche, bivouaquer dans une forêt domaniale ou un parc national peut être soumis à des réglementations locales. En ville, optez pour des parkings relais ou des zones résidentielles calmes — évitez simplement les zones réglementées et les interdictions de stationnement nocturne spécifiques.</p>
 
                 <h3>Comment éviter la buée et la condensation dans la nuit ?</h3>
-                <p>La condensation est inévitable si l'habitacle est hermétiquement fermé, car vous expirez de l'humidité toute la nuit. La solution est d'<strong>assurer une micro-ventilation permanente</strong> via deux vitres légèrement entrebâillées. En complément, une éponge microfibre ou un déshumidificateur à cristaux de sel posé dans le coffre absorbe l'excès d'humidité résiduelle. En hiver, évitez les housses de voiture étanches qui bloquent toute évaporation.</p>
+                <p>La condensation est inévitable si l'habitacle est hermétiquement fermé, car vous expirez de l'humidité toute la nuit. La solution est d'<strong>assurer une micro-ventilation permanente</strong> via deux vitres légèrement entrebâillées (avec chaussettes moustiquaires en été). En complément, un déshumidificateur à cristaux de sel posé dans le coffre absorbe l'excès d'humidité résiduelle.</p>
 
                 <h3>Peut-on laisser le moteur tourner pour se chauffer la nuit ?</h3>
-                <p><strong>Non — c'est dangereux.</strong> Laisser le moteur tourner les vitres fermées génère un risque d'intoxication au monoxyde de carbone même en plein air, car les gaz d'échappement peuvent s'accumuler sous le véhicule et remonter dans l'habitacle. Pour les nuits froides, utilisez plutôt un sac de couchage adapté à la température (indice de confort -5°C pour les nuits hivernales européennes), des chaussettes thermiques et une couverture de survie repliée sous votre matelas en guise d'isolant du sol.</p>
+                <p><strong>Non — c'est dangereux.</strong> Laisser le moteur tourner les vitres fermées génère un risque d'intoxication au monoxyde de carbone même en plein air, car les gaz d'échappement peuvent s'accumuler sous le véhicule et remonter dans l'habitacle. Pour les nuits froides, utilisez plutôt un sac de couchage adapté à la température (indice de confort −5°C pour les nuits hivernales européennes), des chaussettes thermiques et une couverture de survie sous le matelas.</p>
 
                 <h3>Combien de temps faut-il pour monter un aménagement simple ?</h3>
-                <p>Un aménagement de base — matelas découpé + rideaux occultants + organisation des rangements — se réalise en <strong>une demi-journée</strong> pour un budget de 100 à 200 €. La découpe du matelas en mousse est l'étape la plus longue (1h30 avec les gabarits). Les chaussettes de vitre et les caisses de rangement s'installent en moins de 20 minutes chacune. Prévoyez une nuit test en bas de chez vous avant votre premier vrai voyage — mieux vaut identifier les irritants à 2h du matin à 5 minutes de chez vous qu'à 300 km.</p>
+                <p>Un aménagement de base — matelas découpé + rideaux occultants + organisation des rangements — se réalise en <strong>une demi-journée</strong> pour un budget de 100 à 200 €. La découpe du matelas en mousse est l'étape la plus longue (1h30 avec les gabarits). Prévoyez une nuit test en bas de chez vous avant votre premier vrai voyage.</p>
 
                 <h3>Quelle voiture est la mieux adaptée pour dormir dedans ?</h3>
-                <p>Les meilleures options sont les <strong>breaks longs</strong> (Skoda Octavia Combi, Peugeot 308 SW, Volkswagen Passat SW) et les <strong>SUV intermédiaires</strong> (Dacia Duster, Peugeot 3008, Renault Kadjar) qui offrent 185 à 200 cm à plat, un hayon pratique et un plancher relativement plat une fois les sièges rabattus. Les monospaces type Citroën C4 Spacetourer restent la référence absolue pour deux personnes. Les berlines compactes sont possibles jusqu'à 175 cm de taille mais demandent une planche de rattrapage de niveau.</p>
+                <p>Les meilleures options sont les <strong>breaks longs</strong> (Skoda Octavia Combi, Peugeot 308 SW, Volkswagen Passat SW) et les <strong>SUV intermédiaires</strong> (Dacia Duster, Peugeot 3008, Renault Kadjar) qui offrent 185 à 200 cm à plat. Les monospaces type Citroën C4 Spacetourer restent la référence absolue pour deux personnes. Les berlines compactes sont possibles jusqu'à 175 cm de taille mais demandent une planche de rattrapage de niveau.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
@@ -524,25 +544,10 @@ include __DIR__ . '/../header.php';
     </div><!-- .art-layout-wrapper -->
 </article>
 
-<!-- CHECKLIST CSS + JS (inline, auto-suffisant) -->
+<!-- ░░░ CHECKLIST CSS + JS ░░░ -->
 <style>
-/* ── Checklist bivouac ── */
-.bivouac-checklist {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    overflow: hidden;
-    margin: 2rem 0;
-    font-family: inherit;
-}
-.checklist-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1.25rem;
-    background: #fff7ed;
-    border-bottom: 1px solid #fed7aa;
-}
+.bivouac-checklist { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; margin: 2rem 0; font-family: inherit; }
+.checklist-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; background: #fff7ed; border-bottom: 1px solid #fed7aa; }
 .checklist-title { font-weight: 700; font-size: 0.9375rem; color: #9a3412; }
 .checklist-progress { font-size: 0.875rem; font-weight: 700; color: #ea580c; font-variant-numeric: tabular-nums; }
 .checklist-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
@@ -550,7 +555,7 @@ include __DIR__ . '/../header.php';
 .checklist-group { padding: 1rem 1.25rem; border-right: 1px solid #e2e8f0; }
 .checklist-group:last-child { border-right: none; }
 .checklist-group-title { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9ca3af; margin-bottom: 0.625rem; }
-.checklist-item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.375rem 0; cursor: pointer; font-size: 0.875rem; color: #374151; transition: color 150ms; }
+.checklist-item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.375rem 0; cursor: pointer; font-size: 0.875rem; color: #374151; }
 .checklist-item input[type="checkbox"] { width: 16px; height: 16px; flex-shrink: 0; margin-top: 1px; accent-color: #ea580c; cursor: pointer; }
 .checklist-item.checked span { text-decoration: line-through; color: #9ca3af; }
 .checklist-bar-wrap { height: 4px; background: #e5e7eb; }
@@ -563,20 +568,16 @@ include __DIR__ . '/../header.php';
     var cl = document.getElementById('bivouac-checklist');
     if (!cl) return;
     var checkboxes = cl.querySelectorAll('input[type="checkbox"]');
-    var bar        = document.getElementById('checklist-bar');
-    var score      = document.getElementById('checklist-score');
-    var total      = checkboxes.length;
-
+    var bar   = document.getElementById('checklist-bar');
+    var score = document.getElementById('checklist-score');
+    var total = checkboxes.length;
     checkboxes.forEach(function(cb) {
         cb.addEventListener('change', function() {
             var checked = cl.querySelectorAll('input[type="checkbox"]:checked').length;
             if (score) score.textContent = checked + ' / ' + total;
             if (bar)   bar.style.width   = Math.round((checked / total) * 100) + '%';
             var label = cb.closest('.checklist-item');
-            if (label) {
-                if (cb.checked) label.classList.add('checked');
-                else            label.classList.remove('checked');
-            }
+            if (label) { cb.checked ? label.classList.add('checked') : label.classList.remove('checked'); }
         });
     });
 })();
@@ -603,9 +604,9 @@ $schema = [
             "@type"      => "FAQPage",
             "mainEntity" => [
                 ["@type" => "Question", "name" => "Est-ce légal de dormir dans sa voiture en France ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Dormir dans sa voiture est légal en France sur la voie publique, dans les parkings ouverts et sur les aires d'autoroute. Certaines zones (forêts domaniales, parcs nationaux) peuvent être soumises à des réglementations locales."]],
-                ["@type" => "Question", "name" => "Comment éviter la condensation quand on dort en voiture ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Assurez une micro-ventilation permanente en entrebâillant légèrement deux vitres opposées de 1 à 2 cm. Ajoutez un déshumidificateur à cristaux de sel dans le coffre pour absorber l'excès d'humidité résiduelle."]],
+                ["@type" => "Question", "name" => "Comment éviter la condensation quand on dort en voiture ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Assurez une micro-ventilation permanente en entrebâillant légèrement deux vitres opposées de 1 à 2 cm, idéalement avec des chaussettes moustiquaires. Ajoutez un déshumidificateur à cristaux de sel dans le coffre."]],
                 ["@type" => "Question", "name" => "Quel est le meilleur matelas pour dormir en voiture ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Le matelas en mousse haute densité (40 kg/m³ minimum) découpé sur mesure à la forme exacte de votre coffre est la meilleure solution en termes de confort et de rapport qualité/prix (60-120 €)."]],
-                ["@type" => "Question", "name" => "Quelle voiture est la plus adaptée pour dormir à l'intérieur ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Les breaks longs (Skoda Octavia Combi, Peugeot 308 SW) et les SUV intermédiaires (Dacia Duster, Renault Kadjar) offrent généralement 185 à 200 cm à plat, suffisants pour dormir confortablement."]],
+                ["@type" => "Question", "name" => "Quelle voiture est la plus adaptée pour dormir à l'intérieur ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Les breaks longs (Skoda Octavia Combi, Peugeot 308 SW) et les SUV intermédiaires (Dacia Duster, Peugeot 3008) offrent généralement 185 à 200 cm à plat, suffisants pour dormir confortablement."]],
                 ["@type" => "Question", "name" => "Peut-on laisser le moteur tourner pour se chauffer en dormant ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Non, c'est dangereux. Laisser le moteur tourner vitres fermées génère un risque d'intoxication au monoxyde de carbone. Préférez un sac de couchage adapté et une couverture de survie sous le matelas."]]
             ]
         ]
