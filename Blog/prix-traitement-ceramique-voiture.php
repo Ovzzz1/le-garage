@@ -183,7 +183,7 @@ include __DIR__ . '/../header.php';
 
                 <!-- IMAGE DANS LE CONTENU #2 -->
                 <figure style="margin: 2rem 0;">
-                    <img src="/Image/traitement céramique prix2.webp"
+                    <img src="/Image/traitement-ceramique-prix2.webp"
                          alt="Préparation carrosserie avant traitement céramique : polissage et correction de peinture"
                          width="800" height="450"
                          loading="lazy" decoding="async"
