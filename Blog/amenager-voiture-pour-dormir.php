@@ -15,10 +15,10 @@ $article = [
     'tags'           => ['Van Life', 'Road Trip', 'Camping', 'Bivouac'],
     'image'          => '/Image/amenager-voiture-pour-dormir1.webp',
     'date'           => '30 Mars 2026',
-    'author'         => 'Thomas',
-    'author_role'    => 'Expert Van Life & Road Trip',
-    'author_img'     => '/Image/thomas.png',
-    'author_bio'     => "Trois ans de road trips en voiture aménagée à travers l'Europe, Thomas a testé, raté et optimisé chaque aspect du couchage en voiture. Il partage ici les vraies astuces qui changent tout.",
+    'author'         => 'Arnaud',
+    'author_role'    => 'Expert Esthétique & Detailing',
+    'author_img'     => '/Image/arnaud.png',
+    'author_bio'     => "Passionné de detailing et perfectionniste dans l'âme, Arnaud décortique les meilleures techniques de protection carrosserie pour vous éviter les pièges des devis gonflés.",
     'reading_time'   => '9 min',
 ];
 
@@ -165,6 +165,18 @@ include __DIR__ . '/../header.php';
                 </ol>
             </div>
 
+            <!-- Premium Author Box — TOP -->
+            <div class="art-author-box">
+                <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>" class="art-author-avatar" width="80" height="80">
+                <div class="art-author-info">
+                    <span class="art-author-label">L'Avis du Préparateur</span>
+                    <h3><?php echo $article['author']; ?></h3>
+                    <span class="art-author-role"><?php echo $article['author_role']; ?></span>
+                    <p><?php echo $article['author_bio']; ?></p>
+                    <a href="/equipe" class="art-author-link">Découvrir toute la rédaction</a>
+                </div>
+            </div>
+
             <!-- Article Content -->
             <div class="art-content">
 
@@ -224,7 +236,7 @@ include __DIR__ . '/../header.php';
                 <p>C'est la solution plébiscitée par tous ceux qui font du couchage en voiture régulièrement. Vous commandez une plaque de mousse haute densité (40 kg/m³ minimum) de 8 à 10 cm d'épaisseur, et vous la découpez exactement à la forme de votre espace avec un cutter à lame longue ou un couteau électrique. Le résultat : aucune bosse, aucun point de pression, un matelas qui ne bouge pas et se range facilement dressé contre le bord du coffre le matin.</p>
 
                 <blockquote class="art-blockquote">
-                    Le conseil de Thomas : commandez votre mousse avec 2 cm de marge de chaque côté, puis affinez à la découpe. Une mousse trop petite laisse des espaces désagréables sur les côtés. Trop grande, elle bombe au centre. Visez le millimètre près sur la largeur — c'est elle qui dicte le confort réel.
+                    Le conseil d'Arnaud : commandez votre mousse avec 2 cm de marge de chaque côté, puis affinez à la découpe. Une mousse trop petite laisse des espaces désagréables sur les côtés. Trop grande, elle bombe au centre. Visez le millimètre près sur la largeur — c'est elle qui dicte le confort réel.
                 </blockquote>
 
                 <h3>Matelas gonflables spécial coffre de voiture</h3>
@@ -375,7 +387,7 @@ include __DIR__ . '/../header.php';
 
                 <!-- ═══════════════════════════════════════ -->
                 <h2 id="kit-bivouac">Le kit bivouac essentiel à emporter</h2>
-                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Voici la liste non exhaustive des éléments que Thomas ne quitte plus depuis trois ans de van life :</p>
+                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Voici la liste non exhaustive des éléments qu'Arnaud ne quitte plus depuis trois ans de van life :</p>
 
                 <!-- CHECKLIST INTERACTIVE -->
                 <div class="bivouac-checklist" id="bivouac-checklist" role="region" aria-label="Kit bivouac essentiel">
@@ -425,11 +437,11 @@ include __DIR__ . '/../header.php';
 
             </div><!-- .art-content -->
 
-            <!-- Premium Author Box -->
+            <!-- Premium Author Box — BOTTOM -->
             <div class="art-author-box">
                 <img src="<?php echo $article['author_img']; ?>" alt="<?php echo $article['author']; ?>" class="art-author-avatar" width="80" height="80">
                 <div class="art-author-info">
-                    <span class="art-author-label">L'Avis du Routard</span>
+                    <span class="art-author-label">L'Avis du Préparateur</span>
                     <h3><?php echo $article['author']; ?></h3>
                     <span class="art-author-role"><?php echo $article['author_role']; ?></span>
                     <p><?php echo $article['author_bio']; ?></p>
