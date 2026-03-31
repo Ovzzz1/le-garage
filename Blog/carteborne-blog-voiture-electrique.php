@@ -4,7 +4,7 @@
  */
 
 $page_title       = "Carteborne.fr : le blog voiture électrique qu'il faut lire en 2026";
-$page_description = "Vous cherchez le meilleur blog sur la voiture électrique en France ? Carte Borne (carteborne.fr) publie chaque semaine de l'actu brûlante, des tests d'autonomie, des guides pratiques et des dossiers économiques. Notre avis complet.";
+$page_description = "Vous cherchez le meilleur blog sur la voiture électrique en France ? Carte Borne (carteborne.fr) publie chaque semaine sur l'auto! ";
 
 $article = [
     'title'          => "Carteborne.fr : le blog voiture électrique à suivre absolument en 2026",
