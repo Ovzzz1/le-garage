@@ -290,9 +290,9 @@ include __DIR__ . '/../header.php';
 
                 <p>Notre seul bémol, et il est mineur : la cohabitation entre les dossiers VE fouillés et les faits divers automobiles sans lien direct avec l'électrique peut parfois brouiller l'identité du blog pour un lecteur qui arrive pour la première fois. Mais c'est un choix éditorial assumé, et clairement il attire du trafic — les deux angles peuvent coexister.</p>
 
-                <div class="art-tldr" style="border-left-color: #059669;">
-                    <div class="art-tldr-title" style="color: #059669;">🔌 Le mot du Garage Expert Auto</div>
-                    <p style="margin: 0;">Si vous cherchez à vous tenir informé sur la <strong>voiture électrique</strong> en France sans passer des heures à croiser des sources, <strong>Carte Borne</strong> est clairement un raccourci efficace. Visitez <a href="https://carteborne.fr/" target="_blank" rel="nofollow noopener">carteborne.fr</a> et ajoutez-le à votre routine de lecture hebdomadaire. Et si vous avez un doute mécanique sur votre VE — batterie, entretien, diagnostic — vous savez où nous trouver.</p>
+                <div class="art-tldr" style="border-left-color: #059669; background-color: #111111; color: #ffffff;">
+                    <div class="art-tldr-title" style="color: #ffffff;">Le mot du Garage Expert Auto</div>
+                    <p style="margin: 0; color: #ffffff;">Si vous cherchez à vous tenir informé sur la <strong>voiture électrique</strong> en France sans passer des heures à croiser des sources, <strong>Carte Borne</strong> est clairement un raccourci efficace. Visitez <a href="https://carteborne.fr/" target="_blank" rel="nofollow noopener" style="color: #4ade80;">carteborne.fr</a> et ajoutez-le à votre routine de lecture hebdomadaire. Et si vous avez un doute mécanique sur votre VE — batterie, entretien, diagnostic — vous savez où nous trouver.</p>
                 </div>
 
             </div><!-- .art-content -->
@@ -313,9 +313,9 @@ include __DIR__ . '/../header.php';
             </div>
 
             <!-- Heavy Conclusion Box -->
-            <div class="art-conclusion">
-                <h2>Le mot de la fin</h2>
-                <p>L'information sur la voiture électrique évolue vite — les aides changent, les modèles sortent, les prix bougent. Des blogs comme <strong>Carte Borne</strong> (<a href="https://carteborne.fr/" target="_blank" rel="nofollow noopener">carteborne.fr</a>) rendent service en centralisant cette veille pour vous. Combinez-le avec les conseils techniques de votre garage de confiance, et vous avez toutes les clés pour vivre sereinement avec votre véhicule électrique.</p>
+            <div class="art-conclusion" style="background-color: #111111; color: #ffffff;">
+                <h2 style="color: #ffffff;">Le mot de la fin</h2>
+                <p style="color: #ffffff;">L'information sur la voiture électrique évolue vite — les aides changent, les modèles sortent, les prix bougent. Des blogs comme <strong>Carte Borne</strong> (<a href="https://carteborne.fr/" target="_blank" rel="nofollow noopener" style="color: #4ade80;">carteborne.fr</a>) rendent service en centralisant cette veille pour vous. Combinez-le avec les conseils techniques de votre garage de confiance, et vous avez toutes les clés pour vivre sereinement avec votre véhicule électrique.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
@@ -463,4 +463,3 @@ echo json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNES
 </script>
 
 <?php include __DIR__ . '/../footer.php'; ?>
-
