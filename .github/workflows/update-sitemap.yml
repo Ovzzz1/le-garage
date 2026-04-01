@@ -5,6 +5,9 @@ on:
     paths:
       - 'Blog/**.php'
 
+permissions:
+  contents: write
+
 jobs:
   update-sitemap:
     runs-on: ubuntu-latest
@@ -16,18 +19,12 @@ jobs:
 
       - name: Add new blog URLs to sitemap
         run: |
-          # Récupère les fichiers .php ajoutés dans /Blog
           NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'Blog/*.php')
-
           for FILE in $NEW_FILES; do
-            # Extrait le nom sans extension
             SLUG=$(basename "$FILE" .php)
             URL="https://www.garageraymond.fr/Blog/${SLUG}"
-
-            # Vérifie que l'URL n'est pas déjà dans le sitemap
             if ! grep -q "$URL" sitemap.xml; then
               echo "Ajout de $URL"
-              # Insère la nouvelle URL avant la balise </urlset>
               NEW_ENTRY="  <url>\n    <loc>${URL}</loc>\n    <lastmod>$(date +%F)</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>"
               sed -i "s|</urlset>|${NEW_ENTRY}\n</urlset>|" sitemap.xml
             fi
