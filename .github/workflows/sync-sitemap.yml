@@ -3,6 +3,9 @@ name: Sync Sitemap (manuel)
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   sync-sitemap:
     runs-on: ubuntu-latest
@@ -16,7 +19,6 @@ jobs:
             SLUG=$(basename "$FILE" .php)
             URL="https://www.garageraymond.fr/Blog/${SLUG}"
 
-            # Ajoute uniquement si l'URL n'est pas déjà présente
             if ! grep -q "$URL" sitemap.xml; then
               echo "Ajout : $URL"
               NEW_ENTRY="  <url>\n    <loc>${URL}</loc>\n    <lastmod>$(date +%F)</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>"
