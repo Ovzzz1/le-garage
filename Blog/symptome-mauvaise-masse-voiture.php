@@ -10,7 +10,7 @@ $page_description = "Démarreur lent, phares qui clignotent, batterie qui se vid
 
 
 $article = [
-    'title'          => "Symptôme d'une mauvaise masse voiture : faites votre diagnostic",
+    'title'          => "Symptôme d'une mauvaise masse voiture : le diagnostic",
     'subtitle'       => "Démarreur qui claque, phares capricieux, batterie à plat sans raison apparente… Avant de dépenser inutilement, diagnostiquez vous-même si le problème vient d'une mauvaise masse ou d'une batterie hors service. Notre guide complet avec outil de diagnostic interactif.",
     'category'       => 'entretien',
     'category_name'  => 'Entretien & Réparation',
