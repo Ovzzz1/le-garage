@@ -6,7 +6,7 @@
 
 
 $page_title       = "Symptôme d'une mauvaise masse voiture : diagnostic complet";
-$page_description = "Démarreur lent, phares qui clignotent, batterie qui se vide ? Faites votre diagnostic en ligne et identifiez si c'est une mauvaise masse ou une batterie HS. Guide complet par Le Garage Expert Auto.";
+$page_description = "Démarreur lent, phares qui clignotent, batterie qui se vide ? Faites votre diagnostic en ligne et identifiez si c'est une mauvaise masse !";
 
 
 $article = [
