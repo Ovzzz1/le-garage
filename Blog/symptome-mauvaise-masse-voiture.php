@@ -1,5 +1,6 @@
 <?php
 // published: 2026-04-04 10:00
+/**
  * symptome-mauvaise-masse-voiture.php
  */
 
@@ -48,10 +49,8 @@ if (is_dir($blog_dir)) {
         $file_slug = pathinfo($file, PATHINFO_FILENAME);
         if ($file_slug === $current_slug) continue;
 
-
         $other_article = null;
         $content       = file_get_contents($file);
-
 
         if (preg_match('/\$article\s*=\s*\[(.+?)\];/s', $content, $matches)) {
             try {
@@ -61,12 +60,10 @@ if (is_dir($blog_dir)) {
             }
         }
 
-
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
             $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
-
 
             if (($other_article['category'] ?? '') === $article['category']) {
                 $same_cat_articles[] = $other_article;
@@ -134,7 +131,6 @@ include __DIR__ . '/../header.php';
     color: #999;
     margin-top: 2px;
 }
-
 
 /* Steps */
 .diag-step { display: none; animation: diag-fade 0.35s ease; }
@@ -217,11 +213,9 @@ include __DIR__ . '/../header.php';
     color: #dc2626;
 }
 
-
 /* Résultats */
 .diag-result { display: none; animation: diag-fade 0.4s ease; }
 .diag-result.active { display: block; }
-
 
 .diag-result-card {
     border-radius: 12px;
@@ -245,7 +239,6 @@ include __DIR__ . '/../header.php';
     border-color: rgba(34,197,94,0.3);
 }
 
-
 .diag-result-badge {
     display: inline-flex;
     align-items: center;
@@ -262,7 +255,6 @@ include __DIR__ . '/../header.php';
 .batterie .diag-result-badge { background: rgba(234,179,8,0.15);  color: #fbbf24; }
 .alternateur .diag-result-badge { background: rgba(99,102,241,0.15); color: #a5b4fc; }
 .pro .diag-result-badge { background: rgba(34,197,94,0.15);  color: #4ade80; }
-
 
 .diag-result-title {
     font-size: 1.05rem;
@@ -303,7 +295,6 @@ include __DIR__ . '/../header.php';
 .alternateur .diag-result-steps li::before { color: #a5b4fc; }
 .pro .diag-result-steps li::before { color: #4ade80; }
 
-
 .diag-restart-btn {
     display: inline-flex;
     align-items: center;
@@ -320,7 +311,6 @@ include __DIR__ . '/../header.php';
     margin-top: 0.5rem;
 }
 .diag-restart-btn:hover { color: #ccc; border-color: rgba(255,255,255,0.2); }
-
 
 .diag-cta-link {
     display: inline-flex;
@@ -349,7 +339,6 @@ include __DIR__ . '/../header.php';
              width="1200" height="675" decoding="async">
         <div class="art-hero-overlay"></div>
 
-
         <div class="art-hero-container">
             <div class="art-hero-content">
                 <nav class="art-breadcrumb">
@@ -360,17 +349,14 @@ include __DIR__ . '/../header.php';
                     <span>Diagnostic masse voiture</span>
                 </nav>
 
-
                 <div class="art-hero-tags">
                     <?php foreach ($article['tags'] as $tag): ?>
                         <span class="art-tag"><?php echo $tag; ?></span>
                     <?php endforeach; ?>
                 </div>
 
-
                 <h1><?php echo $article['title']; ?></h1>
                 <p class="art-hero-sub"><?php echo $article['subtitle']; ?></p>
-
 
                 <div class="art-hero-meta">
                     <div class="art-author-pill">
@@ -392,7 +378,6 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-
     <!-- HORIZONTAL CATEGORY NAV -->
     <nav class="art-cat-nav">
         <div class="art-cat-nav-inner">
@@ -407,14 +392,11 @@ include __DIR__ . '/../header.php';
         </div>
     </nav>
 
-
     <!-- ASYMMETRIC LAYOUT (70 / 30) -->
     <div class="art-layout-wrapper">
 
-
         <!-- MAIN CONTENT -->
         <div class="art-main-col">
-
 
             <!-- TL;DR Dashboard Box -->
             <div class="art-tldr">
@@ -427,7 +409,6 @@ include __DIR__ . '/../header.php';
                     <li><strong>Quand appeler le garage :</strong> Si la panne est intermittente, multifocale ou que la tresse est trop endommagée pour être réparée seul.</li>
                 </ul>
             </div>
-
 
             <!-- Table of Contents -->
             <div class="art-toc">
@@ -444,20 +425,15 @@ include __DIR__ . '/../header.php';
                 </ol>
             </div>
 
-
             <!-- Article Content -->
             <div class="art-content">
 
-
                 <p>Un problème de mauvaise masse se manifeste par des dysfonctionnements électriques aléatoires, comme un démarreur lent ou des phares qui clignotent, indiquant un défaut de retour du courant vers la batterie. Avant de démonter quoi que ce soit, passez en revue notre outil de diagnostic pour qualifier précisément votre panne — masse, batterie ou alternateur — et éviter de changer des pièces inutilement.</p>
-
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="diagnostiqueur">Diagnostiqueur interactif : masse, batterie ou alternateur ?</h2>
 
-
                 <p>Répondez aux 4 questions ci-dessous pour obtenir une orientation personnalisée sur la nature de votre panne. Ce diagnostic ne remplace pas l'expertise d'un mécanicien, mais il vous donnera un cap clair avant d'intervenir.</p>
-
 
                 <!-- ▼▼▼ DIAGNOSTIQUEUR ▼▼▼ -->
                 <div class="diag-wrapper" id="diagnostiqueur-outil">
@@ -469,11 +445,9 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                     <div class="diag-progress-bar">
                         <div class="diag-progress-fill" id="diag-progress" style="width: 0%"></div>
                     </div>
-
 
                     <!-- ÉTAPE 1 -->
                     <div class="diag-step active" id="diag-step-1">
@@ -499,7 +473,6 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                     <!-- ÉTAPE 2 -->
                     <div class="diag-step" id="diag-step-2">
                         <div class="diag-step-label">Question 2 / 4</div>
@@ -524,7 +497,6 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                     <!-- ÉTAPE 3 -->
                     <div class="diag-step" id="diag-step-3">
                         <div class="diag-step-label">Question 3 / 4</div>
@@ -544,7 +516,6 @@ include __DIR__ . '/../header.php';
                             </button>
                         </div>
                     </div>
-
 
                     <!-- ÉTAPE 4 -->
                     <div class="diag-step" id="diag-step-4">
@@ -566,7 +537,6 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                     <!-- RÉSULTATS -->
                     <div class="diag-result" id="diag-result-masse">
                         <div class="diag-result-card masse">
@@ -585,7 +555,6 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                     <div class="diag-result" id="diag-result-batterie">
                         <div class="diag-result-card batterie">
                             <div class="diag-result-badge">🔋 Diagnostic probable</div>
@@ -602,7 +571,6 @@ include __DIR__ . '/../header.php';
                             <button class="diag-restart-btn" onclick="diagRestart()">↺ Recommencer le diagnostic</button>
                         </div>
                     </div>
-
 
                     <div class="diag-result" id="diag-result-alternateur">
                         <div class="diag-result-card alternateur">
@@ -621,7 +589,6 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                     <div class="diag-result" id="diag-result-pro">
                         <div class="diag-result-card pro">
                             <div class="diag-result-badge">🔧 Recommandation</div>
@@ -638,24 +605,18 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                 </div>
                 <!-- ▲▲▲ FIN DIAGNOSTIQUEUR ▲▲▲ -->
-
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="quest-ce-que-la-masse">Qu'est-ce que la masse d'une voiture ?</h2>
 
-
                 <p>Dans un circuit électrique automobile, le courant part de la borne positive de la batterie pour alimenter les équipements, puis doit retourner à la borne négative pour fermer la boucle. La carrosserie et le bloc moteur, constitués de métal, servent de conducteur de retour global — c'est ce que l'on appelle la <strong>masse</strong>. Un point de contact défaillant sur ce circuit empêche le passage correct de l'énergie et provoque des pannes en cascade, souvent difficiles à relier entre elles au premier coup d'œil.</p>
-
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="differencier">Comment différencier une mauvaise masse d'une batterie HS ?</h2>
 
-
                 <p>Il est fréquent de confondre une tresse de masse oxydée avec une batterie en fin de vie, poussant de nombreux automobilistes à racheter une pièce neuve pour rien. Voici un tableau comparatif pour établir votre propre diagnostic avant d'intervenir.</p>
-
 
                 <div class="art-table-wrap">
                     <table class="art-table">
@@ -686,13 +647,10 @@ include __DIR__ . '/../header.php';
                     </table>
                 </div>
 
-
                 <!-- ══════════════════════════════════ -->
                 <h2 id="tester">Les étapes pour tester et diagnostiquer une mauvaise masse</h2>
 
-
                 <p>L'utilisation d'un multimètre est la méthode la plus fiable pour confirmer votre diagnostic et localiser la défaillance. Procédez étape par étape pour vérifier la continuité du circuit électrique.</p>
-
 
                 <ol>
                     <li>Réglez votre multimètre sur la position <strong>"Ohms"</strong> pour effectuer une mesure de résistance.</li>
@@ -701,13 +659,10 @@ include __DIR__ . '/../header.php';
                     <li>Une valeur <strong>supérieure à 5 ohms</strong> confirme une forte résistance et valide un problème de masse.</li>
                 </ol>
 
-
                 <!-- ══════════════════════════════════ -->
                 <h2 id="causes">Quelles sont les causes d'un faux contact de masse ?</h2>
 
-
                 <p>Plusieurs facteurs environnementaux et mécaniques peuvent altérer les points de fixation sur votre véhicule au fil du temps. Une inspection visuelle ciblée permet souvent de repérer la source exacte du dysfonctionnement.</p>
-
 
                 <div class="art-table-wrap">
                     <table class="art-table">
@@ -734,13 +689,10 @@ include __DIR__ . '/../header.php';
                     </table>
                 </div>
 
-
                 <!-- ══════════════════════════════════ -->
                 <h2 id="solutions">Solutions : comment réparer ce problème électrique ?</h2>
 
-
                 <p>Si votre diagnostic confirme un défaut de masse, la réparation est souvent accessible sans équipement professionnel coûteux. L'objectif est de restaurer une surface de contact métallique parfaitement propre pour rétablir le passage du courant.</p>
-
 
                 <ol>
                     <li>Débranchez <strong>systématiquement la batterie</strong> avant toute manipulation, en commençant par la borne négative.</li>
@@ -749,18 +701,14 @@ include __DIR__ . '/../header.php';
                     <li>Appliquez une <strong>graisse cuivrée spéciale ou un spray de contact</strong> pour protéger durablement la zone de l'humidité.</li>
                 </ol>
 
-
                 <blockquote class="art-blockquote">
                     Si après nettoyage et resserrage complet le problème persiste, la tresse de masse elle-même est peut-être trop endommagée. Dans ce cas, un remplacement complet du câble s'impose — comptez moins de 20 € de pièce et une heure de travail chez votre garagiste.
                 </blockquote>
 
-
                 <!-- ══════════════════════════════════ -->
                 <h2 id="temoignages">Témoignages : les symptômes les plus fréquents sur les forums</h2>
 
-
                 <p>De nombreux conducteurs partagent leurs mésaventures liées à ces pannes électriques capricieuses sur les forums automobiles. Ces retours d'expérience concrets rappellent l'importance d'un diagnostic minutieux plutôt que d'un changement de pièce à l'aveugle.</p>
-
 
                 <ul>
                     <li>Perte de puissance soudaine et voyants du tableau de bord qui s'allument tous de façon anarchique en roulant.</li>
@@ -768,24 +716,18 @@ include __DIR__ . '/../header.php';
                     <li>Impossibilité de redémarrer le véhicule à chaud alors qu'il démarrait parfaitement à froid le matin même.</li>
                 </ul>
 
-
                 <!-- ══════════════════════════════════ -->
                 <h2 id="faq">FAQ — Problèmes de masse électrique</h2>
 
-
                 <p>Voici les réponses aux questions les plus fréquentes posées lors d'un diagnostic électrique automobile.</p>
-
 
                 <h3>Pourquoi ma batterie se décharge-t-elle sans utilisation ?</h3>
                 <p>Un défaut d'isolation ou un faux contact sévère peut créer un <strong>courant de fuite permanent</strong>, même lorsque le contact est coupé. Ce phénomène parasite vide lentement l'énergie stockée dans votre batterie au fil des jours d'inactivité. Un test de courant de fuite avec un ampèremètre permet de le confirmer.</p>
 
-
                 <h3>Où se trouvent les points de masse critiques sur un véhicule ?</h3>
                 <p>Les connexions principales relient directement le pôle négatif de la batterie au châssis en acier et au bloc moteur. On en trouve également dissimulées <strong>sous le tableau de bord</strong> pour toute l'électronique de l'habitacle, et dans le coffre à proximité des feux arrière.</p>
 
-
             </div><!-- .art-content -->
-
 
             <!-- Premium Author Box -->
             <div class="art-author-box">
@@ -802,13 +744,11 @@ include __DIR__ . '/../header.php';
                 </div>
             </div>
 
-
             <!-- Conclusion Box -->
             <div class="art-conclusion">
                 <h2>Le mot de la fin</h2>
                 <p>Une mauvaise masse est l'une des pannes les plus sournoises du monde automobile — elle imite à la perfection une batterie HS, un alternateur défaillant ou un problème d'électronique, et pousse des milliers d'automobilistes à dépenser inutilement chaque année. Avec un multimètre, une brosse métallique et 30 minutes, vous pouvez souvent résoudre le problème vous-même. Et si vous avez un doute, notre équipe est là pour faire le diagnostic à votre place.</p>
             </div>
-
 
             <!-- Similar Articles Grid (dynamique) -->
             <section class="art-related">
@@ -850,14 +790,11 @@ include __DIR__ . '/../header.php';
                 </div>
             </section>
 
-
         </div><!-- .art-main-col -->
-
 
         <!-- ASYMMETRIC RIGHT SIDEBAR (dynamique) -->
         <aside class="art-sidebar-right">
             <div class="art-sidebar-sticky">
-
 
                 <?php if (!empty($same_cat_articles)): ?>
                     <div class="art-sidebar-block">
@@ -877,7 +814,6 @@ include __DIR__ . '/../header.php';
                     </div>
                 <?php endif; ?>
 
-
                 <?php if (!empty($all_other_articles)): ?>
                     <div class="art-sidebar-block">
                         <div class="art-sidebar-block-title">À la Une</div>
@@ -894,10 +830,8 @@ include __DIR__ . '/../header.php';
                     </div>
                 <?php endif; ?>
 
-
             </div>
         </aside>
-
 
     </div><!-- .art-layout-wrapper -->
 </article>
@@ -910,12 +844,10 @@ include __DIR__ . '/../header.php';
     let currentStep = 1;
     const totalSteps = 4;
 
-
     function updateProgress(step) {
         const pct = ((step - 1) / totalSteps) * 100;
         document.getElementById('diag-progress').style.width = pct + '%';
     }
-
 
     window.diagNext = function (nextStep, answerKey) {
         answers['step' + currentStep] = answerKey;
@@ -928,72 +860,51 @@ include __DIR__ . '/../header.php';
         }
     };
 
-
     window.diagShowResult = function () {
-        // Masquer toutes les étapes
         for (let i = 1; i <= totalSteps; i++) {
             const el = document.getElementById('diag-step-' + i);
             if (el) el.classList.remove('active');
         }
         document.getElementById('diag-progress').style.width = '100%';
 
-
-        // Masquer tous les résultats
         document.querySelectorAll('.diag-result').forEach(r => r.classList.remove('active'));
 
-
-        // Logique de résultat
         const s1 = answers['step1'];
         const s2 = answers['step2'];
         const s3 = answers['step3'];
 
-
-        let result = 'masse'; // défaut
-
+        let result = 'masse';
 
         if (s3 === 'A3b') {
-            // Batterie faible mesurée
             result = 'batterie';
         } else if (s2 === 'A2c') {
-            // Phares très faibles moteur tournant = alternateur
             result = 'alternateur';
         } else if (s1 === 'A1a' && s3 === 'A3a') {
-            // Clac clac + batterie correcte = masse
             result = 'masse';
         } else if (s1 === 'A1b' && s3 === 'A3b') {
-            // Démarreur lent + batterie faible = batterie
             result = 'batterie';
         } else if (s1 === 'A1c') {
-            // Silence total = souvent masse ou fusible
             result = 'masse';
         } else if (s1 === 'A1d' && s2 === 'A2a') {
-            // Démarre mais phares baissent = masse
             result = 'masse';
         } else if (s1 === 'A1d' && s2 === 'A2d' && s3 === 'A3c') {
-            // Symptômes vagues sans mesure = pro
             result = 'pro';
         }
-
 
         document.getElementById('diag-result-' + result).classList.add('active');
         document.getElementById('diagnostiqueur-outil').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     };
 
-
     window.diagRestart = function () {
-        // Reset
         Object.keys(answers).forEach(k => delete answers[k]);
         currentStep = 1;
-
 
         document.querySelectorAll('.diag-step').forEach(s => s.classList.remove('active'));
         document.querySelectorAll('.diag-result').forEach(r => r.classList.remove('active'));
 
-
         document.getElementById('diag-step-1').classList.add('active');
         updateProgress(1);
     };
-
 
     updateProgress(1);
 })();
@@ -1036,8 +947,8 @@ $schema = [
             ]
         ],
         [
-            "@type"            => "FAQPage",
-            "mainEntity"       => [
+            "@type"      => "FAQPage",
+            "mainEntity" => [
                 [
                     "@type"          => "Question",
                     "name"           => "Pourquoi ma batterie se décharge-t-elle sans utilisation ?",
