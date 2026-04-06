@@ -5,7 +5,6 @@
 $page_title       = "Traitement anti corrosion châssis voiture : le guide d'expert (causes, solutions et prévention)";
 $page_description = "Comment traiter la corrosion du châssis de votre voiture ? Guide complet : causes, décapage, convertisseur de rouille, piège du Blackson et prévention. Conseils d'experts.";
 
-
 $article = [
     'title'          => "Traitement anti corrosion châssis voiture : le guide d'expert",
     'subtitle'       => "Causes, solutions et prévention : tout ce qu'il faut savoir pour décaper, traiter et protéger le châssis de votre voiture — avec les vrais conseils du terrain, pas les raccourcis qui font pourrir votre soubassement de l'intérieur.",
@@ -22,7 +21,6 @@ $article = [
     'reading_time'   => '9 min',
 ];
 
-
 $categories = [
     'assurance'  => ['name' => 'Assurance & Financement', 'color' => '#2563eb', 'slug' => 'assurance'],
     'entretien'  => ['name' => 'Entretien & Réparation',  'color' => '#dc2626', 'slug' => 'entretien'],
@@ -32,13 +30,11 @@ $categories = [
     'permis'     => ['name' => 'Permis',                  'color' => '#0891b2', 'slug' => 'permis'],
 ];
 
-
 // ─── Scan dynamique du Blog/ pour le linking interne ───
 $current_slug       = pathinfo(__FILE__, PATHINFO_FILENAME);
 $same_cat_articles  = [];
 $all_other_articles = [];
 $blog_dir           = __DIR__;
-
 
 if (is_dir($blog_dir)) {
     $files = glob($blog_dir . '/*.php');
@@ -70,14 +66,10 @@ if (is_dir($blog_dir)) {
     }
 }
 
-
 include __DIR__ . '/../header.php';
 ?>
 
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- ARTICLE HERO                                            -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- ARTICLE HERO -->
 <article>
     <section class="art-hero">
         <img src="<?php echo $article['image']; ?>"
@@ -125,7 +117,6 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-
     <!-- HORIZONTAL CATEGORY NAV -->
     <nav class="art-cat-nav">
         <div class="art-cat-nav-inner">
@@ -140,14 +131,13 @@ include __DIR__ . '/../header.php';
         </div>
     </nav>
 
-
     <!-- ASYMMETRIC LAYOUT (70 / 30) -->
     <div class="art-layout-wrapper">
 
         <!-- MAIN CONTENT -->
         <div class="art-main-col">
 
-            <!-- TL;DR Dashboard Box -->
+            <!-- TL;DR -->
             <div class="art-tldr">
                 <div class="art-tldr-title">L'essentiel à retenir (TL;DR)</div>
                 <ul>
@@ -172,15 +162,11 @@ include __DIR__ . '/../header.php';
                 </ol>
             </div>
 
-
-            <!-- ═══════════════════════════════════════════════════════ -->
-            <!-- ARTICLE CONTENT                                         -->
-            <!-- ═══════════════════════════════════════════════════════ -->
+            <!-- ARTICLE CONTENT -->
             <div class="art-content">
 
                 <p>La rouille est l'ennemi invisible de tout véhicule. Qu'elle soit de surface ou perforante, la corrosion du châssis ne pardonne pas et finit toujours par se propager si elle n'est pas stoppée à temps. Comment réparer une tôle déjà piquée ? Faut-il poncer, appliquer un destructeur de rouille ou utiliser un convertisseur ? Croyez-en notre expérience au garage : traiter les soubassements de sa voiture demande de la méthode et surtout, de choisir les bons produits pour ne pas empirer la situation. Voici notre guide complet pour comprendre, éliminer et prévenir la corrosion de votre châssis.</p>
 
-                <!-- ── H2 : DÉFINITION ── -->
                 <h2 id="definition-corrosion">Qu'est-ce que la corrosion du châssis et quels risques pour votre voiture ?</h2>
 
                 <p>La corrosion est une réaction chimique naturelle : lorsque l'acier de votre voiture entre en contact avec l'oxygène et l'humidité, il s'oxyde. Sous le véhicule, cette oxydation attaque en priorité les <strong>longerons</strong>, le <strong>berceau moteur</strong> et le <strong>plancher</strong> — soit l'ossature même de la voiture.</p>
@@ -192,7 +178,6 @@ include __DIR__ . '/../header.php';
                     <cite>— David, mécanicien expert, Garage Raymond</cite>
                 </blockquote>
 
-                <!-- ── H2 : CAUSES ── -->
                 <h2 id="causes-rouille">Quelles sont les vraies causes de la rouille sous le véhicule ?</h2>
 
                 <p>On accuse souvent l'âge du véhicule, mais la réalité du terrain est bien plus liée à l'environnement et à l'entretien des soubassements qu'au millésime seul. Voici ce qui fait vraiment rouiller votre châssis :</p>
@@ -204,7 +189,6 @@ include __DIR__ . '/../header.php';
                     <li><strong>L'eau stagnante :</strong> Des évacuations bouchées dans les portières, les bas de caisse ou les corps creux retiennent l'eau à l'intérieur de la structure. L'eau stagnante est la cause numéro un des perforations dans les zones non visibles.</li>
                 </ul>
 
-                <!-- ── H2 : TRAITEMENT ── -->
                 <h2 id="traitement-rouille">Comment réparer et traiter un châssis déjà piqué par la rouille ?</h2>
 
                 <p>Si votre châssis présente une rouille de surface, inutile de paniquer — mais il faut agir par étapes et dans le bon ordre. <strong>Poser de la peinture ou un anti-gravillon directement sur de la rouille friable est la pire erreur possible.</strong> Voici la méthode éprouvée en atelier, issue de dizaines d'interventions sur des véhicules dans tous les états.</p>
@@ -216,7 +200,7 @@ include __DIR__ . '/../header.php';
                 <p>Ensuite, équipez-vous d'une <strong>petite meuleuse d'angle (115 mm)</strong> munie d'une brosse métallique en forme de cloche, de préférence avec des <strong>fils en laiton</strong> plutôt qu'en acier torsadé : les fils laiton épousent mieux les recoins et les têtes de vis. Tenez la meuleuse d'une main pour l'emmener partout. Le métal doit être mis à nu.</p>
 
                 <div class="art-warning-box" style="background:#1a1a1a; border-left: 4px solid #dc2626; padding: 18px 22px; border-radius: 6px; margin: 24px 0;">
-                    <strong style="color:#dc2626; display:block; margin-bottom:8px;">⚠️ Sécurité obligatoire</strong>
+                    <strong style="color:#dc2626; display:block; margin-bottom:8px;">Sécurité obligatoire</strong>
                     <span style="color:#e5e5e5;">Le port de lunettes de protection épaisses est non négociable : la rouille, la terre et les brins de brosse volent à grande vitesse. Vêtements épais indispensables. En fin de vie de brosse, des fils se décochent — soyez prévenus.</span>
                 </div>
 
@@ -239,25 +223,25 @@ include __DIR__ . '/../header.php';
                                 <td><strong>Acide phosphorique</strong> (PAC 2030)</td>
                                 <td>Transforme l'oxyde de fer en phosphate de fer stable</td>
                                 <td>Bricoleurs avertis — rinçage obligatoire (passivation)</td>
-                                <td>✅ Très efficace, mais exigeant</td>
+                                <td>Très efficace, mais exigeant</td>
                             </tr>
                             <tr>
                                 <td><strong>Convertisseur de rouille</strong> (Férose, Rustol Owatrol)</td>
-                                <td>Transforme la rouille en couche noire dure (phosphate de fer) sans rinçage</td>
+                                <td>Transforme la rouille en couche noire dure sans rinçage</td>
                                 <td>Tous niveaux — le plus sûr pour un amateur</td>
-                                <td>✅ Recommandé — simplicité et efficacité</td>
+                                <td>Recommandé — simplicité et efficacité</td>
                             </tr>
                             <tr>
                                 <td><strong>Acide chlorhydrique</strong></td>
                                 <td>Attaque tout — rouille ET métal sain</td>
                                 <td>À fuir absolument pour cet usage</td>
-                                <td>❌ Fait re-rouiller la tôle instantanément à l'eau claire (flash rust)</td>
+                                <td>Fait re-rouiller la tôle instantanément (flash rust)</td>
                             </tr>
                             <tr>
                                 <td><strong>Blackson / anti-gravillon</strong></td>
-                                <td>Aucune — c'est un revêtement de surface, pas un traitement</td>
+                                <td>Aucune — c'est un revêtement, pas un traitement</td>
                                 <td>Sur tôle saine et apprêtée uniquement</td>
-                                <td>❌ Catastrophique sur rouille non traitée</td>
+                                <td>Catastrophique sur rouille non traitée</td>
                             </tr>
                         </tbody>
                     </table>
@@ -270,169 +254,160 @@ include __DIR__ . '/../header.php';
                 <p>Il est tout simplement impossible de passer une meuleuse à l'intérieur d'un longeron ou d'un corps creux. Et c'est pourtant là que la rouille fait le plus de dégâts en silence. La vraie astuce terrain :</p>
 
                 <ul>
-                    <li>Utilisez un <strong>pistolet anti-gravillon équipé d'un tuyau prolongateur souple</strong> (on en trouve facilement sur internet ou dans les magasins d'accessoires auto). Le flexible se glisse dans les orifices de drainage existants.</li>
+                    <li>Utilisez un <strong>pistolet anti-gravillon équipé d'un tuyau prolongateur souple</strong>. Le flexible se glisse dans les orifices de drainage existants.</li>
                     <li>Injectez d'abord un <strong>convertisseur de rouille très liquide</strong> (type Férose) pour noyer les parois internes. Laissez agir et sécher <strong>48 heures minimum</strong>.</li>
-                    <li>Puis injectez généreusement une <strong>cire pour corps creux (type Waxoyl)</strong>. <em>Conseil terrain :</em> réservez cette opération à l'été. La chaleur rend la cire plus fluide et lui permet de s'infiltrer dans les moindres interstices — en hiver, elle est trop épaisse pour pénétrer correctement.</li>
+                    <li>Puis injectez généreusement une <strong>cire pour corps creux (type Waxoyl)</strong>. Réservez cette opération à l'été : la chaleur rend la cire plus fluide et lui permet de s'infiltrer dans les moindres interstices — en hiver, elle est trop épaisse pour pénétrer correctement.</li>
                 </ul>
 
-                <!-- ═══════════════════════════════════════════════════════ -->
-                <!-- BLOC INTERACTIF UX — DIAGNOSTIC ANTI-CORROSION         -->
-                <!-- ═══════════════════════════════════════════════════════ -->
+
+                <!-- ══ OUTIL DIAGNOSTIC ══ -->
                 <div id="diagnostic-outil" class="anticorr-diag-wrapper">
 
                     <div class="anticorr-diag-header">
-                        <span class="anticorr-diag-badge">💡 Outil Diagnostic</span>
-                        <h2 class="anticorr-diag-title">Trouvez votre solution sur-mesure</h2>
+                        <span class="anticorr-diag-badge">Outil Diagnostic</span>
+                        <p class="anticorr-diag-title">Trouvez votre solution sur-mesure</p>
                         <p class="anticorr-diag-subtitle">Répondez à 3 questions sur votre situation. L'outil génère instantanément votre plan d'action personnalisé et la liste des produits adaptés.</p>
                     </div>
 
-                    <!-- ÉTAPES -->
                     <div class="anticorr-steps" id="anticorr-steps">
 
-                        <!-- STEP 1 -->
                         <div class="anticorr-step active" data-step="1">
-                            <div class="anticorr-step-num">1 / 3</div>
+                            <div class="anticorr-step-num">Étape 1 / 3</div>
                             <p class="anticorr-step-question">Comment se présente la rouille sur votre châssis ?</p>
                             <div class="anticorr-options">
                                 <button class="anticorr-opt" data-key="rouille" data-val="surface" onclick="diagSelect(this)">
-                                    <span class="anticorr-opt-icon">🟡</span>
-                                    <strong>Rouille de surface</strong>
-                                    <small>Elle part partiellement au grattage, pas de trous dans le métal</small>
+                                    <div class="anticorr-opt-body">
+                                        <strong>Rouille de surface</strong>
+                                        <small>Elle part partiellement au grattage, pas de trous dans le métal</small>
+                                    </div>
                                 </button>
                                 <button class="anticorr-opt" data-key="rouille" data-val="profonde" onclick="diagSelect(this)">
-                                    <span class="anticorr-opt-icon">🔴</span>
-                                    <strong>Rouille profonde / perforante</strong>
-                                    <small>Des zones sont perforées ou très friables au toucher</small>
+                                    <div class="anticorr-opt-body">
+                                        <strong>Rouille profonde / perforante</strong>
+                                        <small>Des zones sont perforées ou très friables au toucher</small>
+                                    </div>
                                 </button>
                             </div>
                         </div>
 
-                        <!-- STEP 2 -->
                         <div class="anticorr-step" data-step="2">
-                            <div class="anticorr-step-num">2 / 3</div>
+                            <div class="anticorr-step-num">Étape 2 / 3</div>
                             <p class="anticorr-step-question">Dans quel contexte allez-vous travailler ?</p>
                             <div class="anticorr-options">
                                 <button class="anticorr-opt" data-key="acces" data-val="chandelles" onclick="diagSelect(this)">
-                                    <span class="anticorr-opt-icon">🔧</span>
-                                    <strong>Sur chandelles / cales</strong>
-                                    <small>Voiture surélevée dans votre garage sans pont professionnel</small>
+                                    <div class="anticorr-opt-body">
+                                        <strong>Sur chandelles / cales</strong>
+                                        <small>Voiture surélevée dans votre garage sans pont professionnel</small>
+                                    </div>
                                 </button>
                                 <button class="anticorr-opt" data-key="acces" data-val="pont" onclick="diagSelect(this)">
-                                    <span class="anticorr-opt-icon">🏗️</span>
-                                    <strong>Avec accès à un pont élévateur</strong>
-                                    <small>Chez un professionnel ou accès à un atelier équipé</small>
+                                    <div class="anticorr-opt-body">
+                                        <strong>Avec accès à un pont élévateur</strong>
+                                        <small>Chez un professionnel ou dans un atelier équipé</small>
+                                    </div>
                                 </button>
                             </div>
                         </div>
 
-                        <!-- STEP 3 -->
                         <div class="anticorr-step" data-step="3">
-                            <div class="anticorr-step-num">3 / 3</div>
+                            <div class="anticorr-step-num">Étape 3 / 3</div>
                             <p class="anticorr-step-question">Quel est votre équipement disponible ?</p>
                             <div class="anticorr-options">
                                 <button class="anticorr-opt" data-key="equipement" data-val="basique" onclick="diagSelect(this)">
-                                    <span class="anticorr-opt-icon">🖌️</span>
-                                    <strong>Basique</strong>
-                                    <small>Pinceau, brosse à main, produits du commerce</small>
+                                    <div class="anticorr-opt-body">
+                                        <strong>Basique</strong>
+                                        <small>Pinceau, brosse à main, produits du commerce</small>
+                                    </div>
                                 </button>
                                 <button class="anticorr-opt" data-key="equipement" data-val="intermediaire" onclick="diagSelect(this)">
-                                    <span class="anticorr-opt-icon">⚙️</span>
-                                    <strong>Intermédiaire</strong>
-                                    <small>Meuleuse d'angle, Karcher, pistolet corps creux</small>
+                                    <div class="anticorr-opt-body">
+                                        <strong>Intermédiaire</strong>
+                                        <small>Meuleuse d'angle, Karcher, pistolet corps creux</small>
+                                    </div>
                                 </button>
                                 <button class="anticorr-opt" data-key="equipement" data-val="pro" onclick="diagSelect(this)">
-                                    <span class="anticorr-opt-icon">🏭</span>
-                                    <strong>Professionnel</strong>
-                                    <small>Compresseur, pistolet à peinture, sableuse</small>
+                                    <div class="anticorr-opt-body">
+                                        <strong>Professionnel</strong>
+                                        <small>Compresseur, pistolet à peinture, sableuse</small>
+                                    </div>
                                 </button>
                             </div>
                         </div>
 
-                    </div><!-- /anticorr-steps -->
+                    </div>
 
-                    <!-- RÉSULTAT -->
                     <div class="anticorr-result" id="anticorr-result" style="display:none;">
                         <div class="anticorr-result-inner">
                             <div class="anticorr-result-title" id="result-title"></div>
                             <div class="anticorr-result-verdict" id="result-verdict"></div>
                             <div class="anticorr-result-products" id="result-products"></div>
                             <div class="anticorr-result-warning" id="result-warning"></div>
-                            <button class="anticorr-reset" onclick="diagReset()">↩ Refaire le diagnostic</button>
+                            <button class="anticorr-reset" onclick="diagReset()">Refaire le diagnostic</button>
                         </div>
                     </div>
 
-                </div><!-- /.anticorr-diag-wrapper -->
+                </div>
 
-                <!-- STYLES + JS du widget -->
                 <style>
                 .anticorr-diag-wrapper {
                     background: #111111;
                     border: 1px solid #2a2a2a;
                     border-radius: 12px;
-                    padding: 32px;
-                    margin: 40px 0;
+                    padding: 36px 32px;
+                    margin: 48px 0;
                     font-family: inherit;
                 }
                 .anticorr-diag-header {
                     text-align: center;
-                    margin-bottom: 28px;
+                    margin-bottom: 32px;
                 }
                 .anticorr-diag-badge {
                     display: inline-block;
                     background: #dc2626;
                     color: #fff;
-                    font-size: 12px;
+                    font-size: 11px;
                     font-weight: 700;
-                    letter-spacing: .08em;
+                    letter-spacing: .1em;
                     text-transform: uppercase;
-                    padding: 4px 14px;
+                    padding: 5px 16px;
                     border-radius: 20px;
-                    margin-bottom: 14px;
+                    margin-bottom: 16px;
                 }
                 .anticorr-diag-title {
                     font-size: 1.45rem;
                     font-weight: 700;
                     color: #ffffff;
-                    margin: 0 0 8px;
-                    border: none;
+                    margin: 0 0 10px;
                     padding: 0;
+                    border: none;
+                    background: none;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    line-height: 1.3;
                 }
-                .anticorr-diag-title::after { display: none; }
                 .anticorr-diag-subtitle {
-                    color: #999;
-                    font-size: .92rem;
-                    line-height: 1.5;
-                    margin: 0;
+                    color: #aaaaaa;
+                    font-size: .93rem;
+                    line-height: 1.6;
+                    margin: 0 auto;
+                    max-width: 520px;
                 }
-                .anticorr-progress {
-                    display: flex;
-                    gap: 6px;
-                    justify-content: center;
-                    margin-bottom: 24px;
-                }
-                .anticorr-progress-dot {
-                    width: 28px;
-                    height: 4px;
-                    border-radius: 2px;
-                    background: #2a2a2a;
-                    transition: background .3s;
-                }
-                .anticorr-progress-dot.done { background: #dc2626; }
                 .anticorr-step { display: none; }
                 .anticorr-step.active { display: block; }
                 .anticorr-step-num {
-                    font-size: .8rem;
-                    font-weight: 600;
+                    font-size: .78rem;
+                    font-weight: 700;
                     color: #dc2626;
                     text-transform: uppercase;
-                    letter-spacing: .1em;
-                    margin-bottom: 10px;
+                    letter-spacing: .12em;
+                    margin-bottom: 12px;
                 }
                 .anticorr-step-question {
-                    font-size: 1.1rem;
+                    font-size: 1.05rem;
                     font-weight: 600;
-                    color: #fff;
-                    margin: 0 0 18px;
+                    color: #ffffff;
+                    margin: 0 0 20px;
+                    line-height: 1.5;
                 }
                 .anticorr-options {
                     display: flex;
@@ -440,115 +415,100 @@ include __DIR__ . '/../header.php';
                     gap: 10px;
                 }
                 .anticorr-opt {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 14px;
+                    display: block;
                     background: #1a1a1a;
                     border: 1.5px solid #2a2a2a;
                     border-radius: 8px;
-                    padding: 16px 18px;
+                    padding: 16px 20px;
                     cursor: pointer;
                     text-align: left;
                     transition: border-color .2s, background .2s;
                     width: 100%;
                 }
-                .anticorr-opt:hover {
-                    border-color: #dc2626;
-                    background: #1e1212;
-                }
-                .anticorr-opt.selected {
-                    border-color: #dc2626;
-                    background: #1e1212;
-                }
-                .anticorr-opt-icon {
-                    font-size: 1.4rem;
-                    flex-shrink: 0;
-                    margin-top: 1px;
-                }
-                .anticorr-opt strong {
+                .anticorr-opt:hover  { border-color: #dc2626; background: #1e1212; }
+                .anticorr-opt.selected { border-color: #dc2626; background: #1e1212; }
+                .anticorr-opt-body strong {
                     display: block;
-                    color: #fff;
+                    color: #ffffff;
                     font-size: .95rem;
-                    margin-bottom: 3px;
+                    margin-bottom: 4px;
                 }
-                .anticorr-opt small {
-                    color: #888;
-                    font-size: .82rem;
-                    line-height: 1.4;
+                .anticorr-opt-body small {
+                    color: #888888;
+                    font-size: .83rem;
+                    line-height: 1.45;
+                    display: block;
                 }
-                .anticorr-result {
-                    animation: fadeInUp .4s ease;
-                }
-                @keyframes fadeInUp {
-                    from { opacity: 0; transform: translateY(12px); }
+                .anticorr-result { animation: anticorrFadeIn .4s ease; }
+                @keyframes anticorrFadeIn {
+                    from { opacity: 0; transform: translateY(10px); }
                     to   { opacity: 1; transform: translateY(0); }
                 }
                 .anticorr-result-inner {
                     background: #1a1a1a;
                     border-radius: 10px;
-                    padding: 28px;
+                    padding: 28px 24px;
                     border: 1.5px solid #2a2a2a;
+                    margin-top: 4px;
                 }
                 .anticorr-result-title {
-                    font-size: 1.15rem;
+                    font-size: 1.1rem;
                     font-weight: 700;
-                    color: #fff;
-                    margin-bottom: 12px;
+                    color: #ffffff;
+                    margin-bottom: 14px;
+                    line-height: 1.4;
                 }
                 .anticorr-result-verdict {
-                    font-size: .94rem;
-                    color: #ccc;
-                    line-height: 1.65;
-                    margin-bottom: 18px;
+                    font-size: .93rem;
+                    color: #cccccc;
+                    line-height: 1.75;
+                    margin-bottom: 20px;
                 }
                 .anticorr-result-products {
-                    background: #111;
+                    background: #111111;
                     border-radius: 8px;
-                    padding: 16px 18px;
-                    margin-bottom: 16px;
-                    border: 1px solid #222;
+                    padding: 18px 20px;
+                    margin-bottom: 18px;
+                    border: 1px solid #222222;
                 }
                 .anticorr-result-products strong {
                     display: block;
                     color: #dc2626;
-                    font-size: .82rem;
+                    font-size: .78rem;
                     text-transform: uppercase;
-                    letter-spacing: .08em;
-                    margin-bottom: 10px;
+                    letter-spacing: .1em;
+                    margin-bottom: 12px;
                 }
                 .anticorr-result-products ul {
                     margin: 0;
                     padding-left: 18px;
-                    color: #ddd;
+                    color: #dddddd;
                     font-size: .9rem;
-                    line-height: 1.7;
+                    line-height: 1.8;
                 }
                 .anticorr-result-warning {
                     font-size: .88rem;
-                    color: #f87171;
-                    line-height: 1.5;
-                    padding: 12px 16px;
+                    color: #fca5a5;
+                    line-height: 1.6;
+                    padding: 14px 18px;
                     border-radius: 6px;
-                    background: rgba(220,38,38,.08);
-                    border: 1px solid rgba(220,38,38,.2);
-                    margin-bottom: 20px;
+                    background: rgba(220,38,38,.07);
+                    border: 1px solid rgba(220,38,38,.18);
+                    margin-bottom: 22px;
                     display: none;
                 }
                 .anticorr-result-warning.show { display: block; }
                 .anticorr-reset {
                     background: transparent;
-                    border: 1.5px solid #2a2a2a;
-                    color: #888;
+                    border: 1.5px solid #333333;
+                    color: #777777;
                     border-radius: 6px;
-                    padding: 10px 20px;
+                    padding: 10px 22px;
                     cursor: pointer;
                     font-size: .86rem;
                     transition: border-color .2s, color .2s;
                 }
-                .anticorr-reset:hover {
-                    border-color: #555;
-                    color: #ccc;
-                }
+                .anticorr-reset:hover { border-color: #555555; color: #cccccc; }
                 </style>
 
                 <script>
@@ -560,11 +520,8 @@ include __DIR__ . '/../header.php';
                     var key = btn.getAttribute('data-key');
                     var val = btn.getAttribute('data-val');
                     diagAnswers[key] = val;
-
-                    var siblings = btn.parentNode.querySelectorAll('.anticorr-opt');
-                    siblings.forEach(function(s){ s.classList.remove('selected'); });
+                    btn.parentNode.querySelectorAll('.anticorr-opt').forEach(function(s){ s.classList.remove('selected'); });
                     btn.classList.add('selected');
-
                     setTimeout(function(){
                         if (diagCurrentStep < diagTotalSteps) {
                             document.querySelector('[data-step="' + diagCurrentStep + '"]').classList.remove('active');
@@ -581,40 +538,39 @@ include __DIR__ . '/../header.php';
                     var r = diagAnswers.rouille;
                     var a = diagAnswers.acces;
                     var e = diagAnswers.equipement;
-
                     var title, verdict, products, warning = '';
 
                     if (r === 'surface' && a === 'chandelles' && e === 'basique') {
-                        title   = '✅ Traitement DIY au pinceau — Faisable seul';
+                        title   = 'Traitement DIY au pinceau — Faisable seul';
                         verdict = 'Votre rouille est encore superficielle : bonne nouvelle, vous n\'avez pas besoin de matériel professionnel. Travaillez section par section. Commencez par gratter à la brosse à main en acier pour retirer la rouille friable, puis appliquez un convertisseur de rouille au pinceau (2 couches). Terminez par une peinture antirouille ou un primaire en bombe. Comptez 2 à 3 week-ends de travail selon la surface.';
                         products = '<strong>Votre liste de courses</strong><ul><li>Brosse métallique à main (fils acier)</li><li>Convertisseur de rouille Férose ou Rustol Owatrol (1 L)</li><li>Primaire antirouille en bombe ou au pinceau</li><li>Lunettes de protection + gants nitrile</li></ul>';
                     }
                     else if (r === 'surface' && a === 'chandelles' && e === 'intermediaire') {
-                        title   = '✅ Traitement DIY complet à la meuleuse — Résultat pro';
+                        title   = 'Traitement DIY complet à la meuleuse — Résultat pro';
                         verdict = 'Avec votre meuleuse, vous pouvez faire un travail remarquable. Commencez par le Karcher, puis décapez au maximum à la brosse cloche laiton (115 mm). Passez le convertisseur de rouille, et injectez de la cire Waxoyl dans les corps creux avec votre pistolet. Le résultat sera proche d\'une intervention en atelier.';
                         products = '<strong>Votre liste de courses</strong><ul><li>Brosse cloche laiton 65 mm pour meuleuse 115 mm</li><li>Convertisseur de rouille Férose (1 L)</li><li>Pistolet corps creux + tuyau prolongateur souple</li><li>Cire corps creux Waxoyl (1 L)</li><li>Peinture châssis antirouille (noir, 1 L)</li><li>Lunettes épaisses + vêtements couvrants</li></ul>';
                     }
                     else if (r === 'surface' && a === 'pont' && e === 'pro') {
-                        title   = '🏆 Traitement professionnel complet — Résultat optimal';
+                        title   = 'Traitement professionnel complet — Résultat optimal';
                         verdict = 'Avec un pont et un compresseur, vous pouvez réaliser le traitement de référence : décapage mécanique complet, convertisseur, primaire époxy bi-composant au pistolet et cire corps creux injectée sous pression. C\'est la méthode utilisée en atelier pour les restaurations durables. Masquez soigneusement l\'échappement, les freins et le plancher avant toute projection.';
                         products = '<strong>Votre liste de courses</strong><ul><li>Brosse cloche laiton pour meuleuse</li><li>Convertisseur de rouille Férose ou PAC 2030</li><li>Primaire époxy bi-composant (ex: Rustol Hammerite)</li><li>Pistolet à peinture + compresseur</li><li>Cire corps creux Waxoyl sous pression</li><li>Film de masquage + scotch de carrossier</li></ul>';
                     }
                     else if (r === 'profonde' && a === 'chandelles') {
-                        title   = '⚠️ Rouille perforante : intervention professionnelle recommandée';
-                        verdict = 'Une rouille perforante sur des zones structurelles (longerons, berceau) nécessite une évaluation sérieuse. Sans pont élévateur, vous ne pouvez pas accéder à toutes les zones critiques, et surtout, vous ne pouvez pas garantir l\'absence de perforation cachée. Avant tout traitement de surface, il faut s\'assurer qu\'une soudure n\'est pas nécessaire — c\'est le travail d\'un garage équipé.';
-                        products = '<strong>Votre liste de courses (traitement préventif complémentaire)</strong><ul><li>Convertisseur de rouille Férose pour les zones accessibles</li><li>Cire corps creux Waxoyl (injection dans les longerons)</li></ul>';
-                        warning = '🚨 Attention : une rouille perforante sur des éléments porteurs est un motif de refus au contrôle technique. Ne masquez pas le problème avec de l\'anti-gravillon. Faites évaluer le châssis par un professionnel avant le prochain CT.';
+                        title   = 'Rouille perforante — Intervention professionnelle recommandée';
+                        verdict = 'Une rouille perforante sur des zones structurelles (longerons, berceau) nécessite une évaluation sérieuse. Sans pont élévateur, vous ne pouvez pas accéder à toutes les zones critiques ni garantir l\'absence de perforation cachée. Avant tout traitement de surface, il faut s\'assurer qu\'une soudure n\'est pas nécessaire — c\'est le travail d\'un garage équipé.';
+                        products = '<strong>Traitement préventif complémentaire (zones accessibles)</strong><ul><li>Convertisseur de rouille Férose pour les zones accessibles</li><li>Cire corps creux Waxoyl (injection dans les longerons)</li></ul>';
+                        warning = 'Une rouille perforante sur des éléments porteurs est un motif de refus au contrôle technique. Ne masquez pas le problème avec de l\'anti-gravillon. Faites évaluer le châssis par un professionnel avant le prochain CT.';
                     }
                     else if (r === 'profonde' && a === 'pont') {
-                        title   = '🔴 Diagnostic professionnel urgent — Soudure possible';
-                        verdict = 'La présence de perforations ou de zones très friables sur le châssis doit être prise très au sérieux. Avec un pont, le premier travail est un diagnostic complet pour évaluer si des soudures de remplacement de tôle sont nécessaires. Le traitement anti-corrosion ne vient qu\'après consolidation structurelle. Dans tous les cas, ne recouvrez pas les zones perforées avec du Blackson — cela masquerait le problème et accélérerait la dégradation.';
+                        title   = 'Diagnostic professionnel urgent — Soudure possible';
+                        verdict = 'La présence de perforations ou de zones très friables sur le châssis doit être prise très au sérieux. Avec un pont, le premier travail est un diagnostic complet pour évaluer si des soudures de remplacement de tôle sont nécessaires. Le traitement anti-corrosion ne vient qu\'après consolidation structurelle. Ne recouvrez pas les zones perforées avec du Blackson.';
                         products = '<strong>Matériel nécessaire (après consolidation)</strong><ul><li>Sableuse ou meuleuse pour retrait complet des zones corrodées</li><li>Convertisseur de rouille Férose</li><li>Primaire époxy bi-composant</li><li>Cire corps creux Waxoyl sous pression</li><li>Peinture châssis finition</li></ul>';
-                        warning = '🚨 Des perforations sur des longerons ou points d\'ancrage de suspension constituent un danger structurel immédiat. Faites évaluer votre véhicule avant de rouler.';
+                        warning = 'Des perforations sur des longerons ou points d\'ancrage de suspension constituent un danger structurel immédiat. Faites évaluer votre véhicule avant de rouler.';
                     }
                     else {
-                        title   = '✅ Traitement adapté à votre situation';
+                        title   = 'Traitement adapté à votre situation';
                         verdict = 'Sur la base de vos réponses, un traitement en 3 étapes est conseillé : décapage mécanique, convertisseur de rouille, puis protection (primaire et cire corps creux). Adaptez la méthode à votre niveau d\'équipement en vous appuyant sur les sections détaillées de ce guide.';
-                        products = '<strong>Base recommandée pour tous les cas</strong><ul><li>Convertisseur de rouille (Férose ou Rustol Owatrol)</li><li>Primaire antirouille</li><li>Cire corps creux (Waxoyl)</li><li>Équipements de protection (lunettes, gants)</li></ul>';
+                        products = '<strong>Base recommandée pour tous les cas</strong><ul><li>Convertisseur de rouille (Férose ou Rustol Owatrol)</li><li>Primaire antirouille</li><li>Cire corps creux (Waxoyl)</li><li>Lunettes de protection + gants nitrile</li></ul>';
                     }
 
                     document.getElementById('result-title').innerHTML   = title;
@@ -622,10 +578,7 @@ include __DIR__ . '/../header.php';
                     document.getElementById('result-products').innerHTML = products;
 
                     var warnEl = document.getElementById('result-warning');
-                    if (warning) {
-                        warnEl.innerHTML = warning;
-                        warnEl.classList.add('show');
-                    }
+                    if (warning) { warnEl.innerHTML = warning; warnEl.classList.add('show'); }
 
                     document.getElementById('anticorr-result').style.display = 'block';
                 }
@@ -633,25 +586,22 @@ include __DIR__ . '/../header.php';
                 function diagReset() {
                     diagAnswers = {};
                     diagCurrentStep = 1;
-
                     document.querySelectorAll('.anticorr-step').forEach(function(s){ s.classList.remove('active'); });
                     document.querySelector('[data-step="1"]').classList.add('active');
                     document.querySelectorAll('.anticorr-opt').forEach(function(b){ b.classList.remove('selected'); });
-
                     document.getElementById('anticorr-steps').style.display = 'block';
                     document.getElementById('anticorr-result').style.display = 'none';
                     document.getElementById('result-warning').classList.remove('show');
                 }
                 </script>
-                <!-- ── FIN BLOC INTERACTIF ── -->
 
-                <!-- ── H2 : PRÉVENTION ── -->
+
                 <h2 id="prevention">Prévention : comment protéger son châssis à l'avenir ?</h2>
 
                 <p>Une fois votre châssis réparé, décapé et traité chimiquement, il faut <strong>impérativement isoler le métal de l'oxygène et de l'humidité</strong> pour que la corrosion ne reprenne pas dès l'hiver suivant. Voici les couches de protection dans le bon ordre :</p>
 
                 <ul>
-                    <li><strong>Primaire époxy bi-composant :</strong> c'est la protection la plus redoutable disponible aujourd'hui pour un usage amateur ou professionnel. Il adhère parfaitement sur métal traité et crée une barrière étanche. Il s'applique au pinceau (très salissant) ou au pistolet si vous avez bien masqué les zones sensibles — échappement, freins, et surfaces en caoutchouc.</li>
+                    <li><strong>Primaire époxy bi-composant :</strong> c'est la protection la plus redoutable disponible aujourd'hui. Il adhère parfaitement sur métal traité et crée une barrière étanche. Il s'applique au pinceau (très salissant) ou au pistolet si vous avez bien masqué les zones sensibles — échappement, freins, et surfaces en caoutchouc.</li>
                     <li><strong>Peinture châssis finition :</strong> une couche de peinture antirouille noire (type Hammerite) par-dessus le primaire assure une protection durable et un aspect propre.</li>
                     <li><strong>Cire corps creux (Waxoyl) :</strong> injectée dans les longerons et les bas de caisse à intervalle régulier — tous les 5 ans environ — pour renouveler la protection des zones non accessibles.</li>
                 </ul>
@@ -660,11 +610,10 @@ include __DIR__ . '/../header.php';
 
                 <p>S'il y a une règle d'or à retenir de ce guide, c'est celle-ci : <strong>ne mettez jamais d'anti-gravillon goudronneux (type Blackson) sur une tôle qui n'a pas été parfaitement traitée et peinte.</strong></p>
 
-                <p>Appliqué sur un châssis douteux, l'anti-gravillon agit comme un terrible "cache-misère". Avec le temps, le goudron devient poreux. L'eau s'y infiltre et se retrouve piégée contre le métal. Votre châssis va alors <strong>pourrir de l'intérieur en silence</strong>, dissimulé sous une belle pellicule noire, jusqu'à ce que la structure cède. C'est l'erreur la plus souvent citée dans tous les forums de restauration automobile, et on la voit régulièrement en atelier sur des véhicules qui semblaient propres en dessous.</p>
+                <p>Appliqué sur un châssis douteux, l'anti-gravillon agit comme un terrible "cache-misère". Avec le temps, le goudron devient poreux. L'eau s'y infiltre et se retrouve piégée contre le métal. Votre châssis va alors <strong>pourrir de l'intérieur en silence</strong>, dissimulé sous une belle pellicule noire, jusqu'à ce que la structure cède. C'est l'erreur la plus souvent citée dans tous les forums de restauration automobile.</p>
 
                 <p>L'anti-gravillon ne s'utilise qu'en toute dernière étape — sur un apprêt sain — et uniquement dans les zones exposées aux projections de cailloux (passages de roues).</p>
 
-                <!-- ── H2 : FAQ ── -->
                 <h2 id="faq-corrosion">FAQ : vos questions sur la corrosion automobile</h2>
 
                 <div class="art-faq" itemscope itemtype="https://schema.org/FAQPage">
@@ -686,7 +635,7 @@ include __DIR__ . '/../header.php';
                     <div class="art-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="art-faq-q" itemprop="name">Quel budget pour faire traiter son châssis par un professionnel ?</div>
                         <div class="art-faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <div itemprop="text">Le traitement d'un châssis représente un travail considérable en temps : nettoyage, grattage, séchage, masquage des éléments, traitement chimique et peinture. Si vous le faites vous-même, comptez environ 100 à 150 € de produits (convertisseur, peinture, brosses, cire). Si vous passez par un professionnel sur pont élévateur pour un traitement complet dans les règles de l'art, le budget varie généralement entre 600 et 1 500 € selon le gabarit du véhicule et l'état d'avancement de la corrosion.</div>
+                            <div itemprop="text">Le traitement d'un châssis représente un travail considérable en temps : nettoyage, grattage, séchage, masquage des éléments, traitement chimique et peinture. En DIY, comptez environ 100 à 150 € de produits (convertisseur, peinture, brosses, cire). Si vous passez par un professionnel sur pont élévateur pour un traitement complet dans les règles de l'art, le budget varie généralement entre 600 et 1 500 € selon le gabarit du véhicule et l'état d'avancement de la corrosion.</div>
                         </div>
                     </div>
 
@@ -706,39 +655,60 @@ include __DIR__ . '/../header.php';
 
                 </div>
 
-                <!-- Styles FAQ -->
                 <style>
-                .art-faq { margin-top: 10px; }
+                /* ── FAQ ── */
+                .art-faq {
+                    margin-top: 16px;
+                    border-top: 1px solid #2a2a2a;
+                }
                 .art-faq-item {
                     border-bottom: 1px solid #2a2a2a;
-                    padding: 0;
-                    margin-bottom: 0;
                 }
                 .art-faq-q {
                     font-weight: 600;
-                    color: #fff;
-                    padding: 18px 0 14px;
+                    color: #ffffff;
+                    padding: 22px 0 16px;
+                    font-size: 1rem;
+                    line-height: 1.5;
                     cursor: default;
-                    font-size: .97rem;
-                    line-height: 1.45;
                 }
                 .art-faq-a div {
-                    color: #ccc;
+                    color: #bbbbbb;
                     font-size: .93rem;
-                    line-height: 1.7;
-                    padding-bottom: 18px;
+                    line-height: 1.8;
+                    padding-bottom: 22px;
+                }
+
+                /* ── Aération générale du contenu ── */
+                .art-content p {
+                    line-height: 1.85;
+                    margin-bottom: 1.4em;
+                }
+                .art-content h2 {
+                    margin-top: 3rem;
+                    margin-bottom: 1.1rem;
+                }
+                .art-content h3 {
+                    margin-top: 2rem;
+                    margin-bottom: 0.8rem;
+                }
+                .art-content ul,
+                .art-content ol {
+                    margin-bottom: 1.4em;
+                    padding-left: 1.4em;
+                }
+                .art-content li {
+                    margin-bottom: 0.55em;
+                    line-height: 1.75;
+                }
+                .art-content blockquote {
+                    margin: 2rem 0;
                 }
                 </style>
 
-                <!-- Conclusion box -->
-                <div class="art-tldr" style="border-left-color: #dc2626; background-color: #111111; color: #ffffff; margin-top: 40px;">
-                    <div class="art-tldr-title" style="color: #ffffff;">Le mot du Garage Expert Auto</div>
-                    <p style="margin: 0; color: #ffffff;">La corrosion du châssis n'attend pas. Que vous décidiez de vous y attaquer vous-même ou de confier votre véhicule à notre équipe, l'important est d'agir dans le bon ordre et avec les bons produits. Si votre châssis présente des perforations ou si vous avez un doute avant un contrôle technique, <strong>prenez rendez-vous</strong> pour un diagnostic : on passe le dessous de votre voiture sur le pont et on vous dit exactement ce qu'il en est — sans langue de bois.</p>
-                </div>
-
             </div><!-- /.art-content -->
 
-            <!-- Premium Author Box -->
+            <!-- Author Box -->
             <div class="art-author-box">
                 <img src="<?php echo $article['author_img']; ?>"
                      alt="<?php echo $article['author']; ?>"
@@ -753,13 +723,13 @@ include __DIR__ . '/../header.php';
                 </div>
             </div>
 
-            <!-- Heavy Conclusion Box -->
+            <!-- Conclusion Box -->
             <div class="art-conclusion" style="background-color: #111111; color: #ffffff;">
                 <h2 style="color: #ffffff;">Le mot de la fin</h2>
                 <p style="color: #ffffff;">La rouille sous le châssis n'est ni une fatalité ni un problème cosmétique. Avec la bonne méthode — décapage, convertisseur, protection — et les bons produits, un soubassement très attaqué peut être sauvé et protégé pour de nombreuses années. Ce qui condamne les voitures, ce n'est pas la rouille elle-même, c'est le cache-misère appliqué dessus sans traitement préalable. Agissez tôt, agissez bien.</p>
             </div>
 
-            <!-- Similar Articles Grid (dynamique) -->
+            <!-- Similar Articles Grid -->
             <section class="art-related">
                 <h2 class="art-related-title">Poursuivre la lecture dans <a href="/<?php echo $article['category']; ?>"><?php echo $article['category_name']; ?></a></h2>
                 <div class="art-related-grid">
@@ -801,7 +771,7 @@ include __DIR__ . '/../header.php';
 
         </div><!-- /.art-main-col -->
 
-        <!-- ASYMMETRIC RIGHT SIDEBAR (dynamique) -->
+        <!-- RIGHT SIDEBAR -->
         <aside class="art-sidebar-right">
             <div class="art-sidebar-sticky">
 
@@ -856,14 +826,15 @@ include __DIR__ . '/../header.php';
 </article>
 
 
-<!-- Schema JSON-LD (Article + FAQ) -->
+<!-- Schema JSON-LD -->
 <script type="application/ld+json">
 <?php
 $faq_entities = [
     ["@type" => "Question", "name" => "Peut-on stopper définitivement la rouille sous une voiture ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Oui, à condition d'éliminer totalement l'oxygène et l'humidité via décapage, convertisseur de rouille et traitements préventifs réguliers (cire corps creux tous les 5 ans)."]],
-    ["@type" => "Question", "name" => "Le sablage du châssis est-il obligatoire ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Non. Pour une rouille de surface, un décapage mécanique à la meuleuse suivi d'un convertisseur de rouille est amplement suffisant."]],
+    ["@type" => "Question", "name" => "Le sablage du châssis est-il obligatoire ?",                    "acceptedAnswer" => ["@type" => "Answer", "text" => "Non. Pour une rouille de surface, un décapage mécanique à la meuleuse suivi d'un convertisseur de rouille est amplement suffisant."]],
     ["@type" => "Question", "name" => "Quel budget pour faire traiter son châssis par un professionnel ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Comptez 100 à 150 € en DIY, entre 600 et 1 500 € en atelier professionnel selon le gabarit et l'état de la corrosion."]],
     ["@type" => "Question", "name" => "Pourquoi les professionnels déconseillent-ils le Blackson sur un châssis rouillé ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Le Blackson est un revêtement, pas un traitement. Il emprisonne l'humidité contre la rouille non traitée, faisant pourrir le châssis de l'intérieur en silence."]],
+    ["@type" => "Question", "name" => "Quelle est la différence entre un convertisseur de rouille et un destructeur de rouille ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Le destructeur (acide phosphorique) dissout l'oxyde de fer et nécessite un rinçage. Le convertisseur (Férose, Owatrol) transforme la rouille en phosphate de fer stable sans rinçage — plus sûr pour un amateur."]],
 ];
 
 $schema = [
@@ -871,31 +842,18 @@ $schema = [
     "@graph"   => [
         [
             "@type"            => "Article",
-            "mainEntityOfPage" => [
-                "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
-            ],
-            "headline"      => $article['title'],
-            "description"   => $article['subtitle'],
-            "image"         => ["https://garageraymond.fr" . $article['image']],
-            "datePublished" => "2026-04-06T10:00:00+02:00",
-            "dateModified"  => "2026-04-06T10:00:00+02:00",
-            "author"        => [
-                "@type"    => "Person",
-                "name"     => $article['author'],
-                "url"      => "https://garageraymond.fr/equipe",
-                "jobTitle" => $article['author_role']
-            ],
-            "publisher" => [
+            "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
+            "headline"         => $article['title'],
+            "description"      => $article['subtitle'],
+            "image"            => ["https://garageraymond.fr" . $article['image']],
+            "datePublished"    => "2026-04-06T10:00:00+02:00",
+            "dateModified"     => "2026-04-06T10:00:00+02:00",
+            "author"           => ["@type" => "Person", "name" => $article['author'], "url" => "https://garageraymond.fr/equipe", "jobTitle" => $article['author_role']],
+            "publisher"        => [
                 "@type" => "Organization",
                 "name"  => "Le garage expert Auto",
                 "url"   => "https://garageraymond.fr",
-                "logo"  => [
-                    "@type"  => "ImageObject",
-                    "url"    => "https://garageraymond.fr/Image/favicon.png",
-                    "width"  => "512",
-                    "height" => "512"
-                ]
+                "logo"  => ["@type" => "ImageObject", "url" => "https://garageraymond.fr/Image/favicon.png", "width" => "512", "height" => "512"]
             ]
         ],
         [
@@ -907,6 +865,5 @@ $schema = [
 echo json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 ?>
 </script>
-
 
 <?php include __DIR__ . '/../footer.php'; ?>
