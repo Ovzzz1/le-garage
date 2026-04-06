@@ -1,8 +1,6 @@
 <?php
 // published: 2026-04-06 10:00
- * traitement-anti-corrosion-chassis-voiture.php
- */
-
+// traitement-anti-corrosion-chassis-voiture.php
 
 $page_title       = "Traitement anti corrosion châssis voiture : le guide d'expert (causes, solutions et prévention)";
 $page_description = "Comment traiter la corrosion du châssis de votre voiture ? Guide complet : causes, décapage, convertisseur de rouille, piège du Blackson et prévention. Conseils d'experts.";
@@ -16,7 +14,7 @@ $article = [
     'category_color' => '#dc2626',
     'tags'           => ['Anti-corrosion', 'Châssis', 'Traitement rouille', 'Entretien voiture'],
     'image'          => '/Image/traitement-anti-corrosion-chassis-voiture.webp',
-    'date'          => '6 Avril 2026',
+    'date'           => '6 Avril 2026',
     'author'         => 'David',
     'author_role'    => 'Mécanicien expert & Fondateur',
     'author_img'     => '/Image/david.png',
@@ -48,10 +46,8 @@ if (is_dir($blog_dir)) {
         $file_slug = pathinfo($file, PATHINFO_FILENAME);
         if ($file_slug === $current_slug) continue;
 
-
         $other_article = null;
         $content       = file_get_contents($file);
-
 
         if (preg_match('/\$article\s*=\s*\[(.+?)\];/s', $content, $matches)) {
             try {
@@ -61,12 +57,10 @@ if (is_dir($blog_dir)) {
             }
         }
 
-
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
             $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
-
 
             if (($other_article['category'] ?? '') === $article['category']) {
                 $same_cat_articles[] = $other_article;
@@ -92,7 +86,6 @@ include __DIR__ . '/../header.php';
              width="1200" height="675" decoding="async">
         <div class="art-hero-overlay"></div>
 
-
         <div class="art-hero-container">
             <div class="art-hero-content">
                 <nav class="art-breadcrumb">
@@ -103,17 +96,14 @@ include __DIR__ . '/../header.php';
                     <span>Guide Technique</span>
                 </nav>
 
-
                 <div class="art-hero-tags">
                     <?php foreach ($article['tags'] as $tag): ?>
                         <span class="art-tag"><?php echo $tag; ?></span>
                     <?php endforeach; ?>
                 </div>
 
-
                 <h1><?php echo $article['title']; ?></h1>
                 <p class="art-hero-sub"><?php echo $article['subtitle']; ?></p>
-
 
                 <div class="art-hero-meta">
                     <div class="art-author-pill">
@@ -154,10 +144,8 @@ include __DIR__ . '/../header.php';
     <!-- ASYMMETRIC LAYOUT (70 / 30) -->
     <div class="art-layout-wrapper">
 
-
         <!-- MAIN CONTENT -->
         <div class="art-main-col">
-
 
             <!-- TL;DR Dashboard Box -->
             <div class="art-tldr">
@@ -170,7 +158,6 @@ include __DIR__ . '/../header.php';
                     <li><strong>DIY ou pro :</strong> Comptez 100–150 € de produits en autonome, entre 600 et 1 500 € en garage selon le gabarit et l'état d'avancement de la corrosion.</li>
                 </ul>
             </div>
-
 
             <!-- Table of Contents -->
             <div class="art-toc">
@@ -191,32 +178,24 @@ include __DIR__ . '/../header.php';
             <!-- ═══════════════════════════════════════════════════════ -->
             <div class="art-content">
 
-
                 <p>La rouille est l'ennemi invisible de tout véhicule. Qu'elle soit de surface ou perforante, la corrosion du châssis ne pardonne pas et finit toujours par se propager si elle n'est pas stoppée à temps. Comment réparer une tôle déjà piquée ? Faut-il poncer, appliquer un destructeur de rouille ou utiliser un convertisseur ? Croyez-en notre expérience au garage : traiter les soubassements de sa voiture demande de la méthode et surtout, de choisir les bons produits pour ne pas empirer la situation. Voici notre guide complet pour comprendre, éliminer et prévenir la corrosion de votre châssis.</p>
-
 
                 <!-- ── H2 : DÉFINITION ── -->
                 <h2 id="definition-corrosion">Qu'est-ce que la corrosion du châssis et quels risques pour votre voiture ?</h2>
 
-
                 <p>La corrosion est une réaction chimique naturelle : lorsque l'acier de votre voiture entre en contact avec l'oxygène et l'humidité, il s'oxyde. Sous le véhicule, cette oxydation attaque en priorité les <strong>longerons</strong>, le <strong>berceau moteur</strong> et le <strong>plancher</strong> — soit l'ossature même de la voiture.</p>
 
-
                 <p>Les risques ne sont pas qu'esthétiques, ils sont avant tout structurels. Un châssis fortement corrodé perd sa rigidité et compromet directement la sécurité du véhicule en cas de choc. D'un point de vue réglementaire, la sanction est immédiate : une corrosion perforante ou une faiblesse au niveau des points d'ancrage entraîne un <strong>refus catégorique au contrôle technique</strong>. Dans les cas les plus extrêmes, si la réparation par soudure est économiquement irréalisable, la voiture peut tout simplement finir à la casse.</p>
-
 
                 <blockquote class="art-blockquote">
                     J'ai vu des châssis de SUV familiaux refusés au contrôle technique à cause d'un longeron perforé invisible depuis l'extérieur. Le Blackson avait tout recouvert — et la tôle pourrissait en silence depuis des années.
                     <cite>— David, mécanicien expert, Garage Raymond</cite>
                 </blockquote>
 
-
                 <!-- ── H2 : CAUSES ── -->
                 <h2 id="causes-rouille">Quelles sont les vraies causes de la rouille sous le véhicule ?</h2>
 
-
                 <p>On accuse souvent l'âge du véhicule, mais la réalité du terrain est bien plus liée à l'environnement et à l'entretien des soubassements qu'au millésime seul. Voici ce qui fait vraiment rouiller votre châssis :</p>
-
 
                 <ul>
                     <li><strong>L'effet éponge de la terre accumulée :</strong> C'est le fléau des 4x4, des vans aménagés et des véhicules roulant en campagne. La boue et la terre s'accumulent dans les recoins et les corps creux du châssis. Cette terre retient l'humidité en permanence, empêchant le métal de sécher. Un châssis qui fait du tout-terrain ou roule sur route boueuse peut accumuler des kilos de terre dans ses corps creux — un vrai nid à rouille.</li>
@@ -225,34 +204,25 @@ include __DIR__ . '/../header.php';
                     <li><strong>L'eau stagnante :</strong> Des évacuations bouchées dans les portières, les bas de caisse ou les corps creux retiennent l'eau à l'intérieur de la structure. L'eau stagnante est la cause numéro un des perforations dans les zones non visibles.</li>
                 </ul>
 
-
                 <!-- ── H2 : TRAITEMENT ── -->
                 <h2 id="traitement-rouille">Comment réparer et traiter un châssis déjà piqué par la rouille ?</h2>
 
-
                 <p>Si votre châssis présente une rouille de surface, inutile de paniquer — mais il faut agir par étapes et dans le bon ordre. <strong>Poser de la peinture ou un anti-gravillon directement sur de la rouille friable est la pire erreur possible.</strong> Voici la méthode éprouvée en atelier, issue de dizaines d'interventions sur des véhicules dans tous les états.</p>
-
 
                 <h3>Le décapage mécanique (meuleuse et brosse métallique)</h3>
 
-
                 <p>C'est la phase la plus ingrate — surtout si vous travaillez couché sous la voiture sur des chandelles — mais elle est absolument indispensable. Commencez toujours par un <strong>passage intensif au nettoyeur haute pression (Karcher)</strong> pour faire tomber un maximum de terre et de crasse. Ce que vous ne prenez pas dans la tronche maintenant, vous le prendrez au décapage.</p>
 
-
                 <p>Ensuite, équipez-vous d'une <strong>petite meuleuse d'angle (115 mm)</strong> munie d'une brosse métallique en forme de cloche, de préférence avec des <strong>fils en laiton</strong> plutôt qu'en acier torsadé : les fils laiton épousent mieux les recoins et les têtes de vis. Tenez la meuleuse d'une main pour l'emmener partout. Le métal doit être mis à nu.</p>
-
 
                 <div class="art-warning-box" style="background:#1a1a1a; border-left: 4px solid #dc2626; padding: 18px 22px; border-radius: 6px; margin: 24px 0;">
                     <strong style="color:#dc2626; display:block; margin-bottom:8px;">⚠️ Sécurité obligatoire</strong>
                     <span style="color:#e5e5e5;">Le port de lunettes de protection épaisses est non négociable : la rouille, la terre et les brins de brosse volent à grande vitesse. Vêtements épais indispensables. En fin de vie de brosse, des fils se décochent — soyez prévenus.</span>
                 </div>
 
-
                 <h3>Le traitement chimique : acide phosphorique ou convertisseur de rouille ?</h3>
 
-
                 <p>Une fois la rouille friable éliminée mécaniquement, il reste toujours de la corrosion incrustée dans les pores du métal. C'est là qu'intervient le traitement chimique. Deux écoles s'affrontent :</p>
-
 
                 <div class="art-table-wrap">
                     <table class="art-table">
@@ -293,15 +263,11 @@ include __DIR__ . '/../header.php';
                     </table>
                 </div>
 
-
                 <p>Notre recommandation terrain : le <strong>convertisseur de rouille type Férose</strong> pour les non-initiés. Vous l'appliquez au pinceau sur la rouille résiduelle, il réagit chimiquement, la rouille se transforme en une couche noire et dure prête à recevoir la peinture. Pas de rinçage, pas de risque de flash rust.</p>
-
 
                 <h3>Le cas critique des corps creux (longerons)</h3>
 
-
                 <p>Il est tout simplement impossible de passer une meuleuse à l'intérieur d'un longeron ou d'un corps creux. Et c'est pourtant là que la rouille fait le plus de dégâts en silence. La vraie astuce terrain :</p>
-
 
                 <ul>
                     <li>Utilisez un <strong>pistolet anti-gravillon équipé d'un tuyau prolongateur souple</strong> (on en trouve facilement sur internet ou dans les magasins d'accessoires auto). Le flexible se glisse dans les orifices de drainage existants.</li>
@@ -309,12 +275,10 @@ include __DIR__ . '/../header.php';
                     <li>Puis injectez généreusement une <strong>cire pour corps creux (type Waxoyl)</strong>. <em>Conseil terrain :</em> réservez cette opération à l'été. La chaleur rend la cire plus fluide et lui permet de s'infiltrer dans les moindres interstices — en hiver, elle est trop épaisse pour pénétrer correctement.</li>
                 </ul>
 
-
                 <!-- ═══════════════════════════════════════════════════════ -->
                 <!-- BLOC INTERACTIF UX — DIAGNOSTIC ANTI-CORROSION         -->
                 <!-- ═══════════════════════════════════════════════════════ -->
                 <div id="diagnostic-outil" class="anticorr-diag-wrapper">
-
 
                     <div class="anticorr-diag-header">
                         <span class="anticorr-diag-badge">💡 Outil Diagnostic</span>
@@ -322,10 +286,8 @@ include __DIR__ . '/../header.php';
                         <p class="anticorr-diag-subtitle">Répondez à 3 questions sur votre situation. L'outil génère instantanément votre plan d'action personnalisé et la liste des produits adaptés.</p>
                     </div>
 
-
                     <!-- ÉTAPES -->
                     <div class="anticorr-steps" id="anticorr-steps">
-
 
                         <!-- STEP 1 -->
                         <div class="anticorr-step active" data-step="1">
@@ -345,7 +307,6 @@ include __DIR__ . '/../header.php';
                             </div>
                         </div>
 
-
                         <!-- STEP 2 -->
                         <div class="anticorr-step" data-step="2">
                             <div class="anticorr-step-num">2 / 3</div>
@@ -363,7 +324,6 @@ include __DIR__ . '/../header.php';
                                 </button>
                             </div>
                         </div>
-
 
                         <!-- STEP 3 -->
                         <div class="anticorr-step" data-step="3">
@@ -388,9 +348,7 @@ include __DIR__ . '/../header.php';
                             </div>
                         </div>
 
-
                     </div><!-- /anticorr-steps -->
-
 
                     <!-- RÉSULTAT -->
                     <div class="anticorr-result" id="anticorr-result" style="display:none;">
@@ -403,9 +361,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                 </div><!-- /.anticorr-diag-wrapper -->
-
 
                 <!-- STYLES + JS du widget -->
                 <style>
@@ -448,9 +404,6 @@ include __DIR__ . '/../header.php';
                     line-height: 1.5;
                     margin: 0;
                 }
-
-
-                /* Progress bar */
                 .anticorr-progress {
                     display: flex;
                     gap: 6px;
@@ -465,12 +418,8 @@ include __DIR__ . '/../header.php';
                     transition: background .3s;
                 }
                 .anticorr-progress-dot.done { background: #dc2626; }
-
-
                 .anticorr-step { display: none; }
                 .anticorr-step.active { display: block; }
-
-
                 .anticorr-step-num {
                     font-size: .8rem;
                     font-weight: 600;
@@ -527,9 +476,6 @@ include __DIR__ . '/../header.php';
                     font-size: .82rem;
                     line-height: 1.4;
                 }
-
-
-                /* Résultat */
                 .anticorr-result {
                     animation: fadeInUp .4s ease;
                 }
@@ -605,103 +551,75 @@ include __DIR__ . '/../header.php';
                 }
                 </style>
 
-
                 <script>
                 var diagAnswers = {};
                 var diagCurrentStep = 1;
                 var diagTotalSteps = 3;
-
 
                 function diagSelect(btn) {
                     var key = btn.getAttribute('data-key');
                     var val = btn.getAttribute('data-val');
                     diagAnswers[key] = val;
 
-
-                    // Highlight sélection
                     var siblings = btn.parentNode.querySelectorAll('.anticorr-opt');
                     siblings.forEach(function(s){ s.classList.remove('selected'); });
                     btn.classList.add('selected');
 
-
-                    // Passe à l'étape suivante après 350ms
                     setTimeout(function(){
                         if (diagCurrentStep < diagTotalSteps) {
                             document.querySelector('[data-step="' + diagCurrentStep + '"]').classList.remove('active');
                             diagCurrentStep++;
                             document.querySelector('[data-step="' + diagCurrentStep + '"]').classList.add('active');
                         } else {
-                            // Affiche le résultat
                             document.getElementById('anticorr-steps').style.display = 'none';
                             showResult();
                         }
                     }, 350);
                 }
 
-
                 function showResult() {
                     var r = diagAnswers.rouille;
                     var a = diagAnswers.acces;
                     var e = diagAnswers.equipement;
 
-
                     var title, verdict, products, warning = '';
 
-
-                    // ── CAS 1 : Rouille de surface + chandelles + basique ──
                     if (r === 'surface' && a === 'chandelles' && e === 'basique') {
                         title   = '✅ Traitement DIY au pinceau — Faisable seul';
                         verdict = 'Votre rouille est encore superficielle : bonne nouvelle, vous n\'avez pas besoin de matériel professionnel. Travaillez section par section. Commencez par gratter à la brosse à main en acier pour retirer la rouille friable, puis appliquez un convertisseur de rouille au pinceau (2 couches). Terminez par une peinture antirouille ou un primaire en bombe. Comptez 2 à 3 week-ends de travail selon la surface.';
                         products = '<strong>Votre liste de courses</strong><ul><li>Brosse métallique à main (fils acier)</li><li>Convertisseur de rouille Férose ou Rustol Owatrol (1 L)</li><li>Primaire antirouille en bombe ou au pinceau</li><li>Lunettes de protection + gants nitrile</li></ul>';
                     }
-
-
-                    // ── CAS 2 : Rouille de surface + chandelles + intermédiaire ──
                     else if (r === 'surface' && a === 'chandelles' && e === 'intermediaire') {
                         title   = '✅ Traitement DIY complet à la meuleuse — Résultat pro';
                         verdict = 'Avec votre meuleuse, vous pouvez faire un travail remarquable. Commencez par le Karcher, puis décapez au maximum à la brosse cloche laiton (115 mm). Passez le convertisseur de rouille, et injectez de la cire Waxoyl dans les corps creux avec votre pistolet. Le résultat sera proche d\'une intervention en atelier.';
                         products = '<strong>Votre liste de courses</strong><ul><li>Brosse cloche laiton 65 mm pour meuleuse 115 mm</li><li>Convertisseur de rouille Férose (1 L)</li><li>Pistolet corps creux + tuyau prolongateur souple</li><li>Cire corps creux Waxoyl (1 L)</li><li>Peinture châssis antirouille (noir, 1 L)</li><li>Lunettes épaisses + vêtements couvrants</li></ul>';
                     }
-
-
-                    // ── CAS 3 : Rouille de surface + pont + pro ──
                     else if (r === 'surface' && a === 'pont' && e === 'pro') {
                         title   = '🏆 Traitement professionnel complet — Résultat optimal';
                         verdict = 'Avec un pont et un compresseur, vous pouvez réaliser le traitement de référence : décapage mécanique complet, convertisseur, primaire époxy bi-composant au pistolet et cire corps creux injectée sous pression. C\'est la méthode utilisée en atelier pour les restaurations durables. Masquez soigneusement l\'échappement, les freins et le plancher avant toute projection.';
                         products = '<strong>Votre liste de courses</strong><ul><li>Brosse cloche laiton pour meuleuse</li><li>Convertisseur de rouille Férose ou PAC 2030</li><li>Primaire époxy bi-composant (ex: Rustol Hammerite)</li><li>Pistolet à peinture + compresseur</li><li>Cire corps creux Waxoyl sous pression</li><li>Film de masquage + scotch de carrossier</li></ul>';
                     }
-
-
-                    // ── CAS 4 : Rouille profonde + chandelles ──
                     else if (r === 'profonde' && a === 'chandelles') {
                         title   = '⚠️ Rouille perforante : intervention professionnelle recommandée';
                         verdict = 'Une rouille perforante sur des zones structurelles (longerons, berceau) nécessite une évaluation sérieuse. Sans pont élévateur, vous ne pouvez pas accéder à toutes les zones critiques, et surtout, vous ne pouvez pas garantir l\'absence de perforation cachée. Avant tout traitement de surface, il faut s\'assurer qu\'une soudure n\'est pas nécessaire — c\'est le travail d\'un garage équipé.';
                         products = '<strong>Votre liste de courses (traitement préventif complémentaire)</strong><ul><li>Convertisseur de rouille Férose pour les zones accessibles</li><li>Cire corps creux Waxoyl (injection dans les longerons)</li></ul>';
                         warning = '🚨 Attention : une rouille perforante sur des éléments porteurs est un motif de refus au contrôle technique. Ne masquez pas le problème avec de l\'anti-gravillon. Faites évaluer le châssis par un professionnel avant le prochain CT.';
                     }
-
-
-                    // ── CAS 5 : Rouille profonde + pont ──
                     else if (r === 'profonde' && a === 'pont') {
                         title   = '🔴 Diagnostic professionnel urgent — Soudure possible';
                         verdict = 'La présence de perforations ou de zones très friables sur le châssis doit être prise très au sérieux. Avec un pont, le premier travail est un diagnostic complet pour évaluer si des soudures de remplacement de tôle sont nécessaires. Le traitement anti-corrosion ne vient qu\'après consolidation structurelle. Dans tous les cas, ne recouvrez pas les zones perforées avec du Blackson — cela masquerait le problème et accélérerait la dégradation.';
                         products = '<strong>Matériel nécessaire (après consolidation)</strong><ul><li>Sableuse ou meuleuse pour retrait complet des zones corrodées</li><li>Convertisseur de rouille Férose</li><li>Primaire époxy bi-composant</li><li>Cire corps creux Waxoyl sous pression</li><li>Peinture châssis finition</li></ul>';
                         warning = '🚨 Des perforations sur des longerons ou points d\'ancrage de suspension constituent un danger structurel immédiat. Faites évaluer votre véhicule avant de rouler.';
                     }
-
-
-                    // ── CAS DÉFAUT ──
                     else {
                         title   = '✅ Traitement adapté à votre situation';
                         verdict = 'Sur la base de vos réponses, un traitement en 3 étapes est conseillé : décapage mécanique, convertisseur de rouille, puis protection (primaire et cire corps creux). Adaptez la méthode à votre niveau d\'équipement en vous appuyant sur les sections détaillées de ce guide.';
                         products = '<strong>Base recommandée pour tous les cas</strong><ul><li>Convertisseur de rouille (Férose ou Rustol Owatrol)</li><li>Primaire antirouille</li><li>Cire corps creux (Waxoyl)</li><li>Équipements de protection (lunettes, gants)</li></ul>';
                     }
 
-
                     document.getElementById('result-title').innerHTML   = title;
                     document.getElementById('result-verdict').innerHTML  = verdict;
                     document.getElementById('result-products').innerHTML = products;
-
 
                     var warnEl = document.getElementById('result-warning');
                     if (warning) {
@@ -709,20 +627,16 @@ include __DIR__ . '/../header.php';
                         warnEl.classList.add('show');
                     }
 
-
                     document.getElementById('anticorr-result').style.display = 'block';
                 }
-
 
                 function diagReset() {
                     diagAnswers = {};
                     diagCurrentStep = 1;
 
-
                     document.querySelectorAll('.anticorr-step').forEach(function(s){ s.classList.remove('active'); });
                     document.querySelector('[data-step="1"]').classList.add('active');
                     document.querySelectorAll('.anticorr-opt').forEach(function(b){ b.classList.remove('selected'); });
-
 
                     document.getElementById('anticorr-steps').style.display = 'block';
                     document.getElementById('anticorr-result').style.display = 'none';
@@ -731,13 +645,10 @@ include __DIR__ . '/../header.php';
                 </script>
                 <!-- ── FIN BLOC INTERACTIF ── -->
 
-
                 <!-- ── H2 : PRÉVENTION ── -->
                 <h2 id="prevention">Prévention : comment protéger son châssis à l'avenir ?</h2>
 
-
                 <p>Une fois votre châssis réparé, décapé et traité chimiquement, il faut <strong>impérativement isoler le métal de l'oxygène et de l'humidité</strong> pour que la corrosion ne reprenne pas dès l'hiver suivant. Voici les couches de protection dans le bon ordre :</p>
-
 
                 <ul>
                     <li><strong>Primaire époxy bi-composant :</strong> c'est la protection la plus redoutable disponible aujourd'hui pour un usage amateur ou professionnel. Il adhère parfaitement sur métal traité et crée une barrière étanche. Il s'applique au pinceau (très salissant) ou au pistolet si vous avez bien masqué les zones sensibles — échappement, freins, et surfaces en caoutchouc.</li>
@@ -745,25 +656,18 @@ include __DIR__ . '/../header.php';
                     <li><strong>Cire corps creux (Waxoyl) :</strong> injectée dans les longerons et les bas de caisse à intervalle régulier — tous les 5 ans environ — pour renouveler la protection des zones non accessibles.</li>
                 </ul>
 
-
                 <h3>Le piège du Blackson (anti-gravillon) sur de la rouille</h3>
-
 
                 <p>S'il y a une règle d'or à retenir de ce guide, c'est celle-ci : <strong>ne mettez jamais d'anti-gravillon goudronneux (type Blackson) sur une tôle qui n'a pas été parfaitement traitée et peinte.</strong></p>
 
-
                 <p>Appliqué sur un châssis douteux, l'anti-gravillon agit comme un terrible "cache-misère". Avec le temps, le goudron devient poreux. L'eau s'y infiltre et se retrouve piégée contre le métal. Votre châssis va alors <strong>pourrir de l'intérieur en silence</strong>, dissimulé sous une belle pellicule noire, jusqu'à ce que la structure cède. C'est l'erreur la plus souvent citée dans tous les forums de restauration automobile, et on la voit régulièrement en atelier sur des véhicules qui semblaient propres en dessous.</p>
 
-
                 <p>L'anti-gravillon ne s'utilise qu'en toute dernière étape — sur un apprêt sain — et uniquement dans les zones exposées aux projections de cailloux (passages de roues).</p>
-
 
                 <!-- ── H2 : FAQ ── -->
                 <h2 id="faq-corrosion">FAQ : vos questions sur la corrosion automobile</h2>
 
-
                 <div class="art-faq" itemscope itemtype="https://schema.org/FAQPage">
-
 
                     <div class="art-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="art-faq-q" itemprop="name">Peut-on stopper définitivement la rouille sous une voiture ?</div>
@@ -772,14 +676,12 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                     <div class="art-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="art-faq-q" itemprop="name">Le sablage du châssis est-il obligatoire ?</div>
                         <div class="art-faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <div itemprop="text">Non. Le sablage est la méthode ultime — idéale lors d'une restauration complète de voiture ancienne où la caisse est séparée du châssis. Mais pour un entretien courant ou une rouille de surface, un bon décapage mécanique à la brosse montée sur meuleuse, suivi d'un traitement chimique au convertisseur, est amplement suffisant. Le sablage laisse aussi beaucoup de grenaille partout dans les recoins, ce qui peut poser problème lors de l'application de peinture.</div>
                         </div>
                     </div>
-
 
                     <div class="art-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="art-faq-q" itemprop="name">Quel budget pour faire traiter son châssis par un professionnel ?</div>
@@ -788,14 +690,12 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                     <div class="art-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="art-faq-q" itemprop="name">Pourquoi les professionnels déconseillent-ils le Blackson sur un châssis rouillé ?</div>
                         <div class="art-faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <div itemprop="text">Parce que l'anti-gravillon Blackson est un revêtement bitumineux, pas un traitement. Appliqué sur de la rouille non traitée, il enferme l'humidité contre le métal oxydé. Le goudron devient poreux avec le temps, l'eau y stagne et la corrosion progresse à l'abri du regard. C'est le "cache-misère" par excellence : le châssis peut être complètement perforé sous une couche de Blackson d'aspect impeccable. Ne l'utilisez que sur du métal sain et apprêté.</div>
                         </div>
                     </div>
-
 
                     <div class="art-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="art-faq-q" itemprop="name">Quelle est la différence entre un convertisseur de rouille et un destructeur de rouille ?</div>
@@ -804,9 +704,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
 
-
                 </div>
-
 
                 <!-- Styles FAQ -->
                 <style>
@@ -832,16 +730,13 @@ include __DIR__ . '/../header.php';
                 }
                 </style>
 
-
                 <!-- Conclusion box -->
                 <div class="art-tldr" style="border-left-color: #dc2626; background-color: #111111; color: #ffffff; margin-top: 40px;">
                     <div class="art-tldr-title" style="color: #ffffff;">Le mot du Garage Expert Auto</div>
                     <p style="margin: 0; color: #ffffff;">La corrosion du châssis n'attend pas. Que vous décidiez de vous y attaquer vous-même ou de confier votre véhicule à notre équipe, l'important est d'agir dans le bon ordre et avec les bons produits. Si votre châssis présente des perforations ou si vous avez un doute avant un contrôle technique, <strong>prenez rendez-vous</strong> pour un diagnostic : on passe le dessous de votre voiture sur le pont et on vous dit exactement ce qu'il en est — sans langue de bois.</p>
                 </div>
 
-
             </div><!-- /.art-content -->
-
 
             <!-- Premium Author Box -->
             <div class="art-author-box">
@@ -858,13 +753,11 @@ include __DIR__ . '/../header.php';
                 </div>
             </div>
 
-
             <!-- Heavy Conclusion Box -->
             <div class="art-conclusion" style="background-color: #111111; color: #ffffff;">
                 <h2 style="color: #ffffff;">Le mot de la fin</h2>
                 <p style="color: #ffffff;">La rouille sous le châssis n'est ni une fatalité ni un problème cosmétique. Avec la bonne méthode — décapage, convertisseur, protection — et les bons produits, un soubassement très attaqué peut être sauvé et protégé pour de nombreuses années. Ce qui condamne les voitures, ce n'est pas la rouille elle-même, c'est le cache-misère appliqué dessus sans traitement préalable. Agissez tôt, agissez bien.</p>
             </div>
-
 
             <!-- Similar Articles Grid (dynamique) -->
             <section class="art-related">
@@ -906,14 +799,11 @@ include __DIR__ . '/../header.php';
                 </div>
             </section>
 
-
         </div><!-- /.art-main-col -->
-
 
         <!-- ASYMMETRIC RIGHT SIDEBAR (dynamique) -->
         <aside class="art-sidebar-right">
             <div class="art-sidebar-sticky">
-
 
                 <?php if (!empty($same_cat_articles)): ?>
                     <div class="art-sidebar-block">
@@ -933,7 +823,6 @@ include __DIR__ . '/../header.php';
                     </div>
                 <?php endif; ?>
 
-
                 <?php if (!empty($all_other_articles)): ?>
                     <div class="art-sidebar-block">
                         <div class="art-sidebar-block-title">À la Une</div>
@@ -950,7 +839,6 @@ include __DIR__ . '/../header.php';
                     </div>
                 <?php endif; ?>
 
-
                 <?php if (empty($same_cat_articles) && empty($all_other_articles)): ?>
                     <div class="art-sidebar-block">
                         <div class="art-sidebar-block-title">Explorer</div>
@@ -961,10 +849,8 @@ include __DIR__ . '/../header.php';
                     </div>
                 <?php endif; ?>
 
-
             </div>
         </aside>
-
 
     </div><!-- /.art-layout-wrapper -->
 </article>
@@ -979,7 +865,6 @@ $faq_entities = [
     ["@type" => "Question", "name" => "Quel budget pour faire traiter son châssis par un professionnel ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Comptez 100 à 150 € en DIY, entre 600 et 1 500 € en atelier professionnel selon le gabarit et l'état de la corrosion."]],
     ["@type" => "Question", "name" => "Pourquoi les professionnels déconseillent-ils le Blackson sur un châssis rouillé ?", "acceptedAnswer" => ["@type" => "Answer", "text" => "Le Blackson est un revêtement, pas un traitement. Il emprisonne l'humidité contre la rouille non traitée, faisant pourrir le châssis de l'intérieur en silence."]],
 ];
-
 
 $schema = [
     "@context" => "https://schema.org",
