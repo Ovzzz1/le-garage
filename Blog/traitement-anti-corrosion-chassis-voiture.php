@@ -659,21 +659,22 @@ include __DIR__ . '/../header.php';
                 /* ── FAQ ── */
                 .art-faq {
                     margin-top: 16px;
-                    border-top: 1px solid #2a2a2a;
+                    border-top: 1px solid var(--color-border, #e2e2e2);
                 }
                 .art-faq-item {
-                    border-bottom: 1px solid #2a2a2a;
+                    border-bottom: 1px solid var(--color-border, #e2e2e2);
                 }
                 .art-faq-q {
                     font-weight: 600;
-                    color: #ffffff;
-                    padding: 22px 0 16px;
+                    color: var(--color-text, #111111) !important;
+                    padding: 22px 0 14px;
                     font-size: 1rem;
                     line-height: 1.5;
                     cursor: default;
+                    display: block;
                 }
                 .art-faq-a div {
-                    color: #bbbbbb;
+                    color: var(--color-text-muted, #555555) !important;
                     font-size: .93rem;
                     line-height: 1.8;
                     padding-bottom: 22px;
