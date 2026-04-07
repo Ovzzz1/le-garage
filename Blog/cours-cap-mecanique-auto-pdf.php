@@ -1,5 +1,6 @@
 <?php
 // published: 2026-04-07 10:00
+/**
  * cours-cap-mecanique-auto-pdf.php
  */
 
