@@ -1,7 +1,10 @@
+<?php
 // published: 2026-04-12 10:00
 /**
  * comment-installer-un-siege-auto-avec-ceinture-de-securite.php
  */
+
+
 $page_title       = "Installer un siège auto avec la ceinture de sécurité : guide complet";
 $page_description = "Comment installer un siège auto avec la ceinture de sécurité ? Guide pas-à-pas par groupe, checklist de sécurité et comparatif Isofix vs ceinture.";
 
