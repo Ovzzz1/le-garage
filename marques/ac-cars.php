@@ -6,7 +6,7 @@ $article = [
     'subtitle' => 'Fondée en 1901, AC Cars a donné naissance à l\'une des voitures les plus iconiques de l\'histoire : la Cobra. Retour sur 120 ans d\'artisanat automobile.',
     'category' => 'occasion', 'category_name' => 'Achat & Occasion', 'category_color' => '#7c3aed',
     'tags' => ['AC Cars', 'Cobra', 'Shelby', 'Britannique'],
-    'image' => '/Image/marques/ac-cars-hero.webp', 'date' => '24 Mars 2026',
+    'image' => '', 'date' => '24 Mars 2026',
     'author' => 'Arnaud', 'author_role' => 'Historien Auto', 'author_img' => '/Image/arnaud.png',
     'author_bio' => 'Arnaud est fasciné par les constructeurs artisanaux britanniques qui ont forgé la légende automobile mondiale.', 'reading_time' => '6 min',
 ];
