@@ -4,7 +4,7 @@
  * equipement-motard-univers-auto-moto-fr.php
  */
 
-$page_title       = "Guide complet équipement motard : vêtements, accessoires et sécurité";
+$page_title       = "équipement motard univers-auto-moto.fr : vêtements, accessoires & sécurité";
 $page_description = "Casque, blouson, gants, sacoche de jambe : tout ce qu'il faut savoir pour choisir son équipement moto en toute sécurité. Sélection, normes et conseils d'entretien.";
 
 $article = [
