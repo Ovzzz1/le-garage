@@ -384,10 +384,11 @@ include __DIR__ . '/../header.php';
 
                 <h3>Les erreurs qui vous font repérer</h3>
                 <p>Trois comportements trahissent immanquablement un dormeur en voiture : la lumière visible de l'extérieur (utilisez une lampe frontale rouge plutôt que blanche), les vitres entièrement embuées le matin (d'où l'importance de la ventilation), et les mouvements à l'intérieur avant l'aube. Pour la lumière, une LED rouge ou une lampe de camping avec diffuseur chaud consomme moins et reste invisible à 20 mètres.</p>
+                <p>Avant de vous installer pour la nuit dans une zone isolée, effectuez un rapide tour de votre véhicule : savoir comment <a href="/Blog/detecteur-traceur-gps-voiture">détecter un traceur GPS caché dans votre voiture</a> peut s'avérer utile, notamment si vous prêtez souvent votre véhicule ou rentrez d'un long voyage.</p>
 
                 <!-- ═══════════════════════════════════════ -->
                 <h2 id="kit-bivouac">Le kit bivouac essentiel à emporter</h2>
-                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Voici la liste non exhaustive des éléments qu'Arnaud ne quitte plus depuis trois ans de van life :</p>
+                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Sur les routes forestières ou de campagne empruntées souvent de nuit pour rejoindre un spot isolé, un <a href="/Blog/meilleur-ultrason-anti-gibier-voiture">sifflet ultrason anti-gibier</a> mérite une place dans votre kit — la faune sauvage est un risque réel au crépuscule et à l'aube. Voici la liste non exhaustive des éléments qu'Arnaud ne quitte plus depuis trois ans de van life :</p>
 
                 <!-- CHECKLIST INTERACTIVE -->
                 <div class="bivouac-checklist" id="bivouac-checklist" role="region" aria-label="Kit bivouac essentiel">

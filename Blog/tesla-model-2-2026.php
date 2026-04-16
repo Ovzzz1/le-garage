@@ -209,6 +209,7 @@ include __DIR__ . '/../header.php';
 
                 <h2 id="conclusion">Ce qu'il faut retenir</h2>
                 <p>En couplant l'intelligence informatique de son projet de taxis autonomes à une mécanique de voiture étudiée pour la masse, Elon Musk est en train de redéfinir comment réduire le prix du véhicule électrique de demain. L'attente risque d'être plus longue que prévue pour les impatients européens. Mais la promesse initiale reste éblouissante : une vraie Tesla, ultra technologique, super facile à garer, et qui fait le plein sur autoroute en un clin d'œil face aux marques historiques qui l'attendent au tournant !</p>
+                <p>Pour suivre l'actualité de la voiture électrique au quotidien en attendant l'arrivée de la Model 2, le <a href="/Blog/carteborne-blog-voiture-electrique">blog Carte Borne dédié à la voiture électrique</a> est une référence à avoir dans ses favoris.</p>
 
             </div><!-- .art-content -->
 

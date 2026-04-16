@@ -273,6 +273,8 @@ include __DIR__ . '/../header.php';
                     <li><strong>CACES :</strong> Guides sur les CACES R482 (engins de chantier) et R489 (chariots élévateurs), avec questionnaires d'examen corrigés.</li>
                 </ul>
 
+                <p>Pour aller plus loin sur les aspects réglementaires du transport routier spécialisé : si vous êtes amené à escorter ou organiser un transport hors-gabarit, nous avons décrypté le <a href="/Blog/tarif-voiture-pilote-convoi-exceptionnel">tarif d'une voiture pilote de convoi exceptionnel</a> — une réglementation méconnue mais incontournable dans ce secteur.</p>
+
 
                 <div class="art-table-wrap">
                     <table class="art-table">

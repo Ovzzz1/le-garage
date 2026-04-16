@@ -163,6 +163,7 @@ include __DIR__ . '/../header.php';
 
             <div class="art-content">
                 <p>C'est un véritable vent de panique sur le marché de l'occasion. Dès que l'on prononce le mot "<strong>PureTech</strong>", les acheteurs fuient. La faute incombe au tristement célèbre bloc 3 cylindres (1.2 PureTech) et à sa courroie de distribution qui baigne dans l'huile, provoquant des casses moteurs à répétition (une <a href="https://www.automobile-magazine.fr/fiabilite-rappels/article/47015-stellantis-16-puretech-oui-il-existe-des-moteurs-puretech-fiables-voici-la-liste" target="_blank" rel="nofollow external">affaire massivement documentée par la L'Automobile Magazine et les actions judiciaires</a>). Mais saviez-vous qu'il ne faut absolument pas jeter le bébé avec l'eau du bain ?</p>
+                <p>Le modèle le plus souvent cité reste le Peugeot 2008 : si vous en possédez un, notre guide sur <a href="/Blog/probleme-moteur-peugeot-2008">les problèmes du 1.2 PureTech sur le Peugeot 2008</a> détaille les pannes récurrentes et les coûts de réparation à anticiper.</p>
                 <p>Sous ce même nom marketing "PureTech" se cache un tout autre moteur, totalement différent techniquement : le <strong>moteur 1.6 PureTech</strong> (ou <em>1 6 puretech</em> pour les intimes). Ce grand frère de 4 cylindres est-il touché par la malédiction de Peugeot-Citroën ? Voici tout ce qu'il faut savoir avant d'acheter une Peugeot 308, 3008, 508 ou 5008 d'occasion.</p>
 
                 <h2 id="courroie-chaine">1. Moteur 1.6 puretech 180 courroie ou chaîne ? La réponse ultime</h2>
@@ -260,6 +261,11 @@ include __DIR__ . '/../header.php';
                 
                 <h3>La boîte EAT8 avec le PureTech 180 est-elle source de problèmes ?</h3>
                 <p>C'est l'exact opposé. La fiabilité du <strong>moteur puretech 180 eat8</strong> est fantastique grâce à ce convertisseur de couple d'origine japonaise (fournisseur Aisin). Il est réputé indestructible si l'on prend le soin de réaliser une longue-vidange (flush complet de la boîte) de prévention autour des 80 000 / 100 000 kilomètres.</p>
+
+                <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:14px 18px; margin:20px 0;">
+                    <strong style="font-size:0.8125rem; text-transform:uppercase; letter-spacing:0.05em; color:#6b7280;">À lire aussi</strong>
+                    <p style="margin:6px 0 0;"><a href="/Blog/reparation-platine-boite-auto-mercedes">Réparation de platine de boîte automatique Mercedes</a> — quand la boîte auto tombe en panne hors garantie, la réparation de la platine électronique est une alternative économique au remplacement complet.</p>
+                </div>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
