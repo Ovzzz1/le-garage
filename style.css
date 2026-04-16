@@ -2782,3 +2782,18 @@ img {
     font-size: 1.5rem;
   }
 }
+
+/* ── Liens internes dans le corps des articles ── */
+.art-content a[href^="/"] {
+    font-weight: 700;
+    color: #dc2626;
+    background-color: #fef2f2;
+    padding: 1px 4px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.art-content a[href^="/"]:hover {
+    background-color: #fee2e2;
+    text-decoration: underline;
+}
