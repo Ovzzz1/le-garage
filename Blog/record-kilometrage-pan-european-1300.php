@@ -1,3 +1,4 @@
+<?php
 // published: 2026-04-17 10:00
 /**
  * record-kilometrage-pan-european-1300.php
