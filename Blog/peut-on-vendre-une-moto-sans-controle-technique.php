@@ -146,7 +146,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>Règle générale 2026 :</strong> Non, vous ne pouvez pas vendre une moto de plus de 5 ans à un particulier sans fournir un rapport CT2RM datant de moins de 6 mois.</li>
                     <li><strong>3 exceptions légales :</strong> Moto de moins de 5 ans, vente à un professionnel, ou catégories spécifiques (enduro/trial avec licence FFM, collection avant 1960).</li>
                     <li><strong>Contre-visite autorisée :</strong> Un PV défavorable reste valable pour vendre, à condition qu'il date de moins de 2 mois.</li>
-                    <li><strong>« Vendu en l'état » = piège :</strong> Cette mention n'a aucune valeur légale d'exonération — l'ANTS bloque le transfert et l'acheteur peut exiger l'annulation de la vente.</li>
+                    <li><strong>« Vendu en l'état » = piège :</strong> Cette mention n'a aucune valeur légale d'exonération, l'ANTS bloque le transfert et l'acheteur peut exiger l'annulation de la vente.</li>
                     <li><strong>Risques réels :</strong> Amende 4e classe (135 €), nullité de la vente, et poursuites pour vice caché en cas d'accident.</li>
                 </ul>
             </div>
@@ -205,7 +205,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="moto-a-retaper">Achat d'une moto à retaper : comment gérer le contrôle technique ?</h2>
 
-                <p>Que faire si vous achetez un "projet" — une moto incomplète, sortie de grange ou dans son jus, qui ne peut pas passer l'examen ni même démarrer ?</p>
+                <p>Que faire si vous achetez un "projet", une moto incomplète, sortie de grange ou dans son jus, qui ne peut pas passer l'examen ni même démarrer ?</p>
 
                 <p>Autrefois, il suffisait de barrer la carte grise avec la mention "véhicule non roulant". Cette mention a été supprimée et n'a plus aucune valeur légale. Aujourd'hui, un acheteur qui reprend une moto à restaurer ne pourra pas mettre la carte grise à son nom tant qu'il n'aura pas passé un CT. Durant toute la période de restauration, le vendeur reste officiellement le titulaire du véhicule dans le fichier de l'ANTS.</p>
 
@@ -216,7 +216,7 @@ include __DIR__ . '/../header.php';
 
                 <p>Beaucoup pensent encore pouvoir contourner la loi avec un simple stylo. C'est une erreur qui peut coûter très cher.</p>
 
-                <p><strong>L'histoire de Marc :</strong> Marc a voulu vendre sa vieille Honda Transalp à un voisin pour 800 €, sans s'embêter avec le CT. Il a ajouté la mention manuscrite « Vendu en l'état » sur la carte grise. Trois mois plus tard, le voisin — bloqué par l'ANTS et incapable d'obtenir sa carte grise — a exigé l'annulation de la vente. Marc a été contraint juridiquement de rembourser l'intégralité de la somme et de récupérer sa moto, partiellement démontée entre-temps.</p>
+                <p><strong>L'histoire de Marc :</strong> Marc a voulu vendre sa vieille Honda Transalp à un voisin pour 800 €, sans s'embêter avec le CT. Il a ajouté la mention manuscrite « Vendu en l'état » sur la carte grise. Trois mois plus tard, le voisin, bloqué par l'ANTS et incapable d'obtenir sa carte grise, a exigé l'annulation de la vente. Marc a été contraint juridiquement de rembourser l'intégralité de la somme et de récupérer sa moto, partiellement démontée entre-temps.</p>
 
                 <blockquote class="art-blockquote">
                     « Le transfert de propriété d'un véhicule soumis à contrôle technique est subordonné à la remise du procès-verbal de ce contrôle. »
@@ -249,16 +249,16 @@ include __DIR__ . '/../header.php';
                 <img src="/Image/peut-on-vendre-une-moto-sans-controle-technique3.webp" alt="Procès-verbal CT moto avec tampon contre-visite et date de validité de 2 mois visible" width="900" height="506" loading="lazy">
 
                 <p><strong>Comment tester sa machine avant le contrôle ?</strong><br>
-                Avant d'engager des frais dans un centre agréé, une vérification maison de l'éclairage, des pneus et du freinage s'impose. Si votre moto n'a pas tourné depuis l'hiver, commencez par <a href="/Blog/comment-tester-une-batterie-de-moto">tester la batterie</a> — ça évite une contre-visite agaçante pour un simple défaut d'allumage.</p>
+                Avant d'engager des frais dans un centre agréé, une vérification maison de l'éclairage, des pneus et du freinage s'impose. Si votre moto n'a pas tourné depuis l'hiver, commencez par <a href="/Blog/comment-tester-une-batterie-de-moto">tester la batterie</a>, ça évite une contre-visite agaçante pour un simple défaut d'allumage.</p>
 
                 <p><strong>Est-il possible de se décharger via une attestation écrite ?</strong><br>
-                Non. Une décharge signée sur papier libre où l'acheteur renonce à tout recours n'a aucune solidité juridique. Devant l'administration ou un tribunal, ce document est réputé nul — on ne peut pas déroger par contrat privé à une loi de sécurité routière.</p>
+                Non. Une décharge signée sur papier libre où l'acheteur renonce à tout recours n'a aucune solidité juridique. Devant l'administration ou un tribunal, ce document est réputé nul, on ne peut pas déroger par contrat privé à une loi de sécurité routière.</p>
 
-                <p>Ressources officielles : <a href="https://www.service-public.fr/particuliers/vosdroits/F1707" target="_blank" rel="nofollow noopener">Service-Public.fr — Vendre son véhicule</a> &bull; <a href="https://ants.gouv.fr/" target="_blank" rel="nofollow noopener">Portail ANTS</a></p>
+                <p>Ressources officielles : <a href="https://www.service-public.fr/particuliers/vosdroits/F1707" target="_blank" rel="nofollow noopener">Service-Public.fr, Vendre son véhicule</a> &bull; <a href="https://ants.gouv.fr/" target="_blank" rel="nofollow noopener">Portail ANTS</a></p>
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">🏍️ Le mot du Garage Expert Auto</div>
-                    <p style="margin: 0;">En 2026, tenter de vendre une moto sans CT à un particulier, c'est prendre le risque de récupérer votre machine démontée et de rembourser l'acheteur. Le CT2RM coûte en moyenne 60 à 80 € — bien moins qu'un litige. Anticipez, et la vente se passe sereinement.</p>
+                    <p style="margin: 0;">En 2026, tenter de vendre une moto sans CT à un particulier, c'est prendre le risque de récupérer votre machine démontée et de rembourser l'acheteur. Le CT2RM coûte en moyenne 60 à 80 €, bien moins qu'un litige. Anticipez, et la vente se passe sereinement.</p>
                 </div>
 
             </div><!-- .art-content -->
@@ -281,7 +281,7 @@ include __DIR__ . '/../header.php';
             <!-- Heavy Conclusion Box -->
             <div class="art-conclusion">
                 <h2>Le mot de la fin</h2>
-                <p>Le CT2RM a changé les règles du jeu définitivement. En 2026, vendre une moto sans contrôle technique entre particuliers n'est pas une option — c'est une infraction avec des conséquences réelles, financières et juridiques. Les trois dispenses existent, elles sont précises : utilisez-les si elles s'appliquent à votre situation. Dans tous les autres cas, le passage au centre agréé est le seul chemin qui protège à la fois le vendeur et l'acheteur.</p>
+                <p>Le CT2RM a changé les règles du jeu définitivement. En 2026, vendre une moto sans contrôle technique entre particuliers n'est pas une option, c'est une infraction avec des conséquences réelles, financières et juridiques. Les trois dispenses existent, elles sont précises : utilisez-les si elles s'appliquent à votre situation. Dans tous les autres cas, le passage au centre agréé est le seul chemin qui protège à la fois le vendeur et l'acheteur.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
