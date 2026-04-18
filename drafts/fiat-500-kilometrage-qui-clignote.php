@@ -228,6 +228,14 @@ include __DIR__ . '/../header.php';
 
                 <p>Si les deux astuces précédentes n'ont rien donné, votre module Blue&Me est grillé de manière définitive. Vous n'êtes pas contraint de payer un nouveau boîtier Fiat à prix fort. Un garagiste équipé d'une valise <strong>Multiecuscan</strong> peut réaliser un <strong>réalignement proxy</strong> : cette manipulation logicielle réécrit la configuration de l'ordinateur de bord pour lui indiquer que le module Blue&Me n'existe plus. Le kilométrage cesse immédiatement de clignoter.</p>
 
+                <blockquote class="tiktok-embed"
+                    cite="https://www.tiktok.com/@bullstz/video/7597089334692449538"
+                    data-video-id="7597089334692449538"
+                    style="max-width: 605px; min-width: 325px; margin: 24px auto;">
+                    <section></section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+
                 <div class="art-table-wrap">
                     <table class="art-table">
                         <thead>
