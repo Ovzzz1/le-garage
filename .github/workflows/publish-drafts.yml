@@ -2,7 +2,7 @@ name: Publish Drafts
 
 on:
   schedule:
-    - cron: '0 * * * *'  # toutes les heures
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -19,34 +19,37 @@ jobs:
 
       - name: Publier les articles planifiés
         run: |
-          # Heure de Paris (UTC+1 hiver / UTC+2 été) — à adapter si besoin
-          NOW=$(TZ="Europe/Paris" date +"%Y-%m-%d %H:%M")
+          NOW=$(date -u +"%Y-%m-%d %H:%M")
+          echo "Heure actuelle (UTC) : $NOW"
           PUBLISHED=0
-
-          echo "Heure courante (Paris) : $NOW"
 
           for FILE in drafts/*.php; do
             [ -f "$FILE" ] || continue
+            PUB_DATE=$(grep -oP '(?<=// published: )\d{4}-\d{2}-\d{2} \d{2}:\d{2}' "$FILE" | head -1)
+            [ -z "$PUB_DATE" ] && continue
 
-            PUB_DATE=$(grep -oP '(?<=published: )\d{4}-\d{2}-\d{2} \d{2}:\d{2}' "$FILE" | head -1)
-            [ -z "$PUB_DATE" ] && echo "Pas de date dans $FILE, ignoré" && continue
-
-            echo "  $FILE → planifié : $PUB_DATE"
-
-            if [[ "$PUB_DATE" <= "$NOW" ]]; then
+            if [[ "$PUB_DATE" < "$NOW" || "$PUB_DATE" == "$NOW" ]]; then
               SLUG=$(basename "$FILE")
-              echo "  → Publication de $SLUG"
-              mv "$FILE" "Blog/$SLUG"
+              echo "Publication de $SLUG (planifié: $PUB_DATE)"
+              cp "$FILE" "Blog/$SLUG"
+              rm "$FILE"
+
+              ARTICLE_SLUG="${SLUG%.php}"
+              URL="https://www.garageraymond.fr/Blog/${ARTICLE_SLUG}"
+              LASTMOD=$(echo "$PUB_DATE" | cut -d' ' -f1)
+              if ! grep -qF "$URL" sitemap.xml; then
+                sed -i "s|</urlset>|  <url>\n    <loc>${URL}</loc>\n    <lastmod>${LASTMOD}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n</urlset>|" sitemap.xml
+              fi
               PUBLISHED=1
             fi
           done
 
           if [ "$PUBLISHED" -eq 1 ]; then
+            git add -A
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add Blog/ drafts/
-            git commit -m "publish: articles planifiés du $(TZ='Europe/Paris' date +%Y-%m-%d)"
+            git commit -m "publish: articles planifiés du $(date -u +%Y-%m-%d)"
             git push
           else
-            echo "Aucun article à publier"
+            echo "Aucun article à publier."
           fi
