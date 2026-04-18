@@ -2784,7 +2784,8 @@ img {
 }
 
 /* ── Liens internes dans le corps des articles ── */
-.art-content a[href^="/"] {
+.art-content a[href^="/"],
+.art-content a[href^="http"] {
     font-weight: 700;
     color: #dc2626;
     background-color: #fef2f2;
@@ -2793,7 +2794,8 @@ img {
     text-decoration: none;
 }
 
-.art-content a[href^="/"]:hover {
+.art-content a[href^="/"]:hover,
+.art-content a[href^="http"]:hover {
     background-color: #fee2e2;
     text-decoration: underline;
 }
