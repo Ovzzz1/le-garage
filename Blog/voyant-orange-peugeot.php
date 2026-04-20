@@ -664,12 +664,12 @@ include __DIR__ . '/../header.php';
     {
       "@type": "Article",
       "mainEntityOfPage": { "@type": "WebPage", "@id": "https://garageraymond.fr/Blog/voyant-orange-peugeot" },
-      "headline": "<?php echo addslashes($article['title']); ?>",
-      "description": "<?php echo addslashes($article['subtitle']); ?>",
+      "headline": <?php echo json_encode($article['title']); ?>,
+      "description": <?php echo json_encode($article['subtitle']); ?>,
       "image": ["https://garageraymond.fr<?php echo $article['image']; ?>"],
       "datePublished": "2026-03-28T08:00:00+01:00",
       "dateModified": "2026-03-28T08:00:00+01:00",
-      "author": { "@type": "Person", "name": "<?php echo $article['author']; ?>", "url": "https://garageraymond.fr/equipe", "jobTitle": "<?php echo $article['author_role']; ?>" },
+      "author": { "@type": "Person", "name": <?php echo json_encode($article['author']); ?>, "url": "https://garageraymond.fr/equipe", "jobTitle": <?php echo json_encode($article['author_role']); ?> },
       "publisher": { "@type": "Organization", "name": "Le garage expert Auto", "url": "https://garageraymond.fr", "logo": { "@type": "ImageObject", "url": "https://garageraymond.fr/Image/favicon.png" } }
     },
     {
