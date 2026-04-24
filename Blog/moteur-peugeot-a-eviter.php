@@ -73,21 +73,6 @@ include __DIR__ . '/../header.php';
 
 <!-- CSS spécifique article : classement moteurs + tableau récap + podium -->
 <style>
-    /* Cartes moteurs numérotées */
-    .pgt-moteur-list { list-style: none; padding: 0; margin: 0; counter-reset: moteur-counter; }
-    .pgt-moteur-item { counter-increment: moteur-counter; background: #1e1e32; border: 1px solid #2a2a3e; border-radius: 12px; padding: 22px 22px 22px 80px; margin-bottom: 20px; position: relative; }
-    .pgt-moteur-item::before { content: counter(moteur-counter); position: absolute; left: 18px; top: 22px; background: #7c3aed; color: #fff; font-weight: 800; font-size: 1.2rem; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-    .pgt-moteur-item.critical::before { background: #dc2626; }
-    .pgt-moteur-item.high::before    { background: #ea580c; }
-    .pgt-moteur-item.medium::before  { background: #ca8a04; }
-    .pgt-moteur-item h2 { margin: 0 0 10px; font-size: 1.05rem; color: #c4b5fd; border: none; padding: 0; }
-    .pgt-moteur-item p  { margin: 0 0 10px; font-size: 0.93rem; color: #ccc; line-height: 1.65; }
-    .pgt-moteur-item p:last-child { margin-bottom: 0; }
-    .pgt-risque { display: inline-block; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
-    .pgt-risque.critical { background: #dc262622; color: #f87171; border: 1px solid #dc262655; }
-    .pgt-risque.high     { background: #ea580c22; color: #fb923c; border: 1px solid #ea580c55; }
-    .pgt-risque.medium   { background: #ca8a0422; color: #fbbf24; border: 1px solid #ca8a0455; }
-
     /* Tableau récap */
     .pgt-table-wrap { overflow-x: auto; margin: 28px 0; }
     .pgt-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
@@ -95,23 +80,6 @@ include __DIR__ . '/../header.php';
     .pgt-table td { padding: 11px 14px; border-bottom: 1px solid #2a2a3e; vertical-align: middle; }
     .pgt-table tr:nth-child(even) td { background: #1e1e32; }
     .pgt-table .risk-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
-
-    /* Podium fiabilité */
-    .pgt-podium { display: flex; align-items: flex-end; justify-content: center; gap: 12px; margin: 28px 0; }
-    .pgt-podium-step { flex: 1; max-width: 180px; border-radius: 10px 10px 0 0; padding: 18px 14px 14px; text-align: center; }
-    .pgt-podium-step .rank { font-size: 1.8rem; font-weight: 800; margin-bottom: 6px; }
-    .pgt-podium-step .engine { font-size: 0.95rem; font-weight: 700; color: #fff; }
-    .pgt-podium-step .desc   { font-size: 0.8rem; color: rgba(255,255,255,0.75); margin-top: 6px; line-height: 1.4; }
-    .pgt-podium-step.gold   { background: linear-gradient(160deg, #92400e, #d97706); min-height: 160px; }
-    .pgt-podium-step.silver { background: linear-gradient(160deg, #374151, #6b7280); min-height: 130px; }
-    .pgt-podium-step.bronze { background: linear-gradient(160deg, #431407, #9a3412); min-height: 110px; }
-
-    /* Conseils expert */
-    .pgt-conseils { list-style: none; padding: 0; margin: 24px 0; }
-    .pgt-conseils li { background: #1e1e32; border: 1px solid #2a2a3e; border-radius: 10px; padding: 14px 18px 14px 54px; margin-bottom: 12px; position: relative; font-size: 0.93rem; color: #ccc; line-height: 1.6; }
-    .pgt-conseils li::before { content: '\2713'; position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #7c3aed; font-weight: 700; font-size: 1.2rem; }
-    .pgt-conseils li strong { color: #c4b5fd; }
-
     .pgt-tip { background: #12122a; border: 1px solid #7c3aed44; border-radius: 8px; padding: 16px 20px; margin: 22px 0; font-size: 0.93rem; color: #ccc; }
     .pgt-tip strong { color: #c4b5fd; }
 </style>
@@ -220,83 +188,47 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="top10-moteurs">TOP 10 : les moteurs Peugeot à éviter en occasion</h2>
 
-                <ol class="pgt-moteur-list">
+                <h3>1. Le 1.2 PureTech (82, 110, 130 ch) — Le "Roi" de la casse moteur</h3>
+                <p>C'est de loin le moteur le plus problématique de l'ère moderne chez PSA. Le défaut majeur réside dans sa <strong>courroie de distribution humide</strong>, immergée dans l'huile moteur pour réduire les frottements. La dégradation de la gomme au contact des résidus d'essence provoque l'effilochage de la courroie. Ces débris viennent colmater la crépine de la pompe à huile, entraînant une chute de pression et la destruction du turbo et du bloc par manque de lubrification. Stellantis a imposé une nouvelle norme d'huile (5W30) en 2024 pour limiter le phénomène, mais le risque reste présent. Si vous hésitez avec son grand frère, consultez notre avis sur le <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">moteur 1.6 PureTech</a>.</p>
 
-                    <li class="pgt-moteur-item critical">
-                        <span class="pgt-risque critical">Risque Critique 5/5</span>
-                        <h2>1.2 PureTech (82, 110, 130 ch) — Le "Roi" de la casse moteur</h2>
-                        <p>C'est de loin le moteur le plus problématique de l'ère moderne chez PSA. Le défaut majeur réside dans sa <strong>courroie de distribution humide</strong>, immergée dans l'huile moteur pour réduire les frottements. La dégradation de la gomme au contact des résidus d'essence provoque l'effilochage de la courroie. Ces débris viennent colmater la crépine de la pompe à huile, entraînant une chute de pression et la destruction du turbo et du bloc par manque de lubrification.</p>
-                        <p>Stellantis a imposé une nouvelle norme d'huile (5W30) en 2024 pour limiter le phénomène, mais le risque reste présent. Si vous hésitez avec son grand frère, consultez notre avis sur le <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">moteur 1.6 PureTech</a>.</p>
-                    </li>
+                <img src="/Image/moteur-peugeot-a-eviter2.webp"
+                     alt="Schéma 3D moteur 1.2 PureTech en coupe montrant la courroie humide et les résidus obstruant la crépine d'huile"
+                     style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
-                    <img src="/Image/moteur-peugeot-a-eviter2.webp"
-                         alt="Schéma 3D moteur 1.2 PureTech en coupe montrant la courroie humide et les résidus obstruant la crépine d'huile"
-                         style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
+                <h3>2. Le 1.5 BlueHDi 130 — La double peine AdBlue et chaîne</h3>
+                <p>Le remplaçant du 1.6 BlueHDi devait être un modèle de sobriété. Il est devenu le cauchemar des gros rouleurs. Deux problèmes coexistent : la <strong>chaîne de liaison des arbres à cames de 7 mm</strong> qui s'allonge et finit par rompre, et la cristallisation de l'urée dans le réservoir AdBlue. Ce dernier point paralyse le véhicule avec un message d'erreur persistant, obligeant souvent au remplacement complet du réservoir SCR. Si un <a href="/Blog/voyant-orange-voiture-dans-un-cercle-peugeot">voyant orange Peugeot</a> s'allume avec une alerte "Défaut moteur", le diagnostic est souvent sans appel sur ce bloc.</p>
 
-                    <li class="pgt-moteur-item high">
-                        <span class="pgt-risque high">Risque Élevé 4/5</span>
-                        <h2>1.5 BlueHDi 130 — La double peine AdBlue et chaîne</h2>
-                        <p>Le remplaçant du 1.6 BlueHDi devait être un modèle de sobriété. Il est devenu le cauchemar des gros rouleurs. Deux problèmes coexistent : la <strong>chaîne de liaison des arbres à cames de 7 mm</strong> qui s'allonge et finit par rompre, et la cristallisation de l'urée dans le réservoir AdBlue. Ce dernier point paralyse le véhicule avec un message d'erreur persistant, obligeant souvent au remplacement complet du réservoir SCR.</p>
-                        <p>Si un <a href="/Blog/voyant-orange-voiture-dans-un-cercle-peugeot">voyant orange Peugeot</a> s'allume avec une alerte "Défaut moteur", le diagnostic est souvent sans appel sur ce bloc.</p>
-                    </li>
+                <img src="/Image/moteur-peugeot-a-eviter3.webp"
+                     alt="Comparatif chaîne de distribution 7mm BlueHDi standard vs chaîne renforcée 8mm 2024 sur plan de travail d'atelier"
+                     style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
-                    <img src="/Image/moteur-peugeot-a-eviter3.webp"
-                         alt="Comparatif chaîne de distribution 7mm BlueHDi standard vs chaîne renforcée 8mm 2024 sur plan de travail d'atelier"
-                         style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
+                <h3>3. Le 1.6 THP (150 à 270 ch) — L'héritage BMW mal digéré</h3>
+                <p>Développé en collaboration avec BMW (bloc Prince), ce turbo essence offre des performances de premier plan mais souffre d'une distribution chroniquement fragile. Le tendeur de chaîne hydraulique finit par faiblir, provoquant un décalage de distribution et des ratés d'allumage. Par ailleurs, l'encrassement des soupapes par la calamine est inévitable en usage urbain — l'injection directe ne permet pas de "nettoyer" les conduits d'admission.</p>
 
-                    <li class="pgt-moteur-item high">
-                        <span class="pgt-risque high">Risque Élevé 4/5</span>
-                        <h2>1.6 THP (150 à 270 ch) — L'héritage BMW mal digéré</h2>
-                        <p>Développé en collaboration avec BMW (bloc Prince), ce turbo essence offre des performances de premier plan mais souffre d'une distribution chroniquement fragile. Le tendeur de chaîne hydraulique finit par faiblir, provoquant un décalage de distribution et des ratés d'allumage. Par ailleurs, l'encrassement des soupapes par la calamine est inévitable en usage urbain — l'injection directe ne permet pas de "nettoyer" les conduits d'admission.</p>
-                    </li>
+                <img src="/Image/moteur-peugeot-a-eviter4.webp"
+                     alt="Côté distribution moteur 1.6 THP ouvert montrant la chaîne allongée et le tendeur hydraulique en extension maximale"
+                     style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
-                    <img src="/Image/moteur-peugeot-a-eviter4.webp"
-                         alt="Côté distribution moteur 1.6 THP ouvert montrant la chaîne allongée et le tendeur hydraulique en extension maximale"
-                         style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
+                <h3>4. Le 1.6 HDi 110 (DV6 TED4) — Le cauchemar du turbo</h3>
+                <p>Le problème n'est pas le moteur en lui-même, mais ses <strong>joints d'injecteurs</strong>. En cas de fuite, la calamine produite se mélange à l'huile moteur et crée une boue corrosive qui bouche le micro-filtre de lubrification du turbocompresseur. Une fuite non détectée à temps, c'est la mort du turbo en moins de 500 km. Remplacement du turbo sans rinçage complet du circuit d'huile = récidive garantie.</p>
 
-                    <li class="pgt-moteur-item medium">
-                        <span class="pgt-risque medium">Risque Moyen 3/5</span>
-                        <h2>1.6 HDi 110 (DV6 TED4) — Le cauchemar du turbo</h2>
-                        <p>Le problème n'est pas le moteur en lui-même, mais ses <strong>joints d'injecteurs</strong>. En cas de fuite, la calamine produite se mélange à l'huile moteur et crée une boue corrosive qui bouche le micro-filtre de lubrification du turbocompresseur. Une fuite non détectée à temps, c'est la mort du turbo en moins de 500 km. Remplacement du turbo sans rinçage complet du circuit d'huile = récidive garantie.</p>
-                    </li>
+                <h3>5. Le V6 2.7 & 3.0 HDi — Un luxe au coût d'entretien démesuré</h3>
+                <p>Présents sur les 407 et 607, ces V6 offrent un agrément royal mais cachent des fragilités structurelles. La pompe à huile peut montrer des signes de fatigue prématurée, menant au serrage moteur (coulage de bielle). Le circuit de refroidissement complexe génère des fuites au niveau du boîtier de sortie d'eau pouvant provoquer un joint de culasse avant même que l'aiguille de température ne monte.</p>
 
-                    <li class="pgt-moteur-item high">
-                        <span class="pgt-risque high">Risque Élevé 4/5</span>
-                        <h2>V6 2.7 & 3.0 HDi — Un luxe au coût d'entretien démesuré</h2>
-                        <p>Présents sur les 407 et 607, ces V6 offrent un agrément royal mais cachent des fragilités structurelles. La pompe à huile peut montrer des signes de fatigue prématurée, menant au serrage moteur (coulage de bielle). Le circuit de refroidissement complexe génère des fuites au niveau du boîtier de sortie d'eau pouvant provoquer un joint de culasse avant même que l'aiguille de température ne monte.</p>
-                    </li>
+                <h3>6. Le 1.6 VTi 120 — Une consommation d'huile hors norme</h3>
+                <p>Version atmosphérique du THP, globalement plus fiable sans turbo. En revanche, il est connu pour sa <strong>consommation d'huile excessive</strong>, liée à l'usure des joints de queues de soupapes. Sans surveillance constante du niveau, les déphaseurs d'arbres à cames et le catalyseur finissent endommagés.</p>
 
-                    <li class="pgt-moteur-item medium">
-                        <span class="pgt-risque medium">Risque Moyen 3/5</span>
-                        <h2>1.6 VTi 120 — Une consommation d'huile hors norme</h2>
-                        <p>Version atmosphérique du THP, globalement plus fiable sans turbo. En revanche, il est connu pour sa <strong>consommation d'huile excessive</strong>, liée à l'usure des joints de queues de soupapes. Sans surveillance constante du niveau, les déphaseurs d'arbres à cames et le catalyseur finissent endommagés.</p>
-                    </li>
+                <h3>7. Le 1.4 HDi 68/70 — Petit moteur, gros risques de fuites</h3>
+                <p>Ce petit diesel a équipé des millions de 206 et 207. Son principal défaut : le faisceau de retour de gasoil, surnommé "l'araignée", qui devient poreux avec le temps. Les prises d'air dans le circuit d'injection rendent les démarrages impossibles. Moins grave qu'une casse moteur, mais panne immobilisante et coûteuse en main-d'œuvre.</p>
 
-                    <li class="pgt-moteur-item medium">
-                        <span class="pgt-risque medium">Risque Moyen 3/5</span>
-                        <h2>1.4 HDi 68/70 — Petit moteur, gros risques de fuites</h2>
-                        <p>Ce petit diesel a équipé des millions de 206 et 207. Son principal défaut : le faisceau de retour de gasoil, surnommé "l'araignée", qui devient poreux avec le temps. Les prises d'air dans le circuit d'injection rendent les démarrages impossibles. Moins grave qu'une casse moteur, mais panne immobilisante et coûteuse en main-d'œuvre.</p>
-                    </li>
+                <h3>8. Le 1.2 VTi 82 ch (Atmosphérique) — Même ADN, mêmes risques</h3>
+                <p>Petit frère du PureTech sans turbo : il évite les casses de turbine mais conserve la même technologie de courroie humide avec les risques d'obstruction de crépine. Sa puissance limitée force les conducteurs à solliciter haut le moteur, ce qui use prématurément les roulements de boîte. Un sous-dimensionnement sur un véhicule lourd réduit aussi drastiquement le <a href="/Blog/peugeot-3008-kilométrage-maximum">kilométrage maximum d'un 3008</a>.</p>
 
-                    <li class="pgt-moteur-item medium">
-                        <span class="pgt-risque medium">Risque Moyen 3/5</span>
-                        <h2>1.2 VTi 82 ch (Atmosphérique) — Même ADN, mêmes risques</h2>
-                        <p>Petit frère du PureTech sans turbo : il évite les casses de turbine mais conserve la même technologie de courroie humide avec les risques d'obstruction de crépine. Sa puissance limitée force les conducteurs à solliciter haut le moteur, ce qui use prématurément les roulements de boîte. Un sous-dimensionnement sur un véhicule lourd réduit aussi drastiquement le <a href="/Blog/peugeot-3008-kilométrage-maximum">kilométrage maximum d'un 3008</a>.</p>
-                    </li>
+                <h3>9. Le 2.2 HDi (1ères versions) — Électronique et FAP capricieux</h3>
+                <p>Très innovant pour son époque avec l'introduction du FAP, mais la gestion électronique de la régénération et le réservoir d'additif (Cérine) tombent fréquemment en panne, entraînant des passages répétés en mode dégradé. Moteur performant mais entretien rigoureux et coûteux indispensable.</p>
 
-                    <li class="pgt-moteur-item medium">
-                        <span class="pgt-risque medium">Risque Moyen 3/5</span>
-                        <h2>2.2 HDi (1ères versions) — Électronique et FAP capricieux</h2>
-                        <p>Très innovant pour son époque avec l'introduction du FAP, mais la gestion électronique de la régénération et le réservoir d'additif (Cérine) tombent fréquemment en panne, entraînant des passages répétés en mode dégradé. Moteur performant mais entretien rigoureux et coûteux indispensable.</p>
-                    </li>
-
-                    <li class="pgt-moteur-item medium">
-                        <span class="pgt-risque medium">Risque Moyen 3/5</span>
-                        <h2>1.4 VTi 95 — La chaîne qui ne tient pas</h2>
-                        <p>Partage le système de distribution par chaîne des blocs Prince. Le tendeur de chaîne est le point faible principal : sans remplacement préventif dès l'apparition d'un bruit métallique à froid, la chaîne se décale et endommage les soupapes.</p>
-                    </li>
-
-                </ol>
+                <h3>10. Le 1.4 VTi 95 — La chaîne qui ne tient pas</h3>
+                <p>Partage le système de distribution par chaîne des blocs Prince. Le tendeur de chaîne est le point faible principal : sans remplacement préventif dès l'apparition d'un bruit métallique à froid, la chaîne se décale et endommage les soupapes.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="tableau-recap">Tableau récapitulatif : motorisations, pannes et coûts</h2>
@@ -353,23 +285,7 @@ include __DIR__ . '/../header.php';
                      alt="Podium fiabilité Peugeot : 2.0 HDi en or, 1.2 Hybrid 136 en argent, 2.0 BlueHDi 150 en bronze"
                      style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
-                <div class="pgt-podium">
-                    <div class="pgt-podium-step silver">
-                        <div class="rank">2</div>
-                        <div class="engine">1.2 Hybrid 136 ch</div>
-                        <div class="desc">Courroie humide remplacée par chaîne classique post-2024</div>
-                    </div>
-                    <div class="pgt-podium-step gold">
-                        <div class="rank">1</div>
-                        <div class="engine">2.0 HDi</div>
-                        <div class="desc">150, 163 ou 180 ch — capable de dépasser 300 000 km sans casse majeure</div>
-                    </div>
-                    <div class="pgt-podium-step bronze">
-                        <div class="rank">3</div>
-                        <div class="engine">2.0 BlueHDi 150</div>
-                        <div class="desc">Robuste et bien géré thermiquement, bon choix pour gros rouleurs</div>
-                    </div>
-                </div>
+                <p>Le <strong>2.0 HDi</strong> (150, 163 ou 180 ch) est sans doute l'un des meilleurs diesels de sa génération : robuste, performant et capable de dépasser les 300 000 km sans encombre majeur. C'est la valeur sûre absolue chez Peugeot d'occasion. En deuxième position, les nouveaux blocs <strong>1.2 Hybrid 136 ch</strong> introduits après 2024 semblent avoir corrigé le tir en remplaçant enfin la courroie humide par une chaîne de distribution classique. Enfin, le <strong>2.0 BlueHDi 150</strong> complète ce podium : robuste et bien géré thermiquement, il reste un bon choix pour les gros rouleurs.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="5-conseils-expert">5 conseils d'expert pour ne pas se faire piéger en occasion</h2>
@@ -378,7 +294,7 @@ include __DIR__ . '/../header.php';
                      alt="Main de mécanicien dévissant le bouchon de remplissage d'huile pour inspecter l'état de la courroie de distribution Peugeot"
                      style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
-                <ul class="pgt-conseils">
+                <ul>
                     <li><strong>L'inspection visuelle :</strong> dévissez le bouchon de remplissage d'huile. Si vous voyez la courroie de distribution juste en dessous, vérifiez qu'elle n'est pas craquelée ou effilochée.</li>
                     <li><strong>L'historique des vidanges :</strong> exigez toutes les factures. Sur un PureTech, une vidange sautée ou faite avec la mauvaise huile est un motif d'exclusion immédiat.</li>
                     <li><strong>L'écoute à froid :</strong> démarrez le moteur après un arrêt prolongé. Tout cliquetis métallique ou bruit de chaîne qui frotte doit vous faire fuir.</li>
