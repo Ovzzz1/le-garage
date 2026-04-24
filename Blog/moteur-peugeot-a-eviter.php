@@ -73,15 +73,36 @@ include __DIR__ . '/../header.php';
 
 <!-- CSS spécifique article : classement moteurs + tableau récap + podium -->
 <style>
-    /* Tableau récap */
-    .pgt-table-wrap { overflow-x: auto; margin: 28px 0; }
-    .pgt-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-    .pgt-table th { background: #7c3aed; color: #fff; padding: 12px 14px; text-align: left; white-space: nowrap; }
-    .pgt-table td { padding: 11px 14px; border-bottom: 1px solid #2a2a3e; vertical-align: middle; }
-    .pgt-table tr:nth-child(even) td { background: #1e1e32; }
-    .pgt-table .risk-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
-    .pgt-tip { background: #12122a; border: 1px solid #7c3aed44; border-radius: 8px; padding: 16px 20px; margin: 22px 0; font-size: 0.93rem; color: #ccc; }
-    .pgt-tip strong { color: #c4b5fd; }
+    /* Tableau récap — lisible sur fond clair et sombre */
+    .pgt-table-wrap { overflow-x: auto; margin: 28px 0; -webkit-overflow-scrolling: touch; }
+    .pgt-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 480px; }
+    .pgt-table th { background: #7c3aed; color: #fff; padding: 11px 13px; text-align: left; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+    .pgt-table td { padding: 11px 13px; border-bottom: 1px solid rgba(255,255,255,0.07); color: inherit; vertical-align: middle; }
+    .pgt-table tr:nth-child(even) td { background: rgba(124,58,237,0.06); }
+    .pgt-table tr:nth-child(odd) td { background: transparent; }
+    .pgt-table .risk-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: middle; flex-shrink: 0; }
+    /* Responsive : stack sur mobile */
+    @media (max-width: 640px) {
+        .pgt-table, .pgt-table thead, .pgt-table tbody, .pgt-table th, .pgt-table td, .pgt-table tr { display: block; }
+        .pgt-table thead { display: none; }
+        .pgt-table tr { border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; margin-bottom: 12px; padding: 8px 0; }
+        .pgt-table td { border: none; border-bottom: 1px solid rgba(255,255,255,0.05); padding: 8px 13px; font-size: 0.85rem; }
+        .pgt-table td::before { content: attr(data-label); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: #7c3aed; font-weight: 700; margin-bottom: 3px; }
+        .pgt-table td:last-child { border-bottom: none; }
+    }
+    /* Encart tip */
+    .pgt-tip { background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.25); border-radius: 8px; padding: 14px 18px; margin: 22px 0; font-size: 0.93rem; }
+    .pgt-tip strong { color: #7c3aed; }
+    /* Responsive layout général */
+    @media (max-width: 768px) {
+        .art-layout-wrapper { flex-direction: column; }
+        .art-sidebar-right { display: none; }
+        .art-main-col { width: 100% !important; padding: 0 16px; box-sizing: border-box; }
+        .art-hero-content h1 { font-size: 1.4rem !important; line-height: 1.3; }
+        .art-hero-sub { font-size: 0.92rem !important; }
+        .art-tldr, .art-toc { margin: 16px 0; }
+        .art-cat-nav { overflow-x: auto; }
+    }
 </style>
 
 <!-- ARTICLE HERO -->
@@ -245,34 +266,34 @@ include __DIR__ . '/../header.php';
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>1.2 PureTech</strong></td>
-                                <td>Courroie humide / Crépine bouchée</td>
-                                <td>1 500 € à 8 000 €</td>
-                                <td><span class="risk-dot" style="background:#dc2626;"></span>5/5 Critique</td>
+                                <td data-label="Motorisation"><strong>1.2 PureTech</strong></td>
+                                <td data-label="Problème majeur">Courroie humide / Crépine bouchée</td>
+                                <td data-label="Coût moyen">1 500 € à 8 000 €</td>
+                                <td data-label="Risque"><span class="risk-dot" style="background:#dc2626;"></span>5/5 Critique</td>
                             </tr>
                             <tr>
-                                <td><strong>1.5 BlueHDi 130</strong></td>
-                                <td>Chaîne 7 mm / Cristallisation AdBlue</td>
-                                <td>1 200 € à 4 500 €</td>
-                                <td><span class="risk-dot" style="background:#ea580c;"></span>4/5 Élevé</td>
+                                <td data-label="Motorisation"><strong>1.5 BlueHDi 130</strong></td>
+                                <td data-label="Problème majeur">Chaîne 7 mm / Cristallisation AdBlue</td>
+                                <td data-label="Coût moyen">1 200 € à 4 500 €</td>
+                                <td data-label="Risque"><span class="risk-dot" style="background:#ea580c;"></span>4/5 Élevé</td>
                             </tr>
                             <tr>
-                                <td><strong>1.6 THP</strong></td>
-                                <td>Distribution / Encrassement soupapes</td>
-                                <td>800 € à 3 500 €</td>
-                                <td><span class="risk-dot" style="background:#ea580c;"></span>4/5 Élevé</td>
+                                <td data-label="Motorisation"><strong>1.6 THP</strong></td>
+                                <td data-label="Problème majeur">Distribution / Encrassement soupapes</td>
+                                <td data-label="Coût moyen">800 € à 3 500 €</td>
+                                <td data-label="Risque"><span class="risk-dot" style="background:#ea580c;"></span>4/5 Élevé</td>
                             </tr>
                             <tr>
-                                <td><strong>1.6 HDi 110</strong></td>
-                                <td>Joints d'injecteurs / Turbo</td>
-                                <td>600 € à 2 000 €</td>
-                                <td><span class="risk-dot" style="background:#ca8a04;"></span>3/5 Moyen</td>
+                                <td data-label="Motorisation"><strong>1.6 HDi 110</strong></td>
+                                <td data-label="Problème majeur">Joints d'injecteurs / Turbo</td>
+                                <td data-label="Coût moyen">600 € à 2 000 €</td>
+                                <td data-label="Risque"><span class="risk-dot" style="background:#ca8a04;"></span>3/5 Moyen</td>
                             </tr>
                             <tr>
-                                <td><strong>V6 2.7 / 3.0 HDi</strong></td>
-                                <td>Pompe à huile / Surchauffe</td>
-                                <td>2 000 € à 10 000 €</td>
-                                <td><span class="risk-dot" style="background:#ea580c;"></span>4/5 Élevé</td>
+                                <td data-label="Motorisation"><strong>V6 2.7 / 3.0 HDi</strong></td>
+                                <td data-label="Problème majeur">Pompe à huile / Surchauffe</td>
+                                <td data-label="Coût moyen">2 000 € à 10 000 €</td>
+                                <td data-label="Risque"><span class="risk-dot" style="background:#ea580c;"></span>4/5 Élevé</td>
                             </tr>
                         </tbody>
                     </table>
