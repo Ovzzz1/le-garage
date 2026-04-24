@@ -229,6 +229,10 @@ include __DIR__ . '/../header.php';
                         <p>Stellantis a imposé une nouvelle norme d'huile (5W30) en 2024 pour limiter le phénomène, mais le risque reste présent. Si vous hésitez avec son grand frère, consultez notre avis sur le <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">moteur 1.6 PureTech</a>.</p>
                     </li>
 
+                    <img src="/Image/moteur-peugeot-a-eviter2.webp"
+                         alt="Schéma 3D moteur 1.2 PureTech en coupe montrant la courroie humide et les résidus obstruant la crépine d'huile"
+                         style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
+
                     <li class="pgt-moteur-item high">
                         <span class="pgt-risque high">Risque Élevé 4/5</span>
                         <h2>1.5 BlueHDi 130 — La double peine AdBlue et chaîne</h2>
@@ -236,11 +240,19 @@ include __DIR__ . '/../header.php';
                         <p>Si un <a href="/Blog/voyant-orange-voiture-dans-un-cercle-peugeot">voyant orange Peugeot</a> s'allume avec une alerte "Défaut moteur", le diagnostic est souvent sans appel sur ce bloc.</p>
                     </li>
 
+                    <img src="/Image/moteur-peugeot-a-eviter3.webp"
+                         alt="Comparatif chaîne de distribution 7mm BlueHDi standard vs chaîne renforcée 8mm 2024 sur plan de travail d'atelier"
+                         style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
+
                     <li class="pgt-moteur-item high">
                         <span class="pgt-risque high">Risque Élevé 4/5</span>
                         <h2>1.6 THP (150 à 270 ch) — L'héritage BMW mal digéré</h2>
                         <p>Développé en collaboration avec BMW (bloc Prince), ce turbo essence offre des performances de premier plan mais souffre d'une distribution chroniquement fragile. Le tendeur de chaîne hydraulique finit par faiblir, provoquant un décalage de distribution et des ratés d'allumage. Par ailleurs, l'encrassement des soupapes par la calamine est inévitable en usage urbain — l'injection directe ne permet pas de "nettoyer" les conduits d'admission.</p>
                     </li>
+
+                    <img src="/Image/moteur-peugeot-a-eviter4.webp"
+                         alt="Côté distribution moteur 1.6 THP ouvert montrant la chaîne allongée et le tendeur hydraulique en extension maximale"
+                         style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
                     <li class="pgt-moteur-item medium">
                         <span class="pgt-risque medium">Risque Moyen 3/5</span>
@@ -337,7 +349,9 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="podium-fiabilite">Le podium de la fiabilité : quelles Peugeot acheter les yeux fermés ?</h2>
 
-                <p>Pour ne pas rester sur une note négative, voici les motorisations sur lesquelles vous pouvez miser en occasion.</p>
+                <img src="/Image/moteur-peugeot-a-eviter5.webp"
+                     alt="Podium fiabilité Peugeot : 2.0 HDi en or, 1.2 Hybrid 136 en argent, 2.0 BlueHDi 150 en bronze"
+                     style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
                 <div class="pgt-podium">
                     <div class="pgt-podium-step silver">
@@ -359,6 +373,10 @@ include __DIR__ . '/../header.php';
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="5-conseils-expert">5 conseils d'expert pour ne pas se faire piéger en occasion</h2>
+
+                <img src="/Image/moteur-peugeot-a-eviter6.webp"
+                     alt="Main de mécanicien dévissant le bouchon de remplissage d'huile pour inspecter l'état de la courroie de distribution Peugeot"
+                     style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
                 <ul class="pgt-conseils">
                     <li><strong>L'inspection visuelle :</strong> dévissez le bouchon de remplissage d'huile. Si vous voyez la courroie de distribution juste en dessous, vérifiez qu'elle n'est pas craquelée ou effilochée.</li>
