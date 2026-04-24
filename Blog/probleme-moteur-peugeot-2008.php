@@ -242,6 +242,8 @@ include __DIR__ . '/../header.php';
 
                 <img src="/Image/peugeot-2008-en-panne-voyant-allume.webp" alt="Peugeot 2008 de couleur orange en panne sur une route avec le capot ouvert" style="width:100%; border-radius:10px; margin: 20px 0;">
 
+                <p>Cette liste noire concerne spécifiquement le 2008, mais les mêmes blocages se retrouvent sur d'autres modèles de la marque au lion. Notre <a href="https://www.garageraymond.fr/Blog/moteur-peugeot-a-eviter">guide complet des moteurs Peugeot à éviter toutes gammes confondues</a> vous donnera une vue d'ensemble plus large avant tout achat en occasion.</p>
+
                 <h2 id="moteurs-fiables">5. Les moteurs 2008 "Sans Soucis" (Ce qu'on vous recommande)</h2>
                 <p>La bonne nouvelle, c'est que toute la gamme n'est pas maudite. Si vous lisez des <strong>avis sur 2008 essence</strong> mitigés, sachez qu'il existe des bouées de sauvetage depuis les années 2020 :</p>
                 <ul>
