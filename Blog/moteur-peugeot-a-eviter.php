@@ -80,8 +80,7 @@ include __DIR__ . '/../header.php';
     .pgt-table td { padding: 11px 13px; border-bottom: 1px solid rgba(255,255,255,0.07); color: inherit; vertical-align: middle; }
     .pgt-table tr:nth-child(even) td { background: rgba(124,58,237,0.06); }
     .pgt-table tr:nth-child(odd) td { background: transparent; }
-    .pgt-table .risk-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: middle; flex-shrink: 0; }
-    /* Responsive : stack sur mobile */
+    .pgt-table .risk-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
     @media (max-width: 640px) {
         .pgt-table, .pgt-table thead, .pgt-table tbody, .pgt-table th, .pgt-table td, .pgt-table tr { display: block; }
         .pgt-table thead { display: none; }
@@ -93,15 +92,38 @@ include __DIR__ . '/../header.php';
     /* Encart tip */
     .pgt-tip { background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.25); border-radius: 8px; padding: 14px 18px; margin: 22px 0; font-size: 0.93rem; }
     .pgt-tip strong { color: #7c3aed; }
-    /* Responsive layout général */
+
+    /* ── RESPONSIVE MOBILE ── */
     @media (max-width: 768px) {
-        .art-layout-wrapper { flex-direction: column; }
-        .art-sidebar-right { display: none; }
-        .art-main-col { width: 100% !important; padding: 0 16px; box-sizing: border-box; }
-        .art-hero-content h1 { font-size: 1.4rem !important; line-height: 1.3; }
-        .art-hero-sub { font-size: 0.92rem !important; }
-        .art-tldr, .art-toc { margin: 16px 0; }
-        .art-cat-nav { overflow-x: auto; }
+        /* Hero : réduit la hauteur et taille police */
+        .art-hero { min-height: 0 !important; padding: 60px 16px 28px !important; }
+        .art-hero-content h1 { font-size: 1.3rem !important; line-height: 1.25 !important; margin-bottom: 10px !important; }
+        .art-hero-sub { font-size: 0.88rem !important; line-height: 1.5 !important; margin-bottom: 14px !important;
+                        border-left: none !important; padding-left: 0 !important; background: none !important; }
+        /* Tags : retour à la ligne propre, taille réduite */
+        .art-hero-tags { display: flex; flex-wrap: wrap; gap: 6px !important; margin-bottom: 12px !important; }
+        .art-tag { font-size: 0.7rem !important; padding: 3px 8px !important; }
+        /* Meta auteur compact */
+        .art-hero-meta { flex-direction: column; gap: 6px !important; }
+        .art-author-pill img { width: 30px !important; height: 30px !important; }
+        .art-author-pill strong, .art-author-pill span { font-size: 0.8rem !important; }
+        .art-meta-infos { font-size: 0.78rem !important; }
+        /* Layout */
+        .art-layout-wrapper { flex-direction: column !important; }
+        .art-sidebar-right { display: none !important; }
+        .art-main-col { width: 100% !important; padding: 0 16px !important; box-sizing: border-box !important; }
+        /* Cat nav scrollable */
+        .art-cat-nav-inner { gap: 10px !important; }
+        .art-cat-link { font-size: 0.78rem !important; white-space: nowrap; }
+        /* TL;DR et TOC */
+        .art-tldr, .art-toc { margin: 16px 0 !important; padding: 14px 16px !important; }
+        .art-tldr ul, .art-toc ol { padding-left: 16px !important; }
+        .art-tldr li, .art-toc li { font-size: 0.88rem !important; margin-bottom: 6px !important; }
+        /* Contenu */
+        .art-content h2 { font-size: 1.15rem !important; }
+        .art-content h3 { font-size: 1rem !important; }
+        .art-content p, .art-content li { font-size: 0.9rem !important; line-height: 1.65 !important; }
+        .art-content img { border-radius: 6px !important; }
     }
 </style>
 
