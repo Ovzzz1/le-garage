@@ -1,21 +1,21 @@
 <?php
-// published: 2026-04-28 10:00
+// published: 2026-04-30 09:00
 /**
- * peugeot-207-modele-a-eviter.php
+ * c4-picasso-modele-a-eviter.php
  */
 
-$page_title       = "Peugeot 207 modèle à éviter : La blacklist des moteurs et années à fuir en occasion";
-$page_description = "1.6 THP, VTi, 1.6 HDi Phase 1 : les versions de la Peugeot 207 à fuir absolument en occasion. Guide expert 2026 avec tableau récapitulatif, checklist et modèles fiables à cibler.";
+$page_title       = "Citroën C4 Picasso modèle à éviter : La blacklist 2026 des versions à fuir en occasion";
+$page_description = "BMP6, PureTech, 1.6 THP : les versions du Citroën C4 Picasso à éviter absolument en 2026. Guide expert avec tableau récapitulatif, checklist et versions fiables à cibler.";
 
 $article = [
-    'title'          => "Peugeot 207 modèle à éviter : La blacklist des moteurs et années à fuir en occasion",
-    'subtitle'       => "La 207 inonde le marché de l'occasion à des prix attractifs, mais les moteurs Prince co-développés avec BMW et les blocs HDi de première série peuvent transformer une bonne affaire en gouffre financier. Voici la liste noire complète.",
+    'title'          => "Citroën C4 Picasso modèle à éviter : La blacklist 2026 des versions à fuir en occasion",
+    'subtitle'       => "Boîte BMP6, courroie PureTech et turbo HDi : le monospace aux chevrons cache des défauts de conception capables d'engloutir plus de 6 000 € de réparations. Voici les versions à proscrire et les rares choix sûrs.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
     'category_color' => '#7c3aed',
-    'tags'           => ['Peugeot 207', 'Fiabilité', 'Achat Occasion', 'THP', 'HDi'],
-    'image'          => '/Image/peugeot-207-modele-a-eviter1.webp',
-    'date'           => '28 Avril 2026',
+    'tags'           => ['Citroën C4 Picasso', 'Fiabilité', 'Achat Occasion', 'PureTech', 'BMP6'],
+    'image'          => '/Image/c4-picasso-modele-a-eviter1.webp',
+    'date'           => '30 Avril 2026',
     'author'         => 'Arnaud',
     'author_role'    => 'Expert Achat & Occasion',
     'author_img'     => '/Image/arnaud.png',
@@ -95,7 +95,7 @@ include __DIR__ . '/../header.php';
 <article>
     <section class="art-hero">
         <img src="<?php echo $article['image']; ?>"
-             alt="Peugeot 207 d'occasion capot ouvert en atelier, mécanicien inspectant le moteur THP"
+             alt="Citroën C4 Picasso d'occasion sur pont élévateur, mécanicien inspectant la transmission BMP6"
              class="art-hero-bg"
              width="1200" height="675" decoding="async">
         <div class="art-hero-overlay"></div>
@@ -143,11 +143,11 @@ include __DIR__ . '/../header.php';
             <div class="art-tldr">
                 <div class="art-tldr-title">L'essentiel à retenir (TL;DR)</div>
                 <ul>
-                    <li><strong>Danger essence sportif :</strong> Le 1.6 THP (150, 156 et 175 ch) — tendeur de chaîne qui lâche, soupapes qui frappent les pistons, destruction totale du moteur et surconsommation d'huile affolante.</li>
-                    <li><strong>Danger essence cœur de gamme :</strong> Les 1.4 VTi et 1.6 VTi — chaîne qui s'allonge, surconsommation d'huile jusqu'à 1L/1 000 km et pompe à eau fragile sur le 1.6.</li>
-                    <li><strong>Diesel à fuir :</strong> Le 1.6 HDi 110 ch Phase 1 (2006-2009) — joints d'injecteurs qui fuient, calamine dans l'huile et casse turbo souvent dès 80 000 km.</li>
-                    <li><strong>Points électriques :</strong> La direction assistée électrique (grognement = crémaillère à 1 000 €) et le boîtier BSI capricieux à tester impérativement lors de l'essai.</li>
-                    <li><strong>Recommandé :</strong> Le 1.4i 75 ch ou 1.4 16v 90 ch en essence (courroie classique), ou le 1.6 HDi 92 ch Phase 2 (post-juillet 2009) dont les défauts ont été corrigés.</li>
+                    <li><strong>Danger essence :</strong> Le 1.2 PureTech 110/130 ch — courroie humide qui se désagrège et bouche la crépine, casse moteur garantie sans entretien strict.</li>
+                    <li><strong>Danger essence Gen 1 :</strong> Le 1.6 THP 156 ch — tendeur de chaîne chronique et surconsommation d'huile atteignant 1L/1 000 km.</li>
+                    <li><strong>Diesel à risque :</strong> Le 1.6 HDi 110 ch (2006-2010) — joints d'injecteurs défaillants, calamine et casse turbo systématique.</li>
+                    <li><strong>Transmission à proscrire :</strong> La boîte BMP6/ETG6 — saccades, actionneur qui lâche, usure prématurée de l'embrayage, à fuir absolument.</li>
+                    <li><strong>Recommandé :</strong> Le 2.0 HDi 150 ch en boîte manuelle ou le BlueHDi avec facture de remplacement réservoir AdBlue + boîte EAT6 Aisin.</li>
                 </ul>
             </div>
 
@@ -155,126 +155,142 @@ include __DIR__ . '/../header.php';
             <div class="art-toc">
                 <div class="art-toc-title">Dans ce dossier</div>
                 <ol>
-                    <li><a href="#blacklist-207">La blacklist rapide de la Peugeot 207</a></li>
-                    <li><a href="#essence-prince">Moteurs essence : Fuyez la famille Prince (THP et VTi)</a></li>
-                    <li><a href="#diesel-annees-noires">Moteurs diesel : Les années noires 2006-2009 à contourner</a></li>
-                    <li><a href="#points-controle-207">Les 3 points de contrôle obligatoires à l'essai</a></li>
-                    <li><a href="#versions-fiables-207">Quelle Peugeot 207 d'occasion acheter les yeux fermés ?</a></li>
-                    <li><a href="#faq-207">FAQ : Vos questions fréquentes sur la fiabilité de la 207</a></li>
+                    <li><a href="#blacklist-c4-picasso">La blacklist complète : tableau des versions à fuir</a></li>
+                    <li><a href="#diesel-a-eviter">Les moteurs Diesel à rayer de votre liste</a></li>
+                    <li><a href="#essence-a-surveiller">Les moteurs Essence à surveiller de très près</a></li>
+                    <li><a href="#boite-bmp6">La transmission à éviter : la boîte robotisée BMP6 et ETG6</a></li>
+                    <li><a href="#points-controle">Les 3 points essentiels à vérifier avant l'achat</a></li>
+                    <li><a href="#versions-fiables">Quels modèles de C4 Picasso choisir pour un achat serein ?</a></li>
+                    <li><a href="#faq-c4-picasso">FAQ : Vos questions sur la fiabilité du C4 Picasso</a></li>
                 </ol>
             </div>
 
             <!-- Article Content -->
             <div class="art-content">
 
-                <p>Remplaçante de la mythique 206, la Peugeot 207 a été un immense succès commercial entre 2006 et 2014. Aujourd'hui, elle inonde le marché de l'occasion à des prix très attractifs pour les jeunes permis ou comme second véhicule. Mais derrière son design réussi, la 207 cache des motorisations co-développées avec BMW et des blocs diesels de première génération qui peuvent transformer une bonne affaire en gouffre financier.</p>
+                <p>Le Citroën C4 Picasso a séduit des milliers de familles avec son habitabilité et son confort hors pair. Mais le marché de l'occasion regorge de pièges : ce monospace aux chevrons a embarqué certaines des motorisations les plus fragiles du groupe PSA, ainsi que des transmissions capricieuses capables de transformer un budget familial en gouffre financier.</p>
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="blacklist-207">La blacklist rapide de la Peugeot 207</h2>
+                <h2 id="blacklist-c4-picasso">La blacklist complète : tableau des versions à fuir</h2>
 
                 <div class="evit-table-wrap">
                     <table class="evit-table">
                         <thead>
-                            <tr><th>Moteur ciblé</th><th>Carburant</th><th>Problème principal</th><th>Verdict</th></tr>
+                            <tr><th>Moteur / Boîte</th><th>Carburant</th><th>Problème principal</th><th>Verdict</th></tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="Moteur"><strong>1.6 THP (150 / 156 ch)</strong></td>
+                                <td data-label="Moteur / Boîte"><strong>1.2 PureTech 110/130</strong></td>
                                 <td data-label="Carburant">Essence</td>
-                                <td data-label="Problème">Chaîne qui se décale, destruction soupapes</td>
+                                <td data-label="Problème">Courroie humide qui se désagrège</td>
                                 <td data-label="Verdict"><span class="evit-rouge">À FUIR</span></td>
                             </tr>
                             <tr>
-                                <td data-label="Moteur"><strong>1.4 VTi et 1.6 VTi</strong></td>
+                                <td data-label="Moteur / Boîte"><strong>1.6 THP 156 ch</strong></td>
                                 <td data-label="Carburant">Essence</td>
-                                <td data-label="Problème">Surconso huile + pompe à eau fragile</td>
+                                <td data-label="Problème">Chaîne qui se détend, surconso huile</td>
+                                <td data-label="Verdict"><span class="evit-rouge">À FUIR</span></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Moteur / Boîte"><strong>1.6 HDi 110 (2006-2010)</strong></td>
+                                <td data-label="Carburant">Diesel</td>
+                                <td data-label="Problème">Fuite injecteurs, casse turbo</td>
                                 <td data-label="Verdict"><span class="evit-rouge">À ÉVITER</span></td>
                             </tr>
                             <tr>
-                                <td data-label="Moteur"><strong>1.6 HDi 110 (Phase 1)</strong></td>
+                                <td data-label="Moteur / Boîte"><strong>1.6 e-HDi (avant 2015)</strong></td>
                                 <td data-label="Carburant">Diesel</td>
-                                <td data-label="Problème">Joints injecteurs, casse turbo dès 80 000 km</td>
-                                <td data-label="Verdict"><span class="evit-rouge">À FUIR</span></td>
+                                <td data-label="Problème">Alterno-démarreur Stop & Start hors de prix</td>
+                                <td data-label="Verdict"><span class="evit-orange">VIGILANCE</span></td>
                             </tr>
                             <tr>
-                                <td data-label="Moteur"><strong>1.4i 75 ch / 1.4 16v 90 ch</strong></td>
-                                <td data-label="Carburant">Essence</td>
-                                <td data-label="Problème">Courroie classique, aucun défaut majeur</td>
+                                <td data-label="Moteur / Boîte"><strong>Boîte BMP6 / ETG6</strong></td>
+                                <td data-label="Carburant">Transmission</td>
+                                <td data-label="Problème">Saccades, actionneur usé, embrayage mort</td>
+                                <td data-label="Verdict"><span class="evit-rouge">À PROSCRIRE</span></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Moteur / Boîte"><strong>2.0 HDi 150 ch (BVM)</strong></td>
+                                <td data-label="Carburant">Diesel</td>
+                                <td data-label="Problème">Aucun problème majeur connu</td>
                                 <td data-label="Verdict"><span class="evit-vert">MEILLEUR CHOIX</span></td>
-                            </tr>
-                            <tr>
-                                <td data-label="Moteur"><strong>1.6 HDi 92 ch (Phase 2)</strong></td>
-                                <td data-label="Carburant">Diesel</td>
-                                <td data-label="Problème">Défauts Phase 1 corrigés</td>
-                                <td data-label="Verdict"><span class="evit-vert">RECOMMANDÉ</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="essence-prince">Moteurs essence : Fuyez la famille Prince (THP et VTi)</h2>
+                <h2 id="diesel-a-eviter">Les moteurs Diesel à rayer de votre liste</h2>
 
-                <p>La collaboration entre PSA et BMW a donné naissance à des moteurs essence technologiquement avancés pour l'époque, mais dont la fiabilité s'est révélée catastrophique dès les premières années de mise en circulation. Ces blocs sont documentés en détail dans notre enquête sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
+                <p>Très prisé des gros rouleurs, le C4 Picasso diesel réserve parfois de très mauvaises surprises financières. Deux motorisations concentrent l'essentiel des problèmes.</p>
 
-                <h3>Le 1.6 THP (150, 156 et 175 ch) : Le pire choix possible</h3>
-                <p>Si vous cherchez une 207 sportive comme la 207 RC ou la Féline, vous tomberez inévitablement sur le 1.6 THP. Ce bloc est un nid à pannes ruineuses. Son défaut principal réside dans le tendeur de chaîne de distribution qui s'use prématurément : la chaîne se détend et se décale, provoquant des claquements métalliques à froid, une perte de puissance instantanée, et très souvent la destruction totale du moteur par contact soupapes-pistons. Ajoutez une pompe haute pression fragile et une consommation d'huile affolante, et vous obtenez un moteur à éviter absolument.</p>
+                <h3>Le 1.6 HDi 110 ch : Le pire élève de la génération 1</h3>
+                <p>Sur les modèles produits entre 2006 et 2010, ce moteur souffre d'un défaut de conception majeur : les joints d'injecteurs fuient. Cette fuite crée de la calamine qui vient boucher le circuit de lubrification, entraînant la casse inévitable du turbocompresseur. Le volant moteur bi-masse de cette version s'use également de manière prématurée, une double peine pour le portefeuille. C'est le même scénario catastrophe décrit dans notre dossier sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs à éviter du groupe PSA</a>.</p>
 
-                <h3>Les 1.4 VTi (95 ch) et 1.6 VTi (120 ch) : Des puits d'huile et d'eau</h3>
-                <p>Pensés pour le cœur de gamme, les blocs VTi partagent l'architecture du THP sans le turbo. Ils n'échappent pas au défaut de la chaîne de distribution qui s'allonge. Ils souffrent également de deux autres pannes critiques : une surconsommation d'huile majeure pouvant dépasser 1 litre aux 1 000 km due à un défaut de segmentation, et sur le 1.6 VTi notamment, une pompe à eau qui fuit et émet un sifflement régulier. Si elle lâche, c'est la surchauffe immédiate et le joint de culasse.</p>
+                <h3>Le 1.6 e-HDi : Attention au piège du Stop & Start</h3>
+                <p>Souvent recommandé à tort, ce moteur intègre un système micro-hybride (alterno-démarreur) pour le Stop & Start. Ce composant a tendance à lâcher prématurément sur les modèles d'avant 2015. La facture de remplacement dépasse régulièrement les 1 000 €, car la courroie d'accessoires spécifique doit également être remplacée en même temps.</p>
 
-                <img src="/Image/peugeot-207-modele-a-eviter2.webp"
-                     alt="Chaîne de distribution Peugeot 207 THP déposée, tendeur défaillant visible"
+                <img src="/Image/c4-picasso-modele-a-eviter2.webp"
+                     alt="Système AdBlue Citroën C4 Picasso avec traces de cristallisation blanche visible"
                      style="width:100%;height:auto;border-radius:8px;margin:18px 0;">
 
-                <!-- ══════════════════════════════════ -->
-                <h2 id="diesel-annees-noires">Moteurs diesel : Les années noires 2006-2009 à contourner</h2>
-
-                <p>La Peugeot 207 s'est vendue par millions en diesel. Si les modèles commercialisés après le restylage de 2010 sont globalement très fiables, la première série produite entre 2006 et 2009 doit vous alerter immédiatement.</p>
-
-                <h3>Le 1.6 HDi 110 ch (Phase 1) : Chronique d'un turbo cassé</h3>
-                <p>C'est le mouton noir absolu de la gamme diesel d'occasion. Ce moteur souffre d'un défaut de conception dramatique au niveau des joints d'injecteurs. Avec les kilomètres, ces joints fuient et laissent passer des gaz d'échappement qui se transforment en calamine dans le carter d'huile. Cette boue épaisse bouche le tamis de lubrification du turbocompresseur, qui finit par gripper et casser net, souvent dès 80 000 km. Remplacer le turbo sans nettoyer l'intégralité du circuit d'huile garantit une nouvelle casse quelques centaines de kilomètres plus tard. Le volant moteur bi-masse s'use de manière prématurée sur cette même version.</p>
+                <h3>Le scandale de l'AdBlue sur les BlueHDi</h3>
+                <p>Sur le C4 Picasso II, le 1.6 BlueHDi est mécaniquement très fiable. Il est cependant touché par l'épidémie mondiale du système de dépollution : l'AdBlue cristallise et déforme le réservoir, détruisant la pompe intégrée. N'achetez un modèle BlueHDi que si le vendeur possède la facture de remplacement du réservoir d'AdBlue. Le même défaut sévit sur le <a href="/Blog/peugeot-3008-modele-a-eviter">Peugeot 3008 modèle à éviter</a>, preuve qu'il s'agit d'un mal profond chez Stellantis.</p>
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="points-controle-207">Les 3 points de contrôle obligatoires à l'essai</h2>
+                <h2 id="essence-a-surveiller">Les moteurs Essence à surveiller de très près</h2>
 
-                <p>Au-delà de la mécanique pure, la 207 a vieilli et présente des faiblesses périphériques très onéreuses à bien identifier lors de votre visite.</p>
+                <p>Si vous roulez peu, l'essence est le choix logique. Mais chez PSA, les moteurs de cette époque sont de véritables champs de mines qu'il convient de connaître avant toute visite.</p>
+
+                <h3>Le 1.2 PureTech : Le scandale de la courroie humide</h3>
+                <p>C'est le moteur essence le plus répandu sur le C4 Picasso II. Sa courroie de distribution baigne dans l'huile. Avec le temps et l'action corrosive de l'essence, elle s'effrite. Ses morceaux viennent boucher la crépine de la pompe à huile, causant une perte d'assistance de freinage (pompe à vide) ou la casse complète du moteur. Ce défaut est exactement identique à celui documenté sur le <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 modèle à éviter</a>.</p>
+
+                <h3>Le 1.6 THP 156 ch : Une ruine financière</h3>
+                <p>Développé avec BMW, ce moteur cumule deux tares redoutables : la chaîne de distribution se détend, causant des pertes de puissance et des claquements à froid, et la segmentation laisse passer l'huile. Résultat : une consommation d'huile pouvant atteindre 1 litre aux 1 000 km qui finit par encrasser et détruire le moteur. Sans preuve de remplacement du kit distribution fiabilisé, passez votre chemin.</p>
+
+                <!-- ══════════════════════════════════ -->
+                <h2 id="boite-bmp6">La transmission à éviter : la boîte robotisée BMP6 et ETG6</h2>
+
+                <p>Le C4 Picasso est l'ambassadeur de l'une des pires transmissions du marché : la BMP6 (Boîte Manuelle Pilotée à 6 rapports), rebaptisée ETG6 par la suite. Elle cumule tous les défauts imaginables.</p>
+
+                <p>Des passages de vitesses d'une lenteur exaspérante, de violents à-coups lors des manœuvres ou dans les embouteillages, un embrayage et une butée hydraulique qui s'usent prématurément impliquant des frais colossaux : voilà le quotidien d'un C4 Picasso avec cette boîte. Les mêmes tares ont fait la mauvaise réputation du <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 modèle à éviter</a> produit à la même époque.</p>
+
+                <!-- ══════════════════════════════════ -->
+                <h2 id="points-controle">Les 3 points essentiels à vérifier avant l'achat</h2>
 
                 <ol>
-                    <li><strong>La direction assistée électrique :</strong> C'est le talon d'Achille de la 207. Écoutez bien lors de l'essai : un grognement en tournant le volant de butée en butée à l'arrêt, ou un volant qui se fige subitement en roulant, signale une crémaillère complète à changer — facture supérieure à 1 000 €. Un <a href="/Blog/voyant-orange-peugeot">voyant orange Peugeot</a> allumé de manière aléatoire peut également indiquer ce défaut.</li>
-                    <li><strong>L'électronique et le boîtier BSI :</strong> La 207 est victime des sautes d'humeur de son Boîtier de Servitude Intelligent. Testez impérativement vitres électriques, clignotants, climatisation et essuie-glaces lors de l'essai. Un voyant orange qui s'allume aléatoirement sans perte de puissance est souvent lié à ce boîtier qui prend l'humidité.</li>
-                    <li><strong>Le toit (versions CC et SW) :</strong> Si vous visez le cabriolet 207 CC, actionnez le toit plusieurs fois. Les capteurs tombent en panne et la pompe hydraulique fuit. Pour la version break 207 SW, vérifiez l'étanchéité du toit panoramique en verre et le rideau occultant électrique qui a tendance à dérailler.</li>
+                    <li><strong>La suspension arrière (finition Exclusive) :</strong> Si vous achetez une version haut de gamme, vérifiez l'assiette du véhicule. Si l'arrière semble affaissé à l'arrêt, les boudins pneumatiques sont poreux et le compresseur est probablement hors service.</li>
+                    <li><strong>L'écran tactile et l'électronique (C4 Picasso II) :</strong> Naviguez intensivement dans les menus climatisation et GPS. Les redémarrages intempestifs et les lenteurs du système SMEG sont très fréquents, et la dalle coûte cher à remplacer.</li>
+                    <li><strong>Les bruits de trains roulants :</strong> Lors de l'essai, tendez l'oreille sur les dos d'âne. Les coupelles d'amortisseurs et les silentblocs de train avant s'usent très vite sur ce véhicule lourd.</li>
                 </ol>
 
-                <img src="/Image/peugeot-207-modele-a-eviter3.webp"
-                     alt="Tableau de bord Peugeot 207 avec voyant direction assistée et boîtier BSI allumés"
+                <img src="/Image/c4-picasso-modele-a-eviter3.webp"
+                     alt="Tableau de bord Citroën C4 Picasso avec voyant moteur et message défaut antipollution"
                      style="width:100%;height:auto;border-radius:8px;margin:18px 0;">
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="versions-fiables-207">Quelle Peugeot 207 d'occasion acheter les yeux fermés ?</h2>
+                <h2 id="versions-fiables">Quels modèles de C4 Picasso choisir pour un achat serein ?</h2>
 
-                <p>Maintenant que vous savez ce qu'il faut contourner, voici les modèles increvables de la gamme 207 pour faire un achat serein.</p>
+                <p>Il existe des versions très solides pour transporter votre famille sans mauvaise surprise. Le bloc 2.0 HDi 150 ch en boîte manuelle est un véritable roc : puissant, coupleux et sans soucis majeurs de turbo connus. C'est la motorisation reine pour un achat serein sur ce modèle.</p>
 
-                <p>En essence, privilégiez les anciens moteurs équipés d'une courroie de distribution classique, non Prince : le 1.4i 75 ch ou le 1.4 16v 90 ch. Ils consomment un peu plus de carburant, mais ils sont mécaniquement indestructibles et ne présentent aucun des défauts structurels des blocs VTi ou THP.</p>
-
-                <p>En diesel, ciblez absolument un modèle Phase 2 commercialisé après juillet 2009 — reconnaissable à son pare-chocs avant redessiné — équipé du solide 1.6 HDi 92 ch ou du modeste 1.4 HDi 70 ch. Les défauts de jeunesse concernant le turbo et les injecteurs y ont été définitivement corrigés. Si votre budget le permet et que vous souhaitez vous orienter vers la remplaçante directe, consultez notre guide sur la <a href="/Blog/modele-208-a-eviter">Peugeot 208 : les modèles à éviter</a> avant de signer.</p>
+                <p>Si vous voulez de l'automatique, ciblez uniquement les modèles équipés de la boîte EAT6 d'origine japonaise Aisin, douce et d'une fiabilité exemplaire. C'est la seule transmission automatique acceptable sur ce monospace.</p>
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">Le mot du Garage Expert Auto</div>
-                    <p style="margin: 0; color: #fff;">La 207 Phase 2 en 1.6 HDi 92 ch ou en 1.4i est un achat solide. Fuyez le THP sans preuve de distribution révisée, les VTi sans justificatif d'huile régulier, et le HDi 110 ch Phase 1 sans exception. Testez toujours la direction et le BSI lors de l'essai — ce sont souvent les défauts qui plombent la transaction après l'achat.</p>
+                    <p style="margin: 0; color: #fff;">Le 2.0 HDi reste le seul choix sans compromis sur le C4 Picasso. Si votre budget vous oriente vers un PureTech ou un THP, n'achetez que si le carnet d'entretien est complet avec des vidanges annuelles prouvées, et que vous avez vérifié la courroie de vos propres yeux. La boîte BMP6/ETG6 est un piège absolu : sans EAT6, visez uniquement la boîte manuelle classique.</p>
                 </div>
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="faq-207">FAQ : Vos questions fréquentes sur la fiabilité de la 207</h2>
+                <h2 id="faq-c4-picasso">FAQ : Vos questions sur la fiabilité du C4 Picasso</h2>
 
-                <h3>Quelle est la meilleure année pour acheter une Peugeot 207 d'occasion ?</h3>
-                <p>Il faut fuir les années 2006 à 2009. Visez une Peugeot 207 Phase 2, commercialisée à partir de l'été 2009 et reconnaissable à son pare-chocs avant redessiné avec les antibrouillards déportés. Sur ces modèles, Peugeot a corrigé les problèmes d'assemblage et sécurisé les moteurs HDi.</p>
+                <h3>Quelle est la meilleure année pour acheter un C4 Picasso ?</h3>
+                <p>Pour la première génération, visez les modèles produits entre fin 2011 et 2013 (les défauts de jeunesse du 1.6 HDi ont été corrigés). Pour la seconde génération, privilégiez les modèles post-2016 avec la boîte automatique EAT6 et un moteur 2.0 HDi.</p>
 
-                <h3>Comment savoir si le moteur de la 207 est un bloc fragile VTi ou un ancien 1.4i robuste ?</h3>
-                <p>Le plus sûr est de regarder la carte grise ou la puissance fiscale. L'increvable 1.4i développe 75 chevaux, tandis que le très fragile 1.4 VTi en développe 95. Sous le capot, le VTi est plus imposant et comporte l'inscription VTi sur son cache supérieur.</p>
+                <h3>Comment différencier une boîte BMP6/ETG6 d'une vraie boîte automatique EAT6 ?</h3>
+                <p>L'appellation commerciale est la clé. Sur les fiches techniques, cherchez expressément la mention EAT6. À l'essai, la boîte EAT6 ne provoque aucune saccade, contrairement à la BMP6/ETG6 qui hoche la tête à chaque changement de rapport en ville.</p>
 
-                <h3>Le filtre à particules (FAP) est-il source de pannes sur la 207 diesel ?</h3>
-                <p>Oui, le FAP de la 207 s'encrasse très prématurément si la voiture ne fait que des petits trajets urbains, car il n'atteint jamais la température de régénération. Si vous roulez principalement en ville, choisissez une version essence 1.4i au risque de voir votre FAP colmaté vous forcer à rouler en mode dégradé.</p>
+                <h3>Le problème de courroie du moteur PureTech est-il résolu sur les modèles récents ?</h3>
+                <p>PSA a apporté plusieurs modifications à la courroie et aux préconisations d'huile. Cependant, la conception même de la courroie humide reste sujette à caution jusqu'à l'arrivée de la chaîne de distribution fin 2023. Restez extrêmement vigilant sur le suivi d'entretien : une vidange annuelle est obligatoire sur ces blocs.</p>
 
             </div><!-- .art-content -->
 
@@ -293,7 +309,7 @@ include __DIR__ . '/../header.php';
             <!-- Heavy Conclusion Box -->
             <div class="art-conclusion">
                 <h2>Le mot de la fin</h2>
-                <p>La Peugeot 207 peut être un excellent achat d'occasion à petit budget — à condition de cibler les bons millésimes et les bonnes motorisations. Phase 2 uniquement en diesel, 1.4i ou 1.4 16v en essence, et vérification systématique de la direction assistée et du BSI lors de l'essai. Ces trois règles vous éviteront l'essentiel des mauvaises surprises.</p>
+                <p>Le C4 Picasso peut être un excellent achat familial d'occasion — à condition de ne pas se tromper de motorisation ni de boîte. Fuyez le PureTech sans entretien prouvé, le THP sans distribution révisée et la boîte BMP6/ETG6 sans exception. Visez le 2.0 HDi en boîte manuelle ou, si vous tenez à l'automatique, la combinaison BlueHDi + EAT6 avec facture de remplacement réservoir AdBlue.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
@@ -381,8 +397,8 @@ $schema = [
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],
-        "datePublished"    => "2026-04-28T10:00:00+02:00",
-        "dateModified"     => "2026-04-28T10:00:00+02:00",
+        "datePublished"    => "2026-04-30T09:00:00+02:00",
+        "dateModified"     => "2026-04-30T09:00:00+02:00",
         "author"           => ["@type" => "Person", "name" => $article['author'], "url" => "https://garageraymond.fr/equipe", "jobTitle" => $article['author_role']],
         "publisher"        => ["@type" => "Organization", "name" => "Le garage expert Auto", "url" => "https://garageraymond.fr", "logo" => ["@type" => "ImageObject", "url" => "https://garageraymond.fr/Image/favicon.png", "width" => "512", "height" => "512"]]
     ]]

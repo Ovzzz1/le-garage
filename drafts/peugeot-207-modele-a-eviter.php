@@ -1,21 +1,21 @@
 <?php
-// published: 2026-04-28 10:00
+// published: 2026-05-05 09:00
 /**
- * peugeot-2008-modele-a-eviter.php
+ * peugeot-207-modele-a-eviter.php
  */
 
-$page_title       = "Peugeot 2008 modèle à éviter : Blacklist 2026 des versions et années à fuir en occasion";
-$page_description = "1.2 PureTech, BlueHDi, boîte ETG : les versions du Peugeot 2008 à fuir absolument en occasion. Guide expert avec tableau récapitulatif, checklist avant achat et modèles fiables à cibler.";
+$page_title       = "Peugeot 207 modèle à éviter : La blacklist des moteurs et années à fuir en occasion";
+$page_description = "1.6 THP, VTi, 1.6 HDi Phase 1 : les versions de la Peugeot 207 à fuir absolument en occasion. Guide expert 2026 avec tableau récapitulatif, checklist et modèles fiables à cibler.";
 
 $article = [
-    'title'          => "Peugeot 2008 modèle à éviter : Blacklist 2026 des versions et années à fuir en occasion",
-    'subtitle'       => "Derrière le look séduisant du 2008 se cachent le scandale de la courroie PureTech, la cristallisation AdBlue et la boîte ETG à saccades. Voici les millésimes à proscrire et les rares versions sur lesquelles miser sans risque.",
+    'title'          => "Peugeot 207 modèle à éviter : La blacklist des moteurs et années à fuir en occasion",
+    'subtitle'       => "La 207 inonde le marché de l'occasion à des prix attractifs, mais les moteurs Prince co-développés avec BMW et les blocs HDi de première série peuvent transformer une bonne affaire en gouffre financier. Voici la liste noire complète.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
     'category_color' => '#7c3aed',
-    'tags'           => ['Peugeot 2008', 'Fiabilité', 'Achat Occasion', 'PureTech', 'BlueHDi'],
-    'image'          => '/Image/peugeot-2008-modele-a-eviter1.webp',
-    'date'           => '28 Avril 2026',
+    'tags'           => ['Peugeot 207', 'Fiabilité', 'Achat Occasion', 'THP', 'HDi'],
+    'image'          => '/Image/peugeot-207-modele-a-eviter1.webp',
+    'date'           => '5 Mai 2026',
     'author'         => 'Arnaud',
     'author_role'    => 'Expert Achat & Occasion',
     'author_img'     => '/Image/arnaud.png',
@@ -71,7 +71,7 @@ if (is_dir($blog_dir)) {
 include __DIR__ . '/../header.php';
 ?>
 
-<!-- CSS spécifique article : table verdict motorisations -->
+<!-- CSS spécifique article : table blacklist motorisations -->
 <style>
     .evit-table-wrap { overflow-x: auto; margin: 24px 0; -webkit-overflow-scrolling: touch; }
     .evit-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 520px; }
@@ -95,7 +95,7 @@ include __DIR__ . '/../header.php';
 <article>
     <section class="art-hero">
         <img src="<?php echo $article['image']; ?>"
-             alt="Peugeot 2008 d'occasion capot ouvert, inspection moteur PureTech avant achat occasion"
+             alt="Peugeot 207 d'occasion capot ouvert en atelier, mécanicien inspectant le moteur THP"
              class="art-hero-bg"
              width="1200" height="675" decoding="async">
         <div class="art-hero-overlay"></div>
@@ -143,11 +143,11 @@ include __DIR__ . '/../header.php';
             <div class="art-tldr">
                 <div class="art-tldr-title">L'essentiel à retenir (TL;DR)</div>
                 <ul>
-                    <li><strong>Danger essence :</strong> Le 1.2 PureTech (110 et 130 ch) avant juillet 2021 — courroie humide corrosive, crépine bouchée, moteur cassé et assistance de freinage perdue sans préavis.</li>
-                    <li><strong>Danger diesel :</strong> Les 1.6 et 1.5 BlueHDi — cristallisation AdBlue, réservoir déformé, pompe détruite et compte à rebours avant blocage définitif.</li>
-                    <li><strong>Transmission à proscrire :</strong> La boîte automatique ETG (ex-BMP) — simple embrayage, saccades en ville, actionneur usé prématurément, à fuir sans exception.</li>
-                    <li><strong>Années noires :</strong> Tout modèle Phase 1 (2013-2016) — défauts de jeunesse carrosserie, bugs écran SMEG et amortisseurs avant qui s'usent très vite.</li>
-                    <li><strong>Recommandé :</strong> Le 1.6 e-HDi 92/115 ch sans AdBlue (pré-2015), ou le PureTech post-2022 avec courroie modifiée, combiné à une boîte EAT6 ou EAT8 Aisin.</li>
+                    <li><strong>Danger essence sportif :</strong> Le 1.6 THP (150, 156 et 175 ch) — tendeur de chaîne qui lâche, soupapes qui frappent les pistons, destruction totale du moteur et surconsommation d'huile affolante.</li>
+                    <li><strong>Danger essence cœur de gamme :</strong> Les 1.4 VTi et 1.6 VTi — chaîne qui s'allonge, surconsommation d'huile jusqu'à 1L/1 000 km et pompe à eau fragile sur le 1.6.</li>
+                    <li><strong>Diesel à fuir :</strong> Le 1.6 HDi 110 ch Phase 1 (2006-2009) — joints d'injecteurs qui fuient, calamine dans l'huile et casse turbo souvent dès 80 000 km.</li>
+                    <li><strong>Points électriques :</strong> La direction assistée électrique (grognement = crémaillère à 1 000 €) et le boîtier BSI capricieux à tester impérativement lors de l'essai.</li>
+                    <li><strong>Recommandé :</strong> Le 1.4i 75 ch ou 1.4 16v 90 ch en essence (courroie classique), ou le 1.6 HDi 92 ch Phase 2 (post-juillet 2009) dont les défauts ont été corrigés.</li>
                 </ul>
             </div>
 
@@ -155,123 +155,126 @@ include __DIR__ . '/../header.php';
             <div class="art-toc">
                 <div class="art-toc-title">Dans ce dossier</div>
                 <ol>
-                    <li><a href="#blacklist-2008">La blacklist du Peugeot 2008</a></li>
-                    <li><a href="#annees-noires-2008">Les années noires 2013-2016 : La période à contourner</a></li>
-                    <li><a href="#scandale-puretch">Moteurs essence : Le scandale du 1.2 PureTech</a></li>
-                    <li><a href="#diesel-adblue">Moteurs diesel : Attention à la facture AdBlue</a></li>
-                    <li><a href="#boite-etg">Boîtes de vitesses : Fuyez la boîte automatique ETG</a></li>
-                    <li><a href="#bons-choix-2008">Quel Peugeot 2008 d'occasion acheter les yeux fermés ?</a></li>
-                    <li><a href="#faq-2008">FAQ : Vos questions fréquentes sur la fiabilité du Peugeot 2008</a></li>
+                    <li><a href="#blacklist-207">La blacklist rapide de la Peugeot 207</a></li>
+                    <li><a href="#essence-prince">Moteurs essence : Fuyez la famille Prince (THP et VTi)</a></li>
+                    <li><a href="#diesel-annees-noires">Moteurs diesel : Les années noires 2006-2009 à contourner</a></li>
+                    <li><a href="#points-controle-207">Les 3 points de contrôle obligatoires à l'essai</a></li>
+                    <li><a href="#versions-fiables-207">Quelle Peugeot 207 d'occasion acheter les yeux fermés ?</a></li>
+                    <li><a href="#faq-207">FAQ : Vos questions fréquentes sur la fiabilité de la 207</a></li>
                 </ol>
             </div>
 
             <!-- Article Content -->
             <div class="art-content">
 
-                <p>Le Peugeot 2008 est l'un des SUV urbains les plus prisés en France. Avec son look séduisant et sa position de conduite surélevée, il inonde le marché de l'occasion. Mais sous son capot se cachent parfois les pires scandales mécaniques de la décennie chez PSA. Que vous visiez la première génération ou la seconde, certaines versions vous conduiront inévitablement chez le garagiste avec des factures à quatre chiffres.</p>
+                <p>Remplaçante de la mythique 206, la Peugeot 207 a été un immense succès commercial entre 2006 et 2014. Aujourd'hui, elle inonde le marché de l'occasion à des prix très attractifs pour les jeunes permis ou comme second véhicule. Mais derrière son design réussi, la 207 cache des motorisations co-développées avec BMW et des blocs diesels de première génération qui peuvent transformer une bonne affaire en gouffre financier.</p>
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="blacklist-2008">La blacklist du Peugeot 2008</h2>
+                <h2 id="blacklist-207">La blacklist rapide de la Peugeot 207</h2>
 
                 <div class="evit-table-wrap">
                     <table class="evit-table">
                         <thead>
-                            <tr><th>Moteur / Boîte</th><th>Carburant</th><th>Problème principal</th><th>Verdict</th></tr>
+                            <tr><th>Moteur ciblé</th><th>Carburant</th><th>Problème principal</th><th>Verdict</th></tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="Moteur"><strong>1.2 PureTech (avant 2021)</strong></td>
+                                <td data-label="Moteur"><strong>1.6 THP (150 / 156 ch)</strong></td>
                                 <td data-label="Carburant">Essence</td>
-                                <td data-label="Problème">Courroie humide corrosive, casse moteur</td>
-                                <td data-label="Verdict"><span class="evit-rouge">À FUIR ABSOLUMENT</span></td>
-                            </tr>
-                            <tr>
-                                <td data-label="Moteur"><strong>1.6 et 1.5 BlueHDi</strong></td>
-                                <td data-label="Carburant">Diesel</td>
-                                <td data-label="Problème">Cristallisation AdBlue, réservoir à changer</td>
-                                <td data-label="Verdict"><span class="evit-rouge">À ÉVITER</span></td>
-                            </tr>
-                            <tr>
-                                <td data-label="Moteur"><strong>Boîte robotisée ETG</strong></td>
-                                <td data-label="Carburant">Transmission</td>
-                                <td data-label="Problème">Saccades violentes, embrayage usé prématurément</td>
+                                <td data-label="Problème">Chaîne qui se décale, destruction soupapes</td>
                                 <td data-label="Verdict"><span class="evit-rouge">À FUIR</span></td>
                             </tr>
                             <tr>
-                                <td data-label="Moteur"><strong>Phase 1 (2013-2016)</strong></td>
-                                <td data-label="Carburant">Toutes</td>
-                                <td data-label="Problème">Défauts jeunesse + bugs écran SMEG</td>
-                                <td data-label="Verdict"><span class="evit-orange">VIGILANCE</span></td>
+                                <td data-label="Moteur"><strong>1.4 VTi et 1.6 VTi</strong></td>
+                                <td data-label="Carburant">Essence</td>
+                                <td data-label="Problème">Surconso huile + pompe à eau fragile</td>
+                                <td data-label="Verdict"><span class="evit-rouge">À ÉVITER</span></td>
                             </tr>
                             <tr>
-                                <td data-label="Moteur"><strong>1.6 e-HDi 92/115 ch (pré-2015)</strong></td>
+                                <td data-label="Moteur"><strong>1.6 HDi 110 (Phase 1)</strong></td>
                                 <td data-label="Carburant">Diesel</td>
-                                <td data-label="Problème">Sans AdBlue, Stop & Start fiable</td>
+                                <td data-label="Problème">Joints injecteurs, casse turbo dès 80 000 km</td>
+                                <td data-label="Verdict"><span class="evit-rouge">À FUIR</span></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Moteur"><strong>1.4i 75 ch / 1.4 16v 90 ch</strong></td>
+                                <td data-label="Carburant">Essence</td>
+                                <td data-label="Problème">Courroie classique, aucun défaut majeur</td>
                                 <td data-label="Verdict"><span class="evit-vert">MEILLEUR CHOIX</span></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Moteur"><strong>1.6 HDi 92 ch (Phase 2)</strong></td>
+                                <td data-label="Carburant">Diesel</td>
+                                <td data-label="Problème">Défauts Phase 1 corrigés</td>
+                                <td data-label="Verdict"><span class="evit-vert">RECOMMANDÉ</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="annees-noires-2008">Les années noires 2013-2016 : La période à contourner</h2>
+                <h2 id="essence-prince">Moteurs essence : Fuyez la famille Prince (THP et VTi)</h2>
 
-                <p>Avant même de parler moteur, il faut cibler la bonne année. Les modèles de première génération produits entre 2013 et 2016 (Phase 1) sont les années noires de la gamme. Ces premiers modèles cumulent les défauts de jeunesse : ajustements de carrosserie approximatifs, bruits d'air sur autoroute, usure très rapide des amortisseurs avant, et surtout de gros bugs de l'écran tactile multimédia SMEG qui se fige, s'éteint ou refuse de se connecter. Si votre budget le permet, contournez ces années et visez impérativement la version Phase 2 restylée post-2016.</p>
+                <p>La collaboration entre PSA et BMW a donné naissance à des moteurs essence technologiquement avancés pour l'époque, mais dont la fiabilité s'est révélée catastrophique dès les premières années de mise en circulation. Ces blocs sont documentés en détail dans notre enquête sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
 
-                <!-- ══════════════════════════════════ -->
-                <h2 id="scandale-puretch">Moteurs essence : Le scandale du 1.2 PureTech</h2>
+                <h3>Le 1.6 THP (150, 156 et 175 ch) : Le pire choix possible</h3>
+                <p>Si vous cherchez une 207 sportive comme la 207 RC ou la Féline, vous tomberez inévitablement sur le 1.6 THP. Ce bloc est un nid à pannes ruineuses. Son défaut principal réside dans le tendeur de chaîne de distribution qui s'use prématurément : la chaîne se détend et se décale, provoquant des claquements métalliques à froid, une perte de puissance instantanée, et très souvent la destruction totale du moteur par contact soupapes-pistons. Ajoutez une pompe haute pression fragile et une consommation d'huile affolante, et vous obtenez un moteur à éviter absolument.</p>
 
-                <p>C'est le gros point noir du Peugeot 2008, car ce moteur (110 et 130 ch) équipe la grande majorité des modèles vendus en occasion. Si vous ne faites pas attention à son suivi, la casse moteur est presque garantie.</p>
+                <h3>Les 1.4 VTi (95 ch) et 1.6 VTi (120 ch) : Des puits d'huile et d'eau</h3>
+                <p>Pensés pour le cœur de gamme, les blocs VTi partagent l'architecture du THP sans le turbo. Ils n'échappent pas au défaut de la chaîne de distribution qui s'allonge. Ils souffrent également de deux autres pannes critiques : une surconsommation d'huile majeure pouvant dépasser 1 litre aux 1 000 km due à un défaut de segmentation, et sur le 1.6 VTi notamment, une pompe à eau qui fuit et émet un sifflement régulier. Si elle lâche, c'est la surchauffe immédiate et le joint de culasse.</p>
 
-                <h3>La courroie de distribution immergée</h3>
-                <p>Les moteurs 1.2 PureTech possèdent une courroie de distribution dite humide, car elle baigne littéralement dans l'huile moteur. Le problème : l'essence se mélange parfois à l'huile lors de petits trajets urbains, rendant le fluide corrosif. La courroie s'effrite et se désagrège lentement. Les débris viennent boucher la crépine de la pompe à huile. Le résultat est catastrophique en chaîne : le moteur n'est plus lubrifié, le voyant de pression d'huile s'allume, le système de freinage durcit (car l'assistance utilise une pompe à vide lubrifiée par le moteur), et le bloc finit par casser. Ce scénario est décrit en détail dans notre dossier sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
-
-                <img src="/Image/peugeot-2008-modele-a-eviter2.webp"
-                     alt="Courroie de distribution PureTech Peugeot 2008 effilochée, résidus dans l'huile moteur"
+                <img src="/Image/peugeot-207-modele-a-eviter2.webp"
+                     alt="Chaîne de distribution Peugeot 207 THP déposée, tendeur défaillant visible"
                      style="width:100%;height:auto;border-radius:8px;margin:18px 0;">
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="diesel-adblue">Moteurs diesel : Attention à la facture AdBlue</h2>
+                <h2 id="diesel-annees-noires">Moteurs diesel : Les années noires 2006-2009 à contourner</h2>
 
-                <p>L'achat d'un diesel ne vous met pas à l'abri, surtout si vous ciblez les blocs récents équipés des normes européennes les plus strictes.</p>
+                <p>La Peugeot 207 s'est vendue par millions en diesel. Si les modèles commercialisés après le restylage de 2010 sont globalement très fiables, la première série produite entre 2006 et 2009 doit vous alerter immédiatement.</p>
 
-                <h3>Les 1.6 et 1.5 BlueHDi : Réservoir et cristallisation</h3>
-                <p>À partir de 2015, Peugeot a ajouté le système de dépollution AdBlue sur les moteurs BlueHDi. Le liquide AdBlue a une très forte tendance à cristalliser dans le système, bloquant la pompe, l'injecteur d'AdBlue, et déformant souvent le réservoir en plastique à cause de la surpression. Si les voyants défaut moteur et antipollution s'allument, souvent signalés par un <a href="/Blog/voyant-orange-peugeot">voyant orange au tableau de bord</a> accompagné d'un compte à rebours avant blocage définitif, il faudra changer l'intégralité du réservoir AdBlue en concession pour une facture dépassant allègrement les 1 000 €.</p>
-
-                <!-- ══════════════════════════════════ -->
-                <h2 id="boite-etg">Boîtes de vitesses : Fuyez la boîte automatique ETG</h2>
-
-                <p>Si vous cherchez le confort d'une boîte automatique, faites extrêmement attention à l'appellation sur l'annonce. Il faut éviter absolument la boîte ETG (anciennement BMP). Il s'agit d'une boîte manuelle robotisée à simple embrayage, et non d'une vraie boîte automatique fluide. Elle est d'une lenteur exaspérante, provoque de gros à-coups dans les embouteillages, et l'usure de l'actionneur et de l'embrayage est extrêmement prématurée. Le même défaut structural a rendu célèbre le <a href="/Blog/c4-picasso-modele-a-eviter">C4 Picasso modèle à éviter</a> produit à la même époque.</p>
+                <h3>Le 1.6 HDi 110 ch (Phase 1) : Chronique d'un turbo cassé</h3>
+                <p>C'est le mouton noir absolu de la gamme diesel d'occasion. Ce moteur souffre d'un défaut de conception dramatique au niveau des joints d'injecteurs. Avec les kilomètres, ces joints fuient et laissent passer des gaz d'échappement qui se transforment en calamine dans le carter d'huile. Cette boue épaisse bouche le tamis de lubrification du turbocompresseur, qui finit par gripper et casser net, souvent dès 80 000 km. Remplacer le turbo sans nettoyer l'intégralité du circuit d'huile garantit une nouvelle casse quelques centaines de kilomètres plus tard. Le volant moteur bi-masse s'use de manière prématurée sur cette même version.</p>
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="bons-choix-2008">Quel Peugeot 2008 d'occasion acheter les yeux fermés ?</h2>
+                <h2 id="points-controle-207">Les 3 points de contrôle obligatoires à l'essai</h2>
 
-                <p>Maintenant que vous connaissez les pièges à éviter, voici les choix sans risque pour acheter un 2008 d'occasion sereinement.</p>
+                <p>Au-delà de la mécanique pure, la 207 a vieilli et présente des faiblesses périphériques très onéreuses à bien identifier lors de votre visite.</p>
 
-                <p>En diesel, cherchez un modèle 1.6 e-HDi (92 ou 115 ch) produit avant fin 2015. Ce moteur ne possède pas le fragile système AdBlue, il est très coupleux, fiable, et son système Stop & Start est parmi les meilleurs du marché. En transmission automatique, exigez uniquement l'appellation EAT6 ou EAT8 — une vraie boîte à convertisseur de couple de la marque japonaise Aisin, reconnue pour sa grande douceur et son excellente longévité.</p>
+                <ol>
+                    <li><strong>La direction assistée électrique :</strong> C'est le talon d'Achille de la 207. Écoutez bien lors de l'essai : un grognement en tournant le volant de butée en butée à l'arrêt, ou un volant qui se fige subitement en roulant, signale une crémaillère complète à changer — facture supérieure à 1 000 €. Un <a href="/Blog/voyant-orange-peugeot">voyant orange Peugeot</a> allumé de manière aléatoire peut également indiquer ce défaut.</li>
+                    <li><strong>L'électronique et le boîtier BSI :</strong> La 207 est victime des sautes d'humeur de son Boîtier de Servitude Intelligent. Testez impérativement vitres électriques, clignotants, climatisation et essuie-glaces lors de l'essai. Un voyant orange qui s'allume aléatoirement sans perte de puissance est souvent lié à ce boîtier qui prend l'humidité.</li>
+                    <li><strong>Le toit (versions CC et SW) :</strong> Si vous visez le cabriolet 207 CC, actionnez le toit plusieurs fois. Les capteurs tombent en panne et la pompe hydraulique fuit. Pour la version break 207 SW, vérifiez l'étanchéité du toit panoramique en verre et le rideau occultant électrique qui a tendance à dérailler.</li>
+                </ol>
 
-                <p>En essence, n'achetez un PureTech que s'il s'agit d'une version post-2022 avec la courroie modifiée, ou si l'ancien propriétaire dispose d'une facture prouvant que le moteur vient d'être changé par Peugeot. Si vous hésitez avec le SUV grand format, découvrez aussi notre guide sur le <a href="/Blog/peugeot-3008-modele-a-eviter">Peugeot 3008 à éviter</a> avant de signer.</p>
-
-                <img src="/Image/peugeot-2008-modele-a-eviter3.webp"
-                     alt="Réservoir AdBlue Peugeot 2008 déformé avec traces de cristallisation, dépose en atelier"
+                <img src="/Image/peugeot-207-modele-a-eviter3.webp"
+                     alt="Tableau de bord Peugeot 207 avec voyant direction assistée et boîtier BSI allumés"
                      style="width:100%;height:auto;border-radius:8px;margin:18px 0;">
+
+                <!-- ══════════════════════════════════ -->
+                <h2 id="versions-fiables-207">Quelle Peugeot 207 d'occasion acheter les yeux fermés ?</h2>
+
+                <p>Maintenant que vous savez ce qu'il faut contourner, voici les modèles increvables de la gamme 207 pour faire un achat serein.</p>
+
+                <p>En essence, privilégiez les anciens moteurs équipés d'une courroie de distribution classique, non Prince : le 1.4i 75 ch ou le 1.4 16v 90 ch. Ils consomment un peu plus de carburant, mais ils sont mécaniquement indestructibles et ne présentent aucun des défauts structurels des blocs VTi ou THP.</p>
+
+                <p>En diesel, ciblez absolument un modèle Phase 2 commercialisé après juillet 2009 — reconnaissable à son pare-chocs avant redessiné — équipé du solide 1.6 HDi 92 ch ou du modeste 1.4 HDi 70 ch. Les défauts de jeunesse concernant le turbo et les injecteurs y ont été définitivement corrigés. Si votre budget le permet et que vous souhaitez vous orienter vers la remplaçante directe, consultez notre guide sur la <a href="/Blog/modele-208-a-eviter">Peugeot 208 : les modèles à éviter</a> avant de signer.</p>
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">Le mot du Garage Expert Auto</div>
-                    <p style="margin: 0; color: #fff;">Le 1.6 e-HDi sans AdBlue reste le choix sans compromis sur le 2008 première génération. Si votre budget vous oriente vers un PureTech, n'achetez que si la courroie a été remplacée récemment avec facture, et si le carnet d'entretien est complet avec des vidanges tous les 10 000 km maximum. Sans ces deux garanties, passez votre chemin.</p>
+                    <p style="margin: 0; color: #fff;">La 207 Phase 2 en 1.6 HDi 92 ch ou en 1.4i est un achat solide. Fuyez le THP sans preuve de distribution révisée, les VTi sans justificatif d'huile régulier, et le HDi 110 ch Phase 1 sans exception. Testez toujours la direction et le BSI lors de l'essai — ce sont souvent les défauts qui plombent la transaction après l'achat.</p>
                 </div>
 
                 <!-- ══════════════════════════════════ -->
-                <h2 id="faq-2008">FAQ : Vos questions fréquentes sur la fiabilité du Peugeot 2008</h2>
+                <h2 id="faq-207">FAQ : Vos questions fréquentes sur la fiabilité de la 207</h2>
 
-                <h3>Quelle est la meilleure année pour acheter un Peugeot 2008 I d'occasion ?</h3>
-                <p>Il est recommandé de cibler un modèle Phase 2, produit après le grand restylage du printemps 2016. Reconnaissable à sa calandre verticale plus agressive et ses feux arrière assombris, cette version bénéficie d'une qualité de finition revue à la hausse et de bugs électroniques de l'écran multimédia largement corrigés.</p>
+                <h3>Quelle est la meilleure année pour acheter une Peugeot 207 d'occasion ?</h3>
+                <p>Il faut fuir les années 2006 à 2009. Visez une Peugeot 207 Phase 2, commercialisée à partir de l'été 2009 et reconnaissable à son pare-chocs avant redessiné avec les antibrouillards déportés. Sur ces modèles, Peugeot a corrigé les problèmes d'assemblage et sécurisé les moteurs HDi.</p>
 
-                <h3>Le Peugeot e-2008 (100% électrique) est-il un bon choix de fiabilité ?</h3>
-                <p>Oui, paradoxalement. Face aux pires problèmes des moteurs thermiques PureTech et BlueHDi, la déclinaison électrique e-2008 de la seconde génération est le modèle le plus fiable de la gamme. Son moteur électrique et sa batterie souffrent de très peu de pannes mécaniques immobilisantes, ce qui en fait un excellent choix si l'autonomie d'environ 300 km vous suffit.</p>
+                <h3>Comment savoir si le moteur de la 207 est un bloc fragile VTi ou un ancien 1.4i robuste ?</h3>
+                <p>Le plus sûr est de regarder la carte grise ou la puissance fiscale. L'increvable 1.4i développe 75 chevaux, tandis que le très fragile 1.4 VTi en développe 95. Sous le capot, le VTi est plus imposant et comporte l'inscription VTi sur son cache supérieur.</p>
 
-                <h3>Comment vérifier un 1.2 PureTech avant de l'acheter ?</h3>
-                <p>Ouvrez le bouchon de remplissage d'huile moteur. À travers ce bouchon, vous pouvez apercevoir la courroie de distribution. Si son dos présente des craquelures, des boursouflures ou si elle s'effiloche, fuyez immédiatement. Exigez également un carnet d'entretien parfait avec des vidanges faites tous les 10 000 km maximum.</p>
+                <h3>Le filtre à particules (FAP) est-il source de pannes sur la 207 diesel ?</h3>
+                <p>Oui, le FAP de la 207 s'encrasse très prématurément si la voiture ne fait que des petits trajets urbains, car il n'atteint jamais la température de régénération. Si vous roulez principalement en ville, choisissez une version essence 1.4i au risque de voir votre FAP colmaté vous forcer à rouler en mode dégradé.</p>
 
             </div><!-- .art-content -->
 
@@ -290,7 +293,7 @@ include __DIR__ . '/../header.php';
             <!-- Heavy Conclusion Box -->
             <div class="art-conclusion">
                 <h2>Le mot de la fin</h2>
-                <p>Le Peugeot 2008 peut être un excellent achat d'occasion — à condition de cibler le bon millésime et la bonne motorisation. Fuyez le PureTech avant juillet 2021 sans entretien prouvé, les BlueHDi sans facture AdBlue, et la boîte ETG sans exception. Visez la Phase 2, le 1.6 e-HDi ou le PureTech post-2022, et exigez une boîte EAT6 ou EAT8 si vous voulez de l'automatique.</p>
+                <p>La Peugeot 207 peut être un excellent achat d'occasion à petit budget — à condition de cibler les bons millésimes et les bonnes motorisations. Phase 2 uniquement en diesel, 1.4i ou 1.4 16v en essence, et vérification systématique de la direction assistée et du BSI lors de l'essai. Ces trois règles vous éviteront l'essentiel des mauvaises surprises.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
@@ -378,8 +381,8 @@ $schema = [
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],
-        "datePublished"    => "2026-04-28T10:00:00+02:00",
-        "dateModified"     => "2026-04-28T10:00:00+02:00",
+        "datePublished"    => "2026-05-05T09:00:00+02:00",
+        "dateModified"     => "2026-05-05T09:00:00+02:00",
         "author"           => ["@type" => "Person", "name" => $article['author'], "url" => "https://garageraymond.fr/equipe", "jobTitle" => $article['author_role']],
         "publisher"        => ["@type" => "Organization", "name" => "Le garage expert Auto", "url" => "https://garageraymond.fr", "logo" => ["@type" => "ImageObject", "url" => "https://garageraymond.fr/Image/favicon.png", "width" => "512", "height" => "512"]]
     ]]

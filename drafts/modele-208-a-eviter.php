@@ -1,5 +1,5 @@
 <?php
-// published: 2026-04-28 09:00
+// published: 2026-05-03 09:00
 /**
  * modele-208-a-eviter.php
  */
@@ -15,7 +15,7 @@ $article = [
     'category_color' => '#7c3aed',
     'tags'           => ['Peugeot 208', 'Fiabilité', 'Achat Occasion', 'PureTech', 'BlueHDi'],
     'image'          => '/Image/modele-208-a-eviter1.webp',
-    'date'           => '28 Avril 2026',
+    'date'           => '3 Mai 2026',
     'author'         => 'Arnaud',
     'author_role'    => 'Expert Achat & Occasion',
     'author_img'     => '/Image/arnaud.png',
@@ -443,7 +443,7 @@ $schema = [
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],
             "image"         => ["https://garageraymond.fr" . $article['image']],
-            "datePublished" => "2026-04-28T09:00:00+02:00",
+            "datePublished" => "2026-05-03T09:00:00+02:00",
             "dateModified"  => "2026-04-28T09:00:00+02:00",
             "author"        => [
                 "@type"    => "Person",

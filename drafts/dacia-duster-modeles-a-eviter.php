@@ -1,5 +1,5 @@
 <?php
-// published: 2026-04-28 10:00
+// published: 2026-05-02 09:00
 /**
  * dacia-duster-modeles-a-eviter.php
  */
@@ -15,7 +15,7 @@ $article = [
     'category_color' => '#7c3aed',
     'tags'           => ['Dacia Duster', 'Fiabilité', 'Achat Occasion', '1.2 TCe', 'dCi'],
     'image'          => '/Image/dacia-duster-modeles-a-eviter1.webp',
-    'date'           => '28 Avril 2026',
+    'date'           => '2 Mai 2026',
     'author'         => 'Arnaud',
     'author_role'    => 'Expert Achat & Occasion',
     'author_img'     => '/Image/arnaud.png',
@@ -393,8 +393,8 @@ $schema = [
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],
-        "datePublished"    => "2026-04-28T10:00:00+02:00",
-        "dateModified"     => "2026-04-28T10:00:00+02:00",
+        "datePublished"    => "2026-05-02T09:00:00+02:00",
+        "dateModified"     => "2026-05-02T09:00:00+02:00",
         "author"           => ["@type" => "Person", "name" => $article['author'], "url" => "https://garageraymond.fr/equipe", "jobTitle" => $article['author_role']],
         "publisher"        => ["@type" => "Organization", "name" => "Le garage expert Auto", "url" => "https://garageraymond.fr", "logo" => ["@type" => "ImageObject", "url" => "https://garageraymond.fr/Image/favicon.png", "width" => "512", "height" => "512"]]
     ]]

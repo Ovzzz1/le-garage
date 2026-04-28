@@ -1,5 +1,5 @@
 <?php
-// published: 2026-04-28 14:00
+// published: 2026-04-29 09:00
 /**
  * peugeot-3008-modele-a-eviter.php
  */
@@ -15,7 +15,7 @@ $article = [
     'category_color' => '#7c3aed',
     'tags'           => ['Peugeot 3008', 'Fiabilité', 'Achat Occasion', 'PureTech', 'BlueHDi'],
     'image'          => '/Image/peugeot-3008-modele-a-eviter1.webp',
-    'date'           => '28 Avril 2026',
+    'date'           => '29 Avril 2026',
     'author'         => 'Arnaud',
     'author_role'    => 'Expert Achat & Occasion',
     'author_img'     => '/Image/arnaud.png',
@@ -393,8 +393,8 @@ $schema = [
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],
-        "datePublished"    => "2026-04-28T14:00:00+02:00",
-        "dateModified"     => "2026-04-28T14:00:00+02:00",
+        "datePublished"    => "2026-04-29T09:00:00+02:00",
+        "dateModified"     => "2026-04-29T09:00:00+02:00",
         "author"           => ["@type" => "Person", "name" => $article['author'], "url" => "https://garageraymond.fr/equipe", "jobTitle" => $article['author_role']],
         "publisher"        => ["@type" => "Organization", "name" => "Le garage expert Auto", "url" => "https://garageraymond.fr", "logo" => ["@type" => "ImageObject", "url" => "https://garageraymond.fr/Image/favicon.png", "width" => "512", "height" => "512"]]
     ]]
