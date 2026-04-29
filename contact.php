@@ -24,7 +24,7 @@ include 'header.php';
     <div class="about-container" style="max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);">
         
         <div style="text-align: center; margin-bottom: 40px;">
-            <p style="font-size: 1.1rem; color: #4b5563; line-height: 1.7;">Vous pouvez également nous joindre directement par e-mail Ã  l'adresse : <br><a href="mailto:contact@autoexpert.fr" style="color: var(--color-primary); font-weight: 600;">contact@autoexpert.fr</a></p>
+            <p style="font-size: 1.1rem; color: #4b5563; line-height: 1.7;">Vous pouvez également nous joindre directement par e-mail Ã  l'adresse : <br><a href="mailto:marinepernault@protonmail.com" style="color: var(--color-primary); font-weight: 600;">marinepernault@protonmail.com</a></p>
         </div>
 
         <form action="#" method="POST" class="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
