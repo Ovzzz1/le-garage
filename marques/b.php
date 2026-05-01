@@ -593,14 +593,14 @@ include __DIR__ . '/../header.php';
                 </div>
 
                 <div class="art-sidebar-block" style="background:#eff6ff; border:1px solid #bfdbfe;">
-                    <div class="art-sidebar-block-title" style="color:#1e3a8a;">Le Saviez-vous ?</div>
+                    <div class="art-sidebar-block-title">Le Saviez-vous ?</div>
                     <p style="font-size:0.83rem; color:#1e40af; margin:0; line-height:1.5;">
                         Le logo circulaire bleu et blanc de <strong>BMW</strong> ne représente pas une hélice d'avion en mouvement (légende urbaine). Il reprend simplement les couleurs inversées du drapeau de Bavière. La publicité aéronautique des années 30 a entretenu le mythe.
                     </p>
                 </div>
 
                 <div class="art-sidebar-block" style="background:#fef9c3; border:1px solid #fde047;">
-                    <div class="art-sidebar-block-title" style="color:#713f12;">Chiffre clé</div>
+                    <div class="art-sidebar-block-title">Chiffre clé</div>
                     <p style="font-size:0.83rem; color:#854d0e; margin:0; line-height:1.5;">
                         En 2023, <strong>BYD</strong> a vendu plus de 3 millions de véhicules électrifiés, dépassant Tesla sur ce critère. L'entreprise fabrique aussi bien ses batteries que ses semi-conducteurs — une intégration verticale unique dans l'industrie.
                     </p>

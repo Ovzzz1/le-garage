@@ -58,35 +58,7 @@ $nb_pays = count(array_unique(array_column($marques_c, 'pays_nom')));
 include __DIR__ . '/../header.php';
 ?>
 
-<style>
-/* ... Reprise du Design System du B ... */
-.art-hero { position:relative; overflow:hidden; color:#fff; display:flex; align-items:center; }
-.art-hero-overlay { position:absolute; inset:0; background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+'); }
-.art-hero-container { position:relative; z-index:10; width:100%; max-width:1200px; margin:0 auto; padding:60px 24px; }
-.art-hero-content { max-width:800px; }
-.art-breadcrumb { display:flex; align-items:center; gap:8px; font-size:0.85rem; margin-bottom:20px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; opacity:0.9; }
-.art-breadcrumb a { color:#fff; text-decoration:none; transition:opacity 0.2s; }
-.art-breadcrumb a:hover { opacity:0.7; }
-.art-hero-sub { font-size:1.15rem; line-height:1.6; opacity:0.9; margin-top:16px; font-weight:300; }
 
-.art-layout-wrapper { display:flex; max-width:1200px; margin:40px auto; padding:0 24px; gap:40px; align-items:flex-start; }
-.art-main-col { flex:1; min-width:0; }
-.art-sidebar-right { width:320px; flex-shrink:0; position:sticky; top:24px; display:flex; flex-direction:column; gap:24px; }
-
-@media (max-width:992px) {
-    .art-layout-wrapper { flex-direction:column; }
-    .art-sidebar-right { width:100%; position:static; }
-}
-
-.art-sidebar-block { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:24px; box-shadow:0 1px 3px rgba(0,0,0,0.02); }
-.art-sidebar-block-title { font-size:1.1rem; font-weight:800; color:#0f172a; margin-bottom:16px; border-bottom:2px solid #f1f5f9; padding-bottom:12px; }
-
-.art-content h2 { color:#1e293b; font-size:1.8rem; margin-top:0; margin-bottom:20px; }
-.art-content p { color:#475569; line-height:1.7; font-size:1.05rem; margin-bottom:24px; }
-
-.sort-icon { display:inline-block; margin-left:4px; font-size:0.8em; color:#94a3b8; }
-.b-th:hover { background:#e2e8f0; }
-</style>
 
 <article>
     <!-- HERO -->
@@ -539,14 +511,14 @@ include __DIR__ . '/../header.php';
                 </div>
 
                 <div class="art-sidebar-block" style="background:#eff6ff; border:1px solid #bfdbfe;">
-                    <div class="art-sidebar-block-title" style="color:#1e3a8a;">Le Saviez-vous ?</div>
+                    <div class="art-sidebar-block-title">Le Saviez-vous ?</div>
                     <p style="font-size:0.83rem; color:#1e40af; margin:0; line-height:1.5;">
                         Le logo <strong>Chevrolet</strong> (le "bowtie" ou nœud papillon) a été introduit par William C. Durant en 1913. La légende raconte qu'il aurait été inspiré par le motif du papier peint d'un hôtel parisien où il séjournait !
                     </p>
                 </div>
 
                 <div class="art-sidebar-block" style="background:#fef9c3; border:1px solid #fde047;">
-                    <div class="art-sidebar-block-title" style="color:#713f12;">Chiffre clé</div>
+                    <div class="art-sidebar-block-title">Chiffre clé</div>
                     <p style="font-size:0.83rem; color:#854d0e; margin:0; line-height:1.5;">
                         La <strong>Caterham Seven</strong> la plus légère (la 170) pèse <strong>440 kg</strong>. C'est presque la moitié du poids de la batterie d'un SUV électrique moderne !
                     </p>
