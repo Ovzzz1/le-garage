@@ -239,7 +239,7 @@ include __DIR__ . '/../header.php';
                      style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
                 <h3>2. Le 1.5 BlueHDi 130 — La double peine AdBlue et chaîne</h3>
-                <p>Le remplaçant du 1.6 BlueHDi devait être un modèle de sobriété. Il est devenu le cauchemar des gros rouleurs. Deux problèmes coexistent : la <strong>chaîne de liaison des arbres à cames de 7 mm</strong> qui s'allonge et finit par rompre, et la cristallisation de l'urée dans le réservoir AdBlue. Ce dernier point paralyse le véhicule avec un message d'erreur persistant, obligeant souvent au remplacement complet du réservoir SCR. Si un <a href="/Blog/voyant-orange-voiture-dans-un-cercle-peugeot">voyant orange Peugeot</a> s'allume avec une alerte "Défaut moteur", le diagnostic est souvent sans appel sur ce bloc.</p>
+                <p>Le remplaçant du 1.6 BlueHDi devait être un modèle de sobriété. Il est devenu le cauchemar des gros rouleurs. Deux problèmes coexistent : la <strong>chaîne de liaison des arbres à cames de 7 mm</strong> qui s'allonge et finit par rompre, et la cristallisation de l'urée dans le réservoir AdBlue. Ce dernier point paralyse le véhicule avec un message d'erreur persistant, obligeant souvent au remplacement complet du réservoir SCR. Si un <a href="/Blog/voyant-orange-peugeot">voyant orange Peugeot</a> s'allume avec une alerte "Défaut moteur", le diagnostic est souvent sans appel sur ce bloc.</p>
 
                 <img src="/Image/moteur-peugeot-a-eviter3.webp"
                      alt="Comparatif chaîne de distribution 7mm BlueHDi standard vs chaîne renforcée 8mm 2024 sur plan de travail d'atelier"
@@ -265,7 +265,7 @@ include __DIR__ . '/../header.php';
                 <p>Ce petit diesel a équipé des millions de 206 et 207. Son principal défaut : le faisceau de retour de gasoil, surnommé "l'araignée", qui devient poreux avec le temps. Les prises d'air dans le circuit d'injection rendent les démarrages impossibles. Moins grave qu'une casse moteur, mais panne immobilisante et coûteuse en main-d'œuvre.</p>
 
                 <h3>8. Le 1.2 VTi 82 ch (Atmosphérique) — Même ADN, mêmes risques</h3>
-                <p>Petit frère du PureTech sans turbo : il évite les casses de turbine mais conserve la même technologie de courroie humide avec les risques d'obstruction de crépine. Sa puissance limitée force les conducteurs à solliciter haut le moteur, ce qui use prématurément les roulements de boîte. Un sous-dimensionnement sur un véhicule lourd réduit aussi drastiquement le <a href="/Blog/peugeot-3008-kilométrage-maximum">kilométrage maximum d'un 3008</a>.</p>
+                <p>Petit frère du PureTech sans turbo : il évite les casses de turbine mais conserve la même technologie de courroie humide avec les risques d'obstruction de crépine. Sa puissance limitée force les conducteurs à solliciter haut le moteur, ce qui use prématurément les roulements de boîte. Un sous-dimensionnement sur un véhicule lourd réduit aussi drastiquement le <a href="/Blog/peugeot-3008-kilometrage-maximum">kilométrage maximum d'un 3008</a>.</p>
 
                 <h3>9. Le 2.2 HDi (1ères versions) — Électronique et FAP capricieux</h3>
                 <p>Très innovant pour son époque avec l'introduction du FAP, mais la gestion électronique de la régénération et le réservoir d'additif (Cérine) tombent fréquemment en panne, entraînant des passages répétés en mode dégradé. Moteur performant mais entretien rigoureux et coûteux indispensable.</p>

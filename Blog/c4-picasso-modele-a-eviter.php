@@ -243,7 +243,7 @@ include __DIR__ . '/../header.php';
                 <p>Si vous roulez peu, l'essence est le choix logique. Mais chez PSA, les moteurs de cette époque sont de véritables champs de mines qu'il convient de connaître avant toute visite.</p>
 
                 <h3>Le 1.2 PureTech : Le scandale de la courroie humide</h3>
-                <p>C'est le moteur essence le plus répandu sur le C4 Picasso II. Sa courroie de distribution baigne dans l'huile. Avec le temps et l'action corrosive de l'essence, elle s'effrite. Ses morceaux viennent boucher la crépine de la pompe à huile, causant une perte d'assistance de freinage (pompe à vide) ou la casse complète du moteur. Ce défaut est exactement identique à celui documenté sur le <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 modèle à éviter</a>.</p>
+                <p>C'est le moteur essence le plus répandu sur le C4 Picasso II. Sa courroie de distribution baigne dans l'huile. Avec le temps et l'action corrosive de l'essence, elle s'effrite. Ses morceaux viennent boucher la crépine de la pompe à huile, causant une perte d'assistance de freinage (pompe à vide) ou la casse complète du moteur. Ce défaut est exactement identique à celui documenté sur le <a href="/Blog/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a>.</p>
 
                 <h3>Le 1.6 THP 156 ch : Une ruine financière</h3>
                 <p>Développé avec BMW, ce moteur cumule deux tares redoutables : la chaîne de distribution se détend, causant des pertes de puissance et des claquements à froid, et la segmentation laisse passer l'huile. Résultat : une consommation d'huile pouvant atteindre 1 litre aux 1 000 km qui finit par encrasser et détruire le moteur. Sans preuve de remplacement du kit distribution fiabilisé, passez votre chemin.</p>
@@ -253,7 +253,7 @@ include __DIR__ . '/../header.php';
 
                 <p>Le C4 Picasso est l'ambassadeur de l'une des pires transmissions du marché : la BMP6 (Boîte Manuelle Pilotée à 6 rapports), rebaptisée ETG6 par la suite. Elle cumule tous les défauts imaginables.</p>
 
-                <p>Des passages de vitesses d'une lenteur exaspérante, de violents à-coups lors des manœuvres ou dans les embouteillages, un embrayage et une butée hydraulique qui s'usent prématurément impliquant des frais colossaux : voilà le quotidien d'un C4 Picasso avec cette boîte. Les mêmes tares ont fait la mauvaise réputation du <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 modèle à éviter</a> produit à la même époque.</p>
+                <p>Des passages de vitesses d'une lenteur exaspérante, de violents à-coups lors des manœuvres ou dans les embouteillages, un embrayage et une butée hydraulique qui s'usent prématurément impliquant des frais colossaux : voilà le quotidien d'un C4 Picasso avec cette boîte. Les mêmes tares ont fait la mauvaise réputation du <a href="/Blog/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a> produit à la même époque.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="points-controle">Les 3 points essentiels à vérifier avant l'achat</h2>

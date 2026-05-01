@@ -268,7 +268,7 @@ include __DIR__ . '/../header.php';
                      alt="Hygromètre à pointes dans l'angle d'une penderie de caravane indiquant un taux d'humidité sain, test d'étanchéité argus caravane"
                      style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
-                <img src="/Image/argus-caravane4.webp"
+                <img src="/Image/argus-caravane3.webp"
                      alt="Schéma illustrant la règle des 85% entre le poids du tracteur et celui de la caravane pour la sécurité de traction"
                      style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 

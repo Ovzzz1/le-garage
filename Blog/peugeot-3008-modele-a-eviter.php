@@ -207,7 +207,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="historique-fragilite">L'historique du mal : Pourquoi certains 3008 sont-ils si fragiles ?</h2>
 
-                <p>Ces problèmes ne sont pas liés à un manque d'entretien des propriétaires, mais bien à des erreurs de conception majeures. On retrouve les mêmes symptômes sur le <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 modèle à éviter</a> ou dans la gamme des <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a> de manière générale.</p>
+                <p>Ces problèmes ne sont pas liés à un manque d'entretien des propriétaires, mais bien à des erreurs de conception majeures. On retrouve les mêmes symptômes sur le <a href="/Blog/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a> ou dans la gamme des <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a> de manière générale.</p>
 
                 <h3>Le péché originel : L'héritage du Moteur Prince</h3>
                 <p>Sur la première génération du 3008, le moteur essence 1.6 THP a été développé en collaboration avec BMW. Ce bloc souffre d'une faiblesse chronique au niveau du tendeur de chaîne de distribution. La chaîne se détend avec le temps, provoquant un décalage de la distribution pouvant aller jusqu'à la destruction totale des soupapes.</p>
@@ -219,7 +219,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="phase1-a-bannir">Peugeot 3008 Phase 1 (2009-2016) : Les modèles à bannir</h2>
 
                 <h3>1.6 THP 150/156 ch : Une bombe à retardement</h3>
-                <p>Ce moteur est le plus problématique en essence. Nous déconseillons formellement l'achat de cette motorisation sans preuve que le kit de distribution complet a été remplacé par la version fiabilisée. Le <a href="/Blog/peugeot-207-modele-a-eviter">Peugeot 207 modèle à éviter</a> souffre exactement du même mal.</p>
+                <p>Ce moteur est le plus problématique en essence. Nous déconseillons formellement l'achat de cette motorisation sans preuve que le kit de distribution complet a été remplacé par la version fiabilisée. Le Peugeot 207 souffre exactement du même mal.</p>
 
                 <h3>1.6 HDi 110/112 ch : Le risque de casse turbo</h3>
                 <p>Le 1.6 HDi possède un talon d'Achille : ses joints d'injecteurs. S'ils ne sont pas étanches, la calamine pollue l'huile moteur et bouche le circuit de graissage du turbo. Ce défaut est récurrent sur d'autres modèles de la marque, comme le <a href="/Blog/peugeot-partner-tepee-a-eviter">Peugeot Partner Tepee à éviter</a>.</p>
@@ -279,7 +279,7 @@ include __DIR__ . '/../header.php';
                 <h3>Comment savoir si mon 3008 est concerné par les rappels ?</h3>
                 <p>Contactez une concession avec votre carte grise — démarche gratuite et essentielle pour espérer une prise en charge en cas de casse.</p>
 
-                <img src="/Image/peugeot-3008-modele-a-eviter3.webp"
+                <img src="/Image/peugeot-3008-modele-a-eviter2.webp"
                      alt="Tableau de bord Peugeot 3008 avec voyant moteur et voyant huile allumés simultanément"
                      style="width:100%;height:auto;border-radius:8px;margin:18px 0;">
 

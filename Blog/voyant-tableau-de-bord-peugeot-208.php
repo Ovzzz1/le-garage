@@ -248,7 +248,7 @@ include __DIR__ . '/../header.php';
                 <h3>2. Le voyant Moteur reste allumé (PureTech)</h3>
                 <p>Sur les moteurs essence 1.2 PureTech, un voyant moteur allumé ou clignotant, parfois accompagné du voyant pression d'huile, peut être le symptôme d'une courroie de distribution qui s'effrite et bouche la crépine d'huile. C'est un problème majeur. Découvrez-en plus sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
 
-                <img src="/Image/voyant-tableau-de-bord-peugeot-2082.webp"
+                <img src="/Image/voyant-tableau-de-bord-peugeot-2081.webp"
                      alt="Gros plan sur le voyant moteur orange allumé sur le combiné d'instrumentation Peugeot 208 PureTech"
                      style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 

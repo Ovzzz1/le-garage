@@ -499,7 +499,7 @@ include __DIR__ . '/../header.php';
 
                 <div style="text-align: center;">
                     <div class="cerfa-wrap">
-                        <img src="/Image/kilometrage-evolutif2.webp" alt="Cerfa 15776 de cession de véhicule avec case D.4 kilométrage mise en évidence" width="900" height="506" loading="lazy">
+                        <img src="/Image/kilometrage-evolutif1.webp" alt="Cerfa 15776 de cession de véhicule avec case D.4 kilométrage mise en évidence" width="900" height="506" loading="lazy">
                         <div class="cerfa-highlight"></div>
                         <div class="cerfa-label">C'est ici que tout se joue — Case D.4</div>
                     </div>

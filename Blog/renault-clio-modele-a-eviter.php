@@ -166,7 +166,7 @@ include __DIR__ . '/../header.php';
                 <p>C'est le "grand méchant" de l'histoire (code H5Ft). Son défaut : une mauvaise gestion de la pression d'admission qui aspire l'huile moteur comme une paille. Les soupapes fondent, la chaîne de distribution se détend et le moteur finit par rendre l'âme, souvent avant 80 000 km.</p>
 
                 <h3>2. Le 1.5 dCi ancienne génération (Clio 2 et début Clio 3) : La limaille de fer</h3>
-                <p>Avant 2012, la pompe à injection Delphi a la fâcheuse tendance à se désagréger de l'intérieur, envoyant de la limaille de fer dans tout le circuit. Le remplacement complet du circuit d'injection représente une facture qui peut dépasser 2 000 € — autant dire qu'un <a href="/Blog/controle-technique-avant-achat-occasion">contrôle technique récent ne suffit pas</a> à détecter ce type de bombe à retardement.</p>
+                <p>Avant 2012, la pompe à injection Delphi a la fâcheuse tendance à se désagréger de l'intérieur, envoyant de la limaille de fer dans tout le circuit. Le remplacement complet du circuit d'injection représente une facture qui peut dépasser 2 000 € — autant dire qu'un contrôle technique récent ne suffit pas à détecter ce type de bombe à retardement.</p>
 
                 <h3>3. Le SCe 65 (Clio 5) : Trop faible pour être honnête</h3>
                 <p>Sans turbo, ce moteur manque cruellement de couple. Dès que vous engagez une rampe d'autoroute ou chargez la voiture, vous réalisez l'erreur. Il oblige à pousser les rapports à fond, ce qui fait exploser la consommation pour un agrément nul.</p>
@@ -212,7 +212,7 @@ include __DIR__ . '/../header.php';
                 <p>On évite la finition "Life", qui n'a même pas la clim de série. Côté transmission, méfiez-vous de la boîte automatique EDC des débuts (avant 2015) : surchauffes d'embrayage et bugs électroniques récurrents. En cas de doute sur l'état d'une boîte auto, un diagnostic électronique complet est indispensable avant toute signature.</p>
 
                 <h3>Clio 5 : Les défauts de jeunesse de l'E-Tech</h3>
-                <p>Évitez les modèles hybrides 2019 et 2020 : ils essuient les plâtres du système Easy Link et de la boîte de vitesses à crabots, très complexe. Si vous hésitez avec sa rivale de chez Sochaux, j'ai aussi rédigé un dossier sur le <a href="/Blog/modele-208-a-eviter">modèle Peugeot 208 à éviter</a>.</p>
+                <p>Évitez les modèles hybrides 2019 et 2020 : ils essuient les plâtres du système Easy Link et de la boîte de vitesses à crabots, très complexe. Si vous hésitez avec sa rivale de chez Sochaux, j'ai aussi rédigé un dossier sur le <a href="/Blog/peugeot-3008-modele-a-eviter">modèle Peugeot 3008 à éviter</a>.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="whitelist-recommandes">La Whitelist : Les modèles recommandés pour un achat serein</h2>
@@ -273,7 +273,7 @@ include __DIR__ . '/../header.php';
                 <p>La Clio 4 phase 2 (après 2016) avec le moteur 0.9 TCe 90. Tout est éprouvé et le coût d'entretien est dérisoire.</p>
 
                 <h3>Quel kilométrage peut atteindre une Clio ?</h3>
-                <p>Bien entretenue, une Clio 4 avec le 0.9 TCe ou le 1.5 dCi post-2015 peut dépasser les 350 000 km. L'essentiel est de respecter scrupuleusement les <a href="/Blog/intervalles-vidange-moteur">intervalles de vidange moteur</a> — surtout sur les moteurs turbo.</p>
+                <p>Bien entretenue, une Clio 4 avec le 0.9 TCe ou le 1.5 dCi post-2015 peut dépasser les 350 000 km. L'essentiel est de respecter scrupuleusement les intervalles de vidange moteur — surtout sur les moteurs turbo.</p>
 
                 <h3>Le moteur 1.2 16v 75 ch est-il vraiment à éviter ?</h3>
                 <p>Pas pour sa fiabilité (il est très costaud), mais pour son manque de punch. Bon choix uniquement pour un budget exclusivement urbain.</p>
