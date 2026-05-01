@@ -157,72 +157,75 @@ include __DIR__ . '/../header.php';
                 <h3 style="margin-top:32px;">Le Grand Écart Tarifaire : Prix Moyen Neuf & Modèles Phares</h3>
                 <p>Pour mieux comprendre le positionnement sur le marché actuel ou historique, voici une grille d'évaluation des tarifs d'entrée (estimés en euros) pour ces blasons illustres, accompagnée de leur modèle iconique.</p>
                 
-                <div class="art-table-wrap">
-                    <table class="art-table" style="width:100%; border-collapse:collapse; margin-top:16px;">
-                        <thead style="background:#f1f5f9;">
+                <div class="art-table-wrap" style="border:1px solid #e2e8f0; border-radius:8px; overflow:hidden;">
+                    <table class="art-table" style="width:100%; border-collapse:collapse; margin:0; font-size:0.9rem;">
+                        <thead style="background:#f8fafc;">
                             <tr>
-                                <th style="padding:12px; text-align:left; border-bottom:2px solid #cbd5e1;">Constructeur</th>
-                                <th style="padding:12px; text-align:left; border-bottom:2px solid #cbd5e1;">Top Modèle Iconique</th>
-                                <th style="padding:12px; text-align:left; border-bottom:2px solid #cbd5e1;">Segment Précis</th>
-                                <th style="padding:12px; text-align:right; border-bottom:2px solid #cbd5e1;">Prix Moyen Estimé</th>
+                                <th style="padding:10px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#334155; font-weight:700;">Constructeur</th>
+                                <th style="padding:10px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#334155; font-weight:700;">Top Modèle Iconique</th>
+                                <th style="padding:10px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#334155; font-weight:700;">Segment Précis</th>
+                                <th style="padding:10px 14px; text-align:right; border-bottom:2px solid #cbd5e1; color:#334155; font-weight:700;">Prix Moyen Estimé</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="border-bottom:1px solid #e2e8f0;">
-                                <td style="padding:12px;"><strong>Bugatti</strong></td>
-                                <td style="padding:12px; color:#475569;">Chiron / Tourbillon</td>
-                                <td style="padding:12px; color:#475569;"><span style="background:#fef08a; padding:2px 6px; border-radius:4px; font-size:0.8em; color:#854d0e;">Hypercar</span></td>
-                                <td style="padding:12px; text-align:right; font-weight:600; color:#dc2626;">3 500 000 € +</td>
+                            <tr style="border-bottom:1px solid #e2e8f0; background:#fff;">
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bugatti</strong></td>
+                                <td style="padding:10px 14px; color:#475569; border-right:1px solid #e2e8f0;">Chiron / Tourbillon</td>
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#fef08a; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#854d0e;">Hypercar</span></td>
+                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#dc2626;">3 500 000 € +</td>
                             </tr>
-                            <tr style="border-bottom:1px solid #e2e8f0;">
-                                <td style="padding:12px;"><strong>Brabham</strong></td>
-                                <td style="padding:12px; color:#475569;">BT62</td>
-                                <td style="padding:12px; color:#475569;"><span style="background:#fef08a; padding:2px 6px; border-radius:4px; font-size:0.8em; color:#854d0e;">Hypercar Piste</span></td>
-                                <td style="padding:12px; text-align:right; font-weight:600; color:#dc2626;">1 200 000 €</td>
+                            <tr style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Brabham</strong></td>
+                                <td style="padding:10px 14px; color:#475569; border-right:1px solid #e2e8f0;">BT62</td>
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#fef08a; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#854d0e;">Hypercar Piste</span></td>
+                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#dc2626;">1 200 000 €</td>
                             </tr>
-                            <tr style="border-bottom:1px solid #e2e8f0;">
-                                <td style="padding:12px;"><strong>Brabus</strong></td>
-                                <td style="padding:12px; color:#475569;">G 900 Rocket Edition</td>
-                                <td style="padding:12px; color:#475569;"><span style="background:#fed7aa; padding:2px 6px; border-radius:4px; font-size:0.8em; color:#c2410c;">Tuning Ultra-Luxe</span></td>
-                                <td style="padding:12px; text-align:right; font-weight:600;">500 000 €</td>
+                            <tr style="border-bottom:1px solid #e2e8f0; background:#fff;">
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Brabus</strong></td>
+                                <td style="padding:10px 14px; color:#475569; border-right:1px solid #e2e8f0;">G 900 Rocket Edition</td>
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#fed7aa; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#c2410c;">Tuning Ultra-Luxe</span></td>
+                                <td style="padding:10px 14px; text-align:right; font-weight:700;">500 000 €</td>
                             </tr>
-                            <tr style="border-bottom:1px solid #e2e8f0;">
-                                <td style="padding:12px;"><strong>Bentley</strong></td>
-                                <td style="padding:12px; color:#475569;">Continental GT Speed</td>
-                                <td style="padding:12px; color:#475569;"><span style="background:#e0e7ff; padding:2px 6px; border-radius:4px; font-size:0.8em; color:#4338ca;">Luxe / GT</span></td>
-                                <td style="padding:12px; text-align:right; font-weight:600;">250 000 €</td>
+                            <tr style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bentley</strong></td>
+                                <td style="padding:10px 14px; color:#475569; border-right:1px solid #e2e8f0;">Continental GT Speed</td>
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#e0e7ff; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#4338ca;">Luxe / GT</span></td>
+                                <td style="padding:10px 14px; text-align:right; font-weight:700;">250 000 €</td>
                             </tr>
-                            <tr style="border-bottom:1px solid #e2e8f0;">
-                                <td style="padding:12px;"><strong>BAC</strong></td>
-                                <td style="padding:12px; color:#475569;">Mono R</td>
-                                <td style="padding:12px; color:#475569;"><span style="background:#e2e8f0; padding:2px 6px; border-radius:4px; font-size:0.8em; color:#334155;">Track Toy</span></td>
-                                <td style="padding:12px; text-align:right; font-weight:600;">200 000 €</td>
+                            <tr style="border-bottom:1px solid #e2e8f0; background:#fff;">
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>BAC</strong></td>
+                                <td style="padding:10px 14px; color:#475569; border-right:1px solid #e2e8f0;">Mono R</td>
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#e2e8f0; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#334155;">Track Toy</span></td>
+                                <td style="padding:10px 14px; text-align:right; font-weight:700;">200 000 €</td>
                             </tr>
-                            <tr style="border-bottom:1px solid #e2e8f0;">
-                                <td style="padding:12px;"><strong>BMW</strong></td>
-                                <td style="padding:12px; color:#475569;">M3 / Série 3</td>
-                                <td style="padding:12px; color:#475569;"><span style="background:#d1fae5; padding:2px 6px; border-radius:4px; font-size:0.8em; color:#047857;">Premium Sport</span></td>
-                                <td style="padding:12px; text-align:right; font-weight:600;">55 000 €</td>
+                            <tr style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>BMW</strong></td>
+                                <td style="padding:10px 14px; color:#475569; border-right:1px solid #e2e8f0;">M3 / Série 3</td>
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#d1fae5; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#047857;">Premium Sport</span></td>
+                                <td style="padding:10px 14px; text-align:right; font-weight:700;">55 000 €</td>
                             </tr>
-                            <tr style="border-bottom:1px solid #e2e8f0;">
-                                <td style="padding:12px;"><strong>Buick</strong></td>
-                                <td style="padding:12px; color:#475569;">Enclave</td>
-                                <td style="padding:12px; color:#475569;"><span style="background:#d1fae5; padding:2px 6px; border-radius:4px; font-size:0.8em; color:#047857;">Premium Access</span></td>
-                                <td style="padding:12px; text-align:right; font-weight:600;">40 000 €</td>
+                            <tr style="border-bottom:1px solid #e2e8f0; background:#fff;">
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Buick</strong></td>
+                                <td style="padding:10px 14px; color:#475569; border-right:1px solid #e2e8f0;">Enclave</td>
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#d1fae5; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#047857;">Premium Access</span></td>
+                                <td style="padding:10px 14px; text-align:right; font-weight:700;">40 000 €</td>
                             </tr>
-                            <tr>
-                                <td style="padding:12px;"><strong>BYD</strong></td>
-                                <td style="padding:12px; color:#475569;">Seal / Atto 3</td>
-                                <td style="padding:12px; color:#475569;"><span style="background:#ccfbf1; padding:2px 6px; border-radius:4px; font-size:0.8em; color:#0f766e;">Généraliste EV</span></td>
-                                <td style="padding:12px; text-align:right; font-weight:600; color:#16a34a;">35 000 €</td>
+                            <tr style="background:#f8fafc;">
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>BYD</strong></td>
+                                <td style="padding:10px 14px; color:#475569; border-right:1px solid #e2e8f0;">Seal / Atto 3</td>
+                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#ccfbf1; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#0f766e;">Généraliste EV</span></td>
+                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#16a34a;">35 000 €</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3 style="margin-top:32px;">Le choc des cultures automobiles</h3>
+                <h3 style="margin-top:40px; color:#1e3a8a; font-size:1.4rem;">Le choc des cultures automobiles</h3>
                 <p>La lettre B illustre parfaitement les bouleversements de l'industrie. D'un côté, <strong>BYD</strong> (Build Your Dreams), marque chinoise ultra-moderne qui bouscule l'hégémonie de Tesla en vendant des millions de véhicules électriques abordables. De l'autre, <strong>Bugatti</strong> et <strong>Bentley</strong>, ancrées dans la tradition du très grand luxe européen du début du 20ème siècle, où l'artisanat et les motorisations thermiques d'exception (W16, W12) ont longtemps régné en maîtres.</p>
                 <p>Sans oublier <strong>BMW</strong>, qui tente le grand écart entre la passion du moteur thermique six cylindres en ligne avec ses modèles M, et la transition vers l'électrique massif avec sa gamme i.</p>
+                
+                <h3 style="margin-top:32px; color:#1e3a8a; font-size:1.4rem;">L'ingénierie britannique : un paradoxe fascinant</h3>
+                <p>Remarquons la forte proportion de marques anglaises dans cette liste (près de 50%). Le Royaume-Uni a cultivé deux extrêmes. Le luxe absolu incarné par <strong>Bentley</strong> ou <strong>Bristol</strong>, et l'ultra-légèreté radicale pour la piste avec <strong>BAC</strong> et <strong>Brabham</strong>. Cette "garagiste culture" propre à l'Angleterre permet encore aujourd'hui de produire des véhicules ultra-spécialisés, loin des contraintes de production de masse des allemands (BMW, Borgward).</p>
             </div>
 
             <!-- NAVIGATION LETTRES -->
