@@ -3,8 +3,8 @@
  * marques/b.php — Page Index N3 : Toutes les Marques en B
  * URL : /marques/b
  */
-$page_title = "Marques Automobiles en B : Liste Complète de BMW à Bugatti";
-$page_description = "Découvrez toutes les marques automobiles commençant par B : BMW, Bugatti, Bentley, Buick, BYD, Brabus. Histoire, modèles, prix et classification détaillée.";
+$page_title = "Marques Automobiles en B : Liste Complète et Classement (BMW, Bugatti, Bentley...)";
+$page_description = "Toutes les marques automobiles commençant par B : BMW, Bugatti, Bentley, BYD, Buick, Brabus et 20 autres. Tableau interactif filtrable par prix, pays et segment.";
 
 $categories = [
     'assurance' => ['name' => 'Assurance & Financement', 'color' => '#2563eb'],
@@ -15,36 +15,62 @@ $categories = [
     'permis' => ['name' => 'Permis', 'color' => '#0891b2'],
 ];
 
-// Toutes les marques en B avec métadonnées
+// Toutes les marques en B avec métadonnées enrichies
 $marques_b = [
-    ['name' => 'BMW',       'pays' => '🇩🇪', 'pays_nom' => 'Allemagne', 'annee' => 1916, 'statut' => 'Actif',    'type' => 'Premium & Sportif',    'desc' => 'Bayerische Motoren Werke. Le summum du plaisir de conduire avec l\'hélice bavaroise et la division M.'],
-    ['name' => 'Bugatti',   'pays' => '🇫🇷', 'pays_nom' => 'France',    'annee' => 1909, 'statut' => 'Actif',    'type' => 'Hypercars',            'desc' => 'L\'excellence automobile née à Molsheim. Chiron, Veyron, Tourbillon et la quête des records de vitesse.'],
-    ['name' => 'Bentley',   'pays' => '🇬🇧', 'pays_nom' => 'Angleterre','annee' => 1919, 'statut' => 'Actif',    'type' => 'Luxe & Grand Tourisme','desc' => 'Le luxe britannique allié aux performances. Continental GT et Flying Spur, vainqueur historique au Mans.'],
-    ['name' => 'Buick',     'pays' => '🇺🇸', 'pays_nom' => 'USA',       'annee' => 1899, 'statut' => 'Actif',    'type' => 'Premium américain',    'desc' => 'Pilier fondateur de General Motors. Aujourd\'hui très populaire en Chine avec une gamme de SUV cossus.'],
-    ['name' => 'BYD',       'pays' => '🇨🇳', 'pays_nom' => 'Chine',     'annee' => 1995, 'statut' => 'Actif',    'type' => 'Généraliste Électrique','desc' => 'Build Your Dreams. Le géant de Shenzhen, n°1 mondial des véhicules électrifiés et pionnier des batteries LFP.'],
-    ['name' => 'Brabus',    'pays' => '🇩🇪', 'pays_nom' => 'Allemagne', 'annee' => 1977, 'statut' => 'Actif',    'type' => 'Préparateur Extrême',  'desc' => 'Le sorcier de Bottrop. Spécialiste des Mercedes AMG survitaminées, Classe G 900 Rocket et finitions très haut de gamme.'],
-    ['name' => 'BAC',       'pays' => '🇬🇧', 'pays_nom' => 'Angleterre','annee' => 2009, 'statut' => 'Actif',    'type' => 'Sportives Piste',      'desc' => 'Briggs Automotive Company. Créateur de la Mono, une monoplace ultra-légère homologuée pour la route.'],
-    ['name' => 'Bertone',   'pays' => '🇮🇹', 'pays_nom' => 'Italie',    'annee' => 1912, 'statut' => 'Renaissance','type' => 'Carrossier mythique', 'desc' => 'Studio de design légendaire, auteur de chefs-d\'œuvre comme la Lamborghini Miura et la Countach.'],
-    ['name' => 'Bizzarrini','pays' => '🇮🇹', 'pays_nom' => 'Italie',    'annee' => 1964, 'statut' => 'Renaissance','type' => 'Sportives radicales',  'desc' => 'Créée par Giotto Bizzarrini, ex-ingénieur de la Ferrari 250 GTO. La 5300 GT Strada est son chef-d\'œuvre.'],
-    ['name' => 'Borgward',  'pays' => '🇩🇪', 'pays_nom' => 'Allemagne', 'annee' => 1919, 'statut' => 'Disparu',  'type' => 'Généraliste',          'desc' => 'Constructeur historique de Brême. L\'Isabella fut son grand succès. Disparu en 1961 malgré une tentative de retour.'],
-    ['name' => 'Bristol',   'pays' => '🇬🇧', 'pays_nom' => 'Angleterre','annee' => 1945, 'statut' => 'Disparu',  'type' => 'Luxe confidentiel',    'desc' => 'L\'excentricité britannique absolue, assemblage artisanal et V8 américains. Liquidation en 2020.'],
-    ['name' => 'Bitter',    'pays' => '🇩🇪', 'pays_nom' => 'Allemagne', 'annee' => 1971, 'statut' => 'Confidentiel','type' => 'Grand Tourisme',       'desc' => 'Artisan allemand créant de luxueux coupés et cabriolets sur des bases mécaniques Opel (CD, SC).'],
-    ['name' => 'Bowler',    'pays' => '🇬🇧', 'pays_nom' => 'Angleterre','annee' => 1985, 'statut' => 'Racheté JLR','type' => 'Tout-terrain extrême', 'desc' => 'Préparateur de Land Rover pour le rallye-raid et le Dakar. Intégré à Jaguar Land Rover.'],
-    ['name' => 'Brabham',   'pays' => '🇦🇺', 'pays_nom' => 'Australie', 'annee' => 1960, 'statut' => 'Actif',    'type' => 'Supercars Piste',      'desc' => 'Héritage direct de la légende de F1 Sir Jack Brabham. Actuellement producteur de la BT62.'],
-    ['name' => 'BSA',       'pays' => '🇬🇧', 'pays_nom' => 'Angleterre','annee' => 1861, 'statut' => 'Disparu',  'type' => 'Motos & Voiturettes',  'desc' => 'Birmingham Small Arms Company. Principalement motos, mais a produit d\'intéressantes voiturettes 3 roues.']
+    // ─── ACTIVES MAINSTREAM / PREMIUM ───────────────────────────────────────
+    ['name'=>'BMW',           'pays'=>'🇩🇪','pays_nom'=>'Allemagne', 'annee'=>1916,'statut'=>'Actif','segment'=>'premium','prix_range'=>'premium',  'prix_label'=>'dès 45 000 €',   'type'=>'Premium & Sportif',        'desc'=>'Bayerische Motoren Werke. Le summum du plaisir de conduire : Série 3, M3, i4, XM. La division M redéfinit la performance à chaque génération.'],
+    ['name'=>'Buick',         'pays'=>'🇺🇸','pays_nom'=>'USA',        'annee'=>1899,'statut'=>'Actif','segment'=>'premium','prix_range'=>'premium',  'prix_label'=>'dès 40 000 €',   'type'=>'Premium américain',        'desc'=>'Pilier fondateur de General Motors. Symbole de réussite en Chine. La gamme actuelle mise tout sur les SUV cossus (Enclave, Envision).'],
+    ['name'=>'BYD',           'pays'=>'🇨🇳','pays_nom'=>'Chine',      'annee'=>1995,'statut'=>'Actif','segment'=>'electrique','prix_range'=>'entree','prix_label'=>'dès 25 000 €',   'type'=>'Généraliste Électrique',   'desc'=>'Build Your Dreams. Le géant de Shenzhen, n°1 mondial des véhicules électrifiés. Batteries LFP, plateforme e-Platform 3.0, Seal, Atto 3, Dolphin.'],
+    ['name'=>'BAIC',          'pays'=>'🇨🇳','pays_nom'=>'Chine',      'annee'=>1958,'statut'=>'Actif','segment'=>'generaliste','prix_range'=>'entree','prix_label'=>'dès 15 000 €',  'type'=>'Généraliste / Partenariat','desc'=>'Beijing Automotive Industry Corporation. Partenaire de Mercedes-Benz en Chine et fabricant de gammes accessibles BJEV et BEIJING.'],
+    ['name'=>'Baojun',        'pays'=>'🇨🇳','pays_nom'=>'Chine',      'annee'=>2010,'statut'=>'Actif','segment'=>'generaliste','prix_range'=>'entree','prix_label'=>'dès 10 000 €',  'type'=>'Généraliste Urbain',       'desc'=>'Joint-venture GM-SAIC ciblant les classes moyennes chinoises. La Baojun E100 fut l\'une des premières mini-citadines électriques chinoises.'],
+    ['name'=>'Bestune',       'pays'=>'🇨🇳','pays_nom'=>'Chine',      'annee'=>2006,'statut'=>'Actif','segment'=>'premium','prix_range'=>'entree',   'prix_label'=>'dès 20 000 €',   'type'=>'Premium Chinois (FAW)',    'desc'=>'Marque premium du groupe FAW (First Automotive Works). Gamme de berlines et SUV rivalisant avec les marques européennes dans les catégories intermédiaires.'],
+    ['name'=>'Brilliance',    'pays'=>'🇨🇳','pays_nom'=>'Chine',      'annee'=>1992,'statut'=>'Actif','segment'=>'generaliste','prix_range'=>'entree','prix_label'=>'dès 18 000 €',  'type'=>'Généraliste / Partenariat','desc'=>'Brilliance Automotive est surtout connu pour son partenariat de production avec BMW en Chine. Vend également ses propres modèles sous la marque Zhonghua.'],
+
+    // ─── LUXE & GRAND TOURISME ───────────────────────────────────────────────
+    ['name'=>'Bentley',       'pays'=>'🇬🇧','pays_nom'=>'Angleterre', 'annee'=>1919,'statut'=>'Actif','segment'=>'luxe','prix_range'=>'luxe',         'prix_label'=>'dès 250 000 €',  'type'=>'Luxe & Grand Tourisme',   'desc'=>'Le luxe britannique allié aux performances. Continental GT, Flying Spur, Bentayga. Vainqueur historique du Mans. Filiale du groupe Volkswagen.'],
+    ['name'=>'Bitter',        'pays'=>'🇩🇪','pays_nom'=>'Allemagne', 'annee'=>1971,'statut'=>'Confidentiel','segment'=>'artisan','prix_range'=>'luxe', 'prix_label'=>'~100 000 €',    'type'=>'Grand Tourisme Artisan',  'desc'=>'Artisan allemand créant de luxueux coupés et cabriolets sur bases mécaniques Opel. Les modèles CD et SC sont de véritables objets de collection.'],
+    ['name'=>'Bufori',        'pays'=>'🇲🇾','pays_nom'=>'Malaisie',   'annee'=>1986,'statut'=>'Actif','segment'=>'artisan','prix_range'=>'luxe',       'prix_label'=>'~200 000 €',    'type'=>'Artisan Exotique',        'desc'=>'Constructeur artisanal malaisien fondé par la famille Khouri. Ses véhicules rétro-futuristes (Geneva, La Joya) sont entièrement faits à la main.'],
+    ['name'=>'Bowler',        'pays'=>'🇬🇧','pays_nom'=>'Angleterre', 'annee'=>1985,'statut'=>'Racheté JLR','segment'=>'offroad','prix_range'=>'luxe', 'prix_label'=>'~150 000 €',    'type'=>'Tout-terrain Racing',     'desc'=>'Préparateur de Land Rover pour le rallye-raid et le Dakar. Racheté par Jaguar Land Rover, les Bowler Bulldog et Defender Challenge sont ses fleurons actuels.'],
+
+    // ─── HYPERCARS & SUPERCARS ───────────────────────────────────────────────
+    ['name'=>'Bugatti',       'pays'=>'🇫🇷','pays_nom'=>'France',     'annee'=>1909,'statut'=>'Actif','segment'=>'hypercar','prix_range'=>'hypercar',  'prix_label'=>'dès 3 500 000 €','type'=>'Hypercars Ultime',        'desc'=>'L\'excellence née à Molsheim. Veyron, Chiron, Tourbillon. Chaque modèle repousse les limites de la vitesse maximale avec son légendaire moteur W16 quadriturbo.'],
+    ['name'=>'Brabham',       'pays'=>'🇦🇺','pays_nom'=>'Australie',  'annee'=>1960,'statut'=>'Actif','segment'=>'hypercar','prix_range'=>'hypercar',  'prix_label'=>'~1 200 000 €',   'type'=>'Supercar Piste',          'desc'=>'Héritage de la légende F1 Sir Jack Brabham, relancée par son fils David. La BT62 génère 1 200 kg d\'appui aérodynamique pour 700 ch sur 972 kg.'],
+    ['name'=>'Bizzarrini',    'pays'=>'🇮🇹','pays_nom'=>'Italie',     'annee'=>1964,'statut'=>'Renaissance','segment'=>'hypercar','prix_range'=>'hypercar','prix_label'=>'~1 500 000 €', 'type'=>'Sportive Radicale',      'desc'=>'Créée par l\'ingénieur de la Ferrari 250 GTO. La 5300 GT Strada est son chef-d\'œuvre. La marque ressuscite aujourd\'hui avec une nouvelle supercar électrique.'],
+    ['name'=>'BAC',           'pays'=>'🇬🇧','pays_nom'=>'Angleterre', 'annee'=>2009,'statut'=>'Actif','segment'=>'artisan','prix_range'=>'luxe',       'prix_label'=>'~200 000 €',    'type'=>'Track Toy Ultime',        'desc'=>'Briggs Automotive Company. La Mono, monoplace ultra-légère homologuée pour la route. Carrosserie en graphène, 560 kg sur la balance pour ~340 chevaux.'],
+
+    // ─── PRÉPARATEURS ───────────────────────────────────────────────────────
+    ['name'=>'Brabus',        'pays'=>'🇩🇪','pays_nom'=>'Allemagne', 'annee'=>1977,'statut'=>'Actif','segment'=>'preparateur','prix_range'=>'luxe',    'prix_label'=>'dès 300 000 €',  'type'=>'Préparateur Ultra-Luxe',  'desc'=>'Reconnu constructeur officiel par le gouvernement allemand. Spécialiste des Mercedes survitaminées : Classe G 900 Rocket, 800 AMG GT et finitions cuir dément.'],
+
+    // ─── ÉLECTRIQUES / TECH ─────────────────────────────────────────────────
+    ['name'=>'Bollinger Motors','pays'=>'🇺🇸','pays_nom'=>'USA',      'annee'=>2015,'statut'=>'Incertain','segment'=>'electrique','prix_range'=>'luxe','prix_label'=>'~120 000 €',    'type'=>'EV Off-Road',             'desc'=>'Startup américaine du Michigan voulant réinventer le pickup électrique carré. Le B2 Truck et le B1 SUV ont suscité l\'engouement mais la production reste hypothétique.'],
+    ['name'=>'Byton',          'pays'=>'🇨🇳','pays_nom'=>'Chine',     'annee'=>2016,'statut'=>'Disparu','segment'=>'electrique','prix_range'=>'nc',      'prix_label'=>'Non commercialisé','type'=>'EV Premium (Défunt)',     'desc'=>'Startup sino-américaine prometteuse du pôle d\'innovation de Nanjing. Le M-Byte avec son écran 48 pouces avait tout pour révolutionner le segment. Liquidée en 2022.'],
+    ['name'=>'Bolloré',        'pays'=>'🇫🇷','pays_nom'=>'France',    'annee'=>2010,'statut'=>'Disparu','segment'=>'electrique','prix_range'=>'nc',       'prix_label'=>'Autopartage',      'type'=>'Pionnier EV Urbain',      'desc'=>'Le groupe Bolloré (Vincent Bolloré) a créé la BlueCar, citadine 100% électrique déployée dans l\'Autolib\' parisien entre 2011 et 2018. Un précurseur jamais industrialisé.'],
+
+    // ─── CARROSSIERS / DESIGN ───────────────────────────────────────────────
+    ['name'=>'Bertone',        'pays'=>'🇮🇹','pays_nom'=>'Italie',    'annee'=>1912,'statut'=>'Renaissance','segment'=>'artisan','prix_range'=>'nc',    'prix_label'=>'Sur mesure',      'type'=>'Studio Design Légendaire','desc'=>'Auteur des plus grandes carrosseries du XXe siècle : Miura, Countach, Stratos Zero. Le studio ressuscite avec la GB110, hypercar de 1 100 ch.'],
+
+    // ─── HISTORIQUES / COLLECTION ───────────────────────────────────────────
+    ['name'=>'Borgward',       'pays'=>'🇩🇪','pays_nom'=>'Allemagne', 'annee'=>1919,'statut'=>'Disparu','segment'=>'historique','prix_range'=>'nc',      'prix_label'=>'Collection',      'type'=>'Généraliste Historique',  'desc'=>'Constructeur majeur de Brême des années 50. L\'Isabella Combi est son best-seller. Faillite en 1961, tentative de relaunch chinois avortée dans les années 2010.'],
+    ['name'=>'Bristol',        'pays'=>'🇬🇧','pays_nom'=>'Angleterre', 'annee'=>1945,'statut'=>'Disparu','segment'=>'historique','prix_range'=>'nc',      'prix_label'=>'Collection',      'type'=>'Luxe Confidentiel',       'desc'=>'L\'excentricité britannique absolue : assemblage artisanal, moteurs V8 américains Chrysler, jamais de pub. Le Fighter à portes papillon. Liquidation en 2020.'],
+    ['name'=>'Bricklin',       'pays'=>'🇨🇦','pays_nom'=>'Canada',    'annee'=>1974,'statut'=>'Disparu','segment'=>'historique','prix_range'=>'nc',       'prix_label'=>'Collection',      'type'=>'Sportive Historique',     'desc'=>'La SV-1 de Malcolm Bricklin, unique modèle à portes papillon (gull-wing), financée par le gouvernement du Nouveau-Brunswick. Seulement 2 900 exemplaires avant la faillite.'],
+    ['name'=>'Bond Cars',      'pays'=>'🇬🇧','pays_nom'=>'Angleterre', 'annee'=>1949,'statut'=>'Disparu','segment'=>'historique','prix_range'=>'nc',      'prix_label'=>'Collection',      'type'=>'Micro-cars / 3 roues',    'desc'=>'Preston, Lancashire. Pionnier britannique des micro-voitures et tricycles. Le Bug 875 (1970), orange et futuriste, reste son modèle le plus iconique.'],
+    ['name'=>'BSA',            'pays'=>'🇬🇧','pays_nom'=>'Angleterre', 'annee'=>1861,'statut'=>'Disparu','segment'=>'historique','prix_range'=>'nc',      'prix_label'=>'Collection',      'type'=>'Motos & Voiturettes',     'desc'=>'Birmingham Small Arms Company. Géant de l\'armement reconverti dans les motos et voiturettes. La BSA Scout des années 30 a osé la traction avant sur une petite sportive.'],
 ];
 
 // Tri alphabétique
 usort($marques_b, fn($a, $b) => strcmp($a['name'], $b['name']));
+$nb_marques = count($marques_b);
+$nb_actives = count(array_filter($marques_b, fn($m) => $m['statut'] === 'Actif'));
+$nb_pays = count(array_unique(array_column($marques_b, 'pays_nom')));
 
 include __DIR__ . '/../header.php';
 ?>
 
 <article>
     <!-- HERO -->
-    <section class="art-hero" style="min-height:300px;">
+    <section class="art-hero" style="min-height:280px;">
         <div style="position:absolute;inset:0;background:linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);"></div>
-        <div class="art-hero-overlay" style="opacity:0.2;"></div>
+        <div class="art-hero-overlay" style="opacity:0.15;"></div>
         <div class="art-hero-container">
             <div class="art-hero-content">
                 <nav class="art-breadcrumb">
@@ -54,8 +80,8 @@ include __DIR__ . '/../header.php';
                     <span class="art-bc-sep">/</span>
                     <span>Marques en B</span>
                 </nav>
-                <h1 style="font-size:clamp(1.6rem, 4vw, 2.5rem);">L'Univers des Marques Automobiles en B</h1>
-                <p class="art-hero-sub">15 constructeurs automobiles de BMW à Bugatti. Des hypercars françaises, au luxe britannique, en passant par la rigueur allemande et la révolution électrique chinoise.</p>
+                <h1 style="font-size:clamp(1.6rem, 4vw, 2.4rem);">L'Univers des Marques Automobiles en B</h1>
+                <p class="art-hero-sub"><?php echo $nb_marques; ?> constructeurs de BMW à Bugatti — des hypercars à 3,5 millions d'euros aux pionniers électriques chinois, en passant par les artisans britanniques et les légendes disparues.</p>
             </div>
         </div>
     </section>
@@ -76,373 +102,449 @@ include __DIR__ . '/../header.php';
         <div class="art-main-col">
 
             <!-- STATS RAPIDES -->
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(100px, 1fr)); gap:12px; margin-bottom:28px;">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(110px, 1fr)); gap:12px; margin-bottom:32px;">
                 <div style="background:#f8f9fa; border-radius:12px; padding:16px; text-align:center;">
-                    <div style="font-size:2rem; font-weight:800; color:#2563eb;">15</div>
-                    <div style="font-size:0.75rem; color:#666;">Marques Récensées</div>
+                    <div style="font-size:2rem; font-weight:800; color:#2563eb;"><?php echo $nb_marques; ?></div>
+                    <div style="font-size:0.72rem; color:#666; line-height:1.3;">Marques<br>Recensées</div>
                 </div>
                 <div style="background:#f8f9fa; border-radius:12px; padding:16px; text-align:center;">
-                    <div style="font-size:2rem; font-weight:800; color:#2563eb;">7</div>
-                    <div style="font-size:0.75rem; color:#666;">Marques Anglaises</div>
+                    <div style="font-size:2rem; font-weight:800; color:#16a34a;"><?php echo $nb_actives; ?></div>
+                    <div style="font-size:0.72rem; color:#666; line-height:1.3;">Marques<br>Actives</div>
                 </div>
                 <div style="background:#f8f9fa; border-radius:12px; padding:16px; text-align:center;">
-                    <div style="font-size:2rem; font-weight:800; color:#2563eb;">1861</div>
-                    <div style="font-size:0.75rem; color:#666;">Fondation BSA</div>
+                    <div style="font-size:2rem; font-weight:800; color:#7c3aed;"><?php echo $nb_pays; ?></div>
+                    <div style="font-size:0.72rem; color:#666; line-height:1.3;">Pays<br>d'origine</div>
                 </div>
                 <div style="background:#f8f9fa; border-radius:12px; padding:16px; text-align:center;">
-                    <div style="font-size:2rem; font-weight:800; color:#2563eb;">3</div>
-                    <div style="font-size:0.75rem; color:#666;">Hyper-Créateurs</div>
+                    <div style="font-size:2rem; font-weight:800; color:#dc2626;">1861</div>
+                    <div style="font-size:0.72rem; color:#666; line-height:1.3;">Fondation<br>BSA</div>
                 </div>
             </div>
 
-            <!-- LISTE DES MARQUES -->
+            <!-- LISTE DES MARQUES (cards) -->
             <div class="art-content">
-                <h2>Les 15 marques automobiles commençant par B</h2>
-                <p>Contrairement à notre liste A, voici un répertoire pur de référence des marques en B. L'objectif est de vous fournir une encyclopédie rapide de l'histoire automobile liée à cette lettre, sans nécessiter de navigation complexe.</p>
+                <h2>Les <?php echo $nb_marques; ?> marques automobiles commençant par B</h2>
+                <p>De l'hypercar française à 3,5 millions d'euros aux start-up électriques chinoises ou aux artisans malaisiens — la lettre B est l'une des plus riches de l'alphabet automobile. Voici le répertoire complet.</p>
 
-                <div style="display:flex; flex-direction:column; gap:12px; margin-top:20px;">
+                <div style="display:flex; flex-direction:column; gap:10px; margin-top:20px;">
                     <?php foreach ($marques_b as $m): ?>
-                    <div style="display:flex; align-items:flex-start; gap:16px; background:#fff; border:1px solid #e9ecef; border-radius:14px; padding:18px 20px; box-shadow:0 1px 3px rgba(0,0,0,0.04); transition:all 0.25s;" onmouseover="this.style.borderColor='#2563eb'; this.style.boxShadow='0 6px 20px rgba(37,99,235,0.12)';" onmouseout="this.style.borderColor='#e9ecef'; this.style.boxShadow='0 1px 3px rgba(0,0,0,0.04)';">
-                        <!-- Drapeau pays -->
-                        <div style="font-size:1.8rem; line-height:1; flex-shrink:0; margin-top:2px;"><?php echo $m['pays']; ?></div>
-                        <!-- Contenu -->
+                    <div style="display:flex; align-items:flex-start; gap:14px; background:#fff; border:1px solid #e9ecef; border-radius:12px; padding:16px 18px; box-shadow:0 1px 3px rgba(0,0,0,0.04); transition:border-color .2s, box-shadow .2s;"
+                         onmouseover="this.style.borderColor='#2563eb';this.style.boxShadow='0 4px 16px rgba(37,99,235,0.1)';"
+                         onmouseout="this.style.borderColor='#e9ecef';this.style.boxShadow='0 1px 3px rgba(0,0,0,0.04)';">
+                        <div style="font-size:1.7rem; line-height:1; flex-shrink:0; margin-top:2px;"><?php echo $m['pays']; ?></div>
                         <div style="flex:1; min-width:0;">
-                            <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:4px;">
-                                <span style="font-weight:700; font-size:1.1rem; color:#1a1a2e;"><?php echo $m['name']; ?></span>
-                                <span style="font-size:0.7rem; font-weight:600; padding:2px 8px; border-radius:20px; background:<?php
+                            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:3px;">
+                                <span style="font-weight:700; font-size:1.05rem; color:#1a1a2e;"><?php echo $m['name']; ?></span>
+                                <span style="font-size:0.68rem; font-weight:600; padding:2px 7px; border-radius:20px; background:<?php
                                     echo match($m['statut']) {
-                                        'Actif' => '#dcfce7; color:#166534',
-                                        'Disparu' => '#f3f4f6; color:#6b7280',
-                                        'Renaissance' => '#dbeafe; color:#1e40af',
-                                        'Racheté JLR' => '#fef3c7; color:#92400e',
+                                        'Actif'        => '#dcfce7; color:#166534',
+                                        'Disparu'      => '#f1f5f9; color:#64748b',
+                                        'Renaissance'  => '#dbeafe; color:#1e40af',
+                                        'Racheté JLR'  => '#fef3c7; color:#92400e',
                                         'Confidentiel' => '#f3e8ff; color:#6b21a8',
-                                        default => '#f3f4f6; color:#6b7280',
+                                        'Incertain'    => '#fef9c3; color:#854d0e',
+                                        default        => '#f1f5f9; color:#64748b',
                                     };
                                 ?>;"><?php echo $m['statut']; ?></span>
-                                <span style="font-size:0.75rem; color:#999;"><?php echo $m['annee']; ?> • <?php echo $m['pays_nom']; ?></span>
+                                <span style="font-size:0.72rem; color:#94a3b8;"><?php echo $m['annee']; ?> · <?php echo $m['pays_nom']; ?></span>
                             </div>
-                            <div style="font-size:0.8rem; color:#2563eb; font-weight:600; margin-bottom:4px;"><?php echo $m['type']; ?></div>
-                            <p style="font-size:0.88rem; color:#555; margin:0; line-height:1.5;"><?php echo $m['desc']; ?></p>
+                            <div style="font-size:0.75rem; color:#2563eb; font-weight:600; margin-bottom:3px;"><?php echo $m['type']; ?> — <?php echo $m['prix_label']; ?></div>
+                            <p style="font-size:0.86rem; color:#555; margin:0; line-height:1.5;"><?php echo $m['desc']; ?></p>
                         </div>
                     </div>
                     <?php endforeach; ?>
                 </div>
             </div>
 
-            <!-- SECTION ENRICHISSEMENT SÉMANTIQUE -->
+            <!-- TABLEAU FILTRABLE INTERACTIF -->
             <div class="art-content" style="margin-top:48px; border-top:1px solid #e9ecef; padding-top:36px;">
-                <h2>Analyse et Classification des Marques en B</h2>
-                <p>La lettre B abrite des monstres sacrés de l'industrie. D'une part, nous avons les piliers historiques du luxe et du premium mondial (<strong>BMW, Bentley, Bugatti</strong>), et d'autre part, des artisans britanniques (<strong>BAC, Bowler, Bristol</strong>) dont la survie dépend des niches du marché.</p>
+                <h2>Tableau comparatif interactif — Filtrer les marques en B</h2>
+                <p>Utilisez les filtres ci-dessous pour affiner votre recherche selon le pays d'origine, le statut, la gamme de prix ou le segment automobile. Cliquez sur un en-tête de colonne pour trier le tableau.</p>
 
-                <h3 style="margin-top:32px; color:#1e3a8a; font-size:1.4rem;">Le Grand Annuaire Interactif des Marques en B</h3>
-                <p>Utilisez les filtres ci-dessous pour trier les constructeurs par pays d'origine ou par statut d'activité actuel. Vous retrouverez également une estimation du ticket d'entrée neuf (lorsqu'applicable) et leur positionnement exact sur le marché automobile mondial.</p>
-                
                 <!-- BARRE DE FILTRES -->
-                <div style="margin-bottom:16px; display:flex; gap:12px; flex-wrap:wrap; background:#f8fafc; padding:16px; border-radius:8px; border:1px solid #e2e8f0;">
-                    <div style="display:flex; align-items:center; gap:8px;">
-                        <span style="font-weight:600; color:#334155; font-size:0.9rem;">Filtrer par :</span>
-                        <select id="filter-pays" style="padding:8px 12px; border-radius:6px; border:1px solid #cbd5e1; background:#fff; color:#334155; outline:none; font-size:0.9rem; cursor:pointer;">
-                            <option value="all">🌍 Tous les pays</option>
-                            <option value="Allemagne">🇩🇪 Allemagne</option>
-                            <option value="Angleterre">🇬🇧 Royaume-Uni</option>
-                            <option value="France">🇫🇷 France</option>
-                            <option value="Italie">🇮🇹 Italie</option>
-                            <option value="USA">🇺🇸 USA</option>
-                            <option value="Chine">🇨🇳 Chine</option>
-                            <option value="Australie">🇦🇺 Australie</option>
-                        </select>
+                <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:18px 20px; margin-bottom:16px;">
+
+                    <!-- Recherche rapide -->
+                    <div style="margin-bottom:14px;">
+                        <input id="b-search" type="text" placeholder="🔍 Rechercher une marque..." autocomplete="off"
+                               style="width:100%; box-sizing:border-box; padding:10px 14px; border-radius:7px; border:1.5px solid #cbd5e1; font-size:0.9rem; color:#334155; outline:none; transition:border-color .15s;"
+                               onfocus="this.style.borderColor='#2563eb';" onblur="this.style.borderColor='#cbd5e1';">
                     </div>
-                    <div style="display:flex; align-items:center; gap:8px;">
-                        <select id="filter-statut" style="padding:8px 12px; border-radius:6px; border:1px solid #cbd5e1; background:#fff; color:#334155; outline:none; font-size:0.9rem; cursor:pointer;">
-                            <option value="all">🔄 Tous les statuts</option>
-                            <option value="Actif">✅ Actif</option>
-                            <option value="Renaissance">🔥 Renaissance</option>
-                            <option value="Disparu">✝️ Disparu</option>
-                            <option value="Confidentiel">👻 Confidentiel / Racheté</option>
-                        </select>
+
+                    <!-- Gamme de prix (pills) -->
+                    <div style="margin-bottom:14px;">
+                        <div style="font-size:0.78rem; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:.04em; margin-bottom:7px;">Gamme de prix</div>
+                        <div style="display:flex; flex-wrap:wrap; gap:6px;" id="prix-pills">
+                            <button class="b-pill active" data-prix="all"          style="padding:5px 12px; border-radius:20px; border:1.5px solid #2563eb; background:#2563eb; color:#fff; font-size:0.8rem; font-weight:600; cursor:pointer;">Toutes gammes</button>
+                            <button class="b-pill"         data-prix="entree"      style="padding:5px 12px; border-radius:20px; border:1.5px solid #e2e8f0; background:#fff; color:#475569; font-size:0.8rem; font-weight:600; cursor:pointer;">🟢 &lt; 30 000 €</button>
+                            <button class="b-pill"         data-prix="premium"     style="padding:5px 12px; border-radius:20px; border:1.5px solid #e2e8f0; background:#fff; color:#475569; font-size:0.8rem; font-weight:600; cursor:pointer;">🔵 30k – 100k €</button>
+                            <button class="b-pill"         data-prix="luxe"        style="padding:5px 12px; border-radius:20px; border:1.5px solid #e2e8f0; background:#fff; color:#475569; font-size:0.8rem; font-weight:600; cursor:pointer;">🟣 100k – 500k €</button>
+                            <button class="b-pill"         data-prix="hypercar"    style="padding:5px 12px; border-radius:20px; border:1.5px solid #e2e8f0; background:#fff; color:#475569; font-size:0.8rem; font-weight:600; cursor:pointer;">🔴 &gt; 500k €</button>
+                            <button class="b-pill"         data-prix="nc"          style="padding:5px 12px; border-radius:20px; border:1.5px solid #e2e8f0; background:#fff; color:#475569; font-size:0.8rem; font-weight:600; cursor:pointer;">⚫ Collection / N.D.</button>
+                        </div>
+                    </div>
+
+                    <!-- Ligne pays + statut -->
+                    <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+                        <div style="display:flex; align-items:center; gap:8px; flex:1; min-width:160px;">
+                            <label style="font-size:0.8rem; font-weight:700; color:#64748b; white-space:nowrap;">Pays :</label>
+                            <select id="b-filter-pays" style="flex:1; padding:7px 10px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#334155; font-size:0.85rem; cursor:pointer;">
+                                <option value="all">🌍 Tous</option>
+                                <option value="Allemagne">🇩🇪 Allemagne</option>
+                                <option value="Angleterre">🇬🇧 Royaume-Uni</option>
+                                <option value="France">🇫🇷 France</option>
+                                <option value="Italie">🇮🇹 Italie</option>
+                                <option value="USA">🇺🇸 USA</option>
+                                <option value="Chine">🇨🇳 Chine</option>
+                                <option value="Australie">🇦🇺 Australie</option>
+                                <option value="Canada">🇨🇦 Canada</option>
+                                <option value="Malaisie">🇲🇾 Malaisie</option>
+                            </select>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:8px; flex:1; min-width:160px;">
+                            <label style="font-size:0.8rem; font-weight:700; color:#64748b; white-space:nowrap;">Statut :</label>
+                            <select id="b-filter-statut" style="flex:1; padding:7px 10px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#334155; font-size:0.85rem; cursor:pointer;">
+                                <option value="all">🔄 Tous</option>
+                                <option value="Actif">✅ Actif</option>
+                                <option value="Renaissance">🔥 Renaissance</option>
+                                <option value="Disparu">✝️ Disparu</option>
+                                <option value="Confidentiel">👻 Confidentiel</option>
+                                <option value="Incertain">⚠️ Incertain</option>
+                            </select>
+                        </div>
+                        <button id="b-reset" style="padding:7px 14px; border-radius:6px; border:1.5px solid #e2e8f0; background:#fff; color:#64748b; font-size:0.82rem; font-weight:600; cursor:pointer;">↺ Réinitialiser</button>
                     </div>
                 </div>
 
-                <!-- TABLEAU INTERACTIF -->
-                <div class="art-table-wrap" style="border:1px solid #e2e8f0; border-radius:8px; overflow:hidden;">
-                    <table class="art-table" style="width:100%; border-collapse:collapse; margin:0; font-size:0.9rem;">
-                        <thead style="background:#f1f5f9;">
+                <!-- Compteur de résultats -->
+                <div style="font-size:0.82rem; color:#64748b; margin-bottom:8px; min-height:20px;" id="b-count"></div>
+
+                <!-- TABLEAU -->
+                <div style="border:1px solid #e2e8f0; border-radius:8px; overflow:hidden; overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:0.875rem; min-width:620px;">
+                        <thead style="background:#f1f5f9; position:sticky; top:0; z-index:1;">
                             <tr>
-                                <th style="padding:12px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700;">Constructeur</th>
-                                <th style="padding:12px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700;">Pays</th>
-                                <th style="padding:12px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700;">Segment / Facteur</th>
-                                <th style="padding:12px 14px; text-align:center; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700;">Statut</th>
-                                <th style="padding:12px 14px; text-align:right; border-bottom:2px solid #cbd5e1; color:#1e293b; font-weight:700;">Prix d'entrée neuf</th>
+                                <th class="b-th" data-col="name"    style="padding:11px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700; cursor:pointer; user-select:none; white-space:nowrap;">Constructeur <span class="sort-icon">↕</span></th>
+                                <th class="b-th" data-col="pays_nom" style="padding:11px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700; cursor:pointer; user-select:none; white-space:nowrap;">Pays <span class="sort-icon">↕</span></th>
+                                <th class="b-th" data-col="annee"   style="padding:11px 14px; text-align:center; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700; cursor:pointer; user-select:none; white-space:nowrap;">Fondation <span class="sort-icon">↕</span></th>
+                                <th style="padding:11px 14px; text-align:left; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700; white-space:nowrap;">Segment</th>
+                                <th class="b-th" data-col="statut"  style="padding:11px 14px; text-align:center; border-bottom:2px solid #cbd5e1; border-right:1px solid #e2e8f0; color:#1e293b; font-weight:700; cursor:pointer; user-select:none; white-space:nowrap;">Statut <span class="sort-icon">↕</span></th>
+                                <th style="padding:11px 14px; text-align:right; border-bottom:2px solid #cbd5e1; color:#1e293b; font-weight:700; white-space:nowrap;">Prix d'entrée</th>
                             </tr>
                         </thead>
-                        <tbody id="brand-table-body">
-                            <tr class="art-brand-row" data-pays="France" data-statut="Actif" style="border-bottom:1px solid #e2e8f0; background:#fff;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bugatti</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇫🇷 France</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#fef08a; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#854d0e;">Hypercar Ultime</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#16a34a; font-weight:600;">Actif</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#dc2626;">3 500 000 € +</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Australie" data-statut="Actif" style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Brabham</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇦🇺 Australie</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#fef08a; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#854d0e;">Hypercar Piste</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#16a34a; font-weight:600;">Actif</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#dc2626;">1 200 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Italie" data-statut="Renaissance" style="border-bottom:1px solid #e2e8f0; background:#fff;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bizzarrini</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇮🇹 Italie</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#fed7aa; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#c2410c;">Sportive Radicale</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#2563eb; font-weight:600;">Renaissance</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700;">1 500 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Allemagne" data-statut="Actif" style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Brabus</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇩🇪 Allemagne</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#fed7aa; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#c2410c;">Tuning Ultra-Luxe</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#16a34a; font-weight:600;">Actif</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700;">500 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Angleterre" data-statut="Actif" style="border-bottom:1px solid #e2e8f0; background:#fff;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bentley</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇬🇧 Royaume-Uni</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#e0e7ff; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#4338ca;">Luxe / GT</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#16a34a; font-weight:600;">Actif</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700;">250 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Angleterre" data-statut="Actif" style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>BAC</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇬🇧 Royaume-Uni</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#e2e8f0; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#334155;">Track Toy Extrême</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#16a34a; font-weight:600;">Actif</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700;">200 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Angleterre" data-statut="Confidentiel" style="border-bottom:1px solid #e2e8f0; background:#fff;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bowler</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇬🇧 Royaume-Uni</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#fef3c7; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#92400e;">Off-Road Racing</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#9333ea; font-weight:600;">Racheté (JLR)</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700;">150 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Allemagne" data-statut="Confidentiel" style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bitter</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇩🇪 Allemagne</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#e0e7ff; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#4338ca;">Grand Tourisme Artisan</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#9333ea; font-weight:600;">Confidentiel</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700;">100 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Allemagne" data-statut="Actif" style="border-bottom:1px solid #e2e8f0; background:#fff;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>BMW</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇩🇪 Allemagne</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#d1fae5; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#047857;">Premium Sportif</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#16a34a; font-weight:600;">Actif</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700;">45 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="USA" data-statut="Actif" style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Buick</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇺🇸 USA</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#d1fae5; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#047857;">Premium Access</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#16a34a; font-weight:600;">Actif</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700;">40 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Chine" data-statut="Actif" style="border-bottom:1px solid #e2e8f0; background:#fff;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>BYD</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇨🇳 Chine</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#ccfbf1; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#0f766e;">Généraliste EV</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#16a34a; font-weight:600;">Actif</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#16a34a;">30 000 €</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Italie" data-statut="Renaissance" style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bertone</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇮🇹 Italie</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#f3e8ff; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#6b21a8;">Design & Carrosserie</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#2563eb; font-weight:600;">Renaissance</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#94a3b8;">Sur mesure</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Angleterre" data-statut="Disparu" style="border-bottom:1px solid #e2e8f0; background:#fff;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Bristol</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇬🇧 Royaume-Uni</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#f1f5f9; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#475569;">Luxe Confidentiel</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#ef4444; font-weight:600;">Disparu (2020)</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#94a3b8;">N/A (Occasion)</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Allemagne" data-statut="Disparu" style="border-bottom:1px solid #e2e8f0; background:#f8fafc;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>Borgward</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇩🇪 Allemagne</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#f1f5f9; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#475569;">Généraliste Populaire</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#ef4444; font-weight:600;">Disparu (1961)</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#94a3b8;">N/A (Collection)</td>
-                            </tr>
-                            <tr class="art-brand-row" data-pays="Angleterre" data-statut="Disparu" style="background:#fff;">
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><strong>BSA</strong></td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;">🇬🇧 Royaume-Uni</td>
-                                <td style="padding:10px 14px; border-right:1px solid #e2e8f0;"><span style="background:#f1f5f9; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; color:#475569;">Motos & Cyclecars</span></td>
-                                <td style="padding:10px 14px; text-align:center; border-right:1px solid #e2e8f0; color:#ef4444; font-weight:600;">Disparu (1973)</td>
-                                <td style="padding:10px 14px; text-align:right; font-weight:700; color:#94a3b8;">N/A (Collection)</td>
-                            </tr>
+                        <tbody id="b-table-body">
+                        <?php
+                        $prix_colors = [
+                            'entree'   => ['bg'=>'#dcfce7','color'=>'#166534'],
+                            'premium'  => ['bg'=>'#dbeafe','color'=>'#1e40af'],
+                            'luxe'     => ['bg'=>'#ede9fe','color'=>'#5b21b6'],
+                            'hypercar' => ['bg'=>'#fee2e2','color'=>'#991b1b'],
+                            'nc'       => ['bg'=>'#f1f5f9','color'=>'#64748b'],
+                        ];
+                        $statut_styles = [
+                            'Actif'        => 'color:#16a34a; font-weight:700;',
+                            'Disparu'      => 'color:#ef4444; font-weight:600;',
+                            'Renaissance'  => 'color:#2563eb; font-weight:700;',
+                            'Racheté JLR'  => 'color:#d97706; font-weight:600;',
+                            'Confidentiel' => 'color:#9333ea; font-weight:600;',
+                            'Incertain'    => 'color:#ca8a04; font-weight:600;',
+                        ];
+                        $segment_labels = [
+                            'generaliste' => 'Généraliste',
+                            'premium'     => 'Premium & Sportif',
+                            'luxe'        => 'Luxe & GT',
+                            'hypercar'    => 'Hypercar',
+                            'electrique'  => 'Électrique',
+                            'artisan'     => 'Artisan / Exotique',
+                            'preparateur' => 'Préparateur',
+                            'offroad'     => 'Tout-terrain / Racing',
+                            'historique'  => 'Historique / Collection',
+                        ];
+                        foreach ($marques_b as $i => $m):
+                            $pr = $prix_colors[$m['prix_range']] ?? $prix_colors['nc'];
+                            $bg = $i % 2 === 0 ? '#fff' : '#f8fafc';
+                        ?>
+                        <tr class="b-row"
+                            data-name="<?php echo strtolower($m['name']); ?>"
+                            data-pays="<?php echo $m['pays_nom']; ?>"
+                            data-statut="<?php echo $m['statut']; ?>"
+                            data-prix="<?php echo $m['prix_range']; ?>"
+                            data-annee="<?php echo $m['annee']; ?>"
+                            style="border-bottom:1px solid #e2e8f0; background:<?php echo $bg; ?>; transition:background .15s;"
+                            onmouseover="this.style.background='#eff6ff';"
+                            onmouseout="this.style.background='<?php echo $bg; ?>';">
+                            <td style="padding:9px 14px; border-right:1px solid #e2e8f0; font-weight:700; white-space:nowrap;"><?php echo $m['name']; ?></td>
+                            <td style="padding:9px 14px; border-right:1px solid #e2e8f0; white-space:nowrap;"><?php echo $m['pays']; ?> <?php echo $m['pays_nom']; ?></td>
+                            <td style="padding:9px 14px; border-right:1px solid #e2e8f0; text-align:center; color:#64748b;"><?php echo $m['annee']; ?></td>
+                            <td style="padding:9px 14px; border-right:1px solid #e2e8f0;">
+                                <span style="font-size:0.72rem; font-weight:600; white-space:nowrap;"><?php echo $segment_labels[$m['segment']] ?? $m['segment']; ?></span>
+                            </td>
+                            <td style="padding:9px 14px; border-right:1px solid #e2e8f0; text-align:center; <?php echo $statut_styles[$m['statut']] ?? ''; ?> font-size:0.82rem; white-space:nowrap;"><?php echo $m['statut']; ?></td>
+                            <td style="padding:9px 14px; text-align:right;">
+                                <span style="font-size:0.75rem; font-weight:700; padding:3px 8px; border-radius:4px; background:<?php echo $pr['bg']; ?>; color:<?php echo $pr['color']; ?>; white-space:nowrap;"><?php echo $m['prix_label']; ?></span>
+                            </td>
+                        </tr>
+                        <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
 
+                <!-- JS Filtrage + Tri -->
                 <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    const filterPays = document.getElementById('filter-pays');
-                    const filterStatut = document.getElementById('filter-statut');
-                    const rows = document.querySelectorAll('.art-brand-row');
+                (function() {
+                    var search  = document.getElementById('b-search');
+                    var selPays = document.getElementById('b-filter-pays');
+                    var selStat = document.getElementById('b-filter-statut');
+                    var pills   = document.querySelectorAll('.b-pill');
+                    var rows    = document.querySelectorAll('.b-row');
+                    var count   = document.getElementById('b-count');
+                    var ths     = document.querySelectorAll('.b-th');
+                    var activePrix = 'all';
+                    var sortCol = null, sortDir = 1;
 
-                    function filterTable() {
-                        const pays = filterPays.value;
-                        const statut = filterStatut.value;
-                        
-                        rows.forEach(row => {
-                            const rowPays = row.getAttribute('data-pays');
-                            const rowStatut = row.getAttribute('data-statut');
-                            
-                            let matchPays = (pays === 'all' || rowPays === pays);
-                            let matchStatut = (statut === 'all' || rowStatut === statut || (statut === 'Confidentiel' && rowStatut === 'Confidentiel'));
-                            
-                            if (matchPays && matchStatut) {
-                                row.style.display = '';
-                            } else {
-                                row.style.display = 'none';
-                            }
+                    function filterRows() {
+                        var q  = search.value.toLowerCase().trim();
+                        var p  = selPays.value;
+                        var s  = selStat.value;
+                        var vis = 0;
+                        rows.forEach(function(r) {
+                            var show = (!q || r.dataset.name.includes(q))
+                                && (p === 'all' || r.dataset.pays === p)
+                                && (s === 'all' || r.dataset.statut === s)
+                                && (activePrix === 'all' || r.dataset.prix === activePrix);
+                            r.style.display = show ? '' : 'none';
+                            if (show) vis++;
+                        });
+                        count.textContent = vis + ' marque' + (vis > 1 ? 's' : '') + ' trouvée' + (vis > 1 ? 's' : '');
+                    }
+
+                    function sortTable(col) {
+                        if (sortCol === col) { sortDir *= -1; } else { sortCol = col; sortDir = 1; }
+                        ths.forEach(function(th) {
+                            var ic = th.querySelector('.sort-icon');
+                            if (ic) ic.textContent = (th.dataset.col === col) ? (sortDir === 1 ? '↑' : '↓') : '↕';
+                        });
+                        var tbody = document.getElementById('b-table-body');
+                        var arr = Array.from(tbody.querySelectorAll('tr'));
+                        arr.sort(function(a, b) {
+                            var va = a.dataset[col] || '';
+                            var vb = b.dataset[col] || '';
+                            if (!isNaN(va) && !isNaN(vb)) return sortDir * (Number(va) - Number(vb));
+                            return sortDir * va.localeCompare(vb, 'fr');
+                        });
+                        arr.forEach(function(r) { tbody.appendChild(r); });
+                        // restripe
+                        var vis = arr.filter(function(r) { return r.style.display !== 'none'; });
+                        vis.forEach(function(r, i) {
+                            var base = i % 2 === 0 ? '#fff' : '#f8fafc';
+                            r.style.background = base;
+                            r.onmouseout = function() { this.style.background = base; };
                         });
                     }
 
-                    filterPays.addEventListener('change', filterTable);
-                    filterStatut.addEventListener('change', filterTable);
-                });
+                    pills.forEach(function(btn) {
+                        btn.addEventListener('click', function() {
+                            pills.forEach(function(b) {
+                                b.style.background = '#fff';
+                                b.style.borderColor = '#e2e8f0';
+                                b.style.color = '#475569';
+                                b.classList.remove('active');
+                            });
+                            this.style.background = '#2563eb';
+                            this.style.borderColor = '#2563eb';
+                            this.style.color = '#fff';
+                            this.classList.add('active');
+                            activePrix = this.dataset.prix;
+                            filterRows();
+                        });
+                    });
+
+                    ths.forEach(function(th) {
+                        th.addEventListener('click', function() { sortTable(this.dataset.col); });
+                    });
+
+                    search.addEventListener('input', filterRows);
+                    selPays.addEventListener('change', filterRows);
+                    selStat.addEventListener('change', filterRows);
+
+                    document.getElementById('b-reset').addEventListener('click', function() {
+                        search.value = '';
+                        selPays.value = 'all';
+                        selStat.value = 'all';
+                        activePrix = 'all';
+                        pills.forEach(function(b) {
+                            b.style.background = '#fff';
+                            b.style.borderColor = '#e2e8f0';
+                            b.style.color = '#475569';
+                            b.classList.remove('active');
+                        });
+                        document.querySelector('[data-prix="all"]').style.background = '#2563eb';
+                        document.querySelector('[data-prix="all"]').style.borderColor = '#2563eb';
+                        document.querySelector('[data-prix="all"]').style.color = '#fff';
+                        sortCol = null; sortDir = 1;
+                        ths.forEach(function(th) {
+                            var ic = th.querySelector('.sort-icon');
+                            if (ic) ic.textContent = '↕';
+                        });
+                        filterRows();
+                    });
+
+                    filterRows();
+                })();
                 </script>
 
-                <!-- TOP 3 MODÈLES PAR MARQUE -->
-                <div style="margin-top:56px; border-top:2px dashed #cbd5e1; padding-top:40px;">
-                    <h2 style="margin-bottom:24px;">Les meilleurs modèles pour chaque marque de voiture en B</h2>
-                    <p style="margin-bottom:32px;">L'histoire d'un constructeur s'écrit par ses succès d'ingénierie ou de design. Voici pour chaque marque abordée le top 3 des modèles les plus iconiques, qu'ils soient des best-sellers modernes ou des chefs-d'œuvre historiques inestimables.</p>
+            </div><!-- fin tableau -->
 
-                    <div style="display:flex; flex-direction:column; gap:36px;">
-                        
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">BMW</h3>
-                            <p style="color:#475569;">Le constructeur bavarois s'est toujours distingué par son "plaisir de conduire", ses blocs 6 cylindres en ligne et la sportivité absolue de sa division Motorsport.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 BMW Série 3 (et M3)</strong> : La référence incontestée des berlines sportives et le plus grand succès commercial de la marque.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 BMW Série 5 (et M5)</strong> : Le parfait compromis pour ceux qui cherchent l'espace d'une grande routière allié à la brutalité d'un V8 bi-turbo.</li>
-                                <li><strong>#3 BMW X5</strong> : Un des tous premiers et plus influents SUV de luxe, ayant redéfini le marché dans les années 2000.</li>
-                            </ul>
-                        </div>
+            <!-- TOP MODÈLES PAR MARQUE -->
+            <div class="art-content" style="margin-top:48px; border-top:2px dashed #cbd5e1; padding-top:40px;">
+                <h2>Les meilleurs modèles pour chaque marque automobile en B</h2>
+                <p>Chaque constructeur s'écrit par ses succès iconiques. Voici, marque par marque, le top 3 des modèles les plus marquants — best-sellers actuels, chefs-d'œuvre historiques ou ruptures technologiques.</p>
 
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">Bugatti</h3>
-                            <p style="color:#475569;">Fierté alsacienne et chef de file incontesté de la démesure mécanique depuis l'ère VW. Chaque Bugatti repousse les limites de la physique et de la vitesse maximale.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 Bugatti Veyron 16.4</strong> : La première hypercar de série de l'ère moderne à avoir brisé la barrière symbolique des 400 km/h (1001 chevaux).</li>
-                                <li style="margin-bottom:8px;"><strong>#2 Bugatti Chiron</strong> : L'aboutissement du monumental moteur W16 quadriturbo avec 1500 à 1600 chevaux selon les finitions.</li>
-                                <li><strong>#3 Bugatti Tourbillon</strong> : La toute nouvelle ère de la marque, combinant un V16 atmosphérique à un système hybride pour plus de 1800 chevaux.</li>
-                            </ul>
-                        </div>
+                <div style="display:flex; flex-direction:column; gap:40px; margin-top:32px;">
 
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">Bentley</h3>
-                            <p style="color:#475569;">La marque de Crewe, concurrente éternelle de Rolls-Royce, met un point d'honneur à allier le bois et le cuir les plus nobles à des performances stupéfiantes, notamment grâce à son fameux W12 (aujourd'hui V8 hybride).</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 Bentley Continental GT</strong> : Le grand tourisme redéfini. Un coupé magistral capable d'avaler les kilomètres à plus de 300 km/h dans un silence absolu.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 Bentley Bentayga</strong> : L'initiateur du segment des SUV ultra-luxe, combinant capacités de franchissement et confort royal.</li>
-                                <li><strong>#3 Bentley Flying Spur</strong> : La limousine de prestige qui offre des sensations de conduite étonnamment dynamiques pour son poids.</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">BYD (Build Your Dreams)</h3>
-                            <p style="color:#475569;">Le géant chinois est passé en moins de 20 ans d'un simple fabricant de batteries au statut de leader mondial des ventes de véhicules électrifiés, menaçant directement la suprématie de Tesla.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 BYD Seal</strong> : La berline aérodynamique conçue directement comme une riposte haut de gamme et performante à la Tesla Model 3.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 BYD Atto 3</strong> : Le SUV compact électrique populaire qui a permis à BYD de percer massivement sur le marché européen.</li>
-                                <li><strong>#3 BYD Dolphin</strong> : Une citadine intelligente et abordable, actrice majeure de la démocratisation de l'électrique.</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">Buick</h3>
-                            <p style="color:#475569;">Une marque historique du groupe GM (General Motors). Si elle a perdu de son panache sportif aux US, elle survit magnifiquement bien en Chine où elle est perçue comme un véritable symbole de réussite premium.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 Buick Enclave</strong> : Le SUV familial statutaire, roi des grands espaces nord-américains.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 Buick Envista</strong> : Le tout nouveau crossover urbain et stylisé ciblant une clientèle plus jeune.</li>
-                                <li><strong>#3 Buick Riviera (Historique)</strong> : L'un des coupés de luxe les plus emblématiques des années 60 et 70 (le fameux design "Boat tail").</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">Brabus</h3>
-                            <p style="color:#475569;">Plus qu'un préparateur, Brabus est reconnu comme un constructeur à part entière par le gouvernement allemand. Leur credo : prendre une Mercedes AMG, la peindre en noir, et doubler la puissance avec une sellerie outrancière.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 Brabus 900 Rocket Edition</strong> : Basé sur le Mercedes Classe G, il propulse cette armoire à glace avec ses 900 chevaux et son couple camionesque.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 Brabus 800 (AMG GT)</strong> : L'AMG GT 4 portes transformée en missile sol-sol avec une agressivité carbone assumée.</li>
-                                <li><strong>#3 Brabus XLP</strong> : Un Classe G coupé, rallongé et transformé en pick-up d'exploration extrême.</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">BAC (Briggs Automotive Company)</h3>
-                            <p style="color:#475569;">L'excentricité britannique à l'état pur. BAC ne produit qu'une seule voiture, mais quelle voiture : une monoplace ultra-légère sans pare-brise ni portières, légale sur route ouverte.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 BAC Mono</strong> : Le modèle original qui a révolutionné le concept des "Track Toys".</li>
-                                <li style="margin-bottom:8px;"><strong>#2 BAC Mono R</strong> : Une version poussée à l'extrême, utilisant des panneaux infusés au graphène pour passer sous la barre des 560 kilos.</li>
-                                <li><strong>#3 BAC Mono F</strong> : La dernière itération embarquant un moteur turbocompressé pour encore plus de brutalité à la remise des gaz.</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">Bertone</h3>
-                            <p style="color:#475569;">Le studio Bertone, c'est l'essence même du design italien sous la houlette de Marcello Gandini. Après la faillite, la marque tente de renaître en tant que constructeur de ses propres supercars.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 Lamborghini Miura (Chef-d'œuvre design)</strong> : Bien qu'elle soit une Lamborghini, elle a été dessinée par Bertone. C'est la première véritable supercar de l'histoire.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 Lancia Stratos Zero (Concept)</strong> : Le concept-car "Wedge design" (en forme de coin) le plus fou des années 70, mesurant à peine 84 cm de haut.</li>
-                                <li><strong>#3 Bertone GB110</strong> : Le tout premier modèle présenté par la marque "ressuscitée" en 2022, une hypercar développant 1100 chevaux.</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">Bizzarrini</h3>
-                            <p style="color:#475569;">Giotto Bizzarrini, l'ingénieur à l'origine de la mythique Ferrari 250 GTO et du moteur V12 Lamborghini, a fondé sa propre marque pour concurrencer le Commendatore Enzo Ferrari.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 5300 GT Strada</strong> : Le chef-d'œuvre. Une carrosserie italienne sculpturale abritant un fiable et puissant gros V8 Chevrolet.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 P538</strong> : Une rarissime barquette de course des années 60, construite à seulement quelques unités.</li>
-                                <li><strong>#3 5300 GT Revival Corsa</strong> : Le modèle de la renaissance, reconstruit à l'identique (continuation car) pour des collectionneurs fortunés.</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">Brabham</h3>
-                            <p style="color:#475569;">Marque de légende en F1 (fondée par Sir Jack Brabham). Récemment relancée en Australie par son fils David, elle fabrique aujourd'hui des pistardes radicales.</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 Brabham BT62</strong> : Une supercar de 700 ch pour 972 kg, capable de générer 1200 kg d'appui aérodynamique. Strictement réservée au circuit.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 Brabham BT62R</strong> : La version "R" pour Road. Elle est dotée d'une suspension réglable permettant de l'homologuer sur la route, au prix d'un confort spartiate.</li>
-                                <li><strong>#3 Brabham BT19 (Historique)</strong> : La Formule 1 avec laquelle Jack Brabham remporta le championnat de 1966.</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="color:#2563eb; font-size:1.3rem; border-left:4px solid #2563eb; padding-left:12px;">Borgward / Bristol / Bitter / Bowler / BSA</h3>
-                            <p style="color:#475569;">Ces autres marques méritent une mention honorable pour leurs apports singuliers à l'histoire automobile :</p>
-                            <ul style="list-style:none; padding-left:0;">
-                                <li style="margin-bottom:8px;"><strong>#1 Borgward Isabella (Borgward)</strong> : Le best-seller allemand des années 50, réputé pour son élégance, avant la faillite tragique de la marque.</li>
-                                <li style="margin-bottom:8px;"><strong>#2 Bristol Fighter (Bristol)</strong> : L'excentrique sportive anglaise à portes papillon équipée d'un V10 de Dodge Viper.</li>
-                                <li style="margin-bottom:8px;"><strong>#3 Bitter CD (Bitter)</strong> : Le somptueux coupé GT allemand au look italien, conçu sur un châssis d'Opel Diplomat V8.</li>
-                                <li style="margin-bottom:8px;"><strong>#4 Bowler Wildcat (Bowler)</strong> : Le véhicule de rallye-raid par excellence, monstre rugissant basé sur un Defender.</li>
-                                <li><strong>#5 BSA Scout (BSA)</strong> : Une des rares petites sportives des années 30 à adopter la traction avant, un exploit technique pour l'époque.</li>
-                            </ul>
-                        </div>
-
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">BMW</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Le constructeur bavarois construit sa réputation sur la rigueur de ses 6-cylindres en ligne, le plaisir de conduite et la violence contenue de sa division M. Avec l'électrique (i4, iX), BMW réussit le virage sans abandonner sa philosophie.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 BMW Série 3 / M3</strong> — La berline sportive de référence absolue. La M3 CSL 2023 à 543 ch est le sommet d'une lignée qui dure depuis 1975.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 BMW Série 5 / M5</strong> — Le compromis parfait entre grande routière confortable et missile V8 bi-turbo. La M5 2024 hybride annonce une nouvelle ère.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 BMW X5</strong> — L'un des pionniers du SUV de luxe (1999). Toujours leader de son segment, aujourd'hui disponible en version M Competition de 625 ch.</li>
+                        </ul>
                     </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">Bugatti</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Fierté alsacienne. Depuis le rachat par VW, chaque Bugatti est une démonstration de puissance mécanique ultime. La marque détient plusieurs records de vitesse maximale et chaque modèle est fabriqué en séries de moins de 500 exemplaires.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 Bugatti Veyron 16.4</strong> — 1 001 ch, 407 km/h. En 2005, la première hypercar de série à briser la barre symbolique des 400 km/h avec son W16 8,0 L quadriturbo.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 Bugatti Chiron Super Sport 300+</strong> — 1 600 ch, 490,48 km/h. Le record du monde de vitesse pour une voiture de production en 2019.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 Bugatti Tourbillon</strong> — La nouvelle génération (2024) : V16 atmosphérique 8,3 L + hybride = 1 800 ch. Le W16 tire sa révérence pour le roi des atmosphériques.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">Bentley</h3>
+                        <p style="color:#475569; margin-bottom:10px;">La marque de Crewe, rivale éternelle de Rolls-Royce, marie boiseries précieuses, cuirs pleine fleur et W12 dévastateur (aujourd'hui remplacé par un V8 hybride). Elle a lancé le segment des SUV ultra-luxe avec le Bentayga en 2015.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 Bentley Continental GT</strong> — Le grand tourisme redéfini. Capable de dévorer 1 000 km en silence à 300 km/h dans un intérieur mieux habillé qu'un salon privé.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 Bentley Bentayga</strong> — Premier SUV à avoir franchi le million d'euros en version Speed. L'Everest en V8 ou hybride rechargeable selon les besoins.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 Bentley Flying Spur</strong> — La limousine aux allures de berline sportive. Étonnamment dynamique pour 2,4 tonnes de luxe absolu.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">BYD (Build Your Dreams)</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Passé en 20 ans de fabricant de batteries pour téléphones au leader mondial du véhicule électrifié. BYD a vendu plus de véhicules que Tesla en 2023 et débarque agressivement en Europe avec une gamme complète et compétitive.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 BYD Seal</strong> — La berline aérodynamique (Cd 0,219) pensée pour rivaliser avec la Tesla Model 3 : 523 ch en bimotor, 0-100 en 3,8 s.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 BYD Atto 3</strong> — Le SUV compact qui a ouvert les marchés européens et australien à BYD. 420 km d'autonomie pour un prix compétitif.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 BYD Han</strong> — La grande berline premium de la marque, best-seller en Chine, qui incarne les ambitions haut de gamme de BYD avec ses 715 km d'autonomie.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">Buick</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Fondateur de General Motors et fleuron de la classe moyenne américaine. Aujourd'hui, la marque survit surtout grâce à la Chine où elle est perçue comme un symbole de réussite, avec des volumes que les USA n'arrivent plus à égaler.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 Buick Enclave</strong> — Le SUV familial 3 rangées, roi des parkings nord-américains. Spacieux, confortable, et suffisamment premium pour justifier son badge.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 Buick Riviera (1963–1999)</strong> — L'un des plus beaux coupés de luxe américains. Le "Boat Tail" de 1971 reste une icône de style que les collectionneurs s'arrachent.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 Buick Envision</strong> — Le SUV compact intermédiaire de la gamme. Très populaire en Chine, il incarne le repositionnement de Buick vers une clientèle urbaine.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">Brabus</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Reconnu officiellement comme constructeur automobile en Allemagne. Le mantra de Brabus : prendre une Mercedes AMG, la peindre en noir (souvent), doubler la puissance et recouvrir l'intérieur de cuir Alcantara brodé d'or. Et facturer en conséquence.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 Brabus 900 Rocket Edition</strong> — Un Mercedes Classe G à 900 ch. Cette armoire à glace de 2,5 tonnes abat le 0-100 en moins de 4 secondes avec un bruit d'apocalypse.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 Brabus 800 (AMG GT 4 portes)</strong> — 800 ch, 0-100 en 3,0 s. Une Classe S déguisée en missile sol-sol avec une agressivité carbone assumée de bout en bout.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 Brabus XLP "Superblack"</strong> — La transformation la plus folle : un Classe G coupé, la partie arrière enlevée et remplacée par une benne de pick-up d'expédition grand luxe.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">BAC (Briggs Automotive Company)</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Liverpool, 2009. Les frères Briggs inventent la voiture de piste légale sur route : une monoplace sans pare-brise ni toit, avec un arceau de sécurité et un moteur turbo de moto. La Mono est homologuée en tant que "voiture à une place".</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 BAC Mono</strong> — Le modèle originel. 270 ch, 570 kg, ratio puissance/poids de 475 ch/tonne. Sur circuit, elle humilie des supercars deux fois plus chères.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 BAC Mono R</strong> — La version radicalisée avec panneaux en graphène pur. Sous les 560 kg pour une rigidité accrue, réservée aux puristes absolus.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 BAC Mono F</strong> — La dernière génération avec moteur turbocompressé, plus puissante et plus accessible que la R. La BAC "entrée de gamme" si l'on peut dire.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">Bertone</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Le studio de carrosserie de Gruppo Bertone, c'est l'œil de Marcello Gandini mis au service des plus grands constructeurs. Après la faillite en 2014, la marque ressuscite en constructeur avec la GB110, une hypercar à 1 100 ch.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 Lamborghini Miura (1966, design Bertone)</strong> — Considérée comme la première vraie supercar de l'histoire. Bertone a dessiné la carrosserie. Gandini avait 25 ans.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 Lancia Stratos Zero (Concept, 1970)</strong> — 84 cm de hauteur, design en coin pur. Le concept-car qui a influencé toute la décennie 70 en matière de design automobile.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 Bertone GB110 (2022)</strong> — La renaissance : première voiture construite et commercialisée sous le nom Bertone. 1 100 ch, hommage au chiffre 110 ans d'histoire du studio.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">Bizzarrini</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Giotto Bizzarrini était l'ingénieur en chef derrière la Ferrari 250 GTO et le moteur V12 Lamborghini. Renvoyé par Ferrari lors du "Palazzo revolt" de 1961, il fonda sa propre marque pour montrer ce dont il était capable.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 Bizzarrini 5300 GT Strada</strong> — Une carrosserie italienne sculpturale par Giugiaro sur un bloc V8 Chevrolet fiable. Aérodynamique éprouvée en compétition, 310 ch pour 1 050 kg.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 Bizzarrini P538</strong> — La barquette de course des années 60, construite à seulement 3 exemplaires. Un objet rarissime de collection venant d'un ingénieur de génie.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 Bizzarrini 5300 GT Revival (2023)</strong> — La résurrection moderne. Une "continuation car" reconstruite à l'identique avec les matériaux et méthodes d'aujourd'hui pour 24 heureux propriétaires.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">Brabham</h3>
+                        <p style="color:#475569; margin-bottom:10px;">La marque porte le nom de Sir Jack Brabham, triple champion du monde de F1 et seul pilote à avoir gagné le titre avec une voiture portant son propre nom (1966). Son fils David l'a ressuscitée à Adelaide en 2017.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 Brabham BT62</strong> — 700 ch, 972 kg, 1 200 kg d'appui aérodynamique. Une formule 1 street-legal : on ne monte pas simplement dedans, on l'enfile.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 Brabham BT62R</strong> — La version route de la BT62. Suspension adaptée, silencieux, homologuée. Le record d'appui reste, le confort spartiate aussi.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 Brabham BT19 (1966, F1)</strong> — La Formule 1 avec laquelle Jack Brabham remporta son 3e titre de champion du monde, premier et seul pilote à le faire sur sa propre voiture.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="color:#1e3a8a; font-size:1.25rem; border-left:4px solid #2563eb; padding-left:12px; margin-bottom:8px;">Bowler</h3>
+                        <p style="color:#475569; margin-bottom:10px;">Drew Bowler voulait une voiture de rallye-raid basée sur Land Rover mais plus fiable et plus rapide que les préparations maison. Il en fit une entreprise. Racheté par Jaguar Land Rover, Bowler organise désormais ses propres championnats off-road.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:7px;">
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #2563eb;"><strong>#1 Bowler Wildcat</strong> — La star du Dakar et du Rallye des Phaétons. Moteur 4,6 L Rover V8, tubulaire, cage intégrale, tout pour avaler le désert en musique.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #64748b;"><strong>#2 Bowler EXR S</strong> — Le modèle homologué route dérivé de la Rangerover. 550 ch, suspension long débattement, carrosserie carbone. Pour les samedis shopping et les dimanches Dakar.</li>
+                            <li style="padding:10px 14px; background:#f8fafc; border-radius:8px; border-left:3px solid #94a3b8;"><strong>#3 Bowler Defender Challenge</strong> — La compétition one-make lancée depuis le rachat par JLR. Tous les concurrents pilotent le même Defender 110 préparé pour des épreuves hors route équitables.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Marques historiques groupées -->
+                    <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:20px 24px;">
+                        <h3 style="color:#475569; font-size:1.15rem; border-left:4px solid #94a3b8; padding-left:12px; margin-bottom:8px;">Borgward, Bristol, BSA, Bond, Bricklin — Les légendes disparues</h3>
+                        <p style="color:#64748b; font-size:0.88rem; margin-bottom:14px;">Ces marques ont contribué à l'histoire automobile sans toujours recevoir la reconnaissance qu'elles méritaient. Elles appartiennent désormais au domaine du collection et de la nostalgie.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:8px; font-size:0.88rem;">
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>Borgward Isabella (1954–1961)</strong> — L'élégante berline allemande qui rivalisait avec Mercedes avant la faillite suspecte orchestrée selon certains par ses concurrents.</li>
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>Bristol Fighter (2004)</strong> — V10 de Dodge Viper, carrosserie maison, portes papillon et zéro marketing. Tout Bristol : une berline confidentielle à 310 km/h pour initiés seulement.</li>
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>BSA Scout (1935)</strong> — Rarissime petite sportive à traction avant d'un fabricant de motos. Un exploit technique qui préfigure les architectures modernes.</li>
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>Bond Bug (1970)</strong> — Micro-tricycle orange à cockpit basculant. Avec sa ligne futuriste dessinée par Tom Karen (Ogle Design), il reste l'un des objets automobiles les plus étranges et attachants du XXe siècle.</li>
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>Bricklin SV-1 (1974–1975)</strong> — La tentative canadienne de créer une voiture de sport sécurisée financée avec argent public. Portes papillon, carrosserie en plastique, et 2 900 exemplaires avant la faillite inévitable.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Marques chinoises groupées -->
+                    <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:12px; padding:20px 24px;">
+                        <h3 style="color:#14532d; font-size:1.15rem; border-left:4px solid #16a34a; padding-left:12px; margin-bottom:8px;">BAIC, Baojun, Bestune, Brilliance — L'industrie chinoise en B</h3>
+                        <p style="color:#166534; font-size:0.88rem; margin-bottom:14px;">Ces quatre marques représentent la puissance industrielle chinoise : volumes colossaux, technologies en progression rapide, et ambitions internationales croissantes.</p>
+                        <ul style="list-style:none; padding-left:0; margin:0; display:flex; flex-direction:column; gap:8px; font-size:0.88rem; color:#374151;">
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>BAIC BJ40</strong> — Le SUV iconique du groupe BAIC, inspiré du Jeep Wrangler, qui rencontre un succès inattendu au Moyen-Orient et en Afrique.</li>
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>Baojun E100</strong> — La micro-citadine électrique 2 places à 8 000 €. Symbole de l'électrification de masse en Chine rurale et périurbaine.</li>
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>Bestune B70</strong> — La grande berline FAW premium qui veut jouer dans la cour des Peugeot et Toyota en Chine, avec finitions soignées et prix compétitifs.</li>
+                            <li style="padding:9px 12px; background:#fff; border-radius:7px;"><strong>Brilliance V7</strong> — Le SUV qui a permis à Brilliance de se démarquer de son image d'assembleur BMW pour construire une identité propre sur le marché domestique.</li>
+                        </ul>
+                    </div>
+
                 </div>
-            </div>
+            </div><!-- fin top modèles -->
 
             <!-- NAVIGATION LETTRES -->
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:36px; padding:20px 24px; background:#f8f9fa; border-radius:12px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:36px; padding:18px 22px; background:#f8f9fa; border-radius:12px;">
                 <a href="/marques/a" style="color:#2563eb; font-weight:600; text-decoration:none;">← Marques en A</a>
                 <a href="/marques" style="color:#2563eb; font-weight:600; text-decoration:none;">↑ Retour à l'annuaire</a>
-                <span style="color:#adb5bd;">Marques en C → (bientôt)</span>
+                <span style="color:#adb5bd; font-size:0.9rem;">Marques en C → (bientôt)</span>
             </div>
 
         </div>
@@ -460,20 +562,46 @@ include __DIR__ . '/../header.php';
                         <?php endforeach; ?>
                     </div>
                 </div>
+
                 <div class="art-sidebar-block">
-                    <div class="art-sidebar-block-title">Top 5 marques en B</div>
-                    <ul style="list-style:none; padding:0;">
-                        <li style="padding:6px 0;"><span style="color:#2563eb; font-weight:600;">🇩🇪 BMW</span></li>
-                        <li style="padding:6px 0;"><span style="color:#2563eb; font-weight:600;">🇫🇷 Bugatti</span></li>
-                        <li style="padding:6px 0;"><span style="color:#2563eb; font-weight:600;">🇬🇧 Bentley</span></li>
-                        <li style="padding:6px 0;"><span style="color:#2563eb; font-weight:600;">🇨🇳 BYD</span></li>
-                        <li style="padding:6px 0;"><span style="color:#2563eb; font-weight:600;">🇺🇸 Buick</span></li>
+                    <div class="art-sidebar-block-title">Top marques en B</div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:5px 0; font-size:0.88rem;"><span style="color:#2563eb; font-weight:600;">🇩🇪 BMW</span> — Premium</li>
+                        <li style="padding:5px 0; font-size:0.88rem;"><span style="color:#2563eb; font-weight:600;">🇫🇷 Bugatti</span> — Hypercar</li>
+                        <li style="padding:5px 0; font-size:0.88rem;"><span style="color:#2563eb; font-weight:600;">🇬🇧 Bentley</span> — Luxe</li>
+                        <li style="padding:5px 0; font-size:0.88rem;"><span style="color:#2563eb; font-weight:600;">🇨🇳 BYD</span> — Électrique</li>
+                        <li style="padding:5px 0; font-size:0.88rem;"><span style="color:#2563eb; font-weight:600;">🇺🇸 Buick</span> — Premium US</li>
                     </ul>
                 </div>
+
+                <div class="art-sidebar-block">
+                    <div class="art-sidebar-block-title">Répartition par prix</div>
+                    <?php
+                    $prix_counts = array_count_values(array_column($marques_b, 'prix_range'));
+                    $prix_labels = ['entree'=>'< 30 000 €','premium'=>'30k – 100k €','luxe'=>'100k – 500k €','hypercar'=>'> 500k €','nc'=>'Collection / N.D.'];
+                    $prix_col    = ['entree'=>'#16a34a','premium'=>'#2563eb','luxe'=>'#7c3aed','hypercar'=>'#dc2626','nc'=>'#94a3b8'];
+                    foreach ($prix_labels as $key => $label):
+                        $n = $prix_counts[$key] ?? 0;
+                        if (!$n) continue;
+                    ?>
+                    <div style="display:flex; align-items:center; justify-content:space-between; padding:4px 0; font-size:0.82rem;">
+                        <span style="color:<?php echo $prix_col[$key]; ?>; font-weight:600;"><?php echo $label; ?></span>
+                        <span style="background:#f1f5f9; padding:1px 7px; border-radius:10px; font-weight:700; color:#334155;"><?php echo $n; ?></span>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+
                 <div class="art-sidebar-block" style="background:#eff6ff; border:1px solid #bfdbfe;">
                     <div class="art-sidebar-block-title" style="color:#1e3a8a;">Le Saviez-vous ?</div>
-                    <p style="font-size:0.85rem; color:#1e40af; margin:0;">
-                        Le nom <strong>BMW</strong> (Bayerische Motoren Werke) a été fondé en 1916. Le logo circulaire bleu et blanc ne représente pas une hélice en mouvement, comme on le croit souvent, mais reprend en réalité les couleurs inversées du drapeau de la Bavière !
+                    <p style="font-size:0.83rem; color:#1e40af; margin:0; line-height:1.5;">
+                        Le logo circulaire bleu et blanc de <strong>BMW</strong> ne représente pas une hélice d'avion en mouvement (légende urbaine). Il reprend simplement les couleurs inversées du drapeau de Bavière. La publicité aéronautique des années 30 a entretenu le mythe.
+                    </p>
+                </div>
+
+                <div class="art-sidebar-block" style="background:#fef9c3; border:1px solid #fde047;">
+                    <div class="art-sidebar-block-title" style="color:#713f12;">Chiffre clé</div>
+                    <p style="font-size:0.83rem; color:#854d0e; margin:0; line-height:1.5;">
+                        En 2023, <strong>BYD</strong> a vendu plus de 3 millions de véhicules électrifiés, dépassant Tesla sur ce critère. L'entreprise fabrique aussi bien ses batteries que ses semi-conducteurs — une intégration verticale unique dans l'industrie.
                     </p>
                 </div>
             </div>
@@ -488,7 +616,7 @@ include __DIR__ . '/../header.php';
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.garageraymond.fr/marques/b" },
   "name": "Marques Automobiles en B",
   "description": <?php echo json_encode($page_description ?? '', JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?>,
-  "numberOfItems": 15,
+  "numberOfItems": <?php echo $nb_marques; ?>,
   "publisher": { "@type": "Organization", "name": "Le garage expert Auto", "url": "https://www.garageraymond.fr" }
 }
 </script>
