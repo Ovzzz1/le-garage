@@ -165,7 +165,7 @@ include __DIR__ . '/../header.php';
             <div style="display:flex; justify-content:space-between; align-items:center; margin-top:36px; padding:20px 24px; background:#f8f9fa; border-radius:12px;">
                 <span style="color:#adb5bd;">← Pas de lettre précédente</span>
                 <a href="/marques" style="color:#7c3aed; font-weight:600; text-decoration:none;">↑ Retour à l'annuaire</a>
-                <span style="color:#adb5bd;">Marques en B → (bientôt)</span>
+                <a href="/marques/b" style="color:#2563eb; font-weight:600; text-decoration:none;">Marques en B →</a>
             </div>
 
         </div>
@@ -177,7 +177,9 @@ include __DIR__ . '/../header.php';
                     <div class="art-sidebar-block-title">Navigation A-Z</div>
                     <div style="display:flex; flex-wrap:wrap; gap:4px;">
                         <a href="/marques/a" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#7c3aed; color:#fff; font-weight:700; font-size:0.85rem; text-decoration:none;">A</a>
-                        <?php foreach (range('B', 'Z') as $l): ?>
+                        <a href="/marques/b" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#495057; font-weight:600; font-size:0.85rem; text-decoration:none;">B</a>
+                        <a href="/marques/c" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#495057; font-weight:600; font-size:0.85rem; text-decoration:none;">C</a>
+                        <?php foreach (range('D', 'Z') as $l): ?>
                         <span style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#adb5bd; font-weight:600; font-size:0.85rem;"><?php echo $l; ?></span>
                         <?php endforeach; ?>
                     </div>

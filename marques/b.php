@@ -544,7 +544,7 @@ include __DIR__ . '/../header.php';
             <div style="display:flex; justify-content:space-between; align-items:center; margin-top:36px; padding:18px 22px; background:#f8f9fa; border-radius:12px;">
                 <a href="/marques/a" style="color:#2563eb; font-weight:600; text-decoration:none;">← Marques en A</a>
                 <a href="/marques" style="color:#2563eb; font-weight:600; text-decoration:none;">↑ Retour à l'annuaire</a>
-                <span style="color:#adb5bd; font-size:0.9rem;">Marques en C → (bientôt)</span>
+                <a href="/marques/c" style="color:#2563eb; font-weight:600; text-decoration:none;">Marques en C →</a>
             </div>
 
         </div>
@@ -557,7 +557,8 @@ include __DIR__ . '/../header.php';
                     <div style="display:flex; flex-wrap:wrap; gap:4px;">
                         <a href="/marques/a" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#495057; font-weight:600; font-size:0.85rem; text-decoration:none;">A</a>
                         <a href="/marques/b" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#2563eb; color:#fff; font-weight:700; font-size:0.85rem; text-decoration:none;">B</a>
-                        <?php foreach (range('C', 'Z') as $l): ?>
+                        <a href="/marques/c" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#495057; font-weight:600; font-size:0.85rem; text-decoration:none;">C</a>
+                        <?php foreach (range('D', 'Z') as $l): ?>
                         <span style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#adb5bd; font-weight:600; font-size:0.85rem;"><?php echo $l; ?></span>
                         <?php endforeach; ?>
                     </div>

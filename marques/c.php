@@ -499,13 +499,14 @@ include __DIR__ . '/../header.php';
         <aside class="art-sidebar-right">
             <div style="position:sticky; top:24px; display:flex; flex-direction:column; gap:24px;">
                 <div class="art-sidebar-block">
-                    <div class="art-sidebar-block-title">Accès Rapide</div>
-                    <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:6px; text-align:center;">
-                        <a href="/marques/a" style="padding:8px 0; background:#f1f5f9; border-radius:6px; color:#2563eb; text-decoration:none; font-weight:700;">A</a>
-                        <a href="/marques/b" style="padding:8px 0; background:#f1f5f9; border-radius:6px; color:#2563eb; text-decoration:none; font-weight:700;">B</a>
-                        <a href="/marques/c" style="padding:8px 0; background:#2563eb; border-radius:6px; color:#fff; text-decoration:none; font-weight:700;">C</a>
-                        <span style="padding:8px 0; color:#cbd5e1; font-weight:700; cursor:not-allowed;">D</span>
-                        <span style="padding:8px 0; color:#cbd5e1; font-weight:700; cursor:not-allowed;">E</span>
+                    <div class="art-sidebar-block-title">Navigation A-Z</div>
+                    <div style="display:flex; flex-wrap:wrap; gap:4px;">
+                        <a href="/marques/a" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#495057; font-weight:600; font-size:0.85rem; text-decoration:none;">A</a>
+                        <a href="/marques/b" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#495057; font-weight:600; font-size:0.85rem; text-decoration:none;">B</a>
+                        <a href="/marques/c" style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#2563eb; color:#fff; font-weight:700; font-size:0.85rem; text-decoration:none;">C</a>
+                        <?php foreach (range('D', 'Z') as $l): ?>
+                        <span style="display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:6px; background:#e9ecef; color:#adb5bd; font-weight:600; font-size:0.85rem;"><?php echo $l; ?></span>
+                        <?php endforeach; ?>
                     </div>
                 </div>
 
