@@ -19,7 +19,7 @@ $categories = [
 $lettres = [
     'A' => ['count' => 24, 'preview' => 'Abarth, Alfa Romeo, Alpine, Aston Martin, Audi...', 'active' => true],
     'B' => ['count' => 15, 'preview' => 'Bentley, BMW, Bugatti, BYD...', 'active' => true],
-    'C' => ['count' => 0, 'preview' => 'Cadillac, Chevrolet, Citroën, Cupra...', 'active' => false],
+    'C' => ['count' => 20, 'preview' => 'Cadillac, Chevrolet, Citroën, Cupra...', 'active' => true],
     'D' => ['count' => 0, 'preview' => 'Dacia, Daihatsu, DS, Dodge...', 'active' => false],
     'E' => ['count' => 0, 'preview' => 'Ferrari (voir F), smart (voir S)...', 'active' => false],
     'F' => ['count' => 0, 'preview' => 'Ferrari, Fiat, Ford, Fisker...', 'active' => false],
@@ -149,11 +149,11 @@ include __DIR__ . '/header.php';
                 <h2 style="color:#fff; font-size:1.4rem; margin-bottom:20px;">📊 L'annuaire en chiffres</h2>
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(120px, 1fr)); gap:20px;">
                     <div>
-                        <div style="font-size:2.2rem; font-weight:800; color:#a78bfa;">39</div>
+                        <div style="font-size:2.2rem; font-weight:800; color:#a78bfa;">59</div>
                         <div style="font-size:0.85rem; opacity:0.8;">Marques en ligne</div>
                     </div>
                     <div>
-                        <div style="font-size:2.2rem; font-weight:800; color:#a78bfa;">2/26</div>
+                        <div style="font-size:2.2rem; font-weight:800; color:#a78bfa;">3/26</div>
                         <div style="font-size:0.85rem; opacity:0.8;">Lettres complétées</div>
                     </div>
                     <div>
@@ -190,7 +190,8 @@ include __DIR__ . '/header.php';
                     <ul style="list-style:none; padding:0;">
                         <li style="padding:8px 0;"><a href="/marques/a" style="color:#7c3aed; font-weight:600;">📁 Marques en A (24)</a></li>
                         <li style="padding:8px 0;"><a href="/marques/b" style="color:#7c3aed; font-weight:600;">📁 Marques en B (15)</a></li>
-                        <li style="padding:8px 0; color:#adb5bd;">📁 Marques en C (bientôt)</li>
+                        <li style="padding:8px 0;"><a href="/marques/c" style="color:#7c3aed; font-weight:600;">📁 Marques en C (20)</a></li>
+                        <li style="padding:8px 0; color:#adb5bd;">📁 Marques en D (bientôt)</li>
                     </ul>
                 </div>
                 <div class="art-sidebar-block">
