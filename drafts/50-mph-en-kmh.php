@@ -153,7 +153,7 @@ document.getElementById('kmhInput').addEventListener('input', function(e) {
 <h3>L'exception allemande : l'Autobahn sans limite</h3>
 <p>En Allemagne, sur le système métrique, certaines portions de l'Autobahn n'ont pas de limite légale, seulement une vitesse recommandée de 130 km/h (environ 80 mph). Vous y croiserez donc des véhicules évoluant à plus de 125 mph (200 km/h).</p>
 
-<p><strong>À lire aussi : <a href="/Blog/90km-blog-permis-voiture-moto-camion">Quelles sont les réglementations du permis à points ?</a></strong></p>
+<p><strong>À lire aussi : <a href="/Blog/90km-blog-permis-voiture-moto-camion">Blog 90km : tout sur le permis voiture, moto et camion</a></strong></p>
 
 <h2 id="biologie">Vitesse et biologie : ce que 80 km/h représente réellement</h2>
 <p>L'humain n'est biologiquement pas conçu pour encaisser l'énergie cinétique dégagée par un véhicule à ces vitesses. Pour mettre les choses en perspective, le record absolu de vitesse humaine à pied, établi par Usain Bolt, est de 44,72 km/h (soit environ 27,8 mph).</p>
