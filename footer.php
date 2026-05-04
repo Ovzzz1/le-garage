@@ -32,17 +32,19 @@
             <ul class="footer-links">
                 <li><a href="/a-propos">À Propos</a></li>
                 <li><a href="/equipe">L'Équipe</a></li>
-                <li><a href="/occasion">Guide d'Achat Auto</a></li>
-                <li><a href="/entretien">Tutoriels Mécanique</a></li>
+                <li><a href="/a-propos">Qui sommes-nous ?</a></li>
+                <li><a href="/equipe">Rejoindre la rédaction</a></li>
+                <li><a href="/contact">Contact & Publicité</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
-            <h4 class="footer-title">En Route</h4>
+            <h4 class="footer-title">Top Articles</h4>
             <ul class="footer-links">
-                <li><a href="/a-propos">Qui sommes-nous ?</a></li>
-                <li><a href="/equipe">Rejoindre la rédaction</a></li>
-                <li><a href="/contact">Contact & Publicité</a></li>
+                <li><a href="https://www.garageraymond.fr/Blog/tesla-model-2-2026" target="_blank" rel="noopener">Tesla Model 2 2026</a></li>
+                <li><a href="https://www.garageraymond.fr/Blog/voyant-orange-peugeot" target="_blank" rel="noopener">Voyant orange Peugeot</a></li>
+                <li><a href="https://www.garageraymond.fr/Blog/moteur-1-6-puretech-fiabilite-avis" target="_blank" rel="noopener">Moteur 1.6 PureTech fiabilité</a></li>
+                <li><a href="https://www.garageraymond.fr/Blog/scooter-peugeot-50cc-avis-2026" target="_blank" rel="noopener">Scooter Peugeot 50cc</a></li>
             </ul>
         </div>
     </div>
