@@ -144,7 +144,7 @@ include __DIR__ . '/../header.php';
                 <div class="art-tldr-title">L'essentiel à retenir (TL;DR)</div>
                 <ul>
                     <li><strong>Qui :</strong> Pierre et Mélanie, un duo complémentaire à la tête d'un blog auto indépendant et 100% gratuit.</li>
-                    <li><strong>Contenu :</strong> Guides d'entretien, fiabilité moteur, cosmétique auto, Vanlife et VSP — une couverture plus large que la moyenne.</li>
+                    <li><strong>Contenu :</strong> Guides d'entretien, fiabilité moteur, cosmétique auto, Vanlife et <a href="/Blog/argus-voiture-sans-permis">VSP</a> — une couverture plus large que la moyenne.</li>
                     <li><strong>Public :</strong> Du novice complet au bricoleur confirmé, sans jargon inutile.</li>
                     <li><strong>Points forts :</strong> Réponses chiffrées, illustrées et mises à jour, avec une vraie communauté active en commentaires.</li>
                     <li><strong>Notre verdict :</strong> Une ressource externe fiable que nous recommandons sans réserve en complément de nos propres dossiers techniques.</li>

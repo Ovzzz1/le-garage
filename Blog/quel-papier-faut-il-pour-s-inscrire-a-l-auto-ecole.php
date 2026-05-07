@@ -204,7 +204,7 @@ include __DIR__ . '/../header.php';
             <!-- Article Content -->
             <div class="art-content">
 
-                <p>S'inscrire à l'auto-école marque le début de votre autonomie, mais la réussite de votre dossier dépend de la qualité des pièces justificatives fournies. En 2026, la procédure est dématérialisée via l'<strong>ANTS</strong> (Agence Nationale des Titres Sécurisés). Pour obtenir votre numéro <strong>NEPH</strong> sans perdre de temps, les fichiers numériques doivent être lisibles et strictement conformes aux exigences.</p>
+                <p>S'inscrire à l'<a href="/Blog/comment-changer-d-auto-ecole">auto-école</a> marque le début de votre autonomie, mais la réussite de votre dossier dépend de la qualité des pièces justificatives fournies. En 2026, la procédure est dématérialisée via l'<strong>ANTS</strong> (Agence Nationale des Titres Sécurisés). Pour obtenir votre numéro <strong>NEPH</strong> sans perdre de temps, les fichiers numériques doivent être lisibles et strictement conformes aux exigences.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="simulateur-dossier">Simulateur : votre liste de documents sur-mesure</h2>

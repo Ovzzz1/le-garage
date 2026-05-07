@@ -244,7 +244,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="permis-voiture-moto">Permis voiture et moto : ce que couvre le blog</h2>
 
 
-                <p>Sur le volet <strong>permis voiture</strong> (permis B), <strong>90km.fr</strong> propose des guides accessibles sur le code de la route, les signaux routiers, le comportement à adopter en présence des forces de l'ordre ou encore les meilleures applications mobiles pour réviser son code. Ces contenus sont particulièrement utiles pour les candidats en phase de préparation qui veulent compléter leur apprentissage en auto-école par des ressources gratuites et bien structurées.</p>
+                <p>Sur le volet <strong>permis voiture</strong> (permis B), <strong>90km.fr</strong> propose des guides accessibles sur le code de la route, les signaux routiers, le comportement à adopter en présence des forces de l'ordre ou encore les meilleures applications mobiles pour réviser son code. Ces contenus sont particulièrement utiles pour les candidats en phase de préparation qui veulent compléter leur apprentissage en <a href="/Blog/comment-changer-d-auto-ecole">auto-école</a> par des ressources gratuites et bien structurées.</p>
 
 
                 <p>Pour le <strong>permis moto</strong>, le blog aborde les spécificités de la conduite à deux roues, les règles de sécurité propres aux motocyclistes et les points de vigilance du code souvent mal maîtrisés par les candidats. La couverture n'est pas aussi exhaustive que celle du poids lourd, mais elle reste utile comme complément de révision.</p>

@@ -175,7 +175,7 @@ include __DIR__ . '/../header.php';
                 <h3>Ce qui fait vraiment varier le tarif</h3>
                 <p>L'écart entre deux devis s'explique rarement par la marque du produit utilisé (CarPro, Gtechniq, Fictech...). Le tarif est avant tout dicté par le <strong>temps de main-d'œuvre</strong>, lui-même influencé par quatre variables :</p>
                 <ul>
-                    <li><strong>Le gabarit du véhicule :</strong> Une citadine (type Peugeot 208) demandera beaucoup moins de produit et d'heures qu'un grand SUV (type BMW X5) ou qu'un break.</li>
+                    <li><strong>Le gabarit du véhicule :</strong> Une citadine (type <a href="/Blog/modele-208-a-eviter">Peugeot 208</a>) demandera beaucoup moins de produit et d'heures qu'un grand SUV (type BMW X5) ou qu'un break.</li>
                     <li><strong>L'état initial du vernis :</strong> Un véhicule d'occasion marqué par les rouleaux de lavage nécessite un "cut" lourd pour effacer les micro-rayures, contre un simple lustrage de finition pour un modèle neuf.</li>
                     <li><strong>Le nombre de couches de protection :</strong> Une protection garantie 5 ans réclame souvent une base ("base coat") et une finition ("top coat"), augmentant le temps de pose et de séchage sous lampes infrarouges.</li>
                     <li><strong>Les options :</strong> Protection des jantes, des vitres, des plastiques extérieurs, des cuirs intérieurs, ou pose partielle d'un film PPF sur la face avant — chaque surface supplémentaire fait grimper le devis.</li>

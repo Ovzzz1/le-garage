@@ -219,7 +219,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="phase1-a-bannir">Peugeot 3008 Phase 1 (2009-2016) : Les modèles à bannir</h2>
 
                 <h3>1.6 THP 150/156 ch : Une bombe à retardement</h3>
-                <p>Ce moteur est le plus problématique en essence. Nous déconseillons formellement l'achat de cette motorisation sans preuve que le kit de distribution complet a été remplacé par la version fiabilisée. Le Peugeot 207 souffre exactement du même mal.</p>
+                <p>Ce moteur est le plus problématique en essence. Nous déconseillons formellement l'achat de cette motorisation sans preuve que le kit de distribution complet a été remplacé par la version fiabilisée. Le <a href="/Blog/peugeot-207-modele-a-eviter">Peugeot 207</a> souffre exactement du même mal.</p>
 
                 <h3>1.6 HDi 110/112 ch : Le risque de casse turbo</h3>
                 <p>Le 1.6 HDi possède un talon d'Achille : ses joints d'injecteurs. S'ils ne sont pas étanches, la calamine pollue l'huile moteur et bouche le circuit de graissage du turbo. Ce défaut est récurrent sur d'autres modèles de la marque, comme le <a href="/Blog/peugeot-partner-tepee-a-eviter">Peugeot Partner Tepee à éviter</a>.</p>

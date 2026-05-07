@@ -12,7 +12,7 @@ $article = [
     'category'       => 'entretien',
     'category_name'  => 'Entretien & Reparation',
     'category_color' => '#dc2626',
-    'tags'           => ['Peugeot', 'Voyants', 'Diagnostic', '208', '2008', '3008'],
+    'tags'           => ['Peugeot', 'Voyants', 'Diagnostic', '208', '2008', '<a href="/Blog/peugeot-3008-kilometrage-maximum">3008</a>'],
     'image'          => '/Image/voyant-orange-peugeot1.webp',
     'date'           => '28 Mars 2026',
     'author'         => 'Arnaud',

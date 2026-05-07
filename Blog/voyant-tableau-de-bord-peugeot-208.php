@@ -275,7 +275,7 @@ include __DIR__ . '/../header.php';
                     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <h3 itemprop="name">Comment éteindre le voyant Service après une vidange ?</h3>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Coupez le contact. Maintenez enfoncé le bouton de remise à zéro du compteur kilométrique (souvent au bout du commodo d'essuie-glace). Mettez le contact sans démarrer : un compte à rebours de 10 secondes s'affiche. Une fois à zéro, relâchez le bouton et coupez le contact.</p>
+                            <p itemprop="text">Coupez le contact. Maintenez enfoncé le bouton de remise à zéro du <a href="/Blog/kilometrage-evolutif">compteur kilométrique</a> (souvent au bout du commodo d'essuie-glace). Mettez le contact sans démarrer : un compte à rebours de 10 secondes s'affiche. Une fois à zéro, relâchez le bouton et coupez le contact.</p>
                         </div>
                     </div>
 

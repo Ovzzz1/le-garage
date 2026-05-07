@@ -182,7 +182,7 @@ include __DIR__ . '/../header.php';
                             <tr>
                                 <td data-label="Moteur"><strong>1.2 PureTech (avant 2021)</strong></td>
                                 <td data-label="Carburant">Essence</td>
-                                <td data-label="Problème">Courroie humide corrosive, casse moteur</td>
+                                <td data-label="Problème">Courroie humide corrosive, <a href="/Blog/probleme-moteur-peugeot-2008">casse moteur</a></td>
                                 <td data-label="Verdict"><span class="evit-rouge">À FUIR ABSOLUMENT</span></td>
                             </tr>
                             <tr>

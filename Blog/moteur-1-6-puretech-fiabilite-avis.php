@@ -179,7 +179,7 @@ include __DIR__ . '/../header.php';
                 <h3>Quels modèles sont équipés du 1.6 PureTech 180 et 225 ? (La liste complète)</h3>
                 <p>Contrairement au petit 1.2 qui est partout, le 1.6 a été réservé aux segments supérieurs de Stellantis (souvent associé à l'excellente boîte EAT8). Voici la <strong>liste des moteurs puretech fiables</strong> de 1.6 litres selon les modèles :</p>
                 <ul>
-                    <li><strong>Peugeot 3008 1.6 puretech 180 fiabilité :</strong> Sur ce SUV familial, le moteur ne force pas. L'agrément est exceptionnel, bien loin des vibrations d'un 3 cylindres.</li>
+                    <li><strong><a href="/Blog/peugeot-3008-kilometrage-maximum">Peugeot 3008</a> 1.6 puretech 180 fiabilité :</strong> Sur ce SUV familial, le moteur ne force pas. L'agrément est exceptionnel, bien loin des vibrations d'un 3 cylindres.</li>
                     <li><strong>Peugeot 5008 1.6 puretech 180 fiabilité :</strong> Idem pour le 7 places. Il encaisse parfaitement le poids en charge.</li>
                     <li><strong>Peugeot 508 II et DS 7 :</strong> Disponibles en 180 ch et en déclinaison sportive 225 ch. Les routières par excellence.</li>
                     <li><strong>Peugeot 308 II (GT) :</strong> Uniquement en 225 ch, une véritable alternative discrète à l'agressive GTI !</li>

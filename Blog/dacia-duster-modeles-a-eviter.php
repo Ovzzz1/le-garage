@@ -279,7 +279,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="faq-duster">FAQ : Vos questions sur la fiabilité Dacia</h2>
 
-                <h3>Quel est le kilométrage maximum d'un Dacia Duster ?</h3>
+                <h3>Quel est le <a href="/Blog/peugeot-3008-kilometrage-maximum">kilométrage maximum</a> d'un Dacia Duster ?</h3>
                 <p>Un 1.5 dCi post-2014 peut atteindre 350 000 km avec un entretien rigoureux. Le 1.2 TCe, lui, dépasse rarement les 150 000 km sans casse majeure de la distribution ou du moteur — c'est la limite statistique de ce bloc défaillant.</p>
 
                 <h3>Le Duster 1.2 TCe consomme-t-il vraiment trop d'huile ?</h3>

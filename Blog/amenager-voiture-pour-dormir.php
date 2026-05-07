@@ -74,7 +74,7 @@ include __DIR__ . '/../header.php';
 <article>
     <section class="art-hero">
         <img src="<?php echo $article['image']; ?>"
-             alt="Peugeot 3008 gris foncé dans un garage, coffre grand ouvert révélant l'intérieur vide avec les sièges arrière rabattus"
+             alt="<a href="/Blog/peugeot-3008-kilometrage-maximum">Peugeot 3008</a> gris foncé dans un garage, coffre grand ouvert révélant l'intérieur vide avec les sièges arrière rabattus"
              class="art-hero-bg"
              width="1200" height="675" decoding="async">
         <div class="art-hero-overlay"></div>

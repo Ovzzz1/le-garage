@@ -234,12 +234,12 @@ include __DIR__ . '/../header.php';
                             </tr>
                             <tr>
                                 <td><strong>Citadine polyvalente</strong></td>
-                                <td>Peugeot 208, Toyota Yaris, Kia Rio</td>
+                                <td><a href="/Blog/modele-208-a-eviter">Peugeot 208</a>, Toyota Yaris, Kia Rio</td>
                                 <td>Séjour classique avec plages et visites. Bon équilibre entre confort et budget.</td>
                             </tr>
                             <tr>
                                 <td><strong>SUV / crossover</strong></td>
-                                <td>Dacia Duster, Renault Captur, Hyundai Tucson</td>
+                                <td><a href="/Blog/dacia-duster-modeles-a-eviter">Dacia Duster</a>, Renault Captur, Hyundai Tucson</td>
                                 <td>Basse-Terre, relief, bagages. Meilleure garde au sol, plus d'aisance en montée.</td>
                             </tr>
                         </tbody>
