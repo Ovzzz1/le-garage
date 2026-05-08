@@ -39,8 +39,6 @@ $article = [
 
 <p>Si vous êtes sur le point de signer pour un Nissan Qashqai de seconde main, lisez ce guide. Nous détaillons la "blacklist" exacte des moteurs à fuir, les années noires à esquiver, les pannes de la boîte X-Tronic, mais aussi — et surtout — des recommandations claires sur les modèles à privilégier et leur impact sur votre budget.</p>
 
-<img src="/Image/qashqai-modele-a-eviter-2.webp" alt="Nissan Qashqai sur la route" width="800" height="450" loading="lazy" />
-
 <h2 id="motorgate">Le scandale du 1.2 DIG-T 115 ch : Le modèle à éviter absolument</h2>
 <p>S'il ne devait y avoir qu'un seul modèle à rayer définitivement de votre liste, c'est le Qashqai équipé du moteur essence <strong>1.2 DIG-T de 115 ch</strong> (souvent partagé avec Renault sous l'appellation 1.2 TCe). Ce bloc moteur est au centre de ce que la presse automobile a appelé le "Motorgate".</p>
 
@@ -124,8 +122,6 @@ $article = [
         </tr>
     </tbody>
 </table>
-
-<img src="/Image/qashqai-modele-a-eviter-3.webp" alt="Examen du moteur Nissan Qashqai" width="800" height="450" loading="lazy" />
 
 <h2 id="whitelist">La "Whitelist" : Nos recommandations claires d'achat</h2>
 
