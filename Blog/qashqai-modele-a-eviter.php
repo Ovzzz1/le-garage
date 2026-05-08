@@ -1,7 +1,7 @@
 <?php
 // published: 2026-05-06 08:00
 /**
- * qashqai-modele-a-eviter.php — Le garage expert Auto
+ * qashqai-modele-a-eviter.php, Le garage expert Auto
  */
 $article = [
     'title'        => 'Nissan Qashqai occasion : Les modèles, années et moteurs à éviter absolument',
@@ -18,9 +18,9 @@ $article = [
     'reading_time' => '7 min',
 
     'tldr' => [
-        '<strong>Moteur à fuir absolument :</strong> le 1.2 DIG-T 115 ch (2014-2018) — surconsommation d\'huile, casse moteur 7 000 à 9 000 €, "Motorgate".',
-        '<strong>Diesel à surveiller :</strong> le 1.5 dCi 110 ch avant 2012 — injecteurs Delphi fragiles, FAP bouché en ville.',
-        '<strong>Boîte X-Tronic CVT :</strong> patinage, à-coups, rupture de courroie interne — fuir si symptômes détectés à l\'essai.',
+        '<strong>Moteur à fuir absolument :</strong> le 1.2 DIG-T 115 ch (2014-2018), surconsommation d\'huile, casse moteur 7 000 à 9 000 €, "Motorgate".',
+        '<strong>Diesel à surveiller :</strong> le 1.5 dCi 110 ch avant 2012, injecteurs Delphi fragiles, FAP bouché en ville.',
+        '<strong>Boîte X-Tronic CVT :</strong> patinage, à-coups, rupture de courroie interne, fuir si symptômes détectés à l\'essai.',
         '<strong>Acheter :</strong> 1.3 DIG-T 140/160 ch (dès 2019) ou Qashqai III e-Power (dès 2022) pour zéro risque.',
     ],
 
@@ -37,7 +37,7 @@ $article = [
     'content' => <<<HTML
 <p>Le Nissan Qashqai est le pionnier incontesté des SUV compacts et un immense succès commercial. Pourtant, derrière sa silhouette familière sur nos routes, se cachent certaines motorisations qui peuvent transformer votre achat d'occasion en véritable cauchemar financier. Entre le tristement célèbre "Motorgate" et des boîtes automatiques capricieuses, <strong>le choix de votre Qashqai ne doit rien au hasard.</strong></p>
 
-<p>Si vous êtes sur le point de signer pour un Nissan Qashqai de seconde main, lisez ce guide. Nous détaillons la "blacklist" exacte des moteurs à fuir, les années noires à esquiver, les pannes de la boîte X-Tronic, mais aussi — et surtout — des recommandations claires sur les modèles à privilégier et leur impact sur votre budget.</p>
+<p>Si vous êtes sur le point de signer pour un Nissan Qashqai de seconde main, lisez ce guide. Nous détaillons la "blacklist" exacte des moteurs à fuir, les années noires à esquiver, les pannes de la boîte X-Tronic, mais aussi, et surtout, des recommandations claires sur les modèles à privilégier et leur impact sur votre budget.</p>
 
 <h2 id="motorgate">Le scandale du 1.2 DIG-T 115 ch : Le modèle à éviter absolument</h2>
 <p>S'il ne devait y avoir qu'un seul modèle à rayer définitivement de votre liste, c'est le Qashqai équipé du moteur essence <strong>1.2 DIG-T de 115 ch</strong> (souvent partagé avec Renault sous l'appellation 1.2 TCe). Ce bloc moteur est au centre de ce que la presse automobile a appelé le "Motorgate".</p>
@@ -165,7 +165,7 @@ $article = [
 </table>
 HTML,
 
-    'conclusion' => 'Le Qashqai reste un excellent SUV compact — à condition d\'écarter catégoriquement le 1.2 DIG-T 2014-2018 et de cibler le 1.3 DIG-T ou le e-Power pour une décennie de tranquillité.',
+    'conclusion' => 'Le Qashqai reste un excellent SUV compact, à condition d\'écarter catégoriquement le 1.2 DIG-T 2014-2018 et de cibler le 1.3 DIG-T ou le e-Power pour une décennie de tranquillité.',
 
     'faq' => [
         ['q' => 'Le Nissan Qashqai est-il une voiture fiable ?', 'a' => 'Oui, le Nissan Qashqai est globalement une voiture fiable, à condition d\'éviter impérativement le moteur 1.2 DIG-T produit entre 2014 et 2018. Les autres motorisations (1.3 DIG-T essence, 1.6 et 1.7 dCi) sont robustes si l\'entretien préconisé par Nissan est scrupuleusement respecté.'],
