@@ -4,7 +4,7 @@
  * qashqai-modele-a-eviter.php, Le garage expert Auto
  */
 $article = [
-    'title'        => 'Nissan Qashqai occasion : Les modèles, années et moteurs à éviter absolument',
+    'title'        => 'Quel Nissan Qashqai éviter en occasion ?',
     'subtitle'     => '1.2 DIG-T, boîte X-Tronic CVT, diesels dCi… Le guide complet pour ne pas transformer votre Qashqai d\'occasion en gouffre financier.',
     'category'     => 'occasion',
     'tags'         => ['Nissan Qashqai', 'Fiabilité', 'Occasion', '1.2 DIG-T', 'Motorgate'],
