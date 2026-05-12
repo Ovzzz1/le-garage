@@ -8,7 +8,7 @@ $page_title       = "Site enchère Japon voiture : le guide complet des platefor
 $page_description = "USS, TAA, JAA, brokers, grades japonais, coût d'import… Tout savoir sur les sites d'enchères de voitures au Japon pour importer votre JDM en France en 2026.";
 
 $article = [
-    'title'          => 'Site enchère Japon voiture : USS, TAA, brokers et coût réel d\'import JDM en France (2026)',
+    'title'          => 'Site enchère Japon voiture : USS, TAA, brokers et coût d\'import JDM',
     'subtitle'       => "USS, TAA, JAA, brokers accessibles aux particuliers, lecture de la feuille d'enchère et coût réel d'import : tout ce qu'il faut savoir pour acheter une voiture au Japon depuis la France.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',

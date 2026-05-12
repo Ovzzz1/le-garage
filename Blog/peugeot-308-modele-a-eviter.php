@@ -4,7 +4,7 @@
  * peugeot-308-modele-a-eviter.php — Le garage expert Auto
  */
 $article = [
-    'title'        => 'Peugeot 308 modèle à éviter : 1.6 THP, PureTech courroie humide et rappel — liste noire 2026',
+    'title'        => 'Peugeot 308 modèle à éviter : 1.6 THP, PureTech courroie humide et rappel',
     'subtitle'     => '1.6 THP, 1.2 PureTech courroie humide, rappel ceintures 2025… La blacklist complète par génération et les versions fiables à cibler en 2026.',
     'category'     => 'occasion',
     'tags'         => ['Peugeot 308', 'Fiabilité', 'Occasion', '1.2 PureTech', 'Liste noire'],

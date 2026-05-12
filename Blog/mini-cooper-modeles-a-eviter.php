@@ -4,7 +4,7 @@
  * mini-cooper-modeles-a-eviter.php — Le garage expert Auto
  */
 $article = [
-    'title'        => 'Mini Cooper modèles à éviter : moteur N14, R56 et CVT — les générations à fuir en occasion',
+    'title'        => 'Mini Cooper modèles à éviter : moteur N14, R56 et CVT',
     'subtitle'     => 'Moteur N14, R56, boîte CVT… Découvrez les générations de Mini Cooper à fuir absolument et les versions fiables (F56) pour réussir votre achat d\'occasion.',
     'category'     => 'occasion',
     'tags'         => ['Mini Cooper', 'Fiabilité', 'Occasion', 'Moteur N14', 'R56', 'F56'],

@@ -55,7 +55,7 @@ if (is_dir($blog_dir)) {
 }
 
 // ── Variables pour header.php ────────────────────────────────────────────────
-$page_title       = $article['title'] . ' — Le garage expert Auto';
+$page_title       = $article['title'];
 $page_description = $article['subtitle'];
 $og_image         = 'https://garageraymond.fr' . $article['image'];
 $og_type          = 'article';

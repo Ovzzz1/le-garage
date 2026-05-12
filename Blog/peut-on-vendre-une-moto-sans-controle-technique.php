@@ -8,7 +8,7 @@ $page_title       = "Peut-on vendre une moto sans contrôle technique en 2026 ? 
 $page_description = "CT2RM obligatoire, exceptions, risques juridiques et sanctions : tout ce qu'il faut savoir pour vendre une moto sans contrôle technique légalement en 2026.";
 
 $article = [
-    'title'          => 'Peut-on vendre une moto sans contrôle technique en 2026 ? CT2RM, exceptions et risques légaux',
+    'title'          => 'Peut-on vendre une moto sans contrôle technique en 2026 ?',
     'subtitle'       => "CT2RM obligatoire, dispenses officielles, vente en l'état, risques juridiques… Ce guide complet démonte les idées reçues et vous dit exactement ce que vous pouvez faire légalement avant de céder votre deux-roues.",
     'category'       => 'moto',
     'category_name'  => 'Moto & 2 Roues',

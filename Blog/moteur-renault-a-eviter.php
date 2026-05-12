@@ -4,7 +4,7 @@
  * moteur-renault-a-eviter.php — Le garage expert Auto
  */
 $article = [
-    'title'        => 'Moteur Renault à éviter : 1.2 TCe, 1.6 dCi et boîte EDC — la liste noire complète en occasion',
+    'title'        => 'Moteur Renault à éviter : 1.2 TCe, 1.6 dCi et boîte EDC',
     'subtitle'     => '1.2 TCe, 1.6 dCi, boîte EDC… Découvrez les moteurs Renault à fuir absolument et les alternatives fiables pour acheter sereinement.',
     'category'     => 'occasion',
     'tags'         => ['Moteur Renault', 'Fiabilité', 'Occasion', '1.2 TCe', 'Liste noire'],

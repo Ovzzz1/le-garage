@@ -8,7 +8,7 @@ $page_title       = "Garantie 3 mois voiture occasion : ce que le garage ne vous
 $page_description = "La garantie 3 mois voiture occasion est un écran de fumée. La loi vous protège 24 mois. Comparatif, droits, recours et guide pratique pour ne pas se faire avoir.";
 
 $article = [
-    'title'          => 'Garantie 3 mois voiture occasion : ce que la loi dit vraiment — 24 mois et vos droits en 2026',
+    'title'          => 'Garantie 3 mois voiture occasion : ce que la loi dit vraiment en 2026',
     'subtitle'       => "La garantie commerciale de 3 mois n'est qu'un écran de fumée. En 2026, la loi vous protège bien au-delà — 24 mois, charge de la preuve inversée, zéro frais. Voici tout ce que votre vendeur a omis de préciser.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',

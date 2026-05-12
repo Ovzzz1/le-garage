@@ -6,7 +6,7 @@ $page_title       = "Meilleur sifflet ultrason anti-gibier pour voiture : Compar
 $page_description = "Sifflet anti-gibier : arnaque ou vraie protection ? Comparatif Hobi, Imdifa et génériques Amazon, conseils d'installation et avis de la communauté. Le guide complet par Le Garage Expert Auto.";
 
 $article = [
-    'title'          => 'Meilleur ultrason anti-gibier pour voiture : comparatif Hobi, Imdifa et tests réels (2026)',
+    'title'          => 'Meilleur ultrason anti-gibier pour voiture : comparatif Hobi, Imdifa',
     'subtitle'       => "Arnaque ou vraie protection ? Dès 50 km/h, ces petits cylindres adhésifs émettent des ultrasons inaudibles pour l'homme mais perçus par le gibier. On a épluché les forums, les tests indépendants et les retours d'utilisateurs pour démêler le vrai du faux — et choisir le bon modèle.",
     'category'       => 'entretien',
     'category_name'  => 'Entretien & Réparation',

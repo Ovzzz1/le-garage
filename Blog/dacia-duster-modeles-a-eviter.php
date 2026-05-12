@@ -8,7 +8,7 @@ $page_title       = "Dacia Duster modèle à éviter : Le guide fiabilité 2026 
 $page_description = "1.2 TCe, 1.5 dCi Delphi, AdBlue : les versions du Dacia Duster à fuir absolument en occasion en 2026. Tableau noir de la fiabilité, checklist expert et versions fiables à cibler.";
 
 $article = [
-    'title'          => 'Dacia Duster modèles à éviter : 1.2 TCe, dCi Delphi et AdBlue — guide fiabilité 2026',
+    'title'          => 'Dacia Duster modèles à éviter : 1.2 TCe, dCi Delphi et AdBlue',
     'subtitle'       => "Le 1.2 TCe brûle son huile jusqu'à la casse, le 1.5 dCi première génération libère de la limaille dans tout le circuit d'injection. L'image de robustesse du Duster cache des défauts qui peuvent coûter 8 000 € de réparations.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',

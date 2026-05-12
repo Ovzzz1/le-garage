@@ -4,7 +4,7 @@
  * serie-1-modele-a-eviter.php — Le garage expert Auto
  */
 $article = [
-    'title'        => 'BMW Série 1 modèle à éviter : N47, N13 et Phase 1 — jusqu\'à 7 000 € de réparation (2026)',
+    'title'        => 'BMW Série 1 modèle à éviter : N47, N13 et Phase 1',
     'subtitle'     => 'N47, N13, N20… Fuyez les moteurs BMW Série 1 qui coûtent jusqu\'à 7 000 € de réparation. Liste noire et alternatives fiables pour un achat serein en 2026.',
     'category'     => 'occasion',
     'tags'         => ['BMW Série 1', 'Fiabilité', 'Occasion', 'Moteur N47', 'Liste noire'],
