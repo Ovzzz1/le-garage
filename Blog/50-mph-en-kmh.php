@@ -4,7 +4,7 @@
  * 50-mph-en-kmh.php — Le garage expert Auto
  */
 $article = [
-    'title'        => '50 mph en km/h : Convertisseur, Tableau et Calcul Mental',
+    'title'        => '50 mph en km/h : convertisseur instantané, tableau de 1 à 200 mph et calcul mental pour la route',
     'subtitle'     => '50 mph = 80,47 km/h. Convertisseur interactif, tableau de 1 à 200 mph, formule exacte et astuces de calcul mental pour conducteurs internationaux.',
     'category'     => 'permis',
     'tags'         => ['Conversion vitesse', 'MPH', 'KM/H', 'Conduite internationale'],

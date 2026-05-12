@@ -4,7 +4,7 @@
  * moteur-ford-a-eviter.php — Le garage expert Auto
  */
 $article = [
-    'title'        => 'Moteur Ford à éviter : Le Guide 2026 pour échapper aux casses moteur à 5 000 €',
+    'title'        => 'Moteur Ford à éviter : 1.0 EcoBoost, 1.6 TDCi et Ranger 2.2 — la liste noire 2026',
     'subtitle'     => '1.0 EcoBoost, 1.6 TDCi, Ranger 2.2… Découvrez les moteurs Ford à fuir absolument en 2026, les diagnostics clés et les alternatives fiables.',
     'category'     => 'occasion',
     'tags'         => ['Moteur Ford', 'Fiabilité', 'Occasion', 'EcoBoost', 'Liste noire'],

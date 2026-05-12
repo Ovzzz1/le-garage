@@ -4,7 +4,7 @@
  * mercedes-classe-b-modele-a-eviter.php — Le garage expert Auto
  */
 $article = [
-    'title'        => 'Mercedes Classe B modèle à éviter : Guide de fiabilité 2026',
+    'title'        => 'Mercedes Classe B modèle à éviter : CVT Autotronic, 7G-DCT et diesels W246 — guide 2026',
     'subtitle'     => 'CVT Autotronic, boîte 7G-DCT, diesels fragiles… La liste noire des Mercedes Classe B à fuir et les modèles 100% fiables pour acheter sereinement.',
     'category'     => 'occasion',
     'tags'         => ['Mercedes Classe B', 'Fiabilité', 'Occasion', 'CVT', 'Liste noire'],

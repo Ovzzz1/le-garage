@@ -4,7 +4,7 @@
  * renault-scenic-modele-a-eviter.php — Le garage expert Auto
  */
 $article = [
-    'title'        => 'Renault Scénic d\'occasion : les modèles et moteurs à éviter pour ne pas se ruiner',
+    'title'        => 'Renault Scénic modèle à éviter : boîte DP0, 1.2 TCe et 1.9 dCi — blacklist par génération',
     'subtitle'     => 'Boîte DP0, 1.2 TCe, 1.9 dCi… La blacklist complète par génération et les pépites fiables pour acheter un Scénic sereinement.',
     'category'     => 'occasion',
     'tags'         => ['Renault Scénic', 'Fiabilité', 'Occasion', 'Boîte DP0', '1.2 TCe'],

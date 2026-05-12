@@ -8,7 +8,7 @@ $page_title       = "Manuel d'utilisation Peugeot 208 PDF : Téléchargement gra
 $page_description = "Téléchargez gratuitement le manuel d'utilisation de la Peugeot 208 en PDF. Voyants, multimédia, régulateur de vitesse, e-208 : toutes les réponses sans lire 300 pages.";
 
 $article = [
-    'title'          => "Manuel d'utilisation Peugeot 208 : Téléchargez le PDF gratuit",
+    'title'          => 'Manuel d\'utilisation Peugeot 208 PDF : téléchargement gratuit, voyants et guide e-208',
     'subtitle'       => "Voyant allumé, écran qui bug, recharge de l'e-208 : ce guide répond aux questions les plus fréquentes et propose le téléchargement direct de la notice officielle.",
     'category'       => 'entretien',
     'category_name'  => 'Entretien & Réparation',

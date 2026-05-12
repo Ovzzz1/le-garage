@@ -8,7 +8,7 @@ $page_title       = "Fiat 500 kilométrage qui clignote : causes et solutions (B
 $page_description = "Votre Fiat 500 affiche un kilométrage clignotant ? Bug réseau CAN, module Blue&Me grillé, fusible F51 ou réalignement proxy : toutes les solutions expliquées.";
 
 $article = [
-    'title'          => "Fiat 500 kilométrage qui clignote : le guide complet des solutions",
+    'title'          => 'Fiat 500 kilométrage qui clignote : Blue&Me, fusible F51 et proxy CAN — causes et solutions',
     'subtitle'       => "Réseau CAN, module Blue&Me grillé, fusible F51 ou réalignement proxy… Ce clignotement n'est pas dangereux mais il a une cause précise. Voici comment le diagnostiquer et le régler sans passer par la concession.",
     'category'       => 'entretien',
     'category_name'  => 'Entretien & Réparation',

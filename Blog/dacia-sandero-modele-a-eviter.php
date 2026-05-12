@@ -4,7 +4,7 @@
  * dacia-sandero-modele-a-eviter.php — Le garage expert Auto
  */
 $article = [
-    'title'        => 'Dacia Sandero : Les Modèles, Moteurs et Années à Éviter (Guide de Fiabilité 2026)',
+    'title'        => 'Dacia Sandero modèle à éviter : 1.2 TCe, Easy-R et dCi Delphi — la blacklist complète 2026',
     'subtitle'     => '1.2 TCe, dCi Delphi, boîte Easy-R… Découvrez les motorisations Dacia Sandero à fuir et les versions fiables à privilégier pour votre achat.',
     'category'     => 'occasion',
     'tags'         => ['Dacia Sandero', 'Fiabilité', 'Occasion', '1.2 TCe', 'Liste noire'],

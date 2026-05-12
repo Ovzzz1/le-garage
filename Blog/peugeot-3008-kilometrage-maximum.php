@@ -8,7 +8,7 @@ $page_title       = "Peugeot 3008 kilométrage maximum : durée de vie réelle s
 $page_description = "Peugeot 3008 kilométrage maximum : 150 000 km pour le PureTech, 400 000 km pour le BlueHDi. Guide moteur par moteur, pannes à anticiper et simulateur garder/vendre.";
 
 $article = [
-    'title'          => "Peugeot 3008 kilométrage maximum : durée de vie réelle et guide moteur par moteur",
+    'title'          => 'Peugeot 3008 kilométrage maximum : durée de vie réelle moteur par moteur — PureTech vs BlueHDi',
     'subtitle'       => "150 000 km pour le 1.2 PureTech, 400 000 km pour le 2.0 BlueHDi — la durée de vie d'un Peugeot 3008 dépend entièrement du bloc sous le capot. Guide complet pour acheter, entretenir et revendre au bon moment.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',

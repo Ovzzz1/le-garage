@@ -6,7 +6,7 @@ $page_title       = "Traitement anti corrosion châssis voiture : le guide d'exp
 $page_description = "Comment traiter la corrosion du châssis de votre voiture ? Guide complet : causes, décapage, convertisseur de rouille, piège du Blackson et prévention. Conseils d'experts.";
 
 $article = [
-    'title'          => "Traitement anti corrosion châssis voiture : le guide d'expert",
+    'title'          => 'Traitement anti-corrosion châssis voiture : décapage, produits efficaces et pièges à éviter',
     'subtitle'       => "Causes, solutions et prévention : tout ce qu'il faut savoir pour décaper, traiter et protéger le châssis de votre voiture — avec les vrais conseils du terrain, pas les raccourcis qui font pourrir votre soubassement de l'intérieur.",
     'category'       => 'entretien',
     'category_name'  => 'Entretien & Réparation',

@@ -8,7 +8,7 @@ $page_title       = "Peugeot 207 modèle à éviter : La blacklist des moteurs e
 $page_description = "1.6 THP, VTi, 1.6 HDi Phase 1 : les versions de la Peugeot 207 à fuir absolument en occasion. Guide expert 2026 avec tableau récapitulatif, checklist et modèles fiables à cibler.";
 
 $article = [
-    'title'          => "Peugeot 207 modèle à éviter : La blacklist des moteurs et années à fuir en occasion",
+    'title'          => 'Peugeot 207 modèle à éviter : 1.6 THP, VTi et HDi Phase 1 — la blacklist complète en occasion',
     'subtitle'       => "La 207 inonde le marché de l'occasion à des prix attractifs, mais les moteurs Prince co-développés avec BMW et les blocs HDi de première série peuvent transformer une bonne affaire en gouffre financier. Voici la liste noire complète.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
