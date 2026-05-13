@@ -93,9 +93,9 @@ $article = [
 <h3>Quels sont les modèles équipés du 1.2 TCe à éviter ?</h3>
 <p>L'Alliance Renault-Nissan ayant partagé ses mécaniques, ce moteur toxique s'est retrouvé sous le capot de dizaines de modèles très populaires entre 2012 et 2016. Vous devez l'éviter sur :</p>
 <ul>
-    <li><strong>Renault :</strong> Clio 4 (115 et 120 ch), <strong><u><a href="/brouillon/renault-captur-modele-a-eviter">Captur 1 (120 ch)</a></u></strong>, Mégane 3 et 4, Scénic 3 et 4, Kadjar.</li>
+    <li><strong>Renault :</strong> Clio 4 (115 et 120 ch), <strong><u><a href="/blog/renault-captur-modele-a-eviter">Captur 1 (120 ch)</a></u></strong>, Mégane 3 et 4, Scénic 3 et 4, Kadjar.</li>
     <li><strong>Dacia :</strong> Duster, Lodgy et Dokker (versions 115 ou 125 ch).</li>
-    <li><strong>Nissan :</strong> <strong><u><a href="/brouillon/nissan-juke-modele-a-eviter">Juke</a></u></strong>, Qashqai et Pulsar.</li>
+    <li><strong>Nissan :</strong> <strong><u><a href="/blog/nissan-juke-modele-a-eviter">Juke</a></u></strong>, Qashqai et Pulsar.</li>
 </ul>
 
 <h2 id="diesel-dci">Les moteurs diesels dCi : solides, mais avec des failles</h2>
