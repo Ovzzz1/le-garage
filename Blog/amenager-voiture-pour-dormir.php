@@ -467,7 +467,7 @@ include __DIR__ . '/../header.php';
                 <p>Un aménagement de base — matelas découpé + rideaux occultants + organisation des rangements — se réalise en <strong>une demi-journée</strong> pour un budget de 100 à 200 €. La découpe du matelas en mousse est l'étape la plus longue (1h30 avec les gabarits). Prévoyez une nuit test en bas de chez vous avant votre premier vrai voyage.</p>
 
                 <h3>Quelle voiture est la mieux adaptée pour dormir dedans ?</h3>
-                <p>Les meilleures options sont les <strong>breaks longs</strong> (Skoda Octavia Combi, Peugeot 308 SW, Volkswagen Passat SW) et les <strong>SUV intermédiaires</strong> (Dacia Duster, Peugeot 3008, Renault Kadjar) qui offrent 185 à 200 cm à plat. Les monospaces type Citroën C4 Spacetourer restent la référence absolue pour deux personnes. Les berlines compactes sont possibles jusqu'à 175 cm de taille mais demandent une planche de rattrapage de niveau.</p>
+                <p>Les meilleures options sont les <strong>breaks longs</strong> (Skoda Octavia Combi, <a href="/Blog/peugeot-308-modele-a-eviter">Peugeot 308</a> SW, Volkswagen Passat SW) et les <strong>SUV intermédiaires</strong> (<a href="/Blog/dacia-duster-modeles-a-eviter">Dacia Duster</a>, Peugeot 3008, Renault Kadjar) qui offrent 185 à 200 cm à plat. Les monospaces type Citroën C4 Spacetourer restent la référence absolue pour deux personnes. Les berlines compactes sont possibles jusqu'à 175 cm de taille mais demandent une planche de rattrapage de niveau.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->

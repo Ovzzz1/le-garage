@@ -214,7 +214,7 @@ include __DIR__ . '/../header.php';
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Qashqai</strong></td>
+                                <td><strong><a href="/Blog/qashqai-modele-a-eviter">Qashqai</a></strong></td>
                                 <td>Nissan</td>
                                 <td>Jusqu'à 160 CV (Le pionnier des Crossovers)</td>
                             </tr>

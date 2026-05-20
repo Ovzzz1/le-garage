@@ -111,7 +111,7 @@ $article = [
 <p>Certains acheteurs se tournent vers les modèles d'avant 2016 pour retrouver une distribution par chaîne. Si le bloc 2.2 Puma est plus simple, il souffre de ses propres maux (fissures de pistons) et s'avère beaucoup plus bruyant et gourmand que l'EcoBlue. C'est un choix à double tranchant.</p>
 
 <h3>La concurrence : VW Crafter 2.0 TDI vs Mercedes Sprinter</h3>
-<p>Si la technologie de courroie humide vous effraie, le Volkswagen Crafter 2.0 TDI reste une alternative solide avec une courroie classique. À l'inverse, le Mercedes Sprinter en propulsion offre une robustesse supérieure pour les forts tonnages, mais à un tarif d'entretien nettement plus élevé. Pour ceux qui préfèrent rester sur un utilitaire français, notre comparatif des <strong><u><a href="/blog/dimension-trafic-l1h1">dimensions du Renault Trafic L1H1</a></u></strong> avec son 2.0 dCi post-2019 propose une alternative fiable à la courroie humide Ford.</p>
+<p>Si la technologie de courroie humide vous effraie, le Volkswagen Crafter 2.0 TDI reste une alternative solide avec une courroie classique. À l'inverse, le Mercedes Sprinter en propulsion offre une robustesse supérieure pour les forts tonnages, mais à un tarif d'entretien nettement plus élevé. Pour ceux qui préfèrent rester sur un utilitaire français, notre comparatif des <strong><u><a href="/Blog/dimension-trafic-l1h1">dimensions du Renault Trafic L1H1</a></u></strong> avec son 2.0 dCi post-2019 propose une alternative fiable à la courroie humide Ford.</p>
 
 <h2 id="maintenance">Protocole de Maintenance : 5 règles d'or pour sauver votre moteur</h2>
 

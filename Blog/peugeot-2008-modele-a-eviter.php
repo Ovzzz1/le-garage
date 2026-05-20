@@ -8,7 +8,7 @@ $page_title       = "Peugeot 2008 modèle à éviter : Blacklist 2026 des versio
 $page_description = "1.2 PureTech, BlueHDi, boîte ETG : les versions du Peugeot 2008 à fuir absolument en occasion. Guide expert avec tableau récapitulatif, checklist avant achat et modèles fiables à cibler.";
 
 $article = [
-    'title'          => 'Peugeot 2008 modèle à éviter : PureTech courroie, BlueHDi AdBlue, ETG',
+    'title'          => 'Peugeot 2008 modèle à éviter : <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a> courroie, BlueHDi AdBlue, ETG',
     'subtitle'       => "Derrière le look séduisant du 2008 se cachent le scandale de la courroie PureTech, la cristallisation AdBlue et la boîte ETG à saccades. Voici les millésimes à proscrire et les rares versions sur lesquelles miser sans risque.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',

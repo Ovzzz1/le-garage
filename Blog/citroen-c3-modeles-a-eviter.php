@@ -8,7 +8,7 @@ $page_title       = "Citroën C3 modèle à éviter : Les années et motorisatio
 $page_description = "Airbags Takata, PureTech, VTi : les versions de la Citroën C3 à fuir absolument en occasion en 2026. Alerte sécurité, blacklist complète et versions fiables à cibler.";
 
 $article = [
-    'title'          => 'Citroën C3 modèles à éviter : airbags Takata, PureTech et Sensodrive',
+    'title'          => 'Citroën C3 modèles à éviter : airbags Takata, <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a> et Sensodrive',
     'subtitle'       => "Entre le scandale des airbags Takata qui immobilisent des centaines de milliers de véhicules et la courroie PureTech qui détruit les moteurs, acheter une C3 sans vérifications préalables est une roulette russe financière.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',

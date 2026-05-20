@@ -43,7 +43,7 @@ $article = [
 
 <h2 id="1-2-dig-t">1. Le moteur 1.2 DIG-T (H5FT) : La "bombe à retardement"</h2>
 
-<p>C'est sans aucun doute le moteur le plus problématique de la gamme. Ce bloc, que l'on retrouve massivement sur les <strong><u><a href="/Blog/qashqai-modele-a-eviter">Qashqai</a></u></strong> et les <strong><u><a href="/blog/nissan-juke-modele-a-eviter">Juke</a></u></strong>, souffre d'un défaut de segmentation chronique. En clair, le moteur consomme de l'huile de manière excessive, ce qui finit par détendre la chaîne de distribution ou provoquer une auto-combustion.</p>
+<p>C'est sans aucun doute le moteur le plus problématique de la gamme. Ce bloc, que l'on retrouve massivement sur les <strong><u><a href="/Blog/qashqai-modele-a-eviter">Qashqai</a></u></strong> et les <strong><u><a href="/Blog/nissan-juke-modele-a-eviter">Juke</a></u></strong>, souffre d'un défaut de segmentation chronique. En clair, le moteur consomme de l'huile de manière excessive, ce qui finit par détendre la chaîne de distribution ou provoquer une auto-combustion.</p>
 
 <p>Par contre, le vrai danger est que Nissan n'a jamais procédé à un rappel global, laissant les propriétaires face à des casses moteurs complètes dès 60 000 km. Si vous entendez un claquement métallique à froid, fuyez, car le tendeur de chaîne est déjà en bout de course.</p>
 

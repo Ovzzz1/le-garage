@@ -13,7 +13,7 @@ $article = [
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
     'category_color' => '#7c3aed',
-    'tags'           => ['Peugeot 208', 'Fiabilité', 'Achat Occasion', 'PureTech', 'BlueHDi'],
+    'tags'           => ['Peugeot 208', 'Fiabilité', 'Achat Occasion', '<a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a>', 'BlueHDi'],
     'image'          => '/Image/modele-208-a-eviter1.webp',
     'date'           => '3 Mai 2026',
     'author'         => 'Arnaud',

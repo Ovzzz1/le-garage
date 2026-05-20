@@ -8,7 +8,7 @@ $page_title       = "Citroën C4 Picasso modèle à éviter : La blacklist 2026 
 $page_description = "BMP6, PureTech, 1.6 THP : les versions du Citroën C4 Picasso à éviter absolument en 2026. Guide expert avec tableau récapitulatif, checklist et versions fiables à cibler.";
 
 $article = [
-    'title'          => 'Citroën C4 Picasso modèle à éviter : BMP6, PureTech et 1.6 THP',
+    'title'          => 'Citroën C4 Picasso modèle à éviter : BMP6, <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a> et 1.6 THP',
     'subtitle'       => "Boîte BMP6, courroie PureTech et turbo HDi : le monospace aux chevrons cache des défauts de conception capables d'engloutir plus de 6 000 € de réparations. Voici les versions à proscrire et les rares choix sûrs.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',

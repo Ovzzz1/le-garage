@@ -252,7 +252,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="versions-fiables">Quelles versions du Duster choisir pour la longévité ?</h2>
 
-                <p>Certaines versions du Duster sont de véritables exemples de robustesse mécanique. Le 1.3 TCe (130/150 ch), co-développé avec Mercedes, est une réussite totale en termes de fiabilité et de performances. Le 1.6 SCe 115 ch, moteur Nissan atmosphérique sans turbo, est le choix de la simplicité et de l'endurance — il peut dépasser 300 000 km sans soucis majeurs.</p>
+                <p>Certaines versions du Duster sont de véritables exemples de robustesse mécanique. Le 1.3 TCe (130/150 ch), co-développé avec Mercedes, est une réussite totale en termes de fiabilité et de performances. Le 1.6 SCe 115 ch, <a href="/Blog/moteur-nissan-a-eviter">moteur Nissan</a> atmosphérique sans turbo, est le choix de la simplicité et de l'endurance — il peut dépasser 300 000 km sans soucis majeurs.</p>
 
                 <p>L'Eco-G 100 GPL est le choix le plus malin sur le plan économique : avec sa bi-carburation, il réduit drastiquement le budget carburant tout en restant très fiable mécaniquement. C'est une alternative sérieuse si vous faites beaucoup de kilomètres.</p>
 
@@ -285,7 +285,7 @@ include __DIR__ . '/../header.php';
                 <h3>Le Duster 1.2 TCe consomme-t-il vraiment trop d'huile ?</h3>
                 <p>Oui, c'est un défaut de conception reconnu par Renault. La consommation peut atteindre 1 litre aux 1 000 km, ce qui est fatal pour la lubrification de la chaîne de distribution. Ajouter de l'huile régulièrement ne résout pas le problème, il retarde simplement la casse.</p>
 
-                <h3>Dacia Duster ou Renault Sandero : lequel est le plus solide ?</h3>
+                <h3>Dacia Duster ou Renault <a href="/Blog/dacia-sandero-modele-a-eviter">Sandero</a> : lequel est le plus solide ?</h3>
                 <p>La base mécanique est identique, mais le Duster est plus lourd. À moteur égal, la Sandero sollicite moins ses trains roulants et sa transmission. Pour les mêmes motorisations, le Duster consomme davantage et use plus rapidement son embrayage du fait de son gabarit supérieur.</p>
 
             </div><!-- .art-content -->

@@ -13,7 +13,7 @@ $article = [
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
     'category_color' => '#7c3aed',
-    'tags'           => ['Peugeot 3008', 'Fiabilité', 'Achat Occasion', 'PureTech', 'BlueHDi'],
+    'tags'           => ['Peugeot 3008', 'Fiabilité', 'Achat Occasion', '<a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a>', 'BlueHDi'],
     'image'          => '/Image/peugeot-3008-modele-a-eviter1.webp',
     'date'           => '29 Avril 2026',
     'author'         => 'Arnaud',

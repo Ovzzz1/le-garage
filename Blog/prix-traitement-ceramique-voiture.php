@@ -222,7 +222,7 @@ include __DIR__ . '/../header.php';
                                     <span class="calc-option-inner">
                                         <svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 18h40M4 18l4-8h24l4 8"/><path d="M12 10l3-6h10l3 6"/><circle cx="13" cy="18" r="4"/><circle cx="35" cy="18" r="4"/></svg>
                                         <strong>Citadine</strong>
-                                        <small>Clio, 208, Polo...</small>
+                                        <small><a href="/Blog/renault-clio-modele-a-eviter">Clio</a>, 208, Polo...</small>
                                     </span>
                                 </label>
                                 <label class="calc-option" for="v-berline">

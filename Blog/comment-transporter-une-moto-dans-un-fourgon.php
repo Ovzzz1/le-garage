@@ -172,7 +172,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="taille-fourgon">Quelle taille de fourgon pour une moto ?</h2>
 
-                <p>Une moto peut rentrer dans une simple fourgonnette — mais pas n'importe laquelle. Pour la majorité des motos (roadsters, sportives, trails moyens), il vous faut <strong>un volume utile d'au moins 2,10 mètres de longueur</strong> derrière les sièges avant. Un utilitaire L1H1 (type Renault Trafic, Peugeot Expert ou Mercedes Vito) est généralement parfait.</p>
+                <p>Une moto peut rentrer dans une simple fourgonnette — mais pas n'importe laquelle. Pour la majorité des motos (roadsters, sportives, trails moyens), il vous faut <strong>un volume utile d'au moins 2,10 mètres de longueur</strong> derrière les sièges avant. Un utilitaire L1H1 (type <a href="/Blog/dimension-trafic-l1h1">Renault Trafic</a>, Peugeot Expert ou Mercedes Vito) est généralement parfait.</p>
 
                 <p>Attention à la hauteur : si vous possédez un grand trail avec une bulle haute, vérifiez la hauteur de passage des portes arrière — le H1 peut parfois bloquer et nécessiter de démonter la bulle ou les rétroviseurs avant chargement.</p>
 

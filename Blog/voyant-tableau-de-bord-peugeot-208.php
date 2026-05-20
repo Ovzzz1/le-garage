@@ -185,7 +185,7 @@ include __DIR__ . '/../header.php';
             <!-- Article Content -->
             <div class="art-content">
 
-                <p>Un symbole inconnu vient de s'allumer sur votre Peugeot 208 ? Pas de panique. L'affichage d'un témoin sur le tableau de bord est le moyen de communication de votre voiture. Ce guide vous aide à identifier le problème instantanément et vous donne la marche à suivre, que vous rouliez en version essence (PureTech), diesel (BlueHDi), hybride ou électrique (e-208).</p>
+                <p>Un symbole inconnu vient de s'allumer sur votre <a href="/Blog/modele-208-a-eviter">Peugeot 208</a> ? Pas de panique. L'affichage d'un témoin sur le tableau de bord est le moyen de communication de votre voiture. Ce guide vous aide à identifier le problème instantanément et vous donne la marche à suivre, que vous rouliez en version essence (PureTech), diesel (BlueHDi), hybride ou électrique (e-208).</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="code-couleur">La règle d'or : le code couleur des voyants</h2>

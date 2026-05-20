@@ -84,7 +84,7 @@ $article = [
 <h2 id="w246">La génération W246 (2012-2019) : plus moderne mais pas sans reproche</h2>
 <p>Lancée pour corriger les erreurs de sa devancière, la W246 est bien plus fiable, mais elle a introduit ses propres maladies de jeunesse entre 2011 et 2014.</p>
 
-<h3>Moteur Renault ou pur Mercedes : comment faire la différence ?</h3>
+<h3><a href="/Blog/moteur-renault-a-eviter">Moteur Renault</a> ou pur Mercedes : comment faire la différence ?</h3>
 <p>C'est la question que tout le monde se pose. Sur les B 160d et B 180d, Mercedes utilise le bloc 1.5 dCi de chez Renault (OM607). S'il est globalement robuste, il manque de "noblesse" pour certains et peut souffrir de fuites de liquide de refroidissement ou de surchauffe s'il est mal entretenu. Par contre, les B 200d et B 220d utilisent le moteur 2.1 Mercedes (OM651), bien plus coupleux mais connu pour ses tendeurs de chaîne de distribution qui fatiguent. Pour vérifier, regardez le code moteur sur la carte grise : <strong>OM607 = Renault</strong>, <strong>OM651 = Mercedes</strong>.</p>
 
 <h3>Boîte 7G-DCT : la vidange comme seule planche de salut</h3>

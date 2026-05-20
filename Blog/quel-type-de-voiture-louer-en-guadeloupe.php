@@ -239,7 +239,7 @@ include __DIR__ . '/../header.php';
                             </tr>
                             <tr>
                                 <td><strong>SUV / crossover</strong></td>
-                                <td><a href="/Blog/dacia-duster-modeles-a-eviter">Dacia Duster</a>, Renault Captur, Hyundai Tucson</td>
+                                <td><a href="/Blog/dacia-duster-modeles-a-eviter">Dacia Duster</a>, <a href="/Blog/renault-captur-modele-a-eviter">Renault Captur</a>, Hyundai Tucson</td>
                                 <td>Basse-Terre, relief, bagages. Meilleure garde au sol, plus d'aisance en montée.</td>
                             </tr>
                         </tbody>

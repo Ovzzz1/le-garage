@@ -229,7 +229,7 @@ include __DIR__ . '/../header.php';
                     </table>
                 </div>
 
-                <p>Les citadines (Clio 5, 208, Sandero) sont les modèles les plus courants sur ce segment. C'est aussi le meilleur moyen d'accéder à l'électrique à prix cassé, en attendant des modèles comme la <a href="/Blog/tesla-model-2-2026">Tesla Model 2</a>.</p>
+                <p>Les citadines (<a href="/Blog/renault-clio-modele-a-eviter">Clio</a> 5, 208, <a href="/Blog/dacia-sandero-modele-a-eviter">Sandero</a>) sont les modèles les plus courants sur ce segment. C'est aussi le meilleur moyen d'accéder à l'électrique à prix cassé, en attendant des modèles comme la <a href="/Blog/tesla-model-2-2026">Tesla Model 2</a>.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="checklist">Checklist : 5 points à vérifier avant d'acheter une voiture de 10 km</h2>
