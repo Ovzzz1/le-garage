@@ -41,45 +41,56 @@ $article = [
 
 <p>Pas de temps à perdre, voici la synthèse brute de ce que vous devez écarter de vos recherches.</p>
 
-<table>
+<style>
+.risk-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.95em; }
+.risk-table th { background: #1a1a2e; color: #fff; padding: 12px 15px; text-align: left; font-weight: 600; }
+.risk-table td { padding: 12px 15px; border-bottom: 1px solid #e5e7eb; }
+.risk-table .gen { font-weight: 700; font-size: 1.05em; }
+.row-red { background: #fff0f0; border-left: 4px solid #dc2626; }
+.row-red .badge { background: #dc2626; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: 600; }
+.row-orange { background: #fffbeb; border-left: 4px solid #f59e0b; }
+.row-orange .badge { background: #f59e0b; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: 600; }
+</style>
+
+<table class="risk-table">
     <thead>
         <tr>
             <th>Génération</th>
             <th>Années critiques</th>
-            <th>Motorisation posant problème</th>
+            <th>Motorisation</th>
             <th>Risque principal</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>K13</td>
-            <td>2010 - 2014</td>
+        <tr class="row-red">
+            <td class="gen">K13</td>
+            <td>2010 – 2014</td>
             <td>Boîte auto CVT Xtronic</td>
-            <td>Casse prématurée, factures > 3000€</td>
+            <td><span class="badge">CRITIQUE</span> Casse prématurée, factures &gt; 3 000 €</td>
         </tr>
-        <tr>
-            <td>K13</td>
-            <td>2010 - 2013</td>
-            <td>1.2 essence (premiers millésimes)</td>
-            <td>Chaîne de distribution bruyante</td>
+        <tr class="row-red">
+            <td class="gen">K12</td>
+            <td>2003 – 2010</td>
+            <td>Toutes motorisations</td>
+            <td><span class="badge">CRITIQUE</span> Pannes électriques et capteurs immobilisants</td>
         </tr>
-        <tr>
-            <td>K12</td>
-            <td>2003 - 2010</td>
-            <td>Toutes motorisations confondues</td>
-            <td>Pannes électriques et capteurs</td>
-        </tr>
-        <tr>
-            <td>K14</td>
-            <td>2017 - 2018</td>
-            <td>Tous moteurs (bugs de jeunesse)</td>
-            <td>Électronique et infodivertissement</td>
-        </tr>
-        <tr>
-            <td>K13/K14</td>
+        <tr class="row-red">
+            <td class="gen">K13/K14</td>
             <td>Toutes années</td>
             <td>1.5 dCi (usage urbain)</td>
-            <td>Encrassement FAP et vanne EGR</td>
+            <td><span class="badge">CRITIQUE</span> Encrassement FAP et vanne EGR</td>
+        </tr>
+        <tr class="row-orange">
+            <td class="gen">K13</td>
+            <td>2010 – 2013</td>
+            <td>1.2 essence (premiers millésimes)</td>
+            <td><span class="badge">ATTENTION</span> Chaîne de distribution bruyante dès 60 000 km</td>
+        </tr>
+        <tr class="row-orange">
+            <td class="gen">K14</td>
+            <td>2017 – 2018</td>
+            <td>Tous moteurs (bugs de jeunesse)</td>
+            <td><span class="badge">ATTENTION</span> Électronique et infodivertissement défaillants</td>
         </tr>
     </tbody>
 </table>
