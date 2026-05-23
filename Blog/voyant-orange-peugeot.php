@@ -504,7 +504,7 @@ include __DIR__ . '/../header.php';
                 <h3>L'ABS et le frein a main electrique (EPB)</h3>
                 <p><strong>ABS allume :</strong> l'antiblocage est hors service. Le freinage classique fonctionne, mais vous perdez l'assistance en freinage d'urgence. Diagnostic des que possible.</p>
                 <p><strong>EPB (P dans un cercle) :</strong> frein de stationnement serre ou defaut. Si vous roulez et qu'il s'allume, verifiez immediatement que le frein a main est bien relache.</p>
-                <p>Astuce diagnostic : si plusieurs voyants s'allument simultanement sans explication evidente, une masse electrique defaillante peut en etre la cause commune. Notre guide vous aide a identifier <a href="/Blog/symptome-mauvaise-masse-voiture">les symptomes d'une mauvaise masse sur votre voiture</a>.</p>
+                <p>Astuce diagnostic : si plusieurs voyants s'allument simultanement sans explication evidente, une masse electrique defaillante peut en etre la cause commune. Notre guide vous aide a identifier <strong><u><a href="/Blog/symptome-mauvaise-masse-voiture">les symptomes d'une mauvaise masse sur votre voiture</a></u></strong>.</p>
 
                 <h3>Le voyant antipollution</h3>
                 <p>Il signale un defaut sur le systeme de depollution : FAP, catalyseur, vanne EGR, sonde lambda. Sur les BlueHDi diesel, il peut aussi indiquer un niveau d'AdBlue bas. Evitez les trajets exclusivement urbains a basse vitesse : un FAP encrase a besoin d'une regeneration sur route. Remplacement : entre 800 et 2 000 euros selon le modele.</p>

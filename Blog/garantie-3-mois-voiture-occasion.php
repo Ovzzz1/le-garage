@@ -385,7 +385,7 @@ include __DIR__ . '/../header.php';
 
                 <img src="/Image/garantie-3-mois-voiture-occasion2.webp" alt="Schéma châssis voiture avec moteur, boîte et pont colorés en bleu et pièces d'usure exclues en gris" width="900" height="506" loading="lazy">
 
-                <p>Même sur des motorisations réputées sensibles — comme pour évaluer la <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">fiabilité du moteur 1.6 Puretech</a> — le garage tentera souvent d'invoquer la vétusté. Utilisez <a href="https://histovec.interieur.gouv.fr/histovec/accueil" target="_blank" rel="nofollow noopener">Histovec</a> pour vérifier le passé du véhicule avant toute démarche.</p>
+                <p>Même sur des motorisations réputées sensibles — comme pour évaluer la <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">fiabilité du moteur 1.6 Puretech</a> — le garage tentera souvent d'invoquer la vétusté. Utilisez <a href="https://histovec.interieur.gouv.fr/histovec/accueil" target="_blank" rel="nofollow noopener">Histovec</a> pour vérifier le passé du véhicule avant toute démarche. Pensez aussi à vérifier qu'aucun <strong><u><a href="/Blog/detecteur-traceur-gps-voiture">traceur GPS n'a été laissé par l'ancien propriétaire</a></u></strong> — c'est plus fréquent qu'on ne le croit sur le marché de l'occasion.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="clause-km">Clause "3 mois ou 5 000 km" : comment l'interpréter</h2>

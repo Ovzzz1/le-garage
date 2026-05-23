@@ -403,7 +403,7 @@ include __DIR__ . '/../header.php';
                 <p>En moyenne, comptez 15 à 21 jours après le dépôt pour que votre dossier soit validé et que votre numéro NEPH soit généré. Tout document illisible ou non conforme remet le délai à zéro.</p>
 
                 <h3>L'ASSR 1 est-elle acceptée pour le permis B ?</h3>
-                <p>Non. C'est l'ASSR 2, obtenue en classe de 3e, qui est exigée pour le permis B. L'ASSR 1 ne concerne que le permis AM (BSR).</p>
+                <p>Non. C'est l'ASSR 2, obtenue en classe de 3e, qui est exigée pour le permis B. L'ASSR 1 ne concerne que le permis AM (BSR). Si vous roulez déjà avec ce permis et que vous revendez votre véhicule pour financer la suite, consultez la <strong><u><a href="/Blog/argus-voiture-sans-permis">cote Argus des voitures sans permis</a></u></strong> pour l'estimer correctement.</p>
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">Le mot du Garage Expert Auto</div>

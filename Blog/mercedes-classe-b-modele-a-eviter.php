@@ -88,7 +88,7 @@ $article = [
 <p>C'est la question que tout le monde se pose. Sur les B 160d et B 180d, Mercedes utilise le bloc 1.5 dCi de chez Renault (OM607). S'il est globalement robuste, il manque de "noblesse" pour certains et peut souffrir de fuites de liquide de refroidissement ou de surchauffe s'il est mal entretenu. Par contre, les B 200d et B 220d utilisent le moteur 2.1 Mercedes (OM651), bien plus coupleux mais connu pour ses tendeurs de chaîne de distribution qui fatiguent. Pour vérifier, regardez le code moteur sur la carte grise : <strong>OM607 = Renault</strong>, <strong>OM651 = Mercedes</strong>.</p>
 
 <h3>Boîte 7G-DCT : la vidange comme seule planche de salut</h3>
-<p>La boîte à double embrayage 7G-DCT est bien plus agréable que l'ancienne CVT, mais elle ne tolère aucun écart. Elle nécessite une vidange tous les <strong>60 000 km</strong> sans exception. Si l'historique d'entretien ne mentionne pas cette opération avec facture à l'appui, le risque de panne du module mécatronique (comptez <strong>3 500 €</strong>) est quasi certain.</p>
+<p>La boîte à double embrayage 7G-DCT est bien plus agréable que l'ancienne CVT, mais elle ne tolère aucun écart. Elle nécessite une vidange tous les <strong>60 000 km</strong> sans exception. Si l'historique d'entretien ne mentionne pas cette opération avec facture à l'appui, le risque de panne du <strong><u><a href="/Blog/reparation-platine-boite-auto-mercedes">module mécatronique</a></u></strong> (comptez <strong>3 500 €</strong>) est quasi certain.</p>
 
 <h2 id="fiables">Focus : Tableau des recommandations (Les versions à privilégier)</h2>
 <p>Voici les configurations les plus robustes pour un achat serein, classées par usage.</p>

@@ -199,7 +199,7 @@ include __DIR__ . '/../header.php';
                     Le conseil du Garage Expert : un bon traitement céramique, c'est <strong>70 % de préparation (lavage, décontamination, polissage)</strong> et <strong>30 % de produit</strong>. Si un centre propose une pose rapide sans correction de la peinture avant — passez votre chemin. La céramique va simplement figer et enfermer les défauts existants sous une couche de verre.
                 </blockquote>
                 <p>Avant d'appliquer le traitement, le professionnel procède à un lavage minutieux, un passage à la <em>clay bar</em> (barre d'argile pour retirer les contaminants incrustés dans le vernis), puis un polissage "One step" ou "Multi-step" pour retrouver un vernis parfait et une brillance miroir.</p>
-                <p>Si vous souhaitez compléter la protection de la carrosserie en surface par une protection en dessous, notre guide sur le <a href="/Blog/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion du châssis</a> vous présente la méthode en 3 étapes pour protéger la structure de votre véhicule de la rouille.</p>
+                <p>Si vous souhaitez compléter la protection de la carrosserie en surface par une protection en dessous, notre guide sur le <strong><u><a href="/Blog/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion du châssis</a></u></strong> vous présente la méthode en 3 étapes pour protéger la structure de votre véhicule de la rouille.</p>
 
                 <!-- ═══════════════════════════════════════ -->
                 <h2 id="estimateur">Notre estimateur de tarif : calculez un budget selon votre voiture</h2>

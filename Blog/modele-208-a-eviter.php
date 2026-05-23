@@ -203,7 +203,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="listing-a-eviter">Listing détaillé des modèles Peugeot 208 à éviter absolument</h2>
 
                 <h3>1.2 PureTech 82, 110 et 130 ch (2012 — 2018)</h3>
-                <p>C'est incontestablement la motorisation à fuir en priorité. Sur ces années de production, la courroie de distribution est une véritable bombe à retardement. Si vous essayez l'une de ces 208 et que le voyant de pression d'huile s'allume, même une fraction de seconde au freinage, passez votre chemin. Le <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 à éviter</a> partage exactement ces mêmes blocs défaillants.</p>
+                <p>C'est incontestablement la motorisation à fuir en priorité. Sur ces années de production, la courroie de distribution est une véritable bombe à retardement. Si vous essayez l'une de ces 208 et que le voyant de pression d'huile s'allume, même une fraction de seconde au freinage, passez votre chemin. Le <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 à éviter</a> partage exactement ces mêmes blocs défaillants, ce qui explique <strong><u><a href="/Blog/probleme-moteur-peugeot-2008">les mêmes problèmes moteur sur le Peugeot 2008</a></u></strong>.</p>
 
                 <h3>1.5 BlueHDi 100 et 130 ch (2018 — 2022)</h3>
                 <p>Ne pensez pas que le diesel vous protégera des avaries sur la Phase 2. Sur ces blocs, le constructeur a installé une chaîne d'arbres à cames de seulement 7 mm, beaucoup trop fine, qui finit par se détendre ou casser. Si un claquement métallique distinct se fait entendre au démarrage à froid, la chaîne est sur le point de céder. À cela s'ajoute le risque omniprésent de défaillance du système AdBlue.</p>
