@@ -388,7 +388,7 @@ include __DIR__ . '/../header.php';
 
                 <!-- ═══════════════════════════════════════ -->
                 <h2 id="kit-bivouac">Le kit bivouac essentiel à emporter</h2>
-                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Sur les routes forestières ou de campagne empruntées souvent de nuit pour rejoindre un spot isolé, un <a href="/Blog/meilleur-ultrason-anti-gibier-voiture">sifflet ultrason anti-gibier</a> mérite une place dans votre kit — la faune sauvage est un risque réel au crépuscule et à l'aube. Voici la liste non exhaustive des éléments qu'Arnaud ne quitte plus depuis trois ans de van life :</p>
+                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Sur les routes forestières ou de campagne empruntées souvent de nuit pour rejoindre un spot isolé, un <strong><u><a href="/Blog/meilleur-ultrason-anti-gibier-voiture">sifflet ultrason anti-gibier</a></u></strong> mérite une place dans votre kit — la faune sauvage est un risque réel au crépuscule et à l'aube. Voici la liste non exhaustive des éléments qu'Arnaud ne quitte plus depuis trois ans de van life :</p>
 
                 <!-- CHECKLIST INTERACTIVE -->
                 <div class="bivouac-checklist" id="bivouac-checklist" role="region" aria-label="Kit bivouac essentiel">

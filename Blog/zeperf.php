@@ -41,6 +41,11 @@ $article = [
 
 <p>Cette rigueur scientifique permet d'éviter les déceptions courantes lors d'un achat car les chiffres de consommation ou d'accélération annoncés en concession sont rarement reproductibles sur route ouverte. En consultant ZePerfs, j'accède à une "vérité statistique" qui fait autorité dans le milieu de l'automobile sportive, car elle met en lumière le potentiel réel du moteur et du châssis face au chronomètre. Pensez toutefois à toujours vérifier l'historique d'entretien et les points de vigilance spécifiques avant de valider votre transaction, comme expliqué dans notre guide sur la <strong><u><a href="/Blog/garantie-3-mois-voiture-occasion">garantie légale de 3 mois sur voiture d'occasion</a></u></strong>.</p>
 
+<div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+    <p>Découvrez notre liste exhaustive de <strong><u><a href="/marques/a/">marques automobiles commençant par A</a></u></strong>.</p>
+</div>
+
 <h2 id="duel-match">Duel et Match : Comment comparer deux voitures comme un expert</h2>
 
 <p>L'outil le plus puissant du site réside sans aucun doute dans ses fonctions de confrontation directe. Le mode "Duel" permet d'opposer deux modèles précis sur une page unique, affichant ainsi côte à côte leurs caractéristiques et leurs chronos. C'est l'outil que je privilégie pour trancher entre deux motorisations proches ou pour évaluer le gain de performance réel d'une nouvelle génération de modèle par rapport à la précédente.</p>

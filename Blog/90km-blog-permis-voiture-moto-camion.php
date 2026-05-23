@@ -241,6 +241,11 @@ include __DIR__ . '/../header.php';
 
 
                 <!-- ══════════════════════════════════ -->
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/quel-papier-faut-il-pour-s-inscrire-a-l-auto-ecole">les papiers nécessaires pour s'inscrire à l'auto-école</a></u></strong>.</p>
+                </div>
+
                 <h2 id="permis-voiture-moto">Permis voiture et moto : ce que couvre le blog</h2>
 
 
@@ -273,7 +278,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>CACES :</strong> Guides sur les CACES R482 (engins de chantier) et R489 (chariots élévateurs), avec questionnaires d'examen corrigés.</li>
                 </ul>
 
-                <p>Pour aller plus loin sur les aspects réglementaires du transport routier spécialisé : si vous êtes amené à escorter ou organiser un transport hors-gabarit, nous avons décrypté le <a href="/Blog/tarif-voiture-pilote-convoi-exceptionnel">tarif d'une voiture pilote de convoi exceptionnel</a> — une réglementation méconnue mais incontournable dans ce secteur.</p>
+                <p>Pour aller plus loin sur les aspects réglementaires du transport routier spécialisé : si vous êtes amené à escorter ou organiser un transport hors-gabarit, nous avons décrypté le <strong><u><a href="/Blog/tarif-voiture-pilote-convoi-exceptionnel">tarif d'une voiture pilote de convoi exceptionnel</a></u></strong> — une réglementation méconnue mais incontournable dans ce secteur.</p>
 
 
                 <div class="art-table-wrap">

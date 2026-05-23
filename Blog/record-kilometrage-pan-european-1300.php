@@ -254,6 +254,11 @@ include __DIR__ . '/../header.php';
                 </ul>
 
                 <!-- ══════════════════════════════════ -->
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/comment-transporter-une-moto-dans-un-fourgon">le transport de votre moto dans un fourgon utilitaire</a></u></strong>.</p>
+                </div>
+
                 <h2 id="faq">FAQ longévité Pan European ST1300</h2>
 
                 <p><strong>ST1100 ou ST1300 : laquelle est la plus fiable ?</strong><br>

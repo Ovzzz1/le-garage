@@ -193,6 +193,11 @@ include __DIR__ . '/../header.php';
                 <p>Ces anomalies électriques liées à l'humidité peuvent parfois ressembler à un <a href="/Blog/symptome-mauvaise-masse-voiture">symptôme de mauvaise masse voiture</a> — erreur de diagnostic fréquente sur des autos sorties d'un parc portuaire.</p>
 
                 <!-- ══════════════════════════════════ -->
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/argus-caravane">la cote Argus des caravanes d'occasion</a></u></strong>.</p>
+                </div>
+
                 <h2 id="garantie">Garantie constructeur : le piège des mois fantômes</h2>
 
                 <p>C'est le point de vigilance absolu. La garantie constructeur ne démarre pas le jour de votre achat, mais le jour de la <strong>première immatriculation</strong> par le professionnel. C'est comme acheter un produit dont la date de péremption a commencé il y a plusieurs mois : l'article est intact, mais la période de couverture est réduite d'autant.</p>
@@ -243,6 +248,11 @@ include __DIR__ . '/../header.php';
                 </ul>
 
                 <!-- ══════════════════════════════════ -->
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/detecteur-traceur-gps-voiture">la détection de traceur GPS caché dans une voiture</a></u></strong>.</p>
+                </div>
+
                 <h2 id="faq">FAQ : vos questions sur les voitures à faible kilométrage</h2>
 
                 <p><strong>Est-ce une première main ?</strong><br>

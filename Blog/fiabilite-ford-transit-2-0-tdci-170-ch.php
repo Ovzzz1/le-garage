@@ -70,7 +70,7 @@ $article = [
 <p>C'est la motorisation la plus vendue car elle offre le meilleur rapport fiabilité/performance. Moins poussée que le 170 ch, elle subit des contraintes thermiques et de pression de suralimentation moindres. C'est le choix de la raison pour ceux qui cherchent à dépasser les 250 000 km sans changer de turbo.</p>
 
 <h3>Le 2.0 EcoBlue 170 ch : Puissance et agrément (Le moteur phare)</h3>
-<p>C'est le roi de la gamme, particulièrement apprécié sur les camping-cars lourds (type profilés ou intégraux). Avec son turbo à géométrie variable, il offre des reprises excellentes même en charge. Par contre, il ne pardonne aucune économie sur la qualité de l'huile. C'est un moteur performant qui nécessite une surveillance du système AdBlue pour éviter la cristallisation dans le réservoir.</p>
+<p>C'est le roi de la gamme, particulièrement apprécié sur les camping-cars lourds (type profilés ou intégraux). Avec son turbo à géométrie variable, il offre des reprises excellentes même en charge. Si vous profitez de sa puissance pour tracter une habitation légère d'occasion, pensez à consulter la <strong><u><a href="/Blog/argus-caravane">cote Argus des caravanes</a></u></strong> pour bien estimer votre équipement de loisir. Par contre, il ne pardonne aucune économie sur la qualité de l'huile. C'est un moteur performant qui nécessite une surveillance du système AdBlue pour éviter la cristallisation dans le réservoir.</p>
 
 <h2 id="tableau">Tableau Récapitulatif : Verdict Fiabilité Ford Transit 170 ch</h2>
 
@@ -104,6 +104,11 @@ $article = [
         </tr>
     </tbody>
 </table>
+
+<div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/reparation-platine-boite-auto-mercedes">la réparation d'une platine de boîte auto Mercedes</a></u></strong>.</p>
+</div>
 
 <h2 id="alternatives">Alternatives : Que choisir si vous fuyez le 2.0 EcoBlue ?</h2>
 

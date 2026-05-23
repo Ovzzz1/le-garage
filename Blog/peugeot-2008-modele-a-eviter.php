@@ -262,6 +262,11 @@ include __DIR__ . '/../header.php';
                 </div>
 
                 <!-- ══════════════════════════════════ -->
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/peugeot-3008-kilometrage-maximum">le kilométrage maximum d'un Peugeot 3008</a></u></strong>.</p>
+                </div>
+
                 <h2 id="faq-2008">FAQ : Vos questions fréquentes sur la fiabilité du Peugeot 2008</h2>
 
                 <h3>Quelle est la meilleure année pour acheter un Peugeot 2008 I d'occasion ?</h3>

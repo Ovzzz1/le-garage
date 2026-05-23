@@ -225,6 +225,11 @@ include __DIR__ . '/../header.php';
                     </table>
                 </div>
 
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/argus-voiture-sans-permis">la cote Argus des voitures sans permis</a></u></strong>.</p>
+                </div>
+
                 <h2 id="permis">4. Législation : Quel permis (AM, BSR) pour conduire un 50cc ?</h2>
                 <p>Inutile d'espérer prendre la route sans connaître la loi sur le bout des doigts, d'autant que la réglementation s'est endurcie. Un scooter 50cc (thermique ou équivalent électrique) ne dépasse pas, par sa construction, la <strong>vitesse maximale légale de 45 km/h</strong>.</p>
                 <ul>
@@ -262,6 +267,11 @@ include __DIR__ . '/../header.php';
 
             <!-- Conclusion Box -->
             <div class="art-conclusion">
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/peut-on-vendre-une-moto-sans-controle-technique">les règles de vente d'une moto sans contrôle technique</a></u></strong>.</p>
+                </div>
+
                 <h2>Le choix de l'expert</h2>
                 <p>En cas de doute, notre cœur penche inéluctablement vers la facilité déconcertante du <strong>Peugeot Kisbee 50</strong>. Il sera un allié quotidien d'une discrétion et d'une utilité implacables, le tout sans faire fondre votre livret bancaire de sa préparation routière jusqu'à ses pleins de carburant.</p>
             </div>

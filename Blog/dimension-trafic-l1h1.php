@@ -67,6 +67,11 @@ $article = [
 
 <p>Sur le Trafic 3 (depuis 2014), soyez vigilant avec le moteur 1.6 dCi Twin Turbo (125 et 145 ch) produit avant 2018, car j'ai constaté plusieurs cas de fuites de liquide de refroidissement au niveau du carter de distribution. Pour une fiabilité sans faille, mon retour d'expérience est sans appel : privilégiez le moteur 2.0 dCi (bloc M9R) introduit fin 2019. Ce moteur est non seulement plus coupleux, mais il dispose d'une distribution par chaîne robuste et répond aux normes antipollution les plus strictes. Pour aller plus loin sur la problématique des moteurs de fourgons, notre dossier sur la <strong><u><a href="/Blog/fiabilite-ford-transit-2-0-tdci-170-ch">fiabilité du Ford Transit 2.0 TDCi 170 ch</a></u></strong> traite des mêmes enjeux de courroie de distribution et d'entretien rigoureux sur un concurrent direct.</p>
 
+<div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/tarif-voiture-pilote-convoi-exceptionnel">le tarif d'une voiture pilote pour convoi exceptionnel</a></u></strong>.</p>
+</div>
+
 <h2 id="comparatif">Comparatif : Trafic L1H1 vs L2H1, quelle différence réelle ?</h2>
 
 <p>La version L2H1 offre 40 cm de longueur supplémentaire au niveau de l'empattement et du plancher. Si cette rallonge permet de gagner environ 0,8 m³ de volume, elle dégrade nettement le rayon de braquage du véhicule. De mon point de vue, le L1H1 reste supérieur pour un usage quotidien polyvalent, car le L2H1 devient plus difficile à manœuvrer dans les parkings ou les centres-villes saturés.</p>

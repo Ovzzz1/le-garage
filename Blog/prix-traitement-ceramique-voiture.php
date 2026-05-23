@@ -569,6 +569,11 @@ include __DIR__ . '/../header.php';
 
             <!-- FAQ -->
             <div class="art-conclusion">
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/meilleur-ultrason-anti-gibier-voiture">le choix d'un sifflet ultrason anti-gibier pour voiture</a></u></strong>.</p>
+                </div>
+
                 <h2 id="faq">FAQ sur le tarif d'un traitement céramique voiture</h2>
 
                 <h3>Combien coûte un traitement céramique voiture chez un professionnel ?</h3>

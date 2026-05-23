@@ -240,6 +240,11 @@ include __DIR__ . '/../header.php';
                 </div>
 
                 <!-- ══════════════════════════════════ -->
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/probleme-moteur-peugeot-2008">les problèmes moteur courants du Peugeot 2008</a></u></strong>.</p>
+                </div>
+
                 <h2 id="cas-specifiques">Cas spécifiques et problèmes fréquents</h2>
 
                 <h3>1. Le voyant "STOP" s'allume furtivement au démarrage</h3>
@@ -269,6 +274,11 @@ include __DIR__ . '/../header.php';
                 </div>
 
                 <!-- ══════════════════════════════════ -->
+                <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+                    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/symptome-mauvaise-masse-voiture">les symptômes d'une mauvaise masse sur une voiture</a></u></strong>.</p>
+                </div>
+
                 <h2 id="faq-voyants">FAQ : Réponses rapides</h2>
 
                 <div itemscope itemtype="https://schema.org/FAQPage">

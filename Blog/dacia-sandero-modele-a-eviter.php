@@ -44,6 +44,11 @@ $article = [
 
 <p>Par contre, le danger ne s'arrête pas là car ce manque d'huile finit par détendre la <strong>chaîne de distribution</strong>, provoquant un décalage du moteur ou, dans le pire des cas, une casse totale avant même d'atteindre les 100 000 km. Si vous croisez un modèle produit entre 2012 et fin 2016, passez votre chemin, car même une prise en charge partielle par Renault/Dacia reste complexe à obtenir en 2026.</p>
 
+<div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
+    <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
+    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/traitement-anti-corrosion-chassis-voiture">le traitement anti-corrosion du châssis de votre voiture</a></u></strong>.</p>
+</div>
+
 <h2 id="gen1">Sandero Génération 1 (2008-2012) : Attention au GPL et à la corrosion</h2>
 
 <p>Sur la première génération de Sandero, je surveille deux points noirs qui peuvent rendre le véhicule inapte au contrôle technique. D'une part, les versions équipées du kit <strong>GPL Landi Renzo</strong> d'origine souffrent de <strong>réservoirs toriques</strong> qui rouillent prématurément. Étant donné que le remplacement d'un réservoir coûte entre 800 € et 1 000 €, l'opération n'est plus rentable sur une voiture de cet âge.</p>
