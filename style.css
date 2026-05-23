@@ -1579,8 +1579,7 @@ img {
 }
 
 .art-tldr-title::before {
-  content: '⏱️';
-  font-size: 1.2rem;
+  display: none;
 }
 
 .art-tldr ul {
@@ -1596,6 +1595,15 @@ img {
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.art-tldr p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.art-tldr a {
+  color: var(--color-white);
 }
 
 .art-tldr li strong {
