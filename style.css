@@ -1597,22 +1597,29 @@ img {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.art-content .art-tldr p,
 .art-tldr p {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9) !important;
   margin: 0;
 }
 
+.art-content .art-tldr strong,
+.art-tldr strong {
+  color: var(--color-white) !important;
+}
+
 .art-tldr a,
+.art-content .art-tldr a,
 .art-content .art-tldr a[href^="/"],
 .art-content .art-tldr a[href^="http"] {
-  color: var(--color-white);
-  background-color: transparent;
+  color: var(--color-white) !important;
+  background-color: transparent !important;
   padding: 0;
 }
 
 .art-content .art-tldr a[href^="/"]:hover,
 .art-content .art-tldr a[href^="http"]:hover {
-  background-color: transparent;
+  background-color: transparent !important;
   text-decoration: underline;
 }
 
