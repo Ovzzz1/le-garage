@@ -1602,8 +1602,18 @@ img {
   margin: 0;
 }
 
-.art-tldr a {
+.art-tldr a,
+.art-content .art-tldr a[href^="/"],
+.art-content .art-tldr a[href^="http"] {
   color: var(--color-white);
+  background-color: transparent;
+  padding: 0;
+}
+
+.art-content .art-tldr a[href^="/"]:hover,
+.art-content .art-tldr a[href^="http"]:hover {
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .art-tldr li strong {
