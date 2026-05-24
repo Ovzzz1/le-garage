@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-30 09:00
 /**
  * c4-picasso-modele-a-eviter.php
@@ -8,7 +8,7 @@ $page_title       = "Citroën C4 Picasso modèle à éviter : La blacklist 2026 
 $page_description = "BMP6, PureTech, 1.6 THP : les versions du Citroën C4 Picasso à éviter absolument en 2026. Guide expert avec tableau récapitulatif, checklist et versions fiables à cibler.";
 
 $article = [
-    'title'          => 'Citroën C4 Picasso modèle à éviter : BMP6, <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a> et 1.6 THP',
+    'title'          => 'Citroën C4 Picasso modèle à éviter : BMP6, <a href="/moteur-1-6-puretech-fiabilite-avis">PureTech</a> et 1.6 THP',
     'subtitle'       => "Boîte BMP6, courroie PureTech et turbo HDi : le monospace aux chevrons cache des défauts de conception capables d'engloutir plus de 6 000 € de réparations. Voici les versions à proscrire et les rares choix sûrs.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -225,7 +225,7 @@ include __DIR__ . '/../header.php';
                 <p>Très prisé des gros rouleurs, le C4 Picasso diesel réserve parfois de très mauvaises surprises financières. Deux motorisations concentrent l'essentiel des problèmes.</p>
 
                 <h3>Le 1.6 HDi 110 ch : Le pire élève de la génération 1</h3>
-                <p>Sur les modèles produits entre 2006 et 2010, ce moteur souffre d'un défaut de conception majeur : les joints d'injecteurs fuient. Cette fuite crée de la calamine qui vient boucher le circuit de lubrification, entraînant la casse inévitable du turbocompresseur. Le volant moteur bi-masse de cette version s'use également de manière prématurée, une double peine pour le portefeuille. C'est le même scénario catastrophe décrit dans notre dossier sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs à éviter du groupe PSA</a>.</p>
+                <p>Sur les modèles produits entre 2006 et 2010, ce moteur souffre d'un défaut de conception majeur : les joints d'injecteurs fuient. Cette fuite crée de la calamine qui vient boucher le circuit de lubrification, entraînant la casse inévitable du turbocompresseur. Le volant moteur bi-masse de cette version s'use également de manière prématurée, une double peine pour le portefeuille. C'est le même scénario catastrophe décrit dans notre dossier sur les <a href="/moteur-peugeot-a-eviter">moteurs à éviter du groupe PSA</a>.</p>
 
                 <h3>Le 1.6 e-HDi : Attention au piège du Stop & Start</h3>
                 <p>Souvent recommandé à tort, ce moteur intègre un système micro-hybride (alterno-démarreur) pour le Stop & Start. Ce composant a tendance à lâcher prématurément sur les modèles d'avant 2015. La facture de remplacement dépasse régulièrement les 1 000 €, car la courroie d'accessoires spécifique doit également être remplacée en même temps.</p>
@@ -235,7 +235,7 @@ include __DIR__ . '/../header.php';
                      style="width:100%;height:auto;border-radius:8px;margin:18px 0;">
 
                 <h3>Le scandale de l'AdBlue sur les BlueHDi</h3>
-                <p>Sur le C4 Picasso II, le 1.6 BlueHDi est mécaniquement très fiable. Il est cependant touché par l'épidémie mondiale du système de dépollution : l'AdBlue cristallise et déforme le réservoir, détruisant la pompe intégrée. N'achetez un modèle BlueHDi que si le vendeur possède la facture de remplacement du réservoir d'AdBlue. Le même défaut sévit sur le <a href="/Blog/peugeot-3008-modele-a-eviter">Peugeot 3008 modèle à éviter</a>, preuve qu'il s'agit d'un mal profond chez Stellantis.</p>
+                <p>Sur le C4 Picasso II, le 1.6 BlueHDi est mécaniquement très fiable. Il est cependant touché par l'épidémie mondiale du système de dépollution : l'AdBlue cristallise et déforme le réservoir, détruisant la pompe intégrée. N'achetez un modèle BlueHDi que si le vendeur possède la facture de remplacement du réservoir d'AdBlue. Le même défaut sévit sur le <a href="/peugeot-3008-modele-a-eviter">Peugeot 3008 modèle à éviter</a>, preuve qu'il s'agit d'un mal profond chez Stellantis.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="essence-a-surveiller">Les moteurs Essence à surveiller de très près</h2>
@@ -243,7 +243,7 @@ include __DIR__ . '/../header.php';
                 <p>Si vous roulez peu, l'essence est le choix logique. Mais chez PSA, les moteurs de cette époque sont de véritables champs de mines qu'il convient de connaître avant toute visite.</p>
 
                 <h3>Le 1.2 PureTech : Le scandale de la courroie humide</h3>
-                <p>C'est le moteur essence le plus répandu sur le C4 Picasso II. Sa courroie de distribution baigne dans l'huile. Avec le temps et l'action corrosive de l'essence, elle s'effrite. Ses morceaux viennent boucher la crépine de la pompe à huile, causant une perte d'assistance de freinage (pompe à vide) ou la casse complète du moteur. Ce défaut est exactement identique à celui documenté sur le <a href="/Blog/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a>.</p>
+                <p>C'est le moteur essence le plus répandu sur le C4 Picasso II. Sa courroie de distribution baigne dans l'huile. Avec le temps et l'action corrosive de l'essence, elle s'effrite. Ses morceaux viennent boucher la crépine de la pompe à huile, causant une perte d'assistance de freinage (pompe à vide) ou la casse complète du moteur. Ce défaut est exactement identique à celui documenté sur le <a href="/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a>.</p>
 
                 <h3>Le 1.6 THP 156 ch : Une ruine financière</h3>
                 <p>Développé avec BMW, ce moteur cumule deux tares redoutables : la chaîne de distribution se détend, causant des pertes de puissance et des claquements à froid, et la segmentation laisse passer l'huile. Résultat : une consommation d'huile pouvant atteindre 1 litre aux 1 000 km qui finit par encrasser et détruire le moteur. Sans preuve de remplacement du kit distribution fiabilisé, passez votre chemin.</p>
@@ -253,7 +253,7 @@ include __DIR__ . '/../header.php';
 
                 <p>Le C4 Picasso est l'ambassadeur de l'une des pires transmissions du marché : la BMP6 (Boîte Manuelle Pilotée à 6 rapports), rebaptisée ETG6 par la suite. Elle cumule tous les défauts imaginables.</p>
 
-                <p>Des passages de vitesses d'une lenteur exaspérante, de violents à-coups lors des manœuvres ou dans les embouteillages, un embrayage et une butée hydraulique qui s'usent prématurément impliquant des frais colossaux : voilà le quotidien d'un C4 Picasso avec cette boîte. Les mêmes tares ont fait la mauvaise réputation du <a href="/Blog/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a> produit à la même époque.</p>
+                <p>Des passages de vitesses d'une lenteur exaspérante, de violents à-coups lors des manœuvres ou dans les embouteillages, un embrayage et une butée hydraulique qui s'usent prématurément impliquant des frais colossaux : voilà le quotidien d'un C4 Picasso avec cette boîte. Les mêmes tares ont fait la mauvaise réputation du <a href="/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a> produit à la même époque.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="points-controle">Les 3 points essentiels à vérifier avant l'achat</h2>
@@ -393,7 +393,7 @@ $schema = [
     "@context" => "https://schema.org",
     "@graph"   => [[
         "@type"            => "Article",
-        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
+        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],

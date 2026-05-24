@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-05-21 15:00
 /**
  * nissan-micra-modele-a-eviter.php — Le garage expert Auto
@@ -133,7 +133,7 @@ $article = [
 <p>Beaucoup d'acheteurs cherchent par motorisation, car les blocs de l'alliance Renault-Nissan ont fait couler beaucoup d'encre. Mettons les choses au clair.</p>
 
 <h3>Scandale du 1.2 : la Micra est-elle concernée ?</h3>
-<p>Le 1.2 DIG-T est une catastrophe industrielle reconnue, avec <strong><u><a href="/Blog/moteur-nissan-a-eviter">une surconsommation d'huile menant à la casse moteur</a></u></strong>. Par contre, la Micra est majoritairement équipée du 1.2 DIG-S (à compresseur), qui est une conception différente. Ne confondez pas les deux lors de vos recherches, et vérifiez toujours le code exact du moteur pour lever le doute.</p>
+<p>Le 1.2 DIG-T est une catastrophe industrielle reconnue, avec <strong><u><a href="/moteur-nissan-a-eviter">une surconsommation d'huile menant à la casse moteur</a></u></strong>. Par contre, la Micra est majoritairement équipée du 1.2 DIG-S (à compresseur), qui est une conception différente. Ne confondez pas les deux lors de vos recherches, et vérifiez toujours le code exact du moteur pour lever le doute.</p>
 
 <h3>Le 1.5 dCi diesel : FAP et vanne EGR inadaptés à la ville</h3>
 <p>Acheter une petite citadine diesel aujourd'hui est un très mauvais calcul. Le 1.5 dCi n'a pas le temps de chauffer sur de petits trajets urbains, ce qui entraîne irrémédiablement un encrassement fatal du filtre à particules (FAP) et de la vanne EGR.</p>
@@ -155,7 +155,7 @@ $article = [
 
 <h2 id="alternatives">Les alternatives hybrides et thermiques sur le marché de l'occasion</h2>
 
-<p>Si la liste des pannes potentielles vous a refroidi, tournez-vous vers d'autres citadines sur le même segment. La Toyota Yaris hybride reste la référence absolue en matière de tranquillité d'esprit. De leur côté, une <strong><u><a href="/Blog/modele-208-a-eviter">Peugeot 208</a></u></strong> ou une <strong><u><a href="/Blog/renault-clio-modele-a-eviter">Renault Clio V</a></u></strong> équipées des bonnes motorisations constituent des alternatives très solides et faciles à entretenir.</p>
+<p>Si la liste des pannes potentielles vous a refroidi, tournez-vous vers d'autres citadines sur le même segment. La Toyota Yaris hybride reste la référence absolue en matière de tranquillité d'esprit. De leur côté, une <strong><u><a href="/modele-208-a-eviter">Peugeot 208</a></u></strong> ou une <strong><u><a href="/renault-clio-modele-a-eviter">Renault Clio V</a></u></strong> équipées des bonnes motorisations constituent des alternatives très solides et faciles à entretenir.</p>
 HTML,
 
     'conclusion' => 'La Nissan Micra n\'est pas condamnée, mais elle exige une sélection chirurgicale : K14 post-2018, bloc 1.0 IG-T, boîte manuelle — et rien d\'autre.',

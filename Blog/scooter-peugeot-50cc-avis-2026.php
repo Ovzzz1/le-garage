@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * scooter-peugeot-50cc-avis-2026.php
  */
@@ -56,7 +56,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug'] = $file_slug;
-            $other_article['url'] = '/Blog/' . $file_slug;
+            $other_article['url'] = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             // Articles de la même catégorie
@@ -227,7 +227,7 @@ include __DIR__ . '/../header.php';
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/argus-voiture-sans-permis">la cote Argus des voitures sans permis</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/argus-voiture-sans-permis">la cote Argus des voitures sans permis</a></u></strong>.</p>
                 </div>
 
                 <h2 id="permis">4. Législation : Quel permis (AM, BSR) pour conduire un 50cc ?</h2>
@@ -235,7 +235,7 @@ include __DIR__ . '/../header.php';
                 <ul>
                     <li><strong>Vous avez un Permis Auto (Permis B) ?</strong> Parfait. Qu'importe l'année d'obtention de votre précieux papier rose (ou carte à puce), il vous autorise de droit à conduire publiquement la catégorie 50cm³.</li>
                     <li><strong>Vous êtes né(e) avant le 31 décembre 1987 ?</strong> Rien ne vous est exigé ! Ni code ni permis, un simple justificatif d'identité et d'âge suffit.</li>
-                    <li><strong>Vous êtes né(e) APRÈS le 1er janvier 1988 sans Permis B ?</strong> Il vous faudra obligatoirement réussir le fameux <strong>Permis AM</strong> (connu par le passé sous l'appellation "BSR"). Ce cursus est ouvert dès l'âge de 14 ans. Il comprend une petite formation théorique et une initiation pratique de quelques heures en <a href="/Blog/comment-changer-d-auto-ecole">auto-école</a>, sans examen final par un inspecteur (validation par l'école).</li>
+                    <li><strong>Vous êtes né(e) APRÈS le 1er janvier 1988 sans Permis B ?</strong> Il vous faudra obligatoirement réussir le fameux <strong>Permis AM</strong> (connu par le passé sous l'appellation "BSR"). Ce cursus est ouvert dès l'âge de 14 ans. Il comprend une petite formation théorique et une initiation pratique de quelques heures en <a href="/comment-changer-d-auto-ecole">auto-école</a>, sans examen final par un inspecteur (validation par l'école).</li>
                     <li><em>Le saviez-vous ?</em> Si vous avez le permis B complété par la petite formation passerelle obligatoire de 7h, vous pouvez sauter la case 50cc. La <strong>fiabilité du Peugeot Django 125</strong> (reconnu sur les forums) ou encore le <strong>scooter Peugeot 125 Tweet</strong> aux grandes roues sont de superbes portes d'entrée pour s'aventurer sur l'autoroute ou les périphériques, tout en restant chez la marque.</li>
                 </ul>
 
@@ -269,7 +269,7 @@ include __DIR__ . '/../header.php';
             <div class="art-conclusion">
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/peut-on-vendre-une-moto-sans-controle-technique">les règles de vente d'une moto sans contrôle technique</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/peut-on-vendre-une-moto-sans-controle-technique">les règles de vente d'une moto sans contrôle technique</a></u></strong>.</p>
                 </div>
 
                 <h2>Le choix de l'expert</h2>
@@ -376,7 +376,7 @@ include __DIR__ . '/../header.php';
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://garageraymond.fr/Blog/scooter-peugeot-50cc-avis-2026"
+        "@id": "https://garageraymond.fr/scooter-peugeot-50cc-avis-2026"
       },
       "headline": "<?php echo addslashes($article['title']); ?>",
       "description": "<?php echo addslashes($article['subtitle']); ?>",

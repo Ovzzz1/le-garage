@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-05-04 09:00
 /**
  * peugeot-2008-modele-a-eviter.php
@@ -8,7 +8,7 @@ $page_title       = "Peugeot 2008 modèle à éviter : Blacklist 2026 des versio
 $page_description = "1.2 PureTech, BlueHDi, boîte ETG : les versions du Peugeot 2008 à fuir absolument en occasion. Guide expert avec tableau récapitulatif, checklist avant achat et modèles fiables à cibler.";
 
 $article = [
-    'title'          => 'Peugeot 2008 modèle à éviter : <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a> courroie, BlueHDi AdBlue, ETG',
+    'title'          => 'Peugeot 2008 modèle à éviter : <a href="/moteur-1-6-puretech-fiabilite-avis">PureTech</a> courroie, BlueHDi AdBlue, ETG',
     'subtitle'       => "Derrière le look séduisant du 2008 se cachent le scandale de la courroie PureTech, la cristallisation AdBlue et la boîte ETG à saccades. Voici les millésimes à proscrire et les rares versions sur lesquelles miser sans risque.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -182,7 +182,7 @@ include __DIR__ . '/../header.php';
                             <tr>
                                 <td data-label="Moteur"><strong>1.2 PureTech (avant 2021)</strong></td>
                                 <td data-label="Carburant">Essence</td>
-                                <td data-label="Problème">Courroie humide corrosive, <strong><u><a href="/Blog/probleme-moteur-peugeot-2008">casse moteur</a></u></strong></td>
+                                <td data-label="Problème">Courroie humide corrosive, <strong><u><a href="/probleme-moteur-peugeot-2008">casse moteur</a></u></strong></td>
                                 <td data-label="Verdict"><span class="evit-rouge">À FUIR ABSOLUMENT</span></td>
                             </tr>
                             <tr>
@@ -224,7 +224,7 @@ include __DIR__ . '/../header.php';
                 <p>C'est le gros point noir du Peugeot 2008, car ce moteur (110 et 130 ch) équipe la grande majorité des modèles vendus en occasion. Si vous ne faites pas attention à son suivi, la casse moteur est presque garantie.</p>
 
                 <h3>La courroie de distribution immergée</h3>
-                <p>Les moteurs 1.2 PureTech possèdent une courroie de distribution dite humide, car elle baigne littéralement dans l'huile moteur. Le problème : l'essence se mélange parfois à l'huile lors de petits trajets urbains, rendant le fluide corrosif. La courroie s'effrite et se désagrège lentement. Les débris viennent boucher la crépine de la pompe à huile. Le résultat est catastrophique en chaîne : le moteur n'est plus lubrifié, le voyant de pression d'huile s'allume, le système de freinage durcit (car l'assistance utilise une pompe à vide lubrifiée par le moteur), et le bloc finit par casser. Ce scénario est décrit en détail dans notre dossier sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
+                <p>Les moteurs 1.2 PureTech possèdent une courroie de distribution dite humide, car elle baigne littéralement dans l'huile moteur. Le problème : l'essence se mélange parfois à l'huile lors de petits trajets urbains, rendant le fluide corrosif. La courroie s'effrite et se désagrège lentement. Les débris viennent boucher la crépine de la pompe à huile. Le résultat est catastrophique en chaîne : le moteur n'est plus lubrifié, le voyant de pression d'huile s'allume, le système de freinage durcit (car l'assistance utilise une pompe à vide lubrifiée par le moteur), et le bloc finit par casser. Ce scénario est décrit en détail dans notre dossier sur les <a href="/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
 
                 <img src="/Image/peugeot-2008-modele-a-eviter2.webp"
                      alt="Courroie de distribution PureTech Peugeot 2008 effilochée, résidus dans l'huile moteur"
@@ -236,12 +236,12 @@ include __DIR__ . '/../header.php';
                 <p>L'achat d'un diesel ne vous met pas à l'abri, surtout si vous ciblez les blocs récents équipés des normes européennes les plus strictes.</p>
 
                 <h3>Les 1.6 et 1.5 BlueHDi : Réservoir et cristallisation</h3>
-                <p>À partir de 2015, Peugeot a ajouté le système de dépollution AdBlue sur les moteurs BlueHDi. Le liquide AdBlue a une très forte tendance à cristalliser dans le système, bloquant la pompe, l'injecteur d'AdBlue, et déformant souvent le réservoir en plastique à cause de la surpression. Si les voyants défaut moteur et antipollution s'allument, souvent signalés par un <a href="/Blog/voyant-orange-peugeot">voyant orange au tableau de bord</a> accompagné d'un compte à rebours avant blocage définitif, il faudra changer l'intégralité du réservoir AdBlue en concession pour une facture dépassant allègrement les 1 000 €.</p>
+                <p>À partir de 2015, Peugeot a ajouté le système de dépollution AdBlue sur les moteurs BlueHDi. Le liquide AdBlue a une très forte tendance à cristalliser dans le système, bloquant la pompe, l'injecteur d'AdBlue, et déformant souvent le réservoir en plastique à cause de la surpression. Si les voyants défaut moteur et antipollution s'allument, souvent signalés par un <a href="/voyant-orange-peugeot">voyant orange au tableau de bord</a> accompagné d'un compte à rebours avant blocage définitif, il faudra changer l'intégralité du réservoir AdBlue en concession pour une facture dépassant allègrement les 1 000 €.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="boite-etg">Boîtes de vitesses : Fuyez la boîte automatique ETG</h2>
 
-                <p>Si vous cherchez le confort d'une boîte automatique, faites extrêmement attention à l'appellation sur l'annonce. Il faut éviter absolument la boîte ETG (anciennement BMP). Il s'agit d'une boîte manuelle robotisée à simple embrayage, et non d'une vraie boîte automatique fluide. Elle est d'une lenteur exaspérante, provoque de gros à-coups dans les embouteillages, et l'usure de l'actionneur et de l'embrayage est extrêmement prématurée. Le même défaut structural a rendu célèbre le <a href="/Blog/c4-picasso-modele-a-eviter">C4 Picasso modèle à éviter</a> produit à la même époque.</p>
+                <p>Si vous cherchez le confort d'une boîte automatique, faites extrêmement attention à l'appellation sur l'annonce. Il faut éviter absolument la boîte ETG (anciennement BMP). Il s'agit d'une boîte manuelle robotisée à simple embrayage, et non d'une vraie boîte automatique fluide. Elle est d'une lenteur exaspérante, provoque de gros à-coups dans les embouteillages, et l'usure de l'actionneur et de l'embrayage est extrêmement prématurée. Le même défaut structural a rendu célèbre le <a href="/c4-picasso-modele-a-eviter">C4 Picasso modèle à éviter</a> produit à la même époque.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="bons-choix-2008">Quel Peugeot 2008 d'occasion acheter les yeux fermés ?</h2>
@@ -250,7 +250,7 @@ include __DIR__ . '/../header.php';
 
                 <p>En diesel, cherchez un modèle 1.6 e-HDi (92 ou 115 ch) produit avant fin 2015. Ce moteur ne possède pas le fragile système AdBlue, il est très coupleux, fiable, et son système Stop & Start est parmi les meilleurs du marché. En transmission automatique, exigez uniquement l'appellation EAT6 ou EAT8 — une vraie boîte à convertisseur de couple de la marque japonaise Aisin, reconnue pour sa grande douceur et son excellente longévité.</p>
 
-                <p>En essence, n'achetez un PureTech que s'il s'agit d'une version post-2022 avec la courroie modifiée, ou si l'ancien propriétaire dispose d'une facture prouvant que le moteur vient d'être changé par Peugeot. Si vous hésitez avec le SUV grand format, découvrez aussi notre guide sur le <a href="/Blog/peugeot-3008-modele-a-eviter">Peugeot 3008 à éviter</a> avant de signer.</p>
+                <p>En essence, n'achetez un PureTech que s'il s'agit d'une version post-2022 avec la courroie modifiée, ou si l'ancien propriétaire dispose d'une facture prouvant que le moteur vient d'être changé par Peugeot. Si vous hésitez avec le SUV grand format, découvrez aussi notre guide sur le <a href="/peugeot-3008-modele-a-eviter">Peugeot 3008 à éviter</a> avant de signer.</p>
 
                 <img src="/Image/peugeot-2008-modele-a-eviter3.webp"
                      alt="Réservoir AdBlue Peugeot 2008 déformé avec traces de cristallisation, dépose en atelier"
@@ -264,7 +264,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/peugeot-3008-kilometrage-maximum">le kilométrage maximum d'un Peugeot 3008</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/peugeot-3008-kilometrage-maximum">le kilométrage maximum d'un Peugeot 3008</a></u></strong>.</p>
                 </div>
 
                 <h2 id="faq-2008">FAQ : Vos questions fréquentes sur la fiabilité du Peugeot 2008</h2>
@@ -379,7 +379,7 @@ $schema = [
     "@context" => "https://schema.org",
     "@graph"   => [[
         "@type"            => "Article",
-        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
+        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],

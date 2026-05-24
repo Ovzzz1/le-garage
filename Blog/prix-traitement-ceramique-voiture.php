@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * prix-traitement-ceramique-voiture.php
  */
@@ -56,7 +56,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -175,7 +175,7 @@ include __DIR__ . '/../header.php';
                 <h3>Ce qui fait vraiment varier le tarif</h3>
                 <p>L'écart entre deux devis s'explique rarement par la marque du produit utilisé (CarPro, Gtechniq, Fictech...). Le tarif est avant tout dicté par le <strong>temps de main-d'œuvre</strong>, lui-même influencé par quatre variables :</p>
                 <ul>
-                    <li><strong>Le gabarit du véhicule :</strong> Une citadine (type <a href="/Blog/modele-208-a-eviter">Peugeot 208</a>) demandera beaucoup moins de produit et d'heures qu'un grand SUV (type BMW X5) ou qu'un break.</li>
+                    <li><strong>Le gabarit du véhicule :</strong> Une citadine (type <a href="/modele-208-a-eviter">Peugeot 208</a>) demandera beaucoup moins de produit et d'heures qu'un grand SUV (type BMW X5) ou qu'un break.</li>
                     <li><strong>L'état initial du vernis :</strong> Un véhicule d'occasion marqué par les rouleaux de lavage nécessite un "cut" lourd pour effacer les micro-rayures, contre un simple lustrage de finition pour un modèle neuf.</li>
                     <li><strong>Le nombre de couches de protection :</strong> Une protection garantie 5 ans réclame souvent une base ("base coat") et une finition ("top coat"), augmentant le temps de pose et de séchage sous lampes infrarouges.</li>
                     <li><strong>Les options :</strong> Protection des jantes, des vitres, des plastiques extérieurs, des cuirs intérieurs, ou pose partielle d'un film PPF sur la face avant — chaque surface supplémentaire fait grimper le devis.</li>
@@ -199,7 +199,7 @@ include __DIR__ . '/../header.php';
                     Le conseil du Garage Expert : un bon traitement céramique, c'est <strong>70 % de préparation (lavage, décontamination, polissage)</strong> et <strong>30 % de produit</strong>. Si un centre propose une pose rapide sans correction de la peinture avant — passez votre chemin. La céramique va simplement figer et enfermer les défauts existants sous une couche de verre.
                 </blockquote>
                 <p>Avant d'appliquer le traitement, le professionnel procède à un lavage minutieux, un passage à la <em>clay bar</em> (barre d'argile pour retirer les contaminants incrustés dans le vernis), puis un polissage "One step" ou "Multi-step" pour retrouver un vernis parfait et une brillance miroir.</p>
-                <p>Si vous souhaitez compléter la protection de la carrosserie en surface par une protection en dessous, notre guide sur le <strong><u><a href="/Blog/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion du châssis</a></u></strong> vous présente la méthode en 3 étapes pour protéger la structure de votre véhicule de la rouille.</p>
+                <p>Si vous souhaitez compléter la protection de la carrosserie en surface par une protection en dessous, notre guide sur le <strong><u><a href="/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion du châssis</a></u></strong> vous présente la méthode en 3 étapes pour protéger la structure de votre véhicule de la rouille.</p>
 
                 <!-- ═══════════════════════════════════════ -->
                 <h2 id="estimateur">Notre estimateur de tarif : calculez un budget selon votre voiture</h2>
@@ -222,7 +222,7 @@ include __DIR__ . '/../header.php';
                                     <span class="calc-option-inner">
                                         <svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 18h40M4 18l4-8h24l4 8"/><path d="M12 10l3-6h10l3 6"/><circle cx="13" cy="18" r="4"/><circle cx="35" cy="18" r="4"/></svg>
                                         <strong>Citadine</strong>
-                                        <small><a href="/Blog/renault-clio-modele-a-eviter">Clio</a>, 208, Polo...</small>
+                                        <small><a href="/renault-clio-modele-a-eviter">Clio</a>, 208, Polo...</small>
                                     </span>
                                 </label>
                                 <label class="calc-option" for="v-berline">
@@ -571,7 +571,7 @@ include __DIR__ . '/../header.php';
             <div class="art-conclusion">
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/meilleur-ultrason-anti-gibier-voiture">le choix d'un sifflet ultrason anti-gibier pour voiture</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/meilleur-ultrason-anti-gibier-voiture">le choix d'un sifflet ultrason anti-gibier pour voiture</a></u></strong>.</p>
                 </div>
 
                 <h2 id="faq">FAQ sur le tarif d'un traitement céramique voiture</h2>
@@ -1088,7 +1088,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-07 10:00
 /**
  * cours-cap-mecanique-auto-pdf.php
@@ -65,7 +65,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
 
@@ -713,7 +713,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-24 22:00
 /**
  * peugeot-partner-tepee-a-eviter.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -223,7 +223,7 @@ include __DIR__ . '/../header.php';
                 </div>
 
                 <h3>La Phase 1 (2008-2012) : les années de tous les dangers</h3>
-                <p>C'est durant cette période que Peugeot a cumulé les soucis de lubrification sur les moteurs Diesel et les problèmes de conception sur le châssis. Si l'entretien n'est pas limpide avec des vidanges très rapprochées (tous les 15 000 km max), passez votre chemin. Consultez aussi notre <a href="/Blog/moteur-peugeot-a-eviter">liste des moteurs Peugeot à surveiller</a> pour élargir votre spectre de vigilance.</p>
+                <p>C'est durant cette période que Peugeot a cumulé les soucis de lubrification sur les moteurs Diesel et les problèmes de conception sur le châssis. Si l'entretien n'est pas limpide avec des vidanges très rapprochées (tous les 15 000 km max), passez votre chemin. Consultez aussi notre <a href="/moteur-peugeot-a-eviter">liste des moteurs Peugeot à surveiller</a> pour élargir votre spectre de vigilance.</p>
 
                 <h3>Les modèles Phase 2 (2013-2015) et le piège du réservoir AdBlue</h3>
                 <p>L'arrivée des normes Euro 6 a introduit le système BlueHDi. Sur le papier, c'est propre, mais en réalité les premiers réservoirs d'urée souffrent d'une pompe interne qui lâche à cause de la cristallisation du liquide. Peugeot ne détaille généralement pas la pièce : il faut changer tout le réservoir pour environ 1 200 €, une dépense disproportionnée pour un véhicule d'occasion.</p>
@@ -237,10 +237,10 @@ include __DIR__ . '/../header.php';
                 <p>C'est la "panne reine" du bloc 1.6 HDi (75, 90 et 110 ch). Le problème vient d'une crépine d'huile trop fine qui se bouche à cause de la calamine. Résultat : le turbo n'est plus lubrifié, il s'échauffe et casse net. Si vous ne nettoyez pas tout le circuit de lubrification avant de remonter un turbo neuf, celui-ci cassera à nouveau en moins de 500 km.</p>
 
                 <h3>Le train arrière "en V" : le défaut structurel invisible</h3>
-                <p>Regardez le Tepee par l'arrière : si les roues semblent inclinées vers l'intérieur (comme sur une Gordini), les roulements de bras de suspension sont HS. L'humidité s'infiltre dans les roulements, la rouille s'installe et l'essieu finit par se bloquer. C'est souvent le remplacement complet du train arrière, avec un <a href="/Blog/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion du châssis</a> en prime.</p>
+                <p>Regardez le Tepee par l'arrière : si les roues semblent inclinées vers l'intérieur (comme sur une Gordini), les roulements de bras de suspension sont HS. L'humidité s'infiltre dans les roulements, la rouille s'installe et l'essieu finit par se bloquer. C'est souvent le remplacement complet du train arrière, avec un <a href="/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion du châssis</a> en prime.</p>
 
                 <h3>1.2 PureTech et 1.6 VTi : les faiblesses des moteurs essence</h3>
-                <p>Le PureTech est le plus problématique à cause de sa courroie de distribution "humide" qui baigne dans l'huile, finit par s'effilocher et bouche la pompe à huile. Le 1.6 VTi 120 est quant à lui un gros consommateur d'huile et de liquide de refroidissement. Ces points sont communs avec les <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">défauts de conception des moteurs PureTech</a> que l'on retrouve sur toute la gamme.</p>
+                <p>Le PureTech est le plus problématique à cause de sa courroie de distribution "humide" qui baigne dans l'huile, finit par s'effilocher et bouche la pompe à huile. Le 1.6 VTi 120 est quant à lui un gros consommateur d'huile et de liquide de refroidissement. Ces points sont communs avec les <a href="/moteur-1-6-puretech-fiabilite-avis">défauts de conception des moteurs PureTech</a> que l'on retrouve sur toute la gamme.</p>
 
                 <h3>La boîte robotisée BMP6 / ETG6 : une transmission à fuir</h3>
                 <p>Si l'annonce mentionne une boîte automatique, attention — il s'agit souvent de la robotisée BMP6. Non seulement elle est lente et génère des accoups désagréables, mais ses actionneurs d'embrayage sont fragiles. En cas de panne, l'addition dépasse souvent les 2 000 €. Privilégiez absolument une boîte manuelle sur ce modèle.</p>
@@ -255,7 +255,7 @@ include __DIR__ . '/../header.php';
                 <p>Les galets de guidage s'usent et le câble de commande finit par casser ou sortir de son logement. Si la porte force à l'ouverture ou au verrouillage, c'est le signe que le mécanisme est en fin de vie. Le remplacement du mécanisme complet est une opération longue et coûteuse.</p>
 
                 <h3>Électronique et BSI : les bugs fantômes</h3>
-                <p>Le boîtier BSI peut devenir capricieux, entraînant l'apparition d'un <a href="/Blog/voyant-orange-peugeot">voyant orange Peugeot</a> au tableau de bord sans panne réelle, ou des dysfonctionnements des essuie-glaces et de la climatisation.</p>
+                <p>Le boîtier BSI peut devenir capricieux, entraînant l'apparition d'un <a href="/voyant-orange-peugeot">voyant orange Peugeot</a> au tableau de bord sans panne réelle, ou des dysfonctionnements des essuie-glaces et de la climatisation.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="alternatives">Quelles alternatives choisir ? Comparatif par gamme de prix</h2>
@@ -303,7 +303,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>Infiltrations Zenith :</strong> touchez le ciel de toit autour des vitres supérieures pour détecter toute trace d'humidité.</li>
                     <li><strong>Coulisse des portes :</strong> actionnez les portes latérales plusieurs fois — le mouvement doit être fluide, sans bruit métallique.</li>
                     <li><strong>Bouchon d'huile :</strong> sur PureTech, vérifiez visuellement l'état de la courroie par l'orifice de remplissage.</li>
-                    <li><strong>Usage et aménagement :</strong> vérifiez l'état des fixations de sièges, surtout si vous prévoyez d'<a href="/Blog/amenager-voiture-pour-dormir">aménager votre ludospace pour dormir</a>.</li>
+                    <li><strong>Usage et aménagement :</strong> vérifiez l'état des fixations de sièges, surtout si vous prévoyez d'<a href="/amenager-voiture-pour-dormir">aménager votre ludospace pour dormir</a>.</li>
                 </ul>
 
                 <!-- ══════════════════════════════════ -->
@@ -452,7 +452,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

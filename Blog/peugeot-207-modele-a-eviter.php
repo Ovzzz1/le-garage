@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-05-05 09:00
 /**
  * peugeot-207-modele-a-eviter.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -215,7 +215,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="essence-prince">Moteurs essence : Fuyez la famille Prince (THP et VTi)</h2>
 
-                <p>La collaboration entre PSA et BMW a donné naissance à des moteurs essence technologiquement avancés pour l'époque, mais dont la fiabilité s'est révélée catastrophique dès les premières années de mise en circulation. Ces blocs sont documentés en détail dans notre enquête sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
+                <p>La collaboration entre PSA et BMW a donné naissance à des moteurs essence technologiquement avancés pour l'époque, mais dont la fiabilité s'est révélée catastrophique dès les premières années de mise en circulation. Ces blocs sont documentés en détail dans notre enquête sur les <a href="/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
 
                 <h3>Le 1.6 THP (150, 156 et 175 ch) : Le pire choix possible</h3>
                 <p>Si vous cherchez une 207 sportive comme la 207 RC ou la Féline, vous tomberez inévitablement sur le 1.6 THP. Ce bloc est un nid à pannes ruineuses. Son défaut principal réside dans le tendeur de chaîne de distribution qui s'use prématurément : la chaîne se détend et se décale, provoquant des claquements métalliques à froid, une perte de puissance instantanée, et très souvent la destruction totale du moteur par contact soupapes-pistons. Ajoutez une pompe haute pression fragile et une consommation d'huile affolante, et vous obtenez un moteur à éviter absolument.</p>
@@ -241,7 +241,7 @@ include __DIR__ . '/../header.php';
                 <p>Au-delà de la mécanique pure, la 207 a vieilli et présente des faiblesses périphériques très onéreuses à bien identifier lors de votre visite.</p>
 
                 <ol>
-                    <li><strong>La direction assistée électrique :</strong> C'est le talon d'Achille de la 207. Écoutez bien lors de l'essai : un grognement en tournant le volant de butée en butée à l'arrêt, ou un volant qui se fige subitement en roulant, signale une crémaillère complète à changer — facture supérieure à 1 000 €. Un <a href="/Blog/voyant-orange-peugeot">voyant orange Peugeot</a> allumé de manière aléatoire peut également indiquer ce défaut.</li>
+                    <li><strong>La direction assistée électrique :</strong> C'est le talon d'Achille de la 207. Écoutez bien lors de l'essai : un grognement en tournant le volant de butée en butée à l'arrêt, ou un volant qui se fige subitement en roulant, signale une crémaillère complète à changer — facture supérieure à 1 000 €. Un <a href="/voyant-orange-peugeot">voyant orange Peugeot</a> allumé de manière aléatoire peut également indiquer ce défaut.</li>
                     <li><strong>L'électronique et le boîtier BSI :</strong> La 207 est victime des sautes d'humeur de son Boîtier de Servitude Intelligent. Testez impérativement vitres électriques, clignotants, climatisation et essuie-glaces lors de l'essai. Un voyant orange qui s'allume aléatoirement sans perte de puissance est souvent lié à ce boîtier qui prend l'humidité.</li>
                     <li><strong>Le toit (versions CC et SW) :</strong> Si vous visez le cabriolet 207 CC, actionnez le toit plusieurs fois. Les capteurs tombent en panne et la pompe hydraulique fuit. Pour la version break 207 SW, vérifiez l'étanchéité du toit panoramique en verre et le rideau occultant électrique qui a tendance à dérailler.</li>
                 </ol>
@@ -257,7 +257,7 @@ include __DIR__ . '/../header.php';
 
                 <p>En essence, privilégiez les anciens moteurs équipés d'une courroie de distribution classique, non Prince : le 1.4i 75 ch ou le 1.4 16v 90 ch. Ils consomment un peu plus de carburant, mais ils sont mécaniquement indestructibles et ne présentent aucun des défauts structurels des blocs VTi ou THP.</p>
 
-                <p>En diesel, ciblez absolument un modèle Phase 2 commercialisé après juillet 2009 — reconnaissable à son pare-chocs avant redessiné — équipé du solide 1.6 HDi 92 ch ou du modeste 1.4 HDi 70 ch. Les défauts de jeunesse concernant le turbo et les injecteurs y ont été définitivement corrigés. Si votre budget le permet et que vous souhaitez vous orienter vers la remplaçante directe, consultez notre guide sur la <a href="/Blog/modele-208-a-eviter">Peugeot 208 : les modèles à éviter</a> avant de signer.</p>
+                <p>En diesel, ciblez absolument un modèle Phase 2 commercialisé après juillet 2009 — reconnaissable à son pare-chocs avant redessiné — équipé du solide 1.6 HDi 92 ch ou du modeste 1.4 HDi 70 ch. Les défauts de jeunesse concernant le turbo et les injecteurs y ont été définitivement corrigés. Si votre budget le permet et que vous souhaitez vous orienter vers la remplaçante directe, consultez notre guide sur la <a href="/modele-208-a-eviter">Peugeot 208 : les modèles à éviter</a> avant de signer.</p>
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">Le mot du Garage Expert Auto</div>
@@ -377,7 +377,7 @@ $schema = [
     "@context" => "https://schema.org",
     "@graph"   => [[
         "@type"            => "Article",
-        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
+        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],

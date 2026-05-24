@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-07 10:00
 /**
  * comment-installer-siege-auto.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -265,7 +265,7 @@ include __DIR__ . '/../header.php';
                             <tr>
                                 <td><strong>3. Airbag actif à l'avant</strong></td>
                                 <td>Le déclenchement de l'airbag frontal peut être mortel pour un enfant dos à la route.</td>
-                                <td>Désactivez l'airbag sur "OFF". Si vous voyez un <a href="/Blog/voyant-orange-peugeot">voyant orange Peugeot</a> ou autre, vérifiez le statut passager.</td>
+                                <td>Désactivez l'airbag sur "OFF". Si vous voyez un <a href="/voyant-orange-peugeot">voyant orange Peugeot</a> ou autre, vérifiez le statut passager.</td>
                             </tr>
                             <tr>
                                 <td><strong>4. Mauvais guides de ceinture</strong></td>
@@ -422,7 +422,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

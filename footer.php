@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * footer.php
  * Pied de page du site Automobile
@@ -41,10 +41,10 @@
         <div class="footer-col">
             <h4 class="footer-title">Top Articles</h4>
             <ul class="footer-links">
-                <li><a href="https://www.garageraymond.fr/Blog/tesla-model-2-2026" target="_blank" rel="noopener">Tesla Model 2 2026</a></li>
-                <li><a href="https://www.garageraymond.fr/Blog/voyant-orange-peugeot" target="_blank" rel="noopener">Voyant orange Peugeot</a></li>
-                <li><a href="https://www.garageraymond.fr/Blog/moteur-1-6-puretech-fiabilite-avis" target="_blank" rel="noopener">Moteur 1.6 PureTech fiabilité</a></li>
-                <li><a href="https://www.garageraymond.fr/Blog/scooter-peugeot-50cc-avis-2026" target="_blank" rel="noopener">Scooter Peugeot 50cc</a></li>
+                <li><a href="https://www.garageraymond.fr/tesla-model-2-2026" target="_blank" rel="noopener">Tesla Model 2 2026</a></li>
+                <li><a href="https://www.garageraymond.fr/voyant-orange-peugeot" target="_blank" rel="noopener">Voyant orange Peugeot</a></li>
+                <li><a href="https://www.garageraymond.fr/moteur-1-6-puretech-fiabilite-avis" target="_blank" rel="noopener">Moteur 1.6 PureTech fiabilité</a></li>
+                <li><a href="https://www.garageraymond.fr/scooter-peugeot-50cc-avis-2026" target="_blank" rel="noopener">Scooter Peugeot 50cc</a></li>
             </ul>
         </div>
     </div>

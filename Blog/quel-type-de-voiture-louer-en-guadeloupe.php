@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug'] = $file_slug;
-            $other_article['url'] = '/Blog/' . $file_slug;
+            $other_article['url'] = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             // Articles de la même catégorie
@@ -234,12 +234,12 @@ include __DIR__ . '/../header.php';
                             </tr>
                             <tr>
                                 <td><strong>Citadine polyvalente</strong></td>
-                                <td><a href="/Blog/modele-208-a-eviter">Peugeot 208</a>, Toyota Yaris, Kia Rio</td>
+                                <td><a href="/modele-208-a-eviter">Peugeot 208</a>, Toyota Yaris, Kia Rio</td>
                                 <td>Séjour classique avec plages et visites. Bon équilibre entre confort et budget.</td>
                             </tr>
                             <tr>
                                 <td><strong>SUV / crossover</strong></td>
-                                <td><a href="/Blog/dacia-duster-modeles-a-eviter">Dacia Duster</a>, <a href="/Blog/renault-captur-modele-a-eviter">Renault Captur</a>, Hyundai Tucson</td>
+                                <td><a href="/dacia-duster-modeles-a-eviter">Dacia Duster</a>, <a href="/renault-captur-modele-a-eviter">Renault Captur</a>, Hyundai Tucson</td>
                                 <td>Basse-Terre, relief, bagages. Meilleure garde au sol, plus d'aisance en montée.</td>
                             </tr>
                         </tbody>
@@ -444,7 +444,7 @@ include __DIR__ . '/../header.php';
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://garageraymond.fr/Blog/quel-type-de-voiture-louer-en-guadeloupe"
+    "@id": "https://garageraymond.fr/quel-type-de-voiture-louer-en-guadeloupe"
   },
   "headline": "Quel type de voiture louer en Guadeloupe ? Guide complet 2026",
   "description": "Citadine, SUV, monospace ou 4x4 : découvrez quelle voiture louer en Guadeloupe selon votre itinéraire, votre budget, vos bagages et les assurances.",

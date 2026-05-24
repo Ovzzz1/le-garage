@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-05-07 08:00
 /**
  * renault-scenic-modele-a-eviter.php — Le garage expert Auto
@@ -148,7 +148,7 @@ $article = [
         <tr>
             <td style="padding: 10px;"><strong>1.6 16v (K4M)</strong></td>
             <td style="padding: 10px;">Scénic 2 / 3</td>
-            <td style="padding: 10px;">Atmosphérique simple. Increvable si vous faites <a href="/Blog/voiture-occasion-10-km-pourquoi">peu de kilomètres</a>.</td>
+            <td style="padding: 10px;">Atmosphérique simple. Increvable si vous faites <a href="/voiture-occasion-10-km-pourquoi">peu de kilomètres</a>.</td>
             <td style="padding: 10px; color: #27ae60; font-weight: bold;">Le choix budget</td>
         </tr>
     </tbody>

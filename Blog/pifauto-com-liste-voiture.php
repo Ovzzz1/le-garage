@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * pifauto-com-liste-voiture.php
  */
@@ -56,7 +56,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug'] = $file_slug;
-            $other_article['url'] = '/Blog/' . $file_slug;
+            $other_article['url'] = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -214,7 +214,7 @@ include __DIR__ . '/../header.php';
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong><a href="/Blog/qashqai-modele-a-eviter">Qashqai</a></strong></td>
+                                <td><strong><a href="/qashqai-modele-a-eviter">Qashqai</a></strong></td>
                                 <td>Nissan</td>
                                 <td>Jusqu'à 160 CV (Le pionnier des Crossovers)</td>
                             </tr>
@@ -493,7 +493,7 @@ include __DIR__ . '/../header.php';
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://garageraymond.fr/Blog/pifauto-com-liste-voiture"
+        "@id": "https://garageraymond.fr/pifauto-com-liste-voiture"
       },
       "headline": <?php echo json_encode($article['title']); ?>,
       "description": <?php echo json_encode($article['subtitle']); ?>,

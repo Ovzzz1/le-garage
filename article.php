@@ -61,7 +61,7 @@ if (is_dir($blog_dir)) {
         if ($other_article && isset($other_article['title'])) {
             $file_slug = pathinfo($file, PATHINFO_FILENAME);
             $other_article['slug'] = $file_slug;
-            $other_article['url'] = '/Blog/' . $file_slug;
+            $other_article['url'] = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {

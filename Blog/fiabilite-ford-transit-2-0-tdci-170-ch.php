@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-05-16 08:00
 /**
  * fiabilite-ford-transit-2-0-tdci-170-ch.php — Le garage expert Auto
@@ -40,7 +40,7 @@ $article = [
 
 <h2 id="controverse">Pourquoi le moteur 2.0 EcoBlue 170 ch est-il si controversé ?</h2>
 
-<p>Le passage au bloc 2.0 EcoBlue, nom de code "Panther", a marqué une rupture technologique chez Ford pour répondre aux normes antipollution Euro 6. En remplaçant le vieux 2.2 Puma, Ford a introduit une courroie de distribution fonctionnant dans un bain d'huile (Wet Belt) pour réduire les frictions et le bruit. Par contre, ce qui fonctionne parfaitement en théorie est devenu un cauchemar pour les propriétaires négligents. Si l'on compare ce bloc au légendaire "moteur banane" (le 2.5D des années 90), la différence de philosophie est totale : là où l'ancien Transit acceptait une huile basique et des entretiens espacés, le 2.0 EcoBlue 170 ch exige une rigueur absolue sous peine de destruction interne. Pour avoir une vision globale des blocs Ford à surveiller sur les autres modèles de la marque, notre guide sur les <strong><u><a href="/Blog/moteur-ford-a-eviter">moteurs Ford à éviter</a></u></strong> complète ce dossier Transit.</p>
+<p>Le passage au bloc 2.0 EcoBlue, nom de code "Panther", a marqué une rupture technologique chez Ford pour répondre aux normes antipollution Euro 6. En remplaçant le vieux 2.2 Puma, Ford a introduit une courroie de distribution fonctionnant dans un bain d'huile (Wet Belt) pour réduire les frictions et le bruit. Par contre, ce qui fonctionne parfaitement en théorie est devenu un cauchemar pour les propriétaires négligents. Si l'on compare ce bloc au légendaire "moteur banane" (le 2.5D des années 90), la différence de philosophie est totale : là où l'ancien Transit acceptait une huile basique et des entretiens espacés, le 2.0 EcoBlue 170 ch exige une rigueur absolue sous peine de destruction interne. Pour avoir une vision globale des blocs Ford à surveiller sur les autres modèles de la marque, notre guide sur les <strong><u><a href="/moteur-ford-a-eviter">moteurs Ford à éviter</a></u></strong> complète ce dossier Transit.</p>
 
 <h2 id="liste-noire">La Liste Noire : Les problèmes critiques et millésimes à surveiller</h2>
 
@@ -70,7 +70,7 @@ $article = [
 <p>C'est la motorisation la plus vendue car elle offre le meilleur rapport fiabilité/performance. Moins poussée que le 170 ch, elle subit des contraintes thermiques et de pression de suralimentation moindres. C'est le choix de la raison pour ceux qui cherchent à dépasser les 250 000 km sans changer de turbo.</p>
 
 <h3>Le 2.0 EcoBlue 170 ch : Puissance et agrément (Le moteur phare)</h3>
-<p>C'est le roi de la gamme, particulièrement apprécié sur les camping-cars lourds (type profilés ou intégraux). Avec son turbo à géométrie variable, il offre des reprises excellentes même en charge. Si vous profitez de sa puissance pour tracter une habitation légère d'occasion, pensez à consulter la <strong><u><a href="/Blog/argus-caravane">cote Argus des caravanes</a></u></strong> pour bien estimer votre équipement de loisir. Par contre, il ne pardonne aucune économie sur la qualité de l'huile. C'est un moteur performant qui nécessite une surveillance du système AdBlue pour éviter la cristallisation dans le réservoir.</p>
+<p>C'est le roi de la gamme, particulièrement apprécié sur les camping-cars lourds (type profilés ou intégraux). Avec son turbo à géométrie variable, il offre des reprises excellentes même en charge. Si vous profitez de sa puissance pour tracter une habitation légère d'occasion, pensez à consulter la <strong><u><a href="/argus-caravane">cote Argus des caravanes</a></u></strong> pour bien estimer votre équipement de loisir. Par contre, il ne pardonne aucune économie sur la qualité de l'huile. C'est un moteur performant qui nécessite une surveillance du système AdBlue pour éviter la cristallisation dans le réservoir.</p>
 
 <h2 id="tableau">Tableau Récapitulatif : Verdict Fiabilité Ford Transit 170 ch</h2>
 
@@ -107,7 +107,7 @@ $article = [
 
 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/reparation-platine-boite-auto-mercedes">la réparation d'une platine de boîte auto Mercedes</a></u></strong>.</p>
+    <p>Découvrez notre guide détaillé sur <strong><u><a href="/reparation-platine-boite-auto-mercedes">la réparation d'une platine de boîte auto Mercedes</a></u></strong>.</p>
 </div>
 
 <h2 id="alternatives">Alternatives : Que choisir si vous fuyez le 2.0 EcoBlue ?</h2>
@@ -116,7 +116,7 @@ $article = [
 <p>Certains acheteurs se tournent vers les modèles d'avant 2016 pour retrouver une distribution par chaîne. Si le bloc 2.2 Puma est plus simple, il souffre de ses propres maux (fissures de pistons) et s'avère beaucoup plus bruyant et gourmand que l'EcoBlue. C'est un choix à double tranchant.</p>
 
 <h3>La concurrence : VW Crafter 2.0 TDI vs Mercedes Sprinter</h3>
-<p>Si la technologie de courroie humide vous effraie, le Volkswagen Crafter 2.0 TDI reste une alternative solide avec une courroie classique. À l'inverse, le Mercedes Sprinter en propulsion offre une robustesse supérieure pour les forts tonnages, mais à un tarif d'entretien nettement plus élevé. Pour ceux qui préfèrent rester sur un utilitaire français, notre comparatif des <strong><u><a href="/Blog/dimension-trafic-l1h1">dimensions du Renault Trafic L1H1</a></u></strong> avec son 2.0 dCi post-2019 propose une alternative fiable à la courroie humide Ford.</p>
+<p>Si la technologie de courroie humide vous effraie, le Volkswagen Crafter 2.0 TDI reste une alternative solide avec une courroie classique. À l'inverse, le Mercedes Sprinter en propulsion offre une robustesse supérieure pour les forts tonnages, mais à un tarif d'entretien nettement plus élevé. Pour ceux qui préfèrent rester sur un utilitaire français, notre comparatif des <strong><u><a href="/dimension-trafic-l1h1">dimensions du Renault Trafic L1H1</a></u></strong> avec son 2.0 dCi post-2019 propose une alternative fiable à la courroie humide Ford.</p>
 
 <h2 id="maintenance">Protocole de Maintenance : 5 règles d'or pour sauver votre moteur</h2>
 

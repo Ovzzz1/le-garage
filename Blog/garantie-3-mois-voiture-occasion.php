@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-18 16:00
 /**
  * garantie-3-mois-voiture-occasion.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -379,13 +379,13 @@ include __DIR__ . '/../header.php';
                 <p>Lorsque la garantie commerciale de 3 mois s'applique, elle est souvent restreinte à la mention <strong>MBP (Moteur, Boîte, Pont)</strong>.</p>
 
                 <ul>
-                    <li><strong>Généralement inclus :</strong> L'embiellage, les pistons, le vilebrequin, les pignons de la boîte de vitesses, le différentiel. Des éléments qui, en cas de casse comme une <a href="/Blog/reparation-platine-boite-auto-mercedes">réparation de platine sur une boîte auto Mercedes</a>, coûtent extrêmement cher.</li>
+                    <li><strong>Généralement inclus :</strong> L'embiellage, les pistons, le vilebrequin, les pignons de la boîte de vitesses, le différentiel. Des éléments qui, en cas de casse comme une <a href="/reparation-platine-boite-auto-mercedes">réparation de platine sur une boîte auto Mercedes</a>, coûtent extrêmement cher.</li>
                     <li><strong>Systématiquement exclus :</strong> Tout ce qui est considéré comme "pièce d'usure" — pneumatiques, plaquettes, disques, amortisseurs.</li>
                 </ul>
 
                 <img src="/Image/garantie-3-mois-voiture-occasion2.webp" alt="Schéma châssis voiture avec moteur, boîte et pont colorés en bleu et pièces d'usure exclues en gris" width="900" height="506" loading="lazy">
 
-                <p>Même sur des motorisations réputées sensibles — comme pour évaluer la <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">fiabilité du moteur 1.6 Puretech</a> — le garage tentera souvent d'invoquer la vétusté. Utilisez <a href="https://histovec.interieur.gouv.fr/histovec/accueil" target="_blank" rel="nofollow noopener">Histovec</a> pour vérifier le passé du véhicule avant toute démarche. Pensez aussi à vérifier qu'aucun <strong><u><a href="/Blog/detecteur-traceur-gps-voiture">traceur GPS n'a été laissé par l'ancien propriétaire</a></u></strong> — c'est plus fréquent qu'on ne le croit sur le marché de l'occasion.</p>
+                <p>Même sur des motorisations réputées sensibles — comme pour évaluer la <a href="/moteur-1-6-puretech-fiabilite-avis">fiabilité du moteur 1.6 Puretech</a> — le garage tentera souvent d'invoquer la vétusté. Utilisez <a href="https://histovec.interieur.gouv.fr/histovec/accueil" target="_blank" rel="nofollow noopener">Histovec</a> pour vérifier le passé du véhicule avant toute démarche. Pensez aussi à vérifier qu'aucun <strong><u><a href="/detecteur-traceur-gps-voiture">traceur GPS n'a été laissé par l'ancien propriétaire</a></u></strong> — c'est plus fréquent qu'on ne le croit sur le marché de l'occasion.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="clause-km">Clause "3 mois ou 5 000 km" : comment l'interpréter</h2>
@@ -395,7 +395,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="guide-panne">Guide pratique : comment faire marcher la garantie en cas de panne</h2>
 
-                <p>Si un <a href="/Blog/voyant-orange-peugeot">voyant orange s'allume</a> ou qu'une panne survient, suivez ces étapes dans l'ordre :</p>
+                <p>Si un <a href="/voyant-orange-peugeot">voyant orange s'allume</a> ou qu'une panne survient, suivez ces étapes dans l'ordre :</p>
 
                 <ol>
                     <li><strong>Stoppez le véhicule :</strong> Ne continuez pas à rouler pour ne pas aggraver le dommage.</li>
@@ -407,7 +407,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="recours">Refus de prise en charge : vos recours</h2>
 
-                <p>Si le vendeur invoque une "usure normale" pour une panne précoce — comme un <a href="/Blog/probleme-moteur-peugeot-2008">problème moteur sur un Peugeot 2008</a> — vous disposez de plusieurs leviers :</p>
+                <p>Si le vendeur invoque une "usure normale" pour une panne précoce — comme un <a href="/probleme-moteur-peugeot-2008">problème moteur sur un Peugeot 2008</a> — vous disposez de plusieurs leviers :</p>
 
                 <ul>
                     <li><strong>Expert automobile indépendant :</strong> Son rapport établit la nature et l'antériorité du défaut, et retourne la charge de la preuve en votre faveur.</li>
@@ -587,7 +587,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

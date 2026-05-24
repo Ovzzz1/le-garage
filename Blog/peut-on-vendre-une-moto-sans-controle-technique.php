@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-17 10:00
 /**
  * peut-on-vendre-une-moto-sans-controle-technique.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -200,7 +200,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>Motos de Collection :</strong> Les véhicules dont la mise en circulation est antérieure à 1960 sont dispensés de CT. Pour les autres motos en carte grise collection, la périodicité est de 5 ans au lieu de 3.</li>
                 </ul>
 
-                <p>Si vous changez de monture après votre vente, c'est aussi le bon moment pour vérifier votre <a href="/Blog/equipement-motard-univers-auto-moto-fr">équipement motard</a> avant de repartir sur la route.</p>
+                <p>Si vous changez de monture après votre vente, c'est aussi le bon moment pour vérifier votre <a href="/equipement-motard-univers-auto-moto-fr">équipement motard</a> avant de repartir sur la route.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="moto-a-retaper">Achat d'une moto à retaper : comment gérer le contrôle technique ?</h2>
@@ -209,7 +209,7 @@ include __DIR__ . '/../header.php';
 
                 <p>Autrefois, il suffisait de barrer la carte grise avec la mention "véhicule non roulant". Cette mention a été supprimée et n'a plus aucune valeur légale. Aujourd'hui, un acheteur qui reprend une moto à restaurer ne pourra pas mettre la carte grise à son nom tant qu'il n'aura pas passé un CT. Durant toute la période de restauration, le vendeur reste officiellement le titulaire du véhicule dans le fichier de l'ANTS.</p>
 
-                <p>Si vous achetez une moto à retaper sans CT, assurez-vous d'avoir une solution logistique pour la rapatrier sans rouler. Notre guide sur <a href="/Blog/comment-transporter-une-moto-dans-un-fourgon">comment transporter une moto dans un fourgon</a> vous explique comment faire ça en sécurité.</p>
+                <p>Si vous achetez une moto à retaper sans CT, assurez-vous d'avoir une solution logistique pour la rapatrier sans rouler. Notre guide sur <a href="/comment-transporter-une-moto-dans-un-fourgon">comment transporter une moto dans un fourgon</a> vous explique comment faire ça en sécurité.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="vente-en-etat">Vendre en l'état ou pour pièces : attention au naufrage juridique</h2>
@@ -241,7 +241,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="faq">FAQ : tout savoir sur le CT moto lors d'une cession</h2>
 
                 <p><strong>Faut-il un CT pour vendre un scooter 50cc ?</strong><br>
-                Oui. Depuis la réforme CT2RM, les cyclomoteurs de catégorie L1e sont également concernés selon leur année de première mise en circulation. Si vous visez ce type de cylindrée urbaine, consultez notre avis sur les <a href="/Blog/scooter-peugeot-50cc-avis-2026">scooters Peugeot 50cc en 2026</a>.</p>
+                Oui. Depuis la réforme CT2RM, les cyclomoteurs de catégorie L1e sont également concernés selon leur année de première mise en circulation. Si vous visez ce type de cylindrée urbaine, consultez notre avis sur les <a href="/scooter-peugeot-50cc-avis-2026">scooters Peugeot 50cc en 2026</a>.</p>
 
                 <p><strong>Peut-on vendre une moto avec une contre-visite ?</strong><br>
                 Oui, absolument. C'est une nuance cruciale méconnue du grand public : vous pouvez légalement vendre une moto même si elle a échoué à l'examen, à condition que le procès-verbal mentionne la contre-visite et date de <strong>moins de 2 mois</strong>. Cela permet à l'acheteur d'enregistrer la cession à son nom sur l'ANTS, tout en acceptant la responsabilité d'effectuer les réparations requises.</p>
@@ -249,7 +249,7 @@ include __DIR__ . '/../header.php';
                 <img src="/Image/peut-on-vendre-une-moto-sans-controle-technique3.webp" alt="Procès-verbal CT moto avec tampon contre-visite et date de validité de 2 mois visible" width="900" height="506" loading="lazy">
 
                 <p><strong>Comment tester sa machine avant le contrôle ?</strong><br>
-                Avant d'engager des frais dans un centre agréé, une vérification maison de l'éclairage, des pneus et du freinage s'impose. Si votre moto n'a pas tourné depuis l'hiver, commencez par <a href="/Blog/comment-tester-une-batterie-de-moto">tester la batterie</a>, ça évite une contre-visite agaçante pour un simple défaut d'allumage.</p>
+                Avant d'engager des frais dans un centre agréé, une vérification maison de l'éclairage, des pneus et du freinage s'impose. Si votre moto n'a pas tourné depuis l'hiver, commencez par <a href="/comment-tester-une-batterie-de-moto">tester la batterie</a>, ça évite une contre-visite agaçante pour un simple défaut d'allumage.</p>
 
                 <p><strong>Est-il possible de se décharger via une attestation écrite ?</strong><br>
                 Non. Une décharge signée sur papier libre où l'acheteur renonce à tout recours n'a aucune solidité juridique. Devant l'administration ou un tribunal, ce document est réputé nul, on ne peut pas déroger par contrat privé à une loi de sécurité routière.</p>
@@ -390,7 +390,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

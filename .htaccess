@@ -16,13 +16,17 @@ RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # 1. Éviter d'avoir .php dans l'URL si tapé directement (Redirection SEO 301)
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule ^(.*)\\.php$ $1 [R=301,L]
+RewriteRule ^(.*)\.php$ $1 [R=301,L]
 
 # 2. Gestion automatique des catégories existantes
 RewriteRule ^(assurance|entretien|electrique|occasion|moto|permis)/?$ category.php?cat=$1 [L,QSA]
 
-# 3. Gestion des articles dans Blog/ (URLs propres)
-RewriteRule ^Blog/([a-z0-9\-]+)/?$ Blog/$1.php [L,QSA]
+# 3. Redirection 301 permanente : /Blog/slug → /slug (supprime le préfixe Blog des URLs)
+RewriteRule ^Blog/([a-z0-9\-]+)/?$ /$1 [R=301,L]
+
+# 3bis. Images orphelines 404 → redirections vers équivalents existants
+RewriteRule ^Image/record-kilometrage-pan-european-1300-([2-4])\.webp$ /Image/record-kilometrage-pan-european-1300$1.webp [R=301,L]
+RewriteRule ^Image/comment-installer-un-kit-de-rabaissement-moto-4\.webp$ /Image/comment-installer-un-kit-de-rabaissement-moto3.webp [R=301,L]
 
 # 3b. Annuaire des marques : /marques/ → marques.php (priorité sur le dossier physique)
 RewriteRule ^marques/?$ marques.php [L]

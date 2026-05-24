@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-05-15 14:00
 /**
  * renault-captur-modele-a-eviter.php — Le garage expert Auto
@@ -40,7 +40,7 @@ $article = [
 <p>Voici le listing détaillé et technique des motorisations, années et séries à surveiller pour éviter de transformer votre achat en gouffre financier.</p>
 
 <h3>1.2 TCe 120 ch (2013-2018) : Le défaut de conception majeur</h3>
-<p>C'est le moteur le plus problématique de l'histoire du Captur, portant le nom de code <strong>H5Ft</strong>. Le défaut principal réside dans une mauvaise gestion de la pression d'admission qui provoque une consommation d'huile moteur excessive (souvent plus d'un litre pour 1000 km). Ce manque de lubrification entraîne irrémédiablement une usure de la chaîne de distribution, voire une casse moteur totale. Ce scandale, souvent appelé <strong>"Motorgate"</strong>, a touché des milliers d'utilisateurs. Ce même moteur H5Ft, rebaptisé 1.2 DIG-T chez Nissan, provoque exactement les mêmes casses sur le <strong><u><a href="/Blog/nissan-juke-modele-a-eviter">Nissan Juke</a></u></strong> de 2014 à 2018 — une information utile si vous hésitez entre les deux modèles. Si vous voyez une annonce pour un Captur essence de cette période avec un prix anormalement bas, la raison est là. Contrairement aux discours de certains vendeurs, une simple reprogrammation moteur ne suffit pas toujours à régler un problème mécanique structurel.</p>
+<p>C'est le moteur le plus problématique de l'histoire du Captur, portant le nom de code <strong>H5Ft</strong>. Le défaut principal réside dans une mauvaise gestion de la pression d'admission qui provoque une consommation d'huile moteur excessive (souvent plus d'un litre pour 1000 km). Ce manque de lubrification entraîne irrémédiablement une usure de la chaîne de distribution, voire une casse moteur totale. Ce scandale, souvent appelé <strong>"Motorgate"</strong>, a touché des milliers d'utilisateurs. Ce même moteur H5Ft, rebaptisé 1.2 DIG-T chez Nissan, provoque exactement les mêmes casses sur le <strong><u><a href="/nissan-juke-modele-a-eviter">Nissan Juke</a></u></strong> de 2014 à 2018 — une information utile si vous hésitez entre les deux modèles. Si vous voyez une annonce pour un Captur essence de cette période avec un prix anormalement bas, la raison est là. Contrairement aux discours de certains vendeurs, une simple reprogrammation moteur ne suffit pas toujours à régler un problème mécanique structurel.</p>
 
 <h3>1.5 dCi 90 ch (2013-2015) : Fragilité des injecteurs et de la pompe</h3>
 <p>Bien que le bloc 1.5 dCi soit globalement robuste, les premiers millésimes du Captur I ont souffert de défaillances prématurées du système d'injection. Des impuretés (limaille) pouvaient se former dans la pompe à haute pression, bouchant les injecteurs et immobilisant le véhicule. Par contre, les modèles produits après le restylage de <strong>2017</strong> ont bénéficié de composants corrigés, rendant le diesel beaucoup plus recommandable pour les gros rouleurs.</p>
@@ -118,7 +118,7 @@ $article = [
 <p>Il ne faut pas condamner le Captur dans son ensemble. Si vous cherchez un petit SUV urbain sans les tracas mécaniques, voici les meilleures options.</p>
 
 <h3>Les solutions internes (Renault)</h3>
-<p>Le moteur <strong>0.9 TCe 90 ch</strong> est l'alternative idéale en essence pour le Captur 1. Bien qu'il manque un peu de reprise, il utilise une chaîne de distribution et s'avère très robuste. Pour le Captur 2, le moteur <strong>1.3 TCe</strong> est une réussite totale : performant, sobre et surtout fiable. Si vous êtes intéressé par la vue d'ensemble des motorisations Renault à risque sur l'ensemble de la gamme, notre guide sur les <strong><u><a href="/Blog/moteur-renault-a-eviter">moteurs Renault à éviter</a></u></strong> classe chaque bloc par degré de risque et couvre aussi le 1.2 TCe dans ses différentes versions.</p>
+<p>Le moteur <strong>0.9 TCe 90 ch</strong> est l'alternative idéale en essence pour le Captur 1. Bien qu'il manque un peu de reprise, il utilise une chaîne de distribution et s'avère très robuste. Pour le Captur 2, le moteur <strong>1.3 TCe</strong> est une réussite totale : performant, sobre et surtout fiable. Si vous êtes intéressé par la vue d'ensemble des motorisations Renault à risque sur l'ensemble de la gamme, notre guide sur les <strong><u><a href="/moteur-renault-a-eviter">moteurs Renault à éviter</a></u></strong> classe chaque bloc par degré de risque et couvre aussi le 1.2 TCe dans ses différentes versions.</p>
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>

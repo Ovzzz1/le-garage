@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-05-03 09:00
 /**
  * modele-208-a-eviter.php
@@ -13,7 +13,7 @@ $article = [
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
     'category_color' => '#7c3aed',
-    'tags'           => ['Peugeot 208', 'Fiabilité', 'Achat Occasion', '<a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a>', 'BlueHDi'],
+    'tags'           => ['Peugeot 208', 'Fiabilité', 'Achat Occasion', '<a href="/moteur-1-6-puretech-fiabilite-avis">PureTech</a>', 'BlueHDi'],
     'image'          => '/Image/modele-208-a-eviter1.webp',
     'date'           => '3 Mai 2026',
     'author'         => 'Arnaud',
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -203,7 +203,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="listing-a-eviter">Listing détaillé des modèles Peugeot 208 à éviter absolument</h2>
 
                 <h3>1.2 PureTech 82, 110 et 130 ch (2012 — 2018)</h3>
-                <p>C'est incontestablement la motorisation à fuir en priorité. Sur ces années de production, la courroie de distribution est une véritable bombe à retardement. Si vous essayez l'une de ces 208 et que le voyant de pression d'huile s'allume, même une fraction de seconde au freinage, passez votre chemin. Le <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 à éviter</a> partage exactement ces mêmes blocs défaillants, ce qui explique <strong><u><a href="/Blog/probleme-moteur-peugeot-2008">les mêmes problèmes moteur sur le Peugeot 2008</a></u></strong>.</p>
+                <p>C'est incontestablement la motorisation à fuir en priorité. Sur ces années de production, la courroie de distribution est une véritable bombe à retardement. Si vous essayez l'une de ces 208 et que le voyant de pression d'huile s'allume, même une fraction de seconde au freinage, passez votre chemin. Le <a href="/peugeot-2008-modele-a-eviter">Peugeot 2008 à éviter</a> partage exactement ces mêmes blocs défaillants, ce qui explique <strong><u><a href="/probleme-moteur-peugeot-2008">les mêmes problèmes moteur sur le Peugeot 2008</a></u></strong>.</p>
 
                 <h3>1.5 BlueHDi 100 et 130 ch (2018 — 2022)</h3>
                 <p>Ne pensez pas que le diesel vous protégera des avaries sur la Phase 2. Sur ces blocs, le constructeur a installé une chaîne d'arbres à cames de seulement 7 mm, beaucoup trop fine, qui finit par se détendre ou casser. Si un claquement métallique distinct se fait entendre au démarrage à froid, la chaîne est sur le point de céder. À cela s'ajoute le risque omniprésent de défaillance du système AdBlue.</p>
@@ -239,14 +239,14 @@ include __DIR__ . '/../header.php';
 
                 <ul>
                     <li><strong>Le test du bouchon d'huile :</strong> Dévissez le bouchon de remplissage d'huile et éclairez l'intérieur avec votre téléphone. Si le dos de la courroie est craquelé, rugueux ou effiloché, partez.</li>
-                    <li><strong>L'historique réseau limpide :</strong> Exigez le carnet d'entretien complet. Si la maintenance n'a pas été effectuée dans le réseau Peugeot, le constructeur vous refusera toute aide en cas de pépin. Consultez également notre guide sur le <a href="/Blog/manuel-d-utilisation-peugeot-208-pdf">manuel d'utilisation de la Peugeot 208</a> pour comprendre les intervalles d'entretien.</li>
-                    <li><strong>Le diagnostic au tableau de bord :</strong> Mettez le contact avant de démarrer. Si un voyant reste allumé, vérifiez la <a href="/Blog/voyant-tableau-de-bord-peugeot-208">signification des voyants de la 208</a> avant de vous engager.</li>
+                    <li><strong>L'historique réseau limpide :</strong> Exigez le carnet d'entretien complet. Si la maintenance n'a pas été effectuée dans le réseau Peugeot, le constructeur vous refusera toute aide en cas de pépin. Consultez également notre guide sur le <a href="/manuel-d-utilisation-peugeot-208-pdf">manuel d'utilisation de la Peugeot 208</a> pour comprendre les intervalles d'entretien.</li>
+                    <li><strong>Le diagnostic au tableau de bord :</strong> Mettez le contact avant de démarrer. Si un voyant reste allumé, vérifiez la <a href="/voyant-tableau-de-bord-peugeot-208">signification des voyants de la 208</a> avant de vous engager.</li>
                 </ul>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="recours-finance">Recours et Finance : ce qu'il faut savoir avant de signer</h2>
 
-                <p>En occasion, le risque zéro n'existe pas, même en étant vigilant. Je vous conseille donc de toujours négocier une <a href="/Blog/garantie-3-mois-voiture-occasion">garantie 3 mois voiture occasion</a> au strict minimum, en vérifiant que le bloc moteur est bien couvert par le contrat.</p>
+                <p>En occasion, le risque zéro n'existe pas, même en étant vigilant. Je vous conseille donc de toujours négocier une <a href="/garantie-3-mois-voiture-occasion">garantie 3 mois voiture occasion</a> au strict minimum, en vérifiant que le bloc moteur est bien couvert par le contrat.</p>
 
                 <p>Sachez que Stellantis a assoupli sa politique : une prise en charge à 100 % des pièces est possible pour les véhicules de moins de 8 ans et 150 000 km, mais uniquement si l'entretien a été scrupuleusement respecté dans le réseau agréé.</p>
 
@@ -438,7 +438,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

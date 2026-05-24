@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-27 09:00
 /**
  * manuel-d-utilisation-peugeot-208-pdf.php
@@ -8,7 +8,7 @@ $page_title       = "Manuel d'utilisation Peugeot 208 PDF : Téléchargement gra
 $page_description = "Téléchargez gratuitement le manuel d'utilisation de la Peugeot 208 en PDF. Voyants, multimédia, régulateur de vitesse, e-208 : toutes les réponses sans lire 300 pages.";
 
 $article = [
-    'title'          => 'Manuel d\'utilisation <a href="/Blog/modele-208-a-eviter">Peugeot 208</a> PDF : téléchargement gratuit et voyants',
+    'title'          => 'Manuel d\'utilisation <a href="/modele-208-a-eviter">Peugeot 208</a> PDF : téléchargement gratuit et voyants',
     'subtitle'       => "Voyant allumé, écran qui bug, recharge de l'e-208 : ce guide répond aux questions les plus fréquentes et propose le téléchargement direct de la notice officielle.",
     'category'       => 'entretien',
     'category_name'  => 'Entretien & Réparation',
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -198,11 +198,11 @@ include __DIR__ . '/../header.php';
                 <p>L'apparition soudaine d'un symbole lumineux est la principale raison qui pousse à chercher le manuel. Voici l'essentiel à retenir :</p>
                 <ul>
                     <li><strong>Voyant rouge (Alerte grave) :</strong> Il impose l'arrêt immédiat et sécurisé du véhicule. Il peut s'agir d'une surchauffe moteur, d'un problème de freinage ou d'une chute de pression d'huile.</li>
-                    <li><strong>Voyant orange (Alerte ou anomalie) :</strong> Il indique un dysfonctionnement qui ne nécessite pas l'arrêt immédiat, mais qui demande une intervention rapide. Consultez notre <a href="/Blog/voyant-orange-peugeot">guide complet du voyant orange Peugeot</a>.</li>
+                    <li><strong>Voyant orange (Alerte ou anomalie) :</strong> Il indique un dysfonctionnement qui ne nécessite pas l'arrêt immédiat, mais qui demande une intervention rapide. Consultez notre <a href="/voyant-orange-peugeot">guide complet du voyant orange Peugeot</a>.</li>
                     <li><strong>Voyant vert ou bleu :</strong> Ce sont simplement des témoins de marche — feux allumés, régulateur activé, e-208 en mode READY.</li>
                 </ul>
 
-                <p>Si un voyant moteur persiste, renseignez-vous également sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a> avant de prendre toute décision d'achat ou de réparation.</p>
+                <p>Si un voyant moteur persiste, renseignez-vous également sur les <a href="/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a> avant de prendre toute décision d'achat ou de réparation.</p>
 
                 <img src="/Image/manuel-d-utilisation-peugeot-208-pdf2.webp"
                      alt="Tableau de bord Peugeot 208 i-Cockpit avec voyant moteur orange allumé"
@@ -395,7 +395,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

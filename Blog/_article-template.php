@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * _article-template.php — Le garage expert Auto (garageraymond.fr)
  * Moteur de rendu commun à tous les articles du blog.
@@ -46,7 +46,7 @@ if (is_dir($blog_dir)) {
         }
         if ($other && isset($other['title'])) {
             $other['slug']  = $file_slug;
-            $other['url']   = '/Blog/' . $file_slug;
+            $other['url']   = '/' . $file_slug;
             $other['image'] = '/' . ltrim($other['image'] ?? '', '/');
             if (($other['category'] ?? '') === $article['category']) $same_cat_articles[] = $other;
             $all_other_articles[] = $other;
@@ -287,7 +287,7 @@ $schema = [
     "@graph"   => [
         [
             "@type"            => "Article",
-            "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
+            "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
             "headline"         => $article['title'],
             "description"      => $article['subtitle'],
             "image"            => ["https://garageraymond.fr" . $article['image']],
@@ -301,7 +301,7 @@ $schema = [
             "itemListElement" => [
                 ["@type" => "ListItem", "position" => 1, "name" => "Accueil", "item" => "https://garageraymond.fr/"],
                 ["@type" => "ListItem", "position" => 2, "name" => $cat_name, "item" => "https://garageraymond.fr/" . $cat_slug],
-                ["@type" => "ListItem", "position" => 3, "name" => $article['title'], "item" => "https://garageraymond.fr/Blog/" . $current_slug]
+                ["@type" => "ListItem", "position" => 3, "name" => $article['title'], "item" => "https://garageraymond.fr/" . $current_slug]
             ]
         ]
     ]

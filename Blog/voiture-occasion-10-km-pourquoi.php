@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-19 08:00
 /**
  * voiture-occasion-10-km-pourquoi.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -184,18 +184,18 @@ include __DIR__ . '/../header.php';
                 <ul>
                     <li><strong>Le flat spot sur les pneus :</strong> Sous le poids constant du véhicule, la carcasse se déforme. À la conduite, cela se traduit par des vibrations persistantes à certaines vitesses.</li>
                     <li><strong>La décharge profonde de la batterie :</strong> Sans maintien de charge, une batterie peut se sulfater. Même rechargée, sa capacité réelle (SOH) sera dégradée durablement.</li>
-                    <li><strong>Oxyde et rongeurs :</strong> L'humidité stagnante peut oxyder les capteurs. Les rongeurs, eux, adorent grignoter les faisceaux électriques des voitures immobiles. Si un <a href="/Blog/voyant-orange-peugeot">voyant s'allume au premier démarrage</a>, méfiez-vous d'un contact défaillant.</li>
+                    <li><strong>Oxyde et rongeurs :</strong> L'humidité stagnante peut oxyder les capteurs. Les rongeurs, eux, adorent grignoter les faisceaux électriques des voitures immobiles. Si un <a href="/voyant-orange-peugeot">voyant s'allume au premier démarrage</a>, méfiez-vous d'un contact défaillant.</li>
                     <li><strong>L'humidité dans les fluides :</strong> Par condensation, l'eau s'infiltre dans l'huile moteur. Même à 10 km, si la voiture a stagné plus d'un an, une vidange immédiate est indispensable pour protéger le moteur.</li>
                 </ul>
 
                 <img src="/Image/voiture-occasion-10-km-pourquoi1.webp" alt="Gros plan sur un pneu présentant un flat spot causé par un stationnement prolongé sur béton" width="900" height="506" loading="lazy">
 
-                <p>Ces anomalies électriques liées à l'humidité peuvent parfois ressembler à un <a href="/Blog/symptome-mauvaise-masse-voiture">symptôme de mauvaise masse voiture</a> — erreur de diagnostic fréquente sur des autos sorties d'un parc portuaire.</p>
+                <p>Ces anomalies électriques liées à l'humidité peuvent parfois ressembler à un <a href="/symptome-mauvaise-masse-voiture">symptôme de mauvaise masse voiture</a> — erreur de diagnostic fréquente sur des autos sorties d'un parc portuaire.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/argus-caravane">la cote Argus des caravanes d'occasion</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/argus-caravane">la cote Argus des caravanes d'occasion</a></u></strong>.</p>
                 </div>
 
                 <h2 id="garantie">Garantie constructeur : le piège des mois fantômes</h2>
@@ -234,7 +234,7 @@ include __DIR__ . '/../header.php';
                     </table>
                 </div>
 
-                <p>Les citadines (<a href="/Blog/renault-clio-modele-a-eviter">Clio</a> 5, 208, <a href="/Blog/dacia-sandero-modele-a-eviter">Sandero</a>) sont les modèles les plus courants sur ce segment. C'est aussi le meilleur moyen d'accéder à l'électrique à prix cassé, en attendant des modèles comme la <a href="/Blog/tesla-model-2-2026">Tesla Model 2</a>.</p>
+                <p>Les citadines (<a href="/renault-clio-modele-a-eviter">Clio</a> 5, 208, <a href="/dacia-sandero-modele-a-eviter">Sandero</a>) sont les modèles les plus courants sur ce segment. C'est aussi le meilleur moyen d'accéder à l'électrique à prix cassé, en attendant des modèles comme la <a href="/tesla-model-2-2026">Tesla Model 2</a>.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="checklist">Checklist : 5 points à vérifier avant d'acheter une voiture de 10 km</h2>
@@ -250,7 +250,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/detecteur-traceur-gps-voiture">la détection de traceur GPS caché dans une voiture</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/detecteur-traceur-gps-voiture">la détection de traceur GPS caché dans une voiture</a></u></strong>.</p>
                 </div>
 
                 <h2 id="faq">FAQ : vos questions sur les voitures à faible kilométrage</h2>
@@ -398,7 +398,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

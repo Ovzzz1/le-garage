@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-14 16:00
 /**
  * comment-tester-une-batterie-de-moto.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -275,9 +275,9 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="faq-decharge-rapide">FAQ : pourquoi ma batterie moto se décharge-t-elle vite ?</h2>
 
-                <p><strong>Courant de fuite :</strong> Un drain parasite — alarme, <a href="/Blog/detecteur-traceur-gps-voiture">tracker GPS</a> mal branché — peut vider votre batterie même quand la moto est éteinte. Testez avec le multimètre en mode ampèremètre, contact coupé.</p>
+                <p><strong>Courant de fuite :</strong> Un drain parasite — alarme, <a href="/detecteur-traceur-gps-voiture">tracker GPS</a> mal branché — peut vider votre batterie même quand la moto est éteinte. Testez avec le multimètre en mode ampèremètre, contact coupé.</p>
 
-                <p><strong>Alternateur ou régulateur HS :</strong> Si le Test 3 a échoué, votre moto ne recharge plus sa batterie en roulant. La batterie se vide trajet après trajet. Un <a href="/Blog/symptome-mauvaise-masse-voiture">problème de masse</a> peut produire les mêmes symptômes — à vérifier en parallèle.</p>
+                <p><strong>Alternateur ou régulateur HS :</strong> Si le Test 3 a échoué, votre moto ne recharge plus sa batterie en roulant. La batterie se vide trajet après trajet. Un <a href="/symptome-mauvaise-masse-voiture">problème de masse</a> peut produire les mêmes symptômes — à vérifier en parallèle.</p>
 
                 <p><strong>Hivernage :</strong> Une moto immobilisée plusieurs mois subit l'auto-décharge naturelle de la batterie. Sans mainteneur de charge branché, elle finit sulfatée et irréparable.</p>
 
@@ -306,7 +306,7 @@ include __DIR__ . '/../header.php';
             <!-- Heavy Conclusion Box -->
             <div class="art-conclusion">
                 <h2>Le mot de la fin</h2>
-                <p>Tester sa batterie moto, c'est le geste de base que tout motard devrait maîtriser — surtout en début de saison ou après un hivernage. Avec un multimètre et ces trois tests, vous savez exactement ce qui se passe dans votre circuit électrique, sans payer une heure de main-d'œuvre en atelier. Et si votre moto est en bon état électrique mais que vous cherchez à améliorer votre confort à l'arrêt, jetez un œil à notre guide pour <a href="/Blog/comment-installer-un-kit-de-rabaissement-moto">installer un kit de rabaissement</a>.</p>
+                <p>Tester sa batterie moto, c'est le geste de base que tout motard devrait maîtriser — surtout en début de saison ou après un hivernage. Avec un multimètre et ces trois tests, vous savez exactement ce qui se passe dans votre circuit électrique, sans payer une heure de main-d'œuvre en atelier. Et si votre moto est en bon état électrique mais que vous cherchez à améliorer votre confort à l'arrêt, jetez un œil à notre guide pour <a href="/comment-installer-un-kit-de-rabaissement-moto">installer un kit de rabaissement</a>.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
@@ -415,7 +415,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

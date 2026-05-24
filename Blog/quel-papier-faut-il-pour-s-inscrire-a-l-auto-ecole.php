@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-22 18:00
 /**
  * quel-papier-faut-il-pour-s-inscrire-a-l-auto-ecole.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -204,7 +204,7 @@ include __DIR__ . '/../header.php';
             <!-- Article Content -->
             <div class="art-content">
 
-                <p>S'inscrire à l'<a href="/Blog/comment-changer-d-auto-ecole">auto-école</a> marque le début de votre autonomie, mais la réussite de votre dossier dépend de la qualité des pièces justificatives fournies. En 2026, la procédure est dématérialisée via l'<strong>ANTS</strong> (Agence Nationale des Titres Sécurisés). Pour obtenir votre numéro <strong>NEPH</strong> sans perdre de temps, les fichiers numériques doivent être lisibles et strictement conformes aux exigences.</p>
+                <p>S'inscrire à l'<a href="/comment-changer-d-auto-ecole">auto-école</a> marque le début de votre autonomie, mais la réussite de votre dossier dépend de la qualité des pièces justificatives fournies. En 2026, la procédure est dématérialisée via l'<strong>ANTS</strong> (Agence Nationale des Titres Sécurisés). Pour obtenir votre numéro <strong>NEPH</strong> sans perdre de temps, les fichiers numériques doivent être lisibles et strictement conformes aux exigences.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="simulateur-dossier">Simulateur : votre liste de documents sur-mesure</h2>
@@ -403,7 +403,7 @@ include __DIR__ . '/../header.php';
                 <p>En moyenne, comptez 15 à 21 jours après le dépôt pour que votre dossier soit validé et que votre numéro NEPH soit généré. Tout document illisible ou non conforme remet le délai à zéro.</p>
 
                 <h3>L'ASSR 1 est-elle acceptée pour le permis B ?</h3>
-                <p>Non. C'est l'ASSR 2, obtenue en classe de 3e, qui est exigée pour le permis B. L'ASSR 1 ne concerne que le permis AM (BSR). Si vous roulez déjà avec ce permis et que vous revendez votre véhicule pour financer la suite, consultez la <strong><u><a href="/Blog/argus-voiture-sans-permis">cote Argus des voitures sans permis</a></u></strong> pour l'estimer correctement.</p>
+                <p>Non. C'est l'ASSR 2, obtenue en classe de 3e, qui est exigée pour le permis B. L'ASSR 1 ne concerne que le permis AM (BSR). Si vous roulez déjà avec ce permis et que vous revendez votre véhicule pour financer la suite, consultez la <strong><u><a href="/argus-voiture-sans-permis">cote Argus des voitures sans permis</a></u></strong> pour l'estimer correctement.</p>
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">Le mot du Garage Expert Auto</div>
@@ -539,7 +539,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

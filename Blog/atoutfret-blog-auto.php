@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-20 10:00
 /**
  * atoutfret-blog-auto.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -144,7 +144,7 @@ include __DIR__ . '/../header.php';
                 <div class="art-tldr-title">L'essentiel à retenir (TL;DR)</div>
                 <ul>
                     <li><strong>Qui :</strong> Pierre et Mélanie, un duo complémentaire à la tête d'un blog auto indépendant et 100% gratuit.</li>
-                    <li><strong>Contenu :</strong> Guides d'entretien, fiabilité moteur, cosmétique auto, Vanlife et <a href="/Blog/argus-voiture-sans-permis">VSP</a> — une couverture plus large que la moyenne.</li>
+                    <li><strong>Contenu :</strong> Guides d'entretien, fiabilité moteur, cosmétique auto, Vanlife et <a href="/argus-voiture-sans-permis">VSP</a> — une couverture plus large que la moyenne.</li>
                     <li><strong>Public :</strong> Du novice complet au bricoleur confirmé, sans jargon inutile.</li>
                     <li><strong>Points forts :</strong> Réponses chiffrées, illustrées et mises à jour, avec une vraie communauté active en commentaires.</li>
                     <li><strong>Notre verdict :</strong> Une ressource externe fiable que nous recommandons sans réserve en complément de nos propres dossiers techniques.</li>
@@ -184,7 +184,7 @@ include __DIR__ . '/../header.php';
 
                 <p>C'est Pierre qui tient la partie technique, et ça se voit. Les articles sur la fiabilité des moteurs historiques — le TU de chez PSA en tête — ou sur le choix d'une huile céramique face à une huile minérale classique sont d'une densité rare pour un blog indépendant. Les réponses sont chiffrées, souvent illustrées, et systématiquement ancrées dans la réalité des usages courants.</p>
 
-                <p>Le volet cosmétique complète intelligemment le volet mécanique : comparatifs de produits lustrants, guide sur les peintures pour échappement, conseils sur les <a href="/Blog/prix-traitement-ceramique-voiture">traitements céramique</a>… Atoutfret couvre des angles que la plupart des médias auto laissent de côté.</p>
+                <p>Le volet cosmétique complète intelligemment le volet mécanique : comparatifs de produits lustrants, guide sur les peintures pour échappement, conseils sur les <a href="/prix-traitement-ceramique-voiture">traitements céramique</a>… Atoutfret couvre des angles que la plupart des médias auto laissent de côté.</p>
 
                 <blockquote class="art-blockquote">
                     Les meilleurs articles techniques sont ceux qui donnent des chiffres, pas des généralités. Atoutfret fait partie de ces blogs qui ont compris ça.
@@ -196,7 +196,7 @@ include __DIR__ . '/../header.php';
 
                 <p>Là où les médias auto classiques tournent en boucle autour de Peugeot, Renault et Citroën, Atoutfret s'aventure sur des terrains de niche. La plateforme est une mine pour les propriétaires de Voitures Sans Permis (VSP) et pour les amateurs de road-trip en van aménagé.</p>
 
-                <p>Les articles sur la Vanlife sont particulièrement fouillés : choix du véhicule de base, aménagements possibles, budget réaliste. Un complément naturel à nos propres guides, comme notre <a href="/Blog/amenager-voiture-pour-dormir">dossier sur l'aménagement d'une voiture pour dormir</a>.</p>
+                <p>Les articles sur la Vanlife sont particulièrement fouillés : choix du véhicule de base, aménagements possibles, budget réaliste. Un complément naturel à nos propres guides, comme notre <a href="/amenager-voiture-pour-dormir">dossier sur l'aménagement d'une voiture pour dormir</a>.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="achat-securite-communaute">Guide d'achat, sécurité routière et communauté</h2>
@@ -205,7 +205,7 @@ include __DIR__ . '/../header.php';
 
                 <p>La thématique sécurité est abordée avec pédagogie : contrôle technique, réglementation des zones d'intervention des dépanneuses sur autoroute, gestion des fourrières à Paris… des sujets souvent mal documentés, traités ici avec rigueur. La section moto y trouve aussi sa place.</p>
 
-                <p>Enfin, l'accès à l'ensemble des ressources est gratuit, ce qui favorise les échanges en commentaires et une vraie communauté d'entraide — dans l'esprit du <a href="/Blog/90km-blog-permis-voiture-moto-camion">blog 90km</a> que nous avons déjà eu l'occasion de présenter.</p>
+                <p>Enfin, l'accès à l'ensemble des ressources est gratuit, ce qui favorise les échanges en commentaires et une vraie communauté d'entraide — dans l'esprit du <a href="/90km-blog-permis-voiture-moto-camion">blog 90km</a> que nous avons déjà eu l'occasion de présenter.</p>
 
                 <div class="art-table-wrap">
                     <table class="art-table">
@@ -251,7 +251,7 @@ include __DIR__ . '/../header.php';
 
                 <p>La réponse est oui, sans hésitation. Atoutfret fait partie de ces rares blogs indépendants qui privilégient la qualité de l'information à la quantité de publications. La couverture technique est solide, la veille sectorielle est irréprochable, et le ton reste accessible quelle que soit votre expérience mécanique.</p>
 
-                <p>En complément de nos propres dossiers — comme nos alertes sur la <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">fiabilité du moteur 1.6 PureTech</a> — Atoutfret est une ressource externe que nous recommandons régulièrement à nos lecteurs.</p>
+                <p>En complément de nos propres dossiers — comme nos alertes sur la <a href="/moteur-1-6-puretech-fiabilite-avis">fiabilité du moteur 1.6 PureTech</a> — Atoutfret est une ressource externe que nous recommandons régulièrement à nos lecteurs.</p>
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">Le mot du Garage Expert Auto</div>
@@ -387,7 +387,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

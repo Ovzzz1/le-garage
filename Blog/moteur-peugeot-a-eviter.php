@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-24 17:00
 /**
  * moteur-peugeot-a-eviter.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -225,21 +225,21 @@ include __DIR__ . '/../header.php';
                 <p>Acheter une Peugeot d'occasion en 2026 ne s'improvise plus. Si la marque au lion a produit des moteurs légendaires pour leur robustesse, les quinze dernières années ont été marquées par des erreurs de conception qui peuvent transformer votre investissement en gouffre financier. Des factures de 8 000 € pour un échange standard sur des véhicules de moins de 5 ans — j'en ai vu trop. Voici l'analyse brute, basée sur les retours d'atelier, pour que vous sachiez exactement quel bloc fuir et lequel privilégier.</p>
 
                 <div class="pgt-tip">
-                    <strong>Rappel :</strong> une simple <a href="/Blog/garantie-3-mois-voiture-occasion">garantie de 3 mois sur une voiture d'occasion</a> ne vous protégera pas contre les défauts de conception profonds listés ici. Lisez ce guide avant de signer.
+                    <strong>Rappel :</strong> une simple <a href="/garantie-3-mois-voiture-occasion">garantie de 3 mois sur une voiture d'occasion</a> ne vous protégera pas contre les défauts de conception profonds listés ici. Lisez ce guide avant de signer.
                 </div>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="top10-moteurs">TOP 10 : les moteurs Peugeot à éviter en occasion</h2>
 
                 <h3>1. Le 1.2 PureTech (82, 110, 130 ch) — Le "Roi" de la casse moteur</h3>
-                <p>C'est de loin le moteur le plus problématique de l'ère moderne chez PSA. Le défaut majeur réside dans sa <strong>courroie de distribution humide</strong>, immergée dans l'huile moteur pour réduire les frottements. La dégradation de la gomme au contact des résidus d'essence provoque l'effilochage de la courroie. Ces débris viennent colmater la crépine de la pompe à huile, entraînant une chute de pression et la destruction du turbo et du bloc par manque de lubrification. Stellantis a imposé une nouvelle norme d'huile (5W30) en 2024 pour limiter le phénomène, mais le risque reste présent. Si vous hésitez avec son grand frère, consultez notre avis sur le <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">moteur 1.6 PureTech</a>.</p>
+                <p>C'est de loin le moteur le plus problématique de l'ère moderne chez PSA. Le défaut majeur réside dans sa <strong>courroie de distribution humide</strong>, immergée dans l'huile moteur pour réduire les frottements. La dégradation de la gomme au contact des résidus d'essence provoque l'effilochage de la courroie. Ces débris viennent colmater la crépine de la pompe à huile, entraînant une chute de pression et la destruction du turbo et du bloc par manque de lubrification. Stellantis a imposé une nouvelle norme d'huile (5W30) en 2024 pour limiter le phénomène, mais le risque reste présent. Si vous hésitez avec son grand frère, consultez notre avis sur le <a href="/moteur-1-6-puretech-fiabilite-avis">moteur 1.6 PureTech</a>.</p>
 
                 <img src="/Image/moteur-peugeot-a-eviter2.webp"
                      alt="Schéma 3D moteur 1.2 PureTech en coupe montrant la courroie humide et les résidus obstruant la crépine d'huile"
                      style="width: 100%; height: auto; border-radius: 8px; margin: 18px 0;">
 
                 <h3>2. Le 1.5 BlueHDi 130 — La double peine AdBlue et chaîne</h3>
-                <p>Le remplaçant du 1.6 BlueHDi devait être un modèle de sobriété. Il est devenu le cauchemar des gros rouleurs. Deux problèmes coexistent : la <strong>chaîne de liaison des arbres à cames de 7 mm</strong> qui s'allonge et finit par rompre, et la cristallisation de l'urée dans le réservoir AdBlue. Ce dernier point paralyse le véhicule avec un message d'erreur persistant, obligeant souvent au remplacement complet du réservoir SCR. Si un <a href="/Blog/voyant-orange-peugeot">voyant orange Peugeot</a> s'allume avec une alerte "Défaut moteur", le diagnostic est souvent sans appel sur ce bloc.</p>
+                <p>Le remplaçant du 1.6 BlueHDi devait être un modèle de sobriété. Il est devenu le cauchemar des gros rouleurs. Deux problèmes coexistent : la <strong>chaîne de liaison des arbres à cames de 7 mm</strong> qui s'allonge et finit par rompre, et la cristallisation de l'urée dans le réservoir AdBlue. Ce dernier point paralyse le véhicule avec un message d'erreur persistant, obligeant souvent au remplacement complet du réservoir SCR. Si un <a href="/voyant-orange-peugeot">voyant orange Peugeot</a> s'allume avec une alerte "Défaut moteur", le diagnostic est souvent sans appel sur ce bloc.</p>
 
                 <img src="/Image/moteur-peugeot-a-eviter3.webp"
                      alt="Comparatif chaîne de distribution 7mm BlueHDi standard vs chaîne renforcée 8mm 2024 sur plan de travail d'atelier"
@@ -265,7 +265,7 @@ include __DIR__ . '/../header.php';
                 <p>Ce petit diesel a équipé des millions de 206 et 207. Son principal défaut : le faisceau de retour de gasoil, surnommé "l'araignée", qui devient poreux avec le temps. Les prises d'air dans le circuit d'injection rendent les démarrages impossibles. Moins grave qu'une casse moteur, mais panne immobilisante et coûteuse en main-d'œuvre.</p>
 
                 <h3>8. Le 1.2 VTi 82 ch (Atmosphérique) — Même ADN, mêmes risques</h3>
-                <p>Petit frère du PureTech sans turbo : il évite les casses de turbine mais conserve la même technologie de courroie humide avec les risques d'obstruction de crépine. Sa puissance limitée force les conducteurs à solliciter haut le moteur, ce qui use prématurément les roulements de boîte. Un sous-dimensionnement sur un véhicule lourd réduit aussi drastiquement le <a href="/Blog/peugeot-3008-kilometrage-maximum">kilométrage maximum d'un 3008</a>.</p>
+                <p>Petit frère du PureTech sans turbo : il évite les casses de turbine mais conserve la même technologie de courroie humide avec les risques d'obstruction de crépine. Sa puissance limitée force les conducteurs à solliciter haut le moteur, ce qui use prématurément les roulements de boîte. Un sous-dimensionnement sur un véhicule lourd réduit aussi drastiquement le <a href="/peugeot-3008-kilometrage-maximum">kilométrage maximum d'un 3008</a>.</p>
 
                 <h3>9. Le 2.2 HDi (1ères versions) — Électronique et FAP capricieux</h3>
                 <p>Très innovant pour son époque avec l'introduction du FAP, mais la gestion électronique de la régénération et le réservoir d'additif (Cérine) tombent fréquemment en panne, entraînant des passages répétés en mode dégradé. Moteur performant mais entretien rigoureux et coûteux indispensable.</p>
@@ -342,7 +342,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>L'historique des vidanges :</strong> exigez toutes les factures. Sur un PureTech, une vidange sautée ou faite avec la mauvaise huile est un motif d'exclusion immédiat.</li>
                     <li><strong>L'écoute à froid :</strong> démarrez le moteur après un arrêt prolongé. Tout cliquetis métallique ou bruit de chaîne qui frotte doit vous faire fuir.</li>
                     <li><strong>Le test du freinage :</strong> si la pédale de frein est dure lors des premières pressions, la pompe à vide est peut-être déjà polluée par des débris de courroie.</li>
-                    <li><strong>Méfiez-vous des faibles kilométrages :</strong> une voiture de 5 ans peu roulée peut être plus encrassée qu'une routière. C'est souvent pour cela qu'une <a href="/Blog/voiture-occasion-10-km-pourquoi">voiture d'occasion avec peu de km</a> se retrouve sur le marché prématurément.</li>
+                    <li><strong>Méfiez-vous des faibles kilométrages :</strong> une voiture de 5 ans peu roulée peut être plus encrassée qu'une routière. C'est souvent pour cela qu'une <a href="/voiture-occasion-10-km-pourquoi">voiture d'occasion avec peu de km</a> se retrouve sur le marché prématurément.</li>
                 </ul>
 
                 <!-- ══════════════════════════════════ -->
@@ -491,7 +491,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

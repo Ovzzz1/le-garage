@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // published: 2026-04-20 16:00
 /**
  * peugeot-3008-kilometrage-maximum.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/Blog/' . $file_slug;
+            $other_article['url']   = '/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -279,7 +279,7 @@ include __DIR__ . '/../header.php';
                 <ul>
                     <li><strong>Le roi de la route : le 2.0 BlueHDi (150/180ch).</strong> C'est le moteur préféré des taxis et des gros rouleurs. Sa conception est robuste, son turbo dimensionné pour durer, et il encaisse les kilomètres sans broncher. Seul bloc de la gamme capable de viser les 400 000 km si les vidanges sont régulières.</li>
                     <li><strong>L'alternative raisonnable : le 1.6 HDi / BlueHDi.</strong> Excellent compromis capable de franchir les 200 000 km sans encombre, mais avec une surveillance accrue sur le système d'injection et l'encrassement du FAP.</li>
-                    <li><strong>L'incertitude essence : le 1.2 PureTech.</strong> La fameuse courroie de distribution baigne dans l'huile (courroie humide), ce qui provoque une dégradation prématurée et bouche la crépine. Si vous possédez ce moteur, vous partagez les mêmes inquiétudes que les propriétaires de <a href="/Blog/probleme-moteur-peugeot-2008">Peugeot 2008</a>. Le kilométrage maximum est souvent limité par ce défaut — lisez l'analyse complète sur la <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">fiabilité du moteur PureTech</a> avant d'acheter.</li>
+                    <li><strong>L'incertitude essence : le 1.2 PureTech.</strong> La fameuse courroie de distribution baigne dans l'huile (courroie humide), ce qui provoque une dégradation prématurée et bouche la crépine. Si vous possédez ce moteur, vous partagez les mêmes inquiétudes que les propriétaires de <a href="/probleme-moteur-peugeot-2008">Peugeot 2008</a>. Le kilométrage maximum est souvent limité par ce défaut — lisez l'analyse complète sur la <a href="/moteur-1-6-puretech-fiabilite-avis">fiabilité du moteur PureTech</a> avant d'acheter.</li>
                 </ul>
 
                 <img src="/Image/peugeot-3008-kilometrage-maximum1.webp" alt="Gros plan moteur Peugeot 1.2 PureTech avec courroie de distribution humide effilochée" width="900" height="506" loading="lazy">
@@ -289,7 +289,7 @@ include __DIR__ . '/../header.php';
 
                 <ul>
                     <li><strong>Alerte : le piège du 1.5 BlueHDi avant 2023.</strong> Ce moteur a souffert d'une chaîne de distribution entre les arbres à cames trop fine (7 mm). Si elle casse, le moteur est détruit. À moins que le vendeur ne prouve le passage au kit de distribution renforcé (8 mm), c'est un achat risqué au-delà de 100 000 km.</li>
-                    <li><strong>Le bon plan caché : le 3008 Phase 1 (2009-2016).</strong> Design daté, mais les versions équipées du 2.0 HDi 150ch sont plus rustiques. Si le châssis ne présente pas de <a href="/Blog/symptome-mauvaise-masse-voiture">symptôme de mauvaise masse</a>, c'est une valeur sûre pour viser les 300 000 km.</li>
+                    <li><strong>Le bon plan caché : le 3008 Phase 1 (2009-2016).</strong> Design daté, mais les versions équipées du 2.0 HDi 150ch sont plus rustiques. Si le châssis ne présente pas de <a href="/symptome-mauvaise-masse-voiture">symptôme de mauvaise masse</a>, c'est une valeur sûre pour viser les 300 000 km.</li>
                 </ul>
 
                 <!-- ══════════════════════════════════ -->
@@ -298,7 +298,7 @@ include __DIR__ . '/../header.php';
                 <ul>
                     <li><strong>Le seuil critique des 120 000 km.</strong> C'est la barrière psychologique des acheteurs. À 119 000 km votre voiture se vend encore bien ; à 125 000 km elle subit une décote brutale car les gros entretiens pointent leur nez.</li>
                     <li><strong>Arbitrage réparation vs vente.</strong> Si le réservoir AdBlue lâche ou si la distribution est à refaire, les frais montent à 2 000 €. Sur un véhicule qui en vaut encore 10 000 €, c'est acceptable. En dessous, l'investissement devient discutable.</li>
-                    <li><strong>L'effet PureTech.</strong> La méfiance généralisée sur ce moteur essence impacte la valeur à la revente. Il est souvent plus sage de vendre avant l'apparition d'un <a href="/Blog/voyant-orange-peugeot">voyant orange sur le tableau de bord</a>.</li>
+                    <li><strong>L'effet PureTech.</strong> La méfiance généralisée sur ce moteur essence impacte la valeur à la revente. Il est souvent plus sage de vendre avant l'apparition d'un <a href="/voyant-orange-peugeot">voyant orange sur le tableau de bord</a>.</li>
                 </ul>
 
                 <!-- ══════════════════════════════════ -->
@@ -536,7 +536,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
+                "@id"   => "https://garageraymond.fr/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],
