@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-02 10:00
 /**
  * 90km-blog-permis-voiture-moto-camion.php
@@ -65,7 +65,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
 
@@ -243,13 +243,13 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/quel-papier-faut-il-pour-s-inscrire-a-l-auto-ecole">les papiers nécessaires pour s'inscrire à l'auto-école</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/quel-papier-faut-il-pour-s-inscrire-a-l-auto-ecole">les papiers nécessaires pour s'inscrire à l'auto-école</a></u></strong>.</p>
                 </div>
 
                 <h2 id="permis-voiture-moto">Permis voiture et moto : ce que couvre le blog</h2>
 
 
-                <p>Sur le volet <strong>permis voiture</strong> (permis B), <strong>90km.fr</strong> propose des guides accessibles sur le code de la route, les signaux routiers, le comportement à adopter en présence des forces de l'ordre ou encore les meilleures applications mobiles pour réviser son code. Ces contenus sont particulièrement utiles pour les candidats en phase de préparation qui veulent compléter leur apprentissage en <a href="/comment-changer-d-auto-ecole">auto-école</a> par des ressources gratuites et bien structurées.</p>
+                <p>Sur le volet <strong>permis voiture</strong> (permis B), <strong>90km.fr</strong> propose des guides accessibles sur le code de la route, les signaux routiers, le comportement à adopter en présence des forces de l'ordre ou encore les meilleures applications mobiles pour réviser son code. Ces contenus sont particulièrement utiles pour les candidats en phase de préparation qui veulent compléter leur apprentissage en <a href="/Blog/comment-changer-d-auto-ecole">auto-école</a> par des ressources gratuites et bien structurées.</p>
 
 
                 <p>Pour le <strong>permis moto</strong>, le blog aborde les spécificités de la conduite à deux roues, les règles de sécurité propres aux motocyclistes et les points de vigilance du code souvent mal maîtrisés par les candidats. La couverture n'est pas aussi exhaustive que celle du poids lourd, mais elle reste utile comme complément de révision.</p>
@@ -278,7 +278,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>CACES :</strong> Guides sur les CACES R482 (engins de chantier) et R489 (chariots élévateurs), avec questionnaires d'examen corrigés.</li>
                 </ul>
 
-                <p>Pour aller plus loin sur les aspects réglementaires du transport routier spécialisé : si vous êtes amené à escorter ou organiser un transport hors-gabarit, nous avons décrypté le <strong><u><a href="/tarif-voiture-pilote-convoi-exceptionnel">tarif d'une voiture pilote de convoi exceptionnel</a></u></strong> — une réglementation méconnue mais incontournable dans ce secteur.</p>
+                <p>Pour aller plus loin sur les aspects réglementaires du transport routier spécialisé : si vous êtes amené à escorter ou organiser un transport hors-gabarit, nous avons décrypté le <strong><u><a href="/Blog/tarif-voiture-pilote-convoi-exceptionnel">tarif d'une voiture pilote de convoi exceptionnel</a></u></strong> — une réglementation méconnue mais incontournable dans ce secteur.</p>
 
 
                 <div class="art-table-wrap">
@@ -504,7 +504,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

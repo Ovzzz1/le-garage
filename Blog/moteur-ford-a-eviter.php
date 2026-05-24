@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-05 08:00
 /**
  * moteur-ford-a-eviter.php — Le garage expert Auto
@@ -131,7 +131,7 @@ $article = [
     <li><strong>1.25 Duratec atmosphérique :</strong> Sans turbo ni complexité, c'est le moteur "15 ans sans stress" sur Fiesta et Ka+.</li>
     <li><strong>2.0 Duratec :</strong> Increvable, il dépasse régulièrement les <strong>300 000 km</strong> sur Focus et Mondeo.</li>
     <li><strong>1.5 EcoBoost (Post-2016) :</strong> Les erreurs de jeunesse ont été corrigées, offrant puissance et fiabilité.</li>
-    <li><strong>2.0 EcoBlue (Post-2018) :</strong> Technologie diesel mature et sobre sur Kuga et Transit. À noter que sur le Transit spécifiquement, la courroie humide demande un entretien très rigoureux : notre dossier sur la <strong><u><a href="/fiabilite-ford-transit-2-0-tdci-170-ch">fiabilité du Ford Transit 2.0 TDCi 170 ch</a></u></strong> détaille le protocole indispensable pour éviter la casse.</li>
+    <li><strong>2.0 EcoBlue (Post-2018) :</strong> Technologie diesel mature et sobre sur Kuga et Transit. À noter que sur le Transit spécifiquement, la courroie humide demande un entretien très rigoureux : notre dossier sur la <strong><u><a href="/Blog/fiabilite-ford-transit-2-0-tdci-170-ch">fiabilité du Ford Transit 2.0 TDCi 170 ch</a></u></strong> détaille le protocole indispensable pour éviter la casse.</li>
 </ul>
 
 <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">

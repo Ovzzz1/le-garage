@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-27 14:00
 /**
  * voyant-tableau-de-bord-peugeot-208.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -185,7 +185,7 @@ include __DIR__ . '/../header.php';
             <!-- Article Content -->
             <div class="art-content">
 
-                <p>Un symbole inconnu vient de s'allumer sur votre <a href="/modele-208-a-eviter">Peugeot 208</a> ? Pas de panique. L'affichage d'un témoin sur le tableau de bord est le moyen de communication de votre voiture. Ce guide vous aide à identifier le problème instantanément et vous donne la marche à suivre, que vous rouliez en version essence (PureTech), diesel (BlueHDi), hybride ou électrique (e-208).</p>
+                <p>Un symbole inconnu vient de s'allumer sur votre <a href="/Blog/modele-208-a-eviter">Peugeot 208</a> ? Pas de panique. L'affichage d'un témoin sur le tableau de bord est le moyen de communication de votre voiture. Ce guide vous aide à identifier le problème instantanément et vous donne la marche à suivre, que vous rouliez en version essence (PureTech), diesel (BlueHDi), hybride ou électrique (e-208).</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="code-couleur">La règle d'or : le code couleur des voyants</h2>
@@ -193,7 +193,7 @@ include __DIR__ . '/../header.php';
                 <p>Avant de chercher l'icône exacte, regardez la couleur. C'est elle qui dicte l'urgence de la situation :</p>
                 <ul>
                     <li><strong class="voy-rouge">Rouge (Danger de casse ou de sécurité) :</strong> Arrêt immédiat obligatoire dès que les conditions de sécurité le permettent. Coupez le moteur.</li>
-                    <li><strong class="voy-orange">Orange / Jaune (Anomalie ou Avertissement) :</strong> Un système est défaillant ou nécessite votre attention. Vous pouvez rouler prudemment jusqu'à un garage. Consultez notre <a href="/voyant-orange-peugeot">guide complet du voyant orange Peugeot</a>.</li>
+                    <li><strong class="voy-orange">Orange / Jaune (Anomalie ou Avertissement) :</strong> Un système est défaillant ou nécessite votre attention. Vous pouvez rouler prudemment jusqu'à un garage. Consultez notre <a href="/Blog/voyant-orange-peugeot">guide complet du voyant orange Peugeot</a>.</li>
                     <li><strong class="voy-vert">Vert / Bleu (Information) :</strong> Fonctionnement normal d'un système — phares allumés, régulateur activé, "READY" sur e-208.</li>
                 </ul>
 
@@ -242,7 +242,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/probleme-moteur-peugeot-2008">les problèmes moteur courants du Peugeot 2008</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/probleme-moteur-peugeot-2008">les problèmes moteur courants du Peugeot 2008</a></u></strong>.</p>
                 </div>
 
                 <h2 id="cas-specifiques">Cas spécifiques et problèmes fréquents</h2>
@@ -251,7 +251,7 @@ include __DIR__ . '/../header.php';
                 <p>De nombreux propriétaires de 208 signalent un voyant STOP rouge qui s'allume une fraction de seconde au moment de tourner la clé, puis disparaît. C'est normal — il s'agit du check d'initialisation du tableau de bord. S'il ne reste pas allumé, il n'y a aucun problème.</p>
 
                 <h3>2. Le voyant Moteur reste allumé (PureTech)</h3>
-                <p>Sur les moteurs essence 1.2 PureTech, un voyant moteur allumé ou clignotant, parfois accompagné du voyant pression d'huile, peut être le symptôme d'une courroie de distribution qui s'effrite et bouche la crépine d'huile. C'est un problème majeur. Découvrez-en plus sur les <a href="/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
+                <p>Sur les moteurs essence 1.2 PureTech, un voyant moteur allumé ou clignotant, parfois accompagné du voyant pression d'huile, peut être le symptôme d'une courroie de distribution qui s'effrite et bouche la crépine d'huile. C'est un problème majeur. Découvrez-en plus sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a>.</p>
 
                 <img src="/Image/voyant-tableau-de-bord-peugeot-2081.webp"
                      alt="Gros plan sur le voyant moteur orange allumé sur le combiné d'instrumentation Peugeot 208 PureTech"
@@ -276,7 +276,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/symptome-mauvaise-masse-voiture">les symptômes d'une mauvaise masse sur une voiture</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/symptome-mauvaise-masse-voiture">les symptômes d'une mauvaise masse sur une voiture</a></u></strong>.</p>
                 </div>
 
                 <h2 id="faq-voyants">FAQ : Réponses rapides</h2>
@@ -285,7 +285,7 @@ include __DIR__ . '/../header.php';
                     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <h3 itemprop="name">Comment éteindre le voyant Service après une vidange ?</h3>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Coupez le contact. Maintenez enfoncé le bouton de remise à zéro du <a href="/kilometrage-evolutif">compteur kilométrique</a> (souvent au bout du commodo d'essuie-glace). Mettez le contact sans démarrer : un compte à rebours de 10 secondes s'affiche. Une fois à zéro, relâchez le bouton et coupez le contact.</p>
+                            <p itemprop="text">Coupez le contact. Maintenez enfoncé le bouton de remise à zéro du <a href="/Blog/kilometrage-evolutif">compteur kilométrique</a> (souvent au bout du commodo d'essuie-glace). Mettez le contact sans démarrer : un compte à rebours de 10 secondes s'affiche. Une fois à zéro, relâchez le bouton et coupez le contact.</p>
                         </div>
                     </div>
 
@@ -299,7 +299,7 @@ include __DIR__ . '/../header.php';
                     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <h3 itemprop="name">Où télécharger le manuel complet de la Peugeot 208 ?</h3>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Pour consulter l'intégralité des symboles officiels, vous pouvez <a href="/manuel-d-utilisation-peugeot-208-pdf">télécharger le manuel de la Peugeot 208 en PDF</a> sur notre site, gratuitement.</p>
+                            <p itemprop="text">Pour consulter l'intégralité des symboles officiels, vous pouvez <a href="/Blog/manuel-d-utilisation-peugeot-208-pdf">télécharger le manuel de la Peugeot 208 en PDF</a> sur notre site, gratuitement.</p>
                         </div>
                     </div>
                 </div>
@@ -433,7 +433,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

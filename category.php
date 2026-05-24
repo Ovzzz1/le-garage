@@ -85,7 +85,7 @@ if (is_dir($blog_dir)) {
 
             $slug = pathinfo($file, PATHINFO_FILENAME);
             $article['slug'] = $slug;
-            $article['url'] = '/' . $slug;
+            $article['url'] = '/Blog/' . $slug;
             $article['image'] = '/' . ltrim($article['image'] ?? '', '/');
 
             $cat_articles[] = $article;

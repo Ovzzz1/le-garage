@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-12 10:00
 /**
  * comment-installer-un-siege-auto-avec-ceinture-de-securite.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -167,7 +167,7 @@ include __DIR__ . '/../header.php';
             <!-- Article Content -->
             <div class="art-content">
 
-                <p>Attacher son enfant en voiture ne laisse aucune place à l'approximation. Si le système Isofix s'est largement démocratisé, l'installation d'un siège auto avec la ceinture de sécurité reste une étape incontournable pour de nombreux parents. Comment garantir un arrimage parfait sur la banquette ? Quelle est la bonne méthode selon le groupe de votre enfant ? Ce guide vous donne toutes les clés pour éviter les erreurs de manipulation qui compromettent la sécurité vitale de votre enfant en cas de collision. Pour aller plus loin, notre <a href="/comment-installer-siege-auto">guide complet sur l'installation d'un siège auto</a> détaille également les systèmes Isofix.</p>
+                <p>Attacher son enfant en voiture ne laisse aucune place à l'approximation. Si le système Isofix s'est largement démocratisé, l'installation d'un siège auto avec la ceinture de sécurité reste une étape incontournable pour de nombreux parents. Comment garantir un arrimage parfait sur la banquette ? Quelle est la bonne méthode selon le groupe de votre enfant ? Ce guide vous donne toutes les clés pour éviter les erreurs de manipulation qui compromettent la sécurité vitale de votre enfant en cas de collision. Pour aller plus loin, notre <a href="/Blog/comment-installer-siege-auto">guide complet sur l'installation d'un siège auto</a> détaille également les systèmes Isofix.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="fondamentaux-placement-reglementation">Les fondamentaux : placement et réglementation</h2>
@@ -282,7 +282,7 @@ include __DIR__ . '/../header.php';
 
                 <img src="/Image/comment-installer-un-siege-auto-avec-ceinture-de-securite9.webp" alt="Comparatif installation ceinture de sécurité vs système Isofix" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin-bottom:1.2rem;">
 
-                <p>S'il est parfaitement exécuté, l'arrimage avec une ceinture de sécurité répond aux normes en vigueur et protège efficacement. Cependant, notre recommandation d'expert est tranchée : si votre véhicule est équipé de points d'ancrage métalliques, choisissez systématiquement un système Isofix. Notre <a href="/comment-installer-siege-auto">guide dédié à l'installation des sièges auto</a> vous explique comment identifier ces points d'ancrage et choisir le bon modèle.</p>
+                <p>S'il est parfaitement exécuté, l'arrimage avec une ceinture de sécurité répond aux normes en vigueur et protège efficacement. Cependant, notre recommandation d'expert est tranchée : si votre véhicule est équipé de points d'ancrage métalliques, choisissez systématiquement un système Isofix. Notre <a href="/Blog/comment-installer-siege-auto">guide dédié à l'installation des sièges auto</a> vous explique comment identifier ces points d'ancrage et choisir le bon modèle.</p>
 
                 <p>La raison est purement pratique. Installer un siège auto sous la pluie, dans la précipitation, ou avec un enfant agité décuple le risque de mauvaise manipulation (ceinture détendue, mauvais guide-sangle utilisé). Le système Isofix annule totalement cette marge d'erreur humaine grâce à sa fixation instantanée et ses voyants de contrôle verts.</p>
 
@@ -420,7 +420,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

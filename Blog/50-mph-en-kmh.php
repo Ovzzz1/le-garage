@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-02 10:00
 /**
  * 50-mph-en-kmh.php — Le garage expert Auto
@@ -110,7 +110,7 @@ document.getElementById('kmhInput').addEventListener('input', function(e) {
 <h3>Méthode 3 — Le repère 60 mph ≈ 100 km/h</h3>
 <p>Plutôt qu'un calcul complexe, retenez une équivalence clé : <strong>60 mph correspond presque exactement à 100 km/h</strong> (96,56 km/h en réalité). À partir de ce point d'ancrage, vous pouvez déduire le reste : 30 mph c'est environ 50 km/h, 90 mph c'est environ 150 km/h, etc.</p>
 
-<p><strong>À lire aussi : <a href="/quel-type-de-voiture-louer-en-guadeloupe">Quel type de voiture louer en Guadeloupe ?</a></strong></p>
+<p><strong>À lire aussi : <a href="/Blog/quel-type-de-voiture-louer-en-guadeloupe">Quel type de voiture louer en Guadeloupe ?</a></strong></p>
 
 <h2 id="tableau">Tableau de conversion complet de 1 à 200 mph</h2>
 <p>Pour vous éviter tout calcul, voici une table de référence détaillée allant jusqu'à 200 mph, avec le contexte routier habituel pour chaque palier et la légalité correspondante sur le réseau français.</p>
@@ -153,7 +153,7 @@ document.getElementById('kmhInput').addEventListener('input', function(e) {
 <h3>L'exception allemande : l'Autobahn sans limite</h3>
 <p>En Allemagne, sur le système métrique, certaines portions de l'Autobahn n'ont pas de limite légale, seulement une vitesse recommandée de 130 km/h (environ 80 mph). Vous y croiserez donc des véhicules évoluant à plus de 125 mph (200 km/h).</p>
 
-<p><strong>À lire aussi : <a href="/90km-blog-permis-voiture-moto-camion">Blog 90km : tout sur le permis voiture, moto et camion</a></strong></p>
+<p><strong>À lire aussi : <a href="/Blog/90km-blog-permis-voiture-moto-camion">Blog 90km : tout sur le permis voiture, moto et camion</a></strong></p>
 
 <h2 id="biologie">Vitesse et biologie : ce que 80 km/h représente réellement</h2>
 <p>L'humain n'est biologiquement pas conçu pour encaisser l'énergie cinétique dégagée par un véhicule à ces vitesses. Pour mettre les choses en perspective, le record absolu de vitesse humaine à pied, établi par Usain Bolt, est de 44,72 km/h (soit environ 27,8 mph).</p>

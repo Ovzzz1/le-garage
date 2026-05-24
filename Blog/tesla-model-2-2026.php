@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * tesla-model-2-2026.php
  */
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug'] = $file_slug;
-            $other_article['url'] = '/' . $file_slug;
+            $other_article['url'] = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -209,7 +209,7 @@ include __DIR__ . '/../header.php';
 
                 <h2 id="conclusion">Ce qu'il faut retenir</h2>
                 <p>En couplant l'intelligence informatique de son projet de taxis autonomes à une mécanique de voiture étudiée pour la masse, Elon Musk est en train de redéfinir comment réduire le prix du véhicule électrique de demain. L'attente risque d'être plus longue que prévue pour les impatients européens. Mais la promesse initiale reste éblouissante : une vraie Tesla, ultra technologique, super facile à garer, et qui fait le plein sur autoroute en un clin d'œil face aux marques historiques qui l'attendent au tournant !</p>
-                <p>Pour suivre l'actualité de la voiture électrique au quotidien en attendant l'arrivée de la Model 2, le <a href="/carteborne-blog-voiture-electrique">blog Carte Borne dédié à la voiture électrique</a> est une référence à avoir dans ses favoris.</p>
+                <p>Pour suivre l'actualité de la voiture électrique au quotidien en attendant l'arrivée de la Model 2, le <a href="/Blog/carteborne-blog-voiture-electrique">blog Carte Borne dédié à la voiture électrique</a> est une référence à avoir dans ses favoris.</p>
 
             </div><!-- .art-content -->
 
@@ -327,7 +327,7 @@ include __DIR__ . '/../header.php';
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://garageraymond.fr/tesla-model-2-2026"
+        "@id": "https://garageraymond.fr/Blog/tesla-model-2-2026"
       },
       "headline": "<?php echo addslashes($article['title']); ?>",
       "description": "<?php echo addslashes($article['subtitle']); ?>",

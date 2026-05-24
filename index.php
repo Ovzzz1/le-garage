@@ -50,7 +50,7 @@ if (is_dir($blog_dir)) {
             // Construire le slug depuis le nom de fichier
             $slug = pathinfo($file, PATHINFO_FILENAME);
             $article['slug'] = $slug;
-            $article['url'] = '/' . $slug;
+            $article['url'] = '/Blog/' . $slug;
 
             // S'assurer qu'on a une catégorie
             if (!isset($article['category'])) {

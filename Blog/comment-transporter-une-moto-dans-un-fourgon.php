@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-15 10:00
 /**
  * comment-transporter-une-moto-dans-un-fourgon.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -172,7 +172,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="taille-fourgon">Quelle taille de fourgon pour une moto ?</h2>
 
-                <p>Une moto peut rentrer dans une simple fourgonnette — mais pas n'importe laquelle. Pour la majorité des motos (roadsters, sportives, trails moyens), il vous faut <strong>un volume utile d'au moins 2,10 mètres de longueur</strong> derrière les sièges avant. Un utilitaire L1H1 (type <a href="/dimension-trafic-l1h1">Renault Trafic</a>, Peugeot Expert ou Mercedes Vito) est généralement parfait.</p>
+                <p>Une moto peut rentrer dans une simple fourgonnette — mais pas n'importe laquelle. Pour la majorité des motos (roadsters, sportives, trails moyens), il vous faut <strong>un volume utile d'au moins 2,10 mètres de longueur</strong> derrière les sièges avant. Un utilitaire L1H1 (type <a href="/Blog/dimension-trafic-l1h1">Renault Trafic</a>, Peugeot Expert ou Mercedes Vito) est généralement parfait.</p>
 
                 <p>Attention à la hauteur : si vous possédez un grand trail avec une bulle haute, vérifiez la hauteur de passage des portes arrière — le H1 peut parfois bloquer et nécessiter de démonter la bulle ou les rétroviseurs avant chargement.</p>
 
@@ -398,7 +398,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-21 08:00
 /**
  * 0.9-tce-fiabilite.php — Le garage expert Auto
@@ -36,7 +36,7 @@ $article = [
     ],
 
     'content' => <<<HTML
-<p>Oui, le 0.9 TCe est l'un des moteurs essence les plus solides produits par Renault lors de la dernière décennie. Je vois régulièrement des acheteurs paniquer à la vue du sigle "TCe", craignant une casse imminente. Pourtant, mon retour d'expérience sur ce bloc est très positif. Il ne partage absolument pas les tares de conception de <strong><u><a href="/moteur-renault-a-eviter">certains autres moteurs de la marque</a></u></strong>.</p>
+<p>Oui, le 0.9 TCe est l'un des moteurs essence les plus solides produits par Renault lors de la dernière décennie. Je vois régulièrement des acheteurs paniquer à la vue du sigle "TCe", craignant une casse imminente. Pourtant, mon retour d'expérience sur ce bloc est très positif. Il ne partage absolument pas les tares de conception de <strong><u><a href="/Blog/moteur-renault-a-eviter">certains autres moteurs de la marque</a></u></strong>.</p>
 
 <p>Pour poser les bases immédiatement, voici la carte d'identité de ce bloc :</p>
 <ul>
@@ -114,7 +114,7 @@ $article = [
 <ul>
     <li><strong>De 0 à 80 000 km :</strong> Tranquillité absolue, seuls les entretiens courants sont à prévoir.</li>
     <li><strong>De 80 000 à 120 000 km :</strong> Période de vigilance. C'est ici que la pompe à eau, le fameux boîtier d'eau et quelques sondes peuvent commencer à fatiguer.</li>
-    <li><strong>200 000 km et au-delà :</strong> Parfaitement atteignable. Il n'est pas rare de voir des Clio ou des <strong><u><a href="/dacia-sandero-modele-a-eviter">Sandero</a></u></strong> dépasser ce cap avec leur turbo et leur chaîne d'origine si le plan d'entretien a été rigoureux.</li>
+    <li><strong>200 000 km et au-delà :</strong> Parfaitement atteignable. Il n'est pas rare de voir des Clio ou des <strong><u><a href="/Blog/dacia-sandero-modele-a-eviter">Sandero</a></u></strong> dépasser ce cap avec leur turbo et leur chaîne d'origine si le plan d'entretien a été rigoureux.</li>
 </ul>
 
 <h2 id="guide-achat">Guide d'achat occasion : Ce qu'il faut cibler et fuir</h2>
@@ -126,7 +126,7 @@ $article = [
 <p>Le moteur est bon, mais la transmission peut ruiner l'expérience. Fuyez absolument les boîtes robotisées à simple embrayage (vendues sous l'appellation Easy-R chez Dacia). Elles sont lentes, provoquent des à-coups usants en ville et souffrent d'une fiabilité très aléatoire. Privilégiez toujours la boîte manuelle.</p>
 
 <h3>Manque-t-il de puissance ? (Clio vs Captur vs Sandero)</h3>
-<p>Le comportement de ce 3 cylindres de 90 ch dépend directement du poids de la voiture. Il est brillant, vif et amplement suffisant sur une Sandero ou une Twingo. En revanche, si vous optez pour <strong><u><a href="/renault-captur-modele-a-eviter">un Captur</a></u></strong> ou une Clio Estate (break) et que vous roulez souvent chargé sur autoroute, il montrera ses limites. Il faudra régulièrement rétrograder pour relancer la machine.</p>
+<p>Le comportement de ce 3 cylindres de 90 ch dépend directement du poids de la voiture. Il est brillant, vif et amplement suffisant sur une Sandero ou une Twingo. En revanche, si vous optez pour <strong><u><a href="/Blog/renault-captur-modele-a-eviter">un Captur</a></u></strong> ou une Clio Estate (break) et que vous roulez souvent chargé sur autoroute, il montrera ses limites. Il faudra régulièrement rétrograder pour relancer la machine.</p>
 
 <h2 id="entretien">Plan d'entretien optimisé (Pour atteindre les 200 000 km)</h2>
 

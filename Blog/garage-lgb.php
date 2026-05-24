@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-22 08:00
 /**
  * garage-lgb.php — Le garage expert Auto
@@ -30,7 +30,7 @@ $article = [
     ],
 
     'content' => <<<HTML
-<p>Vous cherchez des informations fiables avant d'acheter un véhicule d'occasion ou vous êtes bloqué avec un <strong><u><a href="/voyant-moteur-allume-mais-pas-de-probleme">voyant moteur allumé</a></u></strong>. Je suis passé par là et c'est exactement pour cela que j'ai structuré ce site. Fini le jargon technique incompréhensible ou les essais complaisants, car mon objectif est de vous livrer la vérité brute sur ce qui se cache sous le capot. À travers mes propres retours d'expérience et des analyses poussées, je décortique les problèmes de mécanique et de fiabilité pour vous éviter de lourdes factures.</p>
+<p>Vous cherchez des informations fiables avant d'acheter un véhicule d'occasion ou vous êtes bloqué avec un <strong><u><a href="/Blog/voyant-moteur-allume-mais-pas-de-probleme">voyant moteur allumé</a></u></strong>. Je suis passé par là et c'est exactement pour cela que j'ai structuré ce site. Fini le jargon technique incompréhensible ou les essais complaisants, car mon objectif est de vous livrer la vérité brute sur ce qui se cache sous le capot. À travers mes propres retours d'expérience et des analyses poussées, je décortique les problèmes de mécanique et de fiabilité pour vous éviter de lourdes factures.</p>
 
 <h2 id="modeles-a-eviter">Les modèles à éviter absolument avant d'acheter</h2>
 

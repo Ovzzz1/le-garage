@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * detecteur-traceur-gps-voiture.php
  */
@@ -56,7 +56,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -802,7 +802,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $page_description,

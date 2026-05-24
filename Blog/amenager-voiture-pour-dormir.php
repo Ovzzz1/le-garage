@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * amenager-voiture-pour-dormir.php
  */
@@ -56,7 +56,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -74,7 +74,7 @@ include __DIR__ . '/../header.php';
 <article>
     <section class="art-hero">
         <img src="<?php echo $article['image']; ?>"
-             alt="<a href="/peugeot-3008-kilometrage-maximum">Peugeot 3008</a> gris foncé dans un garage, coffre grand ouvert révélant l'intérieur vide avec les sièges arrière rabattus"
+             alt="<a href="/Blog/peugeot-3008-kilometrage-maximum">Peugeot 3008</a> gris foncé dans un garage, coffre grand ouvert révélant l'intérieur vide avec les sièges arrière rabattus"
              class="art-hero-bg"
              width="1200" height="675" decoding="async">
         <div class="art-hero-overlay"></div>
@@ -384,11 +384,11 @@ include __DIR__ . '/../header.php';
 
                 <h3>Les erreurs qui vous font repérer</h3>
                 <p>Trois comportements trahissent immanquablement un dormeur en voiture : la lumière visible de l'extérieur (utilisez une lampe frontale rouge plutôt que blanche), les vitres entièrement embuées le matin (d'où l'importance de la ventilation), et les mouvements à l'intérieur avant l'aube. Pour la lumière, une LED rouge ou une lampe de camping avec diffuseur chaud consomme moins et reste invisible à 20 mètres.</p>
-                <p>Avant de vous installer pour la nuit dans une zone isolée, effectuez un rapide tour de votre véhicule : savoir comment <a href="/detecteur-traceur-gps-voiture">détecter un traceur GPS caché dans votre voiture</a> peut s'avérer utile, notamment si vous prêtez souvent votre véhicule ou rentrez d'un long voyage.</p>
+                <p>Avant de vous installer pour la nuit dans une zone isolée, effectuez un rapide tour de votre véhicule : savoir comment <a href="/Blog/detecteur-traceur-gps-voiture">détecter un traceur GPS caché dans votre voiture</a> peut s'avérer utile, notamment si vous prêtez souvent votre véhicule ou rentrez d'un long voyage.</p>
 
                 <!-- ═══════════════════════════════════════ -->
                 <h2 id="kit-bivouac">Le kit bivouac essentiel à emporter</h2>
-                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Sur les routes forestières ou de campagne empruntées souvent de nuit pour rejoindre un spot isolé, un <strong><u><a href="/meilleur-ultrason-anti-gibier-voiture">sifflet ultrason anti-gibier</a></u></strong> mérite une place dans votre kit — la faune sauvage est un risque réel au crépuscule et à l'aube. Voici la liste non exhaustive des éléments qu'Arnaud ne quitte plus depuis trois ans de van life :</p>
+                <p>Au-delà de l'aménagement du couchage lui-même, certains accessoires font toute la différence entre une nuit mémorable et une nuit difficile. Sur les routes forestières ou de campagne empruntées souvent de nuit pour rejoindre un spot isolé, un <strong><u><a href="/Blog/meilleur-ultrason-anti-gibier-voiture">sifflet ultrason anti-gibier</a></u></strong> mérite une place dans votre kit — la faune sauvage est un risque réel au crépuscule et à l'aube. Voici la liste non exhaustive des éléments qu'Arnaud ne quitte plus depuis trois ans de van life :</p>
 
                 <!-- CHECKLIST INTERACTIVE -->
                 <div class="bivouac-checklist" id="bivouac-checklist" role="region" aria-label="Kit bivouac essentiel">
@@ -467,7 +467,7 @@ include __DIR__ . '/../header.php';
                 <p>Un aménagement de base — matelas découpé + rideaux occultants + organisation des rangements — se réalise en <strong>une demi-journée</strong> pour un budget de 100 à 200 €. La découpe du matelas en mousse est l'étape la plus longue (1h30 avec les gabarits). Prévoyez une nuit test en bas de chez vous avant votre premier vrai voyage.</p>
 
                 <h3>Quelle voiture est la mieux adaptée pour dormir dedans ?</h3>
-                <p>Les meilleures options sont les <strong>breaks longs</strong> (Skoda Octavia Combi, <a href="/peugeot-308-modele-a-eviter">Peugeot 308</a> SW, Volkswagen Passat SW) et les <strong>SUV intermédiaires</strong> (<a href="/dacia-duster-modeles-a-eviter">Dacia Duster</a>, Peugeot 3008, Renault Kadjar) qui offrent 185 à 200 cm à plat. Les monospaces type Citroën C4 Spacetourer restent la référence absolue pour deux personnes. Les berlines compactes sont possibles jusqu'à 175 cm de taille mais demandent une planche de rattrapage de niveau.</p>
+                <p>Les meilleures options sont les <strong>breaks longs</strong> (Skoda Octavia Combi, <a href="/Blog/peugeot-308-modele-a-eviter">Peugeot 308</a> SW, Volkswagen Passat SW) et les <strong>SUV intermédiaires</strong> (<a href="/Blog/dacia-duster-modeles-a-eviter">Dacia Duster</a>, Peugeot 3008, Renault Kadjar) qui offrent 185 à 200 cm à plat. Les monospaces type Citroën C4 Spacetourer restent la référence absolue pour deux personnes. Les berlines compactes sont possibles jusqu'à 175 cm de taille mais demandent une planche de rattrapage de niveau.</p>
             </div>
 
             <!-- Similar Articles Grid (dynamique) -->
@@ -604,7 +604,7 @@ $schema = [
     "@graph"   => [
         [
             "@type"            => "Article",
-            "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
+            "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
             "headline"         => $article['title'],
             "description"      => $article['subtitle'],
             "image"            => ["https://garageraymond.fr" . $article['image']],

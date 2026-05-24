@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-02 09:00
 /**
  * dacia-duster-modeles-a-eviter.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -221,7 +221,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="scandale-tce">Le scandale du moteur 1.2 TCe : surconsommation et casse moteur</h2>
 
-                <p>C'est le point noir de l'histoire moderne du groupe Renault. Le moteur 1.2 TCe (code H5F) souffre d'un défaut de conception majeur au niveau de la segmentation. Une surconsommation d'huile moteur s'installe, entraînant une chute de pression qui finit par détendre ou rompre la chaîne de distribution. Si vous voyez une annonce pour un Duster 1.2 TCe à un prix défiant toute concurrence, soyez extrêmement prudent. Cette situation rappelle les déboires documentés dans notre dossier sur les <a href="/moteur-peugeot-a-eviter">moteurs à éviter du groupe PSA</a> : quand le défaut est structurel, même un entretien rigoureux ne garantit pas la survie du bloc. Le risque de casse sur autoroute est statistiquement inacceptable.</p>
+                <p>C'est le point noir de l'histoire moderne du groupe Renault. Le moteur 1.2 TCe (code H5F) souffre d'un défaut de conception majeur au niveau de la segmentation. Une surconsommation d'huile moteur s'installe, entraînant une chute de pression qui finit par détendre ou rompre la chaîne de distribution. Si vous voyez une annonce pour un Duster 1.2 TCe à un prix défiant toute concurrence, soyez extrêmement prudent. Cette situation rappelle les déboires documentés dans notre dossier sur les <a href="/Blog/moteur-peugeot-a-eviter">moteurs à éviter du groupe PSA</a> : quand le défaut est structurel, même un entretien rigoureux ne garantit pas la survie du bloc. Le risque de casse sur autoroute est statistiquement inacceptable.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="duster-phase1">Dacia Duster Phase 1 (2010-2017) : Les problèmes de pompe à injection</h2>
@@ -229,7 +229,7 @@ include __DIR__ . '/../header.php';
                 <p>Sur la première génération, le Duster est rustique mais certaines erreurs de jeunesse coûtent très cher. Si le châssis est solide, le système d'injection diesel est son talon d'Achille historique.</p>
 
                 <h3>1.5 dCi avant 2014 : Le spectre de la limaille de fer</h3>
-                <p>La pompe à injection haute pression Delphi se désagrège et libère de la limaille de fer dans tout le circuit, détruisant les injecteurs et le réservoir. C'est un souci que l'on retrouve également sur le <a href="/peugeot-207-modele-a-eviter">Peugeot 207 modèle à éviter</a> avec son 1.6 HDi de même génération. Pour un achat serein, ciblez exclusivement les modèles post-2014 équipés de pompes Continental, bien plus fiables dans la durée.</p>
+                <p>La pompe à injection haute pression Delphi se désagrège et libère de la limaille de fer dans tout le circuit, détruisant les injecteurs et le réservoir. C'est un souci que l'on retrouve également sur le <a href="/Blog/peugeot-207-modele-a-eviter">Peugeot 207 modèle à éviter</a> avec son 1.6 HDi de même génération. Pour un achat serein, ciblez exclusivement les modèles post-2014 équipés de pompes Continental, bien plus fiables dans la durée.</p>
 
                 <h3>1.6 16V 105 ch : Un moteur essence dépassé</h3>
                 <p>Ce n'est pas un moteur qui casse, mais il est mou et gourmand. Sans turbo, il manque de couple pour déplacer le SUV, ce qui fait grimper la consommation au-delà de 10L/100km. Pour un budget similaire et sans besoin du volume de coffre, d'autres options sont mécaniquement plus cohérentes.</p>
@@ -244,7 +244,7 @@ include __DIR__ . '/../header.php';
                 <p>Le Duster 2 a corrigé beaucoup de tirs, mais l'arrivée des normes Euro 6 a apporté son lot de complexité électronique et de capteurs fragiles qui n'existaient pas sur la génération précédente.</p>
 
                 <h3>L'AdBlue et la cristallisation : Le nouveau mal du diesel</h3>
-                <p>Le 1.5 Blue dCi est un excellent moteur, mais son système antipollution est capricieux. L'urée a tendance à cristalliser, bouchant l'injecteur AdBlue ou déformant le réservoir. Si vous achetez ce modèle, exigez une <a href="/garantie-3-mois-voiture-occasion">garantie de 3 mois voiture occasion</a> couvrant spécifiquement ces éléments, car la facture peut rapidement grimper à 1 200 €.</p>
+                <p>Le 1.5 Blue dCi est un excellent moteur, mais son système antipollution est capricieux. L'urée a tendance à cristalliser, bouchant l'injecteur AdBlue ou déformant le réservoir. Si vous achetez ce modèle, exigez une <a href="/Blog/garantie-3-mois-voiture-occasion">garantie de 3 mois voiture occasion</a> couvrant spécifiquement ces éléments, car la facture peut rapidement grimper à 1 200 €.</p>
 
                 <h3>Transmission 4x4 et bruits de boîte de vitesses</h3>
                 <p>Sur les versions 4x4, nous notons des bruits de roulements au niveau du pont arrière et de la boîte manuelle 6 rapports. C'est un point de vigilance particulier si le véhicule a fait du tout-terrain intensif ou affiche un kilométrage élevé rapidement acquis. Testez systématiquement la 6e vitesse à 90 km/h pour détecter un sifflement.</p>
@@ -252,7 +252,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="versions-fiables">Quelles versions du Duster choisir pour la longévité ?</h2>
 
-                <p>Certaines versions du Duster sont de véritables exemples de robustesse mécanique. Le 1.3 TCe (130/150 ch), co-développé avec Mercedes, est une réussite totale en termes de fiabilité et de performances. Le 1.6 SCe 115 ch, <a href="/moteur-nissan-a-eviter">moteur Nissan</a> atmosphérique sans turbo, est le choix de la simplicité et de l'endurance — il peut dépasser 300 000 km sans soucis majeurs.</p>
+                <p>Certaines versions du Duster sont de véritables exemples de robustesse mécanique. Le 1.3 TCe (130/150 ch), co-développé avec Mercedes, est une réussite totale en termes de fiabilité et de performances. Le 1.6 SCe 115 ch, <a href="/Blog/moteur-nissan-a-eviter">moteur Nissan</a> atmosphérique sans turbo, est le choix de la simplicité et de l'endurance — il peut dépasser 300 000 km sans soucis majeurs.</p>
 
                 <p>L'Eco-G 100 GPL est le choix le plus malin sur le plan économique : avec sa bi-carburation, il réduit drastiquement le budget carburant tout en restant très fiable mécaniquement. C'est une alternative sérieuse si vous faites beaucoup de kilomètres.</p>
 
@@ -260,7 +260,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="checklist-duster">Checklist expert : 5 points à vérifier sur un Duster d'occasion</h2>
 
                 <ol>
-                    <li><strong>Traces de corrosion :</strong> Inspectez minutieusement le châssis et les berceaux. Un <a href="/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion châssis</a> est un plus non négligeable si le SUV provient d'une zone salée ou montagnarde.</li>
+                    <li><strong>Traces de corrosion :</strong> Inspectez minutieusement le châssis et les berceaux. Un <a href="/Blog/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion châssis</a> est un plus non négligeable si le SUV provient d'une zone salée ou montagnarde.</li>
                     <li><strong>Niveau d'huile (1.2 TCe) :</strong> Si le niveau est au minimum lors de votre visite, fuyez sans vous retourner. C'est le signe d'une segmentation fatiguée et d'une casse imminente.</li>
                     <li><strong>Bruit de roulement :</strong> Engagez la 6e vitesse à 90 km/h sur route droite et écoutez. Un sifflement régulier signale un roulement de boîte défaillant.</li>
                     <li><strong>Historique Media Nav :</strong> Vérifiez que les mises à jour logicielles ont été effectuées pour éviter les bugs d'écran noir récurrents sur les premières versions.</li>
@@ -279,13 +279,13 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="faq-duster">FAQ : Vos questions sur la fiabilité Dacia</h2>
 
-                <h3>Quel est le <a href="/peugeot-3008-kilometrage-maximum">kilométrage maximum</a> d'un Dacia Duster ?</h3>
+                <h3>Quel est le <a href="/Blog/peugeot-3008-kilometrage-maximum">kilométrage maximum</a> d'un Dacia Duster ?</h3>
                 <p>Un 1.5 dCi post-2014 peut atteindre 350 000 km avec un entretien rigoureux. Le 1.2 TCe, lui, dépasse rarement les 150 000 km sans casse majeure de la distribution ou du moteur — c'est la limite statistique de ce bloc défaillant.</p>
 
                 <h3>Le Duster 1.2 TCe consomme-t-il vraiment trop d'huile ?</h3>
                 <p>Oui, c'est un défaut de conception reconnu par Renault. La consommation peut atteindre 1 litre aux 1 000 km, ce qui est fatal pour la lubrification de la chaîne de distribution. Ajouter de l'huile régulièrement ne résout pas le problème, il retarde simplement la casse.</p>
 
-                <h3>Dacia Duster ou Renault <a href="/dacia-sandero-modele-a-eviter">Sandero</a> : lequel est le plus solide ?</h3>
+                <h3>Dacia Duster ou Renault <a href="/Blog/dacia-sandero-modele-a-eviter">Sandero</a> : lequel est le plus solide ?</h3>
                 <p>La base mécanique est identique, mais le Duster est plus lourd. À moteur égal, la Sandero sollicite moins ses trains roulants et sa transmission. Pour les mêmes motorisations, le Duster consomme davantage et use plus rapidement son embrayage du fait de son gabarit supérieur.</p>
 
             </div><!-- .art-content -->
@@ -389,7 +389,7 @@ $schema = [
     "@context" => "https://schema.org",
     "@graph"   => [[
         "@type"            => "Article",
-        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
+        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],

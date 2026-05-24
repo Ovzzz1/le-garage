@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-17 10:00
 /**
  * record-kilometrage-pan-european-1300.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -237,7 +237,7 @@ include __DIR__ . '/../header.php';
                         allowfullscreen></iframe>
                 </div>
 
-                <p>Trouver une telle capsule temporelle est une opportunité rare. Pour un acheteur, c'est l'assurance de bénéficier du caractère moteur intact du V4 et d'un confort de duo digne du neuf, tout en évitant les premières pannes liées à l'usure du temps (durites sèches, joints). Cela prouve aussi que la Pan European conserve une cote de revente solide. Si vous envisagez de céder votre Pan European, sachez que les règles ont changé : notre guide détaille <strong><u><a href="/peut-on-vendre-une-moto-sans-controle-technique">les obligations du contrôle technique moto en 2026</a></u></strong> pour éviter un blocage administratif lors de la cession. Et si vous remettez en selle après une longue pause, c'est aussi le bon moment pour réviser votre <a href="/equipement-motard-univers-auto-moto-fr">équipement motard</a> avant les premiers kilomètres.</p>
+                <p>Trouver une telle capsule temporelle est une opportunité rare. Pour un acheteur, c'est l'assurance de bénéficier du caractère moteur intact du V4 et d'un confort de duo digne du neuf, tout en évitant les premières pannes liées à l'usure du temps (durites sèches, joints). Cela prouve aussi que la Pan European conserve une cote de revente solide. Si vous envisagez de céder votre Pan European, sachez que les règles ont changé : notre guide détaille <strong><u><a href="/Blog/peut-on-vendre-une-moto-sans-controle-technique">les obligations du contrôle technique moto en 2026</a></u></strong> pour éviter un blocage administratif lors de la cession. Et si vous remettez en selle après une longue pause, c'est aussi le bon moment pour réviser votre <a href="/Blog/equipement-motard-univers-auto-moto-fr">équipement motard</a> avant les premiers kilomètres.</p>
 
                 <img src="/Image/record-kilometrage-pan-european-13003.webp" alt="Honda ST1300 Pan European Luxe 2008 grise en état concours avec valises d'origine" width="900" height="506" loading="lazy">
 
@@ -247,7 +247,7 @@ include __DIR__ . '/../header.php';
                 <p>Si la base est solide, atteindre les 300 000 km demande une vigilance sur quelques points précis :</p>
 
                 <ul>
-                    <li><strong>L'alternateur :</strong> Le point faible principal sur les forts kilométrages. Son remplacement nécessite une dépose importante — à anticiper avant la panne. Pour ne pas en arriver là, pensez aussi à <a href="/comment-tester-une-batterie-de-moto">tester régulièrement la batterie de votre moto</a> : un alternateur qui lutte pour charger une batterie fatiguée s'use prématurément.</li>
+                    <li><strong>L'alternateur :</strong> Le point faible principal sur les forts kilométrages. Son remplacement nécessite une dépose importante — à anticiper avant la panne. Pour ne pas en arriver là, pensez aussi à <a href="/Blog/comment-tester-une-batterie-de-moto">tester régulièrement la batterie de votre moto</a> : un alternateur qui lutte pour charger une batterie fatiguée s'use prématurément.</li>
                     <li><strong>Le thermostat :</strong> S'il reste ouvert, le moteur ne monte pas en température, ce qui augmente la consommation et accélère l'usure.</li>
                     <li><strong>Le cardan :</strong> Vidange impérative tous les 36 000 km avec une huile de qualité adaptée.</li>
                     <li><strong>Le jeu aux soupapes :</strong> À contrôler tous les 24 000 km pour garantir la longévité des sièges et éviter les coûts de rectification.</li>
@@ -256,7 +256,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/comment-transporter-une-moto-dans-un-fourgon">le transport de votre moto dans un fourgon utilitaire</a></u></strong>.</p>
+                    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/comment-transporter-une-moto-dans-un-fourgon">le transport de votre moto dans un fourgon utilitaire</a></u></strong>.</p>
                 </div>
 
                 <h2 id="faq">FAQ longévité Pan European ST1300</h2>
@@ -278,9 +278,9 @@ include __DIR__ . '/../header.php';
                 <div class="art-tldr">
                     <div class="art-tldr-title">📖 À lire aussi</div>
                     <ul>
-                        <li><a href="/comment-installer-un-kit-de-rabaissement-moto">Comment installer un kit de rabaissement moto</a> — utile si la hauteur de selle de la ST1300 vous pose problème à l'arrêt.</li>
-                        <li><a href="/comment-transporter-une-moto-dans-un-fourgon">Comment transporter une moto dans un fourgon</a> — parce qu'une GT de cette valeur mérite d'être transportée en sécurité.</li>
-                        <li><a href="/moteur-1-6-puretech-fiabilite-avis">Fiabilité du moteur 1.6 PureTech</a> — pour comparer ce que "fiable" veut vraiment dire chez un motoriste auto.</li>
+                        <li><a href="/Blog/comment-installer-un-kit-de-rabaissement-moto">Comment installer un kit de rabaissement moto</a> — utile si la hauteur de selle de la ST1300 vous pose problème à l'arrêt.</li>
+                        <li><a href="/Blog/comment-transporter-une-moto-dans-un-fourgon">Comment transporter une moto dans un fourgon</a> — parce qu'une GT de cette valeur mérite d'être transportée en sécurité.</li>
+                        <li><a href="/Blog/moteur-1-6-puretech-fiabilite-avis">Fiabilité du moteur 1.6 PureTech</a> — pour comparer ce que "fiable" veut vraiment dire chez un motoriste auto.</li>
                     </ul>
                 </div>
 
@@ -418,7 +418,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

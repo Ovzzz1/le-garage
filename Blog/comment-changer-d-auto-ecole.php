@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-23 08:00
 /**
  * comment-changer-d-auto-ecole.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -241,7 +241,7 @@ include __DIR__ . '/../header.php';
                     </li>
                     <li>
                         <h3>Récupérez votre dossier complet</h3>
-                        <p>Votre dossier comprend trois documents indispensables : le <strong>CERFA 02</strong> (formulaire orange avec photo contenant votre numéro NEPH), le <strong>livret d'apprentissage</strong> (papier ou dématérialisé), et la <strong>fiche de suivi</strong> avec les appréciations de votre moniteur. Si vous n'avez pas encore finalisé ces démarches, consultez d'abord <strong><u><a href="/quel-papier-faut-il-pour-s-inscrire-a-l-auto-ecole">les papiers nécessaires pour s'inscrire à l'auto-école</a></u></strong>.</p>
+                        <p>Votre dossier comprend trois documents indispensables : le <strong>CERFA 02</strong> (formulaire orange avec photo contenant votre numéro NEPH), le <strong>livret d'apprentissage</strong> (papier ou dématérialisé), et la <strong>fiche de suivi</strong> avec les appréciations de votre moniteur. Si vous n'avez pas encore finalisé ces démarches, consultez d'abord <strong><u><a href="/Blog/quel-papier-faut-il-pour-s-inscrire-a-l-auto-ecole">les papiers nécessaires pour s'inscrire à l'auto-école</a></u></strong>.</p>
                         <p>Adressez une lettre recommandée avec accusé de réception au directeur de votre auto-école. Ce format écrit vous protège en cas de litige :</p>
 
                         <div class="ae-modele">
@@ -439,7 +439,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

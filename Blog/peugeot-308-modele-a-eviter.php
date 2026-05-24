@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-10 08:00
 /**
  * peugeot-308-modele-a-eviter.php — Le garage expert Auto
@@ -65,7 +65,7 @@ $article = [
 </ul>
 <p>Le remplacement du turbo seul peut atteindre <strong>1 500 euros</strong>, plus la main-d'œuvre. Le volant moteur bi-masse et l'embrayage représentent souvent une dépense supplémentaire de <strong>1 000 à 1 200 euros</strong>.</p>
 
-<p><strong>À lire aussi : <a href="/moteur-peugeot-a-eviter">Moteur Peugeot à éviter : Les blocs à fuir absolument</a></strong></p>
+<p><strong>À lire aussi : <a href="/Blog/moteur-peugeot-a-eviter">Moteur Peugeot à éviter : Les blocs à fuir absolument</a></strong></p>
 
 <h2 id="308-2">La Peugeot 308 II (2014–2021) : Le modèle à éviter en PureTech</h2>
 <p>La deuxième génération a apporté un vrai bond en avant en termes de qualité perçue et de design. Mais elle a aussi introduit le moteur le plus problématique de toute l'histoire de la 308.</p>
@@ -90,7 +90,7 @@ $article = [
 </ul>
 <p>Notre conseil : évitez ces diesels si vous roulez principalement en ville. En revanche, pour des longs trajets réguliers, le <strong>2.0 BlueHDi 150 ch</strong> reste la motorisation diesel la plus aboutie et la plus fiable de cette génération.</p>
 
-<p><strong>À lire aussi : <a href="/peugeot-2008-modele-a-eviter">Peugeot 2008 : Les modèles à éviter selon les propriétaires</a></strong></p>
+<p><strong>À lire aussi : <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 : Les modèles à éviter selon les propriétaires</a></strong></p>
 
 <h2 id="308-3">La Peugeot 308 III (2021–2026) : Progrès réels mais prudence requise</h2>
 <p>La troisième génération corrige enfin le défaut rédhibitoire du PureTech : <strong>la courroie est remplacée par une chaîne de distribution</strong>. C'est une amélioration majeure. Cependant, le manque de recul impose la vigilance, et l'électronique de plus en plus présente génère de nouveaux types de défaillances (i-Cockpit, ADAS, systèmes de connectivité). Les premières remontées de propriétaires signalent encore des consommations d'huile à surveiller sur le 1.2 PureTech post-2021, même corrigé.</p>
@@ -219,7 +219,7 @@ $article = [
     <li><strong>Faites un diagnostic en centre technique indépendant :</strong> Entre 50 et 100 euros, c'est l'investissement le plus rentable de votre achat.</li>
 </ol>
 
-<p><strong>À lire aussi : <a href="/garantie-3-mois-voiture-occasion">Que couvre une garantie de 3 mois sur une voiture d'occasion ?</a></strong></p>
+<p><strong>À lire aussi : <a href="/Blog/garantie-3-mois-voiture-occasion">Que couvre une garantie de 3 mois sur une voiture d'occasion ?</a></strong></p>
 HTML,
 
     'conclusion' => 'Sur la 308, deux moteurs à bannir sans exception : le 1.6 THP et le 1.2 PureTech avant 2019. Tout le reste — 2.0 BlueHDi ou PureTech à chaîne post-2021 — vous donnera une compacte française plaisante et durable.',

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-15 08:00
 /**
  * moteur-nissan-a-eviter.php — Le garage expert Auto
@@ -43,7 +43,7 @@ $article = [
 
 <h2 id="1-2-dig-t">1. Le moteur 1.2 DIG-T (H5FT) : La "bombe à retardement"</h2>
 
-<p>C'est sans aucun doute le moteur le plus problématique de la gamme. Ce bloc, que l'on retrouve massivement sur les <strong><u><a href="/qashqai-modele-a-eviter">Qashqai</a></u></strong> et les <strong><u><a href="/nissan-juke-modele-a-eviter">Juke</a></u></strong>, souffre d'un défaut de segmentation chronique. En clair, le moteur consomme de l'huile de manière excessive, ce qui finit par détendre la chaîne de distribution ou provoquer une auto-combustion.</p>
+<p>C'est sans aucun doute le moteur le plus problématique de la gamme. Ce bloc, que l'on retrouve massivement sur les <strong><u><a href="/Blog/qashqai-modele-a-eviter">Qashqai</a></u></strong> et les <strong><u><a href="/Blog/nissan-juke-modele-a-eviter">Juke</a></u></strong>, souffre d'un défaut de segmentation chronique. En clair, le moteur consomme de l'huile de manière excessive, ce qui finit par détendre la chaîne de distribution ou provoquer une auto-combustion.</p>
 
 <p>Par contre, le vrai danger est que Nissan n'a jamais procédé à un rappel global, laissant les propriétaires face à des casses moteurs complètes dès 60 000 km. Si vous entendez un claquement métallique à froid, fuyez, car le tendeur de chaîne est déjà en bout de course.</p>
 
@@ -51,7 +51,7 @@ $article = [
 
 <p>Bien que le 1.5 dCi soit réputé sobre, les versions produites entre 2007 et 2012 (avant le passage à la norme Euro 5 généralisée) sont catastrophiques au niveau de l'injection. La pompe haute pression de marque Delphi se désagrège de l'intérieur, libérant de la limaille de fer dans tout le circuit de carburant.</p>
 
-<p>C'est pourquoi l'achat d'un Qashqai de première génération à petit prix est souvent une fausse bonne idée : le remplacement des quatre injecteurs et du réservoir coûte environ 2 500 €, soit la moitié du prix de la voiture. Ce défaut d'injection Delphi est commun à l'ensemble des moteurs 1.5 dCi de l'époque : notre guide sur les <strong><u><a href="/moteur-renault-a-eviter">moteurs Renault à éviter</a></u></strong> l'identifie également comme une faiblesse majeure du K9K de première génération.</p>
+<p>C'est pourquoi l'achat d'un Qashqai de première génération à petit prix est souvent une fausse bonne idée : le remplacement des quatre injecteurs et du réservoir coûte environ 2 500 €, soit la moitié du prix de la voiture. Ce défaut d'injection Delphi est commun à l'ensemble des moteurs 1.5 dCi de l'époque : notre guide sur les <strong><u><a href="/Blog/moteur-renault-a-eviter">moteurs Renault à éviter</a></u></strong> l'identifie également comme une faiblesse majeure du K9K de première génération.</p>
 
 <h2 id="1-6-dci">3. Le 1.6 dCi 130 ch (R9M) : Turbo et distribution fragiles</h2>
 

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-01 09:00
 /**
  * citroen-c3-modeles-a-eviter.php
@@ -8,7 +8,7 @@ $page_title       = "Citroën C3 modèle à éviter : Les années et motorisatio
 $page_description = "Airbags Takata, PureTech, VTi : les versions de la Citroën C3 à fuir absolument en occasion en 2026. Alerte sécurité, blacklist complète et versions fiables à cibler.";
 
 $article = [
-    'title'          => 'Citroën C3 modèles à éviter : airbags Takata, <a href="/moteur-1-6-puretech-fiabilite-avis">PureTech</a> et Sensodrive',
+    'title'          => 'Citroën C3 modèles à éviter : airbags Takata, <a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a> et Sensodrive',
     'subtitle'       => "Entre le scandale des airbags Takata qui immobilisent des centaines de milliers de véhicules et la courroie PureTech qui détruit les moteurs, acheter une C3 sans vérifications préalables est une roulette russe financière.",
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -194,7 +194,7 @@ include __DIR__ . '/../header.php';
                 <p>Les blocs HDi de première génération sont d'excellents rouleurs, mais ils souffrent d'un vice caché au niveau des joints d'injecteurs. Avec les vibrations et le temps, ces joints fuient et laissent échapper de la calamine qui pollue l'huile moteur, ce qui finit par boucher la crépine et provoquer une casse turbo. Si vous entendez un bruit de sifflement régulier capot ouvert, c'est le signe d'une fuite imminente et d'une vanne EGR totalement encrassée.</p>
 
                 <h3>1.4 VTi et 1.6 VTi (C3 II) : Les gouffres à huile</h3>
-                <p>Développée en partenariat avec BMW pour équiper la C3 II, la famille des moteurs VTi est une catastrophe en termes de consommation d'huile. À cause d'une segmentation défaillante, ces moteurs avalent jusqu'à 1 litre d'huile tous les 1 000 km. Autrement dit, le voyant de niveau finira par s'allumer en plein trajet, faute d'appoints réguliers. C'est le même défaut documenté sur le <a href="/peugeot-207-modele-a-eviter">Peugeot 207 modèle à éviter</a> qui partage exactement ces blocs Prince.</p>
+                <p>Développée en partenariat avec BMW pour équiper la C3 II, la famille des moteurs VTi est une catastrophe en termes de consommation d'huile. À cause d'une segmentation défaillante, ces moteurs avalent jusqu'à 1 litre d'huile tous les 1 000 km. Autrement dit, le voyant de niveau finira par s'allumer en plein trajet, faute d'appoints réguliers. C'est le même défaut documenté sur le <a href="/Blog/peugeot-207-modele-a-eviter">Peugeot 207 modèle à éviter</a> qui partage exactement ces blocs Prince.</p>
 
                 <img src="/Image/citroen-c3-modeles-a-eviter2.webp"
                      alt="Courroie de distribution humide PureTech Citroën C3 désagrégée, résidus visibles dans le carter"
@@ -206,7 +206,7 @@ include __DIR__ . '/../header.php';
                 <p>Le design moderne de la troisième génération attire, mais c'est sous son capot que se cachent les pires gouffres financiers de la gamme Citroën.</p>
 
                 <h3>Le 1.2 PureTech (2014-2019) : La courroie qui détruit le moteur</h3>
-                <p>Évitez comme la peste les modèles 1.2 PureTech (82 et 110 ch) produits entre 2014 et 2019. La courroie de distribution humide baigne dans l'huile et se désagrège au fil des kilomètres. Ses résidus viennent boucher la crépine d'aspiration, provoquant une chute de pression d'huile, l'allumage du voyant rouge, puis la casse moteur. C'est exactement le même scénario catastrophe décrit dans notre dossier sur le <a href="/peugeot-2008-modele-a-eviter">Peugeot 2008 modèle à éviter</a>. Lors de la visite, dévissez le bouchon d'huile et éclairez l'intérieur avec la lampe de votre smartphone : si la courroie semble craquelée ou effilochée, annulez la vente.</p>
+                <p>Évitez comme la peste les modèles 1.2 PureTech (82 et 110 ch) produits entre 2014 et 2019. La courroie de distribution humide baigne dans l'huile et se désagrège au fil des kilomètres. Ses résidus viennent boucher la crépine d'aspiration, provoquant une chute de pression d'huile, l'allumage du voyant rouge, puis la casse moteur. C'est exactement le même scénario catastrophe décrit dans notre dossier sur le <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008 modèle à éviter</a>. Lors de la visite, dévissez le bouchon d'huile et éclairez l'intérieur avec la lampe de votre smartphone : si la courroie semble craquelée ou effilochée, annulez la vente.</p>
 
                 <h3>1.5 BlueHDi : Réservoir AdBlue et cristallisation</h3>
                 <p>Le réservoir d'AdBlue du BlueHDi 100 a tendance à se déformer à cause d'un défaut de mise à l'air. L'urée cristallise dans le circuit et détruit l'injecteur ainsi que la pompe intégrée. Le témoin antipollution s'allume avec un compte à rebours avant blocage, vous obligeant à remplacer l'ensemble du système pour une facture avoisinant souvent les 1 500 €.</p>
@@ -280,7 +280,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="transmissions-chassis">Transmissions et châssis : Les autres pièges de la C3</h2>
 
                 <h3>Les boîtes auto robotisées Sensodrive et ETG</h3>
-                <p>Oubliez d'office les boîtes robotisées Sensodrive sur C3 I et ETG6 sur C3 II si vous cherchez une citadine automatique. Ces transmissions sont notoirement lentes, génèrent des à-coups insupportables en ville et souffrent d'une usure très prématurée de l'embrayage et de l'actionneur. Ces mêmes tares ont fait la mauvaise réputation du <a href="/c4-picasso-modele-a-eviter">C4 Picasso modèle à éviter</a> produit à la même époque.</p>
+                <p>Oubliez d'office les boîtes robotisées Sensodrive sur C3 I et ETG6 sur C3 II si vous cherchez une citadine automatique. Ces transmissions sont notoirement lentes, génèrent des à-coups insupportables en ville et souffrent d'une usure très prématurée de l'embrayage et de l'actionneur. Ces mêmes tares ont fait la mauvaise réputation du <a href="/Blog/c4-picasso-modele-a-eviter">C4 Picasso modèle à éviter</a> produit à la même époque.</p>
 
                 <h3>Coupelles d'amortisseurs et train avant bruyant (C3 II)</h3>
                 <p>Lors de l'essai routier d'une C3 de deuxième génération, coupez la radio et prenez un dos d'âne. Un fort claquement métallique provenant du train avant signale une usure prématurée des coupelles d'amortisseurs — un défaut d'usine très fréquent qui nécessitera un passage rapide en atelier.</p>
@@ -294,7 +294,7 @@ include __DIR__ . '/../header.php';
 
                 <p>Tout n'est pas à jeter dans le catalogue Citroën. Le moteur 1.4i 75 ch post-2010, sur les fins de série de la C3 II, est devenu très robuste une fois les fragilités de joint de culasse corrigées. Le 1.4 HDi 70 ch post-2012 est idéal pour les rouleurs urbains : fiabilisé, sans le FAP complexe qui s'encrasse sur les versions plus puissantes.</p>
 
-                <p>Si vous voulez du moderne sans risque, le 1.2 PureTech à chaîne des modèles MHEV 2024 règle enfin le défaut de conception historique. Pour tout achat d'occasion, exigez toujours une <a href="/garantie-3-mois-voiture-occasion">garantie de 3 mois voiture occasion</a> couvrant expressément le bloc moteur et la boîte de vitesses.</p>
+                <p>Si vous voulez du moderne sans risque, le 1.2 PureTech à chaîne des modèles MHEV 2024 règle enfin le défaut de conception historique. Pour tout achat d'occasion, exigez toujours une <a href="/Blog/garantie-3-mois-voiture-occasion">garantie de 3 mois voiture occasion</a> couvrant expressément le bloc moteur et la boîte de vitesses.</p>
 
                 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
                     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">Le mot du Garage Expert Auto</div>
@@ -414,7 +414,7 @@ $schema = [
     "@context" => "https://schema.org",
     "@graph"   => [[
         "@type"            => "Article",
-        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
+        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],

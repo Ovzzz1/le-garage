@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * moteur-1-6-puretech-fiabilite-avis.php
  */
@@ -56,7 +56,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug'] = $file_slug;
-            $other_article['url'] = '/' . $file_slug;
+            $other_article['url'] = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             // Articles de la même catégorie
@@ -163,8 +163,8 @@ include __DIR__ . '/../header.php';
 
             <div class="art-content">
                 <p>C'est un véritable vent de panique sur le marché de l'occasion. Dès que l'on prononce le mot "<strong>PureTech</strong>", les acheteurs fuient. La faute incombe au tristement célèbre bloc 3 cylindres (1.2 PureTech) et à sa courroie de distribution qui baigne dans l'huile, provoquant des casses moteurs à répétition (une <a href="https://www.automobile-magazine.fr/fiabilite-rappels/article/47015-stellantis-16-puretech-oui-il-existe-des-moteurs-puretech-fiables-voici-la-liste" target="_blank" rel="nofollow external">affaire massivement documentée par la L'Automobile Magazine et les actions judiciaires</a>). Mais saviez-vous qu'il ne faut absolument pas jeter le bébé avec l'eau du bain ?</p>
-                <p>Le modèle le plus souvent cité reste le <a href="/peugeot-2008-modele-a-eviter">Peugeot 2008</a> : si vous en possédez un, notre guide sur <a href="/probleme-moteur-peugeot-2008">les problèmes du 1.2 PureTech sur le Peugeot 2008</a> détaille les pannes récurrentes et les coûts de réparation à anticiper. Pour aller encore plus loin, notre <a href="https://www.garageraymond.fr/moteur-peugeot-a-eviter">guide des moteurs Peugeot à éviter</a> passe en revue l'ensemble de la gamme, du 208 au 5008.</p>
-                <p>Sous ce même nom marketing "PureTech" se cache un tout autre moteur, totalement différent techniquement : le <strong>moteur 1.6 PureTech</strong> (ou <em>1 6 puretech</em> pour les intimes). Ce grand frère de 4 cylindres est-il touché par la malédiction de Peugeot-Citroën ? Voici tout ce qu'il faut savoir avant d'acheter une <a href="/peugeot-308-modele-a-eviter">Peugeot 308</a>, 3008, 508 ou 5008 d'occasion.</p>
+                <p>Le modèle le plus souvent cité reste le <a href="/Blog/peugeot-2008-modele-a-eviter">Peugeot 2008</a> : si vous en possédez un, notre guide sur <a href="/Blog/probleme-moteur-peugeot-2008">les problèmes du 1.2 PureTech sur le Peugeot 2008</a> détaille les pannes récurrentes et les coûts de réparation à anticiper. Pour aller encore plus loin, notre <a href="https://www.garageraymond.fr/Blog/moteur-peugeot-a-eviter">guide des moteurs Peugeot à éviter</a> passe en revue l'ensemble de la gamme, du 208 au 5008.</p>
+                <p>Sous ce même nom marketing "PureTech" se cache un tout autre moteur, totalement différent techniquement : le <strong>moteur 1.6 PureTech</strong> (ou <em>1 6 puretech</em> pour les intimes). Ce grand frère de 4 cylindres est-il touché par la malédiction de Peugeot-Citroën ? Voici tout ce qu'il faut savoir avant d'acheter une <a href="/Blog/peugeot-308-modele-a-eviter">Peugeot 308</a>, 3008, 508 ou 5008 d'occasion.</p>
 
                 <h2 id="courroie-chaine">1. Moteur 1.6 puretech 180 courroie ou chaîne ? La réponse ultime</h2>
                 <p>C'est la question qui revient sans cesse sur des forums comme <em>Caradisiac</em> ou <em>Planète Citroën</em>, et la réponse est claire et rassurante : <strong>le moteur 1.6 PureTech est équipé d'une chaîne de distribution métallique, et non d'une courroie de distribution immergée.</strong></p>
@@ -179,7 +179,7 @@ include __DIR__ . '/../header.php';
                 <h3>Quels modèles sont équipés du 1.6 PureTech 180 et 225 ? (La liste complète)</h3>
                 <p>Contrairement au petit 1.2 qui est partout, le 1.6 a été réservé aux segments supérieurs de Stellantis (souvent associé à l'excellente boîte EAT8). Voici la <strong>liste des moteurs puretech fiables</strong> de 1.6 litres selon les modèles :</p>
                 <ul>
-                    <li><strong><a href="/peugeot-3008-kilometrage-maximum">Peugeot 3008</a> 1.6 puretech 180 fiabilité :</strong> Sur ce SUV familial, le moteur ne force pas. L'agrément est exceptionnel, bien loin des vibrations d'un 3 cylindres.</li>
+                    <li><strong><a href="/Blog/peugeot-3008-kilometrage-maximum">Peugeot 3008</a> 1.6 puretech 180 fiabilité :</strong> Sur ce SUV familial, le moteur ne force pas. L'agrément est exceptionnel, bien loin des vibrations d'un 3 cylindres.</li>
                     <li><strong>Peugeot 5008 1.6 puretech 180 fiabilité :</strong> Idem pour le 7 places. Il encaisse parfaitement le poids en charge.</li>
                     <li><strong>Peugeot 508 II et DS 7 :</strong> Disponibles en 180 ch et en déclinaison sportive 225 ch. Les routières par excellence.</li>
                     <li><strong>Peugeot 308 II (GT) :</strong> Uniquement en 225 ch, une véritable alternative discrète à l'agressive GTI !</li>
@@ -199,7 +199,7 @@ include __DIR__ . '/../header.php';
                 <p>Face aux malus écologiques colossaux, Stellantis a transformé son 4 cylindres en base pour sa technologie Hybride Rechargeable (PHEV). Ainsi, vous retrouvez souvent la <strong>fiabilité des 1.6 puretech hybride 180 ou 225ch</strong> questionnée par de potentiels acheteurs.</p>
                 <ul>
                     <li>Le bloc essence lui-même ne pose pas de problème particulier car son architecture reste fondamentalement l'excellent EP6.</li>
-                    <li><em>À noter (Confusion avec Renault) :</em> De nombreux internautes font des recherches sur le <strong>"1.6 e-tech 160 fiabilité"</strong>. Ne confondez pas ! Le bloc <em>E-Tech 1.6 160</em> (160 ch) est conçu par Renault (ex. <a href="/renault-clio-modele-a-eviter">Clio</a>, Arkana). Il possède une boîte de vitesses à crabots ultra-spécifique sans embrayage, totalement différente de la très fiable EAT8 de notre 1.6 PureTech Stellantis !</li>
+                    <li><em>À noter (Confusion avec Renault) :</em> De nombreux internautes font des recherches sur le <strong>"1.6 e-tech 160 fiabilité"</strong>. Ne confondez pas ! Le bloc <em>E-Tech 1.6 160</em> (160 ch) est conçu par Renault (ex. <a href="/Blog/renault-clio-modele-a-eviter">Clio</a>, Arkana). Il possède une boîte de vitesses à crabots ultra-spécifique sans embrayage, totalement différente de la très fiable EAT8 de notre 1.6 PureTech Stellantis !</li>
                 </ul>
 
                 <h2 id="problemes">5. 1.6 Puretech 180 problème : Les points à surveiller en occasion</h2>
@@ -264,7 +264,7 @@ include __DIR__ . '/../header.php';
 
                 <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:14px 18px; margin:20px 0;">
                     <strong style="font-size:0.8125rem; text-transform:uppercase; letter-spacing:0.05em; color:#6b7280;">À lire aussi</strong>
-                    <p style="margin:6px 0 0;"><a href="/reparation-platine-boite-auto-mercedes">Réparation de platine de boîte automatique Mercedes</a> — quand la boîte auto tombe en panne hors garantie, la réparation de la platine électronique est une alternative économique au remplacement complet.</p>
+                    <p style="margin:6px 0 0;"><a href="/Blog/reparation-platine-boite-auto-mercedes">Réparation de platine de boîte automatique Mercedes</a> — quand la boîte auto tombe en panne hors garantie, la réparation de la platine électronique est une alternative économique au remplacement complet.</p>
                 </div>
             </div>
 
@@ -365,7 +365,7 @@ include __DIR__ . '/../header.php';
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://garageraymond.fr/moteur-1-6-puretech-fiabilite-avis"
+        "@id": "https://garageraymond.fr/Blog/moteur-1-6-puretech-fiabilite-avis"
       },
       "headline": "<?php echo addslashes($article['title']); ?>",
       "description": "<?php echo addslashes($article['subtitle']); ?>",

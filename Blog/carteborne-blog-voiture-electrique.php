@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * carteborne-blog-voiture-electrique.php
  */
@@ -56,7 +56,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -216,7 +216,7 @@ include __DIR__ . '/../header.php';
 
                 <p>Ce qui frappe en parcourant <strong>Carte Borne</strong>, c'est l'absence de prétention ennuyeuse. Le blog ne prétend pas faire de la presse spécialisée pointue à la Automotive News. Il fait quelque chose de différent et, franchement, de plus efficace pour le grand public : il raconte l'automobile électrique comme une histoire vivante, avec ses actualités techniques ET ses anecdotes humaines.</p>
 
-                <p>D'un côté, vous trouvez des contenus de fond comme leur <a href="https://carteborne.fr/autonomie-reelle-de-25-voitures-electriques-a-31c-le-rigoureux-test-norvegien-jusqua-la-panne/" target="_blank" rel="nofollow noopener">test d'autonomie réelle de 25 voitures électriques par -31°C</a>, un dossier rigoureux qui compare les performances hivernales de modèles allant du <a href="/tesla-model-2-2026">Tesla</a> Model Y à la Dacia Spring. De l'autre, des histoires insolites du quotidien routier qui rappellent que la route est aussi un théâtre humain. Ce mélange est assumé et il fonctionne : on revient sur Carte Borne autant pour s'informer que pour être surpris.</p>
+                <p>D'un côté, vous trouvez des contenus de fond comme leur <a href="https://carteborne.fr/autonomie-reelle-de-25-voitures-electriques-a-31c-le-rigoureux-test-norvegien-jusqua-la-panne/" target="_blank" rel="nofollow noopener">test d'autonomie réelle de 25 voitures électriques par -31°C</a>, un dossier rigoureux qui compare les performances hivernales de modèles allant du <a href="/Blog/tesla-model-2-2026">Tesla</a> Model Y à la Dacia Spring. De l'autre, des histoires insolites du quotidien routier qui rappellent que la route est aussi un théâtre humain. Ce mélange est assumé et il fonctionne : on revient sur Carte Borne autant pour s'informer que pour être surpris.</p>
 
                 <blockquote class="art-blockquote">
                     Le pari de <strong>Carte Borne</strong> : rendre l'information sur la voiture électrique accessible et engageante pour tous, sans sacrifier la rigueur sur les sujets qui comptent vraiment — autonomie, coûts, aides, technologie.
@@ -424,7 +424,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

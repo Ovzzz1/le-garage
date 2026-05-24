@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-29 09:00
 /**
  * peugeot-3008-modele-a-eviter.php
@@ -13,7 +13,7 @@ $article = [
     'category'       => 'occasion',
     'category_name'  => 'Achat & Occasion',
     'category_color' => '#7c3aed',
-    'tags'           => ['Peugeot 3008', 'Fiabilité', 'Achat Occasion', '<a href="/moteur-1-6-puretech-fiabilite-avis">PureTech</a>', 'BlueHDi'],
+    'tags'           => ['Peugeot 3008', 'Fiabilité', 'Achat Occasion', '<a href="/Blog/moteur-1-6-puretech-fiabilite-avis">PureTech</a>', 'BlueHDi'],
     'image'          => '/Image/peugeot-3008-modele-a-eviter1.webp',
     'date'           => '29 Avril 2026',
     'author'         => 'Arnaud',
@@ -50,7 +50,7 @@ if (is_dir($blog_dir)) {
         }
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
             if (($other_article['category'] ?? '') === $article['category']) { $same_cat_articles[] = $other_article; }
             $all_other_articles[] = $other_article;
@@ -207,7 +207,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="historique-fragilite">L'historique du mal : Pourquoi certains 3008 sont-ils si fragiles ?</h2>
 
-                <p>Ces problèmes ne sont pas liés à un manque d'entretien des propriétaires, mais bien à des erreurs de conception majeures. On retrouve les mêmes symptômes sur le <a href="/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a> ou dans la gamme des <a href="/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a> de manière générale.</p>
+                <p>Ces problèmes ne sont pas liés à un manque d'entretien des propriétaires, mais bien à des erreurs de conception majeures. On retrouve les mêmes symptômes sur le <a href="/Blog/probleme-moteur-peugeot-2008">problèmes moteur Peugeot 2008</a> ou dans la gamme des <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a> de manière générale.</p>
 
                 <h3>Le péché originel : L'héritage du Moteur Prince</h3>
                 <p>Sur la première génération du 3008, le moteur essence 1.6 THP a été développé en collaboration avec BMW. Ce bloc souffre d'une faiblesse chronique au niveau du tendeur de chaîne de distribution. La chaîne se détend avec le temps, provoquant un décalage de la distribution pouvant aller jusqu'à la destruction totale des soupapes.</p>
@@ -219,10 +219,10 @@ include __DIR__ . '/../header.php';
                 <h2 id="phase1-a-bannir">Peugeot 3008 Phase 1 (2009-2016) : Les modèles à bannir</h2>
 
                 <h3>1.6 THP 150/156 ch : Une bombe à retardement</h3>
-                <p>Ce moteur est le plus problématique en essence. Nous déconseillons formellement l'achat de cette motorisation sans preuve que le kit de distribution complet a été remplacé par la version fiabilisée. Le <a href="/peugeot-207-modele-a-eviter">Peugeot 207</a> souffre exactement du même mal.</p>
+                <p>Ce moteur est le plus problématique en essence. Nous déconseillons formellement l'achat de cette motorisation sans preuve que le kit de distribution complet a été remplacé par la version fiabilisée. Le <a href="/Blog/peugeot-207-modele-a-eviter">Peugeot 207</a> souffre exactement du même mal.</p>
 
                 <h3>1.6 HDi 110/112 ch : Le risque de casse turbo</h3>
-                <p>Le 1.6 HDi possède un talon d'Achille : ses joints d'injecteurs. S'ils ne sont pas étanches, la calamine pollue l'huile moteur et bouche le circuit de graissage du turbo. Ce défaut est récurrent sur d'autres modèles de la marque, comme le <a href="/peugeot-partner-tepee-a-eviter">Peugeot Partner Tepee à éviter</a>.</p>
+                <p>Le 1.6 HDi possède un talon d'Achille : ses joints d'injecteurs. S'ils ne sont pas étanches, la calamine pollue l'huile moteur et bouche le circuit de graissage du turbo. Ce défaut est récurrent sur d'autres modèles de la marque, comme le <a href="/Blog/peugeot-partner-tepee-a-eviter">Peugeot Partner Tepee à éviter</a>.</p>
 
                 <img src="/Image/peugeot-3008-modele-a-eviter2.webp"
                      alt="Détail courroie de distribution humide PureTech Peugeot 3008 désagrégée"
@@ -232,15 +232,15 @@ include __DIR__ . '/../header.php';
                 <h2 id="phase2-scandale">Peugeot 3008 Phase 2 (2016-2023) : Le scandale PureTech et BlueHDi</h2>
 
                 <h3>Le 1.2 PureTech 130 : La loterie avant juillet 2021</h3>
-                <p>Avant juillet 2021, la courroie n'était pas assez résistante à l'agression chimique du carburant. Si vous achetez une version d'occasion, assurez-vous de bénéficier d'une <a href="/garantie-3-mois-voiture-occasion">garantie de 3 mois voiture occasion</a> sérieuse, car les premiers symptômes de crépine bouchée peuvent apparaître très vite après une vidange.</p>
+                <p>Avant juillet 2021, la courroie n'était pas assez résistante à l'agression chimique du carburant. Si vous achetez une version d'occasion, assurez-vous de bénéficier d'une <a href="/Blog/garantie-3-mois-voiture-occasion">garantie de 3 mois voiture occasion</a> sérieuse, car les premiers symptômes de crépine bouchée peuvent apparaître très vite après une vidange.</p>
 
                 <h3>1.5 BlueHDi et la cristallisation AdBlue</h3>
-                <p>Le système AdBlue de Peugeot est capricieux : l'urée cristallise et bloque l'injecteur ou déforme le réservoir. Ce problème est également présent sur le <a href="/c4-picasso-modele-a-eviter">C4 Picasso modèle à éviter</a>, preuve qu'il s'agit d'un mal profond chez Stellantis.</p>
+                <p>Le système AdBlue de Peugeot est capricieux : l'urée cristallise et bloque l'injecteur ou déforme le réservoir. Ce problème est également présent sur le <a href="/Blog/c4-picasso-modele-a-eviter">C4 Picasso modèle à éviter</a>, preuve qu'il s'agit d'un mal profond chez Stellantis.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="defaut-moteur">"Défaut moteur, faites réparer le véhicule" : Comment réagir ?</h2>
 
-                <p>C'est le message que tout propriétaire de 3008 redoute, souvent accompagné d'un <a href="/voyant-orange-peugeot">voyant orange Peugeot</a>.</p>
+                <p>C'est le message que tout propriétaire de 3008 redoute, souvent accompagné d'un <a href="/Blog/voyant-orange-peugeot">voyant orange Peugeot</a>.</p>
                 <ul>
                     <li><strong>Si le voyant d'huile s'allume simultanément :</strong> Arrêtez tout. C'est le signe que votre crépine est saturée de débris de courroie.</li>
                     <li><strong>Ne forcez jamais :</strong> Rouler en mode dégradé peut transformer une réparation à 1 500 € (distribution) en un remplacement moteur à 8 000 €.</li>
@@ -250,7 +250,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="versions-fiables">Quelles versions acheter pour dormir tranquille ?</h2>
 
                 <ul>
-                    <li><strong>Le 2.0 BlueHDi 150/180 :</strong> Le moteur "roi" pour ce châssis. Sa conception est éprouvée et il permet d'atteindre le <a href="/peugeot-3008-kilometrage-maximum">kilométrage maximum du 3008</a> sans encombre, dépassant souvent les 300 000 km.</li>
+                    <li><strong>Le 2.0 BlueHDi 150/180 :</strong> Le moteur "roi" pour ce châssis. Sa conception est éprouvée et il permet d'atteindre le <a href="/Blog/peugeot-3008-kilometrage-maximum">kilométrage maximum du 3008</a> sans encombre, dépassant souvent les 300 000 km.</li>
                     <li><strong>Le Hybrid 136 (e-DCS6) post-2023 :</strong> Peugeot a enfin remplacé la courroie par une chaîne de distribution solide. C'est le choix recommandé pour un moteur essence moderne sans risque.</li>
                 </ul>
 
@@ -262,9 +262,9 @@ include __DIR__ . '/../header.php';
                     <li><strong>Historique des vidanges :</strong> Un PureTech non vidangé tous les 10 000 km est un moteur à risque.</li>
                     <li><strong>Traces de cristaux blancs :</strong> Vérifiez le bouchon du réservoir AdBlue. Des traces blanches = cristallisation en cours.</li>
                     <li><strong>Bruit à froid :</strong> Sifflement = mort du turbo annoncée ; claquement métallique = distribution.</li>
-                    <li><strong>État du châssis :</strong> Zone montagneuse ou côtière ? Un <a href="/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion châssis</a> est indispensable.</li>
+                    <li><strong>État du châssis :</strong> Zone montagneuse ou côtière ? Un <a href="/Blog/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion châssis</a> est indispensable.</li>
                     <li><strong>Campagnes de rappel :</strong> Vérifiez avec le numéro VIN sur le site Peugeot.</li>
-                    <li><strong>Kilométrage :</strong> Méfiez-vous de la mention <a href="/kilometrage-evolutif">kilométrage évolutif</a> qui peut masquer une utilisation intensive.</li>
+                    <li><strong>Kilométrage :</strong> Méfiez-vous de la mention <a href="/Blog/kilometrage-evolutif">kilométrage évolutif</a> qui peut masquer une utilisation intensive.</li>
                 </ol>
 
                 <!-- ══════════════════════════════════ -->
@@ -274,7 +274,7 @@ include __DIR__ . '/../header.php';
                 <p>Les versions produites après juillet 2021 avec la courroie renforcée, et surtout les nouveaux blocs à chaîne (Hybrid 136 post-2023), ont largement corrigé le tir. La vigilance reste de mise sur les modèles d'occasion plus anciens.</p>
 
                 <h3>Le 3008 vs Renault Clio : lequel est le plus fiable ?</h3>
-                <p>Catégories différentes, mais si l'on compare les moteurs essence, la <a href="/renault-clio-modele-a-eviter">Renault Clio modèle à éviter</a> possède des blocs (comme le 1.3 TCe) qui ont montré une meilleure résistance que les PureTech première génération.</p>
+                <p>Catégories différentes, mais si l'on compare les moteurs essence, la <a href="/Blog/renault-clio-modele-a-eviter">Renault Clio modèle à éviter</a> possède des blocs (comme le 1.3 TCe) qui ont montré une meilleure résistance que les PureTech première génération.</p>
 
                 <h3>Comment savoir si mon 3008 est concerné par les rappels ?</h3>
                 <p>Contactez une concession avec votre carte grise — démarche gratuite et essentielle pour espérer une prise en charge en cas de casse.</p>
@@ -389,7 +389,7 @@ $schema = [
     "@context" => "https://schema.org",
     "@graph"   => [[
         "@type"            => "Article",
-        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
+        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-13 14:00
 /**
  * dimension-trafic-l1h1.php — Le garage expert Auto
@@ -59,17 +59,17 @@ $article = [
 
 <p>Pour les amateurs de vanlife, le L1H1 est une base très prisée car il est discret et passe-partout. Un lit de 190 x 140 cm rentre parfaitement dans le sens de la longueur, mais il faut prendre en compte la courbure des parois. En effet, si la largeur maximale est proche de 1 660 mm, elle se réduit à environ 1 390 mm au niveau des renforts hauts après la pose de l'isolation et de l'habillage.</p>
 
-<p>Je conseille souvent de prévoir un aménagement latéral pour conserver un couloir central car l'espace reste compté. Le point positif réside dans la hauteur intérieure de 1 387 mm, qui permet de tenir assis confortablement sans avoir la tête qui touche le plafond, ce qui est impossible dans des fourgonnettes plus petites comme le Kangoo. Si votre projet inclut le transport de moto, notre guide sur <strong><u><a href="/comment-transporter-une-moto-dans-un-fourgon">comment transporter une moto dans un fourgon</a></u></strong> donne des repères de dimensions intérieures utiles pour valider la faisabilité dans un L1H1.</p>
+<p>Je conseille souvent de prévoir un aménagement latéral pour conserver un couloir central car l'espace reste compté. Le point positif réside dans la hauteur intérieure de 1 387 mm, qui permet de tenir assis confortablement sans avoir la tête qui touche le plafond, ce qui est impossible dans des fourgonnettes plus petites comme le Kangoo. Si votre projet inclut le transport de moto, notre guide sur <strong><u><a href="/Blog/comment-transporter-une-moto-dans-un-fourgon">comment transporter une moto dans un fourgon</a></u></strong> donne des repères de dimensions intérieures utiles pour valider la faisabilité dans un L1H1.</p>
 
 <h2 id="fiabilite">Fiabilité : Quels moteurs et millésimes éviter sur le Trafic ?</h2>
 
 <p>Si vous cherchez un Trafic 2 d'occasion (2001-2014), fuyez les boîtes de vitesses manuelles PK6 des premiers millésimes qui sont connues pour leur fragilité chronique. Les injecteurs du moteur 1.9 dCi ont également tendance à se gripper dans la culasse, rendant toute intervention extrêmement coûteuse.</p>
 
-<p>Sur le Trafic 3 (depuis 2014), soyez vigilant avec le moteur 1.6 dCi Twin Turbo (125 et 145 ch) produit avant 2018, car j'ai constaté plusieurs cas de fuites de liquide de refroidissement au niveau du carter de distribution. Pour une fiabilité sans faille, mon retour d'expérience est sans appel : privilégiez le moteur 2.0 dCi (bloc M9R) introduit fin 2019. Ce moteur est non seulement plus coupleux, mais il dispose d'une distribution par chaîne robuste et répond aux normes antipollution les plus strictes. Pour aller plus loin sur la problématique des moteurs de fourgons, notre dossier sur la <strong><u><a href="/fiabilite-ford-transit-2-0-tdci-170-ch">fiabilité du Ford Transit 2.0 TDCi 170 ch</a></u></strong> traite des mêmes enjeux de courroie de distribution et d'entretien rigoureux sur un concurrent direct.</p>
+<p>Sur le Trafic 3 (depuis 2014), soyez vigilant avec le moteur 1.6 dCi Twin Turbo (125 et 145 ch) produit avant 2018, car j'ai constaté plusieurs cas de fuites de liquide de refroidissement au niveau du carter de distribution. Pour une fiabilité sans faille, mon retour d'expérience est sans appel : privilégiez le moteur 2.0 dCi (bloc M9R) introduit fin 2019. Ce moteur est non seulement plus coupleux, mais il dispose d'une distribution par chaîne robuste et répond aux normes antipollution les plus strictes. Pour aller plus loin sur la problématique des moteurs de fourgons, notre dossier sur la <strong><u><a href="/Blog/fiabilite-ford-transit-2-0-tdci-170-ch">fiabilité du Ford Transit 2.0 TDCi 170 ch</a></u></strong> traite des mêmes enjeux de courroie de distribution et d'entretien rigoureux sur un concurrent direct.</p>
 
 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-    <p>Découvrez notre guide détaillé sur <strong><u><a href="/tarif-voiture-pilote-convoi-exceptionnel">le tarif d'une voiture pilote pour convoi exceptionnel</a></u></strong>.</p>
+    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/tarif-voiture-pilote-convoi-exceptionnel">le tarif d'une voiture pilote pour convoi exceptionnel</a></u></strong>.</p>
 </div>
 
 <h2 id="comparatif">Comparatif : Trafic L1H1 vs L2H1, quelle différence réelle ?</h2>

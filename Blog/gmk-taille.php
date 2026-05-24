@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-12 14:00
 /**
  * gmk-taille.php — Le garage expert Auto
@@ -74,7 +74,7 @@ $article = [
 
 <h2 id="paradoxe">Le paradoxe de l'habitacle : Comment GMK rentre-t-il dans ses supercars ?</h2>
 
-<p>Conduire une Ferrari, une Lamborghini ou une Bugatti quand on frôle les deux mètres n'est pas une mince affaire. J'ai pu observer que cette contrainte physique influence directement ses choix de collection. Si GMK affectionne particulièrement l'<strong>Audi RS6</strong> ou le <strong>Mercedes Classe G63 AMG</strong>, c'est avant tout parce que ces véhicules offrent une garde au toit et un espace aux jambes compatibles avec son gabarit. Pour comparer les cotes et les caractéristiques techniques des modèles qu'il possède, <strong><u><a href="/pifauto-com-liste-voiture">Pifauto répertorie la liste des voitures de collection et de prestige</a></u></strong> avec leurs fiches détaillées.</p>
+<p>Conduire une Ferrari, une Lamborghini ou une Bugatti quand on frôle les deux mètres n'est pas une mince affaire. J'ai pu observer que cette contrainte physique influence directement ses choix de collection. Si GMK affectionne particulièrement l'<strong>Audi RS6</strong> ou le <strong>Mercedes Classe G63 AMG</strong>, c'est avant tout parce que ces véhicules offrent une garde au toit et un espace aux jambes compatibles avec son gabarit. Pour comparer les cotes et les caractéristiques techniques des modèles qu'il possède, <strong><u><a href="/Blog/pifauto-com-liste-voiture">Pifauto répertorie la liste des voitures de collection et de prestige</a></u></strong> avec leurs fiches détaillées.</p>
 
 <p>Toutefois, pour les voitures plus radicales, des modifications sont souvent nécessaires. On parle ici de retirer certaines mousses des sièges pour gagner quelques centimètres d'assise ou de reculer les glissières au maximum. Mais le problème ne s'arrête pas au confort : il s'agit d'une question de sécurité critique. Pour un conducteur de plus de 1,90 m, la proximité de la tête avec le toit ou l'arceau de sécurité représente un danger réel en cas de tonneau.</p>
 
@@ -91,7 +91,7 @@ $article = [
     <li>Revenus substantiels générés par sa chaîne YouTube et ses partenariats (le business du "lifestyle" automobile).</li>
 </ul>
 
-<p>Il ne se contente pas de dépenser ; il gère son image comme une entreprise, en utilisant ses voitures (souvent recouvertes de son célèbre motif camouflage) comme des outils marketing de premier ordre. Parmi les canaux d'acquisition les moins connus du grand public, les <strong><u><a href="/site-enchere-japon-voiture">enchères automobiles japonaises</a></u></strong> constituent une source régulière de rarets pour les collectionneurs européens du standing de GMK.</p>
+<p>Il ne se contente pas de dépenser ; il gère son image comme une entreprise, en utilisant ses voitures (souvent recouvertes de son célèbre motif camouflage) comme des outils marketing de premier ordre. Parmi les canaux d'acquisition les moins connus du grand public, les <strong><u><a href="/Blog/site-enchere-japon-voiture">enchères automobiles japonaises</a></u></strong> constituent une source régulière de rarets pour les collectionneurs européens du standing de GMK.</p>
 HTML,
 
     'conclusion' => 'Avec 198 cm et 120 kg, GMK incarne un paradoxe fascinant : l\'un des plus grands collectionneurs de supercars au monde est aussi l\'un de ceux pour qui ces machines sont les plus difficiles à habiter.',

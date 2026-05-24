@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-12 08:00
 /**
  * dacia-sandero-modele-a-eviter.php — Le garage expert Auto
@@ -46,7 +46,7 @@ $article = [
 
 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>
-    <p>Découvrez notre guide détaillé sur <strong><u><a href="/traitement-anti-corrosion-chassis-voiture">le traitement anti-corrosion du châssis de votre voiture</a></u></strong>.</p>
+    <p>Découvrez notre guide détaillé sur <strong><u><a href="/Blog/traitement-anti-corrosion-chassis-voiture">le traitement anti-corrosion du châssis de votre voiture</a></u></strong>.</p>
 </div>
 
 <h2 id="gen1">Sandero Génération 1 (2008-2012) : Attention au GPL et à la corrosion</h2>
@@ -59,7 +59,7 @@ $article = [
 
 <p>Le bloc 1.5 dCi (code K9K) est une légende de sobriété, mais il n'est pas exempt de défauts sur les premiers millésimes. Je vous déconseille les versions dCi 70 et 85 ch produites avant 2010 à cause de leur <strong>pompe à injection Delphi</strong>. Cette dernière a tendance à se désagréger et à libérer de la <strong>limaille de fer</strong> dans tout le circuit de carburant, ce qui impose le remplacement des quatre injecteurs et de l'ensemble du système d'alimentation.</p>
 
-<p>En revanche, si vous faites principalement de la ville, évitez absolument tous les dCi d'occasion car l'<strong>encrassement de la vanne EGR</strong> et du filtre à particules (FAP) est inévitable sur ces petits trajets. Pour un usage urbain, le diesel n'est jamais la solution sur une Sandero, d'autant que les coûts d'entretien sur les périphériques moteurs sont bien plus élevés que sur un bloc essence simple. C'est un constat que je retrouve de la même façon sur le <strong><u><a href="/renault-clio-modele-a-eviter">Renault Clio en diesel sur trajets courts</a></u></strong>, où les mêmes pièges de FAP et d'EGR se répètent à l'identique.</p>
+<p>En revanche, si vous faites principalement de la ville, évitez absolument tous les dCi d'occasion car l'<strong>encrassement de la vanne EGR</strong> et du filtre à particules (FAP) est inévitable sur ces petits trajets. Pour un usage urbain, le diesel n'est jamais la solution sur une Sandero, d'autant que les coûts d'entretien sur les périphériques moteurs sont bien plus élevés que sur un bloc essence simple. C'est un constat que je retrouve de la même façon sur le <strong><u><a href="/Blog/renault-clio-modele-a-eviter">Renault Clio en diesel sur trajets courts</a></u></strong>, où les mêmes pièges de FAP et d'EGR se répètent à l'identique.</p>
 
 <h2 id="boite">Boîte de vitesse et embrayage : Les points noirs mécaniques</h2>
 
@@ -108,7 +108,7 @@ $article = [
 
 <h2 id="alternatives">Quelles alternatives fiables acheter les yeux fermés ?</h2>
 
-<p>Pour répondre à votre besoin de fiabilité sans sacrifier votre budget, j'ai sélectionné trois options qui sont, selon mon expérience, les plus robustes sur le marché de l'occasion en 2026 : Si vous souhaitez comparer la Sandero avec ses cousines de gamme budget, notre guide sur le <strong><u><a href="/dacia-duster-modeles-a-eviter">Dacia Duster — modèles à éviter</a></u></strong> vous permet d'identifier les mêmes risques sur le SUV de la marque, qui partage plusieurs motorisations dCi avec la Sandero.</p>
+<p>Pour répondre à votre besoin de fiabilité sans sacrifier votre budget, j'ai sélectionné trois options qui sont, selon mon expérience, les plus robustes sur le marché de l'occasion en 2026 : Si vous souhaitez comparer la Sandero avec ses cousines de gamme budget, notre guide sur le <strong><u><a href="/Blog/dacia-duster-modeles-a-eviter">Dacia Duster — modèles à éviter</a></u></strong> vous permet d'identifier les mêmes risques sur le SUV de la marque, qui partage plusieurs motorisations dCi avec la Sandero.</p>
 
 <ul>
     <li><strong>Le 1.0 TCe 100 Eco-G :</strong> C'est le choix roi. Ce moteur bi-carburation (essence/GPL) est moderne, fiable et extrêmement économique à l'usage. Les problèmes de réservoir de la première génération ont été réglés.</li>
@@ -118,7 +118,7 @@ $article = [
 
 <h2 id="checklist">Checklist d'achat : 3 points à vérifier devant la voiture</h2>
 
-<p>Avant de signer un chèque pour une Sandero d'occasion, je vous suggère d'effectuer ces trois vérifications rapides qui ne nécessitent aucune compétence en mécanique. Pensez également à vérifier si le véhicule est couvert par une <strong><u><a href="/garantie-3-mois-voiture-occasion">garantie légale de 3 mois sur voiture d'occasion</a></u></strong> pour sécuriser votre achat face à ces défauts latents :</p>
+<p>Avant de signer un chèque pour une Sandero d'occasion, je vous suggère d'effectuer ces trois vérifications rapides qui ne nécessitent aucune compétence en mécanique. Pensez également à vérifier si le véhicule est couvert par une <strong><u><a href="/Blog/garantie-3-mois-voiture-occasion">garantie légale de 3 mois sur voiture d'occasion</a></u></strong> pour sécuriser votre achat face à ces défauts latents :</p>
 
 <ul>
     <li><strong>Le test du bouchon d'huile :</strong> Dévissez le bouchon de remplissage d'huile moteur. Si vous voyez une substance pâteuse (la "mayonnaise") ou si vous sentez une forte odeur d'essence, c'est le signe d'un joint de culasse fatigué ou d'une dilution de l'huile (typique sur le 1.2 TCe).</li>

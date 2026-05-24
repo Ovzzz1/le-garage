@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-29 09:00
 /**
  * renault-clio-modele-a-eviter.php
@@ -50,7 +50,7 @@ if (is_dir($blog_dir)) {
         }
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
             if (($other_article['category'] ?? '') === $article['category']) { $same_cat_articles[] = $other_article; }
             $all_other_articles[] = $other_article;
@@ -157,7 +157,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="origines-problemes">Aux origines des problèmes : Pourquoi certaines Clio sont-elles fragiles ?</h2>
 
-                <p>Pour comprendre pourquoi Renault a trébuché, il faut remonter aux années 2012-2018. À cette époque, la marque a dû sacrifier la cylindrée sur l'autel de l'écologie : c'est l'ère du "downsizing". La conception de certains nouveaux blocs en aluminium a été précipitée, et les tolérances de fabrication sur les segmentations étaient parfois trop larges — ce qui mène directement à une consommation d'huile excessive. Renault n'est pas le seul à avoir souffert : j'ai également analysé les <a href="/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a> pour ceux qui hésitent entre les deux constructeurs français.</p>
+                <p>Pour comprendre pourquoi Renault a trébuché, il faut remonter aux années 2012-2018. À cette époque, la marque a dû sacrifier la cylindrée sur l'autel de l'écologie : c'est l'ère du "downsizing". La conception de certains nouveaux blocs en aluminium a été précipitée, et les tolérances de fabrication sur les segmentations étaient parfois trop larges — ce qui mène directement à une consommation d'huile excessive. Renault n'est pas le seul à avoir souffert : j'ai également analysé les <a href="/Blog/moteur-peugeot-a-eviter">moteurs Peugeot à éviter</a> pour ceux qui hésitent entre les deux constructeurs français.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="blacklist-moteurs">La Blacklist : Les moteurs à fuir absolument</h2>
@@ -212,7 +212,7 @@ include __DIR__ . '/../header.php';
                 <p>On évite la finition "Life", qui n'a même pas la clim de série. Côté transmission, méfiez-vous de la boîte automatique EDC des débuts (avant 2015) : surchauffes d'embrayage et bugs électroniques récurrents. En cas de doute sur l'état d'une boîte auto, un diagnostic électronique complet est indispensable avant toute signature.</p>
 
                 <h3>Clio 5 : Les défauts de jeunesse de l'E-Tech</h3>
-                <p>Évitez les modèles hybrides 2019 et 2020 : ils essuient les plâtres du système Easy Link et de la boîte de vitesses à crabots, très complexe. Si vous hésitez avec sa rivale de chez Sochaux, j'ai aussi rédigé un dossier sur le <a href="/peugeot-3008-modele-a-eviter">modèle Peugeot 3008 à éviter</a>.</p>
+                <p>Évitez les modèles hybrides 2019 et 2020 : ils essuient les plâtres du système Easy Link et de la boîte de vitesses à crabots, très complexe. Si vous hésitez avec sa rivale de chez Sochaux, j'ai aussi rédigé un dossier sur le <a href="/Blog/peugeot-3008-modele-a-eviter">modèle Peugeot 3008 à éviter</a>.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="whitelist-recommandes">La Whitelist : Les modèles recommandés pour un achat serein</h2>
@@ -223,7 +223,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>Le 1.0 TCe 90/100 ch (Clio 5) :</strong> Moderne, équipé d'une distribution par chaîne, ce moteur est une réussite totale.</li>
                 </ul>
 
-                <p>Lors de l'achat, une <a href="/garantie-3-mois-voiture-occasion">garantie de 3 mois sur une voiture d'occasion</a> est un strict minimum pour couvrir les premiers trajets.</p>
+                <p>Lors de l'achat, une <a href="/Blog/garantie-3-mois-voiture-occasion">garantie de 3 mois sur une voiture d'occasion</a> est un strict minimum pour couvrir les premiers trajets.</p>
 
                 <div class="evit-table-wrap">
                     <table class="evit-table">
@@ -263,7 +263,7 @@ include __DIR__ . '/../header.php';
                 <ul>
                     <li><strong>Le niveau d'huile :</strong> Tirez la jauge. Si elle est sèche sur un 1.2 TCe, fuyez.</li>
                     <li><strong>Le bruit de cliquetis à froid :</strong> Un bruit de chaîne qui bat au démarrage indique un tendeur fatigué.</li>
-                    <li><strong>Le piège des "10 km" :</strong> Méfiez-vous d'une <a href="/voiture-occasion-10-km-pourquoi">voiture d'occasion avec seulement 10 km</a> — souvent stockée 2 ans sans tourner, ce qui n'est jamais bon pour les joints.</li>
+                    <li><strong>Le piège des "10 km" :</strong> Méfiez-vous d'une <a href="/Blog/voiture-occasion-10-km-pourquoi">voiture d'occasion avec seulement 10 km</a> — souvent stockée 2 ans sans tourner, ce qui n'est jamais bon pour les joints.</li>
                 </ul>
 
                 <!-- ══════════════════════════════════ -->
@@ -369,7 +369,7 @@ $schema = [
     "@context" => "https://schema.org",
     "@graph"   => [[
         "@type"            => "Article",
-        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/" . $current_slug],
+        "mainEntityOfPage" => ["@type" => "WebPage", "@id" => "https://garageraymond.fr/Blog/" . $current_slug],
         "headline"         => $article['title'],
         "description"      => $article['subtitle'],
         "image"            => ["https://garageraymond.fr" . $article['image']],

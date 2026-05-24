@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-18 08:00
 /**
  * site-enchere-japon-voiture.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -259,7 +259,7 @@ include __DIR__ . '/../header.php';
                     <li><strong>Grade R (ou RA) :</strong> Réparé suite à un accident — souvent de bonnes affaires si la réparation est bien faite, mais à analyser avec un professionnel.</li>
                 </ul>
 
-                <p>Sur le schéma carrosserie, repérez les lettres : <strong>A</strong> (rayure, de A1 léger à A3 profond), <strong>U</strong> (bosse) et <strong>W</strong> (panneau repeint). Attention aussi aux mentions de rouille ("Rust") : si le véhicule en est atteint, prévoyez un budget pour un <a href="/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion du châssis</a> dès son arrivée en France.</p>
+                <p>Sur le schéma carrosserie, repérez les lettres : <strong>A</strong> (rayure, de A1 léger à A3 profond), <strong>U</strong> (bosse) et <strong>W</strong> (panneau repeint). Attention aussi aux mentions de rouille ("Rust") : si le véhicule en est atteint, prévoyez un budget pour un <a href="/Blog/traitement-anti-corrosion-chassis-voiture">traitement anti-corrosion du châssis</a> dès son arrivée en France.</p>
 
                 <img src="/Image/site-enchere-japon-voiture2.webp" alt="Feuille d'enchère japonaise shuppenhyo avec annotations A1, U2 et grade 4 entouré" width="900" height="506" loading="lazy">
 
@@ -289,7 +289,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="faq">FAQ : importer un véhicule du Japon</h2>
 
                 <p><strong>Peut-on utiliser un site d'enchère japonais pour une moto ?</strong><br>
-                Oui. Les réseaux <strong>BDS</strong> et <strong>JBA</strong> sont exclusivement spécialisés dans les deux-roues. Le processus est similaire aux voitures. Une fois la moto arrivée au port français, consultez notre guide pour savoir <a href="/comment-transporter-une-moto-dans-un-fourgon">comment transporter une moto dans un fourgon</a> depuis le port jusqu'à chez vous.</p>
+                Oui. Les réseaux <strong>BDS</strong> et <strong>JBA</strong> sont exclusivement spécialisés dans les deux-roues. Le processus est similaire aux voitures. Une fois la moto arrivée au port français, consultez notre guide pour savoir <a href="/Blog/comment-transporter-une-moto-dans-un-fourgon">comment transporter une moto dans un fourgon</a> depuis le port jusqu'à chez vous.</p>
 
                 <p><strong>Peut-on rouler avec un volant à droite (RHD) en France ?</strong><br>
                 Oui, c'est parfaitement légal. La conduite à droite demande un petit temps d'adaptation, notamment pour les dépassements et les péages. Attention : les optiques de phares avant devront être modifiées ou changées pour passer le contrôle technique français et ne pas éblouir les conducteurs venant d'en face.</p>
@@ -431,7 +431,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

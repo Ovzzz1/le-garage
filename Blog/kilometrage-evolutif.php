@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-04-20 08:00
 /**
  * kilometrage-evolutif.php
@@ -57,7 +57,7 @@ if (is_dir($blog_dir)) {
 
         if ($other_article && isset($other_article['title'])) {
             $other_article['slug']  = $file_slug;
-            $other_article['url']   = '/' . $file_slug;
+            $other_article['url']   = '/Blog/' . $file_slug;
             $other_article['image'] = '/' . ltrim($other_article['image'] ?? '', '/');
 
             if (($other_article['category'] ?? '') === $article['category']) {
@@ -463,7 +463,7 @@ include __DIR__ . '/../header.php';
                 <!-- ══════════════════════════════════ -->
                 <h2 id="negociation">Le compteur a trop tourné : comment négocier le prix</h2>
 
-                <p>Si vous constatez lors de l'essai que le véhicule a parcouru beaucoup plus de distance que convenu — zone orange ou rouge — il est légitime de demander une révision à la baisse. Ce surplus kilométrique rapproche la prochaine vidange, use la gomme des pneus et précipite l'apparition d'alertes d'entretien, comme un <a href="/voyant-orange-peugeot">voyant qui s'allume</a> sur le tableau de bord. Utilisez cette formulation directe :</p>
+                <p>Si vous constatez lors de l'essai que le véhicule a parcouru beaucoup plus de distance que convenu — zone orange ou rouge — il est légitime de demander une révision à la baisse. Ce surplus kilométrique rapproche la prochaine vidange, use la gomme des pneus et précipite l'apparition d'alertes d'entretien, comme un <a href="/Blog/voyant-orange-peugeot">voyant qui s'allume</a> sur le tableau de bord. Utilisez cette formulation directe :</p>
 
                 <div class="copy-box">
                     <p id="nego-text">"Bonjour, l'annonce indiquait 80 000 km, mais le véhicule en affiche désormais 82 500. La prochaine révision approche plus vite que prévu et l'usure générale a progressé. Pour compenser cette décote, je vous propose de baisser le prix de 300 euros."</p>
@@ -490,7 +490,7 @@ include __DIR__ . '/../header.php';
 
                 <p>Certains vendeurs malhonnêtes abusent de l'excuse du "kilométrage évolutif" pour justifier une incohérence majeure entre l'annonce et la réalité, masquant parfois une fraude au compteur. Le rapport <strong>Histovec</strong> est votre meilleur bouclier. Ce service gratuit du gouvernement permet de croiser le kilométrage actuel avec l'historique officiel des anciens passages au contrôle technique. Si la courbe kilométrique stagne ou redescend mystérieusement d'une année sur l'autre, fuyez : le compteur a été trafiqué.</p>
 
-                <p>Une anomalie d'affichage ponctuelle peut aussi ressembler à un <a href="/symptome-mauvaise-masse-voiture">symptôme de mauvaise masse voiture</a> — erreur de diagnostic fréquente sur des autos ayant stagné en milieu humide. Mais un écart persistant de plusieurs centaines de kilomètres entre deux visites est une fraude, pas un bug électrique.</p>
+                <p>Une anomalie d'affichage ponctuelle peut aussi ressembler à un <a href="/Blog/symptome-mauvaise-masse-voiture">symptôme de mauvaise masse voiture</a> — erreur de diagnostic fréquente sur des autos ayant stagné en milieu humide. Mais un écart persistant de plusieurs centaines de kilomètres entre deux visites est une fraude, pas un bug électrique.</p>
 
                 <!-- ══════════════════════════════════ -->
                 <h2 id="cerfa">Protection juridique : la case D.4 du Cerfa</h2>
@@ -511,7 +511,7 @@ include __DIR__ . '/../header.php';
                 <h2 id="faq">FAQ : bien acheter sa voiture d'occasion</h2>
 
                 <p><strong>Quel est le kilométrage idéal pour acheter une voiture ?</strong><br>
-                Le "sweet spot" se situe généralement entre 60 000 et 100 000 km. À ce stade, le véhicule a subi sa plus forte décote (vous faites une bonne affaire) mais sa fiabilité mécanique reste optimale si l'entretien a été rigoureux. La robustesse varie selon les constructeurs — certains modèles atteignent des sommets, comme en témoigne le <a href="/record-kilometrage-pan-european-1300">record de kilométrage de la Pan European 1300</a>.</p>
+                Le "sweet spot" se situe généralement entre 60 000 et 100 000 km. À ce stade, le véhicule a subi sa plus forte décote (vous faites une bonne affaire) mais sa fiabilité mécanique reste optimale si l'entretien a été rigoureux. La robustesse varie selon les constructeurs — certains modèles atteignent des sommets, comme en témoigne le <a href="/Blog/record-kilometrage-pan-european-1300">record de kilométrage de la Pan European 1300</a>.</p>
 
                 <p><strong>Que faire si le kilométrage de l'annonce est très différent de la réalité ?</strong><br>
                 Si l'écart dépasse votre seuil de tolérance (au-delà de 2 000 km) sans justification valable, vous êtes en droit d'annuler la transaction sans frais ou d'exiger une remise immédiate. La règle : ne signez jamais le Cerfa si le chiffre inscrit ne correspond pas exactement au compteur.</p>
@@ -650,7 +650,7 @@ $schema = [
             "@type"            => "Article",
             "mainEntityOfPage" => [
                 "@type" => "WebPage",
-                "@id"   => "https://garageraymond.fr/" . $current_slug
+                "@id"   => "https://garageraymond.fr/Blog/" . $current_slug
             ],
             "headline"      => $article['title'],
             "description"   => $article['subtitle'],

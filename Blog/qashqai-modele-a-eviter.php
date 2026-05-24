@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // published: 2026-05-06 08:00
 /**
  * qashqai-modele-a-eviter.php, Le garage expert Auto
@@ -46,9 +46,9 @@ $article = [
 <p>Le problème majeur de ce 1.2 DIG-T réside dans une usure prématurée de la segmentation, entraînant une <strong>surconsommation d'huile dramatique</strong>. Concrètement, le moteur "avale" son huile, ce qui passe inaperçu jusqu'à ce que le niveau soit dangereusement bas. Sans lubrification adéquate, la chaîne de distribution se détend, les soupapes fondent, et c'est la <strong>casse moteur pure et simple</strong>. Le coût de remplacement du bloc complet frôle souvent les 7 000 à 9 000 euros.</p>
 
 <h3>Les années noires : 2014 à 2018 (Qashqai II)</h3>
-<p>Ce défaut de conception touche principalement la deuxième génération du Qashqai (le Qashqai II phase 1), commercialisée de <strong>2014 à 2018</strong>. Même si certains modèles ont bénéficié d'une reprogrammation ou d'un changement de moteur sous garantie, le risque reste extrêmement élevé sur le marché de l'occasion. Nous vous conseillons de fuir cette motorisation, même si le prix d'achat semble attractif. Ce même moteur H5FT se retrouve à l'identique sur le <strong><u><a href="/nissan-juke-modele-a-eviter">Nissan Juke 1.2 DIG-T de 2014 à 2018</a></u></strong>, avec les mêmes problèmes de casse moteur — deux modèles à éviter avec le même moteur.</p>
+<p>Ce défaut de conception touche principalement la deuxième génération du Qashqai (le Qashqai II phase 1), commercialisée de <strong>2014 à 2018</strong>. Même si certains modèles ont bénéficié d'une reprogrammation ou d'un changement de moteur sous garantie, le risque reste extrêmement élevé sur le marché de l'occasion. Nous vous conseillons de fuir cette motorisation, même si le prix d'achat semble attractif. Ce même moteur H5FT se retrouve à l'identique sur le <strong><u><a href="/Blog/nissan-juke-modele-a-eviter">Nissan Juke 1.2 DIG-T de 2014 à 2018</a></u></strong>, avec les mêmes problèmes de casse moteur — deux modèles à éviter avec le même moteur.</p>
 
-<p><strong>À lire aussi : <a href="/moteur-peugeot-a-eviter">Moteur Peugeot à éviter : Lesquels fuir absolument ?</a></strong></p>
+<p><strong>À lire aussi : <a href="/Blog/moteur-peugeot-a-eviter">Moteur Peugeot à éviter : Lesquels fuir absolument ?</a></strong></p>
 
 <h2 id="diesel-dci">Nissan Qashqai diesel : Les modèles dCi à surveiller de près</h2>
 <p>Nissan a longtemps profité de l'expertise de l'Alliance avec Renault pour ses moteurs diesels (dCi). S'ils sont globalement plus robustes que le 1.2 DIG-T, certains millésimes exigent une vigilance particulière lors de l'achat.</p>
@@ -70,7 +70,7 @@ $article = [
     <li>Des vibrations anormales à basse vitesse.</li>
 </ul>
 
-<p><strong>À lire aussi : <a href="/garantie-3-mois-voiture-occasion">Que couvre une garantie de 3 mois sur une voiture d'occasion ?</a></strong></p>
+<p><strong>À lire aussi : <a href="/Blog/garantie-3-mois-voiture-occasion">Que couvre une garantie de 3 mois sur une voiture d'occasion ?</a></strong></p>
 
 <h2 id="tableau-noir">Tableau récapitulatif : Qashqai à fuir vs Qashqai fiables</h2>
 
@@ -126,7 +126,7 @@ $article = [
 <h2 id="whitelist">La "Whitelist" : Nos recommandations claires d'achat</h2>
 
 <h3>Le 1.3 DIG-T (140 et 160 ch) : Le modèle essence fiable</h3>
-<p>Introduit fin 2018 pour remplacer le catastrophique 1.2 DIG-T, le <strong>1.3 DIG-T</strong> est le fruit d'une collaboration entre Renault, Nissan et Mercedes-Benz. Ce moteur a corrigé tous les défauts de son prédécesseur. Il est puissant, souple, ne consomme pas d'huile, et la chaîne de distribution est désormais sans histoire. Si vous cherchez un Qashqai essence d'occasion, c'est LE modèle à acheter. Pour comprendre les risques spécifiques de chaque moteur sur l'ensemble de la gamme Nissan, notre dossier complet sur les <strong><u><a href="/moteur-nissan-a-eviter">moteurs Nissan à éviter</a></u></strong> complète ce guide Qashqai avec les problèmes du Juke et du X-Trail.</p>
+<p>Introduit fin 2018 pour remplacer le catastrophique 1.2 DIG-T, le <strong>1.3 DIG-T</strong> est le fruit d'une collaboration entre Renault, Nissan et Mercedes-Benz. Ce moteur a corrigé tous les défauts de son prédécesseur. Il est puissant, souple, ne consomme pas d'huile, et la chaîne de distribution est désormais sans histoire. Si vous cherchez un Qashqai essence d'occasion, c'est LE modèle à acheter. Pour comprendre les risques spécifiques de chaque moteur sur l'ensemble de la gamme Nissan, notre dossier complet sur les <strong><u><a href="/Blog/moteur-nissan-a-eviter">moteurs Nissan à éviter</a></u></strong> complète ce guide Qashqai avec les problèmes du Juke et du X-Trail.</p>
 
 <h3>Qashqai III e-Power : L'hybride de référence</h3>
 <p>Sur la troisième génération du Qashqai (depuis 2021), Nissan a introduit la technologie <strong>e-Power</strong>. C'est une technologie hybride unique où le moteur thermique ne sert que de générateur pour recharger la batterie. Outre un agrément de conduite proche d'une voiture 100% électrique, ce système se révèle extrêmement fiable avec un moteur thermique qui tourne à régime optimal, réduisant l'usure mécanique.</p>
