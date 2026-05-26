@@ -8,7 +8,7 @@ $article = [
     'subtitle'     => 'Voyant moteur orange fixe mais voiture normale ? Bug électronique, bouchon mal serré ou panne masquée : les vraies causes et la marche à suivre.',
     'category'     => 'entretien',
     'tags'         => ['Voyant moteur', 'Diagnostic OBD', 'Panne électronique', 'Témoin orange', 'Mode dégradé'],
-    'image'        => '/Image/voyant-moteur-allume-mais-pas-de-probleme.webp',
+    'image'        => '/Image/voyant-moteur-allume-mais-pas-de-probleme-1.webp',
     'date'         => '25 Mai 2026',
     'date_iso'     => '2026-05-25',
     'author'       => 'Arnaud',
@@ -41,7 +41,8 @@ $article = [
 
 <p>Face à ce témoin d'anomalie actif, ma première action en tant que technicien est toujours d'observer son mode d'affichage sur le tableau de bord, car l'ordinateur de bord utilise deux codes distincts pour communiquer la gravité de la situation.</p>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Statut du voyant moteur</th>
@@ -62,6 +63,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h3>Que signifie un témoin moteur orange allumé et fixe ?</h3>
 <p>Lorsque le témoin reste allumé de manière fixe en orange, le calculateur moteur vous informe qu'une anomalie permanente a été enregistrée dans la mémoire flash, le plus souvent liée au système d'échappement ou à la gestion antipollution. Le moteur bascule fréquemment sur des paramètres d'injection par défaut pour continuer à fonctionner de manière stable, ce qui explique pourquoi vous ne ressentez aucun changement immédiat au volant.</p>
@@ -91,6 +93,13 @@ $article = [
 
 <p>Si un capteur commence à dériver ou si une pièce s'encrasse, le calculateur va modifier les temps d'ouverture des injecteurs ou ajuster la position des volets d'air pour maintenir les performances exigées par le conducteur. C'est précisément cette stratégie de compensation qui crée une illusion parfaite de bon fonctionnement au volant. L'utilisateur ne ressent aucune perte de puissance ni aucun raté, mais en coulisses, le moteur fonctionne sur une cartographie de secours, ce qui engendre souvent une surconsommation invisible de carburant et accélère l'usure des dispositifs de dépollution.</p>
 
+<figure>
+    <img src="/Image/voyant-moteur-allume-mais-pas-de-probleme-2.webp"
+         alt="Calculateur moteur en mode compensation — voyant orange fixe sans symptôme apparent"
+         loading="lazy" decoding="async" width="1200" height="675">
+    <figcaption>Le calculateur ajuste les paramètres d'injection pour masquer la panne au conducteur — d'où l'absence de symptôme au volant.</figcaption>
+</figure>
+
 <h2 id="essence-diesel">4. Moteur Essence ou Diesel : quelles sont les pannes invisibles à la conduite ?</h2>
 
 <h3>Côté Essence : bougies fatiguées, bobines d'allumage ou sonde lambda lente</h3>
@@ -109,6 +118,13 @@ $article = [
 
 <h3>Brancher une valise de diagnostic ou un boîtier OBD-II de poche</h3>
 <p>La méthode moderne et efficace consiste à utiliser l'outil de diagnostic universel présent dans tous les ateliers. Vous devez d'abord localiser la prise OBD2 de votre véhicule, qui se trouve généralement sous la colonne de direction, derrière le vide-poches ou à proximité du frein à main. Une fois le boîtier de poche branché sur cette fiche à 16 broches, mettez le contact et lancez une application dédiée sur votre téléphone. L'outil va interroger la mémoire flash du calculateur moteur et extraire le code défaut standardisé (comme le code P0401 pour un débit d'EGR insuffisant), vous indiquant précisément quelle pièce est à l'origine de l'alerte.</p>
+
+<figure>
+    <img src="/Image/voyant-moteur-allume-mais-pas-de-probleme-3.webp"
+         alt="Boîtier OBD2 branché sur la prise diagnostic sous le volant — lecture du code défaut voyant moteur"
+         loading="lazy" decoding="async" width="1200" height="675">
+    <figcaption>La prise OBD2 (fiche 16 broches) se trouve généralement sous la colonne de direction, côté conducteur.</figcaption>
+</figure>
 
 <h3>Pourquoi le voyant reste allumé alors qu'aucun code d'erreur n'apparaît ?</h3>
 <p>C'est un phénomène très déroutant qui touche de nombreux acheteurs de boîtiers électroniques à bas prix. Vous lancez le scan, l'application indique qu'aucun code d'erreur n'est présent, mais le voyant reste pourtant bien actif sur votre tableau de bord. Cette situation s'explique par l'utilisation d'un scanner générique limité aux protocoles antipollution obligatoires imposés par la loi. Si l'anomalie concerne un protocole constructeur spécifique, lié par exemple au module de gestion de la boîte automatique ou à une sécurité de pression d'huile avancée, le lecteur low-cost sera incapable de lire cette section de la mémoire et affichera un rapport vierge.</p>
