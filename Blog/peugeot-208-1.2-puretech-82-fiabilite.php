@@ -84,7 +84,8 @@ $article = [
 <h3>Le plan d'entretien préventif recommandé pour sauver votre moteur</h3>
 <p>Le calendrier d'entretien officiel fourni par Peugeot stipule une vidange tous les 20 000 kilomètres, mais je vous affirme que suivre cette recommandation équivaut à condamner votre moteur à court terme. Pour préserver la distribution, vous devez impérativement rapprocher l'intervalle de vidange à 10 000 kilomètres ou un an maximum. Le choix de l'huile ne tolère aucune approximation : vous devez employer exclusivement l'huile aux normes PSA B71 2290 en 5W-30, ou la nouvelle référence 0W-20 répondant à la spécification Stellantis FPW9.55535/03 pour les blocs récents.</p>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Type d'intervention mécanique</th>
@@ -120,6 +121,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="achat-revente">Achat et revente d'une 208 PureTech : Quels sont vos recours et obligations légales ?</h2>
 

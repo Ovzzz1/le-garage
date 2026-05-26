@@ -64,54 +64,56 @@ $article = [
 
 <h2 id="tableau">Tableau récapitulatif des motorisations (Verdict Fiabilité)</h2>
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
-            <th style="padding: 10px; background-color: #f2f2f2;">Moteur</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Années</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Avis</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Points de vigilance</th>
+            <th>Moteur</th>
+            <th>Années</th>
+            <th>Avis</th>
+            <th>Points de vigilance</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 10px;"><strong>1.2 TCe 120</strong></td>
-            <td style="padding: 10px;">2013-2018</td>
-            <td style="padding: 10px; color: #c0392b; font-weight: bold;">À ÉVITER</td>
-            <td style="padding: 10px;">Consommation d'huile, casse moteur.</td>
+            <td><strong>1.2 TCe 120</strong></td>
+            <td>2013-2018</td>
+            <td style="color: #c0392b; font-weight: bold;">À ÉVITER</td>
+            <td>Consommation d'huile, casse moteur.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>0.9 TCe 90</strong></td>
-            <td style="padding: 10px;">2013-2019</td>
-            <td style="padding: 10px; color: #27ae60; font-weight: bold;">RECOMMANDÉ</td>
-            <td style="padding: 10px;">Manque de puissance sur autoroute.</td>
+            <td><strong>0.9 TCe 90</strong></td>
+            <td>2013-2019</td>
+            <td style="color: #27ae60; font-weight: bold;">RECOMMANDÉ</td>
+            <td>Manque de puissance sur autoroute.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.5 dCi 90/110</strong></td>
-            <td style="padding: 10px;">2013-2015</td>
-            <td style="padding: 10px; font-weight: bold;">À SURVEILLER</td>
-            <td style="padding: 10px;">Injection, pompe à haute pression.</td>
+            <td><strong>1.5 dCi 90/110</strong></td>
+            <td>2013-2015</td>
+            <td style="font-weight: bold;">À SURVEILLER</td>
+            <td>Injection, pompe à haute pression.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.5 dCi (Post-2016)</strong></td>
-            <td style="padding: 10px;">2016-2026</td>
-            <td style="padding: 10px; font-weight: bold;">VALIDE</td>
-            <td style="padding: 10px;">Courroie de distribution à changer à l'heure.</td>
+            <td><strong>1.5 dCi (Post-2016)</strong></td>
+            <td>2016-2026</td>
+            <td style="font-weight: bold;">VALIDE</td>
+            <td>Courroie de distribution à changer à l'heure.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.3 TCe 140/160</strong></td>
-            <td style="padding: 10px;">2019-2026</td>
-            <td style="padding: 10px; color: #27ae60; font-weight: bold;">TOP CHOIX</td>
-            <td style="padding: 10px;">Aucun problème majeur recensé.</td>
+            <td><strong>1.3 TCe 140/160</strong></td>
+            <td>2019-2026</td>
+            <td style="color: #27ae60; font-weight: bold;">TOP CHOIX</td>
+            <td>Aucun problème majeur recensé.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>E-Tech (Hybride)</strong></td>
-            <td style="padding: 10px;">2020-2026</td>
-            <td style="padding: 10px; font-weight: bold;">VALIDE</td>
-            <td style="padding: 10px;">Mises à jour logicielles nécessaires.</td>
+            <td><strong>E-Tech (Hybride)</strong></td>
+            <td>2020-2026</td>
+            <td style="font-weight: bold;">VALIDE</td>
+            <td>Mises à jour logicielles nécessaires.</td>
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="alternatives">Les alternatives fiables : Quel Renault Captur choisir ?</h2>
 
@@ -120,37 +122,39 @@ $article = [
 <h3>Les solutions internes (Renault)</h3>
 <p>Le moteur <strong>0.9 TCe 90 ch</strong> est l'alternative idéale en essence pour le Captur 1. Bien qu'il manque un peu de reprise, il utilise une chaîne de distribution et s'avère très robuste. Pour le Captur 2, le moteur <strong>1.3 TCe</strong> est une réussite totale : performant, sobre et surtout fiable. Si vous êtes intéressé par la vue d'ensemble des motorisations Renault à risque sur l'ensemble de la gamme, notre guide sur les <strong><u><a href="/Blog/moteur-renault-a-eviter">moteurs Renault à éviter</a></u></strong> classe chaque bloc par degré de risque et couvre aussi le 1.2 TCe dans ses différentes versions.</p>
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
-            <th style="padding: 10px; background-color: #f2f2f2;">Votre besoin</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Modèle conseillé</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Pourquoi ce choix ?</th>
+            <th>Votre besoin</th>
+            <th>Modèle conseillé</th>
+            <th>Pourquoi ce choix ?</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 10px;"><strong>Petit budget essence</strong></td>
-            <td style="padding: 10px;">Captur 1 - 0.9 TCe 90</td>
-            <td style="padding: 10px;">Simplicité mécanique, moteur éprouvé.</td>
+            <td><strong>Petit budget essence</strong></td>
+            <td>Captur 1 - 0.9 TCe 90</td>
+            <td>Simplicité mécanique, moteur éprouvé.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>Gros rouleur / Diesel</strong></td>
-            <td style="padding: 10px;">Captur 1 ou 2 - 1.5 dCi 110/115</td>
-            <td style="padding: 10px;">Consommation record, fiabilité après 2016.</td>
+            <td><strong>Gros rouleur / Diesel</strong></td>
+            <td>Captur 1 ou 2 - 1.5 dCi 110/115</td>
+            <td>Consommation record, fiabilité après 2016.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>Polyvalence / Famille</strong></td>
-            <td style="padding: 10px;">Captur 2 - 1.3 TCe 140</td>
-            <td style="padding: 10px;">Meilleur agrément, zéro problème moteur.</td>
+            <td><strong>Polyvalence / Famille</strong></td>
+            <td>Captur 2 - 1.3 TCe 140</td>
+            <td>Meilleur agrément, zéro problème moteur.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>Hybride urbain</strong></td>
-            <td style="padding: 10px;">Captur 2 - E-Tech 145</td>
-            <td style="padding: 10px;">Parfait pour la ville, technologie mature.</td>
+            <td><strong>Hybride urbain</strong></td>
+            <td>Captur 2 - E-Tech 145</td>
+            <td>Parfait pour la ville, technologie mature.</td>
         </tr>
     </tbody>
 </table>
+</div>
 
 <p>Quelques conseils d'expert pour votre achat :</p>
 <ul>

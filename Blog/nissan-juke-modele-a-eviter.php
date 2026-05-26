@@ -53,54 +53,56 @@ $article = [
 
 <h2 id="tableau">Tableau Récapitulatif : Verdict Fiabilité Nissan Juke (2010-2026)</h2>
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
-            <th style="padding: 10px; background-color: #f2f2f2;">Moteur</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Années</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Problème principal</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Verdict</th>
+            <th>Moteur</th>
+            <th>Années</th>
+            <th>Problème principal</th>
+            <th>Verdict</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 10px;"><strong>1.2 DIG-T 115</strong></td>
-            <td style="padding: 10px;">2014 - 2018</td>
-            <td style="padding: 10px;">Consommation d'huile / Casse chaîne</td>
-            <td style="padding: 10px; color: #c0392b; font-weight: bold;">À ÉVITER</td>
+            <td><strong>1.2 DIG-T 115</strong></td>
+            <td>2014 - 2018</td>
+            <td>Consommation d'huile / Casse chaîne</td>
+            <td style="color: #c0392b; font-weight: bold;">À ÉVITER</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.5 dCi 110</strong></td>
-            <td style="padding: 10px;">2010 - 2012</td>
-            <td style="padding: 10px;">Coussinets de bielle / Turbo</td>
-            <td style="padding: 10px; font-weight: bold;">RISQUÉ</td>
+            <td><strong>1.5 dCi 110</strong></td>
+            <td>2010 - 2012</td>
+            <td>Coussinets de bielle / Turbo</td>
+            <td style="font-weight: bold;">RISQUÉ</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>Boîte CVT (tous)</strong></td>
-            <td style="padding: 10px;">2010 - 2019</td>
-            <td style="padding: 10px;">Fragilité courroie / Absence vidange</td>
-            <td style="padding: 10px; font-weight: bold;">VIGILANCE</td>
+            <td><strong>Boîte CVT (tous)</strong></td>
+            <td>2010 - 2019</td>
+            <td>Fragilité courroie / Absence vidange</td>
+            <td style="font-weight: bold;">VIGILANCE</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.6 117ch (Atmo)</strong></td>
-            <td style="padding: 10px;">2010 - 2018</td>
-            <td style="padding: 10px;">Fiabilité globale excellente</td>
-            <td style="padding: 10px; color: #27ae60; font-weight: bold;">ACHETER</td>
+            <td><strong>1.6 117ch (Atmo)</strong></td>
+            <td>2010 - 2018</td>
+            <td>Fiabilité globale excellente</td>
+            <td style="color: #27ae60; font-weight: bold;">ACHETER</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.5 dCi 110</strong></td>
-            <td style="padding: 10px;">2013 - 2019</td>
-            <td style="padding: 10px;">Moteur fiabilisé (K9K Gen 6)</td>
-            <td style="padding: 10px; color: #27ae60; font-weight: bold;">SÉCURISÉ</td>
+            <td><strong>1.5 dCi 110</strong></td>
+            <td>2013 - 2019</td>
+            <td>Moteur fiabilisé (K9K Gen 6)</td>
+            <td style="color: #27ae60; font-weight: bold;">SÉCURISÉ</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.0 DIG-T 114/117</strong></td>
-            <td style="padding: 10px;">2019 - 2026</td>
-            <td style="padding: 10px;">Nouveau bloc fiable (Juke II)</td>
-            <td style="padding: 10px; color: #27ae60; font-weight: bold;">ACHETER</td>
+            <td><strong>1.0 DIG-T 114/117</strong></td>
+            <td>2019 - 2026</td>
+            <td>Nouveau bloc fiable (Juke II)</td>
+            <td style="color: #27ae60; font-weight: bold;">ACHETER</td>
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="alternatives">Les Alternatives Fiables : Quelles versions du Juke acheter ?</h2>
 

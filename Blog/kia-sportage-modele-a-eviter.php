@@ -54,48 +54,50 @@ $article = [
 
 <h2 id="tableau">Tableau Récapitulatif : Fiabilité Kia Sportage par motorisation</h2>
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
-            <th style="padding: 10px; background-color: #f2f2f2;">Moteur</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Années critiques</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Panne majeure</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Verdict</th>
+            <th>Moteur</th>
+            <th>Années critiques</th>
+            <th>Panne majeure</th>
+            <th>Verdict</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 10px;"><strong>1.7 CRDi 115</strong></td>
-            <td style="padding: 10px;">2011 - 2016</td>
-            <td style="padding: 10px;">Embrayage / Volant moteur</td>
-            <td style="padding: 10px; color: #c0392b; font-weight: bold;">À ÉVITER</td>
+            <td><strong>1.7 CRDi 115</strong></td>
+            <td>2011 - 2016</td>
+            <td>Embrayage / Volant moteur</td>
+            <td style="color: #c0392b; font-weight: bold;">À ÉVITER</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.6 GDi 135</strong></td>
-            <td style="padding: 10px;">2010 - 2015</td>
-            <td style="padding: 10px;">Manque de puissance / Conso</td>
-            <td style="padding: 10px; font-weight: bold;">MOYEN</td>
+            <td><strong>1.6 GDi 135</strong></td>
+            <td>2010 - 2015</td>
+            <td>Manque de puissance / Conso</td>
+            <td style="font-weight: bold;">MOYEN</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>2.0 CRDi 136</strong></td>
-            <td style="padding: 10px;">2010 - 2018</td>
-            <td style="padding: 10px;">Vanne EGR encrassée</td>
-            <td style="padding: 10px; color: #27ae60; font-weight: bold;">ACHETER</td>
+            <td><strong>2.0 CRDi 136</strong></td>
+            <td>2010 - 2018</td>
+            <td>Vanne EGR encrassée</td>
+            <td style="color: #27ae60; font-weight: bold;">ACHETER</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.6 CRDi 136</strong></td>
-            <td style="padding: 10px;">2018 - 2021</td>
-            <td style="padding: 10px;">Fiabilité correcte</td>
-            <td style="padding: 10px; color: #27ae60; font-weight: bold;">SÉCURISÉ</td>
+            <td><strong>1.6 CRDi 136</strong></td>
+            <td>2018 - 2021</td>
+            <td>Fiabilité correcte</td>
+            <td style="color: #27ae60; font-weight: bold;">SÉCURISÉ</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>DCT7 (Auto)</strong></td>
-            <td style="padding: 10px;">2016 - 2018</td>
-            <td style="padding: 10px;">Surchauffe / À-coups</td>
-            <td style="padding: 10px; font-weight: bold;">VIGILANCE</td>
+            <td><strong>DCT7 (Auto)</strong></td>
+            <td>2016 - 2018</td>
+            <td>Surchauffe / À-coups</td>
+            <td style="font-weight: bold;">VIGILANCE</td>
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="boites">Boîtes de vitesses : Entre fragilité manuelle et surchauffe DCT7</h2>
 

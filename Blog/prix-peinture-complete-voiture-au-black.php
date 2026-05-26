@@ -41,7 +41,8 @@ $article = [
 <h3>Comparatif des tarifs par gabarit : Garage vs Non-déclaré</h3>
 <p>Voici la réalité du marché actuel. Ces tarifs incluent la main-d'œuvre et la fourniture standard.</p>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Type de véhicule</th>
@@ -67,6 +68,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h3>Paris vs Province : l'impact de la localisation sur la facture</h3>
 <p>Le prix dépend fortement de l'endroit où vous vous trouvez, car l'offre et la demande dictent la loi du marché non déclaré. En Île-de-France ou dans les grandes métropoles, trouver un espace pour peindre est rare et cher. Un carrossier demandera facilement 800 euros pour une berline. En revanche, dans des zones plus rurales ou en province, les locaux sont plus accessibles. La même prestation peut alors se négocier autour de 450 ou 500 euros.</p>

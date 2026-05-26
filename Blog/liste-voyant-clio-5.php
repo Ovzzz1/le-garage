@@ -38,7 +38,8 @@ $article = [
 <h2 id="code-couleur">1. Le code couleur : la hiérarchie de l'urgence</h2>
 <p>Ne cherchez pas à deviner la gravité d'une panne par le symbole avant d'avoir vérifié sa couleur. Renault utilise une signalétique standardisée que tout conducteur doit maîtriser.</p>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Couleur</th>
@@ -64,6 +65,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="voyants-rouges">2. Voyants rouges : le danger immédiat</h2>
 <p>Si un voyant rouge s'affiche, ne tentez pas de rentrer chez vous. Les dommages mécaniques seraient coûteux, voire irréparables.</p>

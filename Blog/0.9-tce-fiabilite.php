@@ -49,7 +49,8 @@ $article = [
 
 <p>Je le confirme : ce moteur est fiable. Cependant, il faut distinguer la solidité du bloc moteur en lui-même (qui est excellente) et les périphériques qui l'entourent, car ces derniers peuvent présenter quelques fragilités.</p>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Critère</th>
@@ -75,6 +76,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="vs-1-2-tce">0.9 TCe vs 1.2 TCe : La grande différence technique qui sauve tout</h2>
 
@@ -132,7 +134,8 @@ $article = [
 
 <p>Pour garantir la longévité de votre H4Bt, je vous déconseille de suivre aveuglément les préconisations du constructeur qui sont souvent trop espacées.</p>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Intervention</th>
@@ -154,6 +157,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 HTML,
 
     'conclusion' => 'Le 0.9 TCe est une valeur sûre du marché de l\'occasion — à condition de cibler les bons millésimes, de fuir la boîte Easy-R et de ne jamais dépasser 15 000 km entre deux vidanges.',

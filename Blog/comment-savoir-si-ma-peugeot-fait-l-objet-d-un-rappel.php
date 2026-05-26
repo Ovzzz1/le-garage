@@ -66,7 +66,8 @@ $article = [
 
 <h2 id="modeles-defauts">Quels sont les modèles Peugeot et les défauts moteurs les plus recherchés ?</h2>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Modèle de Peugeot</th>
@@ -100,6 +101,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="alerte-2026">Alerte fraîcheur 2026 : Le cas du moteur 1.5 BlueHDi (Code rappel M4F)</h2>
 

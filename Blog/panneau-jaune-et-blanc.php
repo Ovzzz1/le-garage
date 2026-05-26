@@ -77,7 +77,8 @@ $article = [
 
 <h2 id="implantation">Où sont implantés ces panneaux sur les routes françaises ?</h2>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Zone de circulation</th>
@@ -103,6 +104,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="fin-priorite">Comment savoir quand s'arrête la route à caractère prioritaire ?</h2>
 

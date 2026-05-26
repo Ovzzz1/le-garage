@@ -74,36 +74,38 @@ $article = [
 
 <h2 id="tableau">Tableau Récapitulatif : Verdict Fiabilité Ford Transit 170 ch</h2>
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
-            <th style="padding: 10px; background-color: #f2f2f2;">Années de production</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Composant à risque</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Signes d'alerte</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Verdict Fiabilité</th>
+            <th>Années de production</th>
+            <th>Composant à risque</th>
+            <th>Signes d'alerte</th>
+            <th>Verdict Fiabilité</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 10px;"><strong>2016 - 2018</strong></td>
-            <td style="padding: 10px;">Injecteurs &amp; Courroie</td>
-            <td style="padding: 10px;">Claquements / Voyant huile</td>
-            <td style="padding: 10px; color: #c0392b; font-weight: bold;">Critique</td>
+            <td><strong>2016 - 2018</strong></td>
+            <td>Injecteurs &amp; Courroie</td>
+            <td>Claquements / Voyant huile</td>
+            <td style="color: #c0392b; font-weight: bold;">Critique</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>2019 - 2022</strong></td>
-            <td style="padding: 10px;">Courroie humide</td>
-            <td style="padding: 10px;">Montée du niveau d'huile</td>
-            <td style="padding: 10px; font-weight: bold;">Amélioré</td>
+            <td><strong>2019 - 2022</strong></td>
+            <td>Courroie humide</td>
+            <td>Montée du niveau d'huile</td>
+            <td style="font-weight: bold;">Amélioré</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>2023 - 2026</strong></td>
-            <td style="padding: 10px;">Capteurs AdBlue</td>
-            <td style="padding: 10px;">Message "Entretien requis"</td>
-            <td style="padding: 10px; color: #27ae60; font-weight: bold;">Serein</td>
+            <td><strong>2023 - 2026</strong></td>
+            <td>Capteurs AdBlue</td>
+            <td>Message "Entretien requis"</td>
+            <td style="color: #27ae60; font-weight: bold;">Serein</td>
         </tr>
     </tbody>
 </table>
+</div>
 
 <div class="art-tldr" style="border-left-color: <?php echo $article['category_color']; ?>;">
     <div class="art-tldr-title" style="color: <?php echo $article['category_color']; ?>;">À lire également</div>

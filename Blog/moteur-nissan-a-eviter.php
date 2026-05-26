@@ -73,48 +73,50 @@ $article = [
 
 <h2 id="tableau-noir">Tableau Synthèse : Liste noire des moteurs Nissan à fuir</h2>
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
-            <th style="padding: 10px; background-color: #f2f2f2;">Moteur</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Code</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Risque Principal</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Coût estimé</th>
+            <th>Moteur</th>
+            <th>Code</th>
+            <th>Risque Principal</th>
+            <th>Coût estimé</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 10px;"><strong>1.2 DIG-T</strong></td>
-            <td style="padding: 10px;">H5FT</td>
-            <td style="padding: 10px;">Consommation huile / Casse moteur</td>
-            <td style="padding: 10px;">5 500 €</td>
+            <td><strong>1.2 DIG-T</strong></td>
+            <td>H5FT</td>
+            <td>Consommation huile / Casse moteur</td>
+            <td>5 500 €</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.5 dCi 105/110</strong></td>
-            <td style="padding: 10px;">K9K</td>
-            <td style="padding: 10px;">Limaille injection (Delphi)</td>
-            <td style="padding: 10px;">2 500 €</td>
+            <td><strong>1.5 dCi 105/110</strong></td>
+            <td>K9K</td>
+            <td>Limaille injection (Delphi)</td>
+            <td>2 500 €</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.6 dCi 130</strong></td>
-            <td style="padding: 10px;">R9M</td>
-            <td style="padding: 10px;">Turbo et Tendeur de chaîne</td>
-            <td style="padding: 10px;">1 800 €</td>
+            <td><strong>1.6 dCi 130</strong></td>
+            <td>R9M</td>
+            <td>Turbo et Tendeur de chaîne</td>
+            <td>1 800 €</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.5 VC-Turbo</strong></td>
-            <td style="padding: 10px;">KR15DDT</td>
-            <td style="padding: 10px;">Paliers de vilebrequin (Rappel)</td>
-            <td style="padding: 10px;">7 000 €</td>
+            <td><strong>1.5 VC-Turbo</strong></td>
+            <td>KR15DDT</td>
+            <td>Paliers de vilebrequin (Rappel)</td>
+            <td>7 000 €</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>1.6 DIG-T 190</strong></td>
-            <td style="padding: 10px;">MR16DDT</td>
-            <td style="padding: 10px;">Distribution / Pré-catalyseur</td>
-            <td style="padding: 10px;">4 000 €</td>
+            <td><strong>1.6 DIG-T 190</strong></td>
+            <td>MR16DDT</td>
+            <td>Distribution / Pré-catalyseur</td>
+            <td>4 000 €</td>
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="alternatives">Quelles sont les alternatives fiables chez Nissan ?</h2>
 
@@ -124,37 +126,39 @@ $article = [
 
 <h2 id="tableau-ok">Tableau Récapitulatif : Les meilleurs choix Nissan en occasion</h2>
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
-            <th style="padding: 10px; background-color: #f2f2f2;">Modèle recherché</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Moteur conseillé</th>
-            <th style="padding: 10px; background-color: #f2f2f2;">Pourquoi ce choix ?</th>
+            <th>Modèle recherché</th>
+            <th>Moteur conseillé</th>
+            <th>Pourquoi ce choix ?</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 10px;"><strong>Qashqai / Juke</strong></td>
-            <td style="padding: 10px;">1.3 DIG-T (140/158)</td>
-            <td style="padding: 10px;">Fiabilité exemplaire et agrément.</td>
+            <td><strong>Qashqai / Juke</strong></td>
+            <td>1.3 DIG-T (140/158)</td>
+            <td>Fiabilité exemplaire et agrément.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>X-Trail</strong></td>
-            <td style="padding: 10px;">2.0 dCi 150/173/177</td>
-            <td style="padding: 10px;">Couple généreux et moteur increvable.</td>
+            <td><strong>X-Trail</strong></td>
+            <td>2.0 dCi 150/173/177</td>
+            <td>Couple généreux et moteur increvable.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>Micra / Note</strong></td>
-            <td style="padding: 10px;">1.2 80 ch (Atmo)</td>
-            <td style="padding: 10px;">Simplicité mécanique absolue.</td>
+            <td><strong>Micra / Note</strong></td>
+            <td>1.2 80 ch (Atmo)</td>
+            <td>Simplicité mécanique absolue.</td>
         </tr>
         <tr>
-            <td style="padding: 10px;"><strong>Sportive (350Z/370Z)</strong></td>
-            <td style="padding: 10px;">V6 VQ35 / VQ37</td>
-            <td style="padding: 10px;">Une légende de fiabilité atmosphérique.</td>
+            <td><strong>Sportive (350Z/370Z)</strong></td>
+            <td>V6 VQ35 / VQ37</td>
+            <td>Une légende de fiabilité atmosphérique.</td>
         </tr>
     </tbody>
 </table>
+</div>
 HTML,
 
     'conclusion' => 'Fuir le 1.2 DIG-T et le 1.5 dCi Delphi avant 2012, se méfier du VC-Turbo tant que les rappels ne sont pas clarifiés — ces réflexes suffisent à éviter 90 % des casses moteurs Nissan sur le marché de l\'occasion.',

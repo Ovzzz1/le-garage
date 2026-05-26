@@ -39,7 +39,8 @@ $article = [
 
 <p>Pour purger vos alertes sur les sites de petites annonces, voici le récapitulatif chronologique des millésimes les plus problématiques de la gamme.</p>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Génération</th>
@@ -94,6 +95,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="essence-tfsi">Moteurs essence TFSI et FSI : quelles sont les versions jugées peu fiables ?</h2>
 
