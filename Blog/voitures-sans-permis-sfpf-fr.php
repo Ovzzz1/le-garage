@@ -8,7 +8,7 @@ $article = [
     'subtitle'     => 'En 2026, conduire une voiture sans permis dès 14 ans avec le permis AM. Suspension de permis B, clauses restrictives d\'assurance 2025-2026, guide d\'achat occasion.',
     'category'     => 'permis',
     'tags'         => ['Voiture sans permis', 'VSP', 'Quadricycle', 'Assurance', 'Permis AM'],
-    'image'        => '/Image/voitures-sans-permis-sfpf-fr.webp',
+    'image'        => '/Image/voitures-sans-permis-sfpf-fr-1.webp',
     'date'         => '25 Mai 2026',
     'date_iso'     => '2026-05-25',
     'author'       => 'Arnaud',
@@ -74,7 +74,8 @@ $article = [
 
 <p>Optimiser le coût d'utilisation d'une voiturette impose d'évaluer le marché de façon globale, en croisant le prix d'achat du véhicule et le montant de la prime d'assurance annuelle.</p>
 
-<table>
+<div class="art-table-wrap">
+<table class="art-table">
     <thead>
         <tr>
             <th>Type de Profil de Conducteur</th>
@@ -104,6 +105,7 @@ $article = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="pieges-occasion">Les pièges à éviter lors de l'achat d'une VSP d'occasion</h2>
 
