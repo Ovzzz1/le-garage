@@ -26,6 +26,8 @@ $canonical_url = "https://www.garageraymond.fr" . $request_uri;
     <title><?php echo htmlspecialchars($page_title); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
     
+    <meta name="linkavista" content="64bd261574018eac57ebd7f225406853aa3fe1c0">
+
     <!-- Balise Canonical Absolue -->
     <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
 
