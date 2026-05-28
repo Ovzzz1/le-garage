@@ -16,6 +16,7 @@ if (!isset($page_description)) {
 $request_uri = strtok($_SERVER['REQUEST_URI'], '?'); // Enlève les paramètres GET variables (utm_source etc)
 $canonical_url = "https://www.garageraymond.fr" . $request_uri;
 ?>
+<!-- 94d1712bee9ce12ee9c18f3a83756cbd -->
 <!DOCTYPE html>
 <html lang="fr">
 
